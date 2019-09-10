@@ -1,5 +1,12 @@
 # HabitatMap blog & static pages
 
+## Access
+
+Website: https://habitatmap.lunarlogic.io/
+
+Hosting: https://app.netlify.com/sites/habitatmap/overview
+  - log in as habitatmap@lunarlogic.io with a password from wiki
+
 ## Run Locally
 
 1. Clone the repo.
