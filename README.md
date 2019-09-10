@@ -2,16 +2,15 @@
 
 ## Access
 
-Website: https://habitatmap.lunarlogic.io/
+Website: https://habitatmap.lunarlogic.io/.
 
-Hosting: https://app.netlify.com/sites/habitatmap/overview
-  - log in as habitatmap@lunarlogic.io with a password from wiki
+Hosting: https://app.netlify.com/sites/habitatmap/overview, credentials on Lunar Logic wiki.
 
 ## Run Locally
 
 1. Clone the repo.
 
-2. If you need to install the gems run `bundle install`.
+2. If you need to install the gems run `gem install bundler -v 2.0.1` and `bundle install`.
 
 3. To run the local server and have it regenerate the site on changes run: `bundle exec jekyll serve --watch`.
 
