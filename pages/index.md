@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Welcome
+title: HabitatMap
 permalink: /
 section: home
 intro_paragraph: >
