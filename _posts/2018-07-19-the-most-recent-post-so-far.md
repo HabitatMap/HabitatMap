@@ -1,9 +1,13 @@
 ---
 layout: post
-title: The most recent post so far
-author: john_doe
-date: '2018-07-19 10:07:32'
-intro_paragraph: ''
-categories: misc
+title: I'm writing a blog post
+date: 2019-09-11T13:00:00.000Z
+thumbnail: /images/uploads/olomana-2nd-peak.jpg
 ---
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborumo.
+Isn't this a pretty picture.
+
+And how about this one.  Is it pretty too?
+
+![bisy](/images/uploads/newtown-creek.jpg "busy place")
+
+**And here's some more text.  It's bolded and** [**linked.**](google.com)  **Blah Blah**
