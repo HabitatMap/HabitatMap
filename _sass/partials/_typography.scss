@@ -1,58 +1,79 @@
- $heading-font: 'Moderat-Bold', sans-serif;
- $body-font: 'Muli', sans-serif;
- $quote-font: 'IBM Plex Serif', serif;
-
-h2 {
-  font-family: $heading-font;
-}
+$heading-font: "Moderat-Bold", sans-serif;
+$body-font: "Muli", sans-serif;
+$quote-font: "IBM Plex Serif", serif;
 
 html {
   font-size: $base-font-size;
-  @media screen and (min-width: $screen-xs-min) {
-    font-size: $base-font-size * 1.2;
-  }
-  @media screen and (min-width: $screen-md-min) {
-    font-size: $base-font-size * 1.4;
-  }
+}
+
+body {
+  font-family: $body-font;
+}
+
+.heading {
+  font-family: $heading-font;
+  line-height: 1.2;
+}
+
+.heading--large {
+  font-size: $base-font-size4;
+}
+
+.heading--medium {
+  font-size: $base-font-size3;
+}
+
+.heading--small {
+  font-size: $base-font-size1;
+}
+
+.heading--capitalized {
+  font-size: $base-font-size-2;
+  text-transform: uppercase;
+}
+
+.quote {
+  font-family: $quote-font;
+  font-size: $base-font-size2;
+  line-height: 1.3;
+}
+
+.caption {
+  font-family: $heading-font;
+  font-size: $base-font-size-1;
+  line-height: 1.3;
+}
+
+p {
+  line-height: 1.6;
 }
 
 // now we can specify a single font size in rem for each of our elements
 // the root breakpoints above will then scale all elements together
 
-body {
-  color: $text-color;
-  font-family: $base-font;
-  line-height: $base-line-height;
-  font-weight: $base-font-weight;
-  font-style: normal;
-	font-variant: normal;
-  font-size: 1.6rem; // this is equivalent to 16px
-}
-
-h1,h2,h3,h4,h5,h6,p,figure,time {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+time {
   padding-bottom: 2rem;
 }
 
-h1,h2,h3,h4,h5,h6,figure {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+figure {
   p + &,
   figure + & {
     padding-top: 2rem;
   }
-}
-
-
-p.intro {
-  font-size: 2.4rem;
-  color: lighten($text-color, 40%);
-  padding-bottom: 4rem;
-  @media screen and (min-width: $screen-sm-min) {
-    padding-bottom: 4rem;
-  }
-}
-
-h1,h2,h3,h4,h5,h6 {
-  font-weight: $bold-font-weight;
-  line-height: $base-line-height / 1.3;
 }
 
 h2 {
@@ -64,25 +85,15 @@ h3 {
   font-size: 2rem;
 }
 
-code {
-  font-family: $code-font;
-  font-size: 1.2rem;
-  color: $text-color;
-}
-
-strong {
-  font-weight: $bold-font-weight;
-}
-
 small {
-	font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 
 a,
 a:visited {
   border-bottom: 0.05em solid $link-color;
-	text-decoration: none;
-	color: $link-color;
+  text-decoration: none;
+  color: $link-color;
 }
 
 a:hover,
@@ -93,8 +104,6 @@ a:active {
 }
 
 header > h1 {
-  line-height: $base-line-height;
-  font-weight: $base-font-weight;
   @media screen and (min-width: $screen-sm-min) {
     text-align: left;
   }
