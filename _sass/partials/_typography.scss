@@ -1,6 +1,10 @@
-// Basic Typographic Defaults
+ $heading-font: 'Moderat-Bold', sans-serif;
+ $body-font: 'Muli', sans-serif;
+ $quote-font: 'IBM Plex Serif', serif;
 
-// set font sizes in percent on the root element
+h2 {
+  font-family: $heading-font;
+}
 
 html {
   font-size: $base-font-size;
