@@ -1,12 +1,23 @@
-// site colours
-$text-color: rgb(40,40,40);
-$text-color-negative: white;
-$brand-color: rgb(29,37,52);
-$link-color: rgb(0,114,154);
-$link-hover-color: rgb(0,57,78);
-$grey-bg-color: rgb(243,243,243);
-$hairline-color: rgb(230,230,230);
-$selection-bg-color: rgba(255,255,100,0.5);
+// color
+$white: #ffffff;
+$light: #f5f5f5;
+$teal-light: #e4eced;
+$teal: #95d9cb;
+$green: #1ea73f;
+$cyan: #6abad2;
+$blue-light: #7fd8f7;
+$blue: #00b2ef;
+$blue-dark: #3c70b3;
+$gray: #818181;
+$gray-medium: #727272;
+$gray-dark: #474c55;
+
+$ac-brand: $blue;
+$hm-brand: $green;
+$text-color: $gray-medium;
+$text-color-negative: $white;
+$link-color: $blue;
+$link-hover-color: $blue-light;
 
 // viewport breakpoints
 $screen-xs-min: 480px;
