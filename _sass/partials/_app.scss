@@ -1,26 +1,12 @@
-// Main Styles
-
-// See the other SASS partials for typography, variables etc.
-// CSS Grid is used for the layout with fallbacks for less capable browsers
-// declared beforehand, and a @supports feature query to reset fallbacks when
-// necessary. https://rachelandrew.co.uk/css/cheatsheets/grid-fallbacks
-
-// the body element is our primary layout grid
 body {
   height: 100vh;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  grid-template-columns:
-    [full-start] minmax(1rem, 1fr)
-    [main-start] minmax(0, 52rem) [main-end]
-    minmax(1rem, 1fr) [full-end];
 }
 
-// by default, make any new children of body to span the full track
-body > * {
-  grid-column: full;
-  padding: 2rem 1rem;
-}
+
+
+
+
+
 
 // header, the first grid row
 // it is also a grid for the logo and nav
@@ -89,29 +75,6 @@ header > nav {
   }
 }
 
-// our main content wrapper, the width scales with font size
-main {
-  width: 100%;
-  max-width: 52rem;
-  margin-right: auto;
-  margin-left: auto;
-  grid-column: main;
-  display: grid;
-  padding-top: 8rem;
-  padding-bottom: 8rem;
-  @media screen and (min-width: $screen-md-min) {
-    align-content: start;
-  }
-}
-
-// reset breaking fallbacks (e.g. widths) if CSS Grid is supported
-// float, inline-block, table properties are already ignored by CSS Grid
-@supports (display: grid) {
-  main {
-    width: auto;
-    max-width: none;
-  }
-}
 
 // blog posts list
 html[data-current="blog"] main > section {
@@ -136,47 +99,5 @@ nav[aria-label="Adjacent Posts"] {
         text-align: right;
       }
     }
-  }
-}
-
-// contact form
-html[data-current="contact"] main > form {
-  display: grid;
-  label {
-    display: none;
-  }
-  input,
-  textarea {
-    width: 100%;
-    padding: 1rem;
-    margin-bottom: 2rem;
-  }
-  button {
-    width: 100%;
-  }
-}
-
-// reset CSS Grid fallbacks when they aren't required
-@supports (display: grid) {
-  html[data-current="contact"] main > form {
-    input,
-    textarea,
-    button {
-      width: auto;
-      max-width: none;
-    }
-  }
-}
-
-footer {
-  grid-column: full;
-  display: grid;
-  grid-template-columns:
-    [full-start] minmax(1rem, 1fr)
-    [main-start] minmax(0, 50rem) [main-end]
-    minmax(1rem, 1fr) [full-end];
-  background-color: $grey-bg-color;
-  > small {
-    grid-column: main;
   }
 }
