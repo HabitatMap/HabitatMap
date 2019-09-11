@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: The Blog
+title: Taking Space Blog
 permalink: /blog
 section: blog
 intro_paragraph: >
