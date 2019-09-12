@@ -3,13 +3,13 @@
 // A basic button
 @mixin button($btn-bg, $btn-text) {
   padding: 2rem;
-	color: $btn-text;
-	background-color: $btn-bg;
-	border: 3px solid $btn-bg;
+  color: $btn-text;
+  background-color: $btn-bg;
+  border: 3px solid $btn-bg;
 }
 
 // Disable text selection
-@mixin user-select($argument: none){
+@mixin user-select($argument: none) {
   -webkit-user-select: $argument;
   -moz-user-select: $argument;
   -ms-user-select: $argument;
