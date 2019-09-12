@@ -1,6 +1,8 @@
-@mixin button-color($text-color, $bg-color, $bg-color-hover) {
+$button-font-size: 1.1rem;
+
+@mixin button-color($text-color, $border-color, $bg-color, $bg-color-hover) {
   background: $bg-color;
-  border-color: $bg-color;
+  border-color: $border-color;
   color: $text-color;
 
   &:hover,
@@ -8,6 +10,23 @@
     background: $bg-color-hover;
     color: $bg-color;
   }
+}
+
+.button {
+  border-width: 1px;
+  border-style: solid;
+  font-family: $bold-font;
+  font-size: $button-font-size;
+  height: 50px;
+  padding: 0 2.4rem;
+}
+
+.button--hm {
+  @include button-color($hm-brand, $hm-brand, $white, $hm-brand);
+}
+
+.button--ac {
+  @include button-color($ac-brand, $ac-brand, $white, $ac-brand);
 }
 
 .badge-link {
@@ -25,17 +44,17 @@
 }
 
 .badge-link--hm {
-  @include button-color($white, $hm-brand, $white);
+  @include button-color($white, $hm-brand, $hm-brand, $white);
 }
 
 .badge-link--light-hm {
-  @include button-color($hm-brand, $white, none);
+  @include button-color($hm-brand, $white, $white, none);
 }
 
 .badge-link--ac {
-  @include button-color($white, $ac-brand, $white);
+  @include button-color($white, $white, $ac-brand, $white);
 }
 
 .badge-link--light-ac {
-  @include button-color($ac-brand, $white, none);
+  @include button-color($ac-brand, $white, $white, none);
 }
