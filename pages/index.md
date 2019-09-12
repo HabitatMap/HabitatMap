@@ -10,3 +10,8 @@ intro_paragraph: >
   CSS Grid layout, sample
   pages and posts, and a continuous deployment workflow.
 ---
+<h1 class="heading heading--large">Harnessing the Power of People and Technology to Improve the Quality of Lives</h1>
+
+<a href="#" class="badge-link badge-link--hm">
+  <span class="is-verticaly-centered">Get Airbeam</span>
+</a>
