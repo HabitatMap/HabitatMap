@@ -3,3 +3,17 @@
   margin-top: 50%;
   transform: translateY(-50%);
 }
+
+.panel {
+  padding-left: 15vw;
+  padding-right: 15vw;
+}
+
+.padding-vertical-medium {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.bg-teal-light {
+  background-color: $teal-light;
+}
