@@ -16,7 +16,11 @@ body {
 }
 
 .heading--large {
-  font-size: $base-font-size4;
+  font-size: $base-font-size3;
+
+  @media screen and (min-width: $screen-sm-min) {
+    font-size: $base-font-size4;
+  }
 }
 
 .heading--medium {
