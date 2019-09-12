@@ -1,0 +1,48 @@
+.is-verticaly-centered {
+  display: inline-block;
+  margin-top: 50%;
+  transform: translateY(-50%);
+}
+
+.panel {
+  @include flexbox;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  padding-top: $u-space-default;
+  padding-bottom: $u-space-default;
+
+  @media screen and (min-width: $screen-sm-min) {
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+
+  @media screen and (min-width: $screen-lg-min) {
+    padding-left: 15vw;
+    padding-right: 15vw;
+  }
+}
+
+.panel--hero {
+  background-image: url("/assets/img/habitatmap-home-airbeam-aircasting.jpg");
+  padding-top: 6rem;
+  padding-bottom: 65%;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+
+  @media screen and (min-width: $screen-sm-min) {
+    background-position: center right;
+    background-size: 50% auto;
+    padding-bottom: 6rem;
+  }
+}
+
+.panel__heading {
+  max-width: 29rem;
+}
+
+.split--half {
+  @media screen and (min-width: $screen-sm-min) {
+    @include flex(0 0 50%);
+  }
+}
