@@ -53,21 +53,8 @@ p {
   font-size: $base-font-size3;
 }
 
-strong,
-.is-bold {
+strong {
   font-family: $bold-font;
-}
-
-.is-gray {
-  color: $gray;
-}
-
-.accent-hm {
-  color: $hm-brand;
-}
-
-.accent-ac {
-  color: $ac-brand;
 }
 
 a,
