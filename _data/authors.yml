@@ -1,11 +1,3 @@
-# specify site authors in this file
-# you can add .yml files for any other global data in this folder
-
-michael_heimbinder:
-    name: Michael Heimbinder
-    email: mheimbinder@habitatmap.org
-    web: https://www.habitatmap.org
-julia_jacobs:
-    name: Julia Jacobs
-    email: julia@lunarlogic.io
-    web: www.lunarlogic.io
+author:
+  - display_name: Kot kot
+    name: Kot
