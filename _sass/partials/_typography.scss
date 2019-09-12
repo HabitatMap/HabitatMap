@@ -53,6 +53,11 @@ p {
   font-size: $base-font-size3;
 }
 
+strong,
+.is-bold {
+  font-family: $bold-font;
+}
+
 .is-gray {
   color: $gray;
 }
@@ -65,61 +70,17 @@ p {
   color: $ac-brand;
 }
 
-// now we can specify a single font size in rem for each of our elements
-// the root breakpoints above will then scale all elements together
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-figure,
-time {
-  padding-bottom: 2rem;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-figure {
-  p + &,
-  figure + & {
-    padding-top: 2rem;
-  }
-}
-
-h2 {
-  font-size: 3.2rem;
-  padding-bottom: 4rem;
-}
-
-h3 {
-  font-size: 2rem;
-}
-
-small {
-  font-size: 1.2rem;
-}
-
 a,
-a:visited {
+.link {
   text-decoration: none;
   color: $link-color;
 }
 
 a:hover,
-a:active {
-  text-decoration: none;
+.link:hover {
   color: $link-hover-color;
 }
 
-header > h1 {
-  @media screen and (min-width: $screen-sm-min) {
-    text-align: left;
-  }
+.link--light {
+  color: white;
 }

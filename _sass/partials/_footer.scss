@@ -1,0 +1,13 @@
+.footer {
+  background-color: $gray-medium;
+  color: white;
+  padding: 3.3rem 0;
+}
+
+.footer__topic {
+  border-top: 1px solid $white;
+  display: inline-block;
+  margin-right: 1.4rem;
+  vertical-align: top;
+  font-size: $base-font-size-2;
+}
