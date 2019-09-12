@@ -154,7 +154,3 @@ textarea {
   resize: vertical;
   max-width: 100%;
 }
-
-button {
-  @include button($link-color, $text-color-negative);
-}

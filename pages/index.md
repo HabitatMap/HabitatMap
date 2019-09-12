@@ -15,3 +15,5 @@ intro_paragraph: >
 <a href="#" class="badge-link badge-link--hm">
   <span class="is-verticaly-centered">Get Airbeam</span>
 </a>
+
+<button class="button button--hm">Learn more</button>
