@@ -48,6 +48,23 @@ p {
   line-height: 1.6;
 }
 
+.p--large {
+  font-family: $bold-font;
+  font-size: $base-font-size3;
+}
+
+.is-gray {
+  color: $gray;
+}
+
+.accent-hm {
+  color: $hm-brand;
+}
+
+.accent-ac {
+  color: $ac-brand;
+}
+
 // now we can specify a single font size in rem for each of our elements
 // the root breakpoints above will then scale all elements together
 
