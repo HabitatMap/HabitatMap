@@ -15,10 +15,11 @@ $button-font-size: 1.1rem;
 .button {
   border-width: 1px;
   border-style: solid;
+  display: inline-block;
   font-family: $bold-font;
   font-size: $button-font-size;
   height: 50px;
-  padding: 0 2.4rem;
+  padding: 0.85rem 2.4rem;
 }
 
 .button--hm {
