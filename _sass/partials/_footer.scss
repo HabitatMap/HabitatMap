@@ -6,11 +6,11 @@
   background-repeat: no-repeat;
   color: white;
 
-  @media screen and (max-width: ($screen-sm-max)) {
+  @media screen and (max-width: ($screen-sm-min)) {
     padding: 0;
   }
 
-  @media screen and (min-width: $screen-sm-min) {
+  @media screen and (min-width: $screen-sm-max) {
     background-image: url("/assets/img/svg/HabitatMap-Monogram-Footer-White.svg"),
       linear-gradient(to right, $gray-medium, $gray-medium 50%, $green 50%);
   }
@@ -22,11 +22,11 @@
   @include flex-direction(column);
   background: $gray-medium;
 
-  @media screen and (max-width: ($screen-sm-max)) {
+  @media screen and (max-width: ($screen-sm-min)) {
     padding: $u-space-default 4vw;
   }
 
-  @media screen and (min-width: ($screen-md-min)) {
+  @media screen and (min-width: ($screen-md-max)) {
     @include flex-direction(row);
   }
 }
@@ -40,7 +40,7 @@
   margin-bottom: $u-space-default;
   vertical-align: top;
 
-  @media screen and (min-width: $screen-sm-min) {
+  @media screen and (min-width: $screen-sm-max) {
     display: inline-block;
   }
 }
@@ -50,7 +50,7 @@
   display: inline-block;
   margin: 0;
 
-  @media screen and (min-width: $screen-sm-min) {
+  @media screen and (min-width: $screen-sm-max) {
     @include flex(0 0 35%);
   }
 }
@@ -80,11 +80,11 @@
   @include flex-direction(column);
   @include justify-content(space-between);
 
-  @media screen and (max-width: ($screen-sm-max)) {
+  @media screen and (max-width: ($screen-sm-min)) {
     padding: $u-space-default 4vw 12rem;
   }
 
-  @media screen and (min-width: $screen-sm-min) {
+  @media screen and (min-width: $screen-sm-max) {
     padding-bottom: 0;
   }
 }
