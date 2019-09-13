@@ -67,7 +67,6 @@
   @include flexbox;
   @include flex-direction(column);
   @include justify-content(space-between);
-  // padding-bottom: 12rem;
 
   @media screen and (max-width: ($screen-sm-min - 1px)) {
     padding: $u-space-default 4vw 12rem;
