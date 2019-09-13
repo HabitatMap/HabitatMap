@@ -20,12 +20,15 @@ $link-color: $blue;
 $link-hover-color: $blue-light;
 
 // viewport breakpoints
-$screen-xs-max: 480px;
-$screen-sm-min: 767px;
-$screen-sm-max: 768px;
-$screen-md-max: 1024px;
-$screen-lg-max: 1366px;
-$screen-xl-max: 1920px;
+$large-desktop-min: 1920px;
+$desktop-max: $large-desktop-min - 1px;
+$desktop-min: 1366px;
+$small-desktop-max: $desktop-min - 1px;
+$small-desktop-min: 1024px;
+$tablet-max: $small-desktop-min - 1px;
+$tablet-min: 768px;
+$large-mobile-max: $tablet-min - 1px;
+$large-mobile-min: 480px;
 
 //spacing
 $u-space-tiny: 0.5rem;

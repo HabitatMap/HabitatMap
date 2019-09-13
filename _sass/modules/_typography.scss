@@ -14,7 +14,7 @@ body {
 .heading--large {
   font-size: $base-font-size3;
 
-  @media screen and (min-width: $screen-sm-max) {
+  @media screen and (min-width: $tablet-min) {
     font-size: $base-font-size4;
   }
 }

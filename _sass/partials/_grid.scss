@@ -1,5 +1,5 @@
 .split--half {
-  @media screen and (min-width: $screen-sm-max) {
+  @media screen and (min-width: $tablet-min) {
     @include flex(0 0 50%);
 
     &:first-of-type {
