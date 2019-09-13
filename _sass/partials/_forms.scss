@@ -1,0 +1,30 @@
+$input-height: 36px;
+
+.input {
+  height: $input-height;
+  background: none;
+  border: 1px solid $gray-medium;
+  border-radius: 3px;
+  box-shadow: none;
+  padding: 0 $u-space-tiny;
+
+  &:focus {
+    border: none;
+    border-bottom: 1px solid $green;
+  }
+}
+
+.input--light {
+  @include placeholder-color($light);
+  border-color: $white;
+  border-radius: 0;
+  margin-top: $u-space-small;
+
+  &:focus {
+    border: 1px solid $white;
+  }
+}
+
+.input--full-width {
+  width: 100%;
+}
