@@ -37,3 +37,18 @@
   -ms-flex: $values;
   flex: $values;
 }
+
+@mixin placeholder-color($color) {
+  &::placeholder {
+    color: $color;
+    opacity: 1;
+  }
+
+  &:-ms-input-placeholder {
+    color: $color;
+  }
+
+  &::-ms-input-placeholder {
+    color: $color;
+  }
+}
