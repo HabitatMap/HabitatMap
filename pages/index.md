@@ -21,7 +21,7 @@ section: home
     </p>
   </div>
   <a href="#" class="badge-link badge-link--hm">
-    <span class="is-verticaly-centered">Get Airbeam</span>
+    <span class="u--vertically-centered">Get Airbeam</span>
   </a>
 </section>
 

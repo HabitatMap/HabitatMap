@@ -6,10 +6,6 @@
   background-repeat: no-repeat;
   color: white;
 
-  @media screen and (max-width: ($screen-sm-min)) {
-    padding: 0;
-  }
-
   @media screen and (min-width: $screen-sm-max) {
     background-image: url("/assets/img/svg/HabitatMap-Monogram-Footer-White.svg"),
       linear-gradient(to right, $gray-medium, $gray-medium 50%, $green 50%);
