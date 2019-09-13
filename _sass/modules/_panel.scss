@@ -3,20 +3,20 @@
   @include flex-direction(column);
   padding: $u-space-default 4vw;
 
-  @media screen and (min-width: $screen-sm-max) {
+  @media screen and (min-width: $tablet-min) {
     @include flex-direction(row);
     padding-left: 10vw;
     padding-right: 10vw;
   }
 
-  @media screen and (min-width: $screen-lg-max) {
+  @media screen and (min-width: $desktop-min) {
     padding-left: 15vw;
     padding-right: 15vw;
   }
 }
 
 .panel--footer {
-  @media screen and (max-width: $screen-sm-min) {
+  @media screen and (max-width: $large-mobile-max) {
     padding: 0;
   }
 }
@@ -29,7 +29,7 @@
   background-repeat: no-repeat;
   background-size: 100% auto;
 
-  @media screen and (min-width: $screen-sm-max) {
+  @media screen and (min-width: $tablet-min) {
     background-position: center right;
     background-size: 50% auto;
     padding-bottom: 6rem;
