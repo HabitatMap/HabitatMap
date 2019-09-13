@@ -29,33 +29,3 @@ $button-font-size: 1.1rem;
 .button--ac {
   @include button-color($ac-brand, $ac-brand, $white, $ac-brand);
 }
-
-.badge-link {
-  border-radius: 50%;
-  border-width: 1px;
-  border-style: solid;
-  display: inline-block;
-  font-family: $bold-font;
-  font-size: $base-font-size2;
-  height: 14rem;
-  line-height: 1.2;
-  padding: 1rem;
-  text-align: center;
-  width: 14rem;
-}
-
-.badge-link--hm {
-  @include button-color($white, $hm-brand, $hm-brand, $white);
-}
-
-.badge-link--light-hm {
-  @include button-color($hm-brand, $white, $white, none);
-}
-
-.badge-link--ac {
-  @include button-color($white, $white, $ac-brand, $white);
-}
-
-.badge-link--light-ac {
-  @include button-color($ac-brand, $white, $white, none);
-}
