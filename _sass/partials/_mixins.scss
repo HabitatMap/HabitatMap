@@ -24,6 +24,12 @@
   align-items: $align;
 }
 
+@mixin flex-direction($direction: row) {
+  -webkit-flex-direction: $direction;
+  -ms-flex-direction: $direction;
+  flex-direction: $direction;
+}
+
 @mixin flex($values) {
   -webkit-box-flex: $values;
   -moz-box-flex: $values;
