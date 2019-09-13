@@ -6,12 +6,14 @@
 
 .panel {
   @include flexbox;
+  @include flex-direction(column);
   padding-left: 4vw;
   padding-right: 4vw;
   padding-top: $u-space-default;
   padding-bottom: $u-space-default;
 
   @media screen and (min-width: $screen-sm-min) {
+    @include flex-direction(row);
     padding-left: 10vw;
     padding-right: 10vw;
   }
@@ -44,5 +46,13 @@
 .split--half {
   @media screen and (min-width: $screen-sm-min) {
     @include flex(0 0 50%);
+
+    &:first-of-type {
+      padding-right: $u-space-default;
+    }
+
+    &:last-of-type {
+      padding-left: $u-space-default;
+    }
   }
 }
