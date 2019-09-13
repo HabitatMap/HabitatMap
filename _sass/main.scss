@@ -1,6 +1,20 @@
 @charset "utf-8";
 
-@import "partials/fonts", "partials/variables", "partials/mixins",
-  "partials/normalize", "partials/defaults", "partials/typography",
-  "partials/grid", "partials/button", "partials/badge-link", "partials/forms",
-  "partials/images", "partials/app", "partials/footer", "partials/utilities";
+@import "config/variables";
+@import "config/fonts";
+@import "config/mixins";
+@import "config/normalize";
+@import "config/defaults";
+@import "config/utilities";
+
+@import "modules/badge-link";
+@import "modules/button";
+@import "modules/footer";
+@import "modules/header";
+@import "modules/logo";
+@import "modules/panel";
+@import "modules/typography";
+
+@import "partials/app";
+@import "partials/forms";
+@import "partials/grid";

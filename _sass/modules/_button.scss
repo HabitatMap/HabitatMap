@@ -1,17 +1,5 @@
 $button-font-size: 1.1rem;
 
-@mixin button-color($text-color, $border-color, $bg-color, $bg-color-hover) {
-  background: $bg-color;
-  border-color: $border-color;
-  color: $text-color;
-
-  &:hover,
-  &:focus {
-    background: $bg-color-hover;
-    color: $bg-color;
-  }
-}
-
 .button {
   border-width: 1px;
   border-style: solid;
