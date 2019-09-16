@@ -20,7 +20,11 @@ body {
 }
 
 .heading--medium {
-  font-size: $base-font-size3;
+  font-size: $base-font-size1;
+
+  @media screen and (min-width: $tablet-min) {
+    font-size: $base-font-size3;
+  }
 }
 
 .heading--small {
@@ -50,7 +54,11 @@ p {
 
 .p--large {
   font-family: $bold-font;
-  font-size: $base-font-size3;
+  font-size: $base-font-size1;
+
+  @media screen and (min-width: $tablet-min) {
+    font-size: $base-font-size3;
+  }
 }
 
 strong {
