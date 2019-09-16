@@ -51,6 +51,7 @@ p {
 .p--large {
   font-family: $bold-font;
   font-size: $base-font-size1;
+  margin-bottom: $u-space-small;
 
   @media screen and (min-width: $tablet-min) {
     font-size: $base-font-size3;
