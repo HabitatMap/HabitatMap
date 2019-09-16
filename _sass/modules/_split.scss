@@ -1,0 +1,11 @@
+.split--50 {
+  @media screen and (min-width: $tablet-min) {
+    @include flex(0 0 50%);
+  }
+}
+
+.split--60 {
+  @media screen and (min-width: $tablet-min) {
+    @include flex(0 0 60%);
+  }
+}
