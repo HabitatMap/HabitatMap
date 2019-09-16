@@ -31,7 +31,7 @@ section: home
   <h2 class="heading--medium">[ Slider placeholder ]</h2>
 </section>
 
-<section class="panel panel--align-center">
+<section class="panel panel--align-center ac-intro">
   <div class="split--60">
     <img class="logo logo--body" src="assets/img/svg/AirCasting-Logo-Body.svg" />
     <p class="p--large u--gray-text">
@@ -39,8 +39,8 @@ section: home
     </p>
   </div>
   <div class="split--40 u--text-right">
-    <a href="#" class="button button--ac">AirCastin Maps</a>
-    <a href="#" class="button button--ac">Download App</a>
+    <a href="#" class="button button--ac ac-intro__button">AirCastin Maps</a>
+    <a href="#" class="button button--ac ac-intro__button">Download App</a>
   </div>
 </section>
 
