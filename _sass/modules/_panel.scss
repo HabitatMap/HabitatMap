@@ -13,6 +13,11 @@
     padding-left: 15vw;
     padding-right: 15vw;
   }
+
+  @media screen and (min-width: $large-desktop-min) {
+    padding-left: 21vw;
+    padding-right: 21vw;
+  }
 }
 
 .panel--footer {
