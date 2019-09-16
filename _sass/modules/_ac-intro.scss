@@ -1,0 +1,15 @@
+.ac-intro__button {
+  width: 100%;
+
+  @media screen and (min-width: $large-mobile-min) {
+    width: 12rem;
+  }
+
+  & + & {
+    margin-top: $u-space-small;
+
+    @media screen and (min-width: $large-mobile-min) {
+      margin-left: $u-space-small;
+    }
+  }
+}

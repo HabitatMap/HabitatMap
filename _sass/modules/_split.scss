@@ -9,3 +9,9 @@
     @include flex(0 0 60%);
   }
 }
+
+.split--40 {
+  @media screen and (min-width: $tablet-min) {
+    @include flex(0 0 40%);
+  }
+}
