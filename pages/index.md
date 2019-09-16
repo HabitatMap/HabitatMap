@@ -47,3 +47,19 @@ section: home
 <section class="panel">
   <img src="assets/img/habitatmap-aircasting-map-placeholder.png" />
 </section>
+
+<section class="panel panel--quote u--bg-blue-dark">
+  <div class="split--grow">
+    <h2 class="heading heading--medium">
+      AirBeam
+      <br />
+      in the News
+    </h2>
+  </div>
+  <div class="split--60">
+    <p class="heading heading--capitalized">From WNYC:</p>
+    <q class="quote">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam scelerisque dolor orci, vitae porta ante suscipit ut. Donec cursus nibh id tellus fringilla, nec dictum mi viverra. Ut posuere magna non tellus mollis, ac fermentum nulla efficitur. Fusce libero nulla, ornare ac risus non, posuere bibendum nisi.
+    </q>
+  </div>
+</section>
