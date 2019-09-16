@@ -36,6 +36,10 @@
   }
 }
 
+.panel--align-center {
+  @include align-items(center);
+}
+
 .panel__heading {
   max-width: 29rem;
 }
