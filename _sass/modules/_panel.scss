@@ -13,6 +13,11 @@
     padding-left: 15vw;
     padding-right: 15vw;
   }
+
+  @media screen and (min-width: $large-desktop-min) {
+    padding-left: 21vw;
+    padding-right: 21vw;
+  }
 }
 
 .panel--footer {
@@ -34,8 +39,26 @@
     background-size: 50% auto;
     padding-bottom: 6rem;
   }
+
+  @media screen and (min-width: $large-desktop-min) {
+    padding-top: 9rem;
+    padding-bottom: 9rem;
+  }
+}
+
+.panel--align-center {
+  @include align-items(center);
 }
 
 .panel__heading {
   max-width: 29rem;
+}
+
+.panel--quote {
+  color: $white;
+
+  @media screen and (min-width: $tablet-min) {
+    padding-top: $u-space-big;
+    padding-bottom: $u-space-huge;
+  }
 }
