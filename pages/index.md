@@ -13,7 +13,7 @@ section: home
   </div>
 </section>
 
-<section class="panel u--bg-teal-light">
+<section class="panel panel--align-center u--bg-teal-light">
   <div class="split--60">
     <img class="logo logo--body" src="assets/img/svg/AirBeam-Logo-Body.svg" />
     <p class="p--large u--gray-text">
@@ -31,7 +31,7 @@ section: home
   <h2 class="heading--medium">[ Slider placeholder ]</h2>
 </section>
 
-<section class="panel">
+<section class="panel panel--align-center">
   <div class="split--60">
     <img class="logo logo--body" src="assets/img/svg/AirCasting-Logo-Body.svg" />
     <p class="p--large u--gray-text">
