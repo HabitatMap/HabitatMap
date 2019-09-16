@@ -14,7 +14,7 @@ section: home
 </section>
 
 <section class="panel u--bg-teal-light">
-  <div>
+  <div class="split--60">
     <img class="logo logo--body" src="assets/img/svg/AirBeam-Logo-Body.svg" />
     <p class="p--large u--gray-text">
       AirBeam is a low-cost, palm-sized air quality instrument that measures hyperlocal concentrations of harmful microscopic particles in the air, known as particulate matter, as well as humidity and temperature.
