@@ -18,6 +18,10 @@
   @include flex-direction(column);
   background: $gray-medium;
 
+  @media screen and (min-width: $tablet-min) {
+    padding-right: $u-space-default;
+  }
+
   @media screen and (max-width: $large-mobile-max) {
     padding: $u-space-default 4vw;
   }
@@ -75,6 +79,10 @@
   @include flexbox;
   @include flex-direction(column);
   @include justify-content(space-between);
+
+  @media screen and (min-width: $tablet-min) {
+    padding-left: $u-space-default;
+  }
 
   @media screen and (max-width: $large-mobile-max) {
     padding: $u-space-default 4vw 12rem;
