@@ -20,7 +20,7 @@ section: home
       AirBeam is a low-cost, palm-sized air quality instrument that measures hyperlocal concentrations of harmful microscopic particles in the air, known as particulate matter, as well as humidity and temperature.
     </p>
   </div>
-  <div class="split--40 u--text-center">
+  <div class="split--40 u--align-center">
     <a href="#" class="badge-link badge-link--hm">
       <span class="u--vertically-centered">Get Airbeam</span>
     </a>
@@ -38,7 +38,7 @@ section: home
       AirCasting is an open-source environmental data visualization platform that consists of an Android app and online mapping system.
     </p>
   </div>
-  <div class="split--40 u--text-right">
+  <div class="split--40 u--align-right">
     <a href="#" class="button button--ac ac-intro__button">AirCastin Maps</a>
     <a href="#" class="button button--ac ac-intro__button">Download App</a>
   </div>
