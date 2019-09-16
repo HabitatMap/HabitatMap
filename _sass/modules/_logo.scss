@@ -3,6 +3,11 @@
 }
 
 .logo--body {
-  height: 3.7rem;
+  height: 2.8rem;
   width: auto;
+  margin-bottom: $u-space-small;
+
+  @media screen and (min-width: $tablet-min) {
+    height: 3.7rem;
+  }
 }
