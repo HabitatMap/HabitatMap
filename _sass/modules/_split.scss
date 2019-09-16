@@ -12,6 +12,6 @@
 
 .split--grow {
   @media screen and (min-width: $tablet-min) {
-    @include flex(1 0 auto);
+    @include flex(1 1 auto);
   }
 }
