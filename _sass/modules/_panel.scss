@@ -34,6 +34,11 @@
     background-size: 50% auto;
     padding-bottom: 6rem;
   }
+
+  @media screen and (min-width: $large-desktop-min) {
+    padding-top: 9rem;
+    padding-bottom: 9rem;
+  }
 }
 
 .panel--align-center {
