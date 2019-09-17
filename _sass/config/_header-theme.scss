@@ -3,8 +3,8 @@ $header-link-color-hm: $green;
 $header-link-color-ac: $blue;
 $header-link-color-white: $white;
 
-.logo--hm {
-  width: 8.66rem;
+.logo--hm,
+.logo--hm-monogram {
   fill: $gray;
 
   [data-current="airbeam"] & {
@@ -21,12 +21,44 @@ $header-link-color-white: $white;
   }
 }
 
+.logo--hm {
+  width: 8.66rem;
+  display: none;
+
+  @media screen and (min-width: $small-desktop-min) {
+    display: block;
+  }
+}
+
+.logo--hm-monogram {
+  width: 1.4rem;
+
+  @media screen and (min-width: $small-desktop-min) {
+    display: none;
+  }
+}
+
 .logo--ac {
   display: none;
   width: 10rem;
 
+  @media screen and (min-width: $small-desktop-min) {
+    [data-current="aircasting"] & {
+      display: block;
+    }
+  }
+}
+
+.logo--ac-monogram {
+  width: 2rem;
+  display: none;
+
   [data-current="aircasting"] & {
     display: block;
+
+    @media screen and (min-width: $small-desktop-min) {
+      display: none;
+    }
   }
 }
 
