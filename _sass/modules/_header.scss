@@ -21,11 +21,23 @@ $header-font-size-desktop: 1.2rem;
   }
 }
 
+.header__brand {
+  @media screen and (max-width: $small-desktop-max) {
+    @include flexbox;
+    @include justify-content(space-between);
+    @include align-items(center);
+    padding-right: $u-space-small;
+  }
+}
+
 .header__logo {
   padding-left: $u-space-small;
   margin-right: $u-space-small;
   min-width: 11rem;
-  height: 4rem;
+
+  @media screen and (min-width: $desktop-min) {
+    height: 4rem;
+  }
 
   @media screen and (min-width: $desktop-min) {
     margin-right: 0;
@@ -38,12 +50,35 @@ $header-font-size-desktop: 1.2rem;
   }
 }
 
+.icon-menu-open {
+  .header--nav-open & {
+    display: none;
+  }
+
+  @media screen and (min-width: $small-desktop-min) {
+    display: none;
+  }
+}
+
+.icon-nav-close {
+  display: none;
+
+  .header--nav-open & {
+    display: block;
+  }
+
+  @media screen and (min-width: $small-desktop-min) {
+    display: none;
+  }
+}
+
 .header__nav {
   padding: 0 $u-space-small;
   display: none;
 
   .header--nav-open & {
     display: block;
+    margin-top: $u-space-default;
   }
 
   @media screen and (min-width: $small-desktop-min) {
