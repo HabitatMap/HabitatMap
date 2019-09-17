@@ -1,20 +1,11 @@
 $header-font-size: 1.2rem;
-$header-link-color-homepage: $gray;
-$header-link-color-hm: $green;
-$header-link-color-ac: $blue;
 
 .header {
   @include flexbox;
   @include justify-content(space-between);
   font-family: $bold-font;
   font-size: $header-font-size;
-  background-color: $teal-light;
   padding: 2.2rem 0 1rem;
-
-  [data-current="airbeam"] &,
-  [data-current="aircasting"] & {
-    background-color: $white;
-  }
 }
 
 .header__logo {
@@ -54,7 +45,6 @@ $header-link-color-ac: $blue;
 }
 
 .nav-list__link {
-  color: $header-link-color-homepage;
   display: inline-block;
   padding: $u-space-tiny;
   vertical-align: middle;
@@ -62,47 +52,10 @@ $header-link-color-ac: $blue;
   &:hover {
     opacity: 0.5;
   }
-
-  &[data-current="current page"] {
-    opacity: 0.5;
-    color: inherit;
-  }
-
-  [data-current="airbeam"] & {
-    color: $header-link-color-hm;
-  }
-
-  [data-current="aircasting"] & {
-    color: $header-link-color-ac;
-  }
 }
 
 .header__button {
-  @include button-color(
-    $header-link-color-homepage,
-    $header-link-color-homepage,
-    $teal-light,
-    $header-link-color-homepage
-  );
   font-size: $base-font-size-2;
   margin-left: $u-space-small;
   text-transform: uppercase;
-
-  [data-current="airbeam"] & {
-    @include button-color(
-      $header-link-color-hm,
-      $header-link-color-hm,
-      $white,
-      $header-link-color-hm
-    );
-  }
-
-  [data-current="aircasting"] & {
-    @include button-color(
-      $header-link-color-ac,
-      $header-link-color-ac,
-      $white,
-      $header-link-color-ac
-    );
-  }
 }
