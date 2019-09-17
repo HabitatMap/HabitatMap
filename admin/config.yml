@@ -33,8 +33,6 @@ collections:
     label_singular: "Author"
     folder: "_authors/"
     identifier_field: name
-    extension: md
-    format: frontmatter
     create: true
     editor:
       preview: false
