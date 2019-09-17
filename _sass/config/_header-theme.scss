@@ -17,7 +17,7 @@ $header-link-color-white: $white;
   }
 
   [data-current="aircasting"] & {
-    display: none;
+    fill: $blue;
   }
 
   .header--nav-open & {
@@ -39,35 +39,6 @@ $header-link-color-white: $white;
 
   @media screen and (min-width: $small-desktop-min) {
     display: none;
-  }
-}
-
-.logo--ac {
-  display: none;
-  width: 10rem;
-
-  @media screen and (min-width: $small-desktop-min) {
-    [data-current="aircasting"] & {
-      display: block;
-    }
-  }
-}
-
-.logo--ac-monogram {
-  width: 2rem;
-  display: none;
-
-  [data-current="aircasting"] & {
-    display: block;
-    fill: $blue;
-
-    @media screen and (min-width: $small-desktop-min) {
-      display: none;
-    }
-  }
-
-  .header--nav-open & {
-    fill: $white;
   }
 }
 
