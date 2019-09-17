@@ -171,3 +171,20 @@ $header-link-color-white: $white;
     );
   }
 }
+
+.icon-menu-open {
+  stroke: $gray;
+
+  [data-current="airbeam"] & {
+    stroke: $green;
+  }
+
+  [data-current="about"] &,
+  [data-current="blog"] & {
+    stroke: $white;
+  }
+
+  [data-current="aircasting"] & {
+    stroke: $blue;
+  }
+}
