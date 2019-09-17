@@ -65,7 +65,17 @@ $header-font-size-desktop: 1.2rem;
 }
 
 .nav-split--sub {
+  @include flexbox;
+  @include justify-content(space-between);
+  @include align-items(center);
   @include flex(0 0 16rem);
+  border-top: 1px solid $white;
+  padding-top: $u-space-small;
+
+  @media screen and (min-width: $small-desktop-min) {
+    padding: 0;
+    border: none;
+  }
 }
 
 .nav-list {
@@ -79,6 +89,11 @@ $header-font-size-desktop: 1.2rem;
   border-top: 1px solid $white;
   display: block;
   padding: $u-space-tiny 0;
+
+  &.nav-list__link--donate {
+    border: none;
+    display: inline-block;
+  }
 
   &:hover {
     opacity: 0.5;
