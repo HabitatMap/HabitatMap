@@ -45,6 +45,10 @@ $header-link-color-white: $white;
   [data-current="blog"] & {
     background-color: $blue;
   }
+
+  &.header--nav-open {
+    background-color: $gray;
+  }
 }
 
 .nav-list__link {
@@ -66,6 +70,10 @@ $header-link-color-white: $white;
   [data-current="about"] &,
   [data-current="blog"] & {
     color: $header-link-color-white;
+  }
+
+  .header--nav-open & {
+    color: $white;
   }
 }
 
@@ -109,6 +117,15 @@ $header-link-color-white: $white;
       $header-link-color-white,
       $header-link-color-white,
       $blue,
+      $header-link-color-white
+    );
+  }
+
+  .header--nav-open & {
+    @include button-color(
+      $header-link-color-white,
+      $header-link-color-white,
+      $gray,
       $header-link-color-white
     );
   }

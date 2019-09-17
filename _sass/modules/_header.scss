@@ -1,19 +1,33 @@
-$header-font-size: 1.2rem;
+$header-font-size-desktop: 1.2rem;
 
 .header {
-  @include flexbox;
-  @include justify-content(space-between);
   font-family: $bold-font;
-  font-size: $header-font-size;
+  font-size: $base-font-size2;
   padding: 2.2rem 0 1rem;
+
+  .header--nav-open {
+    height: 100%;
+    position: fixed;
+    width: 100%;
+  }
+
+  @media screen and (min-width: $small-desktop-min) {
+    @include flexbox;
+    @include justify-content(space-between);
+    font-size: $header-font-size-desktop;
+    height: auto;
+    position: static;
+  }
 }
 
 .header__logo {
   padding-left: $u-space-small;
-  width: 11rem;
+  margin-right: $u-space-small;
+  min-width: 11rem;
   height: 4rem;
 
   @media screen and (min-width: $desktop-min) {
+    margin-right: 0;
     padding-left: $u-space-default;
     width: 15vw;
   }
@@ -24,33 +38,52 @@ $header-font-size: 1.2rem;
 }
 
 .header__nav {
-  @include flexbox;
-  @include justify-content(space-between);
-  @include align-items(center);
-  @include flex(1);
-  padding-right: $u-space-small;
+  padding: 0 $u-space-small;
+  display: none;
+
+  @media screen and (min-width: $small-desktop-min) {
+    @include flexbox;
+    @include justify-content(space-between);
+    @include align-items(center);
+    @include flex(1);
+    padding: 0;
+    padding-right: $u-space-small;
+  }
 
   @media screen and (min-width: $desktop-min) {
     padding-right: $u-space-default;
   }
 }
 
-.header__nav-split {
+.nav-split--main {
   @include flex(0 1 43rem);
 }
 
+.nav-split--sub {
+  @include flex(0 0 16rem);
+}
+
 .nav-list {
-  @include flexbox;
-  @include justify-content(space-between);
+  @media screen and (min-width: $small-desktop-min) {
+    @include flexbox;
+    @include justify-content(space-between);
+  }
 }
 
 .nav-list__link {
-  display: inline-block;
-  padding: $u-space-tiny;
-  vertical-align: middle;
+  border-top: 1px solid $white;
+  display: block;
+  padding: $u-space-tiny 0;
 
   &:hover {
     opacity: 0.5;
+  }
+
+  @media screen and (min-width: $small-desktop-min) {
+    border: none;
+    display: inline-block;
+    padding: $u-space-tiny;
+    vertical-align: middle;
   }
 }
 
