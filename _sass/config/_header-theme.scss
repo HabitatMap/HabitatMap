@@ -19,6 +19,10 @@ $header-link-color-white: $white;
   [data-current="aircasting"] & {
     display: none;
   }
+
+  .header--nav-open & {
+    fill: $white;
+  }
 }
 
 .logo--hm {
@@ -55,10 +59,15 @@ $header-link-color-white: $white;
 
   [data-current="aircasting"] & {
     display: block;
+    fill: $blue;
 
     @media screen and (min-width: $small-desktop-min) {
       display: none;
     }
+  }
+
+  .header--nav-open & {
+    fill: $white;
   }
 }
 
