@@ -1,5 +1,5 @@
 {% assign navurl = page.url | remove: 'index.html' %}
-<div class="header__nav-split">
+<div class="nav-split--main">
   <ul class="nav-list">
     {% for item in include.navigation %}
       <li class="nav-list__element">
@@ -11,7 +11,7 @@
     {% endfor %}
   </ul>
 </div>
-<div>
+<div class="nav-split--sub">
   <a href="#" class="nav-list__link">Donate</a>
   <a href="#" class="button button--small header__button">Get Airbeam</a>
 </div>
