@@ -5,10 +5,11 @@ $header-font-size-desktop: 1.2rem;
   font-size: $base-font-size2;
   padding: 2.2rem 0 1rem;
 
-  .header--nav-open {
+  &.header--nav-open {
     height: 100%;
     position: fixed;
     width: 100%;
+    z-index: 1;
   }
 
   @media screen and (min-width: $small-desktop-min) {
@@ -40,6 +41,10 @@ $header-font-size-desktop: 1.2rem;
 .header__nav {
   padding: 0 $u-space-small;
   display: none;
+
+  .header--nav-open & {
+    display: block;
+  }
 
   @media screen and (min-width: $small-desktop-min) {
     @include flexbox;
