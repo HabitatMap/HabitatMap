@@ -1,11 +1,13 @@
-<header>
+<header class="header">
 
-  <h1>
-    <a href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
-  </h1>
+  <div class="logo header__logo">
+    <a href="{{ "/" | relative_url }}">
+      {% include /svg/logo_hm.html %}
+    </a>
+    {% include /svg/logo_ac.html %}
+  </div>
 
-  <nav>
+  <nav class="header__nav">
     {% include navigation.html navigation=site.data.navigation %}
   </nav>
-
 </header>

@@ -1,65 +1,108 @@
-// header, the first grid row
-// it is also a grid for the logo and nav
-header {
-  grid-column: full;
-  display: grid;
-  padding: 2rem;
-  @media screen and (min-width: $small-desktop-min) {
-    grid-template-columns: 1fr auto;
-    grid-column-gap: 1rem;
+$header-font-size: 1.2rem;
+$header-link-color-homepage: $gray;
+$header-link-color-hm: $green;
+$header-link-color-ac: $blue;
+
+.header {
+  @include flexbox;
+  @include justify-content(space-between);
+  font-family: $bold-font;
+  font-size: $header-font-size;
+  background-color: $teal-light;
+  padding: 2.2rem 0 1rem;
+
+  [data-current="airbeam"] &,
+  [data-current="aircasting"] & {
+    background-color: $white;
   }
 }
 
-// logo, is a grid item
-header > h1 {
+.header__logo {
+  padding-left: $u-space-small;
+  width: 11rem;
+  height: 4rem;
+
+  @media screen and (min-width: $desktop-min) {
+    padding-left: $u-space-default;
+    width: 15vw;
+  }
+
+  @media screen and (min-width: $large-desktop-min) {
+    width: 21vw;
+  }
+}
+
+.header__nav {
+  @include flexbox;
+  @include justify-content(space-between);
+  @include align-items(center);
+  @include flex(1);
+  padding-right: $u-space-small;
+
+  @media screen and (min-width: $desktop-min) {
+    padding-right: $u-space-default;
+  }
+}
+
+.header__nav-split {
+  @include flex(0 1 43rem);
+}
+
+.nav-list {
+  @include flexbox;
+  @include justify-content(space-between);
+}
+
+.nav-list__link {
+  color: $header-link-color-homepage;
   display: inline-block;
-  padding-bottom: 1rem;
-  @media screen and (min-width: $small-desktop-min) {
-    padding-bottom: 0;
+  padding: $u-space-tiny;
+  vertical-align: middle;
+
+  &:hover {
+    opacity: 0.5;
   }
-  a,
-  a:visited {
-    text-decoration: none;
-    border: 0;
-    color: $gray;
-    @media screen and (min-width: $small-desktop-min) {
-      padding: 1rem;
-    }
+
+  &[data-current="current page"] {
+    opacity: 0.5;
+    color: inherit;
   }
-  a:hover {
-    color: $blue;
+
+  [data-current="airbeam"] & {
+    color: $header-link-color-hm;
+  }
+
+  [data-current="aircasting"] & {
+    color: $header-link-color-ac;
   }
 }
 
-// main menu, is a grid item
-header > nav {
-  @media screen and (min-width: $small-desktop-min) {
-    float: right;
+.header__button {
+  @include button-color(
+    $header-link-color-homepage,
+    $header-link-color-homepage,
+    $teal-light,
+    $header-link-color-homepage
+  );
+  font-size: $base-font-size-2;
+  margin-left: $u-space-small;
+  text-transform: uppercase;
+
+  [data-current="airbeam"] & {
+    @include button-color(
+      $header-link-color-hm,
+      $header-link-color-hm,
+      $white,
+      $header-link-color-hm
+    );
   }
-  ul {
-    // flexbox is better than grid for distributing an unknown qty of children
-    display: flex;
-    li {
-      margin-right: 2rem;
-      display: inline-block;
-      @media screen and (min-width: $small-desktop-min) {
-        margin-right: 0;
-      }
-      a,
-      a:visited {
-        color: $gray;
-        text-decoration: none;
-        border: 0;
-        @media screen and (min-width: $small-desktop-min) {
-          padding: 1rem;
-        }
-        &[data-current="current page"] {
-          // you can add an active nav item style here
-        }
-      }
-      a:hover {
-        color: $blue;
-      }
-    }
+
+  [data-current="aircasting"] & {
+    @include button-color(
+      $header-link-color-ac,
+      $header-link-color-ac,
+      $white,
+      $header-link-color-ac
+    );
   }
 }
