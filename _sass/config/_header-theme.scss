@@ -1,0 +1,161 @@
+$header-link-color-homepage: $gray;
+$header-link-color-hm: $green;
+$header-link-color-ac: $blue;
+$header-link-color-white: $white;
+
+.logo--hm,
+.logo--hm-monogram {
+  fill: $gray;
+
+  [data-current="airbeam"] & {
+    fill: $green;
+  }
+
+  [data-current="about"] &,
+  [data-current="blog"] & {
+    fill: $white;
+  }
+
+  [data-current="aircasting"] & {
+    fill: $blue;
+  }
+
+  .header--nav-expanded & {
+    fill: $white;
+  }
+}
+
+.logo--hm {
+  width: 8.66rem;
+  display: none;
+
+  @media screen and (min-width: $small-desktop-min) {
+    display: block;
+  }
+}
+
+.logo--hm-monogram {
+  width: 1.4rem;
+
+  @media screen and (min-width: $small-desktop-min) {
+    display: none;
+  }
+}
+
+.header {
+  background-color: $teal-light;
+
+  [data-current="airbeam"] &,
+  [data-current="aircasting"] & {
+    background-color: $white;
+  }
+
+  [data-current="about"] & {
+    background-color: $teal;
+  }
+
+  [data-current="blog"] & {
+    background-color: $blue;
+  }
+
+  &.header--nav-expanded {
+    background-color: $gray;
+  }
+}
+
+.nav-list__link {
+  color: $header-link-color-homepage;
+
+  &[data-current="current page"] {
+    opacity: 0.5;
+    color: inherit;
+  }
+
+  [data-current="airbeam"] & {
+    color: $header-link-color-hm;
+  }
+
+  [data-current="aircasting"] & {
+    color: $header-link-color-ac;
+  }
+
+  [data-current="about"] &,
+  [data-current="blog"] & {
+    color: $header-link-color-white;
+  }
+
+  .header--nav-expanded & {
+    color: $white;
+  }
+}
+
+.header__button {
+  @include button-color(
+    $header-link-color-homepage,
+    $header-link-color-homepage,
+    $teal-light,
+    $header-link-color-homepage
+  );
+
+  [data-current="airbeam"] & {
+    @include button-color(
+      $header-link-color-hm,
+      $header-link-color-hm,
+      $white,
+      $header-link-color-hm
+    );
+  }
+
+  [data-current="aircasting"] & {
+    @include button-color(
+      $header-link-color-ac,
+      $header-link-color-ac,
+      $white,
+      $header-link-color-ac
+    );
+  }
+
+  [data-current="about"] & {
+    @include button-color(
+      $header-link-color-white,
+      $header-link-color-white,
+      $teal,
+      $header-link-color-white
+    );
+  }
+
+  [data-current="blog"] & {
+    @include button-color(
+      $header-link-color-white,
+      $header-link-color-white,
+      $blue,
+      $header-link-color-white
+    );
+  }
+
+  .header--nav-expanded & {
+    @include button-color(
+      $header-link-color-white,
+      $header-link-color-white,
+      $gray,
+      $header-link-color-white
+    );
+  }
+}
+
+.icon-nav-open {
+  stroke: $gray;
+
+  [data-current="airbeam"] & {
+    stroke: $green;
+  }
+
+  [data-current="about"] &,
+  [data-current="blog"] & {
+    stroke: $white;
+  }
+
+  [data-current="aircasting"] & {
+    stroke: $blue;
+  }
+}
