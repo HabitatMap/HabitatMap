@@ -2,7 +2,7 @@
 layout: post
 title: I'm a Blogger
 date: 2019-09-18T16:08:24.435Z
-author: Citizen X
+author: Michael Heimbinder
 thumbnail: /images/uploads/olomana-2nd-peak.jpg
 ---
 Blog blog blog
