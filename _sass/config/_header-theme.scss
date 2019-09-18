@@ -20,7 +20,7 @@ $header-link-color-white: $white;
     fill: $blue;
   }
 
-  .header--nav-open & {
+  .header--nav-expanded & {
     fill: $white;
   }
 }
@@ -58,7 +58,7 @@ $header-link-color-white: $white;
     background-color: $blue;
   }
 
-  &.header--nav-open {
+  &.header--nav-expanded {
     background-color: $gray;
   }
 }
@@ -84,7 +84,7 @@ $header-link-color-white: $white;
     color: $header-link-color-white;
   }
 
-  .header--nav-open & {
+  .header--nav-expanded & {
     color: $white;
   }
 }
@@ -133,7 +133,7 @@ $header-link-color-white: $white;
     );
   }
 
-  .header--nav-open & {
+  .header--nav-expanded & {
     @include button-color(
       $header-link-color-white,
       $header-link-color-white,
@@ -143,7 +143,7 @@ $header-link-color-white: $white;
   }
 }
 
-.icon-menu-open {
+.icon-nav-open {
   stroke: $gray;
 
   [data-current="airbeam"] & {

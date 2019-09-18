@@ -5,7 +5,7 @@ $header-font-size-desktop: 1.2rem;
   font-size: $base-font-size2;
   padding: 2.2rem 0 1rem;
 
-  &.header--nav-open {
+  &.header--nav-expanded {
     height: 100%;
     position: fixed;
     width: 100%;
@@ -50,8 +50,8 @@ $header-font-size-desktop: 1.2rem;
   }
 }
 
-.icon-menu-open {
-  .header--nav-open & {
+.icon-nav-open {
+  .header--nav-expanded & {
     display: none;
   }
 
@@ -63,7 +63,7 @@ $header-font-size-desktop: 1.2rem;
 .icon-nav-close {
   display: none;
 
-  .header--nav-open & {
+  .header--nav-expanded & {
     display: block;
   }
 
@@ -72,11 +72,11 @@ $header-font-size-desktop: 1.2rem;
   }
 }
 
-.header__nav {
+.nav {
   padding: 0 $u-space-small;
   display: none;
 
-  .header--nav-open & {
+  .header--nav-expanded & {
     display: block;
     margin-top: $u-space-default;
   }
@@ -95,11 +95,11 @@ $header-font-size-desktop: 1.2rem;
   }
 }
 
-.nav-split--main {
+.nav-main {
   @include flex(0 1 43rem);
 }
 
-.nav-split--sub {
+.nav-sub {
   @include flexbox;
   @include justify-content(space-between);
   @include align-items(center);

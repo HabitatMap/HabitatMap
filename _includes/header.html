@@ -6,11 +6,10 @@
         {% include /svg/logo_hm_monogram.html %}
       </a>
     </div>
-    {% include /svg/icon_menu.html %}
+    {% include /svg/icon_nav.html %}
     {% include /svg/icon_close.html %}
   </div>
 
-  <nav class="header__nav">
-    {% include navigation.html navigation=site.data.navigation %}
-  </nav>
+  {% include navigation.html navigation=site.data.navigation %}
+
 </header>
