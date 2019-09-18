@@ -6,10 +6,11 @@
         {% include /svg/logo_hm_monogram.html %}
       </a>
     </div>
-    {% include /svg/icon_nav.html %}
-    {% include /svg/icon_close.html %}
+    <button class="header__nav-toggle-button js--toggle-nav">
+      {% include /svg/icon_nav.html %}
+      {% include /svg/icon_close.html %}
+    </button>
   </div>
 
   {% include navigation.html navigation=site.data.navigation %}
-
 </header>
