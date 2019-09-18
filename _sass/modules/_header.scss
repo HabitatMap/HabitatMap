@@ -147,3 +147,8 @@ $header-font-size-desktop: 1.125rem;
   margin-left: $u-space-small;
   text-transform: uppercase;
 }
+
+.header__nav-toggle-button {
+  @include appearance(none);
+  background: none;
+}
