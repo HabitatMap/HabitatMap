@@ -1,65 +1,149 @@
-// header, the first grid row
-// it is also a grid for the logo and nav
-header {
-  grid-column: full;
-  display: grid;
-  padding: 2rem;
+$header-font-size-desktop: 1.2rem;
+
+.header {
+  font-family: $bold-font;
+  font-size: $base-font-size2;
+  padding: 2.2rem 0 1rem;
+
+  &.header--nav-expanded {
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+  }
+
   @media screen and (min-width: $small-desktop-min) {
-    grid-template-columns: 1fr auto;
-    grid-column-gap: 1rem;
+    @include flexbox;
+    @include justify-content(space-between);
+    font-size: $header-font-size-desktop;
+    height: auto;
+    position: static;
   }
 }
 
-// logo, is a grid item
-header > h1 {
-  display: inline-block;
-  padding-bottom: 1rem;
-  @media screen and (min-width: $small-desktop-min) {
-    padding-bottom: 0;
-  }
-  a,
-  a:visited {
-    text-decoration: none;
-    border: 0;
-    color: $gray;
-    @media screen and (min-width: $small-desktop-min) {
-      padding: 1rem;
-    }
-  }
-  a:hover {
-    color: $blue;
+.header__brand {
+  @media screen and (max-width: $small-desktop-max) {
+    @include flexbox;
+    @include justify-content(space-between);
+    @include align-items(center);
+    padding-right: $u-space-small;
   }
 }
 
-// main menu, is a grid item
-header > nav {
+.header__logo {
+  padding-left: $u-space-small;
+  margin-right: $u-space-small;
+  min-width: 11rem;
+
+  @media screen and (min-width: $desktop-min) {
+    height: 4rem;
+  }
+
+  @media screen and (min-width: $desktop-min) {
+    margin-right: 0;
+    padding-left: $u-space-default;
+    width: 15vw;
+  }
+
+  @media screen and (min-width: $large-desktop-min) {
+    width: 21vw;
+  }
+}
+
+.icon-nav-open {
+  .header--nav-expanded & {
+    display: none;
+  }
+
   @media screen and (min-width: $small-desktop-min) {
-    float: right;
+    display: none;
   }
-  ul {
-    // flexbox is better than grid for distributing an unknown qty of children
-    display: flex;
-    li {
-      margin-right: 2rem;
-      display: inline-block;
-      @media screen and (min-width: $small-desktop-min) {
-        margin-right: 0;
-      }
-      a,
-      a:visited {
-        color: $gray;
-        text-decoration: none;
-        border: 0;
-        @media screen and (min-width: $small-desktop-min) {
-          padding: 1rem;
-        }
-        &[data-current="current page"] {
-          // you can add an active nav item style here
-        }
-      }
-      a:hover {
-        color: $blue;
-      }
-    }
+}
+
+.icon-nav-close {
+  display: none;
+
+  .header--nav-expanded & {
+    display: block;
   }
+
+  @media screen and (min-width: $small-desktop-min) {
+    display: none;
+  }
+}
+
+.nav {
+  padding: 0 $u-space-small;
+  display: none;
+
+  .header--nav-expanded & {
+    display: block;
+    margin-top: $u-space-default;
+  }
+
+  @media screen and (min-width: $small-desktop-min) {
+    @include flexbox;
+    @include justify-content(space-between);
+    @include align-items(center);
+    @include flex(1);
+    padding: 0;
+    padding-right: $u-space-small;
+  }
+
+  @media screen and (min-width: $desktop-min) {
+    padding-right: $u-space-default;
+  }
+}
+
+.nav-main {
+  @include flex(0 1 43rem);
+}
+
+.nav-sub {
+  @include flexbox;
+  @include justify-content(space-between);
+  @include align-items(center);
+  @include flex(0 0 16rem);
+  border-top: 1px solid $white;
+  padding-top: $u-space-small;
+
+  @media screen and (min-width: $small-desktop-min) {
+    padding: 0;
+    border: none;
+  }
+}
+
+.nav-list {
+  @media screen and (min-width: $small-desktop-min) {
+    @include flexbox;
+    @include justify-content(space-between);
+  }
+}
+
+.nav-list__link {
+  border-top: 1px solid $white;
+  display: block;
+  padding: $u-space-tiny 0;
+
+  &.nav-list__link--donate {
+    border: none;
+    display: inline-block;
+  }
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  @media screen and (min-width: $small-desktop-min) {
+    border: none;
+    display: inline-block;
+    padding: $u-space-tiny;
+    vertical-align: middle;
+  }
+}
+
+.header__button {
+  font-size: $base-font-size-2;
+  margin-left: $u-space-small;
+  text-transform: uppercase;
 }
