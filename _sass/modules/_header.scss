@@ -5,11 +5,13 @@ $header-font-size-desktop: 1.2rem;
   font-size: $base-font-size2;
   padding: 2.2rem 0 1rem;
 
-  &.header--nav-expanded {
-    height: 100%;
-    position: fixed;
-    width: 100%;
-    z-index: 1;
+  @media screen and (max-width: $tablet-max) {
+    &.header--nav-expanded {
+      height: 100%;
+      position: fixed;
+      width: 100%;
+      z-index: 1;
+    }
   }
 
   @media screen and (min-width: $small-desktop-min) {
@@ -63,8 +65,10 @@ $header-font-size-desktop: 1.2rem;
 .icon-nav-close {
   display: none;
 
-  .header--nav-expanded & {
-    display: block;
+  @media screen and (max-width: $tablet-max) {
+    .header--nav-expanded & {
+      display: block;
+    }
   }
 
   @media screen and (min-width: $small-desktop-min) {
@@ -76,9 +80,11 @@ $header-font-size-desktop: 1.2rem;
   padding: 0 $u-space-small;
   display: none;
 
-  .header--nav-expanded & {
-    display: block;
-    margin-top: $u-space-default;
+  @media screen and (max-width: $tablet-max) {
+    .header--nav-expanded & {
+      display: block;
+      margin-top: $u-space-default;
+    }
   }
 
   @media screen and (min-width: $small-desktop-min) {

@@ -20,8 +20,10 @@ $header-link-color-white: $white;
     fill: $blue;
   }
 
-  .header--nav-expanded & {
-    fill: $white;
+  @media screen and (max-width: $tablet-max) {
+    .header--nav-expanded & {
+      fill: $white;
+    }
   }
 }
 
@@ -58,8 +60,10 @@ $header-link-color-white: $white;
     background-color: $blue;
   }
 
-  &.header--nav-expanded {
-    background-color: $gray;
+  @media screen and (max-width: $tablet-max) {
+    &.header--nav-expanded {
+      background-color: $gray;
+    }
   }
 }
 
@@ -84,8 +88,10 @@ $header-link-color-white: $white;
     color: $header-link-color-white;
   }
 
-  .header--nav-expanded & {
-    color: $white;
+  @media screen and (max-width: $tablet-max) {
+    .header--nav-expanded & {
+      color: $white;
+    }
   }
 }
 
@@ -133,13 +139,15 @@ $header-link-color-white: $white;
     );
   }
 
-  .header--nav-expanded & {
-    @include button-color(
-      $header-link-color-white,
-      $header-link-color-white,
-      $gray,
-      $header-link-color-white
-    );
+  @media screen and (max-width: $tablet-max) {
+    .header--nav-expanded & {
+      @include button-color(
+        $header-link-color-white,
+        $header-link-color-white,
+        $gray,
+        $header-link-color-white
+      );
+    }
   }
 }
 
