@@ -11,6 +11,10 @@ $header-font-size-desktop: 1.125rem;
       position: fixed;
       width: 100%;
       z-index: 1;
+
+      @media screen and (orientation: landscape) {
+        overflow: auto;
+      }
     }
   }
 
