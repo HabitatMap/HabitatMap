@@ -21,6 +21,16 @@
   }
 }
 
+.panel--leading-text {
+  padding-top: $u-space-small;
+  padding-bottom: 0;
+
+  @media screen and (min-width: $small-desktop-min) {
+    padding-top: $u-space-default;
+    padding-bottom: $u-space-small;
+  }
+}
+
 .panel--footer {
   @media screen and (max-width: $large-mobile-max) {
     padding: 0;
