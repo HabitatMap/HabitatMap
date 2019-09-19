@@ -7,7 +7,7 @@ $button-font-size: 1.1rem;
   font-family: $bold-font;
   font-size: $button-font-size;
   height: 50px;
-  padding: 0.85rem 1.3rem;
+  padding: 0.8rem 1.2rem;
   text-align: center;
 }
 
@@ -17,6 +17,10 @@ $button-font-size: 1.1rem;
 
 .button--ac {
   @include button-color($ac-brand, $ac-brand, $white, $ac-brand);
+}
+
+.button--ac-on-teal {
+  @include button-color($ac-brand, $ac-brand, $teal-light, $ac-brand);
 }
 
 .button--small {
