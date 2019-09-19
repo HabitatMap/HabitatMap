@@ -79,3 +79,4 @@ collections:
       preview: false
     fields:
       - { label: "Tag name", name: "name", widget: "string" }
+    multiple: true
