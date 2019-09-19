@@ -13,7 +13,9 @@
 }
 
 .u--align-right {
-  text-align: right;
+  @media screen and (min-width: $tablet-min) {
+    text-align: right;
+  }
 }
 
 .u--bg-teal {
