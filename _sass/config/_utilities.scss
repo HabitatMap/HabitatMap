@@ -26,6 +26,10 @@
   background-color: $teal-light;
 }
 
+.u--bg-half-teal-light {
+  background: linear-gradient(to bottom, $white, $white 50%, $teal-light 50%);
+}
+
 .u--bg-blue-dark {
   background-color: $blue-dark;
 }
