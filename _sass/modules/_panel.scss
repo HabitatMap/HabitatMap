@@ -21,6 +21,11 @@
   }
 }
 
+.panel--big-padding {
+  padding-top: $u-space-big;
+  padding-bottom: $u-space-big;
+}
+
 .panel--leading-text {
   padding-top: $u-space-small;
   padding-bottom: 0;
@@ -55,6 +60,10 @@
     padding-top: 9rem;
     padding-bottom: 9rem;
   }
+}
+
+.panel--about-intro {
+  color: $white;
 }
 
 .panel--align-center {
