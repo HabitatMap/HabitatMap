@@ -29,7 +29,7 @@ section: airbeam
 
   <div class="panel">
     <div class="split--50 split--padding-right split--order-secondary">
-      <h2 class="heading heading--medium">Why AirBeam?</h2>
+      <h2 class="heading heading--medium u--gray-text">Why AirBeam?</h2>
       <p class="p--body">
         The AirBeam was designed by HabitatMap to raise awareness of the disproportionate environmental burdens borne by low-income communities and communities of color and equip these communities with tools to advocate for equity and improved quality of life.
       </p>

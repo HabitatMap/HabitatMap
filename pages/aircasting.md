@@ -48,7 +48,7 @@ section: aircasting
 
   <div class="panel">
     <div class="split--50 split--padding-right">
-      <h2 class="heading heading--medium">How it Works</h2>
+      <h2 class="heading heading--medium u--gray-text">How it Works</h2>
       <p class="p--body">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sem libero, consectetur non vehicula in, lobortis eu ipsum. Praesent felis odio, interdum non magna eu, accumsan feugiat libero. Nunc malesuada quis augue sed volutpat. In hac habitasse platea dictumst. Mauris ligula leo, venenatis nec mi a, viverra imperdiet erat. Pellentesque vehicula eu nisi et porta. Nullam lobortis elementum mi, et bibendum velit. Praesent non justo aliquet, maximus ligula sit amet.
       </p>
