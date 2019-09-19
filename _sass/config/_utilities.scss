@@ -1,11 +1,39 @@
 // Utilitiy classes to modify any elements
 
+.u--accent-hm {
+  color: $hm-brand;
+}
+
+.u--accent-ac {
+  color: $ac-brand;
+}
+
+.u--align-center {
+  text-align: center;
+}
+
+.u--align-right {
+  text-align: right;
+}
+
+.u--bg-teal {
+  background-color: $teal;
+}
+
+.u--bg-teal-light {
+  background-color: $teal-light;
+}
+
+.u--bg-blue-dark {
+  background-color: $blue-dark;
+}
+
 .u--bold {
   font-family: $bold-font;
 }
 
-.u--tiny-text {
-  font-size: $base-font-size-2;
+.u--block {
+  display: block;
 }
 
 .u--capitalized {
@@ -17,28 +45,8 @@
   color: $gray;
 }
 
-.u--accent-hm {
-  color: $hm-brand;
-}
-
-.u--accent-ac {
-  color: $ac-brand;
-}
-
-.u--bg-teal-light {
-  background-color: $teal-light;
-}
-
-.u--bg-blue-dark {
-  background-color: $blue-dark;
-}
-
-.u--align-center {
-  text-align: center;
-}
-
-.u--align-right {
-  text-align: right;
+.u--tiny-text {
+  font-size: $base-font-size-2;
 }
 
 .u--visually-hidden {
