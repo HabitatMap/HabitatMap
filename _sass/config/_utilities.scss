@@ -22,12 +22,21 @@
   background-color: $teal;
 }
 
+.u--bg-teal-very-light {
+  background-color: $teal-very-light;
+}
+
 .u--bg-teal-light {
   background-color: $teal-light;
 }
 
-.u--bg-half-teal-light {
-  background: linear-gradient(to bottom, $white, $white 50%, $teal-light 50%);
+.u--bg-half-teal-very-light {
+  background: linear-gradient(
+    to bottom,
+    $white,
+    $white 50%,
+    $teal-very-light 50%
+  );
 }
 
 .u--bg-cyan {
