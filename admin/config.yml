@@ -45,7 +45,8 @@ collections:
           collection: "tags",
           displayFields: [name],
           searchFields: [name],
-          valueField: "name"
+          valueField: "name",
+          multiple: true
         }
   - name: "authors"
     label: "Authors"
@@ -79,4 +80,3 @@ collections:
       preview: false
     fields:
       - { label: "Tag name", name: "name", widget: "string" }
-    multiple: true
