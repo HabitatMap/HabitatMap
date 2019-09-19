@@ -15,3 +15,15 @@
     @include flex(0 0 40%);
   }
 }
+
+.split--padding-right {
+  @media screen and (min-width: $tablet-min) {
+    padding-right: $u-space-small;
+  }
+}
+
+.split--padding-left {
+  @media screen and (min-width: $tablet-min) {
+    padding-left: $u-space-small;
+  }
+}
