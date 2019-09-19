@@ -25,10 +25,20 @@ collections:
           collection: "authors",
           displayFields: [display_name],
           searchFields: [display_name],
-          valueField: "display_name",
+          valueField: "display_name"
         }
       - { label: "Featured Image", name: "thumbnail", widget: "image" }
       - { label: "Body", name: "body", widget: "markdown" }
+      - {
+          label: "Categories",
+          name: "category",
+          widget: "relation",
+          collection: "categories",
+          multiple: true,
+          displayFields: [name],
+          searchFields: [name],
+          valueField: "name"
+        }
   - name: "authors"
     label: "Authors"
     label_singular: "Author"
@@ -41,3 +51,12 @@ collections:
     fields:
       - { label: "Short Name", name: "name", widget: "string" }
       - { label: "Display Name", name: "display_name", widget: "string" }
+  - name: "categories"
+    label: "Categories"
+    label_singular: "Category"
+    folder: "_categories"
+    identifier_field: name
+    editor:
+      preview: false
+    fields:
+      - { label: "Category name", name: "name", widget: "string" }
