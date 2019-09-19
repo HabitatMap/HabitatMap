@@ -1,9 +1,9 @@
-$header-font-size-desktop: 1.2rem;
+$header-font-size-desktop: 1.125rem;
 
 .header {
   font-family: $bold-font;
   font-size: $base-font-size2;
-  padding: 2.2rem 0 1rem;
+  padding: 2rem 0 0.9rem;
 
   &.header--nav-expanded {
     height: 100%;
@@ -33,10 +33,10 @@ $header-font-size-desktop: 1.2rem;
 .header__logo {
   padding-left: $u-space-small;
   margin-right: $u-space-small;
-  min-width: 11rem;
+  min-width: 10.3rem;
 
   @media screen and (min-width: $desktop-min) {
-    height: 4rem;
+    height: 3.75rem;
   }
 
   @media screen and (min-width: $desktop-min) {
@@ -96,14 +96,14 @@ $header-font-size-desktop: 1.2rem;
 }
 
 .nav-main {
-  @include flex(0 1 43rem);
+  @include flex(0 1 40rem);
 }
 
 .nav-sub {
   @include flexbox;
   @include justify-content(space-between);
   @include align-items(center);
-  @include flex(0 0 16rem);
+  @include flex(0 0 15rem);
   border-top: 1px solid $white;
   padding-top: $u-space-small;
 
