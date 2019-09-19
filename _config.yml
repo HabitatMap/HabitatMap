@@ -31,6 +31,11 @@ url: "habitatmap.lunarlogic.io" # the base hostname & protocol for your site
 plugins:
   - jekyll-feed
 
+collections:
+  posts:
+    output: true
+    permalink: /blog/:title
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
