@@ -22,24 +22,24 @@ section: about
 
 <section class="img-full-width img-full-width--about"></section>
 
-<section>
+<section class="u--vertical-padding">
   <div class="panel">
-    <div class="split--50 split--padding-right">
+    <div class="split--60 split--padding-right">
       <h2 class="heading heading--capitilized">Our mission</h2>
       <p class="p--xlarge">
-        We make technologies accessible so communities facing disproportionate environmental burdens can advocate for equity and improved quality of life.
+        We make technologies accessible so communities facing disproportionate environmental burdens can advocate for equity and improved quality&nbsp;oflife.
       </p>
     </div>
-    <div class="split--50 split--padding-left u--align-right">
+    <div class="split--40 split--padding-left u--align-right">
       <img class="img img--alternate-small" src="assets/img/about-habitatmap-02.jpg" alt="Airbeam" />
     </div>
   </div>
 
   <div class="panel">
-    <div class="split--50 split--padding-right split--order-secondary">
-      <img class="img img--alternate-small" src="assets/img/about-habitatmap-02.jpg" alt="Airbeam" />
+    <div class="split--60 split--padding-right split--order-secondary">
+      <img class="img img--alternate-medium" src="assets/img/about-habitatmap-02.jpg" alt="Airbeam" />
     </div>
-    <div class="split--50 split--padding-left">
+    <div class="split--40 split--padding-left">
      <h2 class="heading heading--capitilized">Founder</h2>
      <p class="p--body heading heading--small">
       Sed massa ex, commodo nec velit eget, lacinia ornare risus. Integer interdum
@@ -68,7 +68,7 @@ section: about
   </div>
 </section>
 
-<section class="panel">
+<section class="panel panel--big-padding">
   <div class="split--50 split--padding-right">
     <img class="logo logo--body" alt="Airbeam" src="assets/img/svg/Airbeam-Logo-Body.svg" />
     <p class="p--body">

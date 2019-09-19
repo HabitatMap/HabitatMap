@@ -21,6 +21,11 @@
   }
 }
 
+.panel--big-padding {
+  padding-top: $u-space-big;
+  padding-bottom: $u-space-big;
+}
+
 .panel--leading-text {
   padding-top: $u-space-small;
   padding-bottom: 0;
