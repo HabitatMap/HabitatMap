@@ -26,7 +26,7 @@ section: about
   <div class="panel">
     <div class="split--60 split--padding-right">
       <h2 class="heading heading--capitilized">Our mission</h2>
-      <p class="p--xlarge">
+      <p class="p--xlarge u--gray-text">
         We make technologies accessible so communities facing disproportionate environmental burdens can advocate for equity and improved quality&nbsp;oflife.
       </p>
     </div>
