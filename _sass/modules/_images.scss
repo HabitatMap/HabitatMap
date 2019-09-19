@@ -5,3 +5,21 @@
 .img--alternate-medium {
   max-width: 500px;
 }
+
+.img--alternate-small {
+  max-width: 380px;
+}
+
+.img-full-width {
+  background-size: cover;
+  background-position: center center;
+  padding-bottom: 40%;
+
+  @media screen and (min-width: $large-desktop-min) {
+    padding-bottom: 30%;
+  }
+}
+
+.img-full-width--about {
+  background-image: url("/assets/img/about-habitatmap-01.jpg");
+}
