@@ -25,12 +25,12 @@ section: aircasting
     </div>
   </div>
 
-  <div class="panel u--bg-half-teal-light">
+  <div class="panel u--bg-half-teal-very-light">
     <img src="assets/img/habitatmap-aircasting-map-placeholder.png" alt="AirCasting Map" />
   </div>
 </section>
 
-<section class="u--bg-teal-light">
+<section class="u--bg-teal-very-light">
   <div class="panel">
     <div class="split--50 split--padding-right">
       <img class="img img--alternate-medium" src="assets/img/about-aircasting-01.jpg" alt="Airbeam device on bicycle" />
