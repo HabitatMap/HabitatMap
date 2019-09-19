@@ -59,7 +59,7 @@ section: home
   <div class="split--60 quote">
     <p class="heading u--capitalized quote__heading">From WNYC:</p>
     <blockquote class="quote__body">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam scelerisque dolor orci, vitae porta ante suscipit ut. Donec cursus nibh id tellus fringilla, nec dictum mi viverra. Ut posuere magna non tellus mollis, ac fermentum nulla efficitur. Fusce libero nulla, ornare ac risus non, posuere bibendum nisi.
+      “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam scelerisque dolor orci, vitae porta ante suscipit ut. Donec cursus nibh id tellus fringilla, nec dictum mi viverra. Ut posuere magna non tellus mollis, ac fermentum nulla efficitur. Fusce libero nulla, ornare ac risus non, posuere bibendum nisi.”
     </blockquote>
   </div>
 </section>
