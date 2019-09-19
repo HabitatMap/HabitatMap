@@ -41,7 +41,7 @@ section: airbeam
   </div>
 </section>
 
-<section class="u--bg-teal-light">
+<section class="u--bg-teal-very-light">
   <div class="panel panel--align-center ac-intro">
     <div class="split--60">
       <img class="logo logo--body" alt="AirCasting" src="assets/img/svg/AirCasting-Logo-Body.svg" />
