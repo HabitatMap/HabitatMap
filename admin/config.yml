@@ -38,6 +38,15 @@ collections:
           searchFields: [name],
           valueField: "name"
         }
+      - {
+          label: "Tags",
+          name: "tag",
+          widget: "relation",
+          collection: "tags",
+          displayFields: [name],
+          searchFields: [name],
+          valueField: "name"
+        }
   - name: "authors"
     label: "Authors"
     label_singular: "Author"
@@ -59,3 +68,13 @@ collections:
       preview: false
     fields:
       - { label: "Category name", name: "name", widget: "string" }
+  - name: "tags"
+    label: "Tags"
+    label_singular: "Tag"
+    folder: "_tags"
+    create: true
+    identifier_field: name
+    editor:
+      preview: false
+    fields:
+      - { label: "Tag name", name: "name", widget: "string" }
