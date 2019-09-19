@@ -57,6 +57,10 @@
   }
 }
 
+.panel--about-intro {
+  color: $white;
+}
+
 .panel--align-center {
   @include align-items(center);
 }

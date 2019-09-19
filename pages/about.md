@@ -3,16 +3,85 @@ layout: page
 title: About
 permalink: /about
 section: about
-intro_paragraph: |
-  This is an example of a standard Jekyll page. You can edit it with Netlify
-  CMS, accessible at `/admin/about.html` or by editing `pages/about.md` in a text editor.
 ---
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+<section class="panel panel--about-intro u--bg-teal">
+  <div class="split--50">
+    <h1 class="heading heading--large">
+      About
+      <br />
+      HabitatMap
+    </h1>
+  </div>
 
-### A heading
+  <div class="split--50">
+    <p class="heading heading--small">
+      HabitatMap is an environmental technology non-profit building open-source, free, and low-cost environmental monitoring and data visualization solutions. Our tools empower organizations and citizen scientists to measure pollution and advocate for equitable solutions to environmental health issues. We focus on low-income communities and communities of color living with disproportionate environmental burdens.
+    </p>
+  </div>
+</section>
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+<section class="img-full-width img-full-width--about"></section>
 
-#### Another heading
+<section>
+  <div class="panel">
+    <div class="split--50 split--padding-right">
+      <h2 class="heading heading--capitilized">Our mission</h2>
+      <p class="p--xlarge">
+        We make technologies accessible so communities facing disproportionate environmental burdens can advocate for equity and improved quality of life.
+      </p>
+    </div>
+    <div class="split--50 split--padding-left u--align-right">
+      <img class="img img--alternate-small" src="assets/img/about-habitatmap-02.jpg" alt="Airbeam" />
+    </div>
+  </div>
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  <div class="panel">
+    <div class="split--50 split--padding-right split--order-secondary">
+      <img class="img img--alternate-small" src="assets/img/about-habitatmap-02.jpg" alt="Airbeam" />
+    </div>
+    <div class="split--50 split--padding-left">
+     <h2 class="heading heading--capitilized">Founder</h2>
+     <p class="p--body heading heading--small">
+      Sed massa ex, commodo nec velit eget, lacinia ornare risus. Integer interdum
+     </p>
+      <p class="p--body">
+        Phasellus rutrum urna nec rhoncus semper. Curabitur rhoncus varius vestibulum. Sed sem nibh, accumsan id nulla eget, rhoncus dignissim nisl. Praesent sapien risus, egestas at ultricies non, dapibus non risus.
+      </p>
+      <a href="#" class="button">Learn more</a>
+    </div>
+  </div>
+</section>
+
+<section class="panel panel--quote u--bg-cyan">
+  <div class="split--40">
+    <h2 class="heading heading--medium">
+      HabitatMap
+      <br />
+      in the News
+    </h2>
+  </div>
+  <div class="split--60 quote">
+    <p class="heading u--capitalized quote__heading">From WNYC:</p>
+    <blockquote class="quote__body">
+      “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam scelerisque dolor orci, vitae porta ante suscipit ut. Donec cursus nibh id tellus fringilla, nec dictum mi viverra. Ut posuere magna non tellus mollis, ac fermentum nulla efficitur. Fusce libero nulla, ornare ac risus non, posuere bibendum nisi.”
+    </blockquote>
+  </div>
+</section>
+
+<section class="panel">
+  <div class="split--50 split--padding-right">
+    <img class="logo logo--body" alt="Airbeam" src="assets/img/svg/Airbeam-Logo-Body.svg" />
+    <p class="p--body">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sem libero, consectetur non vehicula in, lobortis eu ipsum. Praesent felis odio, interdum non magna eu, accumsan feugiat libero. Nunc malesuada quis augue sed volutpat.
+    </p>
+    <a href="#" class="button button--hm">Get AirBeam</a>
+
+  </div>
+  <div class="split--50 split--padding-left">
+    <img class="logo logo--body" alt="AirCasting" src="assets/img/svg/AirCasting-Logo-Body.svg" />
+    <p class="p--body">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sem libero, consectetur non vehicula in, lobortis eu ipsum. Praesent felis odio, interdum non magna eu, accumsan feugiat libero. Nunc malesuada quis augue sed volutpat.
+    </p>
+    <a href="#" class="button button--ac">AirCasting Maps</a>
+  </div>
+</section>
