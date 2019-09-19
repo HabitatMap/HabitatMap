@@ -13,7 +13,7 @@ section: airbeam
   </div>
 
   <div class="panel">
-  <div class="split--50 split--padding-right">
+    <div class="split--50 split--padding-right">
       <img class="img img--alternate-medium" src="assets/img/about-airbeam-01.jpg" alt="Airbeam device" />
     </div>
     <div class="split--50 split--padding-left">
