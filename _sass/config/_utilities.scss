@@ -30,6 +30,10 @@
   background: linear-gradient(to bottom, $white, $white 50%, $teal-light 50%);
 }
 
+.u--bg-cyan {
+  background-color: $cyan;
+}
+
 .u--bg-blue-dark {
   background-color: $blue-dark;
 }
@@ -68,6 +72,11 @@
   border: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.u--vertical-padding {
+  padding-top: $u-space-default;
+  padding-bottom: $u-space-default;
 }
 
 .u--vertically-centered {
