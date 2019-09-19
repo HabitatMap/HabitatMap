@@ -4,6 +4,7 @@ html {
 
 body {
   font-family: $body-font;
+  color: $gray-medium;
 }
 
 .heading {
@@ -36,6 +37,10 @@ body {
 
 p {
   line-height: 1.6;
+}
+
+.p--body {
+  margin-bottom: $u-space-default;
 }
 
 .p--large {
