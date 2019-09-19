@@ -28,7 +28,7 @@ $header-link-color-white: $white;
 }
 
 .logo--hm {
-  width: 8.66rem;
+  width: 8rem;
   display: none;
 
   @media screen and (min-width: $small-desktop-min) {
@@ -37,7 +37,7 @@ $header-link-color-white: $white;
 }
 
 .logo--hm-monogram {
-  width: 1.4rem;
+  width: 1.3rem;
 
   @media screen and (min-width: $small-desktop-min) {
     display: none;

@@ -1,6 +1,7 @@
 .panel {
   @include flexbox;
   @include flex-direction(column);
+  @include flex-wrap(wrap);
   padding: $u-space-default 4vw;
 
   @media screen and (min-width: $tablet-min) {
@@ -20,6 +21,16 @@
   }
 }
 
+.panel--leading-text {
+  padding-top: $u-space-small;
+  padding-bottom: 0;
+
+  @media screen and (min-width: $small-desktop-min) {
+    padding-top: $u-space-default;
+    padding-bottom: $u-space-small;
+  }
+}
+
 .panel--footer {
   @media screen and (max-width: $large-mobile-max) {
     padding: 0;
@@ -28,7 +39,7 @@
 
 .panel--hero {
   background-image: url("/assets/img/habitatmap-home-airbeam-aircasting.jpg");
-  padding-top: 6rem;
+  padding-top: 5.5rem;
   padding-bottom: 65%;
   background-position: center bottom;
   background-repeat: no-repeat;
@@ -37,7 +48,7 @@
   @media screen and (min-width: $tablet-min) {
     background-position: center right;
     background-size: 50% auto;
-    padding-bottom: 6rem;
+    padding-bottom: 5.5rem;
   }
 
   @media screen and (min-width: $large-desktop-min) {
@@ -51,7 +62,12 @@
 }
 
 .panel__heading {
-  max-width: 29rem;
+  max-width: 27rem;
+}
+
+.panel--quote,
+.panel--testimonial {
+  color: $white;
 }
 
 .panel--quote {
@@ -60,5 +76,12 @@
   @media screen and (min-width: $tablet-min) {
     padding-top: $u-space-big;
     padding-bottom: $u-space-huge;
+  }
+}
+
+.panel--testimonial {
+  @media screen and (min-width: $tablet-min) {
+    padding-top: $u-space-big;
+    padding-bottom: $u-space-big;
   }
 }
