@@ -39,7 +39,7 @@
 
 .panel--hero {
   background-image: url("/assets/img/habitatmap-home-airbeam-aircasting.jpg");
-  padding-top: 6rem;
+  padding-top: 5.5rem;
   padding-bottom: 65%;
   background-position: center bottom;
   background-repeat: no-repeat;
@@ -48,7 +48,7 @@
   @media screen and (min-width: $tablet-min) {
     background-position: center right;
     background-size: 50% auto;
-    padding-bottom: 6rem;
+    padding-bottom: 5.5rem;
   }
 
   @media screen and (min-width: $large-desktop-min) {
@@ -62,7 +62,7 @@
 }
 
 .panel__heading {
-  max-width: 29rem;
+  max-width: 27rem;
 }
 
 .panel--quote,
