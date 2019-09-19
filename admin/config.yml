@@ -30,11 +30,10 @@ collections:
       - { label: "Featured Image", name: "thumbnail", widget: "image" }
       - { label: "Body", name: "body", widget: "markdown" }
       - {
-          label: "Categories",
+          label: "Category",
           name: "category",
           widget: "relation",
           collection: "categories",
-          multiple: true,
           displayFields: [name],
           searchFields: [name],
           valueField: "name"
