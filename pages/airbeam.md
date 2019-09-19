@@ -70,7 +70,7 @@ section: airbeam
   <div class="split--60 quote">
     <p class="heading u--capitalized quote__heading">Research Institution Name:</p>
     <blockquote class="quote__body">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam scelerisque dolor orci, vitae porta ante suscipit ut. Donec cursus nibh id tellus fringilla, nec dictum mi viverra ut posuere magna non. Phasellus sodales, arcu ut feugiat molestie, mi diam eleifend lectus, at consequat tellus nibh eget nibh.
+      “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam scelerisque dolor orci, vitae porta ante suscipit ut. Donec cursus nibh id tellus fringilla, nec dictum mi viverra ut posuere magna non. Phasellus sodales, arcu ut feugiat molestie, mi diam eleifend lectus, at consequat tellus nibh eget nibh.”
     </blockquote>
   </div>
   <a href="#" class="badge-link badge-link--light-hm">
