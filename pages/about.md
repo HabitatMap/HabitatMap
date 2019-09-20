@@ -5,7 +5,7 @@ permalink: /about
 section: about
 ---
 <section class="panel panel--about-intro u--bg-teal">
-  <div class="split--50">
+  <div class="split--50 split--padding-right">
     <h1 class="heading heading--large">
       About
       <br />
@@ -13,7 +13,7 @@ section: about
     </h1>
   </div>
 
-  <div class="split--50">
+  <div class="split--50 split--padding-left">
     <p class="heading heading--small">
       HabitatMap is an environmental technology non-profit building open-source, free, and low-cost environmental monitoring and data visualization solutions. Our tools empower organizations and citizen scientists to measure pollution and advocate for equitable solutions to environmental health issues. We focus on low-income communities and communities of color living with disproportionate environmental burdens.
     </p>
