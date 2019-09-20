@@ -50,8 +50,8 @@ section: airbeam
       </p>
     </div>
     <div class="split--40 u--align-right">
-      <a href="#" class="button button--ac-on-teal ac-intro__button">See the Maps</a>
-      <a href="#" class="button button--ac-on-teal ac-intro__button">Download App</a>
+      <a href="#" class="button button--ac-on-light-teal ac-intro__button">See the Maps</a>
+      <a href="#" class="button button--ac-on-light-teal ac-intro__button">Download App</a>
     </div>
   </div>
   <div class="panel">
