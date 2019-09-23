@@ -11,32 +11,32 @@ section: airbeam
       <span class="u--accent-hm u--block">About AirBeam</span>
     </h1>
   </div>
-
-  <div class="panel">
-    <div class="split--50 split--padding-right">
-      <img class="img img--alternate-medium" src="assets/img/about-airbeam-01.jpg" alt="Airbeam device" />
+  <div class="arc-background arc-background--right-teal-light arc-background--right-center">
+    <div class="panel">
+      <div class="split--50 split--padding-right">
+        <img class="img img--alternate-medium" src="assets/img/about-airbeam-01.jpg" alt="Airbeam device" />
+      </div>
+      <div class="split--50 split--padding-left">
+        <img class="logo logo--body" alt="Airbeam" src="assets/img/svg/AirBeam-Logo-Body.svg" />
+        <p class="p--body">
+          AirBeam is a low-cost, palm-sized air quality instrument that measures hyperlocal concentrations of harmful microscopic particles in the air, known as particulate matter, as well as humidity and temperature. The AirBeam measures particulate matter with proven accuracy and when used in conjunction with the AirCasting platform - or a custom solution - helps community-based organizations, educators, academics, regulators, city managers, and citizen scientists map air pollution and organize for&nbsp;clean&nbsp;air.
+        </p>
+        <a href="#" class="badge-link badge-link--hm">
+          <span class="u--vertically-centered">Get Started with AirBeam</span>
+        </a>
+      </div>
     </div>
-    <div class="split--50 split--padding-left">
-      <img class="logo logo--body" alt="Airbeam" src="assets/img/svg/AirBeam-Logo-Body.svg" />
-      <p class="p--body">
-        AirBeam is a low-cost, palm-sized air quality instrument that measures hyperlocal concentrations of harmful microscopic particles in the air, known as particulate matter, as well as humidity and temperature. The AirBeam measures particulate matter with proven accuracy and when used in conjunction with the AirCasting platform - or a custom solution - helps community-based organizations, educators, academics, regulators, city managers, and citizen scientists map air pollution and organize for&nbsp;clean&nbsp;air.
-      </p>
-      <a href="#" class="badge-link badge-link--hm">
-        <span class="u--vertically-centered">Get Started with AirBeam</span>
-      </a>
-    </div>
-  </div>
-
-  <div class="panel">
-    <div class="split--50 split--padding-right split--order-secondary">
-      <h2 class="heading heading--medium u--gray-text">Why AirBeam?</h2>
-      <p class="p--body">
-        The AirBeam was designed by HabitatMap to raise awareness of the disproportionate environmental burdens borne by low-income communities and communities of color and equip these communities with tools to advocate for equity and improved quality of life.
-      </p>
-      <a href="#" class="button">Learn more</a>
-    </div>
-    <div class="split--50 split--padding-left u--align-right">
-      <img class="img img--alternate-medium" src="assets/img/about-airbeam-02.jpg" alt="HabitatMap Team" />
+    <div class="panel">
+      <div class="split--50 split--padding-right split--order-secondary">
+        <h2 class="heading heading--medium u--gray-text">Why AirBeam?</h2>
+        <p class="p--body">
+          The AirBeam was designed by HabitatMap to raise awareness of the disproportionate environmental burdens borne by low-income communities and communities of color and equip these communities with tools to advocate for equity and improved quality of life.
+        </p>
+        <a href="#" class="button">Learn more</a>
+      </div>
+      <div class="split--50 split--padding-left u--align-right">
+        <img class="img img--alternate-medium" src="assets/img/about-airbeam-02.jpg" alt="HabitatMap Team" />
+      </div>
     </div>
   </div>
 </section>
@@ -59,7 +59,7 @@ section: airbeam
   </div>
 </section>
 
-<section class="panel panel--testimonial u--bg-teal">
+<section class="panel panel--testimonial u--bg-teal arc-background arc-background--right-opacity-15 arc-background--right-quote">
   <div class="split--40">
     <h2 class="heading heading--medium">
       Testimonials

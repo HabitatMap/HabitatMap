@@ -30,7 +30,7 @@ section: aircasting
   </div>
 </section>
 
-<section class="u--bg-teal-very-light">
+<section class="u--bg-teal-very-light arc-background arc-background--left-white arc-background--left-center">
   <div class="panel">
     <div class="split--50 split--padding-right">
       <img class="img img--alternate-medium" src="assets/img/about-aircasting-01.jpg" alt="Airbeam device on bicycle" />
@@ -60,7 +60,7 @@ section: aircasting
   </div>
 </section>
 
-<section class="panel panel--quote u--bg-blue-very-dark">
+<section class="panel panel--quote u--bg-blue-very-dark arc-background arc-background--left-opacity-15 arc-background--left-quote">
   <div class="split--40">
     <h2 class="heading heading--medium">
       AirBeam
