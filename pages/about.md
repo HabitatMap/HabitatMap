@@ -22,7 +22,7 @@ section: about
 
 <section class="img-full-width img-full-width--about"></section>
 
-<section class="u--vertical-padding">
+<section class="arc-background arc-background--left-teal-light arc-background--left-center u--vertical-padding">
   <div class="panel">
     <div class="split--60 split--padding-right">
       <h2 class="heading heading--capitilized">Our mission</h2>
@@ -52,7 +52,7 @@ section: about
   </div>
 </section>
 
-<section class="panel panel--quote u--bg-cyan">
+<section class="panel panel--quote u--bg-cyan arc-background arc-background--right-opacity-15 arc-background--right-quote">
   <div class="split--40">
     <h2 class="heading heading--medium">
       HabitatMap

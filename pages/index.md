@@ -13,7 +13,7 @@ section: home
   </div>
 </section>
 
-<section class="panel panel--align-center u--bg-teal-light">
+<section class="panel panel--align-center u--bg-teal-light arc-background arc-background--right-opacity-50 arc-background--right-bottom">
   <div class="split--60">
     <img class="logo logo--body" alt="Airbeam" src="assets/img/svg/AirBeam-Logo-Body.svg" />
     <p class="p--large u--gray-text">
@@ -48,7 +48,7 @@ section: home
   <img src="assets/img/habitatmap-aircasting-map-placeholder.png" alt="AirCasting Map" />
 </section>
 
-<section class="panel panel--quote u--bg-blue-dark">
+<section class="panel panel--quote u--bg-blue-dark arc-background arc-background--left-opacity-15 arc-background--left-quote">
   <div class="split--40">
     <h2 class="heading heading--medium">
       AirBeam
