@@ -4,7 +4,7 @@ title: Chuppa chups
 date: 2019-09-18T18:26:54.455Z
 author: Michael Heimbinder
 thumbnail: /images/uploads/thelan_1920.jpg
-category: Health
+category: Education
 tag:
   - Instruments
   - Performance
