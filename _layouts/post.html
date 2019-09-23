@@ -1,22 +1,35 @@
 ---
 layout: default
 ---
-{% assign author = page.author %}
 
-<h2>{{ page.title }}</h2>
+<div class="post-header">
+  {% if page.categories %}
+    <small class="post-header__cagory">
+      {{ page.categories.first }}
+    </small>
+  {% endif %}
 
-<time datetime="{{ page.date }}">
-  <small>
-    <strong>{{ page.date | date_to_string }}</strong>
-    {% if author %}
-      by {{ author.name }}
-    {% endif %}
-  </small>
-</time>
+  <h2 class="post-header__title">{{ page.title }}</h2>
 
-{% include page-intro.html %}
+  {% if page.author %}
+    <small class="post-header__author">
+      by {{ page.author }}
+    </div>
+  {% endif %}
+</div>
 
 {{ content }}
+
+<div>
+  <strong>
+    PUBLISHED:
+    <time datetime="{{ page.date }}">
+      <strong>{{ page.date | date_to_string }}</strong>
+    </time>
+    <br/>
+    TAGS: {{ page.tags | join: ', ' }}
+  </strong>
+</div>
 
 <nav aria-label="Adjacent Posts">
   <ul>
