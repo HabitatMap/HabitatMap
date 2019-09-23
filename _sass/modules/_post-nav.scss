@@ -1,0 +1,16 @@
+.post-nav {
+  display: flex;
+  width: 100%;
+
+  li {
+    flex: 1 1 30%;
+
+    &:nth-child(2) {
+      text-align: center;
+    }
+
+    &:nth-child(3) {
+      text-align: right;
+    }
+  }
+}
