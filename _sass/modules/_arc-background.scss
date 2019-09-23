@@ -1,0 +1,100 @@
+.arc-background {
+  background-repeat: no-repeat;
+  background-size: 10rem 10rem;
+
+  @media screen and (min-width: $tablet-min) {
+    background-size: 19rem 19rem;
+  }
+}
+
+.arc-background--right-opacity-15 {
+  background-image: url("/assets/img/svg/Air-Icon_right--opacity15.svg");
+}
+
+.arc-background--left-opacity-15 {
+  background-image: url("/assets/img/svg/Air-Icon_left--opacity15.svg");
+}
+
+.arc-background--right-opacity-50 {
+  background-image: url("/assets/img/svg/Air-Icon_right--opacity50.svg");
+}
+
+.arc-background--left-opacity-50 {
+  background-image: url("/assets/img/svg/Air-Icon_left--opacity50.svg");
+}
+
+.arc-background--right-white {
+  background-image: url("/assets/img/svg/Air-Icon_right--white.svg");
+}
+
+.arc-background--left-white {
+  background-image: url("/assets/img/svg/Air-Icon_left--white.svg");
+}
+
+.arc-background--right-teal-light {
+  background-image: url("/assets/img/svg/Air-Icon_right--teal-light.svg");
+}
+
+.arc-background--left-teal-light {
+  background-image: url("/assets/img/svg/Air-Icon_left--teal-light.svg");
+}
+
+.arc-background--left-quote {
+  background-position: top 4rem left;
+
+  @media screen and (min-width: $tablet-min) {
+    background-position: bottom 4rem left 8vw;
+  }
+
+  @media screen and (min-width: $desktop-min) {
+    background-position: bottom 4rem left 13vw;
+  }
+}
+
+.arc-background--right-quote {
+  background-position: bottom 4rem right;
+
+  @media screen and (min-width: $tablet-min) {
+    background-position: bottom 4rem right 8vw;
+  }
+
+  @media screen and (min-width: $desktop-min) {
+    background-position: bottom 4rem right 13vw;
+  }
+}
+
+.arc-background--left-center {
+  background-position: top 40% left;
+
+  @media screen and (min-width: $tablet-min) {
+    background-position: top 40% left 8vw;
+  }
+
+  @media screen and (min-width: $desktop-min) {
+    background-position: top 40% left 13vw;
+  }
+}
+
+.arc-background--right-center {
+  background-position: top 60% right;
+
+  @media screen and (min-width: $tablet-min) {
+    background-position: top 55% right 8vw;
+  }
+
+  @media screen and (min-width: $desktop-min) {
+    background-position: center right 13vw;
+  }
+}
+
+.arc-background--right-bottom {
+  background-position: bottom right;
+
+  @media screen and (min-width: $tablet-min) {
+    background-position: bottom right 8vw;
+  }
+
+  @media screen and (min-width: $desktop-min) {
+    background-position: bottom right 13vw;
+  }
+}
