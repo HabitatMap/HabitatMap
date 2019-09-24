@@ -3,6 +3,7 @@
 }
 
 .slide {
+  overflow: hidden;
   position: relative;
 
   @media screen and (max-width: $large-mobile-max) {
