@@ -9,3 +9,28 @@
 .post-header__title {
   margin: $u-space-small 0 $u-space-big;
 }
+
+.post-footer {
+  @include flex(0 0 100%);
+  font-family: $bold-font;
+  font-size: $base-font-size-1;
+  margin-top: $u-space-default;
+  line-height: 1.6;
+}
+
+.post-nav {
+  border-top: 1px solid $teal-light;
+  font-family: $bold-font;
+  font-size: $base-font-size-1;
+  padding: $u-space-default 0;
+}
+
+.post-content {
+  @include flex(0 0 100%);
+  max-width: 47rem;
+  margin: 0 auto;
+}
+
+.post-content p {
+  margin: 0 0 $u-space-small;
+}
