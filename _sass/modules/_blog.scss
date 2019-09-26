@@ -1,0 +1,11 @@
+.post-header {
+  font-family: $bold-font;
+}
+
+.post-header__category {
+  text-decoration: underline;
+}
+
+.post-header__title {
+  margin: $u-space-small 0 $u-space-big;
+}

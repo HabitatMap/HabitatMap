@@ -2,15 +2,15 @@
 layout: default
 ---
 
-<div class="panel">
+<div class="panel panel--blog-hero">
   <div class="post-header">
     {% if page.categories %}
-      <small class="post-header__cagory">
+      <small class="u--capitalized post-header__category">
         {{ page.categories.first }}
       </small>
     {% endif %}
 
-    <h2 class="post-header__title">{{ page.title }}</h2>
+    <h2 class="heading heading--large post-header__title">{{ page.title }}</h2>
 
     {% if page.author %}
       <small class="post-header__author">
