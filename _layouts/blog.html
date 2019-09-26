@@ -1,6 +1,9 @@
 ---
 layout: default
 ---
+
+<h1 class="u--visually-hidden">TakingSpace Blog</h1>
+
 <div class="panel panel--blog-hero featured-post">
   <div class="split--50 split--padding-right post-header">
     <small class="u--capitalized post-header__category">
@@ -15,15 +18,30 @@ layout: default
   <img src="/assets/img/featured-post.jpg" class="post-header__image"/>
 </div>
 
+<div class="panel">
+  <ul class="category-list">
+    <li>
+      <a href="#" class="category-list__link button button--ac">Education</a>
+    </li>
+    <li>
+      <a href="#" class="category-list__link button button--ac">Health</a>
+    </li>
+    <li>
+      <a href="#" class="category-list__link button button--ac">Open Source</a>
+    </li>
+    <li>
+      <a href="#" class="category-list__link button button--ac">Sensors & Instruments</a>
+    </li>
+  </ul>
+</div>
+
 <section class="panel">
 
-  <h1 class="u--visually-hidden">TakingSpace Blog</h1>
-
-  <ul class="posts-list posts-list--list-view">
+  <ul class="post-list post-list--list-view">
     {% for post in site.posts %}
       <li class="post-list__item">
           {% if post.category %}
-            <h2>{{post.category}}</h2>
+            <a href="#" class="link post-list__category heading u--capitalized">{{post.category}}</a>
           {% endif %}
 
         <h2 class="posts__title heading heading--small"><a href="{{ post.url }}">{{ post.title }}</a></h2>
