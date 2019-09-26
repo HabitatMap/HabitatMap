@@ -1,5 +1,6 @@
 ---
 layout: post
+section: blog
 title: Chuppa chups
 date: 2019-09-18T18:26:54.455Z
 author: Michael Heimbinder
