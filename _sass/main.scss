@@ -7,6 +7,7 @@
 @import "config/defaults";
 @import "config/utilities";
 @import "config/header-theme";
+@import "config/typography";
 
 @import "modules/ac-intro";
 @import "modules/arc-background";
@@ -21,7 +22,5 @@
 @import "modules/post-nav";
 @import "modules/quote";
 @import "modules/split";
-@import "modules/typography";
 
-@import "partials/app";
 @import "partials/forms";
