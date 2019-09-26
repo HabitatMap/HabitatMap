@@ -2,30 +2,60 @@
 layout: default
 ---
 
-<h2>{{ page.title }}</h2>
+<h1 class="u--visually-hidden">TakingSpace Blog</h1>
 
-{% include page-intro.html %}
+<div class="panel panel--blog-hero featured-post">
 
-{{ content }}
+  <div class="split--50 split--padding-right post-header">
+    <small class="u--capitalized post-header__category">
+      Category
+    </small>
+    <h1 class="heading heading--medium post-header__title post-header__title--featured">
+      Using Citizen Science & Open Source Tools to Promote Community Health
+    </h1>
+    <a href="#" class="post-header__read-more">Read more</a>
+  </div>
 
-<section>
+  <img src="/assets/img/featured-post.jpg" class="post-header__image"/>
 
-  <h3>Posts</h3>
+</div>
 
-  <ul>
+<div class="panel categories">
+
+  <ul class="category-list">
+    <li>
+      <a href="#" class="category-list__link button button--ac">Education</a>
+    </li>
+    <li>
+      <a href="#" class="category-list__link button button--ac">Health</a>
+    </li>
+    <li>
+      <a href="#" class="category-list__link button button--ac">Open Source</a>
+    </li>
+    <li>
+      <a href="#" class="category-list__link button button--ac">Sensors & Instruments</a>
+    </li>
+  </ul>
+
+  <button class="js--posts-toggle u--capitalized"></button>
+
+</div>
+
+<section class="panel">
+
+  <ul class="post-list">
     {% for post in site.posts %}
-    {% assign author = post.author %}
-      <li>
-        <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+      <li class="post-list__item">
+          <div class="post-list__thumbnail"></div>
+          {% if post.category %}
+            <a href="#" class="link post-list__category heading u--capitalized">{{post.category}}</a>
+          {% endif %}
+
+        <h2 class="post-list__title heading heading--small"><a href="{{ post.url }}">{{ post.title }}</a></h2>
         <time datetime="{{ post.date }}">
-          <small>
-            <strong>{{ post.date | date_to_string }}</strong>
-            {% if author %}
-              by {{ author }}
-            {% endif %}
-          </small>
         </time>
-        {{ post.excerpt | strip_newlines | truncate: 180 }}
+        <p>{{ post.excerpt | strip_newlines | truncate: 180 }}</p>
+        <a href="{{ post.url }}" class="post-list__read-more">Read more</a>
       </li>
     {% endfor %}
   </ul>
