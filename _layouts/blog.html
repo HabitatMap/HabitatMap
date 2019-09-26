@@ -1,29 +1,33 @@
 ---
 layout: default
 ---
+<div class="panel panel--blog-hero featured-post">
+  <div class="split--50 split--padding-right post-header">
+    <small class="u--capitalized post-header__category">
+      Category
+    </small>
+    <h1 class="heading heading--medium post-header__title post-header__title--featured">
+      Using Citizen Science & Open Source Tools to Promote Community Health
+    </h1>
+    <a href="#" class="post-header__read-more">Read more</a>
+  </div>
 
-<h2>{{ page.title }}</h2>
+  <img src="/assets/img/featured-post.jpg" class="post-header__image"/>
+</div>
 
-{% include page-intro.html %}
+<section class="panel">
 
-{{ content }}
+  <h1 class="u--visually-hidden">TakingSpace Blog</h1>
 
-<section>
-
-  <h3>Posts</h3>
-
-  <ul>
+  <ul class="posts-list posts-list--list-view">
     {% for post in site.posts %}
-    {% assign author = post.author %}
-      <li>
-        <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+      <li class="post-list__item">
+          {% if post.category %}
+            <h2>{{post.category}}</h2>
+          {% endif %}
+
+        <h2 class="posts__title heading heading--small"><a href="{{ post.url }}">{{ post.title }}</a></h2>
         <time datetime="{{ post.date }}">
-          <small>
-            <strong>{{ post.date | date_to_string }}</strong>
-            {% if author %}
-              by {{ author }}
-            {% endif %}
-          </small>
         </time>
         {{ post.excerpt | strip_newlines | truncate: 180 }}
       </li>
