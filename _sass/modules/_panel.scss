@@ -65,6 +65,11 @@
   color: $white;
 }
 
+.panel--blog-hero {
+  background-color: $blue;
+  color: $white;
+}
+
 .panel--align-center {
   @include align-items(center);
 }
