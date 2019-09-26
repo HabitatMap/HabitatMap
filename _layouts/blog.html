@@ -40,6 +40,7 @@ layout: default
   <ul class="post-list post-list--list-view">
     {% for post in site.posts %}
       <li class="post-list__item">
+          <div class="post-list__thumbnail"></div>
           {% if post.category %}
             <a href="#" class="link post-list__category heading u--capitalized">{{post.category}}</a>
           {% endif %}
