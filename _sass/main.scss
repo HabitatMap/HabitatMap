@@ -7,20 +7,22 @@
 @import "config/defaults";
 @import "config/utilities";
 @import "config/header-theme";
+@import "config/typography";
 
 @import "modules/ac-intro";
 @import "modules/arc-background";
 @import "modules/badge-link";
+@import "modules/blog";
 @import "modules/button";
 @import "modules/footer";
 @import "modules/header";
 @import "modules/images";
 @import "modules/logo";
 @import "modules/panel";
+@import "modules/post-nav";
 @import "modules/quote";
 @import "modules/slider";
 @import "modules/split";
-@import "modules/typography";
 
-@import "partials/app";
+@import "partials/categories";
 @import "partials/forms";

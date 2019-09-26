@@ -2,46 +2,57 @@
 layout: default
 ---
 
-<div class="post-header">
-  {% if page.categories %}
-    <small class="post-header__cagory">
-      {{ page.categories.first }}
-    </small>
-  {% endif %}
+<div class="panel panel--blog-hero">
+  <div class="post-header">
+    {% if page.categories %}
+      <small class="u--capitalized post-header__category">
+        {{ page.categories.first }}
+      </small>
+    {% endif %}
 
-  <h2 class="post-header__title">{{ page.title }}</h2>
+    <h1 class="heading heading--large post-header__title post-header__title--featured">{{ page.title }}</h1>
 
-  {% if page.author %}
-    <small class="post-header__author">
-      by {{ page.author }}
+    {% if page.author %}
+      <small class="post-header__author">
+        by {{ page.author }}
+      </small>
+    {% endif %}
+  </div>
+</div>
+
+<div class="panel">
+  <div class="post-content">
+    <img class="post-content__featured-image" src="{{ page.thumbnail }}" />
+
+    {{ content }}
+
+    <div class="post-footer">
+      <strong>
+        PUBLISHED:
+        <time datetime="{{ page.date }}">
+          <strong>{{ page.date | date_to_string }}</strong>
+        </time>
+        <br/>
+        TAGS: {{ page.tags | join: ', ' }}
+      </strong>
     </div>
-  {% endif %}
+  </div>
 </div>
 
-{{ content }}
-
-<div>
-  <strong>
-    PUBLISHED:
-    <time datetime="{{ page.date }}">
-      <strong>{{ page.date | date_to_string }}</strong>
-    </time>
-    <br/>
-    TAGS: {{ page.tags | join: ', ' }}
-  </strong>
-</div>
-
-<nav aria-label="Adjacent Posts">
-  <ul>
-    {% if page.previous.url %}
+  <nav class="panel" aria-label="Adjacent Posts">
+    <ul class="post-nav">
+      {% if page.previous.url %}
+        <li>
+          <a href="{{page.previous.url}}" class="link" rel="prev">&laquo; {{page.previous.title}}</a>
+        </li>
+      {% endif %}
       <li>
-        <a href="{{page.previous.url}}" rel="prev">&laquo; {{page.previous.title}}</a>
+        <a href="/blog" class="link u--capitalized">Back to all posts</a>
       </li>
-    {% endif %}
-    {% if page.next.url %}
-      <li>
-        <a href="{{page.next.url}}" rel="next">{{page.next.title}} &raquo;</a>
-      </li>
-    {% endif %}
-  </ul>
-</nav>
+      {% if page.next.url %}
+        <li>
+          <a href="{{page.next.url}}" class="link" rel="next">{{page.next.title}} &raquo;</a>
+        </li>
+      {% endif %}
+    </ul>
+  </nav>

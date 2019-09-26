@@ -1,0 +1,18 @@
+.categories {
+  @include align-items(flex-end);
+}
+
+.category-list {
+  @media screen and (min-width: $small-desktop-min) {
+    margin-top: $u-space-big;
+  }
+  li {
+    display: inline-block;
+  }
+}
+
+.category-list__link {
+  height: auto;
+  margin: 0 $u-space-tiny $u-space-tiny 0;
+  padding: 0.35rem 0.5rem 0.45rem;
+}
