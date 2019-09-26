@@ -19,6 +19,10 @@ $button-font-size: 1.1rem;
   @include button-color($ac-brand, $ac-brand, $white, $ac-brand);
 }
 
+.button--ac-on-teal {
+  @include button-color($white, $white, $teal, $white);
+}
+
 .button--ac-on-light-teal {
   @include button-color($ac-brand, $ac-brand, $teal-very-light, $ac-brand);
 }
