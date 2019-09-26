@@ -27,8 +27,18 @@ section: home
   </div>
 </section>
 
-<section class="panel">
-  <h2 class="heading--medium">[ Slider placeholder ]</h2>
+<section class="slider">
+  <div class="panel u--bg-teal slide">
+    <div class="split--50 slide__story">
+      <h2 class="heading heading--capitilized">Who is using Airbeam?</h2>
+      <h3 class="heading heading--medium">Company name</h3>
+      <p class="p--body">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non interdum nisi. Suspendisse dictum risus vitae elementum venenatis. Duis mollis, arcu quis dignissim vehicula, diam nisi elementum libero, at suscipit felis metus ut arcu.
+      </p>
+      <a href="#" class="button button--ac-on-teal">More User Stories</a>
+    </div>
+    <img src="/assets/img/about-habitatmap-01.jpg" class="slide__photo" />
+  </div>
 </section>
 
 <section class="panel panel--align-center ac-intro">

@@ -1,0 +1,36 @@
+.slider {
+  color: $white;
+}
+
+.slide {
+  overflow: hidden;
+  position: relative;
+
+  @media screen and (max-width: $large-mobile-max) {
+    padding-bottom: 0;
+  }
+}
+
+.slide__photo {
+  width: calc(100% + 8vw);
+  margin-top: $u-space-small;
+  margin-left: -4vw;
+  max-width: none;
+
+  @media screen and (min-width: $tablet-min) {
+    height: 100%;
+    left: 50%;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: auto;
+  }
+}
+
+.slide__story {
+  padding: $u-space-default 0 $u-space-tiny;
+
+  @media screen and (min-width: $tablet-min) {
+    padding: $u-space-default $u-space-default $u-space-default 0;
+  }
+}
