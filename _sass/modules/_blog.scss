@@ -1,10 +1,4 @@
-.posts-list {
-  @media screen and (min-width: $small-desktop-min) {
-    margin-top: $u-space-big;
-  }
-}
-
-.posts-list--list-view {
+.post-list--list-view {
   max-width: $narrow-content;
 }
 
@@ -12,7 +6,13 @@
   margin-bottom: $u-space-default;
 }
 
-.posts__title {
+.post-list__category {
+  display: inline-block;
+  margin: 0 0 $u-space-small;
+  text-decoration: underline;
+}
+
+.post__title {
   margin-bottom: 1rem;
 }
 
