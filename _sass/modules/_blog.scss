@@ -1,8 +1,10 @@
-.post-list--list-view {
+.post-list {
   max-width: $narrow-content;
 }
 
 .post-list--grid-view {
+  max-width: none;
+
   @media screen and (min-width: $tablet-min) {
     @include flexbox();
     @include flex-wrap(wrap);
@@ -22,26 +24,37 @@
 }
 
 .post-list__thumbnail {
-  background-color: $gray;
-  margin-bottom: $u-space-small;
-  padding-bottom: 65%;
+  display: none;
 
-  .post-list--list-view & {
-    display: none;
+  .post-list--grid-view & {
+    display: block;
+    background-color: #ccc;
+    margin-bottom: $u-space-small;
+    padding-bottom: 65%;
   }
 }
 
 .post-list__category {
-  display: inline-block;
-  margin: 0 0 $u-space-small;
-  text-decoration: underline;
+  display: none;
 
-  .post-list--list-view & {
-    display: none;
+  .post-list--grid-view & {
+    display: inline-block;
+    margin: 0 0 $u-space-small;
+    text-decoration: underline;
   }
 }
 
-.post__title {
+.post-list__read-more {
+  display: none;
+
+  .post-list--grid-view & {
+    color: $gray-medium;
+    display: inline-block;
+    margin-top: $u-space-small;
+  }
+}
+
+.post-list__title {
   margin-bottom: 1rem;
 }
 
@@ -123,4 +136,11 @@
 
 .post-content p {
   margin: 0 0 $u-space-small;
+}
+
+// temporary
+.js--posts-grid-toggle {
+  background-color: $gray;
+  width: 3rem;
+  height: 2rem;
 }
