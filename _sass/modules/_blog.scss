@@ -139,8 +139,18 @@
 }
 
 // temporary
-.js--posts-grid-toggle {
-  background-color: $gray;
-  width: 3rem;
-  height: 2rem;
+.js--posts-toggle {
+  color: $blue-dark;
+  font-family: $bold-font;
+  padding: 1rem;
+
+  &:after {
+    content: "grid view";
+  }
+
+  &.post-toggle--list-view {
+    &:after {
+      content: "list view";
+    }
+  }
 }

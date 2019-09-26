@@ -1,3 +1,7 @@
+.categories {
+  @include align-items(flex-end);
+}
+
 .category-list {
   @media screen and (min-width: $small-desktop-min) {
     margin-top: $u-space-big;
