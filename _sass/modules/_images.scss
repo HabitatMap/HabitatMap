@@ -2,6 +2,10 @@
   display: inline-block;
 }
 
+.img--margin-top {
+  margin-top: $u-space-default;
+}
+
 .img--alternate-medium {
   max-width: 500px;
 }
