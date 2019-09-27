@@ -55,7 +55,9 @@ section: home
 </section>
 
 <section class="panel">
-  <img src="assets/img/habitatmap-aircasting-map-placeholder.png" alt="AirCasting Map" />
+  <div>
+    <img src="assets/img/habitatmap-aircasting-map-placeholder.png" alt="AirCasting Map" />
+  </div>
 </section>
 
 <section class="panel panel--quote u--bg-blue-dark arc-background arc-background--left-opacity-15 arc-background--left-quote">
