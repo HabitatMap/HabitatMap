@@ -1,5 +1,5 @@
 .post-list {
-  max-width: $narrow-content;
+  max-width: $medium-content;
 }
 
 .post-list--grid-view {
@@ -85,7 +85,7 @@
     position: absolute;
     bottom: -1rem;
     width: 50%;
-    max-width: $narrow-content;
+    max-width: $medium-content;
   }
 
   @media screen and (min-width: $small-desktop-min) {
@@ -122,7 +122,7 @@
 
 .post-content {
   @include flex(0 0 100%);
-  max-width: $narrow-content;
+  max-width: $medium-content;
   margin: 0 auto;
 }
 

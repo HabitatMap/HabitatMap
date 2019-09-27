@@ -36,6 +36,17 @@ body {
   text-transform: uppercase;
 }
 
+.heading--underlined {
+  border-bottom: 1px solid $green;
+  display: block;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+
+.heading--underlined--ac {
+  border-color: $blue;
+}
+
 .caption {
   font-family: $bold-font;
   font-size: $base-font-size-1;
@@ -70,6 +81,10 @@ p {
   @media screen and (min-width: $tablet-min) {
     font-size: 2rem;
   }
+}
+
+.page-title {
+  margin-bottom: $u-space-default;
 }
 
 strong {
