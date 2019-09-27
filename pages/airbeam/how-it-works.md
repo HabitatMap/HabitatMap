@@ -88,7 +88,7 @@ section: airbeam
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sit amet placerat mauris. Fusce et sollicitudin leo. Aliquam at felis diam. Nullam id erat molestie, sagittis augue volutpat, vestibulum ipsum. Mauris vel convallis ante. Integer eget vestibulum nisl, ut feugiat tortor.
       </p>
       <div class="u--align-center">
-        <a href="#" class="badge-link badge-link--hm">
+        <a href="/airbeam/buy-it-now" class="badge-link badge-link--hm">
           <span class="u--vertically-centered">Get Started with AirBeam</span>
         </a>
       </div>

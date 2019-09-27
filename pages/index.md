@@ -21,7 +21,7 @@ section: home
     </p>
   </div>
   <div class="split--40 u--align-center">
-    <a href="#" class="badge-link badge-link--hm">
+    <a href="/airbeam/buy-it-now" class="badge-link badge-link--hm">
       <span class="u--vertically-centered">Get Airbeam</span>
     </a>
   </div>
