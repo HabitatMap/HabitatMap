@@ -61,13 +61,21 @@
   }
 }
 
-.panel--about-intro {
+.panel--about-intro,
+.panel--faq-intro,
+.panel--blog-hero {
   color: $white;
+}
+
+.panel--faq-intro {
+  @media screen and (min-width: $tablet-min) {
+    padding-top: $u-space-big;
+    padding-bottom: $u-space-big;
+  }
 }
 
 .panel--blog-hero {
   background-color: $blue;
-  color: $white;
 }
 
 .panel--align-center {
