@@ -11,6 +11,7 @@ $header-link-color-white: $white;
     fill: $green;
   }
 
+  [data-current="faq"] &,
   [data-current="about"] &,
   [data-current="blog"] & {
     fill: $white;
@@ -52,6 +53,10 @@ $header-link-color-white: $white;
     background-color: $white;
   }
 
+  [data-current="faq"] & {
+    background-color: $green;
+  }
+
   [data-current="about"] & {
     background-color: $teal;
   }
@@ -83,6 +88,7 @@ $header-link-color-white: $white;
     color: $header-link-color-ac;
   }
 
+  [data-current="faq"] &,
   [data-current="about"] &,
   [data-current="blog"] & {
     color: $header-link-color-white;
@@ -130,6 +136,15 @@ $header-link-color-white: $white;
     );
   }
 
+  [data-current="faq"] & {
+    @include button-color(
+      $header-link-color-white,
+      $header-link-color-white,
+      $green,
+      $header-link-color-white
+    );
+  }
+
   [data-current="blog"] & {
     @include button-color(
       $header-link-color-white,
@@ -158,6 +173,7 @@ $header-link-color-white: $white;
     stroke: $green;
   }
 
+  [data-current="faq"] &,
   [data-current="about"] &,
   [data-current="blog"] & {
     stroke: $white;
