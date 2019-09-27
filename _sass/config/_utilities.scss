@@ -68,6 +68,22 @@
   color: $gray;
 }
 
+.u--margin-top-big {
+  margin-top: $u-space-default;
+
+  @media screen and (min-width: $tablet-min) {
+    margin-top: $u-space-big;
+  }
+}
+
+.u--margin-top-huge {
+  margin-top: $u-space-default;
+
+  @media screen and (min-width: $tablet-min) {
+    margin-top: $u-space-huge;
+  }
+}
+
 .u--tiny-text {
   font-size: $base-font-size-2;
 }
@@ -81,6 +97,18 @@
   border: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.u--mobile-hidden {
+  @media screen and (max-width: $large-mobile-max) {
+    display: none;
+  }
+}
+
+.u--tablet-hidden {
+  @media screen and (min-width: $tablet-min) {
+    display: none;
+  }
 }
 
 .u--vertical-padding {

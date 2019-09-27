@@ -1,0 +1,9 @@
+.container--narrow {
+  max-width: $narrow-content;
+}
+
+.container--centered {
+  @media screen and (min-width: $tablet-min) {
+    margin: 0 auto;
+  }
+}
