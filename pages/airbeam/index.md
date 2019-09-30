@@ -55,7 +55,9 @@ section: airbeam
     </div>
   </div>
   <div class="panel">
-    <img src="/assets/img/habitatmap-aircasting-map-placeholder.png" alt="AirCasting Map" />
+    <div>
+      <img src="/assets/img/habitatmap-aircasting-map-placeholder.png" alt="AirCasting Map" />
+    </div>
   </div>
 </section>
 
