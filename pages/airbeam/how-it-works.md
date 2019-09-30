@@ -4,7 +4,7 @@ title: Airbeam - How It Works
 permalink: /airbeam/how-it-works
 section: airbeam
 ---
-<section class="panel">
+<section class="panel arc-background arc-background--right-teal-light arc-background--how-it-works">
   <div class="split--50 split--padding-right split--order-secondary">
     <h1 class="heading heading--large u--gray-text u--mobile-hidden">
       Intro lorem ipsum dolor sit amet conse tetur adipi scing elit.
