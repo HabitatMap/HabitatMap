@@ -22,7 +22,7 @@ section: airbeam
       <input class="input input--quantity" type="number"  min="1" value="1" name="quantity">
       <p class="heading heading--small shop-airbeam__price">Total: $249</p>
       <p class="caption shop-airbeam__caption">
-        Tax and shipping will be calculated at checkout.
+        Shipping costs will be calculated at checkout.
       </p>
       <a href="/airbeam/buy-it-now" class="badge-link badge-link--hm">
         <span class="u--vertically-centered">Check Out <br /> with PayPal</span>

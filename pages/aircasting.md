@@ -54,7 +54,7 @@ section: aircasting
       <p class="p--body">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sem libero, consectetur non vehicula in, lobortis eu ipsum. Praesent felis odio, interdum non magna eu, accumsan feugiat libero. Nunc malesuada quis augue sed volutpat. In hac habitasse platea dictumst. Mauris ligula leo, venenatis nec mi a, viverra imperdiet erat. Pellentesque vehicula eu nisi et porta. Nullam lobortis elementum mi, et bibendum velit. Praesent non justo aliquet, maximus ligula sit amet.
       </p>
-      <a href="#" class="button">Learn more</a>
+      <a href="/airbeam/how-it-works" class="button">Learn more</a>
     </div>
     <div class="split--50 split--padding-left u--align-right">
       <img class="img img--alternate-medium" src="assets/img/about-aircasting-02.jpg" alt="AirCasting App on Mobile" />
