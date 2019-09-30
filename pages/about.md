@@ -52,7 +52,7 @@ section: about
   </div>
 </section>
 
-<section class="panel panel--quote u--bg-cyan arc-background arc-background--right-opacity-15 arc-background--right-quote">
+<section class="panel panel--quote u--bg-cyan arc-background arc-background--right-opacity-15 arc-background--right-bottom-quote">
   <div class="split--40">
     <h2 class="heading heading--medium">
       HabitatMap
