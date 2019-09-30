@@ -110,3 +110,27 @@
     background-position: bottom right 13vw;
   }
 }
+
+.arc-background--how-it-works {
+  background-position: bottom 28rem right;
+
+  @media screen and (min-width: $tablet-min) {
+    background-position: bottom 20rem right 5vw;
+  }
+
+  @media screen and (min-width: $small-desktop-min) {
+    background-position: bottom 5rem right 5vw;
+  }
+
+  @media screen and (min-width: $desktop-min) {
+    background-position: bottom 3rem right 10vw;
+  }
+
+  @media screen and (min-width: 1420px) {
+    background-position: bottom -2rem right 10vw;
+  }
+
+  @media screen and (min-width: $large-desktop-min) {
+    background-position: bottom 0 right 16vw;
+  }
+}
