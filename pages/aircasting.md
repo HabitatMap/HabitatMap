@@ -17,11 +17,13 @@ section: aircasting
       <p class="p--body">
         The application collects measurements from HabitatMap’s AirBeam and other health and environmental monitoring devices and relays it to the maps. With thousands of AirBeams measuring particulate matter worldwide and more than XXX million data points, the AirCasting platform is one of the largest open-source databases of  community-collected air quality measurements ever created. By documenting and leveraging health and environmental data to inform personal decision-making and public policy, the AirCasting platform empowers community-based organizations, educators, academics, regulators, city managers, and citizen scientists to map air pollution  and organize for clean air.
       </p>
-      <a href="#" class="button button--ac ac-intro__button">AirCasting Maps</a>
-      <a href="#" class="button button--ac ac-intro__button">Download App</a>
     </div>
     <div class="split--40 split--padding-left">
       <img class="logo logo--body" alt="AirCasting" src="assets/img/svg/AirCasting-Logo-Body.svg" />
+    </div>
+    <div>
+      <a href="#" class="button button--ac ac-intro__button">AirCasting Maps</a>
+      <a href="#" class="button button--ac ac-intro__button">Download App</a>
     </div>
   </div>
 
