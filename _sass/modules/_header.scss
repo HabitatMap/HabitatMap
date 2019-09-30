@@ -10,6 +10,7 @@ $header-font-size-desktop: 1.125rem;
   @media screen and (max-width: $tablet-max) {
     &.header--nav-expanded {
       height: 100%;
+      overflow-y: auto;
       position: fixed;
       width: 100%;
       z-index: 1;
