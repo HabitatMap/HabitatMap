@@ -21,7 +21,7 @@ section: aircasting
     <div class="split--40 split--padding-left">
       <img class="logo logo--body" alt="AirCasting" src="assets/img/svg/AirCasting-Logo-Body.svg" />
     </div>
-    <div>
+    <div class="split--order-secondary">
       <a href="#" class="button button--ac ac-intro__button">AirCasting Maps</a>
       <a href="#" class="button button--ac ac-intro__button">Download App</a>
     </div>
