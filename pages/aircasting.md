@@ -26,7 +26,9 @@ section: aircasting
   </div>
 
   <div class="panel u--bg-half-teal-very-light">
-    <img src="assets/img/habitatmap-aircasting-map-placeholder.png" alt="AirCasting Map" />
+    <div>
+      <img src="assets/img/habitatmap-aircasting-map-placeholder.png" alt="AirCasting Map" />
+    </div>
   </div>
 </section>
 
