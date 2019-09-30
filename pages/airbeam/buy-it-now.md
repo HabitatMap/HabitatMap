@@ -11,7 +11,7 @@ section: airbeam
     </h1>
   </div>
   <div class="panel arc-background arc-background--right-teal-light arc-background--right-bottom">
-    <div class="split--50 split--padding-right">
+    <div class="split--50 split--padding-right split--order-secondary">
       <h2 class="heading heading--medium u--gray-text">
         AirBeam Monitor
       </h2>
