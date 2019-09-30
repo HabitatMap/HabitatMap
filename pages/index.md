@@ -13,7 +13,7 @@ section: home
   </div>
 </section>
 
-<section class="panel panel--align-center u--bg-teal-light arc-background arc-background--right-opacity-50 arc-background--right-bottom">
+<section class="panel panel--airbeam panel--align-center arc-background arc-background--right-opacity-50 arc-background--right-bottom">
   <div class="split--60">
     <img class="logo logo--body" alt="Airbeam" src="assets/img/svg/AirBeam-Logo-Body.svg" />
     <p class="p--large u--gray-text">
