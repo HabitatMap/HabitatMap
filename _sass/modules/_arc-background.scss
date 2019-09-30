@@ -43,16 +43,28 @@
   background-position: top 4rem left;
 
   @media screen and (min-width: $tablet-min) {
-    background-position: bottom 4rem left 8vw;
+    background-position: top 9rem left 8vw;
   }
 
   @media screen and (min-width: $desktop-min) {
-    background-position: bottom 4rem left 13vw;
+    background-position: top 9rem left 13vw;
   }
 }
 
 .arc-background--right-quote {
-  background-position: bottom 4rem right;
+  background-position: top 4rem right;
+
+  @media screen and (min-width: $tablet-min) {
+    background-position: top 14rem right 8vw;
+  }
+
+  @media screen and (min-width: $desktop-min) {
+    background-position: top 14rem right 13vw;
+  }
+}
+
+.arc-background--right-bottom-quote {
+  background-position: top 4rem right;
 
   @media screen and (min-width: $tablet-min) {
     background-position: bottom 4rem right 8vw;
