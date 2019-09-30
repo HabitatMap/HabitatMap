@@ -4,6 +4,8 @@ $header-font-size-desktop: 1.125rem;
   font-family: $bold-font;
   font-size: $base-font-size2;
   padding: 2rem 0 0.9rem;
+  position: relative;
+  z-index: 1;
 
   @media screen and (max-width: $tablet-max) {
     &.header--nav-expanded {
@@ -19,7 +21,7 @@ $header-font-size-desktop: 1.125rem;
     @include justify-content(space-between);
     font-size: $header-font-size-desktop;
     height: auto;
-    position: static;
+    position: relative;
   }
 }
 
@@ -136,7 +138,8 @@ $header-font-size-desktop: 1.125rem;
     display: inline-block;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     opacity: 0.5;
   }
 
@@ -145,6 +148,51 @@ $header-font-size-desktop: 1.125rem;
     display: inline-block;
     padding: $u-space-tiny;
     vertical-align: middle;
+  }
+}
+
+.subnav-list {
+  @include transition(all 0.25s ease);
+  min-width: 14rem;
+
+  @media screen and (max-width: $tablet-max) {
+    padding: 0.5rem 0 1rem;
+  }
+
+  @media screen and (min-width: $small-desktop-min) {
+    opacity: 0;
+    left: 0;
+    padding: 0.5rem 0 0;
+    position: absolute;
+    pointer-events: none;
+    top: 100%;
+  }
+}
+
+.nav-list__element {
+  position: relative;
+
+  &:hover {
+    .subnav-list {
+      @media screen and (min-width: $small-desktop-min) {
+        opacity: 1;
+        pointer-events: auto;
+      }
+    }
+  }
+}
+
+.subnav-list__element {
+  margin-bottom: 4px;
+}
+
+.subnav-list__link {
+  display: inline-block;
+  padding: 0.5rem;
+
+  @media screen and (max-width: $tablet-max) {
+    font-size: $base-font-size1;
+    padding: 0.25rem 0;
   }
 }
 

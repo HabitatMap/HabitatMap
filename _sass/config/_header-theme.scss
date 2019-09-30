@@ -101,6 +101,78 @@ $header-link-color-white: $white;
   }
 }
 
+.subnav-list__link {
+  background-color: $white;
+  color: $header-link-color-homepage;
+
+  &:hover,
+  &:focus {
+    color: rgba($header-link-color-homepage, 0.5);
+  }
+
+  [data-current="airbeam"] & {
+    background-color: $green;
+    color: $white;
+
+    &:hover,
+    &:focus {
+      color: rgba($white, 0.5);
+    }
+  }
+
+  [data-current="aircasting"] & {
+    background-color: $blue;
+    color: $white;
+
+    &:hover,
+    &:focus {
+      color: rgba($white, 0.5);
+    }
+  }
+
+  [data-current="about"] & {
+    background-color: $white;
+    color: $teal;
+
+    &:hover,
+    &:focus {
+      color: rgba($teal, 0.5);
+    }
+  }
+
+  [data-current="faq"] & {
+    background-color: $white;
+    color: $green;
+
+    &:hover,
+    &:focus {
+      color: rgba($green, 0.5);
+    }
+  }
+
+  [data-current="blog"] & {
+    background-color: $white;
+    color: $blue;
+
+    &:hover,
+    &:focus {
+      color: rgba($blue, 0.5);
+    }
+  }
+
+  @media screen and (max-width: $tablet-max) {
+    .header--nav-expanded & {
+      background: none;
+      color: $white;
+
+      &:hover,
+      &:focus {
+        color: rgba($white, 0.5);
+      }
+    }
+  }
+}
+
 .header__button {
   @include button-color(
     $header-link-color-homepage,
