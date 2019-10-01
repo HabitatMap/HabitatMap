@@ -68,12 +68,14 @@
 }
 
 .panel--about-intro,
+.panel--history-intro,
 .panel--faq-intro,
 .panel--blog-hero {
   color: $white;
 }
 
-.panel--faq-intro {
+.panel--faq-intro,
+.panel--history-intro {
   @media screen and (min-width: $tablet-min) {
     padding-top: $u-space-big;
     padding-bottom: $u-space-big;
