@@ -22,7 +22,7 @@ layout: default
   <ul class="category-list">
     {% for category in site.categories %}
       <li>
-        <a href="#" class="category-list__link button button--ac">{{ category.name }}</a>
+        <a href="{{ category.url }}" class="category-list__link button button--ac">{{ category.name }}</a>
       </li>
     {% endfor %}
   </ul>
@@ -35,7 +35,8 @@ layout: default
     {% for post in site.posts %}
       <li class="post-list__item">
         <div class="post-list__thumbnail"></div>
-        <a href="#" class="link post-list__category heading u--capitalized">{{post.category}}</a>
+        <a href="#" class="link post-list__category heading u--capitalized">{{ post.category }}</a>
+        <!-- replace with link to category, need to compare by name I guess (site.categories where name == post.category) -->
 
         <h2 class="post-list__title heading heading--small">
           <a href="{{ post.url }}">{{ post.title }}</a>
