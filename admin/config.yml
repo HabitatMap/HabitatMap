@@ -27,7 +27,7 @@ collections:
           searchFields: [display_name],
           valueField: "display_name",
           required: false,
-          description: "If you don't set an author, it will be Michael Heimbinder."
+          hint: "If you don't set an author, it will be Michael Heimbinder."
         }
       - { label: "Featured Image", name: "thumbnail", widget: "image" }
       - { label: "Body", name: "body", widget: "markdown" }
