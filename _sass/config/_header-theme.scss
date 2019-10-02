@@ -281,6 +281,10 @@ $header-link-color-white: $white;
     [data-current="faq"] & {
       @include button-color($green, $green, $header-link-color-white, $green);
     }
+
+    [data-current="home"] & {
+      @include button-color($gray, $gray, $header-link-color-white, $gray);
+    }
   }
 
   @media screen and (max-width: $tablet-max) {
