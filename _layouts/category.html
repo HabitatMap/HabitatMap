@@ -1,0 +1,49 @@
+---
+layout: default
+---
+
+<h1 class="u--visually-hidden">TakingSpace Blog</h1>
+
+<div class="panel panel--blog-hero">
+  <div class="post-header">
+    <h1 class="heading heading--large post-header__title post-header__title--featured">
+      {{ page.name }}
+    </h1>
+  </div>
+</div>
+
+<div class="panel categories">
+  <ul class="category-list">
+    {% for category in site.categories %}
+      <li>
+        <a href="{{ category.url }}" class="category-list__link button button--ac">{{ category.name }}</a>
+        <!-- set active class if page.name == category.name -->
+      </li>
+    {% endfor %}
+  </ul>
+
+  <button class="js--posts-toggle u--capitalized"></button>
+</div>
+
+<section class="panel">
+  <ul class="post-list">
+    {% for post in site.posts %}
+      {% if post.category == page.name %}
+        <li class="post-list__item">
+          <div class="post-list__thumbnail"></div>
+          <a href="{{ post.category.url }}" class="link post-list__category heading u--capitalized">{{ post.category }}</a>
+
+          <h2 class="post-list__title heading heading--small">
+            <a href="{{ post.url }}">{{ post.title }}</a>
+          </h2>
+
+          <time datetime="{{ post.date }}"></time>
+          <p>{{ post.excerpt | strip_newlines | truncate: 180 }}</p>
+          <a href="{{ post.url }}" class="post-list__read-more">Read more</a>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</section>
+
+<script defer type="text/javascript" src="/assets/js/posts.js"></script>
