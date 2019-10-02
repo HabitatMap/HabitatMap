@@ -1,7 +1,7 @@
 $header-font-size-desktop: 1.125rem;
 
 .header {
-  @include transition(all 0.3s ease);
+  @include transition(all 0.5s ease);
   font-family: $bold-font;
   font-size: $base-font-size2;
   padding: 2rem 0 0.9rem;
