@@ -5,7 +5,6 @@ layout: default
 <h1 class="u--visually-hidden">TakingSpace Blog</h1>
 
 <div class="panel panel--blog-hero featured-post">
-
   <div class="split--50 split--padding-right post-header">
     <small class="u--capitalized post-header__category">
       Category
@@ -17,49 +16,40 @@ layout: default
   </div>
 
   <img src="/assets/img/featured-post.jpg" class="post-header__image"/>
-
 </div>
 
 <div class="panel categories">
-
   <ul class="category-list">
-    <li>
-      <a href="#" class="category-list__link button button--ac">Education</a>
-    </li>
-    <li>
-      <a href="#" class="category-list__link button button--ac">Health</a>
-    </li>
-    <li>
-      <a href="#" class="category-list__link button button--ac">Open Source</a>
-    </li>
-    <li>
-      <a href="#" class="category-list__link button button--ac">Sensors & Instruments</a>
-    </li>
+    {% for category in site.categories %}
+      <li>
+        <a href="#" class="category-list__link button button--ac">{{ category.name }}</a>
+      </li>
+    {% endfor %}
   </ul>
 
   <button class="js--posts-toggle u--capitalized"></button>
-
 </div>
 
 <section class="panel">
-
   <ul class="post-list">
     {% for post in site.posts %}
       <li class="post-list__item">
-          <div class="post-list__thumbnail"></div>
-          {% if post.category %}
-            <a href="#" class="link post-list__category heading u--capitalized">{{post.category}}</a>
-          {% endif %}
+        <div class="post-list__thumbnail"></div>
 
-        <h2 class="post-list__title heading heading--small"><a href="{{ post.url }}">{{ post.title }}</a></h2>
-        <time datetime="{{ post.date }}">
-        </time>
+        {% if post.category %}
+          <a href="#" class="link post-list__category heading u--capitalized">{{post.category}}</a>
+        {% endif %}
+
+        <h2 class="post-list__title heading heading--small">
+          <a href="{{ post.url }}">{{ post.title }}</a>
+        </h2>
+
+        <time datetime="{{ post.date }}"></time>
         <p>{{ post.excerpt | strip_newlines | truncate: 180 }}</p>
         <a href="{{ post.url }}" class="post-list__read-more">Read more</a>
       </li>
     {% endfor %}
   </ul>
-
 </section>
 
 <script defer type="text/javascript" src="/assets/js/posts.js"></script>
