@@ -35,6 +35,8 @@ collections:
   posts:
     output: true
     permalink: /blog/:title
+  categories:
+    output: true
 
 defaults:
   -
