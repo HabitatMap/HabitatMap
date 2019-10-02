@@ -74,7 +74,7 @@ section: about
     <p class="p--body">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sem libero, consectetur non vehicula in, lobortis eu ipsum. Praesent felis odio, interdum non magna eu, accumsan feugiat libero. Nunc malesuada quis augue sed volutpat.
     </p>
-    <a href="#" class="button button--hm">Get AirBeam</a>
+    <a href="/airbeam" class="button button--hm">Learn more</a>
 
   </div>
   <div class="split--50 split--padding-left">
