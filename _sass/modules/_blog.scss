@@ -120,24 +120,6 @@
   padding: $u-space-default 0;
 }
 
-.post-content {
-  @include flex(0 0 100%);
-  max-width: $medium-content;
-  margin: 0 auto;
-}
-
-.post-content__featured-image {
-  margin: 0 0 $u-space-default;
-
-  @media screen and (min-width: $desktop-min) {
-    margin: 0 0 $u-space-big;
-  }
-}
-
-.post-content p {
-  margin: 0 0 $u-space-small;
-}
-
 // temporary
 .js--posts-toggle {
   background: none;
