@@ -9,6 +9,4 @@ tag:
 ---
 I am a blogger blogger blogger.  Cheetos are disgusting.  Cheese doodles.  Dodles dodles
 
-
-
 ![Pretty](/images/uploads/wallpaper-2462730.jpg "Mountains")
