@@ -1,11 +1,19 @@
 $header-font-size-desktop: 1.125rem;
 
 .header {
+  @include transition(all 0.3s ease);
   font-family: $bold-font;
   font-size: $base-font-size2;
   padding: 2rem 0 0.9rem;
-  position: relative;
+  position: fixed;
+  top: 0;
+  width: 100%;
   z-index: 1;
+
+  &.sticky {
+    padding: 1rem 0 0.5rem;
+    background-color: white;
+  }
 
   @media screen and (max-width: $tablet-max) {
     &.header--nav-expanded {
@@ -22,7 +30,6 @@ $header-font-size-desktop: 1.125rem;
     @include justify-content(space-between);
     font-size: $header-font-size-desktop;
     height: auto;
-    position: relative;
   }
 }
 
