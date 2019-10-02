@@ -1,0 +1,56 @@
+.post-content {
+  @include flex(0 0 100%);
+  max-width: $medium-content;
+  margin: 0 auto;
+}
+
+.post-content__featured-image {
+  margin: 0 0 $u-space-default;
+
+  @media screen and (min-width: $desktop-min) {
+    margin: 0 0 $u-space-big;
+  }
+}
+
+.post-content {
+  h2 {
+    @extend .heading;
+    @extend .heading--medium;
+  }
+
+  p {
+    margin: 0 0 $u-space-small;
+  }
+
+  ul,
+  ol {
+    margin-left: 1rem;
+  }
+
+  ul {
+    list-style: initial;
+  }
+
+  ol {
+    list-style: decimal;
+  }
+
+  li {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+  }
+
+  a {
+    text-decoration: underline;
+
+    &:hover,
+    &:focus {
+      opacity: 0.5;
+    }
+  }
+
+  blockquote {
+    font-family: $quote-font;
+    font-size: $base-font-size1;
+  }
+}
