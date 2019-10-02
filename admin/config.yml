@@ -25,7 +25,8 @@ collections:
           collection: "authors",
           displayFields: [display_name],
           searchFields: [display_name],
-          valueField: "display_name"
+          valueField: "display_name",
+          required: false
         }
       - { label: "Featured Image", name: "thumbnail", widget: "image" }
       - { label: "Body", name: "body", widget: "markdown" }
