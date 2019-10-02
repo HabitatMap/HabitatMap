@@ -3,6 +3,8 @@ $header-link-color-hm: $green;
 $header-link-color-ac: $blue;
 $header-link-color-white: $white;
 
+// Logo themes
+
 .logo--hm,
 .logo--hm-monogram {
   fill: $gray;
@@ -37,7 +39,7 @@ $header-link-color-white: $white;
 
   @media screen and (max-width: $tablet-max) {
     .header--nav-expanded & {
-      fill: $white;
+      fill: $white !important;
     }
   }
 }
@@ -58,6 +60,8 @@ $header-link-color-white: $white;
     display: none;
   }
 }
+
+// Header background themes
 
 .header {
   background-color: $teal-light;
@@ -89,6 +93,8 @@ $header-link-color-white: $white;
     }
   }
 }
+
+// Main navigation links themes
 
 .nav-list__link {
   color: $header-link-color-homepage;
@@ -128,10 +134,12 @@ $header-link-color-white: $white;
 
   @media screen and (max-width: $tablet-max) {
     .header--nav-expanded & {
-      color: $white;
+      color: $white !important;
     }
   }
 }
+
+// Subnavigation links themes
 
 .subnav-list__link {
   background-color: $white;
@@ -205,6 +213,8 @@ $header-link-color-white: $white;
   }
 }
 
+// Header Button themes
+
 .header__button {
   @include button-color(
     $header-link-color-homepage,
@@ -258,17 +268,41 @@ $header-link-color-white: $white;
     );
   }
 
+  .sticky & {
+    [data-current="about"] & {
+      @include button-color($teal, $teal, $header-link-color-white, $teal);
+      color: $teal;
+    }
+
+    [data-current="blog"] & {
+      @include button-color($blue, $blue, $header-link-color-white, $blue);
+    }
+
+    [data-current="faq"] & {
+      @include button-color($green, $green, $header-link-color-white, $green);
+    }
+  }
+
   @media screen and (max-width: $tablet-max) {
     .header--nav-expanded & {
-      @include button-color(
-        $header-link-color-white,
-        $header-link-color-white,
-        $gray,
-        $header-link-color-white
-      );
+      [data-current="about"] &,
+      [data-current="airbeam"] &,
+      [data-current="aircasting"] &,
+      [data-current="blog"] &,
+      [data-current="home"] &,
+      [data-current="faq"] & {
+        @include button-color(
+          $header-link-color-white,
+          $header-link-color-white,
+          $gray,
+          $header-link-color-white
+        );
+      }
     }
   }
 }
+
+// Icon for mobile nav themes
 
 .icon-nav-open {
   stroke: $gray;
