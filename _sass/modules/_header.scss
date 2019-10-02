@@ -12,7 +12,6 @@ $header-font-size-desktop: 1.125rem;
 
   &.sticky {
     padding: 1rem 0 0.5rem;
-    background-color: white;
   }
 
   @media screen and (max-width: $tablet-max) {
@@ -34,6 +33,7 @@ $header-font-size-desktop: 1.125rem;
 }
 
 .header__brand {
+  height: 3.5rem;
   @media screen and (max-width: $small-desktop-max) {
     @include flexbox;
     @include justify-content(space-between);
