@@ -18,6 +18,7 @@ layout: default
   <img src="/assets/img/featured-post.jpg" class="post-header__image"/>
 </div>
 
+<!-- todo: extract to partial -->
 <div class="panel categories">
   <ul class="category-list">
     {% for category in site.categories %}
@@ -30,6 +31,7 @@ layout: default
   <button class="js--posts-toggle u--capitalized"></button>
 </div>
 
+<!-- todo: extract to partial -->
 <section class="panel">
   <ul class="post-list">
     {% for post in site.posts %}
