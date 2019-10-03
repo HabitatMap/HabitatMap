@@ -4,6 +4,7 @@ layout: default
 
 <h1 class="u--visually-hidden">TakingSpace Blog</h1>
 
+<!-- todo: extract to partial (will be used on tag page) -->
 <div class="panel panel--blog-hero">
   <div class="post-header">
     <h1 class="heading heading--large post-header__title post-header__title--featured">
@@ -12,6 +13,7 @@ layout: default
   </div>
 </div>
 
+<!-- todo: extract to partial (use same one as in blog) -->
 <div class="panel categories">
   <ul class="category-list">
     {% for category in site.categories %}
@@ -25,6 +27,7 @@ layout: default
   <button class="js--posts-toggle u--capitalized"></button>
 </div>
 
+<!-- todo: extract to partial (use same one as in blog) -->
 <section class="panel">
   <ul class="post-list">
     {% for post in site.posts %}
