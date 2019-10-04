@@ -116,6 +116,11 @@
 
 .post-footer__link {
   text-decoration: none;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
 }
 
 .post-nav {
