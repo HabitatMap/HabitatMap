@@ -37,14 +37,22 @@ collections:
     permalink: /blog/:title
   categories:
     output: true
+    permalink: /blog/categories/:name
 
 defaults:
   -
     scope:
-      type: "posts"
+      type: posts
     values:
-      section: "blog"
       author: "Michael Heimbinder"
+      section: blog
+  -
+    scope:
+      type: categories
+    values:
+      layout: category
+      section: blog
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
