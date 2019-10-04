@@ -31,23 +31,10 @@ layout: default
   <button class="js--posts-toggle u--capitalized"></button>
 </div>
 
-<!-- todo: extract to partial -->
 <section class="panel">
   <ul class="post-list">
     {% for post in site.posts %}
-      <li class="post-list__item">
-        <div class="post-list__thumbnail"></div>
-        <a href="#" class="link post-list__category heading u--capitalized">{{ post.category }}</a>
-        <!-- replace with link to category, need to compare by name I guess (site.categories where name == post.category) -->
-
-        <h2 class="post-list__title heading heading--small">
-          <a href="{{ post.url }}">{{ post.title }}</a>
-        </h2>
-
-        <time datetime="{{ post.date }}"></time>
-        <p>{{ post.excerpt | strip_newlines | truncate: 180 }}</p>
-        <a href="{{ post.url }}" class="post-list__read-more">Read more</a>
-      </li>
+      {% include post-snippet.html post = post %}
     {% endfor %}
   </ul>
 </section>
