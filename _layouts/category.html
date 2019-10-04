@@ -18,7 +18,9 @@ layout: default
   <ul class="category-list">
     {% for category in site.categories %}
       <li>
-        <a href="{{ category.url }}" class="category-list__link button button--ac">{{ category.name }}</a>
+        <a href="{{ category.url }}" class="category-list__link button button--ac" {% if category.url == page.url %} data-current {% endif %}>
+          {{ category.name }}
+        </a>
         <!-- set active class if page.name == category.name -->
       </li>
     {% endfor %}
