@@ -6,10 +6,14 @@ layout: default
   <div class="post-header">
     <small class="u--capitalized post-header__category">
       {% assign category_slug = page.category | slugify: "raw" %}
-      <a href="{{ site.baseurl | append: "/blog/categories/" | append: category_slug }}" class="link--light">{{ page.categories.first }}</a>
+      <a href="{{ site.baseurl | append: "/blog/categories/" | append: category_slug }}" class="link--light">
+        {{ page.categories.first }}
+      </a>
     </small>
 
-    <h1 class="heading heading--large post-header__title post-header__title--featured">{{ page.title }}</h1>
+    <h1 class="heading heading--large post-header__title post-header__title--featured">
+      {{ page.title }}
+    </h1>
 
     {% if page.author %}
       <small class="post-header__author">
@@ -47,8 +51,8 @@ layout: default
   <ul class="post-nav">
     <li>
       {% if page.previous.url %}
-        <a href="{{page.previous.url}}" class="link" rel="prev">
-          &laquo; {{page.previous.title}}
+        <a href="{{ page.previous.url }}" class="link" rel="prev">
+          &laquo; {{ page.previous.title }}
         </a>
       {% endif %}
     </li>
@@ -59,7 +63,7 @@ layout: default
     </li>
     <li>
       {% if page.next.url %}
-        <a href="{{page.next.url}}" class="link" rel="next">
+        <a href="{{ page.next.url }}" class="link" rel="next">
           {{ page.next.title }} &raquo;
         </a>
       {% endif %}
