@@ -38,6 +38,9 @@ collections:
   categories:
     output: true
     permalink: /blog/categories/:name
+  tags:
+    output: true
+    permalink: /blog/tags/:name
 
 defaults:
   -
@@ -51,6 +54,12 @@ defaults:
       type: categories
     values:
       layout: category
+      section: blog
+  -
+    scope:
+      type: tags
+    values:
+      layout: tag
       section: blog
 
 
