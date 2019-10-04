@@ -4,22 +4,14 @@ layout: default
 
 <h1 class="u--visually-hidden">TakingSpace Blog</h1>
 
-<!-- todo: extract to partial (will be used on tag page) -->
-<div class="panel panel--blog-hero">
-  <div class="post-header">
-    <h1 class="heading heading--large post-header__title post-header__title--featured">
-      {{ page.name }}
-    </h1>
-  </div>
-</div>
-
+{% include post-group-header.html title = page.name %}
 {% include category-nav.html %}
 
 <section class="panel">
   <ul class="post-list">
     {% for post in site.posts %}
       {% if post.category == page.name %}
-        {% include post-snippet.html post=post %}
+        {% include post-snippet.html post = post %}
       {% endif %}
     {% endfor %}
   </ul>
