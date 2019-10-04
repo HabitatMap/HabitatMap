@@ -13,20 +13,7 @@ layout: default
   </div>
 </div>
 
-<!-- todo: extract to partial (use same one as in blog) -->
-<div class="panel categories">
-  <ul class="category-list">
-    {% for category in site.categories %}
-      <li>
-        <a href="{{ category.url }}" class="category-list__link button button--ac" {% if category.url == page.url %} data-current {% endif %}>
-          {{ category.name }}
-        </a>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <button class="js--posts-toggle u--capitalized"></button>
-</div>
+{% include category-nav.html %}
 
 <section class="panel">
   <ul class="post-list">
@@ -37,5 +24,3 @@ layout: default
     {% endfor %}
   </ul>
 </section>
-
-<script defer type="text/javascript" src="/assets/js/posts.js"></script>
