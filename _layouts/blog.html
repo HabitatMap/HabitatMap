@@ -18,35 +18,12 @@ layout: default
   <img src="/assets/img/featured-post.jpg" class="post-header__image"/>
 </div>
 
-<div class="panel categories">
-  <ul class="category-list">
-    {% for category in site.categories %}
-      <li>
-        <a href="#" class="category-list__link button button--ac">{{ category.name }}</a>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <button class="js--posts-toggle u--capitalized"></button>
-</div>
+{% include category-nav.html %}
 
 <section class="panel">
   <ul class="post-list">
     {% for post in site.posts %}
-      <li class="post-list__item">
-        <div class="post-list__thumbnail"></div>
-        <a href="#" class="link post-list__category heading u--capitalized">{{post.category}}</a>
-
-        <h2 class="post-list__title heading heading--small">
-          <a href="{{ post.url }}">{{ post.title }}</a>
-        </h2>
-
-        <time datetime="{{ post.date }}"></time>
-        <p>{{ post.excerpt | strip_newlines | truncate: 180 }}</p>
-        <a href="{{ post.url }}" class="post-list__read-more">Read more</a>
-      </li>
+      {% include post-snippet.html post = post %}
     {% endfor %}
   </ul>
 </section>
-
-<script defer type="text/javascript" src="/assets/js/posts.js"></script>
