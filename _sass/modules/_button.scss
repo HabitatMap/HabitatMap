@@ -1,4 +1,5 @@
 $button-font-size: 1.1rem;
+$ac-brand-transparent: transparentize($ac-brand, 0.4);
 
 .button {
   border-width: 1px;
@@ -17,6 +18,15 @@ $button-font-size: 1.1rem;
 
 .button--ac {
   @include button-color($ac-brand, $ac-brand, $white, $ac-brand);
+
+  &[data-current] {
+    @include button-color(
+      $ac-brand-transparent,
+      $ac-brand-transparent,
+      $white,
+      $ac-brand-transparent
+    );
+  }
 }
 
 .button--ac-on-teal {
