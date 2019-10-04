@@ -24,17 +24,22 @@ layout: default
     <img class="post-content__featured-image" src="{{ page.thumbnail }}" />
 
     {{ content }}
+  </div>
 
-    <div class="post-footer">
-      <strong>
-        PUBLISHED:
-        <time datetime="{{ page.date }}">
-          <strong>{{ page.date | date_to_string }}</strong>
-        </time>
-        <br/>
-        TAGS: {{ page.tags | join: ', ' }}
-      </strong>
-    </div>
+  <div class="post-footer">
+    <strong>
+      PUBLISHED:
+      <time datetime="{{ page.date }}">
+        <strong>{{ page.date | date_to_string }}</strong>
+      </time>
+      <br/>
+      TAGS:
+      {% for tag in page.tags %}
+        <a href="{{ site.baseurl | append: "/blog/tags/" | append: tag | slugify: "raw" }}" class="post-footer__link">
+          {{ tag }}{% unless forloop.last == true %},{% endunless %}
+        </a>
+      {% endfor %}
+    </strong>
   </div>
 </div>
 
