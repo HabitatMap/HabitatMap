@@ -4,11 +4,10 @@ layout: default
 
 <div class="panel panel--blog-hero">
   <div class="post-header">
-    {% if page.categories %}
-      <small class="u--capitalized post-header__category">
-        {{ page.categories.first }}
-      </small>
-    {% endif %}
+    <small class="u--capitalized post-header__category">
+      {% assign category_slug = page.category | slugify: "raw" %}
+      <a href="{{ site.baseurl | append: "/blog/categories/" | append: category_slug }}" class="link--light">{{ page.categories.first }}</a>
+    </small>
 
     <h1 class="heading heading--large post-header__title post-header__title--featured">{{ page.title }}</h1>
 
