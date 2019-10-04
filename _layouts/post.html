@@ -43,20 +43,26 @@ layout: default
   </div>
 </div>
 
-  <nav class="panel" aria-label="Adjacent Posts">
-    <ul class="post-nav">
+<nav class="panel" aria-label="Adjacent Posts">
+  <ul class="post-nav">
+    <li>
       {% if page.previous.url %}
-        <li>
-          <a href="{{page.previous.url}}" class="link" rel="prev">&laquo; {{page.previous.title}}</a>
-        </li>
+        <a href="{{page.previous.url}}" class="link" rel="prev">
+          &laquo; {{page.previous.title}}
+        </a>
       {% endif %}
-      <li>
-        <a href="/blog" class="link u--capitalized">Back to all posts</a>
-      </li>
+    </li>
+    <li>
+      <a href="/blog" class="link u--capitalized">
+        Back to all posts
+      </a>
+    </li>
+    <li>
       {% if page.next.url %}
-        <li>
-          <a href="{{page.next.url}}" class="link" rel="next">{{page.next.title}} &raquo;</a>
-        </li>
+        <a href="{{page.next.url}}" class="link" rel="next">
+          {{ page.next.title }} &raquo;
+        </a>
       {% endif %}
-    </ul>
-  </nav>
+    </li>
+  </ul>
+</nav>
