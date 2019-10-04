@@ -6,10 +6,14 @@ layout: default
   <div class="post-header">
     <small class="u--capitalized post-header__category">
       {% assign category_slug = page.category | slugify: "raw" %}
-      <a href="{{ site.baseurl | append: "/blog/categories/" | append: category_slug }}" class="link--light">{{ page.categories.first }}</a>
+      <a href="{{ site.baseurl | append: "/blog/categories/" | append: category_slug }}" class="link--light">
+        {{ page.categories.first }}
+      </a>
     </small>
 
-    <h1 class="heading heading--large post-header__title post-header__title--featured">{{ page.title }}</h1>
+    <h1 class="heading heading--large post-header__title post-header__title--featured">
+      {{ page.title }}
+    </h1>
 
     {% if page.author %}
       <small class="post-header__author">
@@ -24,34 +28,45 @@ layout: default
     <img class="post-content__featured-image" src="{{ page.thumbnail }}" />
 
     {{ content }}
+  </div>
 
-    <div class="post-footer">
-      <strong>
-        PUBLISHED:
-        <time datetime="{{ page.date }}">
-          <strong>{{ page.date | date_to_string }}</strong>
-        </time>
-        <br/>
-        TAGS: {{ page.tags | join: ', ' }}
-      </strong>
-    </div>
+  <div class="post-footer">
+    <strong>
+      PUBLISHED:
+      <time datetime="{{ page.date }}">
+        <strong>{{ page.date | date_to_string }}</strong>
+      </time>
+      <br/>
+      TAGS:
+      {% for tag in page.tags %}
+        <a href="{{ site.baseurl | append: "/blog/tags/" | append: tag | slugify: "raw" }}" class="post-footer__link">
+          {{ tag }}{% unless forloop.last == true %},{% endunless %}
+        </a>
+      {% endfor %}
+    </strong>
   </div>
 </div>
 
-  <nav class="panel" aria-label="Adjacent Posts">
-    <ul class="post-nav">
+<nav class="panel" aria-label="Adjacent Posts">
+  <ul class="post-nav">
+    <li>
       {% if page.previous.url %}
-        <li>
-          <a href="{{page.previous.url}}" class="link" rel="prev">&laquo; {{page.previous.title}}</a>
-        </li>
+        <a href="{{ page.previous.url }}" class="link" rel="prev">
+          &laquo; {{ page.previous.title }}
+        </a>
       {% endif %}
-      <li>
-        <a href="/blog" class="link u--capitalized">Back to all posts</a>
-      </li>
+    </li>
+    <li>
+      <a href="/blog" class="link u--capitalized">
+        Back to all posts
+      </a>
+    </li>
+    <li>
       {% if page.next.url %}
-        <li>
-          <a href="{{page.next.url}}" class="link" rel="next">{{page.next.title}} &raquo;</a>
-        </li>
+        <a href="{{ page.next.url }}" class="link" rel="next">
+          {{ page.next.title }} &raquo;
+        </a>
       {% endif %}
-    </ul>
-  </nav>
+    </li>
+  </ul>
+</nav>
