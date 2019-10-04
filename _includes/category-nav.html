@@ -1,0 +1,15 @@
+<div class="panel categories">
+  <ul class="category-list">
+    {% for category in site.categories %}
+      <li>
+        <a href="{{ category.url }}" class="category-list__link button button--ac" {% if category.url == page.url %} data-current {% endif %}>
+          {{ category.name }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <button class="js--posts-toggle u--capitalized"></button>
+</div>
+
+<script defer type="text/javascript" src="/assets/js/posts.js"></script>
