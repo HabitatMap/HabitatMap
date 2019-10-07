@@ -199,18 +199,18 @@ $header-font-size-desktop: 1.125rem;
   margin-bottom: 4px;
 
   @media screen and (min-width: $small-desktop-min) {
-    @include transition(max-width 0.5s ease-in-out);
     max-width: 0px;
     overflow: hidden;
 
-    @for $i from 2 through 6 {
-      &:nth-child(#{$i}) {
-        transition-delay: 150ms * $i;
-      }
-    }
-
     .nav-list__element:hover & {
+      @include transition(max-width 0.5s ease-in-out);
       max-width: 10rem;
+
+      @for $i from 2 through 6 {
+        &:nth-child(#{$i}) {
+          transition-delay: 150ms * $i;
+        }
+      }
     }
   }
 }
