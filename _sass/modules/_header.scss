@@ -194,11 +194,28 @@ $header-font-size-desktop: 1.125rem;
 
 .subnav-list__element {
   margin-bottom: 4px;
+
+  @media screen and (min-width: $small-desktop-min) {
+    @include transition(max-width 0.5s ease-in-out);
+    max-width: 0px;
+    overflow: hidden;
+
+    @for $i from 2 through 6 {
+      &:nth-child(#{$i}) {
+        transition-delay: 150ms * $i;
+      }
+    }
+
+    .nav-list__element:hover & {
+      max-width: 10rem;
+    }
+  }
 }
 
 .subnav-list__link {
   display: inline-block;
   padding: 0.5rem;
+  white-space: nowrap;
 
   @media screen and (max-width: $tablet-max) {
     font-size: $base-font-size1;
