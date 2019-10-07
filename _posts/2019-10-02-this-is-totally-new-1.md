@@ -1,6 +1,6 @@
 ---
 layout: post
-title: This is totally NEW!
+title: education
 date: 2019-10-02T15:28:17.243Z
 thumbnail: /images/uploads/newtown-creek.jpg
 category: Education
