@@ -71,7 +71,7 @@ collections:
     editor:
       preview: false
     fields:
-      - { label: "Category name", name: "name", widget: "string" }
+      - { label: "Category name", name: "name", widget: "string", hint: "If you need to change the name of an existing category, please delete it and create a new one. If you edit an existing category, the link to the category blog page will break." }
   - name: "tags"
     label: "Tags"
     label_singular: "Tag"
@@ -81,4 +81,4 @@ collections:
     editor:
       preview: false
     fields:
-      - { label: "Tag name", name: "name", widget: "string" }
+      - { label: "Tag name", name: "name", hint: "If you need to change the name of an existing tag, please delete it and create a new one. If you edit an existing tag, the link to the tag blog page will break." }
