@@ -70,19 +70,22 @@
 .panel--about-intro,
 .panel--history-intro,
 .panel--faq-intro,
-.panel--blog-hero {
+.panel--blog-hero,
+.panel--blog-category {
   color: $white;
 }
 
 .panel--faq-intro,
-.panel--history-intro {
+.panel--history-intro,
+.panel--blog-category {
   @media screen and (min-width: $tablet-min) {
     padding-top: $u-space-big;
     padding-bottom: $u-space-big;
   }
 }
 
-.panel--blog-hero {
+.panel--blog-hero,
+.panel--blog-category {
   background-color: $blue;
 }
 

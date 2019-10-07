@@ -4,6 +4,7 @@
 
 .post-list--grid-view {
   max-width: none;
+  width: 100%;
 
   @media screen and (min-width: $tablet-min) {
     @include flexbox();
