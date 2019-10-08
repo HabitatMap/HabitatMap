@@ -1,0 +1,17 @@
+.post-footer {
+  @include flex(0 0 100%);
+  max-width: $medium-content;
+  margin: $u-space-small auto 0;
+  font-family: $bold-font;
+  font-size: $base-font-size-1;
+  line-height: 1.6;
+}
+
+.post-footer__link {
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+}

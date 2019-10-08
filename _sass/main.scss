@@ -12,7 +12,13 @@
 @import "modules/ac-intro";
 @import "modules/arc-background";
 @import "modules/badge-link";
-@import "modules/blog";
+@import "modules/blog/categories";
+@import "modules/blog/featured-post";
+@import "modules/blog/post-content";
+@import "modules/blog/post-footer";
+@import "modules/blog/post-header";
+@import "modules/blog/post-list";
+@import "modules/blog/post-nav";
 @import "modules/button";
 @import "modules/faq";
 @import "modules/footer";
@@ -21,12 +27,9 @@
 @import "modules/images";
 @import "modules/logo";
 @import "modules/panel";
-@import "modules/post-content";
-@import "modules/post-nav";
 @import "modules/quote";
 @import "modules/shop-airbeam";
 @import "modules/slider";
 @import "modules/split";
 
-@import "partials/categories";
 @import "partials/forms";
