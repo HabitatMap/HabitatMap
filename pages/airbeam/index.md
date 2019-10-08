@@ -14,10 +14,18 @@ section: airbeam
   <div class="arc-background arc-background--right-teal-light arc-background--right-center">
     <div class="panel">
       <div class="split--50 split--padding-right">
-        <img class="img img--alternate-medium" src="/assets/img/about-airbeam-01.jpg" alt="Airbeam device" />
+        <img
+          class="img img--alternate-medium"
+          src="{{ site.produrl | append: "/assets/img/about-airbeam-01.jpg" }}"
+          alt="Airbeam device"
+        />
       </div>
       <div class="split--50 split--padding-left">
-        <img class="logo logo--body" alt="Airbeam" src="/assets/img/svg/AirBeam-Logo-Body.svg" />
+        <img
+          class="logo logo--body"
+          alt="Airbeam"
+          src="{{ site.produrl | append: "/assets/img/svg/AirBeam-Logo-Body.svg" }}"
+        />
         <p class="p--body">
           AirBeam is a low-cost, palm-sized air quality instrument that measures hyperlocal concentrations of harmful microscopic particles in the air, known as particulate matter, as well as humidity and temperature. The AirBeam measures particulate matter with proven accuracy and when used in conjunction with the AirCasting platform - or a custom solution - helps community-based organizations, educators, academics, regulators, city managers, and citizen scientists map air pollution and organize for&nbsp;clean&nbsp;air.
         </p>
@@ -35,7 +43,11 @@ section: airbeam
         <a href="/airbeam/how-it-works" class="button button--ac">Learn more</a>
       </div>
       <div class="split--50 split--padding-left u--align-right">
-        <img class="img img--alternate-medium" src="/assets/img/about-airbeam-02.jpg" alt="HabitatMap Team" />
+        <img
+          class="img img--alternate-medium"
+          src="{{ site.produrl | append: "/assets/img/about-airbeam-02.jpg" }}"
+          alt="HabitatMap Team"
+        />
       </div>
     </div>
   </div>
@@ -44,7 +56,11 @@ section: airbeam
 <section class="u--bg-teal-very-light">
   <div class="panel panel--align-center ac-intro">
     <div class="split--60">
-      <img class="logo logo--body" alt="AirCasting" src="/assets/img/svg/AirCasting-Logo-Body.svg" />
+      <img
+        class="logo logo--body"
+        alt="AirCasting"
+        src="{{ site.produrl | append: "/assets/img/svg/AirCasting-Logo-Body.svg" }}"
+      />
       <p class="p--large u--gray-text">
         Measure, visualize, and share environmental data via Aircasting Maps.
       </p>
@@ -56,7 +72,10 @@ section: airbeam
   </div>
   <div class="panel">
     <div>
-      <img src="/assets/img/habitatmap-aircasting-map-placeholder.png" alt="AirCasting Map" />
+      <img
+        src="{{ site.produrl | append: "/assets/img/habitatmap-aircasting-map-placeholder.png" }}"
+        alt="AirCasting Map"
+      />
     </div>
   </div>
 </section>
