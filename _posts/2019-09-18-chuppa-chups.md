@@ -8,6 +8,7 @@ category: Sensors & Instruments
 tag:
   - Instruments
   - Performance
+  - Community Based Organization
 ---
 The results were positive for the AirBeam2’s PM1 and PM2.5 measurements, with R-squared values ranging from .64 to .94, and negative for the AirBeam2s PM10 measurements, with R-squared values ranging from .0 to .06. An R-squared value of 1 would mean there was a perfect correlation between the measurements from the FEM instrument and the AirBeam2.
 
