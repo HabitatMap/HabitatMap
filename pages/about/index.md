@@ -20,7 +20,10 @@ section: about
   </div>
 </section>
 
-<section class="img-full-width img-full-width--about"></section>
+<section
+  class="img-full-width"
+  style="background-image: url({{ site.produrl | append: "/assets/img/about-habitatmap-01.jpg" }});"
+></section>
 
 <section class="arc-background arc-background--left-teal-light arc-background--left-center u--vertical-padding">
   <div class="panel">
@@ -31,13 +34,21 @@ section: about
       </p>
     </div>
     <div class="split--40 split--padding-left u--align-right">
-      <img class="img img--alternate-small" src="/assets/img/about-habitatmap-02.jpg" alt="Airbeam" />
+      <img
+        class="img img--alternate-small"
+        src="{{ site.produrl | append: "/assets/img/about-habitatmap-02.jpg" }}"
+        alt="Airbeam"
+      />
     </div>
   </div>
 
   <div class="panel">
     <div class="split--60 split--padding-right split--order-secondary">
-      <img class="img img--alternate-medium" src="/assets/img/about-habitatmap-02.jpg" alt="Airbeam" />
+      <img
+        class="img img--alternate-medium"
+        src="{{ site.produrl | append: "/assets/img/about-habitatmap-02.jpg" }}"
+        alt="Airbeam"
+      />
     </div>
     <div class="split--40 split--padding-left">
      <h2 class="heading heading--capitilized">Founder</h2>

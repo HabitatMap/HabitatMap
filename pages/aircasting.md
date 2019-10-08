@@ -15,7 +15,7 @@ section: aircasting
   <div class="panel">
     <div class="split--60 split--padding-right split--order-secondary">
       <p class="p--body">
-        The application collects measurements from HabitatMap’s AirBeam and other health and environmental monitoring devices and relays it to the maps. With thousands of AirBeams measuring particulate matter worldwide and more than XXX million data points, the AirCasting platform is one of the largest open-source databases of  community-collected air quality measurements ever created. By documenting and leveraging health and environmental data to inform personal decision-making and public policy, the AirCasting platform empowers community-based organizations, educators, academics, regulators, city managers, and citizen scientists to map air pollution  and organize for clean air.
+        The application collects measurements from HabitatMap’s AirBeam and other health and environmental monitoring devices and relays it to the maps. With thousands of AirBeams measuring particulate matter worldwide and more than XXX million data points, the AirCasting platform is one of the largest open-source databases of community-collected air quality measurements ever created. By documenting and leveraging health and environmental data to inform personal decision-making and public policy, the AirCasting platform empowers community-based organizations, educators, academics, regulators, city managers, and citizen scientists to map air pollution and organize for clean air.
       </p>
     </div>
     <div class="split--40 split--padding-left">
@@ -29,7 +29,10 @@ section: aircasting
 
   <div class="panel u--bg-half-teal-very-light">
     <div>
-      <img src="assets/img/habitatmap-aircasting-map-placeholder.png" alt="AirCasting Map" />
+      <img
+        src="{{ site.produrl | append: "/assets/img/habitatmap-aircasting-map-placeholder.png" }}"
+        alt="AirCasting Map"
+      />
     </div>
   </div>
 </section>
@@ -37,7 +40,11 @@ section: aircasting
 <section class="u--bg-teal-very-light arc-background arc-background--left-white arc-background--left-center">
   <div class="panel">
     <div class="split--50 split--padding-right">
-      <img class="img img--alternate-medium" src="assets/img/about-aircasting-01.jpg" alt="Airbeam device on bicycle" />
+      <img
+        class="img img--alternate-medium"
+        src="{{ site.produrl | append: "/assets/img/about-aircasting-01.jpg" }}"
+        alt="Airbeam device on bicycle"
+      />
     </div>
     <div class="split--50 split--padding-left">
       <img class="logo logo--body" alt="Airbeam" src="assets/img/svg/AirBeam-Logo-Body.svg" />
@@ -59,7 +66,11 @@ section: aircasting
       <a href="/airbeam/how-it-works" class="button">Learn more</a>
     </div>
     <div class="split--50 split--padding-left u--align-right">
-      <img class="img img--alternate-medium" src="assets/img/about-aircasting-02.jpg" alt="AirCasting App on Mobile" />
+      <img
+        class="img img--alternate-medium"
+        src="{{ site.produrl | append: "/assets/img/about-aircasting-02.jpg" }}"
+        alt="AirCasting App on Mobile"
+      />
     </div>
   </div>
 </section>

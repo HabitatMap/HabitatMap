@@ -29,7 +29,11 @@ section: airbeam
       </a>
     </div>
     <div class="split--50 u--align-right">
-      <img class="img img--alternate-small" src="/assets/img/about-habitatmap-02.jpg" alt="Airbeam" />
+      <img
+        class="img img--alternate-small"
+        src="{{ site.produrl | append: "/assets/img/about-habitatmap-02.jpg" }}"
+        alt="Airbeam"
+      />
     </div>
   </div>
 </section>
