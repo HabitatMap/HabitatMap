@@ -1,0 +1,11 @@
+.panel.featured-post {
+  position: relative;
+
+  @media screen and (min-width: $small-desktop-min) {
+    padding-top: $u-space-big;
+  }
+
+  @media screen and (min-width: $desktop-min) {
+    padding-top: $u-space-huge;
+  }
+}

@@ -1,5 +1,9 @@
 .post-nav {
+  border-top: 1px solid $teal-light;
   display: flex;
+  font-family: $bold-font;
+  font-size: $base-font-size-1;
+  padding: $u-space-default 0;
   width: 100%;
 
   li {

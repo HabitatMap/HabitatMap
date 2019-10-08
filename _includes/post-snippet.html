@@ -1,7 +1,10 @@
 {% assign post = include.post %}
 
 <li class="post-list__item">
-  <div class="post-list__thumbnail"></div>
+  <div class="post-list__thumbnail">
+    <img src="{{ post.thumbnail }}" />
+  </div>
+
   <a href="{{ post.category.url }}" class="link post-list__category heading u--capitalized">{{ post.category }}</a>
 
   <h2 class="post-list__title heading heading--small">

@@ -1,0 +1,34 @@
+.post-header {
+  font-family: $bold-font;
+}
+
+.post-header__category {
+  text-decoration: underline;
+}
+
+.post-header__title {
+  margin: $u-space-small 0 $u-space-big;
+}
+
+.post-header__title--featured {
+  margin-bottom: $u-space-small;
+}
+
+.post-header__read-more {
+  color: $white;
+  text-decoration: underline;
+}
+
+.post-header__image {
+  @media screen and (min-width: $tablet-min) {
+    left: 50%;
+    position: absolute;
+    bottom: -1rem;
+    width: 50%;
+    max-width: $medium-content;
+  }
+
+  @media screen and (min-width: $small-desktop-min) {
+    bottom: -5rem;
+  }
+}
