@@ -4,7 +4,7 @@
 
 Website: https://habitatmap.lunarlogic.io/.
 
-Hosting: https://app.netlify.com/sites/habitatmap/overview, credentials on Lunar Logic wiki.
+Hosting: https://app.netlify.com/sites/habitatmap/overview, credentials on [Lunar Logic wiki](https://sites.google.com/llp.pl/wiki/projects/habitatmap).
 
 CMS: https://habitatmap.lunarlogic.io/admin, log in per user.
 
