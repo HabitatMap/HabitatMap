@@ -27,7 +27,12 @@ collections:
           required: false,
           hint: "If you don't set an author, it will be Michael Heimbinder."
         }
-      - { label: "Featured Image", name: "thumbnail", widget: "image" }
+      - {
+          label: "Featured Image",
+          name: "thumbnail",
+          widget: "image",
+          hint: "For the best effect upload images 1200x705 in resolution (or bigger with the same proportions)."
+        }
       - { label: "Body", name: "body", widget: "markdown" }
       - {
           label: "Category",
