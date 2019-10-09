@@ -22,7 +22,7 @@ section: about
 
 <section
   class="img-full-width"
-  style="background-image: url({{ site.produrl | append: "/assets/img/about-habitatmap-01.jpg" }});"
+  style="background-image: url({{ site.produrl | append: '/assets/img/about-habitatmap-01.jpg' }});"
 ></section>
 
 <section class="arc-background arc-background--left-teal-light arc-background--left-center u--vertical-padding">
@@ -36,7 +36,7 @@ section: about
     <div class="split--40 split--padding-left u--align-right">
       <img
         class="img img--alternate-small"
-        src="{{ site.produrl | append: "/assets/img/about-habitatmap-02.jpg" }}"
+        src="{{ site.produrl | append: '/assets/img/about-habitatmap-02.jpg' }}"
         alt="Airbeam"
       />
     </div>
@@ -46,7 +46,7 @@ section: about
     <div class="split--60 split--padding-right split--order-secondary">
       <img
         class="img img--alternate-medium"
-        src="{{ site.produrl | append: "/assets/img/about-habitatmap-02.jpg" }}"
+        src="{{ site.produrl | append: '/assets/img/about-habitatmap-02.jpg' }}"
         alt="Airbeam"
       />
     </div>
