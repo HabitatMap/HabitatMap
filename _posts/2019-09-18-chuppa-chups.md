@@ -3,7 +3,7 @@ layout: post
 title: AirBeam2 “Quite Accurate” According to Newly Released Performance Evaluation
 date: 2019-09-18T18:26:54.455Z
 author: Michael Heimbinder
-thumbnail: /images/uploads/thelan_1920.jpg
+thumbnail: /images/uploads/summerlove4_1920.jpg
 category: Sensors & Instruments
 tag:
   - Instruments
