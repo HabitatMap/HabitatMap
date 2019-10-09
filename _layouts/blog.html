@@ -15,7 +15,14 @@ layout: default
     <a href="#" class="post-header__read-more">Read more</a>
   </div>
 
-  <img src="{{ site.produrl | append: '/assets/img/featured-post.jpg' | append: '?nf_resize=smartcrop&w=1200&h=705' }}" class="post-header__image"/>
+  {% assign image_url = site.produrl | append: '/assets/img/featured-post.jpg' %}
+  <img
+    class="post-header__image"
+    srcset="{{ image_url | append: '?nf_resize=smartcrop&w=480&h=282 480w' }},
+            {{ image_url | append: '?nf_resize=smartcrop&w=720&h=423 720w' }},
+            {{ image_url | append: '?nf_resize=smartcrop&w=1200&h=705 1200w' }}"
+    src="{{ image_url | append: '?nf_resize=smartcrop&w=1200&h=705' }}"
+  />
 </div>
 
 {% include category-nav.html %}

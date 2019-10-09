@@ -6,7 +6,7 @@ layout: default
   <div class="post-header">
     <small class="u--capitalized post-header__category">
       {% assign category_slug = page.category | slugify %}
-      <a href="{{ site.baseurl | append: "/blog/categories/" | append: category_slug }}" class="link--light">
+      <a href="{{ site.baseurl | append: '/blog/categories/' | append: category_slug }}" class="link--light">
         {{ page.categories.first }}
       </a>
     </small>
@@ -25,7 +25,15 @@ layout: default
 
 <div class="panel">
   <div class="post-content">
-    <img class="post-content__featured-image" src="{{ site.produrl | append: page.thumbnail | append: '?nf_resize=fit&w=1200' }}" />
+    {% assign image_url = site.produrl | append: page.thumbnail %}
+
+    <img
+      class="post-content__featured-image"
+      srcset="{{ image_url | append: '?nf_resize=fit&w=480 480w' }},
+              {{ image_url | append: '?nf_resize=fit&w=720 720w' }},
+              {{ image_url | append: '?nf_resize=fit&w=1200 1200w' }}"
+      src="{{ image_url | append: '?nf_resize=fit&w=1200' }}"
+    />
 
     {{ content }}
   </div>
@@ -40,7 +48,7 @@ layout: default
       TAGS:
       {% for tag in page.tags %}
         {% assign tag_slug = tag | slugify %}
-        <a href="{{ site.baseurl | append: "/blog/tags/" | append: tag_slug }}" class="post-footer__link">
+        <a href="{{ site.baseurl | append: '/blog/tags/' | append: tag_slug }}" class="post-footer__link">
           {{ tag }}{% unless forloop.last == true %},{% endunless %}
         </a>
       {% endfor %}
