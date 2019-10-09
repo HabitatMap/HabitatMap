@@ -15,7 +15,7 @@ section: home
 
 <section class="panel panel--airbeam panel--align-center arc-background arc-background--right-opacity-50 arc-background--right-bottom">
   <div class="split--60">
-    <img class="logo logo--body" }}" alt="Airbeam" src="assets/img/svg/AirBeam-Logo-Body.svg" />
+    <img class="logo logo--body" alt="Airbeam" src="assets/img/svg/AirBeam-Logo-Body.svg" />
     <p class="p--large u--gray-text">
       AirBeam is a low-cost, palm-sized air quality instrument that measures hyperlocal concentrations of harmful microscopic particles in the air, known as particulate matter, as well as humidity and temperature.
     </p>
@@ -37,13 +37,13 @@ section: home
       </p>
       <a href="#" class="button button--ac-on-teal">More User Stories</a>
     </div>
-    <img src="{{ site.produrl | append: "/assets/img/about-habitatmap-01.jpg" }}" class="slide__photo" />
+    <img src="{{ site.produrl | append: '/assets/img/about-habitatmap-01.jpg' }}" class="slide__photo" />
   </div>
 </section>
 
 <section class="panel panel--align-center ac-intro">
   <div class="split--60">
-    <img class="logo logo--body" }}" alt="AirCasting" src="assets/img/svg/AirCasting-Logo-Body.svg" />
+    <img class="logo logo--body" alt="AirCasting" src="assets/img/svg/AirCasting-Logo-Body.svg" />
     <p class="p--large u--gray-text">
       AirCasting is an open-source environmental data visualization platform that consists of an Android app and online mapping system.
     </p>
@@ -56,7 +56,7 @@ section: home
 
 <section class="panel">
   <div>
-    <img src="{{ site.produrl | append: "/assets/img/habitatmap-aircasting-map-placeholder.png" }}" alt="AirCasting Map" />
+    <img src="{{ site.produrl | append: '/assets/img/habitatmap-aircasting-map-placeholder.png' }}" alt="AirCasting Map" />
   </div>
 </section>
 

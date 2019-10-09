@@ -30,7 +30,7 @@ section: aircasting
   <div class="panel u--bg-half-teal-very-light">
     <div>
       <img
-        src="{{ site.produrl | append: "/assets/img/habitatmap-aircasting-map-placeholder.png" }}"
+        src="{{ site.produrl | append: '/assets/img/habitatmap-aircasting-map-placeholder.png' }}"
         alt="AirCasting Map"
       />
     </div>
@@ -42,7 +42,7 @@ section: aircasting
     <div class="split--50 split--padding-right">
       <img
         class="img img--alternate-medium"
-        src="{{ site.produrl | append: "/assets/img/about-aircasting-01.jpg" }}"
+        src="{{ site.produrl | append: '/assets/img/about-aircasting-01.jpg' }}"
         alt="Airbeam device on bicycle"
       />
     </div>
@@ -68,7 +68,7 @@ section: aircasting
     <div class="split--50 split--padding-left u--align-right">
       <img
         class="img img--alternate-medium"
-        src="{{ site.produrl | append: "/assets/img/about-aircasting-02.jpg" }}"
+        src="{{ site.produrl | append: '/assets/img/about-aircasting-02.jpg' }}"
         alt="AirCasting App on Mobile"
       />
     </div>

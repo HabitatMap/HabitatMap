@@ -16,7 +16,7 @@ section: airbeam
       <div class="split--50 split--padding-right">
         <img
           class="img img--alternate-medium"
-          src="{{ site.produrl | append: "/assets/img/about-airbeam-01.jpg" }}"
+          src="{{ site.produrl | append: '/assets/img/about-airbeam-01.jpg' }}"
           alt="Airbeam device"
         />
       </div>
@@ -24,7 +24,7 @@ section: airbeam
         <img
           class="logo logo--body"
           alt="Airbeam"
-          src="{{ site.produrl | append: "/assets/img/svg/AirBeam-Logo-Body.svg" }}"
+          src="{{ site.produrl | append: '/assets/img/svg/AirBeam-Logo-Body.svg' }}"
         />
         <p class="p--body">
           AirBeam is a low-cost, palm-sized air quality instrument that measures hyperlocal concentrations of harmful microscopic particles in the air, known as particulate matter, as well as humidity and temperature. The AirBeam measures particulate matter with proven accuracy and when used in conjunction with the AirCasting platform - or a custom solution - helps community-based organizations, educators, academics, regulators, city managers, and citizen scientists map air pollution and organize for&nbsp;clean&nbsp;air.
@@ -45,7 +45,7 @@ section: airbeam
       <div class="split--50 split--padding-left u--align-right">
         <img
           class="img img--alternate-medium"
-          src="{{ site.produrl | append: "/assets/img/about-airbeam-02.jpg" }}"
+          src="{{ site.produrl | append: '/assets/img/about-airbeam-02.jpg' }}"
           alt="HabitatMap Team"
         />
       </div>
@@ -53,13 +53,13 @@ section: airbeam
   </div>
 </section>
 
-<section class="u--bg-teal-very-light">
+<section class="u--bg-teal-very-li'ht">
   <div class="panel panel--align-center ac-intro">
     <div class="split--60">
       <img
         class="logo logo--body"
         alt="AirCasting"
-        src="{{ site.produrl | append: "/assets/img/svg/AirCasting-Logo-Body.svg" }}"
+        src="{{ site.produrl | append: '/assets/img/svg/AirCasting-Logo-Body.svg' }}"
       />
       <p class="p--large u--gray-text">
         Measure, visualize, and share environmental data via Aircasting Maps.
@@ -73,7 +73,7 @@ section: airbeam
   <div class="panel">
     <div>
       <img
-        src="{{ site.produrl | append: "/assets/img/habitatmap-aircasting-map-placeholder.png" }}"
+        src="{{ site.produrl | append: '/assets/img/habitatmap-aircasting-map-placeholder.png' }}"
         alt="AirCasting Map"
       />
     </div>
