@@ -5,7 +5,6 @@
     {% assign thumbnail_url = site.produrl | append: post.thumbnail %}
 
     <img
-      class="post-content__featured-image"
       srcset="{{ thumbnail_url | append: '?nf_resize=smartcrop&w=480&h=291 480w' }},
               {{ thumbnail_url | append: '?nf_resize=smartcrop&w=945&h=573 945w' }}"
       src="{{ thumbnail_url | append: '?nf_resize=smartcrop&w=945&h=573' }}"
