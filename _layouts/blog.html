@@ -5,17 +5,22 @@ layout: default
 <h1 class="u--visually-hidden">TakingSpace Blog</h1>
 
 <div class="panel panel--blog-hero featured-post">
+  {% assign featured_post = site.posts | where: "featured", true | first %}
+
   <div class="split--50 split--padding-right post-header">
     <small class="u--capitalized post-header__category">
-      Category
+      {{ featured_post.category }}
     </small>
+
     <h2 class="heading heading--medium post-header__title post-header__title--featured">
-      Using Citizen Science & Open Source Tools to Promote Community Health
+      {{ featured_post.title }}
     </h2>
-    <a href="#" class="post-header__read-more">Read more</a>
+
+    <a href="{{ featured_post.url }}"" class="post-header__read-more">Read more</a>
   </div>
 
-  {% assign image_url = site.produrl | append: '/assets/img/featured-post.jpg' %}
+  {% assign image_url = site.produrl | append: featured_post.thumbnail %}
+
   <img
     class="post-header__image"
     srcset="{{ image_url | append: '?nf_resize=smartcrop&w=480&h=282 480w' }},
