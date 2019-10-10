@@ -236,14 +236,3 @@ $header-font-size-desktop: 1.125rem;
   @include appearance(none);
   background: none;
 }
-
-@include keyframes(slide-down) {
-  0% {
-    opacity: 0;
-    transform: translateY(-3rem);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}

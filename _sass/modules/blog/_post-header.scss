@@ -20,6 +20,8 @@
 }
 
 .post-header__image {
+  @include animation("fadein 2s forwards");
+
   @media screen and (min-width: $tablet-min) {
     left: 50%;
     position: absolute;
