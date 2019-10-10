@@ -25,12 +25,15 @@ layout: default
   />
 </div>
 
-{% include category-nav.html %}
+<div class="js--posts-index">
 
-<section class="panel">
-  <ul class="post-list">
-    {% for post in site.posts %}
-      {% include post-snippet.html post = post %}
-    {% endfor %}
-  </ul>
-</section>
+  {% include category-nav.html %}
+
+  <section class="panel">
+    <ul class="post-list">
+      {% for post in site.posts %}
+        {% include post-snippet.html post = post %}
+      {% endfor %}
+    </ul>
+  </section>
+</div>
