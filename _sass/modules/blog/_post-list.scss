@@ -1,3 +1,21 @@
+.js--posts-index {
+  &.posts-index--with-arc {
+    background-image: url("/assets/img/svg/Air-Icon_left--teal-light.svg");
+    background-repeat: no-repeat;
+    background-size: 10rem 10rem;
+    background-position: top 10rem left 1vw;
+
+    @media screen and (min-width: $tablet-min) {
+      background-size: 19rem 19rem;
+      background-position: top 12rem left 2vw;
+    }
+
+    @media screen and (min-width: $desktop-min) {
+      background-position: top 10rem left 6vw;
+    }
+  }
+}
+
 .post-list {
   max-width: $medium-content;
 }
@@ -28,9 +46,18 @@
   display: none;
 
   .post-list--grid-view & {
+    background-color: $light;
     display: block;
     margin-bottom: $u-space-small;
+    padding-bottom: 60.5%;
+    position: relative;
   }
+}
+
+.post-list__thumbnail-img {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .post-list__category {
