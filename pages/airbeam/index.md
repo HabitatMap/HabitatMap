@@ -16,7 +16,8 @@ section: airbeam
       <div class="split--50 split--padding-right">
         <img
           class="img img--alternate-medium"
-          src="{{ site.produrl | append: '/assets/img/about-airbeam-01.jpg' }}"
+          srcset="{{ site.produrl | append: '/assets/img/about-airbeam-01.jpg?nf_resize=fit&w=720 480w' }},
+                  {{ site.produrl | append: '/assets/img/about-airbeam-01.jpg' }}"
           alt="Airbeam device"
         />
       </div>
@@ -53,7 +54,7 @@ section: airbeam
   </div>
 </section>
 
-<section class="u--bg-teal-very-li'ht">
+<section class="u--bg-teal-very-light">
   <div class="panel panel--align-center ac-intro">
     <div class="split--60">
       <img
