@@ -55,6 +55,7 @@
 }
 
 .post-list__thumbnail-img {
+  @include animation("fadein 1s forwards");
   position: absolute;
   top: 0;
   left: 0;
