@@ -42,8 +42,8 @@ section: home
 </section>
 
 <section class="slider">
-  <div class="panel u--bg-teal slide">
-      {% for slide in site.slides %}
+  {% for slide in site.slides %}
+    <div class="panel u--bg-teal slide">
         {% unless forloop.index > 4 %}
           <div class="split--50 slide__story">
             <h2 class="heading heading--capitilized">Who is using Airbeam?</h2>
@@ -55,8 +55,9 @@ section: home
           </div>
           <img src="{{ site.produrl | append: slide.image }}" class="slide__photo" />
         {% endunless %}
-      {% endfor %}
-  </div>
+    </div>
+  {% endfor %}
+
 </section>
 
 <section class="panel panel--align-center ac-intro">
