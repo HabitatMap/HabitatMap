@@ -7,5 +7,7 @@ description: >-
   female Smurf to be introduced in the series. Original music‎: ‎The Smurfs
   music
 image: /images/uploads/smurfscover.0.jpg
+featured: false
+order: 1
 ---
 
