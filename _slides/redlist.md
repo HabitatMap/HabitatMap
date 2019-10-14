@@ -7,6 +7,6 @@ description: >-
   fungi and plant species.
 image: /images/uploads/epinephelus-striatus.jpg
 featured: true
-order: 2
+order: 1
 ---
 
