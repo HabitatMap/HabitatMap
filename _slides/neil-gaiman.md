@@ -7,7 +7,7 @@ description: >-
   a prolific creator of works of prose, poetry, film, journalism, comics, song
   lyrics, and drama.
 image: /images/uploads/gaiman-photo-large.jpg
-featured: false
+featured: true
 order: 4
 ---
 
