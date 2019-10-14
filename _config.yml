@@ -44,6 +44,8 @@ collections:
     permalink: /blog/tags/:name
   faq:
     output: true
+  slides:
+    output: true
 
 defaults:
   -
