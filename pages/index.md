@@ -5,7 +5,12 @@ permalink: /
 section: home
 ---
 
-<section class="panel panel--hero u--bg-teal-light">
+{% assign hero_image_url = site.produrl | append: "/assets/img/habitatmap-home-airbeam-aircasting.jpg" %}
+
+<section
+  class="panel panel--hero u--bg-teal-light"
+  style="background-image: url({{ hero_image_url }})"
+>
   <div class="split--50">
     <h1 class="heading heading--large u--accent-hm panel__heading">
       Harnessing the Power&nbsp;of&nbsp;People and&nbsp;Technology&nbsp;to Improve the Quality&nbsp;of&nbsp;Lives
