@@ -66,6 +66,11 @@ defaults:
     values:
       layout: tag
       section: blog
+  -
+    scope:
+      type: slides
+    values:
+      featured: false
 
 
 # Exclude from processing.
