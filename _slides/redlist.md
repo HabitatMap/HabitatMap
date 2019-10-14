@@ -6,5 +6,7 @@ description: >-
   comprehensive information source on the global conservation status of animal,
   fungi and plant species.
 image: /images/uploads/epinephelus-striatus.jpg
+featured: true
+order: 2
 ---
 
