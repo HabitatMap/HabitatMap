@@ -59,15 +59,6 @@ collections:
           valueField: "name",
           multiple: true
         }
-      - {
-          label: "Slides",
-          name: "slide",
-          widget: "relation",
-          collection: "slides",
-          displayFields: "organization_name",
-          searchFields: "organization_name",
-          valueField: "organization_name"
-        }
   - name: "slides"
     label: "Slides"
     label_singular: "Slide"
