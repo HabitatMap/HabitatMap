@@ -41,24 +41,25 @@ section: home
   </div>
 </section>
 
-<section class="slider">
-  {% assign slides = site.slides | where: 'featured', true | sort: 'order' %}
-
-  {% for slide in slides %}
-    {% unless forloop.index > 4 %}
-      <div class="panel u--bg-teal slide">
-        <div class="split--50 slide__story">
-          <h2 class="heading heading--capitilized">Who is using Airbeam?</h2>
-            <h3 class="heading heading--medium">{{ slide.organization_name }}</h3>
-            <p class="p--body">
-              {{ slide.description }}
-            </p>
-          <a href="#" class="button button--ac-on-teal">More User Stories</a>
+<section class="slider js-slider">
+    {% assign slides = site.slides | where: 'featured', true | sort: 'order' %}
+    {% for slide in slides %}
+      {% unless forloop.index > 4 %}
+        <div>
+          <div class="panel u--bg-teal slide">
+            <div class="split--50 slide__story">
+              <h2 class="heading heading--capitilized">Who is using Airbeam?</h2>
+                <h3 class="heading heading--medium">{{ slide.organization_name }}</h3>
+                <p class="p--body">
+                  {{ slide.description }}
+                </p>
+              <a href="#" class="button button--ac-on-teal">More User Stories</a>
+            </div>
+            <img src="{{ site.produrl | append: slide.image }}" class="slide__photo" />
+          </div>
         </div>
-        <img src="{{ site.produrl | append: slide.image }}" class="slide__photo" />
-      </div>
-    {% endunless %}
-  {% endfor %}
+      {% endunless %}
+    {% endfor %}
 </section>
 
 <section class="panel panel--align-center ac-intro">
@@ -95,3 +96,5 @@ section: home
     </blockquote>
   </div>
 </section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
