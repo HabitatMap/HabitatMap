@@ -1,10 +1,12 @@
 .slider {
   color: $white;
+  position: relative;
 }
 
 .slide {
   overflow: hidden;
   position: relative;
+  min-height: 32rem;
 
   @media screen and (max-width: $large-mobile-max) {
     padding-bottom: 0;
@@ -12,17 +14,20 @@
 }
 
 .slide__photo {
-  width: calc(100% + 8vw);
-  margin-top: $u-space-small;
   margin-left: -4vw;
+  margin-top: 2.5rem;
   max-width: none;
+  width: calc(100% + 8vw);
 
   @media screen and (min-width: $tablet-min) {
-    height: 100%;
     left: 50%;
+    margin-top: $u-space-small;
+    min-height: 100%;
+    min-width: 50%;
     margin: 0;
     position: absolute;
-    top: 0;
+    top: 50%;
+    transform: translateY(-50%);
     width: auto;
   }
 }
@@ -33,4 +38,63 @@
   @media screen and (min-width: $tablet-min) {
     padding: $u-space-default $u-space-default $u-space-default 0;
   }
+}
+
+// Slider controls
+
+.tns-controls {
+  position: absolute;
+  color: transparent;
+  top: 50%;
+  right: 60px;
+  z-index: 1;
+}
+
+[data-controls="prev"] {
+  display: none;
+}
+
+[data-controls="next"] {
+  background: url("/assets/img/svg/Slider-Arrow.svg") center no-repeat;
+
+  @media screen and (max-width: $large-mobile-max) {
+    display: none;
+  }
+}
+
+// Slider nav (dots)
+
+.tns-nav {
+  position: absolute;
+  left: 4vw;
+  top: 2rem;
+  z-index: 1;
+
+  @media screen and (min-width: $tablet-min) {
+    left: 10vw;
+  }
+
+  @media screen and (min-width: $desktop-min) {
+    left: 15vw;
+  }
+
+  @media screen and (min-width: $large-desktop-min) {
+    left: 21vw;
+  }
+}
+
+[data-nav] {
+  border-radius: 50%;
+  height: 8px;
+  width: 8px;
+  margin-right: 9px;
+
+  &:not(.tns-nav-active) {
+    background: $white;
+  }
+}
+
+.tns-nav-active {
+  background: transparent;
+  border: 1px solid $white;
 }

@@ -42,16 +42,25 @@ section: home
 </section>
 
 <section class="slider">
-  <div class="panel u--bg-teal slide">
-    <div class="split--50 slide__story">
-      <h2 class="heading heading--capitilized">Who is using Airbeam?</h2>
-      <h3 class="heading heading--medium">Company name</h3>
-      <p class="p--body">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non interdum nisi. Suspendisse dictum risus vitae elementum venenatis. Duis mollis, arcu quis dignissim vehicula, diam nisi elementum libero, at suscipit felis metus ut arcu.
-      </p>
-      <a href="#" class="button button--ac-on-teal">More User Stories</a>
-    </div>
-    <img src="{{ site.produrl | append: '/assets/img/about-habitatmap-01.jpg' }}" class="slide__photo" />
+  <div class="js-slider">
+    {% assign slides = site.slides | where: 'featured', true | sort: 'order' %}
+    {% for slide in slides %}
+      {% unless forloop.index > 4 %}
+        <div>
+          <div class="panel u--bg-teal slide">
+            <div class="split--50 slide__story">
+              <h2 class="heading heading--capitilized">Who is using Airbeam?</h2>
+                <h3 class="heading heading--medium">{{ slide.organization_name }}</h3>
+                <p class="p--body">
+                  {{ slide.description }}
+                </p>
+              <a href="#" class="button button--ac-on-teal">More User Stories</a>
+            </div>
+            <img src="{{ site.produrl | append: slide.image }}" class="slide__photo" />
+          </div>
+        </div>
+      {% endunless %}
+    {% endfor %}
   </div>
 </section>
 
@@ -89,3 +98,5 @@ section: home
     </blockquote>
   </div>
 </section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
