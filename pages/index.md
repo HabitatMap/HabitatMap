@@ -6,11 +6,20 @@ section: home
 ---
 
 {% assign hero_image_url = site.produrl | append: "/assets/img/habitatmap-home-airbeam-aircasting.jpg" %}
+{% assign hero_image_mobile_url = site.produrl | append: "/assets/img/habitatmap-home-airbeam-aircasting.jpg?nf_resize=fit&w=720" %}
 
-<section
-  class="panel panel--hero u--bg-teal-light"
-  style="background-image: url({{ hero_image_url }})"
->
+<style scoped>
+  .panel--hero {
+    background-image: url("{{ hero_image_url }}");
+  }
+
+  @media screen and (max-width: 480px) {
+    .panel--hero {
+      background-image: url("{{ hero_image_mobile_url }}");
+    }
+  }
+</style>
+<section class="panel panel--hero u--bg-teal-light">
   <div class="split--50">
     <h1 class="heading heading--large u--accent-hm panel__heading">
       Harnessing the Power&nbsp;of&nbsp;People and&nbsp;Technology&nbsp;to Improve the Quality&nbsp;of&nbsp;Lives
