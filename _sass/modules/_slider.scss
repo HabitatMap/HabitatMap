@@ -5,6 +5,7 @@
 .slide {
   overflow: hidden;
   position: relative;
+  min-height: 32rem;
 
   @media screen and (max-width: $large-mobile-max) {
     padding-bottom: 0;
