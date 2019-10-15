@@ -48,7 +48,7 @@ Do not push this change to the remote repository.
 
 We're using Netlify Large Media, which means that most images (SVGs excluded at this point) in the repositiory are actually [Git FLS pointers](https://git-lfs.github.com/).
 
-To work with that setup locally, e.g. add new assets to the repository by hand and not upload via CMS (e.g. those used in the layout), you need to go through the following [large media requirements](https://www.netlify.com/docs/large-media/#requirements) to install missing tools.
+To work with that setup locally, you need to go through the following [large media requirements](https://www.netlify.com/docs/large-media/#requirements) to install missing tools. You'll need to do this when you add new assets to the repository by hand, not via CMS (e.g. those that are used in the layout).
 
 ### Image transformations
 
