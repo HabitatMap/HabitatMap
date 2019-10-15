@@ -42,6 +42,8 @@ collections:
   tags:
     output: true
     permalink: /blog/tags/:name
+  faq:
+    output: true
 
 defaults:
   -

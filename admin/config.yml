@@ -119,3 +119,23 @@ collections:
       preview: false
     fields:
       - { label: "Tag name", name: "name", hint: "If you need to change the name of an existing tag, please delete it and create a new one. If you edit an existing tag, the link to the tag blog page will break." }
+  - name: "faq"
+    label: "FAQ"
+    label_singular: "FAQ"
+    folder: "_faq"
+    create: true
+    identifier_field: question
+    editor:
+      preview: false
+    fields:
+      - {
+          label: "Question",
+          name: "question",
+          widget: "string"
+        }
+      - {
+          label: "Answer",
+          name: "answer",
+          widget: "string"
+        }
+
