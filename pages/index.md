@@ -41,7 +41,8 @@ section: home
   </div>
 </section>
 
-<section class="slider js-slider">
+<section class="slider">
+  <div class="js-slider">
     {% assign slides = site.slides | where: 'featured', true | sort: 'order' %}
     {% for slide in slides %}
       {% unless forloop.index > 4 %}
@@ -60,6 +61,7 @@ section: home
         </div>
       {% endunless %}
     {% endfor %}
+  </div>
 </section>
 
 <section class="panel panel--align-center ac-intro">
