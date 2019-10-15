@@ -42,3 +42,16 @@ backend:
 ```
 
 Do not push this change to the remote repository.
+
+
+## Netlify Large Media
+
+We're using Netlify Large Media, which means that most images (SVGs excluded at this point) in the repositiory are actually [Git FLS pointers](https://git-lfs.github.com/).
+
+To work with that setup locally, e.g. add new assets to the repository by hand and not upload via CMS (e.g. those used in the layout), you need to go through the following [large media requirements](https://www.netlify.com/docs/large-media/#requirements) to install missing tools.
+
+### Image transformations
+
+Using NLM enables us to request specific size versions of images with [image transformations](https://www.netlify.com/docs/image-transformation/).
+
+There are limits to how many transformations can happen during a month in the free plan, you can check the current number of transformations in the [Large Media panel on the Netlify dashboard](https://app.netlify.com/sites/habitatmap/settings/large-media).
