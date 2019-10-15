@@ -18,11 +18,13 @@
   max-width: none;
 
   @media screen and (min-width: $tablet-min) {
-    height: 100%;
     left: 50%;
+    min-height: 100%;
+    min-width: 50%;
     margin: 0;
     position: absolute;
-    top: 0;
+    top: 50%;
+    transform: translateY(-50%);
     width: auto;
   }
 }
