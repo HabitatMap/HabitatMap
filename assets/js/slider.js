@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const slider = tns({
+  tns({
     container: ".js-slider",
-    autoHeight: true
+    autoHeight: true,
+    speed: 400
   });
 });
