@@ -100,4 +100,5 @@ section: home
   </div>
 </section>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+<script defer type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+<script defer type="text/javascript" src="/assets/js/slider.js"></script>
