@@ -140,14 +140,14 @@ collections:
         }
       - {
           label: "Category",
-          name: "faq_category",
+          name: "category",
           widget: "relation",
           collection: "faq_categories",
           displayFields: [name],
           searchFields: [name],
           valueField: "name"
         }
-  - name: "faq_category"
+  - name: "faq_categories"
     label: "FAQ categories"
     label_singular: "FAQ category"
     folder: "_faq_categories"
