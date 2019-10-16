@@ -138,4 +138,27 @@ collections:
           name: "answer",
           widget: "string"
         }
-
+      - {
+          label: "Category",
+          name: "faq_category",
+          widget: "relation",
+          collection: "faq_categories",
+          displayFields: [name],
+          searchFields: [name],
+          valueField: "name"
+        }
+  - name: "faq_category"
+    label: "FAQ categories"
+    label_singular: "FAQ category"
+    folder: "_faq_categories"
+    identifier_field: name
+    create: true
+    editor:
+      preview: false
+    fields:
+      - {
+          label: "Category name",
+          name: "name",
+          widget: "string",
+          hint: "If you need to change the name of an existing category, please delete it and create a new one. If you edit an existing category, the link to the category blog page will break."
+        }
