@@ -2,163 +2,180 @@ backend:
   name: git-gateway
   branch: master
 
-media_folder: "images/uploads"
+media_folder: images/uploads
 
 collections:
-  - name: "blog" # Used in routes, e.g., /admin/collections/blog
-    label: "Blog" # Used in the UI
-    label_singular: "Post" # Used in the UI, ie: "New Post"
-    folder: "_posts/" # The path to the folder where the documents are stored
+  - name: blog # Used in routes, e.g., /admin/collections/blog
+    label: Blog # Used in the UI
+    label_singular: Post # Used in the UI, ie: New Post
+    folder: _posts # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Jekyll requires this format for blog posts
-    preview_path: blog/{{title}}
     fields: # The fields for each document, usually in front matter
-      - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: Layout, name: layout, widget: hidden, default: post }
+      - { label: Title, name: title, widget: string }
+      - { label: Publish Date, name: date, widget: datetime }
       - {
-          label: "Featured?",
-          name: "featured",
-          widget: "boolean",
-          hint: "Make sure only one of your posts is marked as featured. Otherwise you won't know for sure which of the featured posts will show up on the main blog page."
+          label: Featured?,
+          name: featured,
+          widget: boolean,
+          hint: >-
+            Make sure only one of your posts is marked as featured.
+            Otherwise you won't know for sure which of the featured
+            posts will show up on the main blog page.
         }
       - {
-          label: "Author",
-          name: "author",
-          widget: "relation",
-          collection: "authors",
+          label: Author,
+          name: author,
+          widget: relation,
+          collection: authors,
           displayFields: [display_name],
           searchFields: [display_name],
-          valueField: "display_name",
+          valueField: display_name,
           required: false,
-          hint: "If you don't set an author, it will be Michael Heimbinder."
+          hint: If you don't set an author, it will be Michael Heimbinder.
         }
       - {
-          label: "Featured Image",
-          name: "thumbnail",
-          widget: "image",
-          hint: "For the best effect upload images 1200x705 in resolution (or bigger with the same proportions)."
+          label: Featured Image,
+          name: thumbnail,
+          widget: image,
+          hint: For the best effect upload images 1200x705 in resolution (or bigger with the same proportions).
         }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: Body, name: body, widget: markdown }
       - {
-          label: "Category",
-          name: "category",
-          widget: "relation",
-          collection: "categories",
+          label: Category,
+          name: category,
+          widget: relation,
+          collection: categories,
           displayFields: [name],
           searchFields: [name],
-          valueField: "name"
+          valueField: name
         }
       - {
-          label: "Tags",
-          name: "tag",
-          widget: "relation",
-          collection: "tags",
+          label: Tags,
+          name: tag,
+          widget: relation,
+          collection: tags,
           displayFields: [name],
           searchFields: [name],
-          valueField: "name",
+          valueField: name,
           multiple: true
         }
-  - name: "slides"
-    label: "Slides"
-    label_singular: "Slide"
-    folder: "_slides"
+  - name: slides
+    label: Slides
+    label_singular: Slide
+    folder: _slides
     identifier_field: organization_name
     create: true
     editor:
       preview: false
     fields:
-      - { label: "Organization name", name: "organization_name", widget: "string" }
-      - { label: "Description", name: "description", widget: "string" }
-      - { label: "Image", name: "image", widget: "image" }
+      - { label: Organization name, name: organization_name, widget: string }
+      - { label: Description, name: description, widget: string }
+      - { label: Image, name: image, widget: image }
       - {
-          label: "Featured?",
-          name: "featured",
-          widget: "boolean",
-          hint: "If you mark a slide as featured it will be shown in the slider, otherwise it won't."
+          label: Featured?,
+          name: featured,
+          widget: boolean,
+          hint: If you mark a slide as featured it will be shown in the slider, otherwise it won't.
         }
       - {
-          label: "Order",
-          name: "order",
-          widget: "number",
-          valueType: "int",
-          min: "1",
-          max: "4",
-          hint: "Specifies the order of the slides, 1 to 4.",
+          label: Order,
+          name: order,
+          widget: number,
+          valueType: int,
+          min: 1,
+          max: 4,
+          hint: Specifies the order of the slides, 1 to 4.,
           required: false
         }
-  - name: "authors"
-    label: "Authors"
-    label_singular: "Author"
-    folder: "_authors/"
+  - name: authors
+    label: Authors
+    label_singular: Author
+    folder: _authors
     identifier_field: name
     create: true
     editor:
       preview: false
-    slug: "{{slug}}"
+    slug: {{slug}}
     fields:
-      - { label: "Short Name", name: "name", widget: "string" }
-      - { label: "Display Name", name: "display_name", widget: "string" }
-  - name: "categories"
-    label: "Categories"
-    label_singular: "Category"
-    folder: "_categories"
+      - { label: Short Name, name: name, widget: string }
+      - { label: Display Name, name: display_name, widget: string }
+  - name: categories
+    label: Categories
+    label_singular: Category
+    folder: _categories
     identifier_field: name
     create: true
     editor:
       preview: false
     fields:
-      - { label: "Category name", name: "name", widget: "string", hint: "If you need to change the name of an existing category, please delete it and create a new one. If you edit an existing category, the link to the category blog page will break." }
-  - name: "tags"
-    label: "Tags"
-    label_singular: "Tag"
-    folder: "_tags"
+      - {
+          label: Category name,
+          name: name,
+          widget: string,
+          hint: >-
+            If you need to change the name of an existing category, please delete it and create a new one.
+            If you edit an existing category, the link to the category blog page will break.
+        }
+  - name: tags
+    label: Tags
+    label_singular: Tag
+    folder: _tags
     create: true
     identifier_field: name
     editor:
       preview: false
     fields:
-      - { label: "Tag name", name: "name", hint: "If you need to change the name of an existing tag, please delete it and create a new one. If you edit an existing tag, the link to the tag blog page will break." }
-  - name: "faq"
-    label: "FAQ"
-    label_singular: "FAQ"
-    folder: "_faq"
+      - {
+          label: Tag name,
+          name: name,
+          hint:  >-
+            If you need to change the name of an existing tag, please delete it and create a new one.
+            If you edit an existing tag, the link to the tag blog page will break.
+        }
+  - name: faq
+    label: FAQ
+    label_singular: FAQ
+    folder: _faq
     create: true
     identifier_field: question
     editor:
       preview: false
     fields:
       - {
-          label: "Question",
-          name: "question",
-          widget: "string"
+          label: Question,
+          name: question,
+          widget: string
         }
       - {
-          label: "Answer",
-          name: "answer",
-          widget: "string"
+          label: Answer,
+          name: answer,
+          widget: string
         }
       - {
-          label: "Category",
-          name: "category",
-          widget: "relation",
-          collection: "faq_categories",
+          label: Category,
+          name: category,
+          widget: relation,
+          collection: faq_categories,
           displayFields: [name],
           searchFields: [name],
-          valueField: "name"
+          valueField: name
         }
-  - name: "faq_categories"
-    label: "FAQ categories"
-    label_singular: "FAQ category"
-    folder: "_faq_categories"
+  - name: faq_categories
+    label: FAQ categories
+    label_singular: FAQ category
+    folder: _faq_categories
     identifier_field: name
     create: true
     editor:
       preview: false
     fields:
       - {
-          label: "Category name",
-          name: "name",
-          widget: "string",
-          hint: "If you need to change the name of an existing category, please delete it and create a new one. If you edit an existing category, the link to the category blog page will break."
+          label: Category name,
+          name: name,
+          widget: string,
+          hint: >-
+            If you need to change the name of an existing category, please delete it and create a new one.
+            If you edit an existing category, the link to the category blog page will break.
         }
