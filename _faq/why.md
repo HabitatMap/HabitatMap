@@ -1,5 +1,0 @@
----
-question: Why?
-answer: Because.
----
-
