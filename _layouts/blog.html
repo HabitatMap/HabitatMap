@@ -16,18 +16,20 @@ layout: default
       {{ featured_post.title }}
     </h2>
 
-    <a href="{{ featured_post.url }}"" class="post-header__read-more">Read more</a>
+    <a href="{{ featured_post.url }}" class="post-header__read-more">Read more</a>
   </div>
 
   {% assign image_url = site.produrl | append: featured_post.thumbnail %}
 
-  <img
-    class="post-header__image"
-    srcset="{{ image_url | append: '?nf_resize=smartcrop&w=480&h=282 480w' }},
-            {{ image_url | append: '?nf_resize=smartcrop&w=720&h=423 720w' }},
-            {{ image_url | append: '?nf_resize=smartcrop&w=1200&h=705 1200w' }}"
-    src="{{ image_url | append: '?nf_resize=smartcrop&w=1200&h=705' }}"
-  />
+  <a href="{{ featured_post.url }}">
+    <img
+      class="post-header__image"
+      srcset="{{ image_url | append: '?nf_resize=smartcrop&w=480&h=282 480w' }},
+              {{ image_url | append: '?nf_resize=smartcrop&w=720&h=423 720w' }},
+              {{ image_url | append: '?nf_resize=smartcrop&w=1200&h=705 1200w' }}"
+      src="{{ image_url | append: '?nf_resize=smartcrop&w=1200&h=705' }}"
+    />
+  </a>
 </div>
 
 <div class="js--posts-index">
