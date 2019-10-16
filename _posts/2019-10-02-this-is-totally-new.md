@@ -2,6 +2,7 @@
 layout: post
 title: This is totally NEW!
 date: 2019-10-02T15:28:17.243Z
+featured: true
 thumbnail: /images/uploads/newtown-creek.jpg
 category: Health
 tag:
