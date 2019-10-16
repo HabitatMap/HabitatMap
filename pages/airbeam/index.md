@@ -15,7 +15,7 @@ section: airbeam
     <div class="panel">
       <div class="split--50 split--padding-right">
         <img
-          class="img img--alternate-medium"
+          class="img img--alternate-medium img--fade-in"
           srcset="{{ site.produrl | append: '/assets/img/about-airbeam-01.jpg?nf_resize=fit&w=720 480w' }},
                   {{ site.produrl | append: '/assets/img/about-airbeam-01.jpg' }}"
           alt="Airbeam device"
@@ -45,8 +45,11 @@ section: airbeam
       </div>
       <div class="split--50 split--padding-left u--align-right">
         <img
-          class="img img--alternate-medium"
-          src="{{ site.produrl | append: '/assets/img/about-airbeam-02.jpg' }}"
+          class="img img--alternate-medium img--fade-in"
+          srcset="{{ site.produrl | append: '/assets/img/about-airbeam-02.jpg?nf_resize=fit&w=720 480w' }},
+               {{ site.produrl | append: '/assets/img/about-airbeam-02.jpg 767w' }},
+               {{ site.produrl | append: '/assets/img/about-airbeam-02.jpg?nf_resize=fit&w=600 1024w' }},
+               {{ site.produrl | append: '/assets/img/about-airbeam-02.jpg' }}"
           alt="HabitatMap Team"
         />
       </div>
@@ -74,8 +77,11 @@ section: airbeam
   <div class="panel">
     <div>
       <img
-        src="{{ site.produrl | append: '/assets/img/habitatmap-aircasting-map-placeholder.png' }}"
+        srcset="{{ site.produrl | append: '/assets/img/habitatmap-aircasting-map-placeholder.png?nf_resize=fit&w=800 480w' }},
+                {{ site.produrl | append: '/assets/img/habitatmap-aircasting-map-placeholder.png?nf_resize=fit&w=1150 768w' }},
+                {{ site.produrl | append: '/assets/img/habitatmap-aircasting-map-placeholder.png' }}"
         alt="AirCasting Map"
+        class="img--fade-in"
       />
     </div>
   </div>

@@ -14,6 +14,10 @@
   max-width: 380px;
 }
 
+.img--fade-in {
+  @include animation("fadein 1s forwards");
+}
+
 .img-full-width {
   background-size: cover;
   background-position: center center;

@@ -19,6 +19,7 @@ section: home
     }
   }
 </style>
+
 <section class="panel panel--hero u--bg-teal-light">
   <div class="split--50">
     <h1 class="heading heading--large u--accent-hm panel__heading">

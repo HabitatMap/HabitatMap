@@ -25,16 +25,26 @@ section: airbeam
     <h1 class="heading heading--large u--gray-text page-title u--tablet-hidden">
       Intro lorem ipsum dolor sit amet conse tetur adipi scing elit.
     </h1>
-    <img src="{{ site.produrl | append: '/assets/img/airbeam-howitworks-01.jpg' }}" alt="Airbeam attached to a wall at home" class="img" />
+    <img
+      srcset="{{ site.produrl | append: '/assets/img/airbeam-howitworks-01.jpg?nf_resize=fit&w=720 480w' }},
+              {{ site.produrl | append: '/assets/img/airbeam-howitworks-01.jpg 767w' }},
+              {{ site.produrl | append: '/assets/img/airbeam-howitworks-01.jpg?nf_resize=fit&w=600 1024w' }},
+              {{ site.produrl | append: '/assets/img/airbeam-howitworks-01.jpg' }}"
+      alt="Airbeam attached to a wall at home"
+      class="img img--fade-in"
+    />
   </div>
 </section>
 
 <section class="panel">
   <div class="split--50 split--padding-right">
     <img
-      src="{{ site.produrl | append: '/assets/img/airbeam-howitworks-02.jpg' }}"
+      srcset="{{ site.produrl | append: '/assets/img/airbeam-howitworks-02.jpg?nf_resize=fit&w=720 480w' }},
+              {{ site.produrl | append: '/assets/img/airbeam-howitworks-02.jpg 767w' }},
+              {{ site.produrl | append: '/assets/img/airbeam-howitworks-02.jpg?nf_resize=fit&w=600 1024w' }},
+              {{ site.produrl | append: '/assets/img/airbeam-howitworks-02.jpg' }}"
       alt="Airbeam attached to a backpack"
-      class="img img--margin-top"
+      class="img img--margin-top img--fade-in"
     />
   </div>
 
@@ -75,9 +85,12 @@ section: airbeam
   </div>
   <div class="split--50">
     <img
-      src="{{ site.produrl | append: '/assets/img/airbeam-howitworks-04-app-placeholder-.png' }}"
+      srcset="{{ site.produrl | append: '/assets/img/airbeam-howitworks-04-app-placeholder-.png?nf_resize=fit&w=720 480w' }},
+              {{ site.produrl | append: '/assets/img/airbeam-howitworks-04-app-placeholder-.png 767w' }},
+              {{ site.produrl | append: '/assets/img/airbeam-howitworks-04-app-placeholder-.png?nf_resize=fit&w=600 1024w' }},
+              {{ site.produrl | append: '/assets/img/airbeam-howitworks-04-app-placeholder-.png' }}"
       alt="Aircasting Mobile App"
-      class="img img--margin-top"
+      class="img img--margin-top img--fade-in"
     />
   </div>
 </section>
@@ -85,9 +98,12 @@ section: airbeam
 <section class="panel">
   <div class="split--50 split--padding-right">
     <img
-      src="{{ site.produrl | append: '/assets/img/airbeam-howitworks-05.jpg' }}"
+      srcset="{{ site.produrl | append: '/assets/img/airbeam-howitworks-05.jpg?nf_resize=fit&w=720 480w' }},
+              {{ site.produrl | append: '/assets/img/airbeam-howitworks-05.jpg 767w' }},
+              {{ site.produrl | append: '/assets/img/airbeam-howitworks-05.jpg?nf_resize=fit&w=600 1024w' }},
+              {{ site.produrl | append: '/assets/img/airbeam-howitworks-05.jpg' }}"
       alt="Airbeam on a desk"
-      class="img"
+      class="img img--fade-in"
     />
   </div>
   <div class="split--50">

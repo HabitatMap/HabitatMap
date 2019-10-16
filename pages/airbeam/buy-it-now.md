@@ -30,7 +30,7 @@ section: airbeam
     </div>
     <div class="split--50 u--align-right">
       <img
-        class="img img--alternate-small"
+        class="img img--alternate-small img--fade-in"
         src="{{ site.produrl | append: '/assets/img/about-habitatmap-02.jpg' }}"
         alt="Airbeam"
       />

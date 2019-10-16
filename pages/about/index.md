@@ -4,6 +4,38 @@ title: About
 permalink: /about
 section: about
 ---
+
+{% assign hero_image_url = site.produrl | append: "/assets/img/about-habitatmap-01.jpg" %}
+{% assign hero_image_mobile_url = site.produrl | append: "/assets/img/about-habitatmap-01.jpg?nf_resize=fit&w=720" %}
+{% assign hero_image_tablet_url = site.produrl | append: "/assets/img/about-habitatmap-01.jpg?nf_resize=fit&w=1536" %}
+{% assign hero_image_medium_desktop_url = site.produrl | append: "/assets/img/about-habitatmap-01.jpg?nf_resize=fit&w=2050" %}
+
+
+<style scoped>
+  .img-full-width {
+    background-image: url("{{ hero_image_url }}");
+  }
+
+  @media screen and (max-width: 1366px) {
+    .img-full-width {
+      background-image: url("{{ hero_image_medium_desktop_url }}");
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    .img-full-width {
+      background-image: url("{{ hero_image_tablet_url }}");
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .img-full-width {
+      background-image: url("{{ hero_image_mobile_url }}");
+    }
+  }
+
+</style>
+
 <section class="panel panel--about-intro u--bg-teal">
   <div class="split--50 split--padding-right">
     <h1 class="heading heading--large">
@@ -20,10 +52,7 @@ section: about
   </div>
 </section>
 
-<section
-  class="img-full-width"
-  style="background-image: url({{ site.produrl | append: '/assets/img/about-habitatmap-01.jpg' }});"
-></section>
+<section class="img-full-width"></section>
 
 <section class="arc-background arc-background--left-teal-light arc-background--left-center u--vertical-padding">
   <div class="panel">
@@ -35,7 +64,7 @@ section: about
     </div>
     <div class="split--40 split--padding-left u--align-right">
       <img
-        class="img img--alternate-small"
+        class="img img--alternate-small img--fade-in"
         src="{{ site.produrl | append: '/assets/img/about-habitatmap-02.jpg' }}"
         alt="Airbeam"
       />
@@ -45,7 +74,7 @@ section: about
   <div class="panel">
     <div class="split--60 split--padding-right split--order-secondary">
       <img
-        class="img img--alternate-medium"
+        class="img img--alternate-medium img--fade-in"
         src="{{ site.produrl | append: '/assets/img/about-habitatmap-02.jpg' }}"
         alt="Airbeam"
       />
