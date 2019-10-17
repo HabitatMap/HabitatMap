@@ -10,6 +10,6 @@ answer: >-
   worry that the man was going to get hurt, because the man had got him. He was
   no longer scared of what tomorrow might bring, because yesterday had brought
   it. 
-category: Instruments
+category: Gaiman
 ---
 
