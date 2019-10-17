@@ -8,7 +8,7 @@ layout: default
 {% include category-nav.html %}
 
 <section class="panel">
-  <ul class="post-list">
+  <ul class="post-list post-list--grid-view">
     {% for post in site.posts %}
       {% if post.tags contains page.name %}
         {% include post-snippet.html post = post %}

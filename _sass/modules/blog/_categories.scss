@@ -17,7 +17,7 @@
   padding: 0.35rem 0.5rem 0.45rem;
 }
 
-.categories__view-switch {
+.post-view-toggle {
   background: none;
   color: $blue-dark;
   font-family: $bold-font;
@@ -27,7 +27,7 @@
     content: "grid view";
   }
 
-  &.post-toggle--list-view {
+  &.post-view-toggle--grid {
     &:after {
       content: "list view";
     }

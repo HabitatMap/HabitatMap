@@ -32,12 +32,12 @@ layout: default
   </a>
 </div>
 
-<div class="js--posts-index">
+<div class="posts-index posts-index--with-arc js--posts-index">
 
   {% include category-nav.html %}
 
   <section class="panel">
-    <ul class="post-list">
+    <ul class="post-list post-list--grid-view">
       {% for post in site.posts %}
         {% include post-snippet.html post = post %}
       {% endfor %}
