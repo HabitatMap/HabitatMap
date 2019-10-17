@@ -6,7 +6,9 @@ $header-link-color-white: $white;
 // Logo themes
 
 .logo--hm,
-.logo--hm-monogram {
+.logo--hm-monogram,
+.icon-search,
+.icon-search-close {
   fill: $gray;
 
   [data-current="airbeam"] &,
@@ -64,7 +66,8 @@ $header-link-color-white: $white;
 
 // Header background themes
 
-.header {
+.header,
+.search-form {
   background-color: $teal-light;
 
   [data-current="airbeam"] &,
@@ -90,7 +93,8 @@ $header-link-color-white: $white;
   }
 
   @media screen and (max-width: $tablet-max) {
-    &.header--nav-expanded {
+    &.header--nav-expanded,
+    .header--nav-expanded & {
       background-color: $gray;
     }
   }
@@ -308,6 +312,47 @@ $header-link-color-white: $white;
           $header-link-color-white
         );
       }
+    }
+  }
+}
+
+// Search input border
+
+.input--search {
+  border-color: $gray;
+
+  [data-current="airbeam"] &,
+  [data-current="donate"] & {
+    border-color: $green;
+  }
+
+  [data-current="faq"] &,
+  [data-current="about"] &,
+  [data-current="blog"] & {
+    border-color: $white;
+  }
+
+  [data-current="aircasting"] & {
+    border-color: $blue;
+  }
+
+  .sticky & {
+    [data-current="about"] & {
+      border-color: $teal;
+    }
+
+    [data-current="blog"] & {
+      border-color: $header-link-color-ac;
+    }
+
+    [data-current="faq"] & {
+      border-color: $header-link-color-hm;
+    }
+  }
+
+  @media screen and (max-width: $tablet-max) {
+    .header--nav-expanded & {
+      border-color: $white;
     }
   }
 }

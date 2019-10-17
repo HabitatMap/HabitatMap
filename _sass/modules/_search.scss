@@ -1,0 +1,37 @@
+.icon-search {
+  width: 1.5rem;
+  cursor: pointer;
+  margin-right: $u-space-tiny;
+}
+
+.icon-search-close {
+  cursor: pointer;
+  display: inline-block;
+  left: 93%;
+  position: absolute;
+  top: 1rem;
+  width: 0.8rem;
+}
+
+.search-form {
+  display: none;
+  left: 0;
+  padding: 0.7rem 0 0.2rem;
+  position: absolute;
+  width: 16rem;
+
+  @media screen and (max-width: $tablet-max) {
+    width: 100%;
+    top: 5rem;
+  }
+
+  @media screen and (min-width: $desktop-min) {
+    left: auto;
+    right: 84%;
+    margin-right: 1rem;
+  }
+
+  &.search-form--open {
+    display: block;
+  }
+}
