@@ -143,13 +143,6 @@ code {
   padding: 0.2rem 0.4rem;
 }
 
-input,
-textarea {
-  &:focus {
-    border: 0.05em solid $text-color;
-  }
-}
-
 textarea {
   vertical-align: top;
   resize: vertical;

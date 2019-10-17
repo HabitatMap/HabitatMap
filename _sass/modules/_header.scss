@@ -122,12 +122,14 @@ $header-font-size-desktop: 1.125rem;
   @include flexbox;
   @include justify-content(space-between);
   @include align-items(center);
-  @include flex(0 0 15rem);
+  @include flex(0 0 16rem);
   border-top: 1px solid $white;
   padding-top: $u-space-small;
+  position: relative;
 
   @media screen and (min-width: $small-desktop-min) {
     padding: 0;
+    margin-left: $u-space-small;
     border: none;
   }
 }
