@@ -37,4 +37,4 @@ section: faq
   {% endfor %}
 </section>
 
-<script defer type="text/javascript" src="/assets/js/accordion.js"></script>
+<script defer type="text/javascript" src="/assets/js/faq.js"></script>
