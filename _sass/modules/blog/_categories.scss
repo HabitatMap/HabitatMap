@@ -16,20 +16,3 @@
   margin: 0 $u-space-tiny $u-space-tiny 0;
   padding: 0.35rem 0.5rem 0.45rem;
 }
-
-.post-view-toggle {
-  background: none;
-  color: $blue-dark;
-  font-family: $bold-font;
-  padding: 1rem;
-
-  &:after {
-    content: "grid view";
-  }
-
-  &.post-view-toggle--grid {
-    &:after {
-      content: "list view";
-    }
-  }
-}
