@@ -12,9 +12,10 @@ $input-height: 36px;
   border-radius: 3px;
   box-shadow: none;
   padding: 0 $u-space-tiny;
+  -webkit-appearance: none;
 
   &:focus {
-    border-color: $green;
+    border: 1px solid $green;
   }
 }
 
@@ -34,7 +35,33 @@ $input-height: 36px;
 }
 
 .input--quantity {
+  background-image: url("/assets/img/svg/Triangles.svg");
+  background-repeat: no-repeat;
+  background-position: center right 0.5rem;
   max-width: 19rem;
   margin-bottom: $u-space-small;
   width: 100%;
+}
+
+.input--submit {
+  display: block;
+}
+
+.input--currency {
+  -moz-appearance: textfield;
+  max-width: 19rem;
+}
+
+.input--currency::-webkit-outer-spin-button,
+.input--currency::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.currency-wrapper {
+  margin-bottom: $u-space-default;
+
+  &:after {
+    content: "$";
+    margin-left: -1.5rem;
+  }
 }
