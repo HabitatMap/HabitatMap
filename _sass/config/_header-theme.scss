@@ -9,7 +9,8 @@ $header-link-color-white: $white;
 .logo--hm-monogram {
   fill: $gray;
 
-  [data-current="airbeam"] & {
+  [data-current="airbeam"] &,
+  [data-current="donate"] & {
     fill: $green;
   }
 
@@ -67,7 +68,8 @@ $header-link-color-white: $white;
   background-color: $teal-light;
 
   [data-current="airbeam"] &,
-  [data-current="aircasting"] & {
+  [data-current="aircasting"] &,
+  [data-current="donate"] & {
     background-color: $white;
   }
 
@@ -104,7 +106,8 @@ $header-link-color-white: $white;
     color: inherit;
   }
 
-  [data-current="airbeam"] & {
+  [data-current="airbeam"] &,
+  [data-current="donate"] & {
     color: $header-link-color-hm;
   }
 
@@ -150,7 +153,8 @@ $header-link-color-white: $white;
     color: rgba($header-link-color-homepage, 0.5);
   }
 
-  [data-current="airbeam"] & {
+  [data-current="airbeam"] &,
+  [data-current="donate"] & {
     background-color: $green;
     color: $white;
 
@@ -223,7 +227,8 @@ $header-link-color-white: $white;
     $header-link-color-homepage
   );
 
-  [data-current="airbeam"] & {
+  [data-current="airbeam"] &,
+  [data-current="donate"] & {
     @include button-color(
       $header-link-color-hm,
       $header-link-color-hm,
@@ -292,6 +297,7 @@ $header-link-color-white: $white;
       [data-current="about"] &,
       [data-current="airbeam"] &,
       [data-current="aircasting"] &,
+      [data-current="donate"] &,
       [data-current="blog"] &,
       [data-current="home"] &,
       [data-current="faq"] & {
@@ -311,7 +317,8 @@ $header-link-color-white: $white;
 .icon-nav-open {
   stroke: $gray;
 
-  [data-current="airbeam"] & {
+  [data-current="airbeam"] &,
+  [data-current="donate"] & {
     stroke: $green;
   }
 
