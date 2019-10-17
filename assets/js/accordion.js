@@ -6,13 +6,13 @@ for (i = 0; i < accHD.length; i++) {
 }
 
 function toggleItem() {
-  const itemClass = this.parentNode.className;
+  const wasItemOpen = this.parentNode.classList.contains("open");
 
   for (i = 0; i < accItem.length; i++) {
-    accItem[i].className = "faq__category close";
+    accItem[i].classList.remove("open");
   }
 
-  if (itemClass == "faq__category close") {
-    this.parentNode.className = "faq__category open";
+  if (wasItemOpen !== true) {
+    this.parentNode.classList.add("open");
   }
 }
