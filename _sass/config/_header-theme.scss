@@ -88,7 +88,8 @@ $header-link-color-white: $white;
     background-color: $blue;
   }
 
-  &.sticky {
+  &.sticky,
+  .sticky & {
     background-color: $white;
   }
 
@@ -319,44 +320,51 @@ $header-link-color-white: $white;
 // Search input border
 
 .input--search {
+  @include placeholder-color($gray);
   border-color: $gray;
 
   [data-current="airbeam"] &,
   [data-current="donate"] & {
+    @include placeholder-color($gray);
     border-color: $green;
   }
 
   [data-current="faq"] &,
   [data-current="about"] &,
   [data-current="blog"] & {
+    @include placeholder-color($light);
     border-color: $white;
   }
 
   [data-current="aircasting"] & {
+    @include placeholder-color($gray);
     border-color: $blue;
   }
 
   .sticky & {
     [data-current="about"] & {
+      @include placeholder-color($gray);
       border-color: $teal;
     }
 
     [data-current="blog"] & {
+      @include placeholder-color($gray);
       border-color: $header-link-color-ac;
     }
 
     [data-current="faq"] & {
+      @include placeholder-color($gray);
       border-color: $header-link-color-hm;
     }
   }
 
   @media screen and (max-width: $tablet-max) {
     .header--nav-expanded & {
+      @include placeholder-color($light);
       border-color: $white;
     }
   }
 }
-
 // Icon for mobile nav themes
 
 .icon-nav-open {
