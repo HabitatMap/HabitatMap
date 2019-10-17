@@ -6,6 +6,6 @@ answer: >-
   number of ageing highland terriers who had names like Hamish and Andrew and
   Jock. Once upon a time Miss Spink and Miss Forcible had been actresses, as
   Miss Spink told Coraline the first time she met her. 
-category: Instruments
+category: Gaiman
 ---
 
