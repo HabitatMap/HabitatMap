@@ -1,6 +1,6 @@
 ---
 question: How do I look today?
 answer: Amazing!
-category: Instruments
+category: Misc
 ---
 
