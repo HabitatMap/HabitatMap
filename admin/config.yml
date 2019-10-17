@@ -19,7 +19,7 @@ collections:
           label: Featured?,
           name: featured,
           widget: boolean,
-          hint: >-
+          hint:
             Make sure only one of your posts is marked as featured.
             Otherwise you won't know for sure which of the featured
             posts will show up on the main blog page.
@@ -97,7 +97,7 @@ collections:
     create: true
     editor:
       preview: false
-    slug: {{slug}}
+    slug: "{{slug}}"
     fields:
       - { label: Short Name, name: name, widget: string }
       - { label: Display Name, name: display_name, widget: string }
@@ -114,7 +114,7 @@ collections:
           label: Category name,
           name: name,
           widget: string,
-          hint: >-
+          hint:
             If you need to change the name of an existing category, please delete it and create a new one.
             If you edit an existing category, the link to the category blog page will break.
         }
@@ -130,7 +130,7 @@ collections:
       - {
           label: Tag name,
           name: name,
-          hint:  >-
+          hint:
             If you need to change the name of an existing tag, please delete it and create a new one.
             If you edit an existing tag, the link to the tag blog page will break.
         }
@@ -175,7 +175,7 @@ collections:
           label: Category name,
           name: name,
           widget: string,
-          hint: >-
+          hint:
             If you need to change the name of an existing category, please delete it and create a new one.
             If you edit an existing category, the link to the category blog page will break.
         }
