@@ -6,11 +6,11 @@ $input-height: 36px;
 }
 
 .input {
-  height: $input-height;
   background: none;
   border: 1px solid $gray;
   border-radius: 3px;
   box-shadow: none;
+  height: $input-height;
   padding: 0 $u-space-tiny;
   -webkit-appearance: none;
 
@@ -63,5 +63,27 @@ $input-height: 36px;
   &:after {
     content: "$";
     margin-left: -1.5rem;
+  }
+}
+
+.input--search {
+  background: none;
+  box-shadow: none;
+  border: none;
+  border-bottom: 2px solid white;
+  border-radius: 0;
+  height: $input-height;
+  margin-right: $u-space-tiny;
+  padding: 0 $u-space-tiny;
+  font-family: $body-font;
+  font-size: $base-font-size;
+  width: 100%;
+
+  &:focus {
+    outline: none;
+  }
+
+  @media screen and (max-width: $tablet-max) {
+    color: $white;
   }
 }
