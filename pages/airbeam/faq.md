@@ -36,3 +36,5 @@ section: faq
     </div>
   {% endfor %}
 </section>
+
+<script defer type="text/javascript" src="/assets/js/accordion.js"></script>
