@@ -57,7 +57,8 @@ section: home
                 </p>
               <a href="#" class="button button--ac-on-teal">More User Stories</a>
             </div>
-            <img src="{{ site.produrl | append: slide.image }}" class="slide__photo" />
+            {% assign image_url = site.produrl | append: slide.image %}
+            <img src="{{ image_url }}" data-src="{{ image_url }}" class="slide__photo" />
           </div>
         </div>
       {% endunless %}
