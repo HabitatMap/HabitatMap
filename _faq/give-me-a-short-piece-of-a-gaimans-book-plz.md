@@ -11,6 +11,6 @@ answer: >-
   no longer scared of what tomorrow might bring, because yesterday had brought
   it. 
 category: Gaiman
-order: 1
+order: 2
 ---
 
