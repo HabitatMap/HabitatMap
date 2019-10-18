@@ -20,9 +20,9 @@ collections:
           name: featured,
           widget: boolean,
           hint:
-            Make sure only one of your posts is marked as featured.
+            "Make sure only one of your posts is marked as featured.
             Otherwise you won't know for sure which of the featured
-            posts will show up on the main blog page.
+            posts will show up on the main blog page."
         }
       - {
           label: Author,
@@ -115,8 +115,8 @@ collections:
           name: name,
           widget: string,
           hint:
-            If you need to change the name of an existing category, please delete it and create a new one.
-            If you edit an existing category, the link to the category blog page will break.
+            "If you need to change the name of an existing category, please delete it and create a new one.
+            If you edit an existing category, the link to the category blog page will break."
         }
   - name: tags
     label: Tags
@@ -131,8 +131,8 @@ collections:
           label: Tag name,
           name: name,
           hint:
-            If you need to change the name of an existing tag, please delete it and create a new one.
-            If you edit an existing tag, the link to the tag blog page will break.
+            "If you need to change the name of an existing tag, please delete it and create a new one.
+            If you edit an existing tag, the link to the tag blog page will break."
         }
   - name: faq
     label: FAQ
@@ -162,6 +162,17 @@ collections:
           searchFields: [name],
           valueField: name
         }
+      - {
+          label: Order in category,
+          name: order,
+          widget: number,
+          valueType: int,
+          min: 1,
+          hint:
+            "Specifies the order in which questions will appear within FAQ category groups.
+            Best to use 1 to X where X is the total count of FAQ questions in a given category to keep track."
+        }
+
   - name: faq_categories
     label: FAQ categories
     label_singular: FAQ category
@@ -176,6 +187,16 @@ collections:
           name: name,
           widget: string,
           hint:
-            If you need to change the name of an existing category, please delete it and create a new one.
-            If you edit an existing category, the link to the category blog page will break.
+            "If you need to change the name of an existing category, please delete it and create a new one.
+            If you edit an existing category, the link to the category blog page will break."
+        }
+      - {
+          label: Order,
+          name: order,
+          widget: number,
+          valueType: int,
+          min: 1,
+          hint:
+            "Specifies the order in which FAQ categorized groups will be displayed.
+            Best to use 1 to X where X is the total count of FAQ categories to keep track."
         }
