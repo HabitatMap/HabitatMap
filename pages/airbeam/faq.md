@@ -23,10 +23,11 @@ section: faq
 </section>
 
 <section class="panel faq">
-  {% for category in site.faq_categories %}
+  {% assign categories = site.faq_categories | sort: "order" %}
+  {% for category in categories %}
     <div class="faq__category js--faq-section">
       <h2 class="heading heading--capitilized faq__category-name js--faq-heading">{{ category.name }}</h2>
-      {% assign faqs = site.faq | where: "category", category.name %}
+      {% assign faqs = site.faq | where: "category", category.name | sort: 'order' %}
       {% for faq in faqs %}
         <h3 class="heading heading--small faq__question">{{ faq.question }}</h3>
         <p class="p--body">
