@@ -1,5 +1,5 @@
 ---
-name: Misc
-order: 2
+name: Category 3
+order: 3
 ---
 
