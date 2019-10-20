@@ -1,5 +1,5 @@
 ---
-name: Instruments
-order: 1
+name: Category 2
+order: 2
 ---
 
