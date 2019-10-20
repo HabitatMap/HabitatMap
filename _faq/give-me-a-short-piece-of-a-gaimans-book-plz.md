@@ -1,16 +1,9 @@
 ---
-question: Give me a short piece of a Gaiman's book plz
+question: Is the AirBeam2 suitable for outdoor installations?
 answer: >-
-  Shadow had done three years in prison. He was big enough and looked
-  don't-fuck-with-me enough that his biggest problem was killing time. So he
-  kept himself in shape, and taught himself coin tricks, and thought a lot about
-  how much he loved his wife.  The best thing - in Shadow's opinion, perhaps the
-  only good thing - about being in prison was a feeling of relief. The feeling
-  that he'd plunged as low as he could plunge and he'd hit bottom. He didn't
-  worry that the man was going to get hurt, because the man had got him. He was
-  no longer scared of what tomorrow might bring, because yesterday had brought
-  it. 
-category: Gaiman
-order: 2
+  Absolutely!  AirBeam2 is weather resistant and can be installed outdoors
+  without need for shelter.
+category: Category 1
+order: 1
 ---
 
