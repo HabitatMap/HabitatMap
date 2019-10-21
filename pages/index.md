@@ -64,7 +64,6 @@ section: home
                       {{ image_url | append: '?nf_resize=fit&w=960 1280w' }},
                       {{ image_url | append: '?nf_resize=fit&w=1080 1440w' }},
                       {{ image_url | append: '?nf_resize=fit&w=1875 2500w' }}"
-              data-src="{{ image_url | append: '?nf_resize=fit&w=1875'  }}"
               class="slide__photo"
             />
 
