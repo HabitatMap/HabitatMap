@@ -58,7 +58,16 @@ section: home
               <a href="#" class="button button--ac-on-teal">More User Stories</a>
             </div>
             {% assign image_url = site.produrl | append: slide.image %}
-            <img src="{{ image_url }}" data-src="{{ image_url }}" class="slide__photo" />
+            <img
+              src="{{ image_url | append: '?nf_resize=fit&w=1875'  }}"
+              srcset="{{ image_url | append: '?nf_resize=fit&w=576 768w' }},
+                      {{ image_url | append: '?nf_resize=fit&w=960 1280w' }},
+                      {{ image_url | append: '?nf_resize=fit&w=1080 1440w' }},
+                      {{ image_url | append: '?nf_resize=fit&w=1875 2500w' }}"
+              data-src="{{ image_url | append: '?nf_resize=fit&w=1875'  }}"
+              class="slide__photo"
+            />
+
           </div>
         </div>
       {% endunless %}
