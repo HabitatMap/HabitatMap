@@ -19,6 +19,7 @@ collections:
           label: Featured?,
           name: featured,
           widget: boolean,
+          default: false,
           hint:
             "Make sure only one of your posts is marked as featured.
             Otherwise you won't know for sure which of the featured
@@ -78,6 +79,7 @@ collections:
           label: Featured?,
           name: featured,
           widget: boolean,
+          default: false,
           hint: "If you mark a slide as featured it will be shown in the slider, otherwise it won't."
         }
       - {
