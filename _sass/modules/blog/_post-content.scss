@@ -2,17 +2,7 @@
   @include flex(0 0 100%);
   max-width: $medium-content;
   margin: 0 auto;
-}
 
-.post-content__featured-image {
-  margin: 0 0 $u-space-default;
-
-  @media screen and (min-width: $desktop-min) {
-    margin: 0 0 $u-space-big;
-  }
-}
-
-.post-content {
   h2 {
     @extend .heading;
     @extend .heading--medium;
@@ -53,4 +43,17 @@
     font-family: $quote-font;
     font-size: $base-font-size1;
   }
+}
+
+.post-content__featured-image {
+  margin: 0 0 $u-space-default;
+
+  @media screen and (min-width: $desktop-min) {
+    margin: 0 0 $u-space-big;
+  }
+}
+
+.post-content__intro {
+  @extend .heading;
+  @extend .heading--medium;
 }
