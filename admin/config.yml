@@ -41,6 +41,7 @@ collections:
           widget: image,
           hint: For the best effect upload images 1200x705 in resolution (or bigger with the same proportions).
         }
+      - { label: Intro, name: intro, widget: text }
       - { label: Body, name: body, widget: markdown }
       - {
           label: Category,

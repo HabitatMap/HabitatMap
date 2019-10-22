@@ -21,6 +21,6 @@
   </h2>
 
   <time datetime="{{ post.date }}"></time>
-  <p>{{ post.excerpt | strip_newlines | truncate: 180 }}</p>
+  <p>{{ post.intro }}</p>
   <a href="{{ post.url }}" class="post-list__read-more">Read more</a>
 </li>
