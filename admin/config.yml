@@ -42,7 +42,7 @@ collections:
           hint: "For the best effect upload images 1200x705 in resolution (or bigger with the same proportions)."
         }
       - { label: Intro, name: intro, widget: text }
-      - { label: Body, name: body, widget: markdown }
+      - { label: Body, name: body, widget: markdown, buttons: [bold, italic, code, link, heading-two, quote, code-block, bulleted-list, numbered-list] }
       - {
           label: Category,
           name: category,
