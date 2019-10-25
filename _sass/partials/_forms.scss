@@ -65,25 +65,3 @@ $input-height: 36px;
     margin-left: -1.5rem;
   }
 }
-
-.input--search {
-  background: none;
-  box-shadow: none;
-  border: none;
-  border-bottom: 2px solid $gray;
-  border-radius: 0;
-  height: $input-height;
-  margin-right: $u-space-tiny;
-  padding: 0 $u-space-tiny;
-  font-family: $body-font;
-  font-size: $base-font-size;
-  width: 100%;
-
-  &:focus {
-    outline: none;
-  }
-
-  @media screen and (max-width: $tablet-max) {
-    color: $white;
-  }
-}
