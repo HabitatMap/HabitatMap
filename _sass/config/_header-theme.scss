@@ -147,6 +147,10 @@ $header-link-color-white: $white;
   }
 }
 
+.nav-list__link--search {
+  line-height: 1;
+}
+
 // Subnavigation links themes
 
 .subnav-list__link {

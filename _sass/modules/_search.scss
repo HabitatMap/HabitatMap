@@ -4,6 +4,20 @@
   margin-right: $u-space-tiny;
 }
 
+.searchbar-container {
+  @include flex(0 0 100%);
+  margin-bottom: $u-space-default;
+}
+
+// Algolia
+
+.ais-Highlight {
+  background: $teal-light;
+  font-family: $bold-font;
+  font-style: normal;
+}
+
+// Not used ATM, search icon is a link to /search
 .icon-search-close {
   cursor: pointer;
   display: inline-block;

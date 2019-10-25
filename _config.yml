@@ -31,6 +31,11 @@ produrl: https://habitatmap.lunarlogic.io
 plugins:
   - jekyll-feed
 
+# Search plugin config
+algolia:
+  application_id: BT6BD4TUL1
+  index_name: habitatmap_dev
+
 collections:
   posts:
     output: true
