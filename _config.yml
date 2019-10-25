@@ -78,6 +78,11 @@ defaults:
     values:
       featured: false
 
+algolia:
+  # Exclude files from indexing
+  files_to_exclude:
+    - _slides/*
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
