@@ -16,37 +16,3 @@
   font-family: $bold-font;
   font-style: normal;
 }
-
-// Not used ATM, search icon is a link to /search
-.icon-search-close {
-  cursor: pointer;
-  display: inline-block;
-  left: 93%;
-  position: absolute;
-  top: 1rem;
-  width: 0.8rem;
-}
-
-.search-form {
-  display: none;
-  left: 0;
-  padding: 0.7rem 0 0.2rem;
-  position: absolute;
-  width: 16rem;
-
-  @media screen and (max-width: $tablet-max) {
-    width: 100%;
-    top: 5rem;
-  }
-
-  @media screen and (min-width: $desktop-min) {
-    left: auto;
-    right: 84%;
-    margin-right: 1rem;
-    width: 14rem;
-  }
-
-  &.search-form--open {
-    display: block;
-  }
-}
