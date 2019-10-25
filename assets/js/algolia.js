@@ -5,9 +5,14 @@ document.addEventListener("DOMContentLoaded", () => {
     indexName: "habitatmap_dev",
     routing: true,
     searchFunction: helper => {
+      const container = document.querySelector(".js--search-hits");
+
       if (helper.state.query === "") {
-        return;
+        container.style.display = "none";
+      } else {
+        container.style.display = "";
       }
+
       helper.search();
     }
   });
