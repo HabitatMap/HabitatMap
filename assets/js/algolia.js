@@ -1,13 +1,17 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Instanciating InstantSearch.js with Algolia credentials
   const search = instantsearch({
     appId: "BT6BD4TUL1",
     apiKey: "ca3aa6ff50f85bb9af2c2cb55adbf9bb",
     indexName: "habitatmap_dev",
-    routing: true
+    routing: true,
+    searchFunction: helper => {
+      if (helper.state.query === "") {
+        return;
+      }
+      helper.search();
+    }
   });
 
-  // Adding searchbar and results widgets
   search.addWidget(
     instantsearch.widgets.searchBox({
       container: ".js--search-searchbar",
@@ -16,12 +20,31 @@ document.addEventListener("DOMContentLoaded", () => {
     })
   );
 
+  const hitTemplate = hit => {
+    if (hit._highlightResult.content !== undefined) {
+      return hit._highlightResult.content.value;
+    } else {
+      return "";
+    }
+  };
+
   search.addWidget(
     instantsearch.widgets.hits({
-      container: ".js--search-hits"
+      container: ".js--search-hits",
+      templates: {
+        item: hit => `
+          <li class="post-list__item">
+            <h2 class="post-list__title heading heading--small">
+              <a href="${hit.url}">
+                ${hit._highlightResult.title.value}
+              </a>
+            </h2>
+            <div class="post-snippet">${hitTemplate(hit)}</div>
+          </li>
+        `
+      }
     })
   );
 
-  // Starting the search
   search.start();
 });

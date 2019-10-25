@@ -36,3 +36,16 @@
     display: block;
   }
 }
+
+.searchbar-container {
+  flex: 0 0 100%;
+  margin-bottom: $u-space-default;
+}
+
+// Algolia
+
+.ais-Highlight {
+  background: $teal-light;
+  font-family: $bold-font;
+  font-style: normal;
+}

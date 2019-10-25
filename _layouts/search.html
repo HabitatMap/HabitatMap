@@ -6,26 +6,23 @@ layout: default
 <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.js"></script>
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.css">
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch-theme-algolia.min.css">
-<script type="text/javascript" src="/assets/js/algolia.js"></script>
+<script defer type="text/javascript" src="/assets/js/algolia.js"></script>
 
 <h1 class="u--visually-hidden">Search</h1>
 
 <div class="panel panel--blog-hero">
   <div class="split--50 split--padding-right post-header">
-    <h2 class="heading heading--medium post-header__title post-hea§der__title--featured">
+    <h2 class="heading heading--large post-header__title post-header__title--featured">
       Search
     </h2>
   </div>
 </div>
 
-<div class="posts-index posts-index--with-arc">
+<div class="posts-index">
   <section class="panel">
-    <div class="js--search-searchbar">
-      <!-- SearchBox widget will appear here -->
+    <div class="searchbar-container js--search-searchbar">
     </div>
-
-    <div class="js--search-hits">
-      <!-- Hits widget will appear here -->
-    </div>
+    <ul class="post-list js--search-hits">
+    </ul>
   </section>
 </div>
