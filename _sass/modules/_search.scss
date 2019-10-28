@@ -16,3 +16,15 @@
   font-family: $bold-font;
   font-style: normal;
 }
+
+.searchbar-container .ais-search-box--input {
+  background: none;
+  border: 1px solid $gray;
+  border-radius: 3px;
+  box-shadow: none;
+  -webkit-appearance: none;
+
+  &:focus {
+    border: 1px solid $blue;
+  }
+}
