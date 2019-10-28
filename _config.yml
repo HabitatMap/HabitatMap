@@ -79,6 +79,8 @@ defaults:
       featured: false
 
 algolia:
+  application_id: BT6BD4TUL1
+  index_name: habitatmap_dev
   # Exclude files from indexing
   files_to_exclude:
     - _slides/*
