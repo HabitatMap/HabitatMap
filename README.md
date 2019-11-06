@@ -8,6 +8,8 @@ Hosting: https://app.netlify.com/sites/habitatmap/overview, credentials on [Luna
 
 CMS: https://habitatmap.lunarlogic.io/admin, log in per user.
 
+Search (Algolia): https://www.algolia.com/apps/BT6BD4TUL1/dashboard, credentials on [Lunar Logic wiki](https://sites.google.com/llp.pl/wiki/projects/habitatmap)
+
 ## Run Locally
 
 1. Clone the repo.
@@ -25,7 +27,6 @@ Note: If you change `_config.yml`, you must restart the server for the changes t
 The Netlify CMS dashboard is accessible at https://habitatmap.lunarlogic.io/admin after logging in with Netlify Identity Widget.
 To add a new user with CMS access rights you need to invite them from the Identity dashboard in Netlify: https://app.netlify.com/sites/habitatmap/identity.
 
-
 ### CMS development mode
 
 > You can use the test-repo backend to try out Netlify CMS without connecting to a Git repo. With this backend, you can write and publish content normally, but any changes will disapear when you reload the page.
@@ -42,7 +43,6 @@ backend:
 ```
 
 Do not push this change to the remote repository.
-
 
 ## Netlify Large Media
 
