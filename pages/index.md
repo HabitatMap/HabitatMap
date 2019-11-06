@@ -1,6 +1,5 @@
 ---
 layout: home
-title: HabitatMap
 permalink: /
 section: home
 ---
@@ -71,6 +70,7 @@ section: home
         </div>
       {% endunless %}
     {% endfor %}
+
   </div>
 </section>
 
