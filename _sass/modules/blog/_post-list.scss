@@ -16,16 +16,6 @@
   }
 }
 
-.posts-index--search {
-  @media screen and (min-width: $desktop-min) {
-    min-height: 17rem;
-  }
-
-  @media screen and (min-width: $large-desktop-min) {
-    min-height: 28rem;
-  }
-}
-
 .post-list {
   max-width: $medium-content;
 }
