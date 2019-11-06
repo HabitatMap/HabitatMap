@@ -91,6 +91,7 @@ algolia:
   # Exclude files from indexing
   files_to_exclude:
     - _slides/*
+    - _faq_categories/*
 
 
 # Exclude from processing.
