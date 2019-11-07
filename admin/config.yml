@@ -20,10 +20,9 @@ collections:
           name: featured,
           widget: boolean,
           default: false,
-          hint:
-            "Make sure only one of your posts is marked as featured.
+          hint: "Make sure only one of your posts is marked as featured.
             Otherwise you won't know for sure which of the featured
-            posts will show up on the main blog page."
+            posts will show up on the main blog page.",
         }
       - {
           label: Author,
@@ -34,16 +33,32 @@ collections:
           searchFields: [display_name],
           valueField: display_name,
           required: false,
-          hint: "If you don't set an author, it will be Michael Heimbinder."
+          hint: "If you don't set an author, it will be Michael Heimbinder.",
         }
       - {
           label: Featured Image,
           name: thumbnail,
           widget: image,
-          hint: "For the best effect upload images 1200x705 in resolution (or bigger with the same proportions)."
+          hint: "For the best effect upload images 1200x705 in resolution (or bigger with the same proportions).",
         }
       - { label: Intro, name: intro, widget: text, required: false }
-      - { label: Body, name: body, widget: markdown, buttons: [bold, italic, code, link, heading-two, quote, code-block, bulleted-list, numbered-list] }
+      - {
+          label: Body,
+          name: body,
+          widget: markdown,
+          buttons:
+            [
+              bold,
+              italic,
+              code,
+              link,
+              heading-two,
+              quote,
+              code-block,
+              bulleted-list,
+              numbered-list,
+            ],
+        }
       - {
           label: Category,
           name: category,
@@ -51,7 +66,7 @@ collections:
           collection: categories,
           displayFields: [name],
           searchFields: [name],
-          valueField: name
+          valueField: name,
         }
       - {
           label: Tags,
@@ -61,7 +76,7 @@ collections:
           displayFields: [name],
           searchFields: [name],
           valueField: name,
-          multiple: true
+          multiple: true,
         }
   - name: slides
     label: Slides
@@ -80,7 +95,7 @@ collections:
           name: featured,
           widget: boolean,
           default: false,
-          hint: "If you mark a slide as featured it will be shown in the slider, otherwise it won't."
+          hint: "If you mark a slide as featured it will be shown in the slider, otherwise it won't.",
         }
       - {
           label: Order,
@@ -90,7 +105,7 @@ collections:
           min: 1,
           max: 4,
           hint: "Specifies the order of the slides, 1 to 4.",
-          required: false
+          required: false,
         }
   - name: authors
     label: Authors
@@ -119,7 +134,7 @@ collections:
           widget: string,
           hint:
             "If you need to change the name of an existing category, please delete it and create a new one.
-            If you edit an existing category, the link to the category blog page will break."
+            If you edit an existing category, the link to the category blog page will break.",
         }
   - name: tags
     label: Tags
@@ -135,7 +150,7 @@ collections:
           name: name,
           hint:
             "If you need to change the name of an existing tag, please delete it and create a new one.
-            If you edit an existing tag, the link to the tag blog page will break."
+            If you edit an existing tag, the link to the tag blog page will break.",
         }
   - name: faq
     label: FAQ
@@ -146,16 +161,8 @@ collections:
     editor:
       preview: false
     fields:
-      - {
-          label: Question,
-          name: question,
-          widget: string
-        }
-      - {
-          label: Answer,
-          name: answer,
-          widget: string
-        }
+      - { label: Question, name: question, widget: string }
+      - { label: Answer, name: answer, widget: string }
       - {
           label: Category,
           name: category,
@@ -163,7 +170,7 @@ collections:
           collection: faq_categories,
           displayFields: [name],
           searchFields: [name],
-          valueField: name
+          valueField: name,
         }
       - {
           label: Order in category,
@@ -173,7 +180,7 @@ collections:
           min: 1,
           hint:
             "Specifies the order in which questions will appear within FAQ category groups.
-            Best to use 1 to X where X is the total count of FAQ questions in a given category to keep track."
+            Best to use 1 to X where X is the total count of FAQ questions in a given category to keep track.",
         }
 
   - name: faq_categories
@@ -191,7 +198,7 @@ collections:
           widget: string,
           hint:
             "If you need to change the name of an existing category, please delete it and create a new one.
-            If you edit an existing category, the link to the category blog page will break."
+            If you edit an existing category, the link to the category blog page will break.",
         }
       - {
           label: Order,
@@ -201,5 +208,5 @@ collections:
           min: 1,
           hint:
             "Specifies the order in which FAQ categorized groups will be displayed.
-            Best to use 1 to X where X is the total count of FAQ categories to keep track."
+            Best to use 1 to X where X is the total count of FAQ categories to keep track.",
         }
