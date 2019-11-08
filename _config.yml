@@ -28,6 +28,7 @@ produrl: https://habitatmap.lunarlogic.io
 
 plugins:
   - jekyll-feed
+  - jekyll-import
 
 # Search plugin config
 algolia:
