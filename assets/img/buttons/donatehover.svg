@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="211px" height="211px" viewBox="0 0 211 211" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>Group 5</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Layouts" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Style-Guide" transform="translate(-402.000000, -4558.000000)">
+            <g id="Buttons-(on-white)" transform="translate(84.000000, 4241.000000)">
+                <g id="AirBeam-Green-CTA-Btn-Copy" transform="translate(319.000000, 318.000000)">
+                    <g id="Group-5">
+                        <circle id="Oval" stroke="#1EA73F" fill="#FFFFFF" cx="104.5" cy="104.5" r="104.5"></circle>
+                        <text id="Donate-with-PayPal" font-family="Moderat-Trial-Bold, Moderat Trial" font-size="23" font-weight="bold" fill="#1EA73F">
+                            <tspan x="65.7582327" y="83.4654088">Donate</tspan>
+                            <tspan x="42.5742327" y="111.465409">with PayPal</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
