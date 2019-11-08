@@ -25,7 +25,7 @@
     {% if post.intro %}
       {{ post.intro }}
     {% else %}
-      {{ post.excerpt | strip_newlines | truncate: 180 }}
+      {{ post.excerpt | strip_newlines | strip_html | truncate: 180 }}
     {% endif %}
   </p>
   <a href="{{ post.url }}" class="post-list__read-more">Read more</a>
