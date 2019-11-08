@@ -14,7 +14,7 @@ Search (Algolia): https://www.algolia.com/apps/BT6BD4TUL1/dashboard, credentials
 
 1. Clone the repo.
 
-2. If you need to install the gems run `gem install bundler -v 2.0.1` and `bundle install`.
+2. If you need to install the gems run `gem install bundler -v 2.0.1` and `bundle _2.0.1_ install`. A higher version of bundler causes deployment issues.
 
 3. To run the local server and have it regenerate the site on changes run: `bundle exec jekyll serve --watch`.
 

@@ -1,0 +1,36 @@
+---
+layout: post
+title: Reprogram Your AirBeam
+date: 2016-02-04 14:28:24.000000000 +01:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories: []
+tags: []
+meta:
+  _edit_last: '1'
+permalink: "/reprogram-your-airbeam/"
+---
+<p><a href="http://www.takingspace.org/aircasting/airbeam/">The AirBeam</a> - HabitatMap’s low-cost, open-source air quality instrument for measuring PM2.5 - can be reprogrammed to meet the specific needs of your monitoring initiative. Don’t worry; it doesn’t require a PhD in computer engineering. Anyone can do it!  Just follow the step-by-step guide posted below.</p>
+<p>There are several reasons why you may opt to reprogram your AirBeam. These include changing the averaging time interval, changing the temperature output to Celsius, outputting the PM2.5 measurement as a particle count, connecting multiple AirBeams to a single Android device, and improving the AirBeam’s accuracy. Directly after the step-by-step guide you'll find instructions for altering the code to achieve these specific outcomes.</p>
+<p style="padding-left: 30px;"><span style="text-decoration: underline;">Step-by-Step Guide for Reprogramming Your AirBeam</span></p>
+<p style="padding-left: 30px;">1. Download the <a href="http://www.arduino.cc/en/Main/Software" target="_blank">Arduino IDE</a> from the Arduino website and install it on your computer.</p>
+<p style="padding-left: 30px;">2. Download the "<a href="https://www.dropbox.com/s/pa02dvohyn93ocl/DHT-sensor-library-master.zip?dl=0" target="_blank">DHT-sensor-library-master.zip</a>" file from Dropbox. Unzip the file and place the folder on your desktop. Install the folder in the Arduino "Library" folder: navigate "Sketch" &gt; "Import Library" and select the folder from your desktop.</p>
+<p style="padding-left: 30px;">3. Open a new Arduino file: navigate "File" &gt; "New". Delete the code that automatically populates the window. Copy the <a href="https://github.com/HabitatMap/AirCastingAndroidClient/blob/master/arduino/aircasting/AirBeamFirmware_11_14_15" target="_blank">AirBeam firmware code</a> from GitHub and paste it inside the new Arduino file.</p>
+<p style="padding-left: 30px;">4. In the Arduino software, navigate "Tools" &gt; "Board" &gt; "Arduino Leonardo"</p>
+<p style="padding-left: 30px;">5. Connect your computer to the AirBeam using a Micro USB to USB A Cable.</p>
+<p style="padding-left: 30px;">6. Turn on the AirBeam</p>
+<p style="padding-left: 30px;">7. Click the right facing "upload" arrow on the AirBeam program window, wait a few seconds and confirm that the message at the bottom of the window reads "Done uploading".  You have now successfully reprogrammed the AirBeam!</p>
+<p>Now that you’ve mastered the basics, we can introduce some line-by-line code changes that will help you make the most of your AirBeam.</p>
+<p>• To change the averaging time interval, update the number of milliseconds on line 15. For example, to change the averaging time interval from one second to one minute, revise line 15 to read "unsigned long sampletime_ms = 60000".</p>
+<p>• To output temperature measurements in Celsius rather than Fahrenheit add double slashes “//” to the beginning of lines 212-216 and remove double slashes from lines 218-222.</p>
+<p>• To output PM2.5 measurements in hundreds of particles per cubic foot (hppcf) remove the double slashes from lines 200-204.</p>
+<p>• To connect multiple AirBeams to a single Android device you need to assign a unique “Sensor Name” to each sensor stream. (Most Android devices can maintain simultaneous Bluetooth connections with up to six devices). The sensor names for each sensor stream are defined on lines 197, 203, 209, 215, 221, and 227 of the AirBeam firmware. So for example, if you want to connect two AirBeams to a single Android device and record the PM2.5, relative humidity, and Fahrenheit measurements from both AirBeams, you’ll need to reprogram one of your AirBeams accordingly: on line 209 change the text reading “AirBeam-PM” to read “AirBeam-PM-1”, on line 215 change the text reading “AirBeam-F” to read “AirBeam-F-1”, and on line 227 change the text reading “AirBeam-RH” to “AirBeam-RH-1”. Note that when sensors are renamed the measurements no longer appear on the same CrowdMap. That is to say, the data collected from "AirBeam-PM" will appear on a separate CrowdMap than the data collected by "AirBeam-PM-1".</p>
+<p>• In November 2015, we updated the firmware for the AirBeam, implementing an improved calibration function for converting from hundreds of particles per cubic foot (hppcf) to micrograms per cubic meter (ug/m3). Unfortunately, due to a mix-up by our manufacturing partner, there was a 7-month period where we continued shipping AirBeams with outdated firmware. All AirBeams ordered after June 13, 2016 are running the latest firmware containing the updated calibration function. If you ordered an AirBeam prior to June 13, 2016, you can improve its accuracy by reprogramming it with the AirBeam firmware included in the above step-by-step guide.</p>
+<p>We updated the calibration function in response to <a href="http://www.aqmd.gov/aq-spec/evaluations#&amp;MainContent_C001_Col00=0" target="_blank">data we received from the South Coast Air Quality Management District</a> (SCAQMD). The data they collected in Los Angeles comparing the AirBeam’s measurements to more expensive and accurate Federal Equivalency Method (FEM) instruments indicated that our initial calibration function for converting from particle count to mass overestimated PM2.5 as concentrations climbed above 30 ug/m3. This can be seen in the below figures.</p>
+<p><a href="http://takingspace.org/wp-content/uploads/PM2.5_Count_Comparison_L.png" target="_blank"><img style="text-decoration: underline;" title="PM2.5 Count Comparison" src="{{ site.baseurl }}/assets/PM2.5_Count_Comparison_S.png" alt="PM2.5 Count Comparison" width="600" height="434" /></a></p>
+<p><a href="http://takingspace.org/wp-content/uploads/PM2.5_Mass_Comparison_L.png" target="_blank"><img style="text-decoration: underline;" title="PM2.5 Mass Comparison" src="{{ site.baseurl }}/assets/PM2.5_Mass_Comparison_S.png" alt="PM2.5 Mass Comparison" width="600" height="430" /></a></p>
+<p>The R2 value comparing AirBeam measurements to FEM measurements is .89 when comparing particle counts (first figure) and .76 when comparing mass (second figure). (The R2 value is a fraction that ranges from 0.0 to 1.0 with higher values indicating that the regression came more closely to the points, i.e. the higher the number the better the agreement between instruments.)  The calibration function included in the <a href="https://github.com/HabitatMap/AirCastingAndroidClient/blob/master/arduino/aircasting/AirBeamFirmware_11_14_15" target="_blank">November 2015 AirBeam firmware</a> (see line 166) addresses the overestimation problem encountered during SCAQMD’s evaluation, during which the AirBeams were running <a href="https://github.com/HabitatMap/AirCastingAndroidClient/blob/master/arduino/aircasting/AirBeamFirmware_3_31_15" target="_blank">firmware released in March 2015</a> that implemented a different calibration function (see line 190).</p>
+<p>We want to extend a huge thank you to SCAQMD for including the AirBeam in their evaluation and sharing their data with us. Many thanks!!</p>
