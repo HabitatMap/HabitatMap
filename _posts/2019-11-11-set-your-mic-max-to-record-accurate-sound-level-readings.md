@@ -4,7 +4,7 @@ title: Set Your Mic Max to Record Accurate Sound Level Readings
 date: 2011-12-18T17:12:00.000Z
 featured: false
 author: Michael Heimbinder
-thumbnail: /images/uploads/sound-levels.jpg
+thumbnail: /images/uploads/sound-levels.png
 category: Sensors & Instruments
 tag:
   - Instruments
