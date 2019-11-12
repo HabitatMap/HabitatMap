@@ -1,5 +1,9 @@
-images/uploads/** filter=lfs diff=lfs merge=lfs -text
+images/uploads/*.jpg filter=lfs diff=lfs merge=lfs -text
+images/uploads/*.jpeg filter=lfs diff=lfs merge=lfs -text
+images/uploads/*.png filter=lfs diff=lfs merge=lfs -text
+images/uploads/*.gif filter=lfs diff=lfs merge=lfs -text
 assets/img/*.jpeg filter=lfs diff=lfs merge=lfs -text
 assets/img/*.jpg filter=lfs diff=lfs merge=lfs -text
 assets/img/*.gif filter=lfs diff=lfs merge=lfs -text
 assets/img/*.png filter=lfs diff=lfs merge=lfs -text
+images/uploads/** filter=lfs diff=lfs merge=lfs -text
