@@ -50,6 +50,11 @@ We're using Netlify Large Media, which means that most images (SVGs excluded at 
 
 To work with that setup locally, you need to go through the following [large media requirements](https://www.netlify.com/docs/large-media/#requirements) to install missing tools. You'll need to do this when you add new assets to the repository by hand, not via CMS (e.g. those that are used in the layout).
 
+If you want to convert files that you not only added locally but were already in the remote repository, you'll need to use this command (replacing the include paths):
+`git lfs migrate import --include="images/uploads/**" --include-ref=refs/heads/master`.
+
+You might find this helpful: https://github.com/git-lfs/git-lfs/wiki/Tutorial.
+
 ### Image transformations
 
 Using NLM enables us to request specific size versions of images with [image transformations](https://www.netlify.com/docs/image-transformation/).
