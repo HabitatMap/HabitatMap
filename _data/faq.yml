@@ -1,36 +1,36 @@
 faq_items:
-  - question: Is the AirBeam2 suitable for outdoor installations?
-    answer: >-
-      Absolutely!  AirBeam2 is weather resistant and can be installed outdoors
-      without need for shelter.
-    category: Category 1
-    order: 1
-  - question: >-
-      Can I walk/bike/drive with the AirBeam2 and measure my personal exposure to
-      air pollution?
-    answer: >-
+  - answer: >-
       Yes, the AirBeam2 is designed to go wherever you go, unless you’re going
       underwater.  When cycling or driving, face the AirBeam2 intake and exhaust
       ports (the performations located between the wavy edges) away from your
       direction of travel to minimize wind interference.
     category: Category 1
     order: 2
-  - question: How can I monitor noise and measure sound levels using the AirCasting app?
-    answer: >-
-      Launch the AirCasting app and tap “Connect phone mic”.  Then press the record
-      button located in the upper right hand corner of the AirCasting app.  You’ll
-      know you’re recording when the grey circle takes on color.
+    question: >-
+      Can I walk/bike/drive with the AirBeam2 and measure my personal exposure
+      to air pollution?
+  - answer: >-
+      Absolutely!  AirBeam2 is weather resistant and can be installed outdoors
+      without need for shelter.
+    category: Category 1
+    order: 1
+    question: Is the AirBeam2 suitable for outdoor installations?
+  - answer: >-
+      Launch the AirCasting app and tap “Connect phone mic”.  Then press the
+      record button located in the upper right hand corner of the AirCasting
+      app.  You’ll know you’re recording when the grey circle takes on color.
     category: Category 3
     order: 1
-  - question: >-
-      What’s the best way to monitor the air quality in my home/workplace/school to
-      determine when I should keep the windows closed or open them up to improve the
-      air quality?
-    answer: >-
-      Buy two AirBeam2s, configure them both to record fixed sessions, and place one
-      inside and the other outside.  Keep tabs on the particulate matter
-      measurements in real-time using the AirCasting app or website.  When the air
-      quality is better outside than inside, open your windows.  When the air
-      quality is better inside than outside, keep your windows closed.
+    question: How can I monitor noise and measure sound levels using the AirCasting app?
+  - answer: >-
+      Buy two AirBeam2s, configure them both to record fixed sessions, and place
+      one inside and the other outside.  Keep tabs on the particulate matter
+      measurements in real-time using the AirCasting app or website.  When the
+      air quality is better outside than inside, open your windows.  When the
+      air quality is better inside than outside, keep your windows closed.
     category: Category 2
     order: 1
+    question: >-
+      What’s the best way to monitor the air quality in my home/workplace/school
+      to determine when I should keep the windows closed or open them up to
+      improve the air quality?
