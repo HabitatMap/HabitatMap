@@ -34,6 +34,10 @@ plugins:
 algolia:
   application_id: BT6BD4TUL1
   index_name: habitatmap_dev
+  # Exclude files from indexing
+  files_to_exclude:
+    - _slides/*
+    - _faq_categories/*
 
 collections:
   posts:
@@ -51,45 +55,30 @@ collections:
     output: true
 
 defaults:
-  -
-    scope:
+  - scope:
       type: posts
     values:
       author: Michael Heimbinder
       section: blog
-  -
-    scope:
+  - scope:
       type: categories
     values:
       layout: category
       section: blog
-  -
-    scope:
+  - scope:
       type: tags
     values:
       layout: tag
       section: blog
-  -
-    scope:
+  - scope:
       type: faq
     values:
       layout: faq
       section: faq
-  -
-    scope:
+  - scope:
       type: slides
     values:
       featured: false
-
-algolia:
-  application_id: BT6BD4TUL1
-  index_name: habitatmap_dev
-  # Exclude files from indexing
-  files_to_exclude:
-    - _slides/*
-    - _faq_categories/*
-
-
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
