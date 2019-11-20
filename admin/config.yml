@@ -177,16 +177,6 @@ collections:
                   searchFields: [name],
                   valueField: name,
                 }
-              - {
-                  label: Order in category,
-                  name: order,
-                  widget: number,
-                  valueType: int,
-                  min: 1,
-                  hint:
-                    "Specifies the order in which questions will appear within FAQ category groups.
-                    Best to use 1 to X where X is the total count of FAQ questions in a given category to keep track.",
-                }
 
   - name: faq_categories
     label: FAQ categories

@@ -5,7 +5,6 @@ faq_items:
       ports (the performations located between the wavy edges) away from your
       direction of travel to minimize wind interference.
     category: Category 1
-    order: 2
     question: >-
       Can I walk/bike/drive with the AirBeam2 and measure my personal exposure
       to air pollution?
@@ -13,14 +12,12 @@ faq_items:
       Absolutely!  AirBeam2 is weather resistant and can be installed outdoors
       without need for shelter.
     category: Category 1
-    order: 1
     question: Is the AirBeam2 suitable for outdoor installations?
   - answer: >-
       Launch the AirCasting app and tap “Connect phone mic”.  Then press the
       record button located in the upper right hand corner of the AirCasting
       app.  You’ll know you’re recording when the grey circle takes on color.
     category: Category 3
-    order: 1
     question: How can I monitor noise and measure sound levels using the AirCasting app?
   - answer: >-
       Buy two AirBeam2s, configure them both to record fixed sessions, and place
@@ -29,7 +26,6 @@ faq_items:
       air quality is better outside than inside, open your windows.  When the
       air quality is better inside than outside, keep your windows closed.
     category: Category 2
-    order: 1
     question: >-
       What’s the best way to monitor the air quality in my home/workplace/school
       to determine when I should keep the windows closed or open them up to
