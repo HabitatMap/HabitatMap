@@ -1,5 +1,6 @@
 backend:
-  name: git-gateway
+  # name: git-gateway
+  name: test-repo
   branch: master
 
 media_folder: images/uploads
@@ -152,36 +153,40 @@ collections:
             "If you need to change the name of an existing tag, please delete it and create a new one.
             If you edit an existing tag, the link to the tag blog page will break.",
         }
-  - name: faq
-    label: FAQ
-    label_singular: FAQ
-    folder: _faq
-    create: true
-    identifier_field: question
+  - name: pages
+    label: Pages
     editor:
       preview: false
-    fields:
-      - { label: Question, name: question, widget: string }
-      - { label: Answer, name: answer, widget: string }
-      - {
-          label: Category,
-          name: category,
-          widget: relation,
-          collection: faq_categories,
-          displayFields: [name],
-          searchFields: [name],
-          valueField: name,
-        }
-      - {
-          label: Order in category,
-          name: order,
-          widget: number,
-          valueType: int,
-          min: 1,
-          hint:
-            "Specifies the order in which questions will appear within FAQ category groups.
-            Best to use 1 to X where X is the total count of FAQ questions in a given category to keep track.",
-        }
+    files:
+      - file: "_data/faq.yml"
+        label: FAQ
+        name: faq
+        fields:
+          - name: faq_items
+            label: FAQ Items
+            widget: list
+            fields:
+              - { label: Question, name: question, widget: string }
+              - { label: Answer, name: answer, widget: string }
+              - {
+                  label: Category,
+                  name: category,
+                  widget: relation,
+                  collection: faq_categories,
+                  displayFields: [name],
+                  searchFields: [name],
+                  valueField: name,
+                }
+              - {
+                  label: Order in category,
+                  name: order,
+                  widget: number,
+                  valueType: int,
+                  min: 1,
+                  hint:
+                    "Specifies the order in which questions will appear within FAQ category groups.
+                    Best to use 1 to X where X is the total count of FAQ questions in a given category to keep track.",
+                }
 
   - name: faq_categories
     label: FAQ categories
