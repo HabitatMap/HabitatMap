@@ -4,6 +4,7 @@ title: AirBeam FAQ
 permalink: /airbeam/faq
 section: faq
 ---
+
 <section class="panel panel--faq-intro u--bg-green">
   <div class="split--50 split--paddding-right">
     <h1 class="heading heading--large">
@@ -27,7 +28,7 @@ section: faq
   {% for category in categories %}
     <div class="faq__category js--faq-section">
       <h2 class="heading heading--capitilized faq__category-name js--faq-heading">{{ category.name }}</h2>
-      {% assign faqs = site.faq | where: "category", category.name | sort: 'order' %}
+      {% assign faqs = site.data.faq.faq_items | where: "category", category.name | sort: 'order' %}
       {% for faq in faqs %}
         <h3 class="heading heading--small faq__question">{{ faq.question }}</h3>
         <p class="p--body">

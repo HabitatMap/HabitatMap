@@ -1,4 +1,10 @@
 faq_items:
+  - question: Is the AirBeam2 suitable for outdoor installations?
+    answer: >-
+      Absolutely!  AirBeam2 is weather resistant and can be installed outdoors
+      without need for shelter.
+    category: Category 1
+    order: 1
   - question: >-
       Can I walk/bike/drive with the AirBeam2 and measure my personal exposure to
       air pollution?

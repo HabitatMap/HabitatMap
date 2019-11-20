@@ -45,9 +45,6 @@ collections:
   tags:
     output: true
     permalink: /blog/tags/:name
-  faq:
-    output: true
-    permalink: /faq/:name
   faq_categories:
     output: true
   slides:
