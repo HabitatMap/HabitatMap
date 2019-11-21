@@ -1,3 +1,5 @@
+# Note: this file isn't indexed because of the nesting that can't be removed because NetlifyCMS only supports named lists.
+
 faq_items:
   - answer: >-
       Yes, the AirBeam2 is designed to go wherever you go, unless you’re going
