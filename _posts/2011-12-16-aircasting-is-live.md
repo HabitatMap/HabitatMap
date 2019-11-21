@@ -2,7 +2,7 @@
 layout: post
 title: AirCasting is Live!
 date: 2011-12-16T16:40:37.000Z
-featured: true
+featured: false
 author: Michael Heimbinder
 thumbnail: /images/uploads/aircasting-splash-512.png
 category: Open Source Software
