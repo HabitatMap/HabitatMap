@@ -1,0 +1,30 @@
+.paypal-donate-form {
+  height: 13rem;
+}
+
+.paypal-button-container {
+  height: 13rem;
+  width: 13rem;
+  position: relative;
+
+  [type="image"] {
+    width: 100%;
+  }
+}
+
+.paypal-button-default {
+  position: absolute;
+
+  .paypal-button-container:hover & {
+    opacity: 0;
+  }
+}
+
+.paypal-button-hover {
+  position: absolute;
+  opacity: 0;
+
+  .paypal-button-container:hover & {
+    opacity: 1;
+  }
+}
