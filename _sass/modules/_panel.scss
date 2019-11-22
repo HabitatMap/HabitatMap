@@ -126,3 +126,11 @@
 .panel--faq-intro {
   min-height: 28vh;
 }
+
+.panel--history {
+  flex-direction: column;
+
+  .p--body {
+    max-width: 700px;
+  }
+}
