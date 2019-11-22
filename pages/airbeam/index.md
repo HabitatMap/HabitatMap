@@ -1,9 +1,11 @@
 ---
 layout: page
-title: AirBeam
+title: AirBeam is a low-cost, palm-sized air quality instrument.
+description: AirBeam is a low-cost, palm-sized air quality instrument that measures hyper local concentrations of harmful microscopic particles in the air.
 permalink: /airbeam
 section: airbeam
 ---
+
 <section>
   <div class="panel panel--leading-text">
     <h1 class="heading heading--large u--gray-text">

@@ -1,6 +1,7 @@
 ---
 layout: page
-title: About
+title: HabitatMap makes environmental technology accessible.
+description: HabitatMap's tools empower organizations and citizen scientists to measure pollution and advocate for equity and improved quality of life.
 permalink: /about
 section: about
 ---
