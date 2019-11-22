@@ -1,4 +1,4 @@
 ---
-name: Instruments
+name: instruments
 ---
 
