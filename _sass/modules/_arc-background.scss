@@ -134,3 +134,13 @@
     background-position: bottom 0 right 16vw;
   }
 }
+
+.arc-background--history {
+  @media screen and (max-width: $tablet-max) {
+    background: none;
+  }
+
+  @media screen and (min-width: $small-desktop-min) {
+    background-position: top 3rem right 4vw;
+  }
+}

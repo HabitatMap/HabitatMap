@@ -19,7 +19,7 @@ section: about
   </div>
 </section>
 
-<section class="panel panel--history">
+<section class="panel panel--history arc-background arc-background--history arc-background--left-teal-light">
   <p class="p--body">
     HabitatMap was launched in 2006 by Brooklyn activists with a shared interest in developing technology to support community organizing efforts directed at cleaning up Newtown Creek and addressing health concerns in the surrounding Brooklyn and Queens neighborhoods. Responding to the needs of the Newtown Creek Alliance, HabitatMap worked with the community to map hazardous facilities, contaminated properties, and potential access points as a way of raising the Creek’s profile and influencing public agencies and legislators to act on the community’s behalf. This work helped catalyze ongoing federal and state remediation efforts that are mitigating health hazards in the surrounding residential neighborhoods while cleaning up Newtown Creek and expanding public access to the waterway.
   </p>
