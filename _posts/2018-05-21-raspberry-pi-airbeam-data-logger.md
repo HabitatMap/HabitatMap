@@ -1,18 +1,14 @@
 ---
 layout: post
 title: Raspberry Pi AirBeam Data Logger
-date: 2018-05-21 12:47:22.000000000 +02:00
-type: post
-parent_id: '0'
-published: true
-password: ''
-status: publish
-categories: []
-tags: []
-meta:
-  _edit_last: '1'
+date: 2018-05-21T10:47:22.000Z
+featured: false
 author: Sam Groveman and Jin Y Shin
-permalink: "/raspberry-pi-airbeam-data-logger/"
+image: /images/uploads/raspberrypiairbeam2datalogger_exacto.jpg
+category: Sensors & Instruments
+tag:
+  - Open Source
+  - Instruments
 ---
 <p>Every semester I tell my students at Medgar Evers College that to be a great research chemist, you need to be a bit of everything: a bit plumber, a bit electrician, and especially a bit coder. Environmental research chemists rely on equipment and tools that are essential to their work. The better you can use, maintain, and understand those tools the better and more effective you will be as a researcher. Our research project deploying AirBeam2s provides another excellent example of why this is the case.</p>
 <p>The goal of our project is to analyze air quality at various locations around New York City. Students will analyze PM1, PM2.5, and PM10 concentrations around their homes, the buildings here at Medgar Evers College, near airports, in subway stations, and anywhere else of interest. We will then aggregate the air quality data and combine it with data on weather and traffic patterns to see what conclusions can be drawn.</p>
