@@ -1,4 +1,4 @@
 ---
-name: Open Source
+name: open-source
 ---
 
