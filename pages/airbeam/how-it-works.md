@@ -4,11 +4,17 @@ title: Airbeam - How It Works
 permalink: /airbeam/how-it-works
 section: airbeam
 ---
+
 <section class="panel arc-background arc-background--right-teal-light arc-background--how-it-works">
   <div class="split--50 split--padding-right split--order-secondary">
     <h1 class="heading heading--large u--gray-text u--mobile-hidden">
-      Intro lorem ipsum dolor sit amet conse tetur adipi scing elit.
+      The AirBeam measures harmful microscopic air particles (particulate matter), humidity, and temperature.
     </h1>
+    <br>
+    <br>
+    <p class="p--body u--mobile-hidden">
+      In mobile mode, the AirBeam can be worn to capture personal exposures.  In fixed mode, it can be installed indoors or outdoors - it’s weather resistant and doesn’t need a shelter - to keep tabs on pollution levels in your home, office, backyard, or neighborhood 24/7.
+    </p>
     <article class="container--narrow u--margin-top-huge">
       <h2 class="heading heading--medium">
         <span class="heading--underlined">1</span>
@@ -16,15 +22,19 @@ section: airbeam
       </h2>
       <img class="logo logo--body" alt="Airbeam logo" src="/assets/img/svg/Airbeam-Logo-Body.svg" />
       <p class="p--body">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sit amet placerat mauris. Fusce et sollicitudin leo. Aliquam at felis diam. Nullam id erat molestie, sagittis augue volutpat, vestibulum ipsum. Mauris vel convallis ante. Integer eget vestibulum nisl, ut feugiat tortor.
+        The AirBeam measures particulate matter by drawing in air and measuring the concentration and size of particles using a light scattering method.
       </p>
     </article>
+
   </div>
 
   <div class="split--50 u--align-right">
     <h1 class="heading heading--large u--gray-text page-title u--tablet-hidden">
-      Intro lorem ipsum dolor sit amet conse tetur adipi scing elit.
+      The AirBeam measures harmful microscopic air particles (particulate matter), humidity, and temperature.
     </h1>
+    <p class="p--body u--tablet-hidden">
+      In mobile mode, the AirBeam can be worn to capture personal exposures.  In fixed mode, it can be installed indoors or outdoors - it’s weather resistant and doesn’t need a shelter - to keep tabs on pollution levels in your home, office, backyard, or neighborhood 24/7.
+    </p>
     <img
       srcset="{{ site.produrl | append: '/assets/img/airbeam-howitworks-01.jpg?nf_resize=fit&w=720 480w' }},
               {{ site.produrl | append: '/assets/img/airbeam-howitworks-01.jpg 767w' }},
@@ -55,7 +65,7 @@ section: airbeam
         <span class="heading--capitilized">Subhead Here</span>
       </h2>
       <p class="p--body">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sit amet placerat mauris. Fusce et sollicitudin leo. Aliquam at felis diam. Nullam id erat molestie, sagittis augue volutpat, vestibulum ipsum. Mauris vel convallis ante. Integer eget vestibulum nisl, ut feugiat tortor.
+        The AirBeam communicates these measurements to the AirCasting Android App (available from the Google Play Store) where your measurements are mapped and graphed in real-time on your smartphone.
       </p>
     </article>
   </div>
@@ -70,7 +80,7 @@ section: airbeam
       </h2>
       <img class="logo logo--body" alt="Aircasting logo" src="/assets/img/svg/Aircasting-Logo-Body.svg" />
       <p class="p--body">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sit amet placerat mauris. Fusce et sollicitudin leo. Aliquam at felis diam. Nullam id erat molestie, sagittis augue volutpat, vestibulum ipsum. Mauris vel convallis ante. Integer eget vestibulum nisl, ut feugiat tortor.
+        When used in mobile mode as a wearable, the AirBeam communicates measurements to the Android device every second via Bluetooth.  When used as a fixed instrument installed indoors or outdoors, the AirBeam communicates measurements directly to the AirCasting website every minute via either the WiFi or cellular network.
       </p>
     </article>
     <article class="container--narrow u--margin-top-big">
@@ -79,7 +89,7 @@ section: airbeam
         <span class="heading--capitilized">Subhead Here</span>
       </h2>
       <p class="p--body">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sit amet placerat mauris. Fusce et sollicitudin leo. Aliquam at felis diam. Nullam id erat molestie, sagittis augue volutpat, vestibulum ipsum. Mauris vel convallis ante. Integer eget vestibulum nisl, ut feugiat tortor.
+        AirBeam data is then aggregated and crowdsourced on the AirCasting website, allowing AirCasters to visualize areas where air pollutant concentrations are highest and lowest and share their data with their community.
       </p>
     </article>
   </div>
@@ -122,4 +132,8 @@ section: airbeam
       </div>
     </article>
   </div>
+  <p class="heading heading--large u--gray-text u--mobile-hidden">
+    <br>
+    Good decisions are informed decisions. Integrating the AirCasting platform into your daily routine can guide healthier day-to-day decisions and help collect quality data to support environmental campaigns or research aimed at cleaner and healthier environments.
+  </p>
 </section>
