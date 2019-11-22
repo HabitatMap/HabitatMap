@@ -10,7 +10,6 @@ section: about
 {% assign hero_image_tablet_url = site.produrl | append: "/assets/img/about-habitatmap-01.jpg?nf_resize=fit&w=1536" %}
 {% assign hero_image_medium_desktop_url = site.produrl | append: "/assets/img/about-habitatmap-01.jpg?nf_resize=fit&w=2050" %}
 
-
 <style scoped>
   .img-full-width {
     background-image: url("{{ hero_image_url }}");
@@ -80,12 +79,12 @@ section: about
       />
     </div>
     <div class="split--40 split--padding-left">
-     <h2 class="heading heading--capitilized">Founder</h2>
-     <p class="p--body heading heading--small">
-      Sed massa ex, commodo nec velit eget, lacinia ornare risus. Integer interdum
-     </p>
+      <h2 class="heading heading--capitilized">Founder</h2>
+      <p class="p--body heading heading--small">
+        Michael Heimbinder is an information designer, community organizer, and educator.
+      </p>
       <p class="p--body">
-        Phasellus rutrum urna nec rhoncus semper. Curabitur rhoncus varius vestibulum. Sed sem nibh, accumsan id nulla eget, rhoncus dignissim nisl. Praesent sapien risus, egestas at ultricies non, dapibus non risus.
+        Since launching HabitatMap in 2006, he has worked with dozens of community-based organizations and schools to create planning and advocacy maps that publicize the issues they care about most.
       </p>
       <a href="#" class="button">Learn more</a>
     </div>
