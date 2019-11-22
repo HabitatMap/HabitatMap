@@ -58,7 +58,7 @@ section: about
     <div class="split--60 split--padding-right">
       <h2 class="heading heading--capitilized">Our mission</h2>
       <p class="p--xlarge u--gray-text">
-        We make technologies accessible so communities facing disproportionate environmental burdens can advocate for equity and improved quality&nbsp;oflife.
+        We make technologies accessible so communities facing disproportionate environmental burdens can advocate for equity and improved quality&nbsp;of life.
       </p>
     </div>
     <div class="split--40 split--padding-left u--align-right">
@@ -79,7 +79,7 @@ section: about
       />
     </div>
     <div class="split--40 split--padding-left">
-      <h2 class="heading heading--capitilized">Founder</h2>
+      <h2 class="heading heading--capitilized">Founder & Executive Director</h2>
       <p class="p--body heading heading--small">
         Michael Heimbinder is an information designer, community organizer, and educator.
       </p>
@@ -111,7 +111,7 @@ section: about
   <div class="split--50 split--padding-right">
     <img class="logo logo--body" alt="Airbeam" src="/assets/img/svg/Airbeam-Logo-Body.svg" />
     <p class="p--body">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sem libero, consectetur non vehicula in, lobortis eu ipsum. Praesent felis odio, interdum non magna eu, accumsan feugiat libero. Nunc malesuada quis augue sed volutpat.
+      The AirBeam measures particulate matter with proven accuracy and when used in conjunction with the AirCasting platform - or a custom solution - helps community-based organizations, educators, academics, regulators, city managers, and citizen scientists map air pollution and organize for clean air.
     </p>
     <a href="/airbeam" class="button button--hm">Learn more</a>
 
@@ -119,7 +119,7 @@ section: about
   <div class="split--50 split--padding-left">
     <img class="logo logo--body" alt="AirCasting" src="/assets/img/svg/AirCasting-Logo-Body.svg" />
     <p class="p--body">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sem libero, consectetur non vehicula in, lobortis eu ipsum. Praesent felis odio, interdum non magna eu, accumsan feugiat libero. Nunc malesuada quis augue sed volutpat.
+      AirCasting is an open-source environmental data visualization platform that consists of an Android app and online mapping system and is one of the largest open-source databases of community-collected air quality measurements ever created.
     </p>
     <a href="#" class="button button--ac">AirCasting Maps</a>
   </div>
