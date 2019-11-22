@@ -1,4 +1,4 @@
 ---
-name: Community Based Organization
+name: community-based-organization
 ---
 
