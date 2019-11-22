@@ -1,8 +1,8 @@
 {% assign post = include.post %}
 
 <li class="post-list__item">
-  {% if post.thumbnail %}
-    {% assign thumbnail_url = site.produrl | append: post.thumbnail %}
+  {% if post.image %}
+    {% assign thumbnail_url = site.produrl | append: post.image %}
 
     <div class="post-list__thumbnail">
       <a href="{{ post.url }}">

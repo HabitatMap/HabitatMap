@@ -37,8 +37,8 @@ collections:
           hint: "If you don't set an author, it will be Michael Heimbinder.",
         }
       - {
-          label: Featured Image,
-          name: thumbnail,
+          label: Image,
+          name: image,
           widget: image,
           hint: "For the best effect upload images 1200x705 in resolution (or bigger with the same proportions).",
         }

@@ -12,14 +12,18 @@ layout: default
       {{ featured_post.category }}
     </small>
 
-    <h2 class="heading heading--medium post-header__title post-header__title--featured">
+    <h2
+      class="heading heading--medium post-header__title post-header__title--featured"
+    >
       {{ featured_post.title }}
     </h2>
 
-    <a href="{{ featured_post.url }}" class="post-header__read-more">Read more</a>
+    <a href="{{ featured_post.url }}" class="post-header__read-more"
+      >Read more</a
+    >
   </div>
 
-  {% assign image_url = site.produrl | append: featured_post.thumbnail %}
+  {% assign image_url = site.produrl | append: featured_post.image %}
 
   <a href="{{ featured_post.url }}">
     <img
@@ -37,8 +41,7 @@ layout: default
 
   <section class="panel">
     <ul class="post-list post-list--grid-view">
-      {% for post in site.posts %}
-        {% include post-snippet.html post = post %}
+      {% for post in site.posts %} {% include post-snippet.html post = post %}
       {% endfor %}
     </ul>
   </section>
