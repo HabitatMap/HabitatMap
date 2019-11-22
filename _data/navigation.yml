@@ -14,7 +14,7 @@
 - text: About Habitatmap
   url: /about
   subitems:
-    - text: History
+    - text: History & People
       url: /about/history
 - text: TakingSpace Blog
   url: /blog
