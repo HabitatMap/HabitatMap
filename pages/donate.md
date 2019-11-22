@@ -17,11 +17,12 @@ section: donate
         Make a Direct Donation Online or by Mail
       </h2>
       <p class="p--body">
-        HabitatMap is a 501(c)(3)not-for-profit charitable organization All contributions from US donors are tax-deductible in accordance with IRS regulations. Donations and grants are welcome from anywhere in the world.
+        HabitatMap is a 501(c)(3) not-for-profit charitable organization. All contributions from US donors are tax-deductible in accordance with IRS regulations. Donations and grants are welcome from anywhere in the world.
       </p>
       {% include donate-button.html %}
       <p class="p--body">
         Prefer to give by mail? Please send checks or money orders payable to HabitatMap to:
+        <br>
         <br>
         HabitatMap
         <br>
@@ -35,13 +36,13 @@ section: donate
         Matching Gifts
       </h2>
       <p class="p--body">
-        Double your donation with matching funds from your employer! Check with your company's human resources department to determine if your employer has a matching gift program and send the form to us with your donation. Forms can be mailed or <a href="mailto:mheimbinder@habitatmap.org?subject=Matching Gift Form">emailed</a>.
+        Double your donation with matching funds from your employer! Check with your company's human resources department to determine if your employer has a matching gift program and send the form to us with your donation. Forms can be mailed or <a href="mailto:info@habitatmap.org?subject=Matching Gift Form">emailed</a>.
       </p>
       <h2 class="heading heading--medium u--gray-text">
         Recurring Gifts
       </h2>
       <p class="p--body">
-        If you are interested in making recurring gifts to HabitatMap, please <a href="mailto:mheimbinder@habitatmap.org?subject=HabitatMap Recurring Gift Inquiry">contact us</a>.
+        If you are interested in making recurring gifts to HabitatMap, please <a href="mailto:info@habitatmap.org?subject=HabitatMap Recurring Gift Inquiry">contact us</a>.
       </p>
     </div>
     <div class="split--50 u--align-right">
