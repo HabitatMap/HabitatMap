@@ -1,6 +1,6 @@
 ---
 layout: page
-title: History & People
+title: HabitatMap - History & People
 permalink: /about/history
 section: about
 ---
