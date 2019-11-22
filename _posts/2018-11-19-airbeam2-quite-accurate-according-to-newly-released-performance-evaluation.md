@@ -4,7 +4,7 @@ title: AirBeam2 “Quite Accurate” According to Newly Released Performance Eva
 date: 2018-11-19T12:52:04.000Z
 featured: true
 author: Michael Heimbinder
-image: /images/uploads/airbeam2vsgrimm_exact.jpg
+image: /images/uploads/airbeam2vsgrimm_exacto.jpg
 category: Sensors & Instruments
 tag:
   - Instruments
