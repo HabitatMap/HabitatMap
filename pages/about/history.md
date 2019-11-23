@@ -14,7 +14,7 @@ section: about
 
   <div class="split--50">
     <p class="heading heading--small">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vehicula nunc ut neque elementum mollis. Etiam consectetur nulla at erat lacinia finibus. Suspendisse aliquam dapibus magna, vel lobortis massa suscipit eu. Fusce elementum fermentum imperdiet. Cras tincidunt neque gravida eros viverra vehicula.
+      What started as grassroots organizing by a group of dedicated activists in Brooklyn is now the non-profit behind one of the largest open-source databases of community-collected air quality measurements ever created.
     </p>
   </div>
 </section>
