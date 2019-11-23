@@ -53,7 +53,7 @@ section: airbeam
     </div>
     <div class="split--50 u--align-right">
       <img
-        class="img img--alternate-small img--fade-in"
+        class="img img--fade-in"
         src="/assets/img/buy-it-now.jpg"
         alt="Airbeam"
       />
