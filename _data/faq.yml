@@ -75,10 +75,10 @@ faq_items:
       a range of health problems including asthma and respiratory inflammation,
       lung cancer, heart attack, and stroke. The U.S. Environmental Protection
       Agency establishes the <a
-      href=”https://www.epa.gov/criteria-air-pollutants/naaqs-table”
-      target=”_blank”>National Ambient Air Quality Standards (NAAQS)</a> and <a
-      href=”https://airnow.gov/index.cfm?action=aqibasics.aqi”
-      target=”_blank”>Air Quality Index (AQI)</a> on the best science available,
+      href="https://www.epa.gov/criteria-air-pollutants/naaqs-table"
+      target="_blank">National Ambient Air Quality Standards (NAAQS)</a> and <a
+      href="https://airnow.gov/index.cfm?action=aqibasics.aqi"
+      target"_blank">Air Quality Index (AQI)</a> on the best science available,
       which typically uses averaging time periods of 24 hours or longer when
       examining PM2.5 data and relating it to health outcomes. The AirCasting
       app and website uses the NAAQS standards for PM2.5 exposure and the AQI to
@@ -88,11 +88,12 @@ faq_items:
       website.) These ranges/colors roughly correspond to increased health risks
       as the concentration of PM2.5 in the environment rises. However, there are
       some big caveats that should be noted. First, data shows that<a
-      href=”https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(13)62158-3/fulltext”
-      target=”_blank”>health effects occur at levels well below current
-      regulatory thresholds</a>, especially for the most toxic aerosols, like
-      those from <a href=”https://www.nature.com/articles/s41598-018-35398-0“
-      target=”_blank”>diesel exhaust</a>. Second, as mentioned, most health
+      href="https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(13
+      )62158-3/fulltext" target="_blank">health effects occur at levels well
+      below current regulatory thresholds</a>, especially for the most toxic
+      aerosols, like those from <a
+      href="https://www.nature.com/articles/s41598-018-35398-0"
+      target="_blank">diesel exhaust</a>. Second, as mentioned, most health
       studies have primarily examined long-term exposures to air pollution, not
       short-term exposures, leaving the potential health implications of such
       exposures unclear. Current health studies are only just beginning to
