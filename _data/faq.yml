@@ -19,3 +19,16 @@ faq_items:
     question: >-
       I prefer not to pay using a credit card; can I purchase AirBeams via wire
       transfer or check?
+  - answer: >-
+      We only accept credit card payments via PayPal. Note that you do not need
+      a PayPal account in order to purchase AirBeams via PayPal. 
+    category: AIRBEAM2 PURCHASING & SHIPPING
+    question: >-
+      Can I purchase AirBeams using a credit card but have the payment processed
+      by a vendor other than PayPal?
+  - answer: 'No, HabitatMap does not accept purchase orders.'
+    category: AIRBEAM2 PURCHASING & SHIPPING
+    question: Can I purchase AirBeams via purchase order?
+  - answer: 'No, HabitatMap only accepts payment in US dollars.'
+    category: AIRBEAM2 PURCHASING & SHIPPING
+    question: Can I Purchase AirBeams using foreign currency?
