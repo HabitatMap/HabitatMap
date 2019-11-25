@@ -32,3 +32,11 @@ faq_items:
   - answer: 'No, HabitatMap only accepts payment in US dollars.'
     category: AIRBEAM2 PURCHASING & SHIPPING
     question: Can I Purchase AirBeams using foreign currency?
+  - answer: >-
+      AirBeam2 is “quite accurate” according to the performance evaluation
+      conducted by South Coast Air Quality Management District’s AQ-SPEC lab.
+      Another AirBeam2 performance evaluation, conducted by researchers at NYU
+      School of Medicine, also found that the PM2.5 measurements from the
+      AirBeam2 closely matched those from a collocated reference instrument.
+    category: RECORDING MEASUREMENTS WITH AIRBEAM2
+    question: 'How accurate is the AirBeam2?  '
