@@ -46,10 +46,10 @@
 }
 
 .post-content__featured-image {
-  margin: 0 0 $u-space-default;
+  margin: 0 0 $u-space-small;
 
   @media screen and (min-width: $desktop-min) {
-    margin: 0 0 $u-space-big;
+    margin: 0 0 $u-space-default;
   }
 }
 
