@@ -33,8 +33,8 @@ faq_items:
     category: AIRBEAM2 PURCHASING & SHIPPING
     question: Can I Purchase AirBeams using foreign currency?
   - answer: >-
-      AirBeam2 is “quite accurate” according to the
-      <ahref="http://www.takingspace.org/airbeam2-quite-accurate-according-to-newly-released-performance-evaluation/"
+      AirBeam2 is “quite accurate” according to the <a
+      href="http://www.takingspace.org/airbeam2-quite-accurate-according-to-newly-released-performance-evaluation/"
       target="_blank">performance evaluation</a> conducted by South Coast Air
       Quality Management District’s AQ-SPEC lab. Another AirBeam2 performance
       evaluation, conducted by researchers at NYU School of Medicine, also found
