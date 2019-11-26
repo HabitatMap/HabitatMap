@@ -107,17 +107,17 @@ faq_items:
     category: RECORDING MEASUREMENTS WITH AIRBEAM2
     question: What level of fine particulate matter exposure is considered dangerous?
   - answer: >-
-      A fully charged AirBeam2. You’ll know it’s fully charged when the green
-      charging indicator turns off.<br /> An Android phone or tablet. For advice
-      on what Android device’s work best see “What Android devices work best
-      with the AirCasting app?” [insert link to appropriate Q&A]<br /> Access to
-      Google Play to download the AirCasting app. Certain Android devices, like
-      those made by Amazon, do not have access to the Google Play store.<br /> A
-      cellular or WiFi connection for your Android device.<br /> If you plan to
-      record a fixed-WiFi session, you’ll need access to a wireless router with
-      a 2.4 GHz band.<br /> If you plan to record a fixed-cellular session,
-      you’ll need a SIM card that provides 2G service and access to a 2G
-      cellular network.<br />
+      (o) A fully charged AirBeam2. You’ll know it’s fully charged when the
+      green charging indicator turns off.<br /> (o) An Android phone or tablet.
+      For advice on what Android device’s work best see “What Android devices
+      work best with the AirCasting app?” [insert link to appropriate Q&A]<br />
+      (o) Access to Google Play to download the AirCasting app. Certain Android
+      devices, like those made by Amazon, do not have access to the Google Play
+      store.<br /> (o) A cellular or WiFi connection for your Android device.<br
+      /> (o) If you plan to record a fixed-WiFi session, you’ll need access to a
+      wireless router with a 2.4 GHz band.<br /> (o) If you plan to record a
+      fixed-cellular session, you’ll need a SIM card that provides 2G service
+      and access to a 2G cellular network.<br />
     category: GETTING STARTED WITH AIRBEAM2
     question: What do I need to get started with the AirBeam2?
   - answer: >-
