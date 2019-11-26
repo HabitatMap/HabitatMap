@@ -542,8 +542,8 @@ faq_items:
       I never received an email with the files attached, what happened?
   - answer: >-
       The <a
-      href="https://github.com/HabitatMap/AirCasting/blob/master/doc/api.md">AirCasting
-      API documentation</a> is on GitHub.
+      href="https://github.com/HabitatMap/AirCasting/blob/master/doc/api.md"
+      target="_blank">AirCasting API documentation</a> is on GitHub.
     category: SHARING YOUR DATA & DATA PRIVACY
     question: How do I access the AirCasting API?
   - answer: >-
