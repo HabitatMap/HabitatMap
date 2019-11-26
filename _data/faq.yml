@@ -106,3 +106,170 @@ faq_items:
       measurements.
     category: RECORDING MEASUREMENTS WITH AIRBEAM2
     question: What level of fine particulate matter exposure is considered dangerous?
+  - answer: >-
+      *A fully charged AirBeam2. You’ll know it’s fully charged when the green
+      charging indicator turns off. *An Android phone or tablet. For advice on
+      what Android device’s work best see “What Android devices work best with
+      the AirCasting app?” [insert link to appropriate Q&A] *Access to Google
+      Play to download the AirCasting app. Certain Android devices, like those
+      made by Amazon, do not have access to the Google Play store. *A cellular
+      or WiFi connection for your Android device. *If you plan to record a
+      fixed-WiFi session, you’ll need access to a wireless router with a 2.4 GHz
+      band. *If you plan to record a fixed-cellular session, you’ll need a SIM
+      card that provides 2G service and access to a 2G cellular network.
+    category: GETTING STARTED WITH AIRBEAM2
+    question: What do I need to get started with the AirBeam2?
+  - answer: >-
+      The AirBeam2 has two LEDs. One serves as the battery-charging indicator
+      and the other serves as the connection indicator. The battery-charging
+      indicator is located closest to the USB charging port. When it’s green,
+      the battery is charging and when it turns off the battery is fully
+      charged. The connection indicator is located closest to the power button.
+      Red indicates the AirBeam2 is getting set-up, green indicates that it’s
+      ready to be configured, blue indicates it’s getting the time (this is only
+      for fixed sessions), white indicates it’s sending data, and blinking red
+      indicates the AirBeam2 is disconnected from the Android device (this is
+      only for mobile sessions). Note that after glowing white for two minutes
+      to indicate that the AirBeam2 is successfully sending data, the connection
+      indicator will turn off to conserve battery power. Also note that the
+      AirBeam2 has a configuration window of 50 seconds after which the AirBeam2
+      will default to its previously selected configuration.
+    category: GETTING STARTED WITH AIRBEAM2
+    question: What do colored LEDs on the AirBeam2 mean?
+  - answer: >-
+      If you plan on moving around with the AirBeam2 while recording air quality
+      measurements, configure the AirBeam2 to record a mobile session. When
+      recording a mobile AirCasting session, measurements are created,
+      timestamped, and geolocated once per second. If you plan to leave the
+      AirBeam2 indoors or hang it outside then configure it to record a fixed
+      session. When recording fixed AirCasting sessions, measurements are
+      created and timestamped once per minute and geocoordinates are fixed to a
+      set location. Fixed-WiFi sessions send data to the AirCasting website via
+      the 2.4 GHz band of your wireless router. Fixed-cellular sessions send
+      data to the AirCasting website via the 2G cellular network. There are
+      three primary differences between fixed and mobile sessions: 1) The
+      averaging time interval for mobile sessions is one-second, whereas the
+      averaging time interval for fixed sessions is one-minute; 2)
+      geocoordinates are updated every second when recording a mobile session,
+      whereas geocoordinates are never updated when recording a fixed session;
+      and 3) measurements are communicated to the AirCasting Android app via
+      Bluetooth when recording a mobile session, whereas measurements are
+      communicated directly to the AirCasting website via either the WiFi
+      network or cellular network when recording a fixed session.
+    category: GETTING STARTED WITH AIRBEAM2
+    question: >-
+      I can configure the AirBeam2 to record a mobile or fixed session; what’s
+      the difference and how do I know which recording mode best fits my needs?
+  - answer: >-
+      If you plan on moving around with the AirBeam2 while recording air quality
+      measurements, configure the AirBeam2 to record a mobile session. When
+      recording a mobile AirCasting session, measurements are created,
+      timestamped, and geolocated once per second. If you plan to leave the
+      AirBeam2 indoors or hang it outside then configure it to record a fixed
+      session. When recording fixed AirCasting sessions, measurements are
+      created and timestamped once per minute and geocoordinates are fixed to a
+      set location. Fixed-WiFi sessions send data to the AirCasting website via
+      the 2.4 GHz band of your wireless router. Fixed-cellular sessions send
+      data to the AirCasting website via the 2G cellular network. There are
+      three primary differences between fixed and mobile sessions: 1) The
+      averaging time interval for mobile sessions is one-second, whereas the
+      averaging time interval for fixed sessions is one-minute; 2)
+      geocoordinates are updated every second when recording a mobile session,
+      whereas geocoordinates are never updated when recording a fixed session;
+      and 3) measurements are communicated to the AirCasting Android app via
+      Bluetooth when recording a mobile session, whereas measurements are
+      communicated directly to the AirCasting website via either the WiFi
+      network or cellular network when recording a fixed session.
+    category: GETTING STARTED WITH AIRBEAM2
+    question: >-
+      I can configure the AirBeam2 to record a mobile or fixed session; what’s
+      the difference and how do I know which recording mode best fits my needs?
+  - answer: >-
+      If you want to record a mobile session and you’re device is not already
+      connected to the AirCasting app, you’ll need to connect it. You’ll know
+      your AirBeam2 is connected to your Android device when you see five grey
+      circles stacked on top of one another inside the AirCasting app Dashboard.
+      Press the record button in the upper right hand corner to begin recording
+      a mobile AirCasting session. Once you configure an AirBeam2 to record a
+      fixed session, it will send data to the AirCasting website every minute
+      until you turn it off. When recording a fixed session, the measurements
+      are communicated once a minute to the AirCasting website via your wireless
+      router or the cellular network. Your Android device no longer needs to be
+      in proximity to the AirBeam2 as it’s retrieving the data from the web via
+      the Android device’s WiFi or cellular connection.
+    category: GETTING STARTED WITH AIRBEAM2
+    question: >-
+      Once I setup my AirBeam2 and connect it to the AirCasting app, is it
+      constantly recording measurements or do I need to configure it each time I
+      want to use it?
+  - answer: >-
+      All wireless routers have a 2.4 GHz band, however, you’re wireless
+      router’s 2.4 GHz band might not be setup. Many newer routers are dual
+      band, offering both 2.4 GHz and 5GHz bands.  If you have a dual band
+      router, make sure the 2.4 GHz band is setup and the AirBeam2 is accessing
+      that band when configuring the AirBeam2 to record a fixed-WiFi session.
+    category: GETTING STARTED WITH AIRBEAM2
+    question: >-
+      I want to record a fixed-WiFi session; how can I figure out whether my
+      WIFI network is 2.4 GHz?
+  - answer: >-
+      Many low cost carriers, like Ting, offer cheap SIM cards and low-cost
+      month-to-month cellular service. Check with your cellular provider to find
+      out if they offer 2G service. If they do offer 2G service, check their
+      coverage maps to see if they offer 2G service in your location.
+    category: GETTING STARTED WITH AIRBEAM2
+    question: >-
+      I want to record a fixed-cellular session; how can I figure out whether
+      the SIM card I inserted into the AirBeam2 has access to the 2G network. 
+  - answer: >-
+      If you haven’t reconfigured your AirBeam2 then simply turn it on and it
+      will load the last selected configuration and continue streaming under the
+      same session title. If you subsequently reconfigured the AirBeam2,
+      navigate to the Sessions screen, tap the title of the fixed session you
+      want to continue, tap “Continue Streaming”, and navigate through the
+      configuration decision tree.
+    category: GETTING STARTED WITH AIRBEAM2
+    question: >-
+      I previously configured my AirBeam2 to record a fixed session; how do I
+      continue streaming (adding measurements) to that same fixed session?
+  - answer: >-
+      The AirCasting app can record the AirBeam measurements and sync your
+      session data over WiFi without need for a cellular data plan. The only
+      thing that won't work is that the map tiles inside the app won't load when
+      you’re away from WiFi and without a data plan. You don't have to do
+      anything special; just use the app as you normally would. The only
+      challenge to not having the map tiles is that it's difficult to confirm
+      that you have an accurate GPS fix. Here is what we suggest, since you
+      won't have cellular service. 1) When you have access to WiFi confirm that
+      your location is accurate on the map. If it's not accurate get outside if
+      you can, if that's not possible, then place your phone near a window. 2)
+      Once you've confirmed your location is accurate, zoom in on the map until
+      the screen shows only your immediate blocks. 3) Once you've stepped
+      outside and started recording, make sure the colored dots displayed on the
+      screen create a trail. If the dots are being layed down directly on top of
+      one another you don't have a proper GPS fix as it's not registering your
+      movement.
+    category: GETTING STARTED WITH AIRBEAM2
+    question: >-
+      Can I collect data using an Android device without a cellular data
+      connection?
+  - answer: >-
+      Once you configure an AirBeam2 to record a fixed session, it will send
+      data to the AirCasting website every minute until you turn it off.  You
+      don't need to do anything if the WiFi connection is dropped. Simply
+      restore the WiFi signal and the data will continue streaming.
+    category: GETTING STARTED WITH AIRBEAM2
+    question: >-
+      The WiFi network that my AirBeam2 was connected to went down temporarily. 
+      Now that the WiFi network is up again, do I need to do anything to get my
+      AirBeam2 streaming again?
+  - answer: Approximately 450 megabytes per month.
+    category: GETTING STARTED WITH AIRBEAM2
+    question: How much data is consumed when sending AirBeam2 data over cellular?
+  - answer: >-
+      When powered and running 24/7, the AirBeam consumes less than a nickel’s
+      worth of electricity in a month.
+    category: GETTING STARTED WITH AIRBEAM2
+    question: >-
+      How much power is consumed by the AirBeam2 when it’s plugged in and
+      running?
