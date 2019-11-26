@@ -599,14 +599,14 @@ faq_items:
   - answer: >-
       There are dozens of people who contributed time and effort to make the
       AirBeam and AirCasting a reality. In particular, we’d like to thank <a
-      href="https://lunarlogic.io/">Lunar Logic</a> for coding the AirCasting
-      website and app, Raymond Yap - adjunct professor of Computer Engineering
-      at the New York City College of Technology - for prototyping AirCasting
-      hardware and firmware, <a
-      href="https://www.consequenceofinnovation.com/">Consequence of
-      Innovation</a> for designing the HabitatMap website, and <a
-      href="https://jayconsystems.com/">Jaycon Systems</a> for manufacturing the
-      AirBeam and fulfilling AirBeam orders.
+      href="https://lunarlogic.io/" target="_blank">Lunar Logic</a> for coding
+      the AirCasting website and app, Raymond Yap - adjunct professor of
+      Computer Engineering at the New York City College of Technology - for
+      prototyping AirCasting hardware and firmware, <a
+      href="https://www.consequenceofinnovation.com/"
+      target="_blank">Consequence of Innovation</a> for designing the HabitatMap
+      website, and <a href="https://jayconsystems.com/" target="_blank">Jaycon
+      Systems</a> for manufacturing the AirBeam and fulfilling AirBeam orders.
     category: GENERAL
     question: >-
       Creating the AirBeam and the AirCasting platform must have required a
