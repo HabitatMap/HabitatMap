@@ -402,3 +402,100 @@ faq_items:
       possible for us to optimize the AirCasting app for your device.
     category: AIRBEAM2 & AIRCASTING APP TROUBLESHOOTING
     question: Why does the AirCasting app keep crashing?
+  - answer: >-
+      Launch the AirCasting app and tap “Connect phone mic”. Then press the
+      record button located in the upper right hand corner of the AirCasting
+      app. You’ll know you’re recording when the grey circle takes on color.
+    category: INTERFACING WITH THE AIRCASTING APP & WEBSITE
+    question: How can I monitor noise and measure sound levels using the AirCasting app?
+  - answer: Navigate to the AirCasting maps page and use the search filters.
+    category: INTERFACING WITH THE AIRCASTING APP & WEBSITE
+    question: How can I search for and find my sessions on the AirCasting website?
+  - answer: >-
+      An AirCasting session is defined by the period of time during which
+      measurements are recorded. Mobile sessions begin when you press the start
+      recording button inside the AirCasting app and end when you press the stop
+      recording button. Fixed AirCasting sessions begin when the first
+      measurement is communicated to AirCasting website and do not have a set
+      end time, i.e. fixed sessions that have stopped sending new measurements
+      to the AirCasting website can be continued at anytime once new
+      measurements are sent.
+    category: INTERFACING WITH THE AIRCASTING APP & WEBSITE
+    question: What is an AirCasting session?
+  - answer: >-
+      When recording a mobile AirCasting session, measurements are created,
+      timestamped, and geolocated once per second. When recording fixed
+      AirCasting sessions, measurements are created and timestamped once per
+      minute and geocoordinates are fixed to a set location. There are three
+      primary differences between fixed and mobile sessions: 1) The averaging
+      time interval for mobile sessions is one-second, whereas the averaging
+      time interval for fixed sessions is one-minute; 2) geocoordinates are
+      updated every second when recording a mobile session, whereas
+      geocoordinates are never updated when recording a fixed session; and 3)
+      measurements are communicated to the AirCasting Android app via Bluetooth
+      when recording a mobile session, whereas measurements are communicated
+      directly to the AirCasting website via either the WiFi network or cellular
+      network when recording a fixed session.
+    category: INTERFACING WITH THE AIRCASTING APP & WEBSITE
+    question: >-
+      What is a mobile AirCasting session?  What is a fixed AirCasting session? 
+      What is the difference between mobile and fixed AirCasting sessions?
+  - answer: >-
+      (o) Have you signed in or created a profile yet?  If not, do so by tapping
+      the menu icon in the upper left hand corner of the AirCasting app, then
+      press “Create Profile or Log In”?<br /> (o) Is your Android device
+      connected to the Internet via the WiFi or cellular network?  If not,
+      you’ll need to connect your Android to the Internet then navigate to the
+      sessions screen and pull down to sync your sessions from the AirCasting
+      app to the AirCasting website.<br /> (o) Navigate to the sessions screen
+      and pull down to sync your sessions from the AirCasting app to the
+      AirCasting website.<br /> (o) When you were recording a session, was the
+      phone’s “location services” on and in “high accuracy” mode?  Sessions
+      without geocoordinates can’t be synced to the AirCasting website.<br />
+    category: INTERFACING WITH THE AIRCASTING APP & WEBSITE
+    question: >-
+      Why are my mobile AirCasting sessions not appearing on the AirCasting
+      website?
+  - answer: >-
+      Did you confirm your location was accurate on the map before starting to
+      record?  To do this, tap a stream on the dashboard, select “Map”, and then
+      tap the target icon in the lower right hand corner to center the map on
+      top of your current location.  If you’re inside, try going outside.
+    category: INTERFACING WITH THE AIRCASTING APP & WEBSITE
+    question: Why is the location of my measurements wrong on the map?
+  - answer: >-
+      The sessions list is arrayed horizontally along the bottom of the
+      AirCasting maps page. The sessions list contains all the sessions that
+      match your current search criteria.
+    category: INTERFACING WITH THE AIRCASTING APP & WEBSITE
+    question: What is the sessions list?
+  - answer: >-
+      The CrowdMap averages together all the measurements from all the sessions
+      listed on the sessions list and displays these averages as colored grid
+      cells. The color of each grid cell corresponds to the average intensity of
+      all the measurements recorded in that area. To view the CrowdMap navigate
+      to AirCasting maps page, search for the sessions you want to visualize on
+      the CrowdMap, then  under “CrowdMap” click “on”. If you’d like to increase
+      or decrease the size of the CrowdMap grid cell size, adjust the “grid cell
+      size” slider. Click on a grid cell to view the underlying data. To load
+      more sessions into the CrowdMap, scroll to the end of the sessions list
+      and click “more sessions”.
+    category: INTERFACING WITH THE AIRCASTING APP & WEBSITE
+    question: What is the CrowdMap and how does it work?
+  - answer: >-
+      The heat legend is located at the bottom of the AirCasting maps page. It
+      displays the correspondence between colors and measurement values. 
+    category: INTERFACING WITH THE AIRCASTING APP & WEBSITE
+    question: What is the heat legend?
+  - answer: >-
+      To change the relationship between colors and measurements, adjust the
+      sliders on the heat legend located at the bottom edge of the screen or
+      update the values in the boxes that define the lower and upper range. To
+      fit the scale to the session data measurements, click the connected
+      up/down arrows at the bottom right hand corner of the screen. To switch to
+      a monochrome blue color scheme, click the blue dots at the far end of the
+      heat legend. 
+    category: INTERFACING WITH THE AIRCASTING APP & WEBSITE
+    question: >-
+      How do I change the relationship between colors and measurement values on
+      the heat legend?
