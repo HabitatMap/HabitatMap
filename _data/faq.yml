@@ -499,3 +499,80 @@ faq_items:
     question: >-
       How do I change the relationship between colors and measurement values on
       the heat legend?
+  - answer: >-
+      On the AirCasting website, to share a link to a specific map view and
+      sessions list, click the blue and white link button at the bottom of the
+      search filters. To share a link to a single session, click the blue and
+      white link button inside the single session view window that displays the
+      session graph. To share a link to a session from inside the AirCasting
+      app, navigate to the sessions screen > tap a session > tap “Share” > tap
+      “Share link”.
+    category: SHARING YOUR DATA & DATA PRIVACY
+    question: How can I share a link to my AirCasting sessions?
+  - answer: >-
+      On the AirCasting website maps page, search for the session or sessions
+      you’d like to download using the search filters. After you’ve narrowed the
+      number of sessions on the sessions list, click the blue and white button
+      located at the bottom of the search filters reading “export sessions”,
+      enter your email address, and click “export”. Note that this will export
+      all the sessions loaded to the sessions list; the greater the number of
+      sessions and the more data points each session contains, the longer it
+      will take to receive the email. To export data for a single session using
+      the AirCasting website, select a session, then click the blue and white
+      button reading “export session” located inside the single session view. To
+      export data for a single session via the AirCasting app, navigate to the
+      sessions screen > tap a session > tap “Share” > tap “Share file”. Note
+      that the email with your session data is likely to end up in your email
+      spam folder. To avoid this, add “noreply@aircasting.org” to your list of
+      email contacts. For privacy reasons, we do not keep a record of email
+      addresses entered.
+    category: SHARING YOUR DATA & DATA PRIVACY
+    question: How do I export my AirCasting session data?
+  - answer: >-
+      (o) Did you check your spam folder?  The email with your session data is
+      likely to end up in your email spam folder. To avoid this, add
+      “noreply@aircasting.org” to your list of email contacts.<br /> (o) Is your
+      Android device connected to the Internet via the WiFi or cellular
+      network?  Make sure it is and then navigate to the sessions screen and
+      pull down to sync your sessions from the AirCasting app to the AirCasting
+      website so your session files can be shared.<br />
+    category: SHARING YOUR DATA & DATA PRIVACY
+    question: >-
+      I exported session files via the AirCasting app / AirCasting website, but
+      I never received an email with the files attached, what happened?
+  - answer: >-
+      The <a
+      href="https://github.com/HabitatMap/AirCasting/blob/master/doc/api.md">AirCasting
+      API documentation</a> is on GitHub.
+    category: SHARING YOUR DATA & DATA PRIVACY
+    question: How do I access the AirCasting API?
+  - answer: >-
+      The AirCasting app has several features that enable location data to
+      remain private. AirCasters can “disable maps” in the app settings, which
+      turns off GPS tracking. When AirCasters record data with the GPS disabled,
+      the data never leaves the Android device and is never synced to our
+      servers. AirCasters can elect to save their data to the AirCasting server
+      but not contribute it to the “CrowdMap”. This means the data can only be
+      viewed on the website via a link that you generate inside the app when
+      signed in. AirCasters can also elect to send the data from the app
+      directly to their own server, entirely bypassing the AirCasting server,
+      see “Backend settings” under “Settings”. In addition, when recording fixed
+      indoor sessions, GPS coordinates are never logged.
+    category: SHARING YOUR DATA & DATA PRIVACY
+    question: How do I keep my location data private?
+  - answer: >-
+      Both the AirCasting app and the HabitatMap/AirCasting website are
+      compliant with the EU General Data Protection Regulation. Specifically, we
+      recognize that users have the following rights: a right to portability of
+      your personal data; a right to obtain restriction of your personal data’s
+      processing; a right to obtain erasure of your personal data; and a right
+      not to be subject to an automated individual decision. HabitatMap will
+      never collect any personally identifiable information about you through
+      the AirCasting app or website unless you have provided it to us
+      voluntarily, nor will we use any information gleaned from your Android
+      device to market to you or pass your information to any third party. Our
+      complete privacy policy is available here. [Insert link]
+    category: SHARING YOUR DATA & DATA PRIVACY
+    question: >-
+      Is HabitatMap and AirCasting compliant with the EU General Data Protection
+      Regulation?
