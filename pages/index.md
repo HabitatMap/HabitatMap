@@ -21,9 +21,7 @@ section: home
 
 <section class="panel panel--hero u--bg-teal-light">
   <div class="split--50">
-    <h1 class="heading heading--large u--accent-hm panel__heading">
-      Harnessing the Power&nbsp;of&nbsp;People and&nbsp;Technology&nbsp;to Improve the Quality&nbsp;of&nbsp;Lives
-    </h1>
+    <h1 class="heading heading--large u--accent-hm panel__heading">BOOM!</h1>
   </div>
 </section>
 
