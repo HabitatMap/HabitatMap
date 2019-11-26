@@ -624,14 +624,15 @@ faq_items:
     category: GENERAL
     question: Is there an AirCasting app for Apple’s iOS?
   - answer: >-
-      The <a href="https://github.com/habitatmap">AirCasting app and website
-      code</a> is on GitHub as is the <a
-      href="https://github.com/HabitatMap/AirCastingAndroidClient/tree/master/arduino/aircasting/Airbeam2_Firmware_3_19_18">AirBeam2
-      Firmware</a> and the <a
-      href="https://github.com/HabitatMap/AirBeam2ElectronicSchematics">electronic
-      schematics for the AirBeam2</a>. The <a
-      href="https://www.shapeways.com/shops/aircasting">STL files</a> for 3D
-      printing the AirBeam2 enclosure can be downloaded from Shapeways.
+      The <a href="https://github.com/habitatmap" target="_blank">AirCasting app
+      and website code</a> is on GitHub as is the <a
+      href="https://github.com/HabitatMap/AirCastingAndroidClient/tree/master/arduino/aircasting/Airbeam2_Firmware_3_19_18"
+      target="_blank">AirBeam2 Firmware</a> and the <a
+      href="https://github.com/HabitatMap/AirBeam2ElectronicSchematics"
+      target="_blank">electronic schematics for the AirBeam2</a>. The <a
+      href="https://www.shapeways.com/shops/aircasting" target="_blank">STL
+      files</a> for 3D printing the AirBeam2 enclosure can be downloaded from
+      Shapeways.
     category: GENERAL
     question: >-
       Where can I find the open source code repositories for the AirCasting
