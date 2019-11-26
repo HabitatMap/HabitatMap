@@ -576,3 +576,64 @@ faq_items:
     question: >-
       Is HabitatMap and AirCasting compliant with the EU General Data Protection
       Regulation?
+  - answer: >-
+      HabitatMap is a not-for-profit organization supported by contributions
+      from individual donors, government & foundation grants, and AirBeam sales.
+      Past funders include Lush Cosmetics Charity Pot, Knight Foundation through
+      a partnership between HabitatMap and Sonoma Technology; the New York State
+      Dept. of Environmental Conservation through a partnership between
+      HabitatMap and Newtown Creek Alliance and HabitatMap and UPROSE; the US
+      EPA through a partnership between HabitatMap and Sustainable South Bronx;
+      the Hive Digital Media Learning Fund of the New York Community Trust
+      through a partnership between HabitatMap and New York Hall of Science; the
+      Mozilla Hive NYC Learning Network through a partnership between
+      HabitatMap, Parsons the New School for Design, and New York Hall of
+      Science; NIEHS, EPA, and HHS through a partnership between HabitatMap and
+      researchers and engineers from New York University and Carnegie Mellon’s
+      CREATE lab; New York State Pollution Prevention Institute through a
+      partnership between HabitatMap and New York Hall of Science; the Grey Area
+      Arts Foundation through a partnership between HabitatMap, Sonoma
+      Technology, and AethLabs; and Google Earth Outreach.
+    category: GENERAL
+    question: How is HabitatMap supported?
+  - answer: >-
+      There are dozens of people who contributed time and effort to make the
+      AirBeam and AirCasting a reality. In particular we’d like to thank <a
+      href="https://lunarlogic.io/">Lunar Logic</a> for coding the AirCasting
+      website and app, Raymond Yap - adjunct professor of Computer Engineering
+      at the New York City College of Technology - for prototyping AirCasting
+      hardware and firmware, <a
+      href="https://www.consequenceofinnovation.com/">Consequence of
+      Innovation</a> for designing the HabitatMap website, and <a
+      href="https://jayconsystems.com/">Jaycon Systems</a> for manufacturing the
+      AirBeam and fulfilling AirBeam orders.
+    category: GENERAL
+    question: >-
+      Creating the AirBeam and the AirCasting platform must have required a
+      substantial and sustained effort; who helped HabitatMap Founder &
+      Executive Director, Michael Heimbinder, bring these technologies to
+      reality? 
+  - answer: >-
+      Due to financial constraints, we have yet to develop a version of the
+      AirCasting app for iOS, however, we would very much like to. If you’d like
+      to help us bring an iOS app to fruition, please consider making a donation
+      [insert link]. So that we know that your donation is earmarked for
+      AirCasting iOS app dvelopment, please mark “iOS development” in the notes
+      when making your donation. When we reach 50k in iOS development donations
+      we will begin coding the app.
+    category: GENERAL
+    question: Is there an AirCasting app for Apple’s iOS?
+  - answer: >-
+      The <a href="https://github.com/habitatmap">AirCasting app and website
+      code</a> is on GitHub as is the <a
+      href="https://github.com/HabitatMap/AirCastingAndroidClient/tree/master/arduino/aircasting/Airbeam2_Firmware_3_19_18">AirBeam2
+      Firmware</a> and the <a
+      href="https://github.com/HabitatMap/AirBeam2ElectronicSchematics">electronic
+      schematics for the AirBeam2</a>. The <a
+      href="https://www.shapeways.com/shops/aircasting">STL files</a> for 3D
+      printing the AirBeam2 enclosure can be downloaded from Shapeways.
+    category: GENERAL
+    question: >-
+      Where can I find the open source code repositories for the AirCasting
+      Android app and AirCasting website and the open source files for the
+      AirBeam2 firmware, enclosure, and PCB schematics?
