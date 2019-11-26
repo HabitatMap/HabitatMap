@@ -269,3 +269,136 @@ faq_items:
     question: >-
       How much power is consumed by the AirBeam2 when it’s plugged in and
       running?
+  - answer: >-
+      (o) Is the Android device’s Bluetooth on?<br /> (o) Did you first pair the
+      AirBeam2 to your Android device via the Android device’s Bluetooth
+      settings?<br /> (o) After powering on the AirBeam2, did you wait until the
+      “connection indicator” turned from red to green before immediately
+      pressing “Configure AirBeam2”?  If not, turn off your AirBeam and press
+      “Configure AirBeam2” immediately after the “connection indicator” turns
+      from red to green.<br /> (o) Is the AirBeam fully charged?  If not, turn
+      it off, fully charge it, and try again.<br /> (o) Does the unique
+      identifier of the AirBeam2 match the AirBeam2 you selected from the list
+      of “Available Devices”?  If you have multiple AirBeam2s, we recommend
+      labeling them with the last 4 characters of their unique identifier to
+      avoid any confusion when connecting AirBeam2s to Android devices.<br />
+    category: AIRBEAM2 & AIRCASTING APP TROUBLESHOOTING
+    question: Why won’t my AirBeam2 connect to my Android device?
+  - answer: >-
+      Did you press the record button located in the upper right hand corner of
+      the AirCasting app. You’ll know you’re recording when the grey circles
+      take on color.
+    category: AIRBEAM2 & AIRCASTING APP TROUBLESHOOTING
+    question: Why can’t I record a mobile session with my AirBeam2?
+  - answer: >-
+      A fixed-WiFi session communicates data via the 2.4 GHz WiFi network. A
+      fixed-cellular session communicates data via the 2G cellular network and
+      requires the insertion of an activated SIM card.
+    category: AIRBEAM2 & AIRCASTING APP TROUBLESHOOTING
+    question: >-
+      What’s the difference between a fixed-cellular session and a fixed-WiFi
+      session?
+  - answer: >-
+      (o) Are you attempting to connect the AirBeam2 to a firewall protected 2.4
+      GHz network?  The AirBeam2 cannot connect to 5 GHz WiFi networks or those
+      with firewalls, like most public WiFi networks or those at schools and
+      universities.<br /> (o) Did you enter the correct password?  Double check
+      to make sure your Android device isn’t auto-correcting your entry to the
+      wrong password.<br /> (o) Is the Android device’s Bluetooth on?<br /> (o)
+      Did you first pair the AirBeam2 to your Android device via the Android
+      device’s Bluetooth settings?<br /> (o) After powering on the AirBeam2, did
+      you wait until the “connection indicator” LED turned from red to green
+      before immediately pressing “Configure AirBeam2”?  If not, turn off your
+      AirBeam and press “Configure AirBeam2” immediately after the “connection
+      indicator” LED turns from red to green<br /> (o) Is the AirBeam fully
+      charged?  If not, turn it off, fully charge it, and try again.<br /> (o)
+      Does the unique identifier of the AirBeam2 match the AirBeam2 you selected
+      from the list of “Available Devices”?  If you have multiple AirBeam2s, we
+      recommend labeling them with the last 4 characters of their unique
+      identifier to avoid any confusion when connecting AirBeam2s to Android
+      devices.<br /> (o) Is your Android device connected to the Internet via
+      cellular or WiFi?<br />
+    category: AIRBEAM2 & AIRCASTING APP TROUBLESHOOTING
+    question: Why can’t I record a fixed-WiFi session with my AirBeam2?
+  - answer: >-
+      (o) Did you open the enclosure, push down and lift up the SIM card slot,
+      slide in an active SIM card, and properly close the SIM card slot?<br />
+      (o) The AirBeam2 sends cellular data via the 2G network. Does your SIM
+      card grant access to a 2G network?<br /> (o) You may not have 2G reception
+      where you are; try moving to another location.<br /> (o) Is the Android
+      device’s Bluetooth on?<br /> (o) Did you first pair the AirBeam2 to your
+      Android device via the Android device’s Bluetooth settings?<br /> (o)
+      After powering on the AirBeam2, did you wait until the “connection
+      indicator” LED turned from red to green before immediately pressing
+      “Configure AirBeam2”?  If not, turn off your AirBeam and press “Configure
+      AirBeam2” immediately after the “connection indicator” LED turned from red
+      to green.<br /> (o) Is the AirBeam fully charged?  If not, turn it off,
+      fully charge it, and try again.<br /> (o) Does the unique identifier of
+      the AirBeam2 match the AirBeam2 you selected from the list of “Available
+      Devices”?  If you have multiple AirBeam2s, we recommend labeling them with
+      the last 4 characters of their unique identifier to avoid any confusion
+      when connecting AirBeam2s to Android devices.<br /> (o) Is your Android
+      device connected to the Internet via cellular or WiFi?<br />
+    category: AIRBEAM2 & AIRCASTING APP TROUBLESHOOTING
+    question: Why can’t I record a fixed-cellular session with my AirBeam2?
+  - answer: >-
+      AirBeam2 includes an internal battery so it will continue operating for
+      approximately ten hours before shutting down for lack of power. Note that
+      when the battery is less than half charged, AirBeam2 cannot operate and
+      charge at the same time. If you’re AirBeam2 is recording a fixed session
+      when it accidently gets unplugged (and if you suspect the battery is less
+      than half charged) then turn off your AirBeam, plug it back in, and wait
+      for it to fully charge before turning it back on.
+    category: AIRBEAM2 & AIRCASTING APP TROUBLESHOOTING
+    question: >-
+      What happens if an AirBeam2 recording a fixed session accidently gets
+      unplugged?
+  - answer: >-
+      Nothing happens. If you’re recording a mobile session, the AirBeam2 will
+      remain connected to the Android device and your data will continue to be
+      recorded. If you’re recording a fixed session, the streams on your
+      dashboard will update when you access the app again.
+    category: AIRBEAM2 & AIRCASTING APP TROUBLESHOOTING
+    question: >-
+      What happens if my phone goes to sleep, the screen turns off, or I
+      navigate out of the AirCasting app?
+  - answer: >-
+      Inside the AirCasting app, navigate to “Settings” and check “Dormant
+      stream alert”. If your AirBeam2 stops streaming you will receive an email
+      alert.
+    category: AIRBEAM2 & AIRCASTING APP TROUBLESHOOTING
+    question: >-
+      How do I know if my AirBeam2 fixed AirCasting session has stopped
+      streaming?
+  - answer: >-
+      (o) Is your Android device connected to the Internet via cellular or
+      WiFi?<br /> (o) Is the email address you’re using to create a profile
+      linked to a previously created AirCasting profile?<br /> (o) Did you
+      forget your password? If so, use the forgot password feature to reset your
+      password.<br />
+    category: AIRBEAM2 & AIRCASTING APP TROUBLESHOOTING
+    question: >-
+      I’m having trouble creating a profile or logging in to the AirCasting app;
+      what might I be doing wrong?
+  - answer: >-
+      AirBeam2 measures the temperature and relative humidity inside the
+      AirBeam2 enclosure. These measurements are accurate but they are not
+      representative of the ambient temperature and relative humidity.
+    category: AIRBEAM2 & AIRCASTING APP TROUBLESHOOTING
+    question: >-
+      The temperature and relative humidity measurements from my AirBeam2 don’t
+      match the temperature and relative humidity measurements from my home
+      weather station, why?
+  - answer: >-
+      We are committed to making the AirCasting app work on as many Android
+      devices as possible. The challenge is, there are thousands of Android
+      devices on the market and we only have the resources to buy and test a
+      small fraction of them for compatibility with the AirCasting app. If the
+      AirCasting app is crashing on your device please email us at
+      info@habitatmap.org and let us know what screen you were on and what you
+      were doing when the app crashed. This will help us zero in on the problem.
+      Having said that, there are some Android devices we can’t support. If your
+      Android device can’t smoothly run the Google Maps app then it won’t be
+      possible for us to optimize the AirCasting app for your device.
+    category: AIRBEAM2 & AIRCASTING APP TROUBLESHOOTING
+    question: Why does the AirCasting app keep crashing?
