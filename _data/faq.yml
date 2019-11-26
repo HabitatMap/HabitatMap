@@ -161,30 +161,6 @@ faq_items:
       I can configure the AirBeam2 to record a mobile or fixed session; what’s
       the difference and how do I know which recording mode best fits my needs?
   - answer: >-
-      If you plan on moving around with the AirBeam2 while recording air quality
-      measurements, configure the AirBeam2 to record a mobile session. When
-      recording a mobile AirCasting session, measurements are created,
-      timestamped, and geolocated once per second. If you plan to leave the
-      AirBeam2 indoors or hang it outside then configure it to record a fixed
-      session. When recording fixed AirCasting sessions, measurements are
-      created and timestamped once per minute and geocoordinates are fixed to a
-      set location. Fixed-WiFi sessions send data to the AirCasting website via
-      the 2.4 GHz band of your wireless router. Fixed-cellular sessions send
-      data to the AirCasting website via the 2G cellular network. There are
-      three primary differences between fixed and mobile sessions: 1) The
-      averaging time interval for mobile sessions is one-second, whereas the
-      averaging time interval for fixed sessions is one-minute; 2)
-      geocoordinates are updated every second when recording a mobile session,
-      whereas geocoordinates are never updated when recording a fixed session;
-      and 3) measurements are communicated to the AirCasting Android app via
-      Bluetooth when recording a mobile session, whereas measurements are
-      communicated directly to the AirCasting website via either the WiFi
-      network or cellular network when recording a fixed session.
-    category: GETTING STARTED WITH AIRBEAM2
-    question: >-
-      I can configure the AirBeam2 to record a mobile or fixed session; what’s
-      the difference and how do I know which recording mode best fits my needs?
-  - answer: >-
       If you want to record a mobile session and you’re device is not already
       connected to the AirCasting app, you’ll need to connect it. You’ll know
       your AirBeam2 is connected to your Android device when you see five grey
@@ -263,6 +239,25 @@ faq_items:
       The WiFi network that my AirBeam2 was connected to went down temporarily. 
       Now that the WiFi network is up again, do I need to do anything to get my
       AirBeam2 streaming again?
+  - answer: >-
+      Your Android device needs to come equipped with Bluetooth and GPS and have
+      access to the Google Play store. (Certain Android devices, like those made
+      by Amazon, do not have access to the Google Play store.) In addition, it’s
+      best to use an Android device with 2GB of RAM or more. Mobile AirBeam
+      measurements are stored in RAM. Since the AirBeam2 records 300 data points
+      a minute when operating in mobile mode, this adds up fast. The more RAM
+      your Android device has, the longer it will be able to record a mobile
+      AirCasting session before filling up and crashing the app. (Don’t worry if
+      this happens, your data will be saved before the app crashes.)  Beyond
+      suggesting Android devices with sufficient RAM, we also recommend buying
+      Android devices that cost $100 or more because you get what you pay for.
+      The price of an Android device is frequently a better indicator of
+      compatibility with the AirCasting app than the hardware and software
+      specifications alone because more expensive Android devices are generally
+      better built. If you plan to buy multiple Android devices, buy one device
+      and test thoroughly with the AirCasting app before buying multiples. 
+    category: GETTING STARTED WITH AIRBEAM2
+    question: What Android devices work best with the AirCasting app?
   - answer: Approximately 450 megabytes per month.
     category: GETTING STARTED WITH AIRBEAM2
     question: How much data is consumed when sending AirBeam2 data over cellular?
