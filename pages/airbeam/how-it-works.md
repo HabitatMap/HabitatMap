@@ -18,7 +18,7 @@ section: airbeam
     <article class="container--narrow u--margin-top-huge">
       <h2 class="heading heading--medium">
         <span class="heading--underlined">1</span>
-        <span class="heading--capitilized">Subhead Here</span>
+        <span class="heading--capitilized">Collect</span>
       </h2>
       <img class="logo logo--body" alt="Airbeam logo" src="/assets/img/svg/Airbeam-Logo-Body.svg" />
       <p class="p--body">
@@ -62,7 +62,7 @@ section: airbeam
     <article class="container--narrow container--centered">
       <h2 class="heading heading--medium">
         <span class="heading--underlined">2</span>
-        <span class="heading--capitilized">Subhead Here</span>
+        <span class="heading--capitilized">Measure</span>
       </h2>
       <p class="p--body">
         The AirBeam communicates these measurements to the AirCasting Android App (available from the Google Play Store) where your measurements are mapped and graphed in real-time on your smartphone.
@@ -76,7 +76,7 @@ section: airbeam
     <article class="container--narrow">
       <h2 class="heading heading--medium">
         <span class="heading--underlined heading--underlined--ac">3</span>
-        <span class="heading--capitilized">Subhead Here</span>
+        <span class="heading--capitilized">Beam</span>
       </h2>
       <img class="logo logo--body" alt="Aircasting logo" src="/assets/img/svg/Aircasting-Logo-Body.svg" />
       <p class="p--body">
@@ -86,7 +86,7 @@ section: airbeam
     <article class="container--narrow u--margin-top-big">
       <h2 class="heading heading--medium">
         <span class="heading--underlined heading--underlined--ac">4</span>
-        <span class="heading--capitilized">Subhead Here</span>
+        <span class="heading--capitilized">Visualize</span>
       </h2>
       <p class="p--body">
         AirBeam data is then aggregated and crowdsourced on the AirCasting website, allowing AirCasters to visualize areas where air pollutant concentrations are highest and lowest and share their data with their community.
@@ -120,7 +120,7 @@ section: airbeam
     <article class="container--narrow container--centered">
       <h2 class="heading heading--medium">
         <span class="heading--underlined">5</span>
-        <span class="heading--capitilized">Subhead Here</span>
+        <span class="heading--capitilized">Stay informed</span>
       </h2>
       <p class="p--body">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sit amet placerat mauris. Fusce et sollicitudin leo. Aliquam at felis diam. Nullam id erat molestie, sagittis augue volutpat, vestibulum ipsum. Mauris vel convallis ante. Integer eget vestibulum nisl, ut feugiat tortor.
