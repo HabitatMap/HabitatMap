@@ -42,7 +42,9 @@ section: about
     <li class="contents-list__item"><a href="#performance">Performance Data</a></li>
   </ul>
 
-  <h2 id="specification" class="heading heading--small heading--body">
+  <a id="specification" class="anchor">
+  </a>
+  <h2 class="heading heading--small heading--body">
     Hardware Specifications
   </h2>
 
@@ -57,7 +59,9 @@ section: about
     Microcontroller: Teensy++<br>
   </p>
 
-  <h2 id="about" class="heading heading--small heading--body">
+  <a id="about" class="anchor">
+  </a>
+  <h2 class="heading heading--small heading--body">
     About AirBeam2
   </h2>
 
@@ -65,7 +69,9 @@ section: about
     <a href="/airbeam">AirBeam2</a> measures fine particulate matter (PM1, PM2.5 & PM10), temperature, and relative humidity. AirBeam2 uses a light scattering method to measure particulate matter. Air is drawn through a sensing chamber wherein light from a laser scatters off particles in the airstream. This light scatter is registered by a detector and converted into a measurement that estimates the number of particles in the air. When recording a mobile session, these measurements are communicated once a second to the AirCasting Android app via Bluetooth. When recording a fixed session, these measurements are communicated once a minute to the <a href="/">AirCasting</a> website via WiFi or cellular. At the end of each mobile AirCasting session, the collected data is sent to the AirCasting website, where the data is crowdsourced with data from other AirCasters to generate heat maps indicating where PM concentrations are highest and lowest.
   </p>
 
-  <h2 id="charging" class="heading heading--small heading--body">
+  <a id="charging" class="anchor">
+  </a>
+  <h2 class="heading heading--small heading--body">
     Charging
   </h2>
 
@@ -73,7 +79,9 @@ section: about
     Fully charge your AirBeam2 before powering it on and using it in WiFi or Cellular mode or the AirBeam2 may lose power (even it it’s plugged in).
   </p>
 
-  <h2 id="power" class="heading heading--small heading--body">
+  <a id="power" class="anchor">
+  </a>
+  <h2 class="heading heading--small heading--body">
     Power
   </h2>
 
@@ -81,7 +89,9 @@ section: about
     AirBeam2 has a 2000 mAh 3.7V rechargeable lithium battery that can power the instrument for 10 hours when fully charged. The battery charges via the USB-C Port, which can also be used to power the AirBeam2 directly. The Battery Charging Indicator turns solid green when the AirBeam2 is charging and turns off when the AirBeam2 is either fully charged or unplugged.
   </p>
 
-  <h2 id="power-on-off" class="heading heading--small heading--body">
+  <a id="power-on-off" class="anchor">
+  </a>
+  <h2 class="heading heading--small heading--body">
     Power On/Off
   </h2>
 
@@ -89,7 +99,9 @@ section: about
     While operating the AirBeam2, keep the Intake and Exhaust free from obstructions.
   </p>
 
-  <h2 id="intake" class="heading heading--small heading--body">
+  <a id="intake" class="anchor">
+  </a>
+  <h2 class="heading heading--small heading--body">
     Intake & Exhaust
   </h2>
 
@@ -97,7 +109,9 @@ section: about
     While operating the AirBeam2, keep the Intake and Exhaust free from obstructions.
   </p>
 
-  <h2 id="record-mobile" class="heading heading--small heading--body">
+  <a id="record-mobile" class="anchor">
+  </a>
+  <h2 class="heading heading--small heading--body">
     Record Measurements – Mobile (Bluetooth) Session
   </h2>
 
@@ -116,7 +130,9 @@ section: about
     When recording a mobile session, measurements are communicated once a second to the AirCasting Android app via Bluetooth. The Android device must stay within 10-20 feet of the AirBeam2 to maintain the Bluetooth connection and receive data from the AirBeam2.
   </p>
 
-  <h2 id="record-wifi" class="heading heading--small heading--body">
+  <a id="record-wifi" class="anchor">
+  </a>
+  <h2 class="heading heading--small heading--body">
     Record Measurements – Fixed (WiFi) Session
   </h2>
 
@@ -135,11 +151,13 @@ section: about
     When recording a fixed WiFi session, the measurements are communicated once a minute to the <a href="/">AirCasting website</a> via WiFi. The Android device no longer needs to be in proximity to the AirBeam2 as it’s retrieving the data from the web via the Android device’s WiFi or cellular connection.
   </p>
 
-  <h2 id="record-cellular" class="heading heading--small heading--body">
+  <a id="record-cellular" class="anchor">
+  </a>
+  <h2 class="heading heading--small heading--body">
     Record Measurements – Fixed (Cellular) Session
   </h2>
 
-  <ol class="list list--body">
+  <ol class="list list--ordered">
     <li>Unscrew the AirBeam2 enclosure, pull out the circuit board, carefully push down and lift the SIM card slot, insert the SIM card into the SIM card slot, close the SIM card slot, place the circuit board back inside the enclosure, and screw the AirBeam2 together again. (AirBeam2 data and messaging costs are approximately $25 per month when using a Ting SIM card. Note that 2G cellular service is not available in all locations.)</li>
     <li>Download the AirCasting app from the Google Play store.</li>
     <li>Turn on the AirBeam2.</li>
@@ -155,7 +173,9 @@ section: about
     When recording a fixed WiFi session, the measurements are communicated once a minute to the <a href="/">AirCasting website</a> via WiFi. The Android device no longer needs to be in proximity to the AirBeam2 as it’s retrieving the data from the web via the Android device’s WiFi or cellular connection.
   </p>
 
-  <h2 id="connection" class="heading heading--small heading--body">
+  <a id="connection" class="anchor">
+  </a>
+  <h2 class="heading heading--small heading--body">
     Connection Indicator
   </h2>
 
@@ -167,7 +187,9 @@ section: about
     When AirBeam2 is configured for a mobile recording session, the AirCasting app will connect to the AirBeam2 via Bluetooth and the Connection Indicator will shine solid white for 2 minutes. If the AirBeam2 is disconnected while in mobile mode, the Connection Indicator will blink red. When AirBeam2 is configured for a fixed recording session, the Connection Indicator will shine blue while acquiring the time and date and then shine white for 2 minutes while AirBeam2 begins taking measurements and sending data to the AirCasting website.
   </p>
 
-  <h2 id="weather" class="heading heading--small heading--body">
+  <a id="weather" class="anchor">
+  </a>
+  <h2 class="heading heading--small heading--body">
     Weather Resistant
   </h2>
 
@@ -179,7 +201,9 @@ section: about
     As the community of AirCasters grows, we look forward to learning more about how AirBeam2 performs under various weather conditions and shelter configurations. Please get in touch and share your experiences AirCasting outdoors so we can update this section with more comprehensive information.
   </p>
 
-  <h2 id="temperature" class="heading heading--small heading--body">
+  <a id="temperature" class="anchor">
+  </a>
+  <h2 class="heading heading--small heading--body">
     Temperature & Humidity Measurements
   </h2>
 
@@ -187,7 +211,9 @@ section: about
     AirBeam2 measures the temperature and relative humidity inside the AirBeam2 enclosure. These measurements are not representative of the ambient temperature and relative humidity.
   </p>
 
-  <h2 id="acquire" class="heading heading--small heading--body">
+  <a id="acquire" class="anchor">
+  </a>
+  <h2 class="heading heading--small heading--body">
     Acquire AirBeam2 Data via Serial Monitor
   </h2>
 
@@ -195,7 +221,9 @@ section: about
     You can acquire the AirBeam2 data via the USB-C Port using a serial monitor.
   </p>
 
-  <h2 id="programming" class="heading heading--small heading--body">
+  <a id="programming" class="anchor">
+  </a>
+  <h2 class="heading heading--small heading--body">
     Programming
   </h2>
 
@@ -203,7 +231,9 @@ section: about
     The AirBeam2 board is based on the Teensy++, so you can reprogram your AirBeam using the Arduino IDE.
   </p>
 
-  <h2 id="open-source" class="heading heading--small heading--body">
+  <a id="open-source" class="anchor">
+  </a>
+  <h2 class="heading heading--small heading--body">
     Open Source
   </h2>
 
@@ -211,7 +241,9 @@ section: about
     The AirBeam2 <a href="https://github.com/HabitatMap/AirCastingAndroidClient/tree/master/arduino/aircasting/Airbeam2_Firmware_3_19_18">firmware</a> and <a href="https://github.com/HabitatMap/AirBeam2ElectronicSchematics">electronic schematics</a> are available on GitHub. The <a href="https://www.shapeways.com/shops/aircasting">STL files</a> for 3D printing the AirBeam enclosure can be downloaded from Shapeways.
   </p>
 
-  <h2 id="compliance" class="heading heading--small heading--body">
+  <a id="compliance" class="anchor">
+  </a>
+  <h2 class="heading heading--small heading--body">
     FCC Compliance Statement
   </h2>
 
@@ -219,7 +251,9 @@ section: about
     This device complies with part 15 of the FCC Rules. Operating is subject to the following two conditions: (1) This device may not cause harmful interference, and (2) this device must accept any interference received, including interference that may cause undesired operation. Caution: Modifying or tampering with internal components can cause a malfunction and will void FCC authorization to use these products.
   </p>
 
-  <h2 id="performance" class="heading heading--small heading--body">
+  <a id="performance" class="anchor">
+  </a>
+  <h2 class="heading heading--small heading--body">
     Performance Data
   </h2>
 

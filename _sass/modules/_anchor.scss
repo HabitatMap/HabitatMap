@@ -1,0 +1,10 @@
+.anchor {
+  display: block;
+  position: relative;
+  top: -80px; // sticky header height
+  visibility: hidden;
+
+  @media screen and (max-width: $tablet-max) {
+    top: -6.5rem; // mobile header height
+  }
+}
