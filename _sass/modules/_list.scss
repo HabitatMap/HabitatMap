@@ -1,0 +1,27 @@
+.list {
+  line-height: 1.6;
+  list-style-type: initial;
+  margin-bottom: 1.5rem;
+
+  li {
+    margin-bottom: 1rem;
+  }
+}
+
+.list--ordered,
+.list--unordered {
+  margin-left: 1rem;
+}
+
+.list--ordered {
+  list-style-type: decimal;
+}
+
+.list--unordered {
+  list-style-type: disc;
+}
+
+// Table of contents
+.contents-list {
+  list-style-type: none;
+}

@@ -22,24 +22,24 @@ section: about
 <section class="panel panel--history arc-background arc-background--history arc-background--left-teal-light">
   <img class="p--body" src="{{ site.baseurl | append: '/assets/img/users-guide/AB2Features+Dimensions.jpg' | append: '?nf-resize=fit=1200' }}" alt="AirBeam2 Features and Dimensions" />
 
-  <ul class="contents p--body">
-    <li class="contents__item"><a href="#specification">Hardware Specifications</a></li>
-    <li class="contents__item"><a href="#about">About AirBeam2</a></li>
-    <li class="contents__item"><a href="#charging">Charging</a></li>
-    <li class="contents__item"><a href="#power">Power</a></li>
-    <li class="contents__item"><a href="#power-on-off">Power On/Off</a></li>
-    <li class="contents__item"><a href="#intake">Intake & Exhaust</a></li>
-    <li class="contents__item"><a href="#record-mobile">Record Measurements – Mobile  (Bluetooth) Session</a></li>
-    <li class="contents__item"><a href="#record-wifi">Record Measurements – Fixed (Wifi) Session</a></li>
-    <li class="contents__item"><a href="#record-cellular">Record Measurements – Fixed (Cellular) Session</a></li>
-    <li class="contents__item"><a href="#connection">Connection Indicator</a></li>
-    <li class="contents__item"><a href="#weather">Weather Resistance</a></li>
-    <li class="contents__item"><a href="#temperature">Temperature & Humidity Measurements</a></li>
-    <li class="contents__item"><a href="#acquire">Acquire AirBeam2 Data via Serial Monitor</a></li>
-    <li class="contents__item"><a href="#programming">Programming</a></li>
-    <li class="contents__item"><a href="#open-source">Open Source</a></li>
-    <li class="contents__item"><a href="#compliance">FCC Compliance Statement</a></li>
-    <li class="contents__item"><a href="#performance">Performance Data</a></li>
+  <ul class="contents-list list">
+    <li class="contents-list__item"><a href="#specification">Hardware Specifications</a></li>
+    <li class="contents-list__item"><a href="#about">About AirBeam2</a></li>
+    <li class="contents-list__item"><a href="#charging">Charging</a></li>
+    <li class="contents-list__item"><a href="#power">Power</a></li>
+    <li class="contents-list__item"><a href="#power-on-off">Power On/Off</a></li>
+    <li class="contents-list__item"><a href="#intake">Intake & Exhaust</a></li>
+    <li class="contents-list__item"><a href="#record-mobile">Record Measurements – Mobile  (Bluetooth) Session</a></li>
+    <li class="contents-list__item"><a href="#record-wifi">Record Measurements – Fixed (Wifi) Session</a></li>
+    <li class="contents-list__item"><a href="#record-cellular">Record Measurements – Fixed (Cellular) Session</a></li>
+    <li class="contents-list__item"><a href="#connection">Connection Indicator</a></li>
+    <li class="contents-list__item"><a href="#weather">Weather Resistance</a></li>
+    <li class="contents-list__item"><a href="#temperature">Temperature & Humidity Measurements</a></li>
+    <li class="contents-list__item"><a href="#acquire">Acquire AirBeam2 Data via Serial Monitor</a></li>
+    <li class="contents-list__item"><a href="#programming">Programming</a></li>
+    <li class="contents-list__item"><a href="#open-source">Open Source</a></li>
+    <li class="contents-list__item"><a href="#compliance">FCC Compliance Statement</a></li>
+    <li class="contents-list__item"><a href="#performance">Performance Data</a></li>
   </ul>
 
   <h2 id="specification" class="heading heading--small heading--body">
@@ -101,7 +101,7 @@ section: about
     Record Measurements – Mobile (Bluetooth) Session
   </h2>
 
-  <ol class="p--body">
+  <ol class="list list--ordered">
     <li>Download the <a href="https://play.google.com/store/apps/details?id=pl.llp.aircasting&<li>hl=en">AirCasting app</a> from the Google Play store.</li>
     <li>Turn on the AirBeam2.</li>
     <li>Via the Android device “Settings”, pair the AirBeam2 to the Android device.</li>
@@ -120,7 +120,7 @@ section: about
     Record Measurements – Fixed (WiFi) Session
   </h2>
 
-  <ol class="p--body">
+  <ol class="list list--ordered">
     <li>Download the <a href="https://play.google.com/store/apps/details?id=pl.llp.aircasting&<li>hl=en">AirCasting app</a> from the Google Play store.</li>
     <li>Turn on the AirBeam2.</li>
     <li>Via the Android device “Settings”, pair the AirBeam2 to the Android device.</li>
@@ -139,7 +139,7 @@ section: about
     Record Measurements – Fixed (Cellular) Session
   </h2>
 
-  <ol class="p--body">
+  <ol class="list list--body">
     <li>Unscrew the AirBeam2 enclosure, pull out the circuit board, carefully push down and lift the SIM card slot, insert the SIM card into the SIM card slot, close the SIM card slot, place the circuit board back inside the enclosure, and screw the AirBeam2 together again. (AirBeam2 data and messaging costs are approximately $25 per month when using a Ting SIM card. Note that 2G cellular service is not available in all locations.)</li>
     <li>Download the AirCasting app from the Google Play store.</li>
     <li>Turn on the AirBeam2.</li>
