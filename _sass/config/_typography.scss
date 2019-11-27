@@ -99,6 +99,14 @@ a,
 .link {
   text-decoration: none;
   color: $link-color;
+
+  [data-current="about"] & {
+    color: $teal;
+  }
+
+  [data-current="airbeam"] & {
+    color: $green;
+  }
 }
 
 .link:hover {
