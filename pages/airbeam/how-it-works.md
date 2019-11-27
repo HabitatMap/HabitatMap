@@ -123,7 +123,7 @@ section: airbeam
         <span class="heading--capitilized">Stay informed</span>
       </h2>
       <p class="p--body">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sit amet placerat mauris. Fusce et sollicitudin leo. Aliquam at felis diam. Nullam id erat molestie, sagittis augue volutpat, vestibulum ipsum. Mauris vel convallis ante. Integer eget vestibulum nisl, ut feugiat tortor.
+        Good decisions are informed decisions. Integrating the AirCasting platform into your daily routine can guide healthier day-to-day decisions and help collect quality data to support environmental campaigns or research aimed at cleaner and healthier environments.
       </p>
       <div class="u--align-center">
         <a href="/airbeam/buy-it-now" class="badge-link badge-link--hm">
@@ -132,8 +132,4 @@ section: airbeam
       </div>
     </article>
   </div>
-  <p class="heading heading--large u--gray-text u--mobile-hidden">
-    <br>
-    Good decisions are informed decisions. Integrating the AirCasting platform into your daily routine can guide healthier day-to-day decisions and help collect quality data to support environmental campaigns or research aimed at cleaner and healthier environments.
-  </p>
 </section>
