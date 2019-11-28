@@ -12,18 +12,22 @@
   width: 13rem;
 }
 
-.badge-link--hm {
+.badge-link--hm,
+[data-current="airbeam"] .badge-link--hm {
   @include button-color($white, $hm-brand, $hm-brand, $white);
 }
 
-.badge-link--light-hm {
+.badge-link--light-hm,
+[data-current="airbeam"] .badge-link--light-hm {
   @include button-color($hm-brand, $white, $white, none);
 }
 
-.badge-link--ac {
+.badge-link--ac,
+[data-current="airbeam"] .badge-link--ac {
   @include button-color($white, $white, $ac-brand, $white);
 }
 
-.badge-link--light-ac {
+.badge-link--light-ac,
+[data-current="airbeam"] .badge-link--light-ac {
   @include button-color($ac-brand, $white, $white, none);
 }
