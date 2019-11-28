@@ -31,9 +31,9 @@ section: aircasting
   <div class="panel u--bg-half-teal-very-light">
     <div>
       <img
-        srcset="{{ site.produrl | append: '/assets/img/habitatmap-aircasting-map-placeholder.png?nf_resize=fit&w=800 480w' }},
-                {{ site.produrl | append: '/assets/img/habitatmap-aircasting-map-placeholder.png?nf_resize=fit&w=1150 768w' }},
-                {{ site.produrl | append: '/assets/img/habitatmap-aircasting-map-placeholder.png' }}"
+        srcset="/assets/img/habitatmap-aircasting-map-placeholder.png?nf_resize=fit&w=800 480w,
+                /assets/img/habitatmap-aircasting-map-placeholder.png?nf_resize=fit&w=1150 768w,
+                /assets/img/habitatmap-aircasting-map-placeholder.png"
         alt="AirCasting Map"
         class="img--fade-in"
       />
@@ -46,10 +46,10 @@ section: aircasting
     <div class="split--50 split--padding-right">
       <img
         class="img img--alternate-medium img--fade-in"
-        srcset="{{ site.produrl | append: '/assets/img/about-aircasting-01.jpg?nf_resize=fit&w=720 480w' }},
-                {{ site.produrl | append: '/assets/img/about-aircasting-01.jpg 767w' }},
-                {{ site.produrl | append: '/assets/img/about-aircasting-01.jpg?nf_resize=fit&w=600 1024w' }},
-                {{ site.produrl | append: '/assets/img/about-aircasting-01.jpg' }}"
+        srcset="/assets/img/about-aircasting-01.jpg?nf_resize=fit&w=720 480w,
+                /assets/img/about-aircasting-01.jpg 767w,
+                /assets/img/about-aircasting-01.jpg?nf_resize=fit&w=600 1024w,
+                /assets/img/about-aircasting-01.jpg"
         alt="Airbeam device on bicycle"
       />
     </div>
@@ -75,10 +75,10 @@ section: aircasting
     <div class="split--50 split--padding-left u--align-right">
       <img
         class="img img--alternate-medium img--fade-in"
-        srcset="{{ site.produrl | append: '/assets/img/about-aircasting-02.jpg?nf_resize=fit&w=720 480w' }},
-                {{ site.produrl | append: '/assets/img/about-aircasting-02.jpg 767w' }},
-                {{ site.produrl | append: '/assets/img/about-aircasting-02.jpg?nf_resize=fit&w=600 1024w' }},
-                {{ site.produrl | append: '/assets/img/about-aircasting-02.jpg' }}"
+        srcset="/assets/img/about-aircasting-02.jpg?nf_resize=fit&w=720 480w,
+                /assets/img/about-aircasting-02.jpg 767w,
+                /assets/img/about-aircasting-02.jpg?nf_resize=fit&w=600 1024w,
+                /assets/img/about-aircasting-02.jpg"
         alt="AirCasting App on Mobile"
       />
     </div>

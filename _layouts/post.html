@@ -6,37 +6,41 @@ layout: default
   <div class="post-header">
     <small class="u--capitalized post-header__category">
       {% assign category_slug = page.category | slugify %}
-      <a href="{{ site.baseurl | append: '/blog/categories/' | append: category_slug }}" class="link--light">
+      <a
+        href="{{ '/blog/categories/' | append: category_slug }}"
+        class="link--light"
+      >
         {{ page.categories.first }}
       </a>
     </small>
 
-    <h1 class="heading heading--large post-header__title post-header__title--featured">
+    <h1
+      class="heading heading--large post-header__title post-header__title--featured"
+    >
       {{ page.title }}
     </h1>
 
     {% if page.author %}
-      <small class="post-header__author">
-        by {{ page.author }}
-      </small>
+    <small class="post-header__author">
+      by {{ page.author }}
+    </small>
     {% endif %}
   </div>
 </div>
 
 <div class="panel">
   <div class="post-content">
-    {% if page.image %}
-      {% assign image_url = site.produrl | append: page.image %}
+    {% if page.image %} {% assign image_url = site.produrl | append: page.image
+    %}
 
-      <img
-        class="post-content__featured-image"
-        srcset="{{ image_url | append: '?nf_resize=fit&w=480 480w' }},
-                {{ image_url | append: '?nf_resize=fit&w=720 720w' }},
-                {{ image_url | append: '?nf_resize=fit&w=1200 1200w' }}"
-        src="{{ image_url | append: '?nf_resize=fit&w=1200' }}"
-      />
+    <img
+      class="post-content__featured-image"
+      srcset="{{ image_url | append: '?nf_resize=fit&w=480 480w' }},
+              {{ image_url | append: '?nf_resize=fit&w=720 720w' }},
+              {{ image_url | append: '?nf_resize=fit&w=1200 1200w' }}"
+      src="{{ image_url | append: '?nf_resize=fit&w=1200' }}"
+    />
     {% endif %}
-
 
     <p class="post-content__intro">{{ page.intro }}</p>
     {{ content }}
@@ -48,13 +52,14 @@ layout: default
       <time datetime="{{ page.date }}">
         <strong>{{ page.date | date_to_string }}</strong>
       </time>
-      <br/>
-      TAGS:
-      {% for tag in page.tags %}
-        {% assign tag_slug = tag | slugify %}
-        <a href="{{ site.baseurl | append: '/blog/tags/' | append: tag_slug }}" class="post-footer__link">
-          {{ tag }}{% unless forloop.last == true %},{% endunless %}
-        </a>
+      <br />
+      TAGS: {% for tag in page.tags %} {% assign tag_slug = tag | slugify %}
+      <a
+        href="{{ '/blog/tags/' | append: tag_slug }}"
+        class="post-footer__link"
+      >
+        {{ tag }}{% unless forloop.last == true %},{% endunless %}
+      </a>
       {% endfor %}
     </strong>
   </div>
@@ -64,9 +69,9 @@ layout: default
   <ul class="post-nav">
     <li>
       {% if page.previous.url %}
-        <a href="{{ page.previous.url }}" class="link" rel="prev">
-          &laquo; {{ page.previous.title }}
-        </a>
+      <a href="{{ page.previous.url }}" class="link" rel="prev">
+        &laquo; {{ page.previous.title }}
+      </a>
       {% endif %}
     </li>
     <li>
@@ -76,9 +81,9 @@ layout: default
     </li>
     <li>
       {% if page.next.url %}
-        <a href="{{ page.next.url }}" class="link" rel="next">
-          {{ page.next.title }} &raquo;
-        </a>
+      <a href="{{ page.next.url }}" class="link" rel="next">
+        {{ page.next.title }} &raquo;
+      </a>
       {% endif %}
     </li>
   </ul>

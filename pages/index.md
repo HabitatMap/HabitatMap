@@ -4,8 +4,8 @@ permalink: /
 section: home
 ---
 
-{% assign hero_image_url = site.produrl | append: "/assets/img/habitatmap-home-airbeam-aircasting.jpg" %}
-{% assign hero_image_mobile_url = site.produrl | append: "/assets/img/habitatmap-home-airbeam-aircasting.jpg?nf_resize=fit&w=720" %}
+{% assign hero_image_url = "/assets/img/habitatmap-home-airbeam-aircasting.jpg" %}
+{% assign hero_image_mobile_url = "/assets/img/habitatmap-home-airbeam-aircasting.jpg?nf_resize=fit&w=720" %}
 
 <style scoped>
   .panel--hero {
@@ -56,7 +56,7 @@ section: home
                 </p>
               <a href="#" class="button button--ac-on-teal">More User Stories</a>
             </div>
-            {% assign image_url = site.produrl | append: slide.image %}
+            {% assign image_url = slide.image %}
             <img
               src="{{ image_url | append: '?nf_resize=fit&w=1875'  }}"
               srcset="{{ image_url | append: '?nf_resize=fit&w=576 768w' }},
@@ -89,7 +89,7 @@ section: home
 
 <section class="panel">
   <div>
-    <img src="{{ site.produrl | append: '/assets/img/habitatmap-aircasting-map-placeholder.png' }}" alt="AirCasting Map" />
+    <img src="/assets/img/habitatmap-aircasting-map-placeholder.png" alt="AirCasting Map" />
   </div>
 </section>
 
