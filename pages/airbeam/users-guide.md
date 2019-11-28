@@ -1,7 +1,7 @@
 ---
 layout: page
 title: HabitatMap - User's Guide
-permalink: /airbeam/guide
+permalink: /airbeam/users-guide
 section: about
 ---
 
