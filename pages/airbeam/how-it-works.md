@@ -65,7 +65,7 @@ section: airbeam
         <span class="heading--capitilized">Measure</span>
       </h2>
       <p class="p--body">
-        The AirBeam communicates these measurements to the AirCasting Android App (available from the Google Play Store) where your measurements are mapped and graphed in real-time on your smartphone.
+        The AirBeam communicates these measurements to the <a href="https://play.google.com/store/apps/details?id=pl.llp.aircasting&hl=en_US">AirCasting Android App (available from the Google Play Store)</a> where your measurements are mapped and graphed in real-time on your smartphone.
       </p>
     </article>
   </div>
