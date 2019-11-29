@@ -46,10 +46,10 @@ section: aircasting
     <div class="split--50 split--padding-right">
       <img
         class="img img--alternate-medium img--fade-in"
-        srcset="/assets/img/aircasting/airbeam.jpg?nf_resize=fit&w=720 480w,
-                /assets/img/aircasting/airbeam.jpg 767w,
-                /assets/img/aircasting/airbeam.jpg?nf_resize=fit&w=600 1024w,
-                /assets/img/aircasting/airbeam.jpg"
+        srcset="/assets/img/pages/aircasting/airbeam.jpg?nf_resize=fit&w=720 480w,
+                /assets/img/pages/aircasting/airbeam.jpg 767w,
+                /assets/img/pages/aircasting/airbeam.jpg?nf_resize=fit&w=600 1024w,
+                /assets/img/pages/aircasting/airbeam.jpg"
         alt="Airbeam device on bicycle"
       />
     </div>
@@ -75,10 +75,10 @@ section: aircasting
     <div class="split--50 split--padding-left u--align-right">
       <img
         class="img img--alternate-medium img--fade-in"
-        srcset="/assets/img/aircasting/app-screenshot.jpg?nf_resize=fit&w=720 480w,
-                /assets/img/aircasting/app-screenshot.jpg 767w,
-                /assets/img/aircasting/app-screenshot.jpg?nf_resize=fit&w=600 1024w,
-                /assets/img/aircasting/app-screenshot.jpg"
+        srcset="/assets/img/pages/aircasting/app-screenshot.jpg?nf_resize=fit&w=720 480w,
+                /assets/img/pages/aircasting/app-screenshot.jpg 767w,
+                /assets/img/pages/aircasting/app-screenshot.jpg?nf_resize=fit&w=600 1024w,
+                /assets/img/pages/aircasting/app-screenshot.jpg"
         alt="AirCasting App on Mobile"
       />
     </div>
