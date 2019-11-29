@@ -8,7 +8,7 @@ Hosting: https://app.netlify.com/sites/habitatmap/overview, credentials on [Luna
 
 CMS: https://habitatmap.lunarlogic.io/admin, log in per user.
 
-Search (Algolia): https://www.algolia.com/apps/BT6BD4TUL1/dashboard, credentials on [Lunar Logic wiki](https://sites.google.com/llp.pl/wiki/projects/habitatmap)
+Search (Algolia): https://www.algolia.com/apps/BT6BD4TUL1/dashboard, credentials on [Lunar Logic wiki](https://sites.google.com/llp.pl/wiki/projects/habitatmap); notice that only the Netlify production branch updates the Algolia index (see `bin/build.sh`).
 
 ## Run Locally
 
