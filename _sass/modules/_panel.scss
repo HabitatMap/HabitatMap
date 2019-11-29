@@ -72,6 +72,14 @@
 .panel--blog-hero,
 .panel--blog-category {
   color: $white;
+
+  a {
+    color: $white;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 .panel--faq-intro,

@@ -18,7 +18,7 @@ section: faq
 
   <div class="split--50">
     <p class="heading heading--small">
-      Mauris interdum libero non ultricies fringilla. Pellentesque tincidunt nisi non massa consequat, at ornare dui hendrerit. Curabitur euismod nec velit nec consectetur. Etiam et auctor tellus. Sed et ipsum nisi. Pellentesque nec nisl mi.
+      This FAQ section is a way for us to share answers to frequently asked questions with the worldwide AirCasting community. If you have a question and don’t see your answer here, please email us at <a href="mailto:info@habitatmap.org">info@habitatmap.org</a> so we can continue to expand and share our knowledge base.
     </p>
   </div>
 </section>
