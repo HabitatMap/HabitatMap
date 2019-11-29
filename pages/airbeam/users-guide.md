@@ -22,7 +22,7 @@ section: about
 <section class="panel panel--history arc-background arc-background--history arc-background--left-teal-light">
   <img class="p--body" src="/assets/img/pages/users-guide/AB2Features+Dimensions.jpg?nf-resize=fit=1200" alt="AirBeam2 Features and Dimensions" />
 
-  <ul class="contents-list list">
+  <ul class="contents-list list p--body">
     <li class="contents-list__item"><a href="#specification">Hardware Specifications</a></li>
     <li class="contents-list__item"><a href="#about">About AirBeam2</a></li>
     <li class="contents-list__item"><a href="#charging">Charging</a></li>
@@ -115,7 +115,7 @@ section: about
     Record Measurements – Mobile (Bluetooth) Session
   </h2>
 
-  <ol class="list list--ordered">
+  <ol class="list list--ordered p--body">
     <li>Download the <a href="https://play.google.com/store/apps/details?id=pl.llp.aircasting&<li>hl=en">AirCasting app</a> from the Google Play store.</li>
     <li>Turn on the AirBeam2.</li>
     <li>Via the Android device “Settings”, pair the AirBeam2 to the Android device.</li>
@@ -136,7 +136,7 @@ section: about
     Record Measurements – Fixed (WiFi) Session
   </h2>
 
-  <ol class="list list--ordered">
+  <ol class="list list--ordered p--body">
     <li>Download the <a href="https://play.google.com/store/apps/details?id=pl.llp.aircasting&<li>hl=en">AirCasting app</a> from the Google Play store.</li>
     <li>Turn on the AirBeam2.</li>
     <li>Via the Android device “Settings”, pair the AirBeam2 to the Android device.</li>
@@ -157,7 +157,7 @@ section: about
     Record Measurements – Fixed (Cellular) Session
   </h2>
 
-  <ol class="list list--ordered">
+  <ol class="list list--ordered p--body">
     <li>Unscrew the AirBeam2 enclosure, pull out the circuit board, carefully push down and lift the SIM card slot, insert the SIM card into the SIM card slot, close the SIM card slot, place the circuit board back inside the enclosure, and screw the AirBeam2 together again. (AirBeam2 data and messaging costs are approximately $25 per month when using a Ting SIM card. Note that 2G cellular service is not available in all locations.)</li>
     <li>Download the AirCasting app from the Google Play store.</li>
     <li>Turn on the AirBeam2.</li>
