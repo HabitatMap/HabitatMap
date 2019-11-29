@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
+set -x
 
-echo 1
 jekyll build
-echo 2
-echo $ALGOLIA_API_KEY
-echo 3
+ALGOLIA_API_KEY="$ALGOLIA_API_KEY" jekyll algolia
