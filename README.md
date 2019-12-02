@@ -1,31 +1,16 @@
 # HabitatMap blog & static pages
 
-## Access
-
-Website: https://habitatmap.lunarlogic.io/.
-
-Hosting: https://app.netlify.com/sites/habitatmap/overview, credentials on [Lunar Logic wiki](https://sites.google.com/llp.pl/wiki/projects/habitatmap).
-
-CMS: https://habitatmap.lunarlogic.io/admin, log in per user.
-
-Search (Algolia): https://www.algolia.com/apps/BT6BD4TUL1/dashboard, credentials on [Lunar Logic wiki](https://sites.google.com/llp.pl/wiki/projects/habitatmap); notice that only the Netlify production branch updates the Algolia index (see `bin/build.sh`).
-
 ## Run Locally
 
-1. Clone the repo.
-
-2. If you need to install the gems run `gem install bundler -v 2.0.1` and `bundle _2.0.1_ install`. A higher version of bundler causes deployment issues.
-
-3. To run the local server and have it regenerate the site on changes run: `bundle exec jekyll serve --watch`.
-
-4. It will be served at: `http://localhost:4000`.
+```bash
+bundle exec jekyll serve --watch`.
+```
 
 Note: If you change `_config.yml`, you must restart the server for the changes to take effect.
 
 ## CMS
 
-The Netlify CMS dashboard is accessible at https://habitatmap.lunarlogic.io/admin after logging in with Netlify Identity Widget.
-To add a new user with CMS access rights you need to invite them from the Identity dashboard in Netlify: https://app.netlify.com/sites/habitatmap/identity.
+The Netlify CMS dashboard is accessible at `/admin` after logging in with Netlify Identity Widget. To add a new user with CMS access rights you need to invite them from the Identity dashboard in Netlify.
 
 ### CMS development mode
 
@@ -42,7 +27,7 @@ backend:
   name: test-repo
 ```
 
-Do not push this change to the remote repository.
+**Do not push this change to the remote repository.**
 
 ## Netlify Large Media
 
@@ -60,3 +45,7 @@ You might find this helpful: https://github.com/git-lfs/git-lfs/wiki/Tutorial.
 Using NLM enables us to request specific size versions of images with [image transformations](https://www.netlify.com/docs/image-transformation/).
 
 There are limits to how many transformations can happen during a month in the free plan, you can check the current number of transformations in the [Large Media panel on the Netlify dashboard](https://app.netlify.com/sites/habitatmap/settings/large-media).
+
+### Algolia
+
+Notice that only the Netlify production branch updates the search index (see [bin/build.sh](bin/build.sh)).
