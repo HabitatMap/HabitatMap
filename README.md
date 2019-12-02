@@ -46,6 +46,6 @@ Using NLM enables us to request specific size versions of images with [image tra
 
 There are limits to how many transformations can happen during a month in the free plan, you can check the current number of transformations in the Large Media panel on the Netlify dashboard.
 
-### Algolia
+## Algolia
 
 Notice that only the Netlify production branch updates the search index (see [bin/build.sh](bin/build.sh)).
