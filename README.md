@@ -44,7 +44,7 @@ You might find this helpful: https://github.com/git-lfs/git-lfs/wiki/Tutorial.
 
 Using NLM enables us to request specific size versions of images with [image transformations](https://www.netlify.com/docs/image-transformation/).
 
-There are limits to how many transformations can happen during a month in the free plan, you can check the current number of transformations in the [Large Media panel on the Netlify dashboard](https://app.netlify.com/sites/habitatmap/settings/large-media).
+There are limits to how many transformations can happen during a month in the free plan, you can check the current number of transformations in the Large Media panel on the Netlify dashboard.
 
 ### Algolia
 
