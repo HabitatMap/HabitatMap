@@ -92,9 +92,9 @@ section: airbeam
 <section class="panel panel--testimonial u--bg-teal arc-background arc-background--right-opacity-15 arc-background--right-quote">
   <div class="split--40">
     <h2 class="heading heading--medium">
-      Testimonials
+      What Our Community
       <br />
-      Subhead
+      is Saying
     </h2>
   </div>
 
