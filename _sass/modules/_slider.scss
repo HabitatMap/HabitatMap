@@ -86,6 +86,8 @@
 .tns-nav-active {
   background: transparent;
   border: 1px solid $white;
+  position: relative;
+  top: -1px;
 }
 
 // User Stories Slider
