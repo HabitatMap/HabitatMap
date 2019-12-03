@@ -48,7 +48,7 @@ section: donate
     <div class="split--50 u--align-right">
       <img
         class="img img--alternate-small img--fade-in"
-        src="/assets/img/about-habitatmap-02.jpg"
+        src="/assets/img/pages/about-habitatmap/airbeam.jpg"
         alt="Airbeam"
       />
     </div>
