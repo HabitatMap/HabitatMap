@@ -97,13 +97,25 @@ section: airbeam
       Subhead
     </h2>
   </div>
-  <div class="split--60 quote">
-    <p class="heading u--capitalized quote__heading">Research Institution Name:</p>
-    <blockquote class="quote__body">
-      “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam scelerisque dolor orci, vitae porta ante suscipit ut. Donec cursus nibh id tellus fringilla, nec dictum mi viverra ut posuere magna non. Phasellus sodales, arcu ut feugiat molestie, mi diam eleifend lectus, at consequat tellus nibh eget nibh.”
-    </blockquote>
+
+  <div class="split--60 quote slider slider--quote">
+    <div class="js-slider">
+      {% assign testimonials = site.testimonials | sample:20 %}
+      {% for testimonial in testimonials %}
+        <div class="slide">
+          <p class="heading u--capitalized quote__heading">{{ testimonial.institution }}</p>
+          <blockquote class="quote__body">
+            “{{ testimonial.quote }}”
+          </blockquote>
+          <p class="quote__name">- {{ testimonial.name }}</p>
+        </div>
+      {% endfor %}
+    </div>
   </div>
   <a href="/airbeam/faq" class="badge-link badge-link--light-hm">
     <span class="u--vertically-centered">Questions? Check out our FAQ</span>
   </a>
 </section>
+
+<script defer type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+<script defer type="text/javascript" src="/assets/js/slider.js"></script>
