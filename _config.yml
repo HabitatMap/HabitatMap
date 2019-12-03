@@ -38,6 +38,7 @@ algolia:
   files_to_exclude:
     - _slides/*
     - _faq_categories/*
+    - _testimonials/*
 
 collections:
   posts:
@@ -52,6 +53,8 @@ collections:
   faq_categories:
     output: true
   slides:
+    output: true
+  testimonials:
     output: true
 
 defaults:

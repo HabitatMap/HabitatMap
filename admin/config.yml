@@ -108,6 +108,20 @@ collections:
           hint: "Specifies the order of the slides, 1 to 4.",
           required: false,
         }
+
+  - name: testimonials
+    label: Testimonials slider
+    label_singular: Testimonial
+    folder: _testimonials
+    identifier_field: institution
+    create: true
+    editor:
+      preview: false
+    fields:
+      - { label: Institution, name: institution, widget: string }
+      - { label: Quote, name: quote, widget: string }
+      - { label: Name, name: name, widget: string }
+
   - name: authors
     label: Authors
     label_singular: Author
@@ -120,6 +134,7 @@ collections:
     fields:
       - { label: Short Name, name: name, widget: string }
       - { label: Display Name, name: display_name, widget: string }
+
   - name: categories
     label: Categories
     label_singular: Category
