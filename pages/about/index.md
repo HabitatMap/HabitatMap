@@ -6,10 +6,10 @@ permalink: /about
 section: about
 ---
 
-{% assign hero_image_url = "/assets/img/pages/about-habitatmap-01.jpg" %}
-{% assign hero_image_mobile_url = "/assets/img/pages/about-habitatmap-01.jpg?nf_resize=fit&w=720" %}
-{% assign hero_image_tablet_url = "/assets/img/pages/about-habitatmap-01.jpg?nf_resize=fit&w=1536" %}
-{% assign hero_image_medium_desktop_url = "/assets/img/pages/about-habitatmap-01.jpg?nf_resize=fit&w=2050" %}
+{% assign hero_image_url = "/assets/img/pages/about-habitatmap/hero.jpg" %}
+{% assign hero_image_mobile_url = "/assets/img/pages/about-habitatmap/hero.jpg?nf_resize=fit&w=720" %}
+{% assign hero_image_tablet_url = "/assets/img/pages/about-habitatmap/hero.jpg?nf_resize=fit&w=1536" %}
+{% assign hero_image_medium_desktop_url = "/assets/img/pages/about-habitatmap/hero.jpg?nf_resize=fit&w=2050" %}
 
 <style scoped>
   .img-full-width {
