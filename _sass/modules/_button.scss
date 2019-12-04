@@ -29,6 +29,12 @@ $ac-brand-transparent: transparentize($ac-brand, 0.4);
   }
 }
 
+.button--ac-about {
+  @media screen and (min-width: $tablet-min) {
+    margin-top: 1.6rem;
+  }
+}
+
 .button--ac-on-teal {
   @include button-color($white, $white, $teal, $white);
 }

@@ -16,8 +16,10 @@
 
 .logo--aircasting {
   margin-bottom: 17px;
+  margin-top: $u-space-default;
 
   @media screen and (min-width: $tablet-min) {
     height: auto;
+    margin-top: 0;
   }
 }
