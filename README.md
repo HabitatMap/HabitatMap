@@ -3,7 +3,7 @@
 ## Run Locally
 
 ```bash
-bundle exec jekyll serve --watch`.
+bundle exec jekyll serve --watch
 ```
 
 Note: If you change `_config.yml`, you must restart the server for the changes to take effect.
