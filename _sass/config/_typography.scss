@@ -111,7 +111,8 @@ a,
       color: $teal;
     }
 
-    [data-current="airbeam"] & {
+    [data-current="airbeam"] &,
+    [data-current="donate"] & {
       color: $green;
     }
   }
