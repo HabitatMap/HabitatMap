@@ -1,5 +1,5 @@
 ---
-publication: Open Source Stories
+publication: OPEN SOURCE STORIES
 quote: >-
   If you have a low cost instrument that's easy to use, then all of a sudden
   science becomes something that everyday people can do.
