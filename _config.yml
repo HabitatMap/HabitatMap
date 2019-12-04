@@ -39,6 +39,7 @@ algolia:
     - _slides/*
     - _faq_categories/*
     - _testimonials/*
+    - _news_quotes/*
 
 collections:
   posts:
@@ -55,6 +56,8 @@ collections:
   slides:
     output: true
   testimonials:
+    output: true
+  news_quotes:
     output: true
 
 defaults:
