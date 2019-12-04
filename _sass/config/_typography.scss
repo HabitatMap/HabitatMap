@@ -28,6 +28,10 @@ body {
 .heading--small {
   font-size: $base-font-size1;
   line-height: 1.3;
+
+  .read-more-button + & {
+    margin-top: 1rem;
+  }
 }
 
 .heading--body {
@@ -118,7 +122,11 @@ a,
 }
 
 .link--light {
-  color: white;
+  color: $white;
+
+  &:hover {
+    color: $white;
+  }
 }
 
 .link--underlined {
