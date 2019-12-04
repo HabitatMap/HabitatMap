@@ -6,7 +6,6 @@
 .slide {
   overflow: hidden;
   position: relative;
-  min-height: 32rem;
 
   @media screen and (max-width: $large-mobile-max) {
     padding-bottom: 0;
@@ -48,6 +47,10 @@
   top: 50%;
   right: 60px;
   z-index: 1;
+
+  .slider--quote & {
+    right: -60px;
+  }
 }
 
 [data-controls="prev"] {
@@ -66,21 +69,7 @@
 
 .tns-nav {
   position: absolute;
-  left: 4vw;
-  top: 2rem;
   z-index: 1;
-
-  @media screen and (min-width: $tablet-min) {
-    left: 10vw;
-  }
-
-  @media screen and (min-width: $desktop-min) {
-    left: 15vw;
-  }
-
-  @media screen and (min-width: $large-desktop-min) {
-    left: 21vw;
-  }
 }
 
 [data-nav] {
@@ -97,4 +86,46 @@
 .tns-nav-active {
   background: transparent;
   border: 1px solid $white;
+  position: relative;
+  top: -1px;
+}
+
+// User Stories Slider
+
+.slider--user-stories {
+  min-height: 32rem;
+
+  .tns-nav {
+    left: 4vw;
+    top: 2rem;
+
+    @media screen and (min-width: $tablet-min) {
+      left: 10vw;
+    }
+
+    @media screen and (min-width: $desktop-min) {
+      left: 15vw;
+    }
+
+    @media screen and (min-width: $large-desktop-min) {
+      left: 21vw;
+    }
+  }
+}
+
+// Quote Slider
+
+.slider--quote {
+  max-width: 100%;
+  margin-bottom: $u-space-big;
+
+  @media screen and (min-width: $tablet-min) {
+    margin-bottom: $u-space-default;
+    max-width: 60%;
+  }
+
+  .tns-nav {
+    left: 0;
+    bottom: -3rem;
+  }
 }

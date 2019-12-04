@@ -41,7 +41,7 @@ section: home
   </div>
 </section>
 
-<section class="slider">
+<section class="slider slider--user-stories">
   <div class="js-slider">
     {% assign slides = site.slides | where: 'featured', true | sort: 'order' %}
     {% for slide in slides %}
