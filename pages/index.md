@@ -65,12 +65,10 @@ section: home
                       {{ image_url | append: '?nf_resize=fit&w=1875 2500w' }}"
               class="slide__photo"
             />
-
           </div>
         </div>
       {% endunless %}
     {% endfor %}
-
   </div>
 </section>
 
@@ -101,22 +99,7 @@ section: home
       in the News
     </h2>
   </div>
-  <div class="split--60 quote slider slider--quote">
-    <div class="js-slider">
-      {% assign news_quotes = site.news_quotes | sample:20 %}
-      {% for news_quote in news_quotes %}
-        <a href="{{ news_quote.link }}">
-          <div class="slide">
-            <p class="heading u--capitalized quote__heading">From {{ news_quote.publication }}:</p>
-            <blockquote class="quote__body">
-              “{{ news_quote.quote }}”
-            </blockquote>
-          </div>
-        </a>
-      {% endfor %}
-    </div>
-  </div>
+  {% include news-quotes-slider.html news_quotes = site.news_quotes %}
 </section>
 
-<script defer type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
-<script defer type="text/javascript" src="/assets/js/slider.js"></script>
+{% include slider-init.html %}
