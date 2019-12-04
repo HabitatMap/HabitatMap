@@ -1,11 +1,11 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const search = instantsearch({
+document.addEventListener("DOMContentLoaded", function() {
+  var search = instantsearch({
     appId: "BT6BD4TUL1",
     apiKey: "ca3aa6ff50f85bb9af2c2cb55adbf9bb",
     indexName: "habitatmap_dev",
     routing: true,
-    searchFunction: helper => {
-      const container = document.querySelector(".js--search-hits");
+    searchFunction: function(helper) {
+      var container = document.querySelector(".js--search-hits");
 
       if (helper.state.query === "") {
         container.style.display = "none";
@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
     })
   );
 
-  const hitTemplate = hit => {
+  var hitTemplate = function(hit) {
     if (hit._highlightResult.content !== undefined) {
       return hit._highlightResult.content.value;
     } else {
@@ -37,16 +37,22 @@ document.addEventListener("DOMContentLoaded", () => {
     instantsearch.widgets.hits({
       container: ".js--search-hits",
       templates: {
-        item: hit => `
-          <li class="post-list__item">
-            <h2 class="post-list__title heading heading--small">
-              <a href="${hit.url}">
-                ${hit._highlightResult.title.value}
-              </a>
-            </h2>
-            <div class="post-snippet">${hitTemplate(hit)}</div>
-          </li>
-        `
+        item: function(hit) {
+          return (
+            '<li class="post-list__item">' +
+            '<h2 class="post-list__title heading heading--small">' +
+            '<a href="' +
+            hit.url +
+            '">' +
+            hit._highlightResult.title.value +
+            "</a>" +
+            "</h2>" +
+            '<div class="post-snippet">' +
+            hitTemplate(hit) +
+            "</div>" +
+            "</li>"
+          );
+        }
       }
     })
   );
