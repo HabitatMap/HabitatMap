@@ -101,11 +101,20 @@ section: home
       in the News
     </h2>
   </div>
-  <div class="split--60 quote">
-    <p class="heading u--capitalized quote__heading">From WNYC:</p>
-    <blockquote class="quote__body">
-      “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam scelerisque dolor orci, vitae porta ante suscipit ut. Donec cursus nibh id tellus fringilla, nec dictum mi viverra. Ut posuere magna non tellus mollis, ac fermentum nulla efficitur. Fusce libero nulla, ornare ac risus non, posuere bibendum nisi.”
-    </blockquote>
+  <div class="split--60 quote slider slider--quote">
+    <div class="js-slider">
+      {% assign news_quotes = site.news_quotes | sample:20 %}
+      {% for news_quote in news_quotes %}
+        <a href="{{ news_quote.link }}">
+          <div class="slide">
+            <p class="heading u--capitalized quote__heading">From {{ news_quote.publication }}:</p>
+            <blockquote class="quote__body">
+              “{{ news_quote.quote }}”
+            </blockquote>
+          </div>
+        </a>
+      {% endfor %}
+    </div>
   </div>
 </section>
 

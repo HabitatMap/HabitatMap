@@ -1,7 +1,9 @@
 document.addEventListener("DOMContentLoaded", function() {
-  tns({
-    container: ".js-slider",
-    autoHeight: true,
-    speed: 400
+  [].forEach.call(document.querySelectorAll(".js-slider"), function(element) {
+    tns({
+      container: element,
+      autoHeight: true,
+      speed: 400
+    });
   });
 });
