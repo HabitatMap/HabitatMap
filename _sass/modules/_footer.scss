@@ -59,15 +59,30 @@
   font-family: $bold-font;
 }
 
-a.footer-links__element {
+.footer a {
   display: inline-block;
   color: $white;
-  padding: 0.35rem 0;
 
   &:hover,
   &:focus {
     color: inherit;
     opacity: 0.7;
+  }
+}
+
+.footer-links__element {
+  padding: 0.35rem 0;
+}
+
+.footer__address {
+  background: $gray-medium;
+
+  @media screen and (max-width: $large-mobile-max) {
+    padding: 0 4vw $u-space-default;
+  }
+
+  @media screen and (min-width: $tablet-min) {
+    margin-top: $u-space-small;
   }
 }
 
