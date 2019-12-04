@@ -110,7 +110,7 @@ section: about
 
 <section class="panel panel--big-padding">
   <div class="split--50 split--padding-right">
-    <img class="logo logo--body" alt="Airbeam" src="/assets/img/svg/Airbeam-Logo-Body.svg" />
+    <img class="logo logo--body logo--airbeam" alt="Airbeam logo" src="/assets/img/svg/Airbeam-Logo-Body.svg" />
     <p class="p--body">
       The AirBeam measures particulate matter with proven accuracy and when used in conjunction with the AirCasting platform - or a custom solution - helps community-based organizations, educators, academics, regulators, city managers, and citizen scientists map air pollution and organize for clean air.
     </p>
@@ -118,7 +118,7 @@ section: about
   </div>
 
   <div class="split--50 split--padding-left">
-    <img class="logo logo--body" alt="AirCasting" src="/assets/img/svg/AirCasting-Logo-Body.svg" />
+    <img class="logo logo--body logo--aircasting" alt="AirCasting logo" src="/assets/img/svg/AirCasting-Logo-Body.svg" />
     <p class="p--body">
       AirCasting is an open-source environmental data visualization platform that consists of an Android app and online mapping system and is one of the largest open-source databases of community-collected air quality measurements ever created.
     </p>
