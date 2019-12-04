@@ -49,6 +49,12 @@ section: about
     <p class="heading heading--small">
       HabitatMap is an environmental technology non-profit building open-source, free, and low-cost environmental monitoring and data visualization solutions. Our tools empower organizations and citizen scientists to measure pollution and advocate for equitable solutions to environmental health issues. We focus on low-income communities and communities of color living with disproportionate environmental burdens.
     </p>
+
+    <button class="read-more-button js--show-next">Read more</button>
+
+    <p style="display: none" class="heading heading--small">
+      Our central data visualization platform - AirCasting - and its companion palm-sized air quality measurement device - AirBeam - support schools, researchers, community-based organizations, municipalities, and regulatory agencies in obtaining valid environmental data that can be used to make decisions in real-time and craft data-informed policy.
+    </p>
   </div>
 </section>
 
@@ -122,3 +128,5 @@ section: about
 </section>
 
 {% include slider-init.html %}
+
+<script defer type="text/javascript" src="/assets/js/show-next.js"></script>

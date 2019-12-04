@@ -1,0 +1,11 @@
+.read-more-button {
+  color: $white;
+  background: none;
+  font-family: $bold-font;
+  margin-top: 1rem;
+  text-decoration: underline;
+
+  & + .heading--small {
+    margin-top: 1rem;
+  }
+}
