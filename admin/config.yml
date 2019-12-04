@@ -122,6 +122,19 @@ collections:
       - { label: Quote, name: quote, widget: string }
       - { label: Name, name: name, widget: string }
 
+  - name: news_quotes
+    label: News quotes slider
+    label_singular: News quote
+    folder: _news_quotes
+    identifier_field: publication
+    create: true
+    editor:
+      preview: false
+    fields:
+      - { label: Publication, name: publication, widget: string }
+      - { label: Quote, name: quote, widget: string }
+      - { label: link, name: link, widget: string }
+
   - name: authors
     label: Authors
     label_singular: Author

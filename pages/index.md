@@ -65,12 +65,10 @@ section: home
                       {{ image_url | append: '?nf_resize=fit&w=1875 2500w' }}"
               class="slide__photo"
             />
-
           </div>
         </div>
       {% endunless %}
     {% endfor %}
-
   </div>
 </section>
 
@@ -101,13 +99,7 @@ section: home
       in the News
     </h2>
   </div>
-  <div class="split--60 quote">
-    <p class="heading u--capitalized quote__heading">From WNYC:</p>
-    <blockquote class="quote__body">
-      “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam scelerisque dolor orci, vitae porta ante suscipit ut. Donec cursus nibh id tellus fringilla, nec dictum mi viverra. Ut posuere magna non tellus mollis, ac fermentum nulla efficitur. Fusce libero nulla, ornare ac risus non, posuere bibendum nisi.”
-    </blockquote>
-  </div>
+  {% include news-quotes-slider.html news_quotes = site.news_quotes %}
 </section>
 
-<script defer type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
-<script defer type="text/javascript" src="/assets/js/slider.js"></script>
+{% include slider-init.html %}
