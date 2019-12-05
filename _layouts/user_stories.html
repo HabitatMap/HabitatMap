@@ -4,19 +4,34 @@ layout: default
 
 <h1 class="u--visually-hidden">User stories</h1>
 
-<div class="panel panel--leading-text">
+<section class="panel panel--leading-text">
   <h1 class="heading heading--large u--gray-text">
     The AirCasting platform empowers community-based organizations, educators,
     academics, regulators, city managers, and citizen scientists to map air
     pollution and organize for clean air.
   </h1>
-</div>
+</section>
 
-<div class="posts-index posts-index--with-arc js--posts-index">
-  <section class="panel">
+<section
+  class="panel panel--quote u--bg-green arc-background arc-background--left-opacity-15 arc-background--left-quote"
+>
+  <div class="split--40">
+    <h2 class="heading heading--medium">
+      AirBeam
+      <br />
+      in the News
+    </h2>
+  </div>
+  {% include news-quotes-slider.html news_quotes = site.news_quotes %}
+</section>
+
+<section class="posts-index posts-index--with-arc js--posts-index">
+  <div class="panel u--margin-top-default">
     <ul class="post-list post-list--grid-view">
       {% for story in site.user_stories %} {% include post-snippet.html post =
       story %} {% endfor %}
     </ul>
-  </section>
-</div>
+  </div>
+</section>
+
+{% include slider-init.html %}
