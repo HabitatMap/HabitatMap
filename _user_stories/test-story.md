@@ -1,6 +1,6 @@
 ---
 layout: user_story
-organization_name: Test story
+title: Test story
 featured: true
 image: /images/uploads/scienceofcollectivediscovery_exacto.jpg
 intro: >-
