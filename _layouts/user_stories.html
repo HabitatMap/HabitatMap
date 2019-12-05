@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+<h1 class="u--visually-hidden">User stories</h1>
+
+<div class="posts-index posts-index--with-arc js--posts-index">
+  <section class="panel">
+    <ul class="post-list post-list--grid-view">
+      {% for story in site.user_stories %} {% include post-snippet.html post =
+      story %} {% endfor %}
+    </ul>
+  </section>
+</div>

@@ -58,6 +58,9 @@ collections:
   posts:
     output: true
     permalink: /blog/:title
+  user_stories:
+    output: true
+    permalink: /airbeam/user-stories/:title
   categories:
     output: true
     permalink: /blog/categories/:name
@@ -79,6 +82,10 @@ defaults:
     values:
       author: Michael Heimbinder
       section: blog
+  - scope:
+      type: user_stories
+    values:
+      section: airbeam
   - scope:
       type: categories
     values:

@@ -104,7 +104,9 @@ a,
   text-decoration: none;
   color: $link-color;
 
-  .p--body & {
+  .p--body &,
+  .post-list__title &,
+  .post-nav & {
     font-weight: bold;
 
     [data-current="about"] & {

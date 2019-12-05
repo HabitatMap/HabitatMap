@@ -70,7 +70,8 @@
 .panel--history-intro,
 .panel--faq-intro,
 .panel--blog-hero,
-.panel--blog-category {
+.panel--blog-category,
+.panel--user-story-hero {
   color: $white;
 
   a {
@@ -94,6 +95,10 @@
 .panel--blog-hero,
 .panel--blog-category {
   background-color: $blue;
+}
+
+.panel--user-story-hero {
+  background-color: $green;
 }
 
 .panel--align-center {

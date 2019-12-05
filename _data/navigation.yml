@@ -3,6 +3,8 @@
 - text: AirBeam
   url: /airbeam
   subitems:
+    - text: User Stories
+      url: /airbeam/user-stories
     - text: How it Works
       url: /airbeam/how-it-works
     - text: FAQ

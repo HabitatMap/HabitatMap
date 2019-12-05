@@ -1,0 +1,73 @@
+---
+layout: default
+section: airbeam
+---
+
+<div class="panel panel--user-story-hero">
+  <div class="post-header">
+    <small class="u--capitalized post-header__category">
+      {% assign category_slug = page.category | slugify %}
+      <a
+        href="{{ '/blog/categories/' | append: category_slug }}"
+        class="link--light"
+      >
+        {{ page.categories.first }}
+      </a>
+    </small>
+
+    <h1
+      class="heading heading--large post-header__title post-header__title--featured"
+    >
+      {{ page.title }}
+    </h1>
+
+    {% if page.author %}
+    <small class="post-header__author">
+      by {{ page.author }}
+    </small>
+    {% endif %}
+  </div>
+</div>
+
+<div class="panel">
+  <div class="post-content">
+    {% if page.image %} {% assign image_url = site.produrl | append: page.image
+    %}
+
+    <img
+      class="post-content__featured-image"
+      srcset="{{ image_url | append: '?nf_resize=fit&w=480 480w' }},
+              {{ image_url | append: '?nf_resize=fit&w=720 720w' }},
+              {{ image_url | append: '?nf_resize=fit&w=1200 1200w' }}"
+      src="{{ image_url | append: '?nf_resize=fit&w=1200' }}"
+    />
+    {% endif %}
+
+    <p class="post-content__intro">{{ page.intro }}</p>
+    {{ content }}
+  </div>
+</div>
+
+<nav class="panel" aria-label="Adjacent User Stories">
+  <ul class="post-nav">
+    <li>
+      {% if page.previous.url %}
+      <a href="{{ page.previous.url }}" class="link" rel="prev">
+        &laquo; {{ page.previous.title }}
+      </a>
+      {% endif %}
+    </li>
+    <li>
+      <a href="/airbeam/user-stories" class="link u--capitalized">
+        Back to user stories
+      </a>
+    </li>
+    <li>
+      {% if page.next.url %}
+      <a href="{{ page.next.url }}" class="link" rel="next">
+        {{ page.next.title }} &raquo;
+      </a>
+      {% endif %}
+    </li>
+  </ul>
+</nav>

@@ -79,6 +79,62 @@ collections:
           valueField: name,
           multiple: true,
         }
+
+  - name: user_stories
+    label: User stories
+    label_singular: User story
+    folder: _user_stories
+    create: true
+    slug: "{{title}}"
+    fields:
+      - { label: Layout, name: layout, widget: hidden, default: user_story }
+      - { label: Organization name, name: title, widget: string }
+      - {
+          label: Featured?,
+          name: featured,
+          widget: boolean,
+          default: false,
+          hint: "Make sure only 4 of your user stories are marked as featured.
+            Otherwise you won't know for sure which of the featured
+            user stories will show up on the main page.",
+        }
+      - {
+          label: Image,
+          name: image,
+          widget: image,
+          hint: "For the best effect upload images 1200x705 in resolution (or bigger with the same proportions).",
+        }
+      - { label: Intro, name: intro, widget: text, required: false }
+      - {
+          label: Body,
+          name: body,
+          widget: markdown,
+          buttons:
+            [
+              bold,
+              italic,
+              code,
+              link,
+              heading-two,
+              quote,
+              code-block,
+              bulleted-list,
+              numbered-list,
+            ],
+        }
+      - {
+          label: Type,
+          name: type,
+          widget: select,
+          options:
+            [
+              "Regulatory Agencies",
+              "Academic Groups",
+              "K-12 Schools",
+              "Community Based Orgs",
+            ],
+        }
+
   - name: slides
     label: Slides
     label_singular: Slide
@@ -165,6 +221,7 @@ collections:
             "If you need to change the name of an existing category, please delete it and create a new one.
             If you edit an existing category, the link to the category blog page will break.",
         }
+
   - name: tags
     label: Tags
     label_singular: Tag
@@ -181,6 +238,7 @@ collections:
             "If you need to change the name of an existing tag, please delete it and create a new one.
             If you edit an existing tag, the link to the tag blog page will break.",
         }
+
   - name: pages
     label: Pages
     editor:
