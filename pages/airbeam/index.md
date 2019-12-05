@@ -98,20 +98,8 @@ section: airbeam
     </h2>
   </div>
 
-  <div class="split--60 quote slider slider--quote">
-    <div class="js-slider">
-      {% assign testimonials = site.testimonials | sample:20 %}
-      {% for testimonial in testimonials %}
-        <div class="slide">
-          <p class="heading u--capitalized quote__heading">{{ testimonial.institution }}</p>
-          <blockquote class="quote__body">
-            “{{ testimonial.quote }}”
-          </blockquote>
-          <p class="quote__name">- {{ testimonial.name }}</p>
-        </div>
-      {% endfor %}
-    </div>
-  </div>
+  {% include testimonials-slider.html testimonials = site.testimonials %}
+
   <a href="/airbeam/faq" class="badge-link badge-link--light-hm">
     <span class="u--vertically-centered">Questions? Check out our FAQ</span>
   </a>
