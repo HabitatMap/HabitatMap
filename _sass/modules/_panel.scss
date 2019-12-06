@@ -43,10 +43,15 @@
 }
 
 .panel--hero {
-  padding-bottom: 65%;
+  background-image: url("/assets/img/habitatmap-home-airbeam-aircasting.jpg");
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: 100% auto;
+  padding-bottom: 65%;
+
+  @media screen and (max-width: $large-mobile-min) {
+    background-image: url("/assets/img/habitatmap-home-airbeam-aircasting.jpg?nf_resize=fit&w=720");
+  }
 
   @media screen and (min-width: $tablet-min) {
     background-position: center right;

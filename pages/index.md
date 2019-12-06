@@ -4,21 +4,6 @@ permalink: /
 section: home
 ---
 
-{% assign hero_image_url = "/assets/img/habitatmap-home-airbeam-aircasting.jpg" %}
-{% assign hero_image_mobile_url = "/assets/img/habitatmap-home-airbeam-aircasting.jpg?nf_resize=fit&w=720" %}
-
-<style scoped>
-  .panel--hero {
-    background-image: url("{{ hero_image_url }}");
-  }
-
-  @media screen and (max-width: 480px) {
-    .panel--hero {
-      background-image: url("{{ hero_image_mobile_url }}");
-    }
-  }
-</style>
-
 <section class="panel panel--hero u--bg-teal-light">
   <div class="split--50">
     <h1 class="heading heading--large u--accent-hm panel__heading">
