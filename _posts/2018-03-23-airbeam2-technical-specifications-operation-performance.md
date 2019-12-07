@@ -1,18 +1,14 @@
 ---
 layout: post
-title: AirBeam2 Technical Specifications, Operation & Performance
-date: 2018-03-23 11:40:28.000000000 +01:00
-type: post
-parent_id: '0'
-published: true
-password: ''
-status: publish
-categories: []
-tags: []
-meta:
-  _edit_last: '1'
+title: 'AirBeam2 Technical Specifications, Operation & Performance'
+date: 2018-03-23T10:40:28.000Z
+featured: false
 author: Michael H and Chris Chaeha Lim
-permalink: "/airbeam2-technical-specifications-operation-performance/"
+image: /images/uploads/AB2Features+Dimensions.jpg
+category: Sensors & Instruments
+tag:
+  - instruments
+  - open-source
 ---
 <p><img style="text-decoration: underline;" title="AirBeam2 Features and Dimensions" src="{{ site.baseurl }}/assets/AB2Features+Dimensions.jpg" alt="AirBeam2 Features and Dimensions" width="600" height="849" /></p>
 <p><span style="text-decoration: underline;">Hardware Specifications</span><br />
