@@ -1,19 +1,17 @@
 ---
 layout: post
-title: 1,000 AirBeams Worldwide
-date: 2016-09-14 13:18:17.000000000 +02:00
-type: post
-parent_id: '0'
-published: true
-password: ''
-status: publish
-categories: []
-tags: []
-meta:
-  _edit_last: '1'
-permalink: "/1000-airbeams-worldwide/"
+title: '1,000 AirBeams Worldwide'
+date: 2016-09-14T11:18:17.000Z
+featured: false
+image: /images/uploads/1000AirBeamsWorldwide.png
+category: Open Source Software
+tag:
+  - community-based-organization
+  - citizen science
+  - education
+  - instruments
+  - open-source
 ---
-<p><a href="http://www.takingspace.org/aircasting/airbeam/" target="_blank"><img style="text-decoration: underline;" title="1,000 AirBeams Worldwide" src="{{ site.baseurl }}/assets/1000AirBeamsWorldwide.png" alt="1,000 AirBeams Worldwide" width="600" height="290" /></a></p>
 <p>With over 1,000 <a title="AirBeams" href="http://www.takingspace.org/aircasting/airbeam/" target="_blank">AirBeams</a> in use worldwide and more than 100 million data points, the <a title="AirCasting Platform" href="http://aircasting.org/" target="_blank">AirCasting platform</a> is now one of the largest open-source databases of community-collected air quality measurements ever created. Community based organizations, educators, academics, regulators, and citizen scientists around the world use the AirBeam to measure, map, stream, and crowdsource PM2.5 measurements. The collective effort of thousands of individual AirCasters made this historic milestone possible. Are you curious about who these folks are and where they come from? To give an idea of how diverse our worldwide community is, we’ve posted some of their organizational affiliations below.</p>
 <p>Want to join us and make your community a better place to live, work, and play? Download the free <a title="AirCasting App" href="https://play.google.com/store/apps/details?id=pl.llp.aircasting&amp;hl=en" target="_blank">AirCasting Android app</a> and get started. Buy an <a title="AirBeam" href="http://www.takingspace.org/aircasting/airbeam/" target="_blank">AirBeam</a> and contribute to a global effort to measure, map, and improve air quality. Visit <a title="AirCasting.org" href="http://aircasting.org/" target="_blank">www.aircasting.org</a> to learn more.</p>
 <p><span style="text-decoration: underline;">Community-Based Organizations &amp; Non-Profits</span><br />
