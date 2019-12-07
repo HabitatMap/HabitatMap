@@ -1,28 +1,35 @@
 ---
 layout: post
 title: Leveraging AirBeam Data to Inform Policy Decisions
-date: 2016-11-03 15:35:33.000000000 +01:00
-type: post
-parent_id: '0'
-published: true
-password: ''
-status: publish
-categories: []
-tags: []
-meta:
-  _edit_last: '1'
-permalink: "/leveraging-airbeam-data-to-inform-policy-decisions/"
+date: 2016-11-03T14:35:33.000Z
+featured: false
+image: /images/uploads/DontWasteLAGraphic600.jpg
+category: Health
+tag:
+  - community-based-organization
+  - citizen science
 ---
 <p><strong></strong>New York City recently committed to implementing a “zoned” collection system for the commercial waste sector. By dividing the city into zones and having commercial carting companies bid to service each zone, <a href="http://www1.nyc.gov/assets/dsny/about/inside-dsny/private-carting.shtml" target="_blank">the city’s study</a> found that the number of miles traveled by private collection vehicles will be cut by an astounding 49 to 68 percent!  This is a win for both the private carting companies, which will be able to achieve dramatic efficiencies in operations, and everyday New Yorkers, who will have to contend with less noise and air pollution.</p>
 <p>To buttress the City’s decision to implement garbage zoning and guide its implementation, HabitatMap partnered with community-based organizations to measure air quality using <a href="http://www.takingspace.org/aircasting/airbeam/" target="_blank">AirBeams</a> + <a href="http://aircasting.org/" target="_blank">AirCasting</a> and count trucks at trucking-intensive intersections in Brooklyn and the Bronx. Together with allies at the <a href="http://www.nyc-eja.org/" target="_blank">New York City Environmental Justice Alliance</a> and <a href="http://www.alignny.org/" target="_blank">ALIGN</a>, we trained young people from <a href="http://uprose.org/" target="_blank">UPROSE</a>, <a href="http://thepoint.org/index.php" target="_blank">THE POINT CDC</a>, <a href="http://elpuente.us/" target="_blank">El Puente</a>, and <a href="https://www.facebook.com/northbrooklyn/" target="_blank">Cleanup North Brooklyn</a> to use AirBeams and survey forms to measure air quality and tally trucks in their communities. At intersections in the South Bronx that saw as many as 304 trucks per hour, we measured PM2.5 concentrations up to seven times higher than ambient concentrations, as measured by the nearest NYS Dept. of Environmental Conservation monitoring station. In addition to engaging the community in conducting scientific research and providing tools to advocate for improved air quality, our efforts <a href="http://transformdonttrashnyc.org/resources/clearing-the-air-how-reforming-the-public-waste-sector-can-address-air-quality-issues-in-environmental-justice-communities/" target="_blank">mobilized a report</a> and a <a href="http://gothamist.com/2016/09/28/garbage_truck_pollution_press_confe.php" target="_blank">rally/press conference</a>.</p>
-<p><a href="http://transformdonttrashnyc.org/resources/clearing-the-air-how-reforming-the-public-waste-sector-can-address-air-quality-issues-in-environmental-justice-communities/" target="_blank"><img class="alignnone" style="text-decoration: underline;" title="Neighborhood Truck Impact Maps" src="{{ site.baseurl }}/assets/NeighborhoodTruckImpactMaps600.jpg" alt="Neighborhood Truck Impact Maps" width="600" height="1208" /></a></p>
+
+
+![Neighborhood Truck Impact Maps](/images/uploads/NeighborhoodTruckImpactMaps600.jpg)
+
+
 <p><span style="text-decoration: underline;">Garbage Zoning, PM2.5 emissions &amp; Health Impacts</span><br />
 On-road vehicles are the second largest source of PM2.5 in NYC. Trucks and buses account for only 6% of all vehicle miles traveled in NYC, yet they are responsible for nearly 40% of the PM2.5 emitted by all on-road vehicles. Cumulation of truck emissions is particularly problematic in the South Bronx and North Brooklyn, which collectively <a href="http://www.habitatmap.org/habitatmap_docs/BargeNYC%27sGarbage.pdf" target="_blank">handle over 60% of all waste</a> moving through waste transfer stations in New York City. A leading source of PM2.5 emissions in these communities are the notorious, smoke-belching commercial waste carting vehicles, only 10% of which meet the Environmental Protection Agency’s 2007 emissions standards. Connecting the dots between truck and bus emissions in these communities and their impact on human health, the <a href="https://www.ncbi.nlm.nih.gov/pubmed/27566439" target="_blank">NYC Dept. of Health and Mental Hygiene</a> found that on-road vehicles in the New York City region contribute to rates of PM2.5 attributable asthma emergency department visits that are 8.3 times higher in very high poverty neighborhoods relative to low poverty neighborhoods.</p>
 <p>The overconcentration of solid waste handling facilities in these communities and their concomitant truck traffic is a problem that can only be resolved through the implementation of policy solutions that focus on increasing the efficiency of the freight sector and advancing the city’s “zero waste” goals. One solution that could potentially reduce the burden of dirty diesel trucks borne by these communities is garbage zoning. What is garbage zoning?</p>
 <p>Six nights a week, thousands of privately operated waste collection vehicles depart garages located in outer borough neighborhoods to criss-cross the city, following grossly inefficient routes that generate needless air pollution, noise, and safety hazards for communities and workers alike. Whereas the New York City Department of Sanitation can collect a ton of garbage in approximately four miles, the typical private carter, owing to the fact that their business customers are spread over multiple community districts and boroughs, needs to drive three times as far to collect the same load. By dividing the city into zones and having commercial carting companies bid to service each zone, commercial carters will be able to reduce the number of miles they need to drive to fill their trucks.</p>
-<p>[caption id="" align="alignnone" width="600" caption="Garbage zoning will dramatically reduce vehicle miles traveled by eliminating overlapping routes while serving the same business customers. Currently there are blocks in Manhattan serviced by 79 separate carting companies! Graphic excerpted from Don’t Waste LA. Los Angeles has a zoned garbage system."]<a href="https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=1&amp;cad=rja&amp;uact=8&amp;ved=0ahUKEwiit53_9JXLAhXMOz4KHbf0Dk4QFggcMAA&amp;url=http%3A%2F%2Fwww.laane.org%2Fwp-content%2Fuploads%2F2013%2F02%2Ftruckroutes_130129-FINAL.pdf&amp;usg=AFQjCNGDKWOcvNMO7x5ImFGXeW-rcLDH2A&amp;sig2=pvYZ9imPlNgFa3oWOwR7iA" target="_blank"><img class=" " style="text-decoration: underline;" title="Garbage Zoning" src="{{ site.baseurl }}/assets/DontWasteLAGraphic600.jpg" alt="Garbage Zoning" width="600" height="567" /></a>[/caption]</p>
+
+
+![Neighborhood Truck Impact Maps](/images/uploads/DontWasteLAGraphic600.jpg "Garbage zoning will dramatically reduce vehicle miles traveled by eliminating overlapping routes while serving the same business customers. Currently there are blocks in Manhattan serviced by 79 separate carting companies! Graphic excerpted from Don’t Waste LA. Los Angeles has a zoned garbage system.")
+
+
 <p>According to the <a href="https://www1.nyc.gov/assets/doh/downloads/pdf/eode/eode-air-quality-impact.pdf">NYC Dept. of Health and Mental Hygiene</a>, New Yorkers’ exposure to PM2.5 is responsible for more than 3,000 deaths, 2,000 hospital admissions, and 6,000 emergency room visits annually. With the city’s private carter study estimating PM2.5 reductions under a zoned commercial collection system of 34 to 56 percent, there isn’t a child or older adult (those populations most vulnerable to the impacts of air pollution) that doesn’t stand to benefit from reforming NYC’s commercial waste sector.</p>
 <p><span style="text-decoration: underline;">Carting Workers’ PM2.5 Exposures</span><br />
 On two separate overnight shifts, AirBeams were placed inside the cabs of waste collection vehicles to measure workers’ exposures to PM2.5 and map the circuitous and inefficient routes they travel to service their customers; one route navigates two boroughs, including nearly the entire length of Manhattan. In the cab of their trucks, commercial carting company drivers and helpers were exposed to PM2.5 levels 3 to 7 times higher than ambient levels for the duration of their shifts. The <a href="http://bit.ly/2flqE2B" target="_blank">first route</a> shown below, where cab exposures to PM2.5 were on average seven times ambient, was serviced using a truck that did not meet the EPA’s 2007 emissions standards whereas the <a href="http://bit.ly/2fI2Biw" target="_blank">second route</a>, where cab exposures to PM2.5 were on average three times ambient, was serviced using a truck that did meet the EPA’s 2007 emissions standards.</p>
-<p><a href="http://bit.ly/2flqE2B" target="_blank"><img class="alignnone" style="text-decoration: underline;" title="Carting Workers’ PM2.5 Exposures" src="{{ site.baseurl }}/assets/AlexPM2.5ExposureBlog600.jpg" alt="Carting Workers’ PM2.5 Exposures" width="600" height="727" /></a></p>
-<p><a href="http://bit.ly/2fI2Biw" target="_blank"><img class="alignnone" style="text-decoration: underline;" title="Carting Workers’ PM2.5 Exposures" src="{{ site.baseurl }}/assets/StevePM2.5ExposureBlog600.jpg" alt="Carting Workers’ PM2.5 Exposures" width="599" height="409" /></a></p>
+
+
+![Carting Workers’ PM2.5 Exposures](/images/uploads/AlexPM2.5ExposureBlog600.jpg "Link?")
+
+![Carting Workers’ PM2.5 Exposures](/images/uploads/StevePM2.5ExposureBlog600.jpg "Link?")
