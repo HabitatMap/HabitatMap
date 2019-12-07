@@ -10,7 +10,6 @@ tag:
   - instruments
   - open-source
 ---
-<p><img style="text-decoration: underline;" title="AirBeam2 Features and Dimensions" src="{{ site.baseurl }}/assets/AB2Features+Dimensions.jpg" alt="AirBeam2 Features and Dimensions" width="600" height="849" /></p>
 <p><span style="text-decoration: underline;">Hardware Specifications</span><br />
 Weight: 5 ounces<br />
 Particle Sensor: Plantower PMS7003<br />
