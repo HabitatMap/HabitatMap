@@ -3,9 +3,16 @@ layout: user_story
 title: USC Environmental Health Centers
 featured: true
 image: /images/uploads/southcentralyouthleadershipcoalitionpic.png
+intro: >-
+  The Community Engagement Program on Health and the Environment (CEPHE) at <a
+  href="https://envhealthcenters.usc.edu/">USC Environmental Health Centers
+  (USCEHC)</a> uses a variety of low-cost air quality instruments and data
+  platforms, including the AirBeam + AirCasting platform, to run participatory
+  air monitoring programs that engage community members around air quality
+  issues where they live, work, and play. 
 type: Researchers
 ---
-The Community Engagement Program on Health and the Environment (CEPHE) at <a href="https://envhealthcenters.usc.edu/">USC Environmental Health Centers (USCEHC)</a> uses a variety of low-cost air quality instruments and data platforms, including the AirBeam + AirCasting platform, to run participatory air monitoring programs that engage community members around air quality issues where they live, work, and play. USCEHC collaborates with community-based organizations working in low-income communities of color that face disproportionate environmental burdens from polluting facilities and infrastructures. The aim of USCEHC’s participatory air monitoring programs is to increase the capacity of communities to understand air quality, democratize access to data, and advance environmental justice.
+USCEHC collaborates with community-based organizations working in low-income communities of color that face disproportionate environmental burdens from polluting facilities and infrastructures. The aim of USCEHC’s participatory air monitoring programs is to increase the capacity of communities to understand air quality, democratize access to data, and advance environmental justice.
 
 High volumes of vehicular traffic, frequent traffic congestion, and the diesel trucks, trains, and ships that service the Port of Los Angeles/Long Beach - the busiest port in the US - all contribute to the LA metropolitan region’s ranking as one of most heavily polluted areas of the country. Epidemiological research from USCEHC demonstrates the harm regional and traffic-related air pollution has on the health of LA residents and outreach programs run by CEPHE empower local communities to leverage this research to support systemic changes that have improved LA’s air.
 
