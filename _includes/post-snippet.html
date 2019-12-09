@@ -1,22 +1,32 @@
 {% assign post = include.post %}
 
 <li class="post-list__item">
-  {% if post.image %}
-    {% assign thumbnail_url = site.produrl | append: post.image %}
+  {% if post.image %} {% assign thumbnail_url = site.produrl | append:
+  post.image %}
 
-    <div class="post-list__thumbnail">
-      <a href="{{ post.url }}">
-        <img
-          class="post-list__thumbnail-img"
-          srcset="{{ thumbnail_url | append: '?nf_resize=smartcrop&w=480&h=291 480w' }},
+  <div class="post-list__thumbnail">
+    <a href="{{ post.url }}">
+      <img
+        class="post-list__thumbnail-img"
+        srcset="{{ thumbnail_url | append: '?nf_resize=smartcrop&w=480&h=291 480w' }},
                   {{ thumbnail_url | append: '?nf_resize=smartcrop&w=945&h=573 945w' }}"
-          src="{{ thumbnail_url | append: '?nf_resize=smartcrop&w=945&h=573' }}"
-        />
-      </a>
-    </div>
+        src="{{ thumbnail_url | append: '?nf_resize=smartcrop&w=945&h=573' }}"
+      />
+    </a>
+  </div>
   {% endif %}
 
-  <a href="{{ post.category.url }}" class="link post-list__category heading u--capitalized">{{ post.category }}</a>
+  {% if post.category %}
+    <a href="{{ post.category.url }}" class="link post-list__category heading u--capitalized">
+      {{ post.category }}
+    </a>
+  {% endif %}
+
+  {% if post.type %}
+    <p class="post-list__category heading u--capitalized">
+      {{ post.type }}
+    </p>
+  {% endif %}
 
   <h2 class="post-list__title heading heading--small">
     <a href="{{ post.url }}">{{ post.title }}</a>
@@ -24,11 +34,8 @@
 
   <time datetime="{{ post.date }}"></time>
   <p>
-    {% if post.intro %}
-      {{ post.intro }}
-    {% else %}
-      {{ post.excerpt | strip_newlines | strip_html | truncate: 180 }}
-    {% endif %}
+    {% if post.intro %} {{ post.intro }} {% else %} {{ post.excerpt |
+    strip_newlines | strip_html | truncate: 180 }} {% endif %}
   </p>
   <a href="{{ post.url }}" class="post-list__read-more">Read more</a>
 </li>

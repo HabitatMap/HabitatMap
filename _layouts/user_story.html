@@ -5,14 +5,8 @@ section: airbeam
 
 <section class="panel panel--user-story-hero">
   <div class="post-header">
-    <small class="u--capitalized post-header__category">
-      {% assign category_slug = page.category | slugify %}
-      <a
-        href="{{ '/blog/categories/' | append: category_slug }}"
-        class="link--light"
-      >
-        {{ page.categories.first }}
-      </a>
+    <small class="u--capitalized">
+      {{ page.type }}
     </small>
 
     <h1
@@ -44,24 +38,12 @@ section: airbeam
 
 <nav class="panel" aria-label="Adjacent User Stories">
   <ul class="post-nav">
-    <li>
-      {% if page.previous.url %}
-      <a href="{{ page.previous.url }}" class="link" rel="prev">
-        &laquo; {{ page.previous.title }}
-      </a>
-      {% endif %}
-    </li>
+    <li></li>
     <li>
       <a href="/airbeam/user-stories" class="link u--capitalized">
         Back to user stories
       </a>
     </li>
-    <li>
-      {% if page.next.url %}
-      <a href="{{ page.next.url }}" class="link" rel="next">
-        {{ page.next.title }} &raquo;
-      </a>
-      {% endif %}
-    </li>
+    <li></li>
   </ul>
 </nav>

@@ -67,8 +67,11 @@
   .post-list--grid-view & {
     display: inline-block;
     margin: 0 0 $u-space-small;
-    text-decoration: underline;
   }
+}
+
+a.post-list__category {
+  text-decoration: underline;
 }
 
 .post-list__read-more {
