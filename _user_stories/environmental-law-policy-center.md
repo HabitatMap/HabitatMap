@@ -9,7 +9,7 @@ intro: >-
   many of Chicago’s predominately working-class African-American and Latinx
   neighborhoods.  To address the disparate exposure to air pollution faced by
   Chicago’s working-class communities of color, the <a
-  href="http://elpc.org/">Environmental Law &amp; Policy Center (ELPC)</a>
+  href="http://elpc.org/">Environmental Law &amp; Policy Center </a> (ELPC)
   created a monitoring program called <a
   href="https://airqualitychicago.org/"><em>Air Quality Chicago</em></a> that
   trains residents to collect air pollution data using the AirBeam + AirCasting
