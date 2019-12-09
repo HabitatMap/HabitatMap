@@ -2,7 +2,7 @@
 layout: user_story
 title: USC Environmental Health Centers
 featured: true
-image: /images/uploads/1000AirBeamsWorldwide.png
+image: /images/uploads/southcentralyouthleadershipcoalitionpic.png
 type: Community Based Orgs
 ---
 The Community Engagement Program on Health and the Environment (CEPHE) at <a href="https://envhealthcenters.usc.edu/">USC Environmental Health Centers (USCEHC)</a> uses a variety of low-cost air quality instruments and data platforms, including the AirBeam + AirCasting platform, to run participatory air monitoring programs that engage community members around air quality issues where they live, work, and play. USCEHC collaborates with community-based organizations working in low-income communities of color that face disproportionate environmental burdens from polluting facilities and infrastructures. The aim of USCEHC’s participatory air monitoring programs is to increase the capacity of communities to understand air quality, democratize access to data, and advance environmental justice.
