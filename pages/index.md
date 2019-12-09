@@ -35,25 +35,30 @@ section: home
           <div class="panel u--bg-teal slide">
             <div class="split--50 slide__story">
               <h2 class="heading heading--capitilized">Who is using Airbeam?</h2>
+              <a href="/airbeam/user-stories/{{story.slug}}">
                 <h3 class="heading heading--medium">{{ story.title }}</h3>
                 <p class="p--body">
                   {{ story.intro }}
                 </p>
+              </a>
               <a href="/airbeam/user-stories" class="button button--ac-on-teal">More User Stories</a>
             </div>
             {% assign image_url = story.image %}
-            <img
-              src="{{ image_url | append: '?nf_resize=fit&w=1875'  }}"
-              srcset="{{ image_url | append: '?nf_resize=fit&w=576 768w' }},
-                      {{ image_url | append: '?nf_resize=fit&w=960 1280w' }},
-                      {{ image_url | append: '?nf_resize=fit&w=1080 1440w' }},
-                      {{ image_url | append: '?nf_resize=fit&w=1875 2500w' }}"
-              class="slide__photo"
-            />
+            <a href="/airbeam/user-stories/{{story.slug}}">
+              <img
+                src="{{ image_url | append: '?nf_resize=fit&w=1875'  }}"
+                srcset="{{ image_url | append: '?nf_resize=fit&w=576 768w' }},
+                        {{ image_url | append: '?nf_resize=fit&w=960 1280w' }},
+                        {{ image_url | append: '?nf_resize=fit&w=1080 1440w' }},
+                        {{ image_url | append: '?nf_resize=fit&w=1875 2500w' }}"
+                class="slide__photo"
+              />
+            </a>
           </div>
         </div>
       {% endunless %}
     {% endfor %}
+
   </div>
 </section>
 
