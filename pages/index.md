@@ -30,7 +30,7 @@ section: home
   <div class="js-slider">
     {% assign stories = site.user_stories | where: 'featured', true %}
     {% for story in stories %}
-      {% unless forloop.index > 4 %}
+      {% unless forloop.index > 6 %}
         <div>
           <div class="panel u--bg-teal slide">
             <div class="split--50 slide__story">

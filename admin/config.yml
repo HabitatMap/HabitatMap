@@ -94,9 +94,9 @@ collections:
           name: featured,
           widget: boolean,
           default: false,
-          hint: "Make sure only 4 of your user stories are marked as featured.
+          hint: "Make sure only 6 of your user stories are marked as featured.
             Otherwise you won't know for sure which of the featured
-            user stories will show up on the main page.",
+            user stories will show up in the slider.",
         }
       - {
           label: Image,
