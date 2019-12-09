@@ -1,0 +1,106 @@
+---
+layout: default
+---
+
+<h1 class="u--visually-hidden">User stories</h1>
+
+<section class="panel panel--leading-text">
+  <h1 class="heading heading--large u--gray-text">
+    The AirCasting platform empowers community-based organizations, educators,
+    academics, regulators, city managers, and citizen scientists to map air
+    pollution and organize for clean air.
+  </h1>
+</section>
+
+<section class="panel">
+  <div class="split--25">
+    <h2 class="heading heading--capitilized heading--overlined">
+      Educators
+    </h2>
+    <img src="/assets/img/pages/user-stories/K-12Schools.png" />
+    <p>
+      Bringing AirBeam and AirCasting to your classroom is a proven way of
+      sparking student interest in environmental science and driving civic
+      engagement. Students gather, analyze, and share data with the larger
+      AirCasting community, applying mapping technology to solve real-world
+      environmental problems via community-oriented research projects.
+    </p>
+  </div>
+
+  <div class="split--25">
+    <h2 class="heading heading--capitilized heading--overlined">
+      Citizen Scientists
+    </h2>
+    <img src="/assets/img/pages/user-stories/RegulatoryAgencies.png" />
+    <p>
+      Our low (and no) cost technologies make the platform an attractive option
+      for all citizen scientists. Whether you need data for a specific advocacy
+      campaign, or just want to limit your personal pollution exposures, the
+      AirBeam’s hyperlocal measurements can help you visualize what you’re
+      breathing, add credibility to your cause, and guide better daily
+      decisions.
+    </p>
+  </div>
+
+  <div class="split--25">
+    <h2 class="heading heading--capitilized heading--overlined">
+      Researchers
+    </h2>
+    <img src="/assets/img/pages/user-stories/14-AB2s.jpg?nf_resize=fit&w=386" />
+    <p>
+      The credibility of your data is important and control of your data is
+      paramount. The proven accuracy of the AirBeam’s hyperlocal measurements
+      will enable you to create high-resolution pollution surfaces. Configure
+      the AirBeam to feed data directly to your database or just beam data to
+      the AirCasting platform, where it can easily be visualized, shared, and
+      exported.
+    </p>
+  </div>
+
+  <div class="split--25">
+    <h2 class="heading heading--capitilized heading--overlined">
+      Activists & Non-profits
+    </h2>
+    <img src="/assets/img/pages/user-stories/CommunityBasedOrgs.png" />
+    <p>
+      Enhancing quality of life in your community is essential and our platform,
+      when in your hands, becomes a powerful tool for clean air advocacy.
+      Whether you want to curtail local polluters or campaign for better quality
+      of life, the AirBeam and AirCasting platform bring visibility to the
+      quality of the air you and your community are breathing.
+    </p>
+  </div>
+</section>
+
+<section
+  class="panel panel--quote u--bg-green arc-background arc-background--right-opacity-15 arc-background--right-bottom-quote"
+>
+  <div class="split--40">
+    <h2 class="heading heading--medium">
+      What Our Community
+      <br />
+      is Saying
+    </h2>
+  </div>
+  {% include testimonials-slider.html testimonials = site.testimonials %}
+</section>
+
+<section class="posts-index posts-index--with-arc js--posts-index">
+  <div class="panel u--margin-top-default">
+    <ul class="post-list post-list--grid-view">
+      {% for story in site.user_stories %}
+        {% include post-snippet.html post = story %}
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="panel panel--hero panel--banner">
+  <div class="split--50">
+    <a href="/airbeam/buy-it-now" class="badge-link badge-link--hm">
+      <span class="u--vertically-centered">Get Started with AirBeam</span>
+    </a>
+  </div>
+</section>
+
+{% include slider-init.html %}

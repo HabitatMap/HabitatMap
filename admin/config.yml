@@ -79,34 +79,60 @@ collections:
           valueField: name,
           multiple: true,
         }
-  - name: slides
-    label: Slides
-    label_singular: Slide
-    folder: _slides
-    identifier_field: organization_name
+
+  - name: user_stories
+    label: User stories
+    label_singular: User story
+    folder: _user_stories
     create: true
-    editor:
-      preview: false
+    slug: "{{title}}"
     fields:
-      - { label: Organization name, name: organization_name, widget: string }
-      - { label: Description, name: description, widget: string }
-      - { label: Image, name: image, widget: image }
+      - { label: Layout, name: layout, widget: hidden, default: user_story }
+      - { label: Organization name, name: title, widget: string }
       - {
           label: Featured?,
           name: featured,
           widget: boolean,
           default: false,
-          hint: "If you mark a slide as featured it will be shown in the slider, otherwise it won't.",
+          hint: "Make sure only 6 of your user stories are marked as featured.
+            Otherwise you won't know for sure which of the featured
+            user stories will show up in the slider.",
         }
       - {
-          label: Order,
-          name: order,
-          widget: number,
-          valueType: int,
-          min: 1,
-          max: 4,
-          hint: "Specifies the order of the slides, 1 to 4.",
-          required: false,
+          label: Image,
+          name: image,
+          widget: image,
+          hint: "For the best effect upload images 1200x705 in resolution (or bigger with the same proportions).",
+        }
+      - { label: Intro, name: intro, widget: text, required: false }
+      - {
+          label: Body,
+          name: body,
+          widget: markdown,
+          buttons:
+            [
+              bold,
+              italic,
+              code,
+              link,
+              heading-two,
+              quote,
+              code-block,
+              bulleted-list,
+              numbered-list,
+            ],
+        }
+      - {
+          label: Type,
+          name: type,
+          widget: select,
+          options:
+            [
+              "Educators",
+              "Citizen Scientists",
+              "Researchers",
+              "Activists & Non-profits",
+            ],
         }
 
   - name: testimonials
@@ -165,6 +191,7 @@ collections:
             "If you need to change the name of an existing category, please delete it and create a new one.
             If you edit an existing category, the link to the category blog page will break.",
         }
+
   - name: tags
     label: Tags
     label_singular: Tag
@@ -181,6 +208,7 @@ collections:
             "If you need to change the name of an existing tag, please delete it and create a new one.
             If you edit an existing tag, the link to the tag blog page will break.",
         }
+
   - name: pages
     label: Pages
     editor:

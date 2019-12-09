@@ -1,0 +1,47 @@
+---
+layout: default
+section: airbeam
+---
+
+<section class="panel panel--user-story-hero">
+  <div class="post-header">
+    <small class="u--capitalized">
+      {{ page.type }}
+    </small>
+
+    <h1
+      class="heading heading--large post-header__title post-header__title--featured"
+    >
+      {{ page.title }}
+    </h1>
+  </div>
+</section>
+
+<section class="panel">
+  <div class="post-content">
+    {% if page.image %}
+      <img
+        class="post-content__featured-image"
+        srcset="{{ page.image | append: '?nf_resize=fit&w=480 480w' }},
+                {{ page.image | append: '?nf_resize=fit&w=720 720w' }},
+                {{ page.image | append: '?nf_resize=fit&w=1200 1200w' }}"
+        src="{{ page.image | append: '?nf_resize=fit&w=1200' }}"
+      />
+    {% endif %}
+
+    <p class="post-content__intro">{{ page.intro }}</p>
+    {{ content }}
+  </div>
+</section>
+
+<nav class="panel" aria-label="Adjacent User Stories">
+  <ul class="post-nav">
+    <li></li>
+    <li>
+      <a href="/airbeam/user-stories" class="link u--capitalized">
+        Back to user stories
+      </a>
+    </li>
+    <li></li>
+  </ul>
+</nav>

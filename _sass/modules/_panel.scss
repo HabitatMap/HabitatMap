@@ -2,6 +2,7 @@
   @include flexbox;
   @include flex-direction(column);
   @include flex-wrap(wrap);
+  @include justify-content(space-between);
   padding: $u-space-default 4vw;
 
   @media screen and (min-width: $tablet-min) {
@@ -43,10 +44,15 @@
 }
 
 .panel--hero {
-  padding-bottom: 65%;
+  background-image: url("/assets/img/habitatmap-home-airbeam-aircasting.jpg");
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: 100% auto;
+  padding-bottom: 65%;
+
+  @media screen and (max-width: $large-mobile-min) {
+    background-image: url("/assets/img/habitatmap-home-airbeam-aircasting.jpg?nf_resize=fit&w=720");
+  }
 
   @media screen and (min-width: $tablet-min) {
     background-position: center right;
@@ -60,6 +66,18 @@
   }
 }
 
+.panel--banner {
+  background-image: url("/assets/img/pages/user-stories/banner.jpg");
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 11rem;
+  padding-top: 4rem;
+
+  @media screen and (max-width: $large-mobile-min) {
+    background-image: url("/assets/img/pages/user-stories/banner.jpg?nf_resize=fit&w=720");
+  }
+}
+
 .panel--airbeam {
   @media screen and (min-width: $tablet-min) {
     background-color: $teal-light;
@@ -70,7 +88,8 @@
 .panel--history-intro,
 .panel--faq-intro,
 .panel--blog-hero,
-.panel--blog-category {
+.panel--blog-category,
+.panel--user-story-hero {
   color: $white;
 
   a {
@@ -94,6 +113,10 @@
 .panel--blog-hero,
 .panel--blog-category {
   background-color: $blue;
+}
+
+.panel--user-story-hero {
+  background-color: $green;
 }
 
 .panel--align-center {

@@ -24,7 +24,6 @@ description: >- # this means to ignore newlines until "baseurl:"
   and advocate for equitable solutions to environmental health issues.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: habitatmap.lunarlogic.io # the base hostname & protocol for your site
-produrl: https://habitatmap.lunarlogic.io
 social:
   name: HabitatMap
   links:
@@ -49,7 +48,6 @@ algolia:
   index_name: habitatmap_dev
   # Exclude files from indexing
   files_to_exclude:
-    - _slides/*
     - _faq_categories/*
     - _testimonials/*
     - _news_quotes/*
@@ -58,6 +56,9 @@ collections:
   posts:
     output: true
     permalink: /blog/:title
+  user_stories:
+    output: true
+    permalink: /airbeam/user-stories/:title
   categories:
     output: true
     permalink: /blog/categories/:name
@@ -65,8 +66,6 @@ collections:
     output: true
     permalink: /blog/tags/:name
   faq_categories:
-    output: true
-  slides:
     output: true
   testimonials:
     output: true
@@ -79,6 +78,10 @@ defaults:
     values:
       author: Michael Heimbinder
       section: blog
+  - scope:
+      type: user_stories
+    values:
+      section: airbeam
   - scope:
       type: categories
     values:
@@ -94,10 +97,6 @@ defaults:
     values:
       layout: faq
       section: faq
-  - scope:
-      type: slides
-    values:
-      featured: false
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

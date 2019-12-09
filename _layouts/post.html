@@ -30,16 +30,14 @@ layout: default
 
 <div class="panel">
   <div class="post-content">
-    {% if page.image %} {% assign image_url = site.produrl | append: page.image
-    %}
-
-    <img
-      class="post-content__featured-image"
-      srcset="{{ image_url | append: '?nf_resize=fit&w=480 480w' }},
-              {{ image_url | append: '?nf_resize=fit&w=720 720w' }},
-              {{ image_url | append: '?nf_resize=fit&w=1200 1200w' }}"
-      src="{{ image_url | append: '?nf_resize=fit&w=1200' }}"
-    />
+    {% if page.image %}
+      <img
+        class="post-content__featured-image"
+        srcset="{{ page.image | append: '?nf_resize=fit&w=480 480w' }},
+                {{ page.image | append: '?nf_resize=fit&w=720 720w' }},
+                {{ page.image | append: '?nf_resize=fit&w=1200 1200w' }}"
+        src="{{ page.image | append: '?nf_resize=fit&w=1200' }}"
+      />
     {% endif %}
 
     <p class="post-content__intro">{{ page.intro }}</p>

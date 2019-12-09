@@ -4,21 +4,6 @@ permalink: /
 section: home
 ---
 
-{% assign hero_image_url = "/assets/img/habitatmap-home-airbeam-aircasting.jpg" %}
-{% assign hero_image_mobile_url = "/assets/img/habitatmap-home-airbeam-aircasting.jpg?nf_resize=fit&w=720" %}
-
-<style scoped>
-  .panel--hero {
-    background-image: url("{{ hero_image_url }}");
-  }
-
-  @media screen and (max-width: 480px) {
-    .panel--hero {
-      background-image: url("{{ hero_image_mobile_url }}");
-    }
-  }
-</style>
-
 <section class="panel panel--hero u--bg-teal-light">
   <div class="split--50">
     <h1 class="heading heading--large u--accent-hm panel__heading">
@@ -43,32 +28,37 @@ section: home
 
 <section class="slider slider--user-stories">
   <div class="js-slider">
-    {% assign slides = site.slides | where: 'featured', true | sort: 'order' %}
-    {% for slide in slides %}
-      {% unless forloop.index > 4 %}
+    {% assign stories = site.user_stories | where: 'featured', true %}
+    {% for story in stories %}
+      {% unless forloop.index > 6 %}
         <div>
           <div class="panel u--bg-teal slide">
             <div class="split--50 slide__story">
               <h2 class="heading heading--capitilized">Who is using Airbeam?</h2>
-                <h3 class="heading heading--medium">{{ slide.organization_name }}</h3>
+              <a href="/airbeam/user-stories/{{story.slug}}">
+                <h3 class="heading heading--medium">{{ story.title }}</h3>
                 <p class="p--body">
-                  {{ slide.description }}
+                  {{ story.intro }}
                 </p>
-              <a href="#" class="button button--ac-on-teal">More User Stories</a>
+              </a>
+              <a href="/airbeam/user-stories" class="button button--ac-on-teal">More User Stories</a>
             </div>
-            {% assign image_url = slide.image %}
-            <img
-              src="{{ image_url | append: '?nf_resize=fit&w=1875'  }}"
-              srcset="{{ image_url | append: '?nf_resize=fit&w=576 768w' }},
-                      {{ image_url | append: '?nf_resize=fit&w=960 1280w' }},
-                      {{ image_url | append: '?nf_resize=fit&w=1080 1440w' }},
-                      {{ image_url | append: '?nf_resize=fit&w=1875 2500w' }}"
-              class="slide__photo"
-            />
+            {% assign image_url = story.image %}
+            <a href="/airbeam/user-stories/{{story.slug}}">
+              <img
+                src="{{ image_url | append: '?nf_resize=fit&w=1875'  }}"
+                srcset="{{ image_url | append: '?nf_resize=fit&w=576 768w' }},
+                        {{ image_url | append: '?nf_resize=fit&w=960 1280w' }},
+                        {{ image_url | append: '?nf_resize=fit&w=1080 1440w' }},
+                        {{ image_url | append: '?nf_resize=fit&w=1875 2500w' }}"
+                class="slide__photo"
+              />
+            </a>
           </div>
         </div>
       {% endunless %}
     {% endfor %}
+
   </div>
 </section>
 
