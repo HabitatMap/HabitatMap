@@ -42,7 +42,8 @@
         <p class="u--bold">Sign up to receive AirBeam product updates and HabitatMap news (quarterly):</p>
         <form name="newsletter" method="POST" data-netlify="true">
           <label class="u--visually-hidden" for="newsletter">Email</label>
-          <input class="input input--light input--full-width" type="text" placeholder="Your email" name="email" id="newsletter" />
+          <input class="input input--light input--full-width" type="email" placeholder="Your email" name="email" id="newsletter" autocomplete="email" />
+          <input type="submit" style="position: absolute; left: -9999px; width: 1px; height: 1px;" tabindex="-1" />
         </form>
       </li>
     </ul>
