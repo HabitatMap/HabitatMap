@@ -129,9 +129,9 @@ collections:
           options:
             [
               "Educators",
-              "Citizen Scientists"
+              "Citizen Scientists",
               "Researchers",
-              "Activists & Non-profits"
+              "Activists & Non-profits",
             ],
         }
 
