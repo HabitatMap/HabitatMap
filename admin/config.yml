@@ -1,7 +1,7 @@
 backend:
   name: git-gateway
   # name: test-repo
-  branch: user-stories
+  branch: master
 
 media_folder: images/uploads
 
