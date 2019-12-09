@@ -36,7 +36,7 @@ twitter:
 facebook:
   publisher: https://www.facebook.com/HabitatMap
 
-google_analytics: UA—XXXXXXXX-X
+google_tag_manager: GTM-T948MNX
 
 plugins:
   - jekyll-feed

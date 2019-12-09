@@ -1,12 +1,12 @@
 <head>
+  {% if jekyll.environment == 'production' and site.google_tag_manager %}
+    {% include google_tag_manager.html %}
+  {% endif %}
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% if page.section == "home" %}{{ site.title }}{% else %}{{ page.title | default: site.title }}{% endif %}</title>
   <meta name="description" content="{% if page.section == 'home' %}{{ site.description }}{% else %}{{ page.description | default: site.description }}{% endif %}">
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
-  {% if jekyll.environment == 'production' and site.google_analytics %}
-    {% include analytics.html %}
-  {% endif %}
   <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif|Muli&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
