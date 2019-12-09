@@ -31,6 +31,10 @@ We were fortunate to have <a href="http://uprose.org/" target="_blank">UPROSE</a
 <p>In San Francisco we had the opportunity to work with over 60 seniors from the <a href="http://galileoweb.org/" target="_blank">Galileo Academy of Science &amp; Technology</a>, a public high school that provides students with career pathways in biotechnology, environmental science, health, hospitality and tourism, computer science, and creative media technology.</p>
 <p><img style="text-decoration: underline;" title="AirCasting the Palace of Fine Arts Theatre" src="{{ site.baseurl }}/assets/AirCastingPalaceOfFineArts.jpg" alt="On the steps of the Palace of Fine Arts Theatre in San Francisco" width="600" height="431" /></p>
 <p>Due to the large number of students, we spread the workshop out over multiple days which allowed us to compare air quality measurements from one day to the next. We were happy to find that the AirCasting data followed the same pattern observed in the official monitoring data posted to <a href="http://www.airnow.gov/" target="_blank">AirNow.gov</a>. On the April 16<sup>th</sup> the AirCasting CrowdMap is predominantly orange with scattered red and yellow whereas on the 17<sup>th</sup> it is predominantly yellow with scattered green. The official Air Quality Index from these same days indicated that PM2.5 concentrations in the Bay Area were indeed higher on the 16<sup>th</sup>, 55/yellow, than the 17<sup>th</sup>, 45/green.</p>
-<p></p>
-<p><img style="text-decoration: underline;" title="AirCasting CrowdMap SF 4-17" src="{{ site.baseurl }}/assets/AirCastingCrowdMapSF_4-17.jpg" alt="In agreement with the state run air quality monitoring network, the Galileo AirCasters found that PM2.5 concentrations were higher on 4/16 than 4/17. The CrowdMap displays the average measurement for each area as a colored square: green for low concentration, then yellow, then orange, and red for high concentration." width="600" height="488" /></a></p>
+
+![AirCasting CrowdMap SF 4-16](/images/uploads/AirCastingCrowdMapSF_4-16.jpg)
+
+![AirCasting CrowdMap SF 4-17](/images/uploads/AirCastingCrowdMapSF_4-17.jpg)
+
+
 <p>With support from the Knight Prototype Fund we also made changes to our software to address the number one concern expressed by AirCasters: data quality. More on this in a future post . . .</p>
