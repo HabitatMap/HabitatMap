@@ -28,20 +28,20 @@ section: home
 
 <section class="slider slider--user-stories">
   <div class="js-slider">
-    {% assign slides = site.slides | where: 'featured', true | sort: 'order' %}
-    {% for slide in slides %}
+    {% assign stories = site.user_stories | where: 'featured', true %}
+    {% for story in stories %}
       {% unless forloop.index > 4 %}
         <div>
           <div class="panel u--bg-teal slide">
             <div class="split--50 slide__story">
               <h2 class="heading heading--capitilized">Who is using Airbeam?</h2>
-                <h3 class="heading heading--medium">{{ slide.organization_name }}</h3>
+                <h3 class="heading heading--medium">{{ story.title }}</h3>
                 <p class="p--body">
-                  {{ slide.description }}
+                  {{ story.intro }}
                 </p>
-              <a href="#" class="button button--ac-on-teal">More User Stories</a>
+              <a href="/airbeam/user-stories" class="button button--ac-on-teal">More User Stories</a>
             </div>
-            {% assign image_url = slide.image %}
+            {% assign image_url = story.image %}
             <img
               src="{{ image_url | append: '?nf_resize=fit&w=1875'  }}"
               srcset="{{ image_url | append: '?nf_resize=fit&w=576 768w' }},
