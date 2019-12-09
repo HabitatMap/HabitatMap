@@ -2,7 +2,7 @@
 layout: user_story
 title: USC Environmental Health Centers
 featured: true
-image: /images/uploads/1000AirBeamsWorldwide.png
+image: /images/uploads/south-central-youth-leadership-coalition-.jpg
 intro: >-
   Members of South Central Youth Leadership Coalition participate in A Day in
   the Life Workshop to learn about air pollution and how to operate AirBeams.
