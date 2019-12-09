@@ -135,36 +135,6 @@ collections:
             ],
         }
 
-  - name: slides
-    label: Slides
-    label_singular: Slide
-    folder: _slides
-    identifier_field: organization_name
-    create: true
-    editor:
-      preview: false
-    fields:
-      - { label: Organization name, name: organization_name, widget: string }
-      - { label: Description, name: description, widget: string }
-      - { label: Image, name: image, widget: image }
-      - {
-          label: Featured?,
-          name: featured,
-          widget: boolean,
-          default: false,
-          hint: "If you mark a slide as featured it will be shown in the slider, otherwise it won't.",
-        }
-      - {
-          label: Order,
-          name: order,
-          widget: number,
-          valueType: int,
-          min: 1,
-          max: 4,
-          hint: "Specifies the order of the slides, 1 to 4.",
-          required: false,
-        }
-
   - name: testimonials
     label: Testimonials slider
     label_singular: Testimonial

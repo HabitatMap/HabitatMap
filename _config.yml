@@ -49,7 +49,6 @@ algolia:
   index_name: habitatmap_dev
   # Exclude files from indexing
   files_to_exclude:
-    - _slides/*
     - _faq_categories/*
     - _testimonials/*
     - _news_quotes/*
@@ -68,8 +67,6 @@ collections:
     output: true
     permalink: /blog/tags/:name
   faq_categories:
-    output: true
-  slides:
     output: true
   testimonials:
     output: true
@@ -101,10 +98,6 @@ defaults:
     values:
       layout: faq
       section: faq
-  - scope:
-      type: slides
-    values:
-      featured: false
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
