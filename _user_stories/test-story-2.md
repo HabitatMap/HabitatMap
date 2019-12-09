@@ -2,7 +2,7 @@
 layout: user_story
 title: Test story 2
 featured: true
-image: /images/uploads/screenshot-2019-12-09-at-13.06.21.png
+image: /images/uploads/sound-levels.png
 intro: >-
   Widgets are specified as collection fields in the Netlify CMS config.yml file.
   Note that YAML syntax allows lists and objects to be written in block or
