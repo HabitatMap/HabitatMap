@@ -1,19 +1,17 @@
 {% assign post = include.post %}
 
 <li class="post-list__item">
-  {% if post.image %} {% assign thumbnail_url = site.produrl | append:
-  post.image %}
-
-  <div class="post-list__thumbnail">
-    <a href="{{ post.url }}">
-      <img
-        class="post-list__thumbnail-img"
-        srcset="{{ thumbnail_url | append: '?nf_resize=smartcrop&w=480&h=291 480w' }},
-                  {{ thumbnail_url | append: '?nf_resize=smartcrop&w=945&h=573 945w' }}"
-        src="{{ thumbnail_url | append: '?nf_resize=smartcrop&w=945&h=573' }}"
-      />
-    </a>
-  </div>
+  {% if post.image %}
+    <div class="post-list__thumbnail">
+      <a href="{{ post.url }}">
+        <img
+          class="post-list__thumbnail-img"
+          srcset="{{ post.image | append: '?nf_resize=smartcrop&w=480&h=291 480w' }},
+                  {{ post.image | append: '?nf_resize=smartcrop&w=945&h=573 945w' }}"
+          src="{{ post.image | append: '?nf_resize=smartcrop&w=945&h=573' }}"
+        />
+      </a>
+    </div>
   {% endif %}
 
   {% if post.category %}

@@ -24,7 +24,6 @@ description: >- # this means to ignore newlines until "baseurl:"
   and advocate for equitable solutions to environmental health issues.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: habitatmap.lunarlogic.io # the base hostname & protocol for your site
-produrl: https://habitatmap.lunarlogic.io
 social:
   name: HabitatMap
   links:
