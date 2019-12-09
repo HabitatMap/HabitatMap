@@ -3,7 +3,7 @@ layout: user_story
 title: Environmental Law & Policy Center
 featured: true
 image: /images/uploads/elpc2.png
-type: Community Based Orgs
+type: Activists & Non-profits
 ---
 Chicago residents are hospitalized for asthma at twice the national average.  Making matters worse, the rate of asthma hospitalizations is even higher in many of Chicago’s predominately working-class African-American and Latinx neighborhoods.  To address the disparate exposure to air pollution faced by Chicago’s working-class communities of color, the Environmental Law & Policy Center (ELPC) created a monitoring program called Air Quality Chicago that trains residents to collect air pollution data using the AirBeam + AirCasting platform.  Air Quality Chicago connects the dots between air pollution, local emissions sources, and community health thereby enhancing participants’ understanding of how air pollution impacts their communities and helping them make better-informed decisions that protect their health.
 
