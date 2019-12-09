@@ -2,6 +2,7 @@
   @include flexbox;
   @include flex-direction(column);
   @include flex-wrap(wrap);
+  @include justify-content(space-between);
   padding: $u-space-default 4vw;
 
   @media screen and (min-width: $tablet-min) {
