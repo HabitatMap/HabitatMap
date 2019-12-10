@@ -30,7 +30,6 @@
     <a href="{{ post.url }}">{{ post.title }}</a>
   </h2>
 
-  <time datetime="{{ post.date }}"></time>
   <p>
     {% if post.intro %} {{ post.intro }} {% else %} {{ post.excerpt |
     strip_newlines | strip_html | truncate: 180 }} {% endif %}
