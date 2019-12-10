@@ -1,5 +1,11 @@
 press_articles:
-  - title: I strolled around Tysons with a walkability researcher. Here’s what he had to say.
-    link: http://www.example.com
-    date: 2018-11-19T12:52:04.000Z
+  - date: 2018-11-19T12:52:04.000Z
+    link: 'http://www.example.com'
     publication: Greater Greater Washington
+    title: >-
+      I strolled around Tysons with a walkability researcher. Here’s what he had
+      to say.
+  - date: 2019-12-10T21:26:45.917Z
+    link: 'https://futurism.com/nasa-most-powerful-rocket'
+    publication: futurism.com
+    title: ' After Years of Delays, NASA Unveils Its Most Powerful Rocket'
