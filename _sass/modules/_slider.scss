@@ -62,7 +62,9 @@
 }
 
 [data-controls="next"] {
-  background: url("/assets/img/svg/Slider-Arrow.svg") center no-repeat;
+  background: url("/assets/img/svg/Slider-Right.svg") center no-repeat;
+  height: 40px;
+  width: 40px;
 
   @media screen and (max-width: $large-mobile-max) {
     display: none;
