@@ -4,7 +4,8 @@ document.addEventListener("DOMContentLoaded", function() {
       container: element,
       autoHeight: true,
       speed: 400,
-      autoplay: true
+      autoplay: true,
+      autoplayButtonOutput: false
     });
   });
 });
