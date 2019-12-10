@@ -11,7 +11,7 @@ intro: >-
   metropolitan region. Integral to Airparif’s mission is reducing Parisians’
   exposure to air pollution and raising awareness of the impact air pollution
   has on human health and quality of life.
-type: Activists & Non-profits
+type: Citizen Scientists
 ---
 Airparif’s public programs are designed to educate Parisians about what air pollution is and how it can be measured. Select programs use the AirBeam and the AirCasting platform to empower participants to investigate where and when they are exposed to relatively higher concentrations of air pollutants and consider how they might alter their daily routines to reduce air pollution exposures.
 
