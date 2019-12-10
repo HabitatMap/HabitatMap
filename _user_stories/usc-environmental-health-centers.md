@@ -5,8 +5,8 @@ featured: true
 image: /images/uploads/southcentralyouthleadershipcoalitionpic.png
 intro: >-
   The Community Engagement Program on Health and the Environment (CEPHE) at <a
-  href="https://envhealthcenters.usc.edu/">USC Environmental Health Centers
-  (USCEHC)</a> uses a variety of low-cost air quality instruments and data
+  href="https://envhealthcenters.usc.edu/">USC Environmental Health Centers</a>
+  (USCEHC) uses a variety of low-cost air quality instruments and data
   platforms, including the AirBeam + AirCasting platform, to run participatory
   air monitoring programs that engage community members around air quality
   issues where they live, work, and play. 
