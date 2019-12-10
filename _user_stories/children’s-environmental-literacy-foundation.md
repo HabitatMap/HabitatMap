@@ -19,6 +19,8 @@ By uploading their data to the AirCasting platform, students can visualize the c
 
 Use of the AirBeam + AirCasting platform enables students to connect their learning with real-world concerns grounded in their own communities. By sharing their findings alongside professional researchers and other community members on the AirCasting website, students recognize their place in the wider civic community. Their voice and their work have meaning beyond the classroom, which is a powerful motivator. As 6th-grade teacher Celenia Nivar of Central Park East II in East Harlem observes, “As a result of CELF's program, my students realized how much they can contribute and educate people around them so that all living things can have a sustainable life. Through researching and examining air quality in the neighborhood, and the causes and effects of air pollution, they woke up to how they could immediately start acting to ensure a healthier future.”
 
-<p>
+<br/>
+
+<br/>
 
 <iframe src="https://player.vimeo.com/video/375680820" width="752" height="424" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
