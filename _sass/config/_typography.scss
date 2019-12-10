@@ -109,8 +109,22 @@ a,
   text-decoration: none;
   color: $link-color;
 
+  .post-list__item & {
+    [data-current="about"] & {
+      color: $teal;
+    }
+
+    [data-current="airbeam"] &,
+    [data-current="donate"] & {
+      color: $green;
+    }
+  }
+
+  .post-list__title & {
+    font-weight: bold;
+  }
+
   .p--body &,
-  .post-list__title &,
   .post-nav & {
     font-weight: bold;
 
