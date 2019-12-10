@@ -15,6 +15,7 @@ intro: >-
   trains residents to collect air pollution data using the AirBeam + AirCasting
   platform.  
 type: Activists & Non-profits
+order: 5
 ---
 <em>Air Quality Chicago</em> connects the dots between air pollution, local emissions sources, and community health thereby enhancing participants’ understanding of how air pollution impacts their communities and helping them make better-informed decisions that protect their health.
 

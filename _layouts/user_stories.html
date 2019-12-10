@@ -88,7 +88,8 @@ layout: default
 <section id="user-stories" class="posts-index posts-index--with-arc js--posts-index">
   <div class="panel u--margin-top-default">
     <ul class="post-list post-list--grid-view">
-      {% for story in site.user_stories %}
+      {% assign stories = site.user_stories | sort: "order" %}
+      {% for story in stories %}
         {% include post-snippet.html post = story %}
       {% endfor %}
     </ul>

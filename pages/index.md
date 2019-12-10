@@ -28,7 +28,7 @@ section: home
 
 <section class="slider slider--user-stories">
   <div class="js-slider">
-    {% assign stories = site.user_stories | where: 'featured', true %}
+    {% assign stories = site.user_stories | where: 'featured', true | sort: "order" %}
     {% for story in stories %}
       {% unless forloop.index > 6 %}
         <div>

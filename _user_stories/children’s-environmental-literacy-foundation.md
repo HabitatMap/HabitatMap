@@ -12,6 +12,7 @@ intro: >-
   school classes in New York City and Houston to implement an interdisciplinary,
   place-based project focused on air quality monitoring.
 type: Educators
+order: 4
 ---
 In the course of the project, students assess an environmental concern in their local school community through a six-step process: Inquiry, Collection, Analysis, Collaboration, Innovation, and Action. After generating a driving question that is meaningful to them based on neighborhood air quality concerns, students develop a research plan. The AirBeam is a critical tool employed during the data collection step. For several weeks, students regularly and frequently walk their neighborhoods measuring particle pollution with the AirBeam. Some classes observed spikes near the highway, next to the smokers at a neighboring construction site, and near the rear of an idling ice cream truck.
 
