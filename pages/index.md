@@ -44,16 +44,14 @@ section: home
               <a href="/airbeam/user-stories#user-stories" class="button button--ac-on-teal">More User Stories</a>
             </div>
             {% assign image_url = story.image %}
-            <a href="/airbeam/user-stories/{{story.slug}}">
-              <img
-                src="{{ image_url | append: '?nf_resize=fit&w=1875'  }}"
-                srcset="{{ image_url | append: '?nf_resize=fit&w=576 768w' }},
-                        {{ image_url | append: '?nf_resize=fit&w=960 1280w' }},
-                        {{ image_url | append: '?nf_resize=fit&w=1080 1440w' }},
-                        {{ image_url | append: '?nf_resize=fit&w=1875 2500w' }}"
-                class="slide__photo"
-              />
-            </a>
+            <img
+              src="{{ image_url | append: '?nf_resize=fit&w=1875'  }}"
+              srcset="{{ image_url | append: '?nf_resize=fit&w=576 768w' }},
+                      {{ image_url | append: '?nf_resize=fit&w=960 1280w' }},
+                      {{ image_url | append: '?nf_resize=fit&w=1080 1440w' }},
+                      {{ image_url | append: '?nf_resize=fit&w=1875 2500w' }}"
+              class="slide__photo"
+            />
           </div>
         </div>
       {% endunless %}
