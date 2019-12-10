@@ -3,7 +3,8 @@ document.addEventListener("DOMContentLoaded", function() {
     tns({
       container: element,
       autoHeight: true,
-      speed: 400
+      speed: 400,
+      autoplay: true
     });
   });
 });
