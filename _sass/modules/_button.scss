@@ -35,10 +35,6 @@ $ac-brand-transparent: transparentize($ac-brand, 0.4);
   }
 }
 
-.button--ac-on-teal {
-  @include button-color($white, $white, $teal, $white);
-}
-
 .button--ac-on-light-teal {
   @include button-color($ac-brand, $ac-brand, $teal-very-light, $ac-brand);
 }

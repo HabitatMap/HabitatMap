@@ -38,7 +38,7 @@ section: home
               <a href="/airbeam/user-stories/{{story.slug}}">
                 <h3 class="heading heading--medium">{{ story.title }}</h3>
                 <p class="p--body">
-                  {{ story.intro }}
+                  {{ story.intro | strip_html }}
                 </p>
               </a>
               <a href="/airbeam/user-stories#user-stories" class="button button--ac-on-teal">More User Stories</a>
