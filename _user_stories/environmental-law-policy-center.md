@@ -7,7 +7,7 @@ intro: >-
   Chicago residents are hospitalized for asthma at twice the national average. 
   Making matters worse, the rate of asthma hospitalizations is even higher in
   many of Chicago’s predominately working-class African-American and Latinx
-  neighborhoods.  To address the disparate exposure to air pollution faced by
+  neighborhoods. To address the disparate exposure to air pollution faced by
   Chicago’s working-class communities of color, the <a
   href="http://elpc.org/">Environmental Law &amp; Policy Center</a> (ELPC)
   created a monitoring program called <a
