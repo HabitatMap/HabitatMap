@@ -5,7 +5,7 @@ featured: true
 image: /images/uploads/cs-hewitt-datacollection.jpg
 intro: >-
   The <a href="https://www.celfeducation.org/">Children’s Environmental Literacy
-  Foundation (CELF)</a> is a non-profit organization dedicated to integrating
+  Foundation</a> (CELF) is a non-profit organization dedicated to integrating
   sustainability into K-12 curriculum. As part of the <a
   href="https://www.celfeducation.org/celf-citizen-science-inquiry-to-action"><em>Citizen
   Science: Inquiry to Action</em></a> program, CELF educators work with middle
