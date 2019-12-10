@@ -241,6 +241,19 @@ collections:
                   searchFields: [name],
                   valueField: name,
                 }
+      - file: "_data/press.yml"
+        label: Press
+        name: press
+        fields:
+          - name: press_articles
+            label: Press articles
+            label_singular: Press article
+            widget: list
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: link, name: link, widget: string }
+              - { label: date, name: date, widget: datetime }
+              - { label: publication, name: publication, widget: string }
 
   - name: faq_categories
     label: FAQ categories
