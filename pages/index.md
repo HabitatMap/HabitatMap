@@ -41,7 +41,7 @@ section: home
                   {{ story.intro }}
                 </p>
               </a>
-              <a href="/airbeam/user-stories" class="button button--ac-on-teal">More User Stories</a>
+              <a href="/airbeam/user-stories#user-stories" class="button button--ac-on-teal">More User Stories</a>
             </div>
             {% assign image_url = story.image %}
             <a href="/airbeam/user-stories/{{story.slug}}">
