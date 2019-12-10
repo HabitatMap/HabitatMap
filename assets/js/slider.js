@@ -5,7 +5,8 @@ document.addEventListener("DOMContentLoaded", function() {
       autoHeight: true,
       speed: 400,
       autoplay: true,
-      autoplayButtonOutput: false
+      autoplayButtonOutput: false,
+      autoplayTimeout: 8000
     });
   });
 });
