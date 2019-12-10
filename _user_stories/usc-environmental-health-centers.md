@@ -11,6 +11,7 @@ intro: >-
   air monitoring programs that engage community members around air quality
   issues where they live, work, and play. 
 type: Researchers
+order: 1
 ---
 USCEHC collaborates with community-based organizations working in low-income communities of color that face disproportionate environmental burdens from polluting facilities and infrastructures. The aim of USCEHC’s participatory air monitoring programs is to increase the capacity of communities to understand air quality, democratize access to data, and advance environmental justice.
 
