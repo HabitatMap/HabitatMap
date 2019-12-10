@@ -134,6 +134,14 @@ collections:
               "Activists & Non-profits",
             ],
         }
+      - {
+          label: Order,
+          name: order,
+          widget: number,
+          valueType: int,
+          min: 1,
+          hint: "Specifies the order in which user stories will be displayed, both on the user stories index page and the slider.",
+        }
 
   - name: testimonials
     label: Testimonials slider
