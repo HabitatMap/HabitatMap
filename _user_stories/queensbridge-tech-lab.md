@@ -2,7 +2,7 @@
 layout: user_story
 title: Queensbridge Tech Lab
 featured: true
-image: /images/uploads/clipboard.png
+image: /images/uploads/airbeam.jpg
 intro: >-
   The <a
   href="https://www.queenslibrary.org/programs-activities/technology-training/queensbridge-tech-lab">Queensbridge
