@@ -104,3 +104,19 @@ press_articles:
     title: >-
       AirCasting, le projet de ZeroHero et DHL pour mesurer la qualité de l’air
       à Antananarivo
+  - date: '2017-05-11'
+    link: Neighborhoods subjected to deadly air quality can finally fight back
+    publication: Popular Science
+    title: Air Pollution Tracking Goes Public
+  - date: '2019-12-11'
+    link: 'http://www.voltaicsystems.com/blog/water-quality-monitoring-newtown-creek/'
+    publication: Voltaic Systems
+    title: Water Quality Monitoring in Newtown Creek
+  - date: '2017-04-27'
+    link: 'https://www.youtube.com/watch?v=qSTE6EpucOc&feature=youtu.be'
+    publication: Unmask My City
+    title: Unmask My City - Warsaw
+  - date: '2017-03-31'
+    link: 'https://www.youtube.com/watch?v=y_0KXUKO6rc&feature=youtu.be&t=11m59s'
+    publication: 'The Crowd & The Cloud '
+    title: 'Episode 3: Viral vs. Virus'
