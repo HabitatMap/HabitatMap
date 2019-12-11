@@ -1,7 +1,7 @@
 backend:
   name: git-gateway
   # name: test-repo
-  branch: press-page
+  branch: master
 
 media_folder: images/uploads
 
