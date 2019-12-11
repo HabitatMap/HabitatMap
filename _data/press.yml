@@ -1,8 +1,4 @@
 press_articles:
-  - date: '2013-06-03'
-    link: 'https://well.blogs.nytimes.com/2013/06/03/microsampling-air-pollution/'
-    publication: The New York Times
-    title: Microsampling Air Pollution
   - date: '2019-10-16'
     link: >-
       https://ggwash.org/view/74288/take-a-walk-on-the-tysons-side-walkability-virginia-research
@@ -273,3 +269,35 @@ press_articles:
       https://www.pastemagazine.com/articles/2014/10/airbeam-is-a-device-that-shows-how-much-pollution.html
     publication: Paste
     title: AirBeam is a Device That Shows How Much Pollution You Are Breathing
+  - date: '2014-10-27'
+    link: 'https://makezine.com/2014/10/27/mobile-air-monitoring-with-aircasting/'
+    publication: Makezine
+    title: Mobile Air Monitoring with AirCasting
+  - date: '2014-08-12'
+    link: >-
+      https://nextcity.org/daily/entry/tools-measure-air-pollution-airbeam-aircaster-epa
+    publication: Next City
+    title: >-
+      EPA Scientist: Tools That Let Everyone Measure Air Pollution Are a
+      “Game-Changer”
+  - date: '2014-03-24'
+    link: >-
+      https://faircompanies.com/videos/monitor-your-air-quality-using-an-arduino-android-diy-sensor/
+    publication: FairCompanies
+    title: Monitor your air quality using an Arduino-Android DIY sensor
+  - date: '2014-02-07'
+    link: 'https://technical.ly/brooklyn/2014/02/07/habitatmap-airbeam/'
+    publication: Technically BK
+    title: >-
+      HabitatMap plans air sampling Brooklyn this spring, including noise
+      pollution
+  - date: '2013-07-03'
+    link: >-
+      https://www.treehugger.com/gadgets/aircasting-records-maps-and-shares-health-and-environmental-data-smartphone.html
+    publication: Treehugger
+    title: AirCasting crowdsources health and environmental data via smartphone
+  - date: '2013-06-03'
+    link: >-
+      https://well.blogs.nytimes.com/2013/06/03/microsampling-air-pollution/?_php=true&_type=blogs&_r=0
+    publication: The New York Times
+    title: Microsampling Air Pollution
