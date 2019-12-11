@@ -21,11 +21,11 @@ tag:
 <p>In 2012, the <a href="http://www.newtowncreekalliance.org/community-health/aircasting" target="_blank">Newtown Creek Alliance</a>, in partnership with HabitatMap, received an <a href="http://www.dec.ny.gov/public/31403.html" target="_blank">Environmental Justice Community Impact Grant</a> from the New York State Dept. of Environmental Conservation to develop and teach a course on air quality monitoring at <a href="http://www.queensvoc.org/" target="_blank">Queens Vocational &amp; Technical High School</a>, located in Sunnyside, Queens, New York City.</p>
 <p>The 26 QVT students who participated in the AirCasting program during the spring of 2013:</p>
 <ul>
-<li>• Built their own air monitors with instruction from a mechanical engineering professor from the New York City College of Technology and an electrical engineering professor from Manhattan College;</li>
-<li>• Toured the neighborhood around their school with a historian from the Newtown Creek Alliance;</li>
-<li>• Learned the basics of air quality from the Senior Vice President of Sonoma Technology;</li>
-<li>• Developed and executed their own air quality monitoring plans using the AirCasting platform; and</li>
-<li>• Presented their work and findings to their peers, members of the Newtown Creek Alliance, and staff from the New York State Dept. of Environmental Conservation.</li>
+<li>Built their own air monitors with instruction from a mechanical engineering professor from the New York City College of Technology and an electrical engineering professor from Manhattan College;</li>
+<li>Toured the neighborhood around their school with a historian from the Newtown Creek Alliance;</li>
+<li>Learned the basics of air quality from the Senior Vice President of Sonoma Technology;</li>
+<li>Developed and executed their own air quality monitoring plans using the AirCasting platform; and</li>
+<li>Presented their work and findings to their peers, members of the Newtown Creek Alliance, and staff from the New York State Dept. of Environmental Conservation.</li>
 </ul>
 <p>To learn more about the program watch the above video and <a href="http://www.newtowncreekalliance.org/community-health/aircasting" target="_blank">visit the Newtown Creek Alliance website</a>.</p>
 <p><span style="text-decoration: underline;">Fashion Your Environment</span></p>
