@@ -8,15 +8,15 @@ press_articles:
     link: 'https://www.iotplaybook.com/article/nonprofits-profit-internet-things'
     publication: IoT Playbook
     title: Nonprofits Profit from the Internet of Things
-  - date: '2019-03-01'
-    link: 'https://vimeo.com/search?q=bral.brussels%2Fcleanair'
-    publication: ZIN TV
-    title: BRAL Brussels Clean Air - AirCasters
   - date: '2019-03-15'
     link: >-
       https://www.medpagetoday.com/publichealthpolicy/environmentalhealth/78582?vpass=1
     publication: Medpage  Today
     title: ' Foreign Travel May Be Hazardous to Lungs'
+  - date: '2019-03-01'
+    link: 'https://vimeo.com/search?q=bral.brussels%2Fcleanair'
+    publication: ZIN TV
+    title: BRAL Brussels Clean Air - AirCasters
   - date: '2019-03-12'
     link: >-
       https://www.eldiario.es/madrid/viajeros-Metro-Madrid-respiran-contaminacion_0_876662709.html
