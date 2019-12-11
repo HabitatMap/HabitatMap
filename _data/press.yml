@@ -195,10 +195,6 @@ press_articles:
       https://www.newscientist.com/article/mg22830462-400-google-cars-used-to-sniff-city-air-and-make-pollution-maps/
     publication: New Scientist
     title: Google cars used to sniff city air and make pollution maps
-  - date: '2015-04-27'
-    link: 'https://www.youtube.com/watch?v=-7AHYJcba8E&feature=youtu.be&t=18m4s'
-    publication: CUNY TV
-    title: 'Independent Sources: 2015 Earth Day Special'
   - date: '2015-08-13'
     link: >-
       https://www.citylab.com/environment/2015/08/how-portable-air-sensors-are-changing-pollution-detection/401147/
@@ -209,6 +205,10 @@ press_articles:
       https://www.greenbiz.com/article/how-google-startups-aim-help-us-breathe-better
     publication: GreenBiz
     title: 'How Google, startups aim to help us breathe better'
+  - date: '2015-04-27'
+    link: 'https://www.youtube.com/watch?v=-7AHYJcba8E&feature=youtu.be&t=18m4s'
+    publication: CUNY TV
+    title: 'Independent Sources: 2015 Earth Day Special'
   - date: '2014-11-22'
     link: >-
       https://geoawesomeness.com/habitatmap-aircasting-internet-of-things-maps-environmental-monitoring/
