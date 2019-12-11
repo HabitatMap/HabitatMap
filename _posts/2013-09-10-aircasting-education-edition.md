@@ -1,17 +1,12 @@
 ---
 layout: post
 title: 'AirCasting: Education Edition'
-date: 2013-09-10 14:59:01.000000000 +02:00
-type: post
-parent_id: '0'
-published: true
-password: ''
-status: publish
-categories: []
-tags: []
-meta:
-  _edit_last: '1'
-permalink: "/aircasting-education-edition/"
+date: 2013-09-10T12:59:01.000Z
+featured: false
+image: /images/uploads/1000AirBeamsWorldwide.png
+category: Education
+tag:
+  - community-based-organization
 ---
 <p>In the spring we had lots of fun teaching students how to make AirCasting compatible air monitors and luminescent accessories.  For details on these educational programs, along with some really great videos, read on.</p>
 <p><span style="text-decoration: underline;">Making Air Monitors with High School Seniors</span></p>
