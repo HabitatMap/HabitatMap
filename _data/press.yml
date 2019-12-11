@@ -120,3 +120,37 @@ press_articles:
     link: 'https://www.youtube.com/watch?v=y_0KXUKO6rc&feature=youtu.be&t=11m59s'
     publication: 'The Crowd & The Cloud '
     title: 'Episode 3: Viral vs. Virus'
+  - date: '2017-03-14'
+    link: >-
+      https://blog.adafruit.com/2017/03/14/how-to-fight-for-good-air-quality-bring-in-the-diy-monitors-citizenscience/
+    publication: Adafruit
+    title: How to Fight for Good Air Quality? Bring in the DIY Monitors.
+  - date: '2017-02-17'
+    link: >-
+      https://www.moustique.be/17841/video-voici-comment-tester-vous-meme-la-qualite-de-air?utm_campaign=seeding&utm_medium=Social&utm_source=Twitter
+    publication: Moustique
+    title: Voici comment tester vous-même la qualité de l'air
+  - date: '2017-02-23'
+    link: 'https://www.youtube.com/watch?v=eyyyaKB17Oc&feature=youtu.be'
+    publication: KlanKosova
+    title: Ora e Pasdites - Ndotja e ajrit në Prishtinë
+  - date: '2016-11-29'
+    link: >-
+      https://www.youtube.com/watch?v=apIFa2UbM_g&feature=youtu.be&list=PLzsdEyVNFvgwy71FPR-NLtBeor2PFmBKD
+    publication: 'The National Academies of Sciences, Engineering & Medicine'
+    title: 'Case Study: AirCasting'
+  - date: '2016-11-18'
+    link: >-
+      https://www.valarm.net/blog/airbeam-aircasting-air-quality-sensors-with-valarm-tools-cloud/
+    publication: Valarm
+    title: >-
+      How do you use AirBeam AirCasting Air Quality Sensors with Valarm Tools
+      Cloud / Tools.Valarm.net?
+  - date: '2016-11-15'
+    link: 'https://www.charlottefive.com/citizens-measuring-air-quality/'
+    publication: Charlotte Five
+    title: Why are citizens measuring air quality in Charlotte?
+  - date: '2016-09-28'
+    link: 'https://gothamist.com/2016/09/28/garbage_truck_pollution_press_confe.php'
+    publication: The Gothamist
+    title: 'Garbage Trucks Are Choking South Bronx and North Brooklyn: Study'
