@@ -1,26 +1,22 @@
 ---
 layout: post
 title: Air Quality Scientist Goes AirCasting (Part 1)
-date: 2013-11-06 09:40:33.000000000 +01:00
-type: post
-parent_id: '0'
-published: true
-password: ''
-status: publish
-categories: []
-tags: []
-meta:
-  _edit_last: '1'
+date: 2013-11-06T08:40:33.000Z
+featured: false
 author: Matt Harper
-permalink: "/air-quality-scientist-goes-aircasting-part-1/"
+image: /images/uploads/CarNeph.jpg
+category: Sensors & Instruments
+tag:
+  - instruments
+  - open-source
 ---
 <p>I've worked at the <a href="http://www.pscleanair.org/" target="_blank">Puget Sound Clean Air Agency (PSCAA)</a> in Seattle for a little over ten years with a team that has monitored air quality here since 1967. We focus on measuring and reporting fine particle pollution (PM 2.5) because of its health risks. Our agency is passionate about communicating air quality information to the public using new technologies.</p>
 <p>Our monitoring team collects high quality, quantified PM 2.5 measurements. To do this correctly, we stabilize our measurement system for a long time, collect enough air to get a measurable sample, and always have access to power &amp; data-logging capabilities. In addition, compliance with EPA standards includes complex methods that have many servicing and maintenance requirements that improve the quality of the data we collect. Taking accurate measurements, meeting all the EPA requirements, and responding to cost constraints limits how many air quality monitors we can deploy and usually means anchoring the measurement equipment to a stationary location. The truth is, you can’t have high quality monitors everywhere, all the time, so we rely on sampling in locations that are representative of larger areas and models to generate air quality forecasts for the public.</p>
 <p>Less than a year ago I came across <a href="http://aircasting.org/" target="_blank">AirCasting</a>, a platform capable of ingesting geographically tagged sensor data of any kind and mapping and graphing it in real time on Android devices. I was impressed and thought AirCasting might be useful to our agency - perhaps by enabling us to monitor air quality in a greater number of locations while appropriately managing the trade-off in accuracy this would entail. I talked to my colleagues at PSCAA, and so far, I’ve developed this nephelometer application . . .</p>
 <p>I pair a well-established PM2.5 surrogate sensing technology, the nephelometer or “neph”, with the logging and communications function of a modified <a href="http://www.takingspace.org/meet-the-aircasting-air-monitor/" target="_blank">Aircasting Air Monitor</a>. With the assistance of some of my team members, I took a neph and converted it into two types of mobile monitors: the Car-Neph and the Backpack-Neph. I've been testing each of these rigs to see how well they work in the field and how accurate they are.</p>
-<p>[caption id="" align="alignnone" width="600" caption="Inside and outside the Car Neph."]<img style="text-decoration: underline;" title="Inside and outside the Car Neph" src="{{ site.baseurl }}/assets/CarNeph.jpg" alt="Inside the Shinyei PPD42NS" width="600" height="434" />[/caption]</p>
+
 <p>I <a href="http://aircasting.org/map#/map_sessions?data={'location':{'address':','distance':'10','limit':false},'gridResolution':25,'tags':','usernames':'harpernavy1@gmail,%20','time':{'timeFrom':300,'timeTo':1739,'dayFrom':0,'dayTo':365,'yearFrom':2011,'yearTo':2013},'heat':{'highest':500,'high':226,'mid':144,'low':50,'lowest':0},'sensorId':'}&amp;amp;sessionsIds=[2708]&amp;amp;tmp={'tmpSensorId':'Light%20Scatter-M903'}&amp;amp;map={'zoom':11,'lat':47.71184332455929,'lng':-122.27264283669535,'mapType':'terrain'}" target="_blank">AirCasted the Car-Neph from Everett to Seattle</a> on a morning when the air quality was ranked “Moderate” based on the EPA's system for communicating air quality information to the public. I wanted to compare my Car-Neph measurements to the permanent sites located at Lynnwood, Lake Forest Park, and Olive Street. In the below image, the circles are the fixed monitors and the squares are some of the measurements I took along the route.</p>
-<p>[caption id="" align="alignnone" width="600" caption="Comparing the measurements from the Car Neph (squares) with the fixed monitoring sites (circles)."]<a href="http://aircasting.org/map#/map_sessions?data={'location':{'address':','distance':'10','limit':false},'gridResolution':25,'tags':','usernames':'harpernavy1@gmail,%20','time':{'timeFrom':300,'timeTo':1739,'dayFrom':0,'dayTo':365,'yearFrom':2011,'yearTo':2013},'heat':{'highest':500,'high':226,'mid':144,'low':50,'lowest':0},'sensorId':'}&amp;sessionsIds=[2708]&amp;tmp={'tmpSensorId':'Light%20Scatter-M903'}&amp;map={'zoom':11,'lat':47.71184332455929,'lng':-122.27264283669535,'mapType':'terrain'}" target="_blank"><img style="text-decoration: underline;" title="Comparing the Car Neph to fixed monitoring sites" src="{{ site.baseurl }}/assets/CarNephMap.jpg" alt="Comparing the Car Neph to fixed monitoring sites" width="600" height="619" /></a>[/caption]</p>
+<p><a href="http://aircasting.org/map#/map_sessions?data={'location':{'address':','distance':'10','limit':false},'gridResolution':25,'tags':','usernames':'harpernavy1@gmail,%20','time':{'timeFrom':300,'timeTo':1739,'dayFrom':0,'dayTo':365,'yearFrom':2011,'yearTo':2013},'heat':{'highest':500,'high':226,'mid':144,'low':50,'lowest':0},'sensorId':'}&amp;sessionsIds=[2708]&amp;tmp={'tmpSensorId':'Light%20Scatter-M903'}&amp;map={'zoom':11,'lat':47.71184332455929,'lng':-122.27264283669535,'mapType':'terrain'}" target="_blank"><img style="text-decoration: underline;" title="Comparing the Car Neph to fixed monitoring sites" src="{{ site.baseurl }}/assets/CarNephMap.jpg" alt="Comparing the Car Neph to fixed monitoring sites" width="600" height="619" /></a></p>
 <p>I know vehicles are a pollution source, so I expected measurements on the road would be slightly higher than the measurements at the permanent monitoring sites. And this is exactly what I observed when comparing the measurements. The units of measurement are inverse megameters. Since light scattering is linear with pollution, this is one way to estimate fine particulate levels. The units are not equivalent to typical PM 2.5 units (micrograms per cubic meter), but my estimates are colored by the equivalent Air Quality Index. Bottom Line: the Car-Neph is “in the ballpark” with the fixed site nephs; the results were very promising.</p>
 <p>Visit TakingSpace again next week where I'll discuss my experiences walking around downtown Seattle with the Backpack-Neph.</p>
 <p><em>Matt Harper has worked for the Puget Sound Clean Air Agency for 11 years and is currently the Air Monitoring Lead. He has a B.S. in Manufacturing Engineering from Boston University and an M.B.A. from the University of New Haven. He is also a Commander in the United States Navy Reserve, with 7 years of Active and 11 years of Reserve service as a Submarine Warfare Officer. He is interested in using sensing technology to help guide people to healthier daily behaviors.</em></p>
