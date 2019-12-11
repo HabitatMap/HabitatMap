@@ -55,6 +55,11 @@ press_articles:
       https://france3-regions.francetvinfo.fr/bretagne/ille-et-vilaine/rennes/rennes-pied-velo-eux-ils-testent-qualite-air-1218517.html
     publication: 3 Bretagne
     title: 'Rennes : à pied, à vélo ou chez eux, ils testent la qualité de l''air'
+  - date: '2017-10-24'
+    link: >-
+      https://livestream.com/newyorkacademyofsciences/GoingfortheGoals/videos/164437711
+    publication: The New York Academy of Sciences
+    title: 'Going for the Goals: New York Tech Innovates for Sustainability'
   - date: '2017-10-02'
     link: 'https://www.youtube.com/watch?v=G6PEcwuVBEk&feature=youtu.be'
     publication: 'Atlantic Re:think'
@@ -64,11 +69,6 @@ press_articles:
       https://www.atmo-auvergnerhonealpes.fr/actualite/mobicitair-les-resultats-de-lexperimentation-citoyenne
     publication: Atmo
     title: 'Mobicit''air : les résultats de l''expérimentation citoyenne!'
-  - date: '2017-10-24'
-    link: >-
-      https://livestream.com/newyorkacademyofsciences/GoingfortheGoals/videos/164437711
-    publication: The New York Academy of Sciences
-    title: 'Going for the Goals: New York Tech Innovates for Sustainability'
   - date: '2017-09-27'
     link: 'https://www.youtube.com/watch?v=iiWae9f6iJo&feature=youtu.be&t=10615'
     publication: South Coast Air Quality Management District
