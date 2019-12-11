@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'What Goes Down Must Come Up: Addressing Vapor Intrusion in New York City'
-date: 2012-11-06 21:35:03.000000000 +01:00
+date: '2012-11-06'
 type: post
 parent_id: '0'
 published: true

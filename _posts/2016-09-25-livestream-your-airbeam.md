@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Livestream Your AirBeam
-date: 2016-09-25T08:37:46.000Z
+date: '2016-09-25'
 featured: false
 image: /images/uploads/AirBeamOutdoorEnclosure.jpg
 category: Sensors & Instruments

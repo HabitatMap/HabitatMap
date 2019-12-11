@@ -1,7 +1,7 @@
 ---
 layout: post
 title: More AirCasting Air Quality Monitors
-date: 2013-06-25T16:25:10.000Z
+date: '2013-06-25'
 featured: false
 image: /images/uploads/AirGo_AirCasting.jpg
 category: Sensors & Instruments

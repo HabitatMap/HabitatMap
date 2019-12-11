@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Greenpeace Poison Gas Disaster Map!
-date: 2012-02-03 10:52:34.000000000 +01:00
+date: '2012-02-03'
 type: post
 parent_id: '0'
 published: true

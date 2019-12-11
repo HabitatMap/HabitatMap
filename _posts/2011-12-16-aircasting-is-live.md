@@ -1,7 +1,7 @@
 ---
 layout: post
 title: AirCasting is Live!
-date: 2011-12-16T16:40:37.000Z
+date: '2011-12-16'
 featured: false
 author: Michael Heimbinder
 image: /images/uploads/aircasting-splash-512-burned-glowed.jpg

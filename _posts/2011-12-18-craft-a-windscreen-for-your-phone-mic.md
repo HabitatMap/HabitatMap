@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Craft a Windscreen for Your Phone Mic
-date: 2011-12-18 23:28:46.000000000 +01:00
+date: '2011-12-18'
 type: post
 parent_id: '0'
 published: true

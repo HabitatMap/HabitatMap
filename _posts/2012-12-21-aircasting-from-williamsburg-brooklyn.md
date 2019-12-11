@@ -1,7 +1,7 @@
 ---
 layout: post
 title: AirCasting from Williamsburg, Brooklyn
-date: 2012-12-21 12:50:35.000000000 +01:00
+date: '2012-12-21'
 type: post
 parent_id: '0'
 published: true

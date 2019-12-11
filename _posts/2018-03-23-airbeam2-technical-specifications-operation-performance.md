@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'AirBeam2 Technical Specifications, Operation & Performance'
-date: 2018-03-23T10:40:28.000Z
+date: '2018-03-23'
 featured: false
 author: Michael H and Chris Chaeha Lim
 image: /images/uploads/AB2Features+Dimensions.jpg

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Air Quality Scientist Goes AirCasting (Part 2): Smokers Beware!'
-date: 2013-11-12T18:59:00.000Z
+date: '2013-11-12'
 featured: false
 author: Matt Harper
 image: /images/uploads/BackpackNeph.jpg

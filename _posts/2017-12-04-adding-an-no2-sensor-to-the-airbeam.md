@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Adding an NO2 sensor to the AirBeam
-date: 2017-12-04T14:20:58.000Z
+date: '2017-12-04'
 featured: false
 author: Remi Pincent
 image: /images/uploads/MobicitairExperimentReport.jpg

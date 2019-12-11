@@ -1,7 +1,7 @@
 ---
 layout: post
 title: AirCasting in Action
-date: 2011-12-20 18:22:29.000000000 +01:00
+date: '2011-12-20'
 type: post
 parent_id: '0'
 published: true

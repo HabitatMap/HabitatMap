@@ -1,7 +1,7 @@
 ---
 layout: post
 title: AirCasting in Action, Now with 500% More Sensors!
-date: 2012-10-10 11:29:19.000000000 +02:00
+date: '2012-10-10'
 type: post
 parent_id: '0'
 published: true

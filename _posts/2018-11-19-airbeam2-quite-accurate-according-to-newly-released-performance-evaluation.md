@@ -1,7 +1,7 @@
 ---
 layout: post
 title: AirBeam2 “Quite Accurate” According to Newly Released Performance Evaluation
-date: 2018-11-19T12:52:04.000Z
+date: '2018-11-19'
 featured: true
 author: Michael Heimbinder
 image: /images/uploads/airbeam2vsgrimm_exacto.jpg

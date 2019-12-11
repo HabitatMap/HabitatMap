@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Set Your Mic Max to Record Accurate Sound Level Readings
-date: 2011-12-18 12:12:49.000000000 +01:00
+date: '2011-12-18'
 type: post
 parent_id: '0'
 published: true

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: AirCasting App Privacy Policy
-date: 2011-12-19 12:00:32.000000000 +01:00
+date: '2011-12-19'
 type: post
 parent_id: '0'
 published: true

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: EPA Releases Greenhouse Gas Map
-date: 2012-01-12 23:34:21.000000000 +01:00
+date: '2012-01-12'
 type: post
 parent_id: '0'
 published: true

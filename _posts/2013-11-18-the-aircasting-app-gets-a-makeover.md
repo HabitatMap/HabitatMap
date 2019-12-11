@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The AirCasting App Gets a Makeover
-date: 2013-11-18T17:56:15.000Z
+date: '2013-11-18'
 featured: false
 image: /images/uploads/AirCastingScreenshots.png
 category: Open Source Software

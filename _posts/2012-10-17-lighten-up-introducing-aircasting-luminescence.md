@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Lighten Up! Introducing AirCasting Luminescence
-date: 2012-10-17 10:05:52.000000000 +02:00
+date: '2012-10-17'
 type: post
 parent_id: '0'
 published: true
