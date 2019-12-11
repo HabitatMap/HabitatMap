@@ -50,11 +50,6 @@ press_articles:
     title: >-
       High levels of smoke in the center of Donostia-San Sebastián from Urumea
       fireworks
-  - date: '2017-03-21'
-    link: >-
-      https://france3-regions.francetvinfo.fr/bretagne/ille-et-vilaine/rennes/rennes-pied-velo-eux-ils-testent-qualite-air-1218517.html
-    publication: 3 Bretagne
-    title: 'Rennes : à pied, à vélo ou chez eux, ils testent la qualité de l''air'
   - date: '2017-10-24'
     link: >-
       https://livestream.com/newyorkacademyofsciences/GoingfortheGoals/videos/164437711
@@ -116,6 +111,11 @@ press_articles:
     link: 'https://www.youtube.com/watch?v=y_0KXUKO6rc&feature=youtu.be&t=11m59s'
     publication: 'The Crowd & The Cloud '
     title: 'Episode 3: Viral vs. Virus'
+  - date: '2017-03-21'
+    link: >-
+      https://france3-regions.francetvinfo.fr/bretagne/ille-et-vilaine/rennes/rennes-pied-velo-eux-ils-testent-qualite-air-1218517.html
+    publication: 3 Bretagne
+    title: 'Rennes : à pied, à vélo ou chez eux, ils testent la qualité de l''air'
   - date: '2017-03-14'
     link: >-
       https://blog.adafruit.com/2017/03/14/how-to-fight-for-good-air-quality-bring-in-the-diy-monitors-citizenscience/
