@@ -213,3 +213,41 @@ press_articles:
       https://www.greenbiz.com/article/how-google-startups-aim-help-us-breathe-better
     publication: GreenBiz
     title: 'How Google, startups aim to help us breathe better'
+  - date: '2014-11-22'
+    link: >-
+      https://geoawesomeness.com/habitatmap-aircasting-internet-of-things-maps-environmental-monitoring/
+    publication: GeoAwesomeness
+    title: >-
+      HabitatMap & AirCasting: Internet of Things, Maps & Environmental
+      Monitoring
+  - date: '2015-06-22'
+    link: >-
+      https://espatiallynewyork.com/2015/06/22/the-blue-highways-of-gis-brooklyn-new-york/
+    publication: eSpatially
+    title: 'The Blue Highways of GIS: Brooklyn, New York'
+  - date: '2015-02-20'
+    link: >-
+      https://edmontonjournal.com/news/local-news/want-to-investigate-street-level-air-pollution
+    publication: Edmonton Journal
+    title: Want to investigate street-level air pollution?
+  - date: '2015-02-20'
+    link: >-
+      https://blog.nature.org/science/2015/01/20/citizen-science-aircasting-air-pollution-quality/
+    publication: Cool Green Science
+    title: 'Citizen Science Tuesday: AirCasting'
+  - date: '2014-11-18'
+    link: 'https://www.wired.com/2014/11/goofy-wearable-tracks-air-quality-around/'
+    publication: Wired
+    title: A Goofy Wearable That Tracks the Air Quality Around You
+  - date: '2014-11-18'
+    link: >-
+      https://www.brooklynpaper.com/stories/37/47/dtg-human-air-quality-monitors-2014-11-21-bk_37_47.html
+    publication: Brooklyn Paper
+    title: 'Wear pollution: G’point activist pushing air-monitor accessories'
+  - date: '2014-11-11'
+    link: >-
+      https://www.fastcompany.com/3037631/become-part-of-a-giant-sensing-network-with-this-handheld-air-quality-moni#1
+    publication: Fast Company
+    title: >-
+      Become Part Of A Giant Sensing Network With This Handheld Air-Quality
+      Monitor
