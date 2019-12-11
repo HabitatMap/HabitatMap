@@ -1,7 +1,7 @@
 ---
 layout: post
 title: AirCasting Goes West Coast for Urban Prototyping
-date: 2012-10-26 15:53:00.000000000 +02:00
+date: '2012-10-26'
 type: post
 parent_id: '0'
 published: true

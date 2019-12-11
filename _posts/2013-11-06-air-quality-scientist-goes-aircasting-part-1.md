@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Air Quality Scientist Goes AirCasting (Part 1)
-date: 2013-11-06T08:40:33.000Z
+date: '2013-11-06'
 featured: false
 author: Matt Harper
 image: /images/uploads/CarNeph.jpg

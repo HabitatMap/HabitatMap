@@ -1,7 +1,7 @@
 ---
 layout: post
 title: '1,000 AirBeams Worldwide'
-date: 2016-09-14T11:18:17.000Z
+date: '2016-09-14'
 featured: false
 image: /images/uploads/1000AirBeamsWorldwide.png
 category: Open Source Software

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Now Streaming Data from the Zephyr BioHarness 3
-date: 2013-03-07 14:15:44.000000000 +01:00
+date: '2013-03-07'
 type: post
 parent_id: '0'
 published: true

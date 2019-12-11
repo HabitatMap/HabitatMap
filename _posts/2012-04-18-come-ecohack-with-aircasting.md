@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Come EcoHack with AirCasting!
-date: 2012-04-18 18:31:45.000000000 +02:00
+date: '2012-04-18'
 type: post
 parent_id: '0'
 published: true

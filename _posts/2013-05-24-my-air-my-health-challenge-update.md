@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'My Air, My Health Challenge Update'
-date: 2013-05-24T09:28:59.000Z
+date: '2013-05-24'
 featured: false
 image: /images/uploads/MyAirMyHealthChallenge.jpg
 category: Health

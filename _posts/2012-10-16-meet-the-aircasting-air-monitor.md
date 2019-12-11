@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Meet the AirCasting Air Monitor
-date: 2012-10-16 11:25:34.000000000 +02:00
+date: '2012-10-16'
 type: post
 parent_id: '0'
 published: true

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Evaluating Low-Cost Gas Sensors
-date: 2013-10-16T18:12:11.000Z
+date: '2013-10-16'
 featured: false
 image: /images/uploads/LabSetUp.jpg
 category: Sensors & Instruments

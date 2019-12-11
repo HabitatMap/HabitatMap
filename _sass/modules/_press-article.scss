@@ -1,0 +1,13 @@
+.press-article {
+  margin-bottom: $u-space-default;
+  max-width: 700px;
+  padding-top: $u-space-small;
+}
+
+.press-article__link {
+  color: $gray-medium;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

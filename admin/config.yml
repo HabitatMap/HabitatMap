@@ -15,7 +15,7 @@ collections:
     fields: # The fields for each document, usually in front matter
       - { label: Layout, name: layout, widget: hidden, default: post }
       - { label: Title, name: title, widget: string }
-      - { label: Publish Date, name: date, widget: datetime }
+      - { label: Publish Date, name: date, widget: datetime, timeFormat: false, dateFormat: "YYYY-MM-DD", "format": "YYYY-MM-DD" }
       - {
           label: Featured?,
           name: featured,
@@ -241,6 +241,19 @@ collections:
                   searchFields: [name],
                   valueField: name,
                 }
+      - file: "_data/press.yml"
+        label: Press
+        name: press
+        fields:
+          - name: press_articles
+            label: Press articles
+            label_singular: Press article
+            widget: list
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: link, name: link, widget: string }
+              - { label: date, name: date, widget: datetime, timeFormat: false, dateFormat: "YYYY-MM-DD", "format": "YYYY-MM-DD" }
+              - { label: publication, name: publication, widget: string }
 
   - name: faq_categories
     label: FAQ categories

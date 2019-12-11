@@ -1,7 +1,7 @@
 ---
 layout: post
 title: AirCasting Gets a New & Improved Maps Interface
-date: 2012-02-10 22:46:53.000000000 +01:00
+date: '2012-02-10'
 type: post
 parent_id: '0'
 published: true

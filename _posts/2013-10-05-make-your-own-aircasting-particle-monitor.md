@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Make Your Own AirCasting Particle Monitor
-date: 2013-10-05T13:12:27.000Z
+date: '2013-10-05'
 featured: false
 image: /images/uploads/ShinyeiPPD42NS_Insides_Labeled_600.jpg
 category: Sensors & Instruments

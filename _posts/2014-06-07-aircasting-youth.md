@@ -1,7 +1,7 @@
 ---
 layout: post
 title: AirCasting Youth
-date: 2014-06-07T12:18:38.000Z
+date: '2014-06-07'
 featured: false
 image: /images/uploads/AirCastingYouthMarina.jpg
 category: Education

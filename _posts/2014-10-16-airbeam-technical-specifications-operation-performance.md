@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'AirBeam Technical Specifications, Operation & Performance'
-date: 2014-10-16T11:13:29.000Z
+date: '2014-10-16'
 featured: false
 author: Michael H and Alex Besser
 image: /images/uploads/AirBeamDiagram.jpg

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Reprogram Your AirBeam
-date: 2016-02-04T13:28:24.000Z
+date: '2016-02-04'
 featured: false
 image: /images/uploads/arduinowindow.png
 category: Open Source Software

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Apps & Sensors for Air Pollution
-date: 2012-04-09 22:00:12.000000000 +02:00
+date: '2012-04-09'
 type: post
 parent_id: '0'
 published: true

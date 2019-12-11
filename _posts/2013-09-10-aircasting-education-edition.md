@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'AirCasting: Education Edition'
-date: 2013-09-10T12:59:01.000Z
+date: '2013-09-10'
 featured: false
 image: /images/uploads/aircastingqvt_finalprezenclosure.jpg
 category: Education

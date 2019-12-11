@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Leveraging AirBeam Data to Inform Policy Decisions
-date: 2016-11-03T14:35:33.000Z
+date: '2016-11-03'
 featured: false
 image: /images/uploads/DontWasteLAGraphic600.jpg
 category: Health

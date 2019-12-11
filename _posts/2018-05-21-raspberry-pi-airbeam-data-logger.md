@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Raspberry Pi AirBeam Data Logger
-date: 2018-05-21T10:47:22.000Z
+date: '2018-05-21'
 featured: false
 author: Sam Groveman and Jin Y Shin
 image: /images/uploads/raspberrypiairbeam2datalogger_exacto.jpg

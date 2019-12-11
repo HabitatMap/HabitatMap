@@ -1,7 +1,7 @@
 ---
 layout: post
 title: My Air, My Health Challenge
-date: 2012-12-03 12:22:49.000000000 +01:00
+date: '2012-12-03'
 type: post
 parent_id: '0'
 published: true

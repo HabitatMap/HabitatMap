@@ -1,7 +1,7 @@
 ---
 layout: post
 title: AirCasting & HabitatMap in the News!
-date: 2013-06-11T10:38:28.000Z
+date: '2013-06-11'
 featured: false
 image: /images/uploads/aircastingairmonitors.png
 category: Health

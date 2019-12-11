@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Go With the Flow: Investigate Your Water System!'
-date: 2013-04-29T08:30:53.000Z
+date: '2013-04-29'
 featured: false
 image: /images/uploads/ToolkitCover+Icons.png
 category: Education

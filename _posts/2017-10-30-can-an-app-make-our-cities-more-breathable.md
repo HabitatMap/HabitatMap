@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Can an App Make Our Cities More Breathable?
-date: 2017-10-30T10:07:53.000Z
+date: '2017-10-30'
 featured: false
 author: ' Atlantic Re:think'
 image: /images/uploads/elpuente-airbeam.png

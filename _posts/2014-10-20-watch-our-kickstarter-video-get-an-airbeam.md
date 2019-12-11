@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Watch Our Kickstarter Video & Get An AirBeam
-date: 2014-10-20T09:21:59.000Z
+date: '2014-10-20'
 featured: false
 image: /images/uploads/TheAirBeam.jpg
 category: Sensors & Instruments

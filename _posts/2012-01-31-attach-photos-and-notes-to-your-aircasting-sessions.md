@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Attach Notes & Photos to Your AirCasting Sessions
-date: 2012-01-31 21:59:39.000000000 +01:00
+date: '2012-01-31'
 type: post
 parent_id: '0'
 published: true
