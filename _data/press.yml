@@ -189,3 +189,27 @@ press_articles:
     title: >-
       Pour mieux se rendre compte de la pollution de l'air, des microcapteurs
       seront bientôt testés à Grenoble
+  - date: '2016-05-11'
+    link: >-
+      https://www.lexpress.fr/actualites/1/actualite/des-microcapteurs-pour-rendre-la-pollution-de-l-air-visible-et-concrete_1790967.html
+    publication: l’express
+    title: 'Des microcapteurs pour rendre la pollution de l''air "visible et concrète" '
+  - date: '2015-11-04'
+    link: >-
+      https://www.newscientist.com/article/mg22830462-400-google-cars-used-to-sniff-city-air-and-make-pollution-maps/
+    publication: New Scientist
+    title: Google cars used to sniff city air and make pollution maps
+  - date: '2015-04-27'
+    link: 'https://www.youtube.com/watch?v=-7AHYJcba8E&feature=youtu.be&t=18m4s'
+    publication: CUNY TV
+    title: 'Independent Sources: 2015 Earth Day Special'
+  - date: '2015-08-13'
+    link: >-
+      https://www.citylab.com/environment/2015/08/how-portable-air-sensors-are-changing-pollution-detection/401147/
+    publication: CityLab
+    title: How Portable Air Sensors Are Changing Pollution Detection
+  - date: '2015-08-03'
+    link: >-
+      https://www.greenbiz.com/article/how-google-startups-aim-help-us-breathe-better
+    publication: GreenBiz
+    title: 'How Google, startups aim to help us breathe better'
