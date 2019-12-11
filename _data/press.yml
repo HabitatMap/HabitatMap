@@ -101,9 +101,9 @@ press_articles:
       AirCasting, le projet de ZeroHero et DHL pour mesurer la qualité de l’air
       à Antananarivo
   - date: '2017-05-11'
-    link: Neighborhoods subjected to deadly air quality can finally fight back
+    link: 'https://www.popsci.com/air-pollution-tracking-goes-public/'
     publication: Popular Science
-    title: Air Pollution Tracking Goes Public
+    title: Neighborhoods subjected to deadly air quality can finally fight back
   - date: '2017-05-01'
     link: 'http://www.voltaicsystems.com/blog/water-quality-monitoring-newtown-creek/'
     publication: Voltaic Systems
