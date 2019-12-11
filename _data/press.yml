@@ -38,3 +38,53 @@ press_articles:
       https://biztechmagazine.com/article/2018/11/how-nonprofits-can-take-advantage-internet-things
     publication: BizTech
     title: How Nonprofits Can Take Advantage of the Internet of Things
+  - date: '2018-05-14'
+    link: >-
+      https://www.fastcompany.com/40569993/how-citizen-science-and-open-source-tech-can-create-change
+    publication: Fast Company
+    title: How citizen science and open-source tech can create change
+  - date: '2018-05-09'
+    link: 'https://www.youtube.com/watch?v=t1JW3HcU9bo&feature=youtu.be&t=9m59s'
+    publication: Open Source Stories
+    title: The Science of Collective Discovery
+  - date: '2018-01-12'
+    link: >-
+      http://kalapie.org/2018/01/12/high-levels-of-smoke-in-the-center-of-donostia-san-sebastian-from-urumea-fireworks_16/
+    publication: Kalapie
+    title: >-
+      High levels of smoke in the center of Donostia-San Sebastián from Urumea
+      fireworks
+  - date: '2017-03-21'
+    link: >-
+      https://france3-regions.francetvinfo.fr/bretagne/ille-et-vilaine/rennes/rennes-pied-velo-eux-ils-testent-qualite-air-1218517.html
+    publication: 3 Bretagne
+    title: 'Rennes : à pied, à vélo ou chez eux, ils testent la qualité de l''air'
+  - date: '2017-10-02'
+    link: 'https://www.youtube.com/watch?v=G6PEcwuVBEk&feature=youtu.be'
+    publication: 'Atlantic Re:think'
+    title: Can an app make our cities more breathable?
+  - date: '2017-10-01'
+    link: >-
+      https://www.atmo-auvergnerhonealpes.fr/actualite/mobicitair-les-resultats-de-lexperimentation-citoyenne
+    publication: Atmo
+    title: 'Mobicit''air : les résultats de l''expérimentation citoyenne!'
+  - date: '2017-10-24'
+    link: >-
+      https://livestream.com/newyorkacademyofsciences/GoingfortheGoals/videos/164437711
+    publication: The New York Academy of Sciences
+    title: 'Going for the Goals: New York Tech Innovates for Sustainability'
+  - date: '2017-09-27'
+    link: 'https://www.youtube.com/watch?v=iiWae9f6iJo&feature=youtu.be&t=10615'
+    publication: South Coast Air Quality Management District
+    title: Making Sense of Sensors Conference
+  - date: '2017-09-11'
+    link: >-
+      https://cleanaircarolina.org/2017/09/talking-the-talk-by-walking-walk-intern/
+    publication: Clean Air Carolina
+    title: 'Talking the Talk, by Walking the Walk'
+  - date: '2017-08-22'
+    link: 'https://www.niehs.nih.gov/news/events/pastmtg/2017/exposome/index.cfm'
+    publication: National Institute of Environmental Health Sciences
+    title: >-
+      How Citizen Science Air Quality Monitoring is Being Used to Characterize
+      Exposures and Improve Public Health
