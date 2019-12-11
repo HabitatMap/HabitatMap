@@ -1,11 +1,16 @@
 press_articles:
-  - date: 2018-11-19T12:52:04.000Z
-    link: 'http://www.example.com'
+  - date: 2013-06-04T00:00:00.000Z
+    link: 'https://well.blogs.nytimes.com/2013/06/03/microsampling-air-pollution/'
+    publication: The New York Times
+    title: Microsampling Air Pollution
+  - date: 2019-10-17T00:02:00.000Z
+    link: >-
+      https://ggwash.org/view/74288/take-a-walk-on-the-tysons-side-walkability-virginia-research
     publication: Greater Greater Washington
     title: >-
       I strolled around Tysons with a walkability researcher. Here’s what he had
       to say.
-  - date: 2019-12-10T21:26:45.917Z
-    link: 'https://futurism.com/nasa-most-powerful-rocket'
-    publication: futurism.com
-    title: ' After Years of Delays, NASA Unveils Its Most Powerful Rocket'
+  - date: 2019-07-09T00:03:00.000Z
+    link: 'https://www.iotplaybook.com/article/nonprofits-profit-internet-things'
+    publication: IoT Playbook
+    title: Nonprofits Profit from the Internet of Things
