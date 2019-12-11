@@ -7,6 +7,13 @@ image: /images/uploads/1000AirBeamsWorldwide.png
 category: Education
 tag:
   - community-based-organization
+  - environmental-justice
+  - instruments
+  - education
+  - citizen science
+  - video
+  - health
+  - open-source
 ---
 <p>In the spring we had lots of fun teaching students how to make AirCasting compatible air monitors and luminescent accessories.  For details on these educational programs, along with some really great videos, read on.</p>
 <p><span style="text-decoration: underline;">Making Air Monitors with High School Seniors</span></p>
