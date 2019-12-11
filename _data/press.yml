@@ -150,13 +150,6 @@ press_articles:
     link: 'https://gothamist.com/2016/09/28/garbage_truck_pollution_press_confe.php'
     publication: The Gothamist
     title: 'Garbage Trucks Are Choking South Bronx and North Brooklyn: Study'
-  - date: '2016-09-01'
-    link: >-
-      http://transformdonttrashnyc.org/resources/clearing-the-air-how-reforming-the-public-waste-sector-can-address-air-quality-issues-in-environmental-justice-communities/
-    publication: Transform Don't Trash NYC
-    title: >-
-      Clearing the Air: How Reforming the Public Waste Sector Can Address Air
-      Quality Issues in Environmental Justice Communities
   - date: '2016-09-27'
     link: >-
       https://www.nydailynews.com/new-york/advocates-poor-nyc-neighborhoods-choked-trash-truck-pollution-article-1.2807543?cid=bitly
@@ -164,6 +157,13 @@ press_articles:
     title: >-
       Advocates say poor Bronx, Brooklyn neighborhoods choked with garbage truck
       pollution
+  - date: '2016-09-01'
+    link: >-
+      http://transformdonttrashnyc.org/resources/clearing-the-air-how-reforming-the-public-waste-sector-can-address-air-quality-issues-in-environmental-justice-communities/
+    publication: Transform Don't Trash NYC
+    title: >-
+      Clearing the Air: How Reforming the Public Waste Sector Can Address Air
+      Quality Issues in Environmental Justice Communities
   - date: '2016-08-17'
     link: 'https://www.stalberttoday.ca/local-news/particulate-matters-1292743'
     publication: St Albert Today
