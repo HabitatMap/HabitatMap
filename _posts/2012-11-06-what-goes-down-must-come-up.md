@@ -2,23 +2,21 @@
 layout: post
 title: 'What Goes Down Must Come Up: Addressing Vapor Intrusion in New York City'
 date: '2012-11-06'
-type: post
-parent_id: '0'
-published: true
-password: ''
-status: publish
-categories: []
-tags: []
-meta:
-  _edit_last: '1'
-  _wp_old_slug: test-2
-permalink: "/what-goes-down-must-come-up/"
+featured: false
+image: /images/uploads/Vapor-Intrusion.jpg
+category: Health
+tag:
+  - health
+  - environmental-justice
 ---
 <p><a href="http://www.dec.ny.gov/regulations/2588.html" target="_blank">Vapor intrusion</a> describes the process whereby volatile chemicals migrate from contaminated soil and/or groundwater and enter buildings through cracks or perforations in slabs or basement floors. Thousands of New Yorkers unknowingly breathe hazardous air contaminated with volatile organic compounds (VOCs) on a daily basis as a result of vapor intrusion. Frequently they do so in the places they feel most safe: in their homes, at work, or while at school.</p>
-<p><img title="Vapor Intrusion" src="{{ site.baseurl }}/assets/Vapor-Intrusion.jpg" alt="Vapor Intrusion" width="600" height="171" /></p>
 <p>Based on faulty assumptions, environmental regulatory authorities long held that vapor intrusion was only an issue where the source of contaminants was shallow and the magnitude of contamination was extreme. Research and environmental investigations conducted in the last two decades have proven these assumptions wrong. As a result, in 2006 the New York State Department of Environmental Conservation began <a href="http://www.dec.ny.gov/docs/remediation_hudson_pdf/der13.pdf" target="_blank">re-evaluating remedial decisions</a> at 421 hazardous waste sites throughout the State. <a href="http://www.dec.ny.gov/regulations/51715.html" target="_blank">Fourteen of these sites</a> are located in the five boroughs, but <a href="http://www.cpeo.org/pubs/GreenpointPlumes.pdf" target="_blank">evidence indicates</a> that hundreds of yet-to-be-identified homes, schools, and businesses are potentially impacted by vapor intrusion from VOC-contaminated soil and groundwater. The scale of the problem in New York City is unique because of its high concentration, past and present, of PCE-using dry cleaners located in dense residential areas. (Data suggests that a vast majority of U.S. dry cleaners have released toxic VOCs into soil and/or groundwater.) Because New York City residents and policy-makers are largely unaware of the vapor intrusion pathway and the impact of exposure to VOCs on human health, thousands of New Yorkers continue to breathe hazardous concentrations of VOCs on a daily basis.</p>
-<p><script type="text/javascript" src="http://habitatmap.org/markers/widget.js?lat=40.72644570551446&amp;lng=-73.93661499023438&amp;zoom=10&amp;type=Terrain&amp;maps[]=198&amp;maps[]=148&amp;maps[]=199&amp;colors[]=4&amp;colors[]=0&amp;colors[]=3&amp;key=AIzaSyDrEY4dhpOpc_HxhOL2a9QnRR8Gpq-XDHQ&amp;width=600&amp;height=546&amp;nopol=0&amp;nogrp=1"></script></p>
-<p>In an effort to raise awareness of the vapor intrusion problem in New York City, we partnered with the <a href="http://www.cpeo.org/" target="_blank">Center for Public Environmental Oversight</a> to create a HabitatMap of all the properties listed in the NYS Dept. of Environmental Conservation's <a href="http://www.dec.ny.gov/cfmx/extapps/derexternal/index.cfm?pageid=3" target="_blank">Environmental Site Remediation Database</a>. The green flags mark properties where no VOCs were found to be present; the orange flags mark those properties where VOCs were found to be present; and the maroon flags mark those properties where Chlorinated VOCs (CVOCs) were found to be present. Because CVOCs tend not to degrade when contacting oxygen near the surface, they present a greater threat of vapor intrusion than other VOCs, such as compounds from petroleum spills. Note that the contaminated properties marked on the map represent only those sites that have been placed in the State Superfund Program or enrolled in the Brownfield Cleanup Program. The total number of CVOC impacted properties in New York City is substantially higher.</p>
+
+
+![](/images/uploads/vapor-intrusion-map-nyc.png)
+
+
+<p>In an effort to raise awareness of the vapor intrusion problem in New York City, we partnered with the <a href="http://www.cpeo.org/" target="_blank">Center for Public Environmental Oversight</a> to create a HabitatMap of all the properties listed in the NYS Dept. of Environmental Conservation's <a href="http://www.dec.ny.gov/cfmx/extapps/derexternal/index.cfm?pageid=3" target="_blank">Environmental Site Remediation Database</a>. The yellow flags mark properties where no VOCs were found to be present; the blue flags mark those properties where VOCs were found to be present; and the orange flags mark those properties where Chlorinated VOCs (CVOCs) were found to be present. Because CVOCs tend not to degrade when contacting oxygen near the surface, they present a greater threat of vapor intrusion than other VOCs, such as compounds from petroleum spills. Note that the contaminated properties marked on the map represent only those sites that have been placed in the State Superfund Program or enrolled in the Brownfield Cleanup Program. The total number of CVOC impacted properties in New York City is substantially higher.</p>
 <p>Human exposure to chlorinated solvents, such as TCE and PCE, have been linked to the development of autoimmune diseases, birth defects, nervous system disorders, infertility, and cancer. Fortunately, a properly installed and maintained mitigation system can eliminate the threat of hazardous vapor intrusion, protecting residents, students, and employees from the impacts of future exposures. Identical to radon systems, mitigation systems for vapor intrusion, also known as sub-slab depressurization systems, are an effective and low-cost solution for homes and buildings where vapor intrusion may be a problem.</p>
 <p><img title="TCE Health Effects" src="{{ site.baseurl }}/assets/TCE_Health_Effects.jpg" alt="TCE Health Effects" width="600" height="988" /></p>
 <p>It is unacceptable for the health of thousands of New Yorkers to be compromised by vapor intrusion when remedies are readily available and low-cost. To begin protecting New Yorkers we call upon the New York City Office of Environmental Remediation and the State Departments of Environmental Conservation and Health to institute a program to identify, map, and begin responding to VOC contamination in New York City groundwater. For starters, we urge them to:</p>
