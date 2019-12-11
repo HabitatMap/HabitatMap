@@ -13,10 +13,6 @@ press_articles:
       https://www.medpagetoday.com/publichealthpolicy/environmentalhealth/78582?vpass=1
     publication: Medpage  Today
     title: ' Foreign Travel May Be Hazardous to Lungs'
-  - date: '2019-03-01'
-    link: 'https://vimeo.com/search?q=bral.brussels%2Fcleanair'
-    publication: ZIN TV
-    title: BRAL Brussels Clean Air - AirCasters
   - date: '2019-03-12'
     link: >-
       https://www.eldiario.es/madrid/viajeros-Metro-Madrid-respiran-contaminacion_0_876662709.html
@@ -24,6 +20,10 @@ press_articles:
     title: >-
       Los viajeros del Metro de Madrid respiran hasta cinco veces más
       contaminación que en el exterior 
+  - date: '2019-03-01'
+    link: 'https://vimeo.com/search?q=bral.brussels%2Fcleanair'
+    publication: ZIN TV
+    title: BRAL Brussels Clean Air - AirCasters
   - date: '2019-02-01'
     link: >-
       https://factor.niehs.nih.gov/2019/2/community-impact/air_monitoring/index.htm
