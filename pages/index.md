@@ -75,7 +75,9 @@ section: home
 
 <section class="panel">
   <div>
-    <img src="/assets/img/habitatmap-aircasting-map-placeholder.png" alt="AirCasting Map" />
+    <a href="http://aircasting.habitatmap.org/map">
+      <img src="/assets/img/habitatmap-aircasting-map-placeholder.png" alt="AirCasting Map" />
+    </a>
   </div>
 </section>
 
