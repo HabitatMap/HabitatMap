@@ -68,7 +68,7 @@ section: home
     </p>
   </div>
   <div class="split--40 u--align-right">
-    <a href="http://aircasting.habitatmap.org/mobile_map" class="button button--ac ac-intro__button">AirCasting Maps</a>
+    <a href="http://aircasting.habitatmap.org/map" class="button button--ac ac-intro__button">AirCasting Maps</a>
     <a href="https://play.google.com/store/apps/details?id=pl.llp.aircasting&hl=en" class="button button--ac ac-intro__button">Download App</a>
   </div>
 </section>

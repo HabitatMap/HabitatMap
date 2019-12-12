@@ -55,6 +55,7 @@ section: about
     <p style="display: none" class="heading heading--small">
       Our central data visualization platform - AirCasting - and its companion palm-sized air quality measurement device - AirBeam - support schools, researchers, community-based organizations, municipalities, and regulatory agencies in obtaining valid environmental data that can be used to make decisions in real-time and craft data-informed policy.
     </p>
+
   </div>
 </section>
 
@@ -123,7 +124,7 @@ section: about
     <p class="p--body">
       AirCasting is an open-source environmental data visualization platform that consists of an Android app and online mapping system and is one of the largest open-source databases of community-collected air quality measurements ever created.
     </p>
-    <a href="http://aircasting.habitatmap.org/mobile_map" class="button button--ac button--ac-about">AirCasting Maps</a>
+    <a href="http://aircasting.habitatmap.org/map" class="button button--ac button--ac-about">AirCasting Maps</a>
   </div>
 </section>
 

@@ -72,7 +72,7 @@ section: airbeam
       </p>
     </div>
     <div class="split--40 u--align-right">
-      <a href="http://aircasting.habitatmap.org/mobile_map" class="button button--ac-on-light-teal ac-intro__button">See the Maps</a>
+      <a href="http://aircasting.habitatmap.org/map" class="button button--ac-on-light-teal ac-intro__button">See the Maps</a>
       <a href="https://play.google.com/store/apps/details?id=pl.llp.aircasting&hl=en" class="button button--ac-on-light-teal ac-intro__button">Download App</a>
     </div>
   </div>
@@ -100,7 +100,7 @@ section: airbeam
     </h2>
   </div>
 
-  {% include testimonials-slider.html testimonials = site.testimonials %}
+{% include testimonials-slider.html testimonials = site.testimonials %}
 
   <a href="/airbeam/faq" class="badge-link badge-link--light-hm">
     <span class="u--vertically-centered">Questions? Check out our FAQ</span>
