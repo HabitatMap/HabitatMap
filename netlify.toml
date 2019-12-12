@@ -1,59 +1,59 @@
 [[redirects]]
 from = "/about_us"
 to = "/about"
-status = 301
+status = 302
 force = false
 
 [[redirects]]
 from = "/markers"
 to = "http://aircasting.habitatmap.org/mobile_map"
-status = 301
+status = 302
 force = false
 
 [[redirects]]
 from = "/markers/*"
 to = "http://aircasting.habitatmap.org/mobile_map"
-status = 301
+status = 302
 force = false
 
 [[redirects]]
 from = "/forums"
 to = "/"
-status = 301
+status = 302
 force = false
 
 [[redirects]]
 from = "/forums/*"
 to = "/"
-status = 301
+status = 302
 force = false
 
 [[redirects]]
 from = "/topics/*"
 to = "/"
-status = 301
+status = 302
 force = false
 
 [[redirects]]
 from = "/profiles"
 to = "/"
-status = 301
+status = 302
 force = false
 
 [[redirects]]
 from = "/profiles/*"
 to = "/"
-status = 301
+status = 302
 force = false
 
 [[redirects]]
 from = "/signup"
 to = "/"
-status = 301
+status = 302
 force = false
 
 [[redirects]]
 from = "/sessions/forgot_password"
 to = "/"
-status = 301
+status = 302
 force = false
