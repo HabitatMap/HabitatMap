@@ -500,6 +500,13 @@ faq_items:
       How do I change the relationship between colors and measurement values on
       the heat legend?
   - answer: >-
+      You own your AirCasting data. Share it, CrowdSource it, export it, delete
+      it, API it!  It's all yours and your contributions have made AirCasting
+      one of the largest open-source databases of community-collected air
+      quality measurements ever created.
+    category: SHARING YOUR DATA & DATA PRIVACY
+    question: Who owns my AirCasting data?
+  - answer: >-
       On the AirCasting website, to share a link to a specific map view and
       sessions list, click the blue and white link button at the bottom of the
       search filters. To share a link to a single session, click the blue and
