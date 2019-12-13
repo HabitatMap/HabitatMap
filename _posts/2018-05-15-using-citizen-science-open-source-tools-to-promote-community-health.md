@@ -9,7 +9,6 @@ category: Health
 tag:
   - community-based-organization
   - open-source
-  - citizen science
   - video
 ---
 [UPROSE](https://www.uprose.org/) staffers Jason Gomez and Brian Gonzalez - seen above walking the streets of Sunset Park, Brooklyn - discuss how they used the AirBeam + AirCasting to measure air pollution in their neighborhood.  Watch the [Open Source Stories'](https://www.redhat.com/en/open-source-stories) film below to learn how they did it.
