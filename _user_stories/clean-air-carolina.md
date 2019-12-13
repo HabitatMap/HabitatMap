@@ -12,7 +12,7 @@ intro: >-
   hands-on training to Charlotte’s Historic West End residents as part of their
   <a href="https://cleanaircarolina.org/airkeepers/">AirKeepers program</a>.
 type: Activists & Non-profits
-order: 2
+order: 4
 ---
 The AirKeepers program is designed to empower Historic West End residents and community leaders to build a community-level monitoring network that gathers real-time air quality data using free and low-cost citizen science tools, like the AirCasting platform and the AirBeam.
 
