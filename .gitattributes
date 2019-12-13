@@ -7,3 +7,6 @@ assets/img/*.jpg filter=lfs diff=lfs merge=lfs -text
 assets/img/*.gif filter=lfs diff=lfs merge=lfs -text
 assets/img/*.png filter=lfs diff=lfs merge=lfs -text
 images/uploads/** filter=lfs diff=lfs merge=lfs -text
+assets/GoWithTheFlow.pdf filter=lfs diff=lfs merge=lfs -text
+assets/HowToBuildAnAirCastingAirMonitor.pdf filter=lfs diff=lfs merge=lfs -text
+assets/MakeYourOwnAirCastingLuminescentApparel.pdf filter=lfs diff=lfs merge=lfs -text
