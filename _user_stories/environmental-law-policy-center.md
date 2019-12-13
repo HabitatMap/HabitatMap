@@ -7,17 +7,11 @@ intro: >-
   Chicago residents are hospitalized for asthma at twice the national average. 
   Making matters worse, the rate of asthma hospitalizations is even higher in
   many of Chicago’s predominately working-class African-American and Latinx
-  neighborhoods. To address the disparate exposure to air pollution faced by
-  Chicago’s working-class communities of color, the <a
-  href="http://elpc.org/">Environmental Law &amp; Policy Center</a> (ELPC)
-  created a monitoring program called <a
-  href="https://airqualitychicago.org/"><em>Air Quality Chicago</em></a> that
-  trains residents to collect air pollution data using the AirBeam + AirCasting
-  platform.  
+  neighborhoods. 
 type: Activists & Non-profits
 order: 2
 ---
-<em>Air Quality Chicago</em> connects the dots between air pollution, local emissions sources, and community health thereby enhancing participants’ understanding of how air pollution impacts their communities and helping them make better-informed decisions that protect their health.
+To address the disparate exposure to air pollution faced by Chicago’s working-class communities of color, the <a href="http://elpc.org/">Environmental Law &amp; Policy Center</a> (ELPC) created a monitoring program called <a href="https://airqualitychicago.org/"><em>Air Quality Chicago</em></a> that trains residents to collect air pollution data using the AirBeam + AirCasting platform.  <em>Air Quality Chicago</em> connects the dots between air pollution, local emissions sources, and community health thereby enhancing participants’ understanding of how air pollution impacts their communities and helping them make better-informed decisions that protect their health.
 
 The city of Chicago has just twelve state-operated air quality monitoring stations that measure fine particulate matter (PM2.5). Twelve stations is far short of the number needed to quantify air pollution exposures at the local level.  In addition, the measurements from these stations are averaged together before they are made public and aren’t available in real-time. This makes it impossible to use data from the state-run stations to examine disparities in air pollution exposures across Chicago’s diverse neighborhoods or empower individuals to make real-time decisions that will reduce pollution exposures.  In contrast, ELPC’s integration of the AirBeam + AirCasting platform into their <em>Air Quality Chicago</em> program has enabled them to identify and visualize exactly when and where air pollutant concentrations are highest and lowest and provide that information directly to participants.  Since 2017, ELPC has worked with an expanding cohort of local partners and summer youth programs to systematically collect air quality data in Chicago, focusing on the South &amp; West sides.  Some of the groups ELPC has collaborated with include MAPSCorps, Chicago Public Schools, and the South Side Pediatric Asthma Center.
 
