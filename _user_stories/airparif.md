@@ -2,7 +2,7 @@
 layout: user_story
 title: Airparif
 featured: true
-image: /images/uploads/unesco.jpg
+image: /images/uploads/airparif_cropped.png
 intro: >-
   Founded in 1979, <a href="http://www.airparif.fr">Airparif</a> is a French
   non-profit organization vested by the Ministry of Environment to monitor air
