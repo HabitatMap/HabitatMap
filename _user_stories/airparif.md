@@ -8,13 +8,11 @@ intro: >-
   non-profit organization vested by the Ministry of Environment to monitor air
   quality, forecast pollution episodes, educate the public on the environment,
   and assess the effectiveness of air pollution mitigation measures in the Paris
-  metropolitan region. Integral to Airparif’s mission is reducing Parisians’
-  exposure to air pollution and raising awareness of the impact air pollution
-  has on human health and quality of life.
+  metropolitan region. 
 type: Citizen Scientists
 order: 3
 ---
-Airparif’s public programs are designed to educate Parisians about what air pollution is and how it can be measured. Select programs use the AirBeam and the AirCasting platform to empower participants to investigate where and when they are exposed to relatively higher concentrations of air pollutants and consider how they might alter their daily routines to reduce air pollution exposures.
+Integral to Airparif’s mission is reducing Parisians’ exposure to air pollution and raising awareness of the impact air pollution has on human health and quality of life. Airparif’s public programs are designed to educate Parisians about what air pollution is and how it can be measured. Select programs use the AirBeam and the AirCasting platform to empower participants to investigate where and when they are exposed to relatively higher concentrations of air pollutants and consider how they might alter their daily routines to reduce air pollution exposures.
 
 Airparif’s programs are tailored to meet the needs and interests of both adults and youth. Their adult programs recruit residents from central Paris to use low-cost air quality instruments - like the AirBeam - to measure pollution levels in their homes, during their work commutes, and on their holidays. In some instances, Airparif researchers are paired with participants and accompany them during their AirCasting sessions to assist with data interpretation.
 
