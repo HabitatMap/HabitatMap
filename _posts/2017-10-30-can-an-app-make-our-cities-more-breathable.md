@@ -9,7 +9,6 @@ category: Health
 tag:
   - video
   - community-based-organization
-  - citizen science
 ---
 A volunteer with the social justice non-profit [El Puente](https://elpuente.us/), measures the air quality inside a community garden located in Williamsburg, Brooklyn. El Puente describes their use of the AirBeam + AirCasting platform to advance their clean air advocacy work in this two minute video.
 
