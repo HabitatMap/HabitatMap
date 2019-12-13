@@ -8,9 +8,9 @@ intro: >-
   Charlotte-based non-profit, works to ensure cleaner air quality for all North
   Carolinians through education and advocacy and by working with their partners
   to reduce sources of pollution. For the past two years, CAC has been
-  distributing both mobile and stationary air quality instruments and providing
-  hands-on training to Charlotte’s Historic West End residents as part of their
-  <a href="https://cleanaircarolina.org/airkeepers/">AirKeepers program</a>.
+  distributing mobile and stationary air quality instruments and providing
+  hands-on training to Charlotte residents as part of their <a
+  href="https://cleanaircarolina.org/airkeepers/">AirKeepers program</a>.
 type: Activists & Non-profits
 order: 4
 ---
