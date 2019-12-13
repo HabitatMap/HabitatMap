@@ -2,7 +2,7 @@
 layout: user_story
 title: Children’s Environmental Literacy Foundation
 featured: true
-image: /images/uploads/cs-hewitt-datacollection-narrow.png
+image: /images/uploads/cs-hewitt-datacollection-extraspace.png
 intro: >-
   The <a href="https://www.celfeducation.org/">Children’s Environmental Literacy
   Foundation</a> (CELF) is a non-profit organization dedicated to integrating
