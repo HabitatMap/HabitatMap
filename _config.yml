@@ -23,7 +23,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   HabitatMap's AirBeam and AirCasting tools empower people to measure air pollution
   and advocate for equitable solutions to environmental health issues.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: habitatmap.lunarlogic.io # the base hostname & protocol for your site
+url: habitatmap.org # the base hostname & protocol for your site
 social:
   name: HabitatMap
   links:
