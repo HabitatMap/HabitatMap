@@ -2,7 +2,7 @@
 layout: user_story
 title: Clean Air Carolina
 featured: true
-image: /images/uploads/twokidscropped.png
+image: /images/uploads/cac_cropped.png
 intro: >-
   <a href="https://cleanaircarolina.org/">Clean Air Carolina</a> (CAC), a
   Charlotte-based non-profit, works to ensure cleaner air quality for all North
