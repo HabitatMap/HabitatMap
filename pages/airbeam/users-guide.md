@@ -33,7 +33,6 @@ section: about
     <li class="contents-list__item"><a href="#record-wifi">Record Measurements – Fixed (Wifi) Session</a></li>
     <li class="contents-list__item"><a href="#record-cellular">Record Measurements – Fixed (Cellular) Session</a></li>
     <li class="contents-list__item"><a href="#connection">Connection Indicator</a></li>
-    <li class="contents-list__item"><a href="#weather">Weather Resistance</a></li>
     <li class="contents-list__item"><a href="#temperature">Temperature & Humidity Measurements</a></li>
     <li class="contents-list__item"><a href="#acquire">Acquire AirBeam2 Data via Serial Monitor</a></li>
     <li class="contents-list__item"><a href="#programming">Programming</a></li>
@@ -185,20 +184,6 @@ section: about
 
   <p class="p--body">
     When AirBeam2 is configured for a mobile recording session, the AirCasting app will connect to the AirBeam2 via Bluetooth and the Connection Indicator will shine solid white for 2 minutes. If the AirBeam2 is disconnected while in mobile mode, the Connection Indicator will blink red. When AirBeam2 is configured for a fixed recording session, the Connection Indicator will shine blue while acquiring the time and date and then shine white for 2 minutes while AirBeam2 begins taking measurements and sending data to the AirCasting website.
-  </p>
-
-  <a id="weather" class="anchor">
-  </a>
-  <h2 class="heading heading--small heading--body">
-    Weather Resistant
-  </h2>
-
-  <p class="p--body">
-    AirBeam2 is weather resistant, not weather proof. When used outdoors, hanging the AirBeam2 under an eave or suspending it from the bottom of a stool will prevent its premature demise and deliver better performance.
-  </p>
-
-  <p class="p--body">
-    As the community of AirCasters grows, we look forward to learning more about how AirBeam2 performs under various weather conditions and shelter configurations. Please get in touch and share your experiences AirCasting outdoors so we can update this section with more comprehensive information.
   </p>
 
   <a id="temperature" class="anchor">
