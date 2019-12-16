@@ -11,12 +11,8 @@ $header-z-index: 999;
   width: 100%;
   z-index: $header-z-index;
 
-  &.sticky {
-    padding: 1rem 0 0.5rem;
-  }
-
   @media screen and (max-width: $tablet-max) {
-    height: 6.5rem;
+    padding: 0.5rem 0;
 
     &.header--nav-expanded {
       height: 100%;
@@ -31,6 +27,10 @@ $header-z-index: 999;
     @include justify-content(space-between);
     font-size: $header-font-size-desktop;
     height: auto;
+
+    &.sticky {
+      padding: 1rem 0 0.5rem;
+    }
   }
 }
 
