@@ -36,17 +36,28 @@ $header-z-index: 999;
 
 .header__brand {
   height: 3.5rem;
+
   @media screen and (max-width: $small-desktop-max) {
     @include flexbox;
     @include justify-content(space-between);
     @include align-items(center);
-    padding-left: $u-space-small;
-    padding-right: $u-space-small;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 
 .header__logo {
   padding-left: $u-space-small;
+
+  @media screen and (max-width: $tablet-max) {
+    padding-left: 0;
+    padding-right: 25px;
+    margin: 0 auto;
+
+    .header--nav-expanded & {
+      padding-right: 20px;
+    }
+  }
 
   @media screen and (min-width: $desktop-min) {
     height: 3.75rem;
