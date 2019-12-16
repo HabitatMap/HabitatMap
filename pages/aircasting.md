@@ -23,14 +23,14 @@ section: aircasting
       <img class="logo logo--body" alt="AirCasting" src="assets/img/svg/AirCasting-Logo-Body.svg" />
     </div>
     <div class="split--order-secondary">
-      <a href="http://aircasting.habitatmap.org/map" class="button button--ac ac-intro__button">AirCasting Maps</a>
+      <a href="http://aircasting.org/map" class="button button--ac ac-intro__button">AirCasting Maps</a>
       <a href="https://play.google.com/store/apps/details?id=pl.llp.aircasting&hl=en" class="button button--ac ac-intro__button">Download App</a>
     </div>
   </div>
 
   <div class="panel u--bg-half-teal-very-light">
     <div>
-      <a href="http://aircasting.habitatmap.org/map">
+      <a href="http://aircasting.org/map">
         <img
           srcset="/assets/img/habitatmap-aircasting-map-placeholder.png?nf_resize=fit&w=800 480w,
                   /assets/img/habitatmap-aircasting-map-placeholder.png?nf_resize=fit&w=1150 768w,
