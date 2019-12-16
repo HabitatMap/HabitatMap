@@ -40,14 +40,13 @@ $header-z-index: 999;
     @include flexbox;
     @include justify-content(space-between);
     @include align-items(center);
+    padding-left: $u-space-small;
     padding-right: $u-space-small;
   }
 }
 
 .header__logo {
   padding-left: $u-space-small;
-  margin-right: $u-space-small;
-  min-width: 10.3rem;
 
   @media screen and (min-width: $desktop-min) {
     height: 3.75rem;
@@ -237,4 +236,8 @@ $header-z-index: 999;
 .header__nav-toggle-button {
   @include appearance(none);
   background: none;
+
+  @media screen and (min-width: $small-desktop-min) {
+    display: none;
+  }
 }
