@@ -20,13 +20,13 @@ section: airbeam
 <section class="panel">
   <div class="post-content">
     {% if page.image %}
-      <img
-        class="post-content__featured-image"
-        srcset="{{ page.image | append: '?nf_resize=fit&w=480 480w' }},
+    <img
+      class="post-content__featured-image"
+      srcset="{{ page.image | append: '?nf_resize=fit&w=480 480w' }},
                 {{ page.image | append: '?nf_resize=fit&w=720 720w' }},
                 {{ page.image | append: '?nf_resize=fit&w=1200 1200w' }}"
-        src="{{ page.image | append: '?nf_resize=fit&w=1200' }}"
-      />
+      src="{{ page.image | append: '?nf_resize=fit&w=1200' }}"
+    />
     {% endif %}
 
     <p class="post-content__intro">{{ page.intro }}</p>
@@ -38,7 +38,7 @@ section: airbeam
   <ul class="post-nav">
     <li></li>
     <li>
-      <a href="/airbeam/user-stories" class="link u--capitalized">
+      <a href="/airbeam/user-stories#user-stories" class="link u--capitalized">
         Back to user stories
       </a>
     </li>
