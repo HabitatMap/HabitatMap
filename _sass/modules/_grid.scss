@@ -1,5 +1,9 @@
 body {
   padding-top: 6rem;
+
+  @media screen and (max-width: $tablet-max) {
+    padding-top: 72px; // mobile header height
+  }
 }
 
 .container--narrow {

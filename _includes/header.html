@@ -1,15 +1,15 @@
 <header id="js-header" class="header">
   <div class="header__brand">
-    <div class="logo header__logo">
-      <a href="{{ "/" | relative_url }}">
-        {% include /svg/logo_hm.html %}
-        {% include /svg/logo_hm_monogram.html %}
-      </a>
-    </div>
     <button class="header__nav-toggle-button js--toggle-nav">
       {% include /svg/icon_nav.html %}
       {% include /svg/icon_close.html %}
     </button>
+    <div class="logo header__logo">
+      <a href="{{ "/" | relative_url }}">
+        {% include /svg/logo_hm.html %}
+        {% include /svg/logo-hm-vertical.html %}
+      </a>
+    </div>
   </div>
 
   {% include navigation.html navigation=site.data.navigation %}
