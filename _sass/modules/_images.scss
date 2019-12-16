@@ -3,7 +3,9 @@
 }
 
 .img--margin-top {
-  margin-top: $u-space-default;
+  @media screen and (min-width: $tablet-min) {
+    margin-top: $u-space-default;
+  }
 }
 
 .img--alternate-medium {
