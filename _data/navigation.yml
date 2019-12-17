@@ -20,7 +20,7 @@
       url: http://aircasting.habitatmap.org/map
     - text: AirCasting App
       url: https://play.google.com/store/apps/details?id=pl.llp.aircasting&hl=en_US
-- text: About Habitatmap
+- text: About HabitatMap
   url: /about
   subitems:
     - text: History & People
