@@ -68,7 +68,7 @@ section: airbeam
         src="/assets/img/svg/AirCasting-Logo-Body.svg"
       />
       <p class="p--large u--gray-text">
-        Measure, visualize, and share environmental data via Aircasting Maps.
+        Measure, visualize, and share environmental data via AirCasting Maps.
       </p>
     </div>
     <div class="split--40 u--align-right">
