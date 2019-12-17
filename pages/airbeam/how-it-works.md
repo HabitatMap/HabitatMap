@@ -78,7 +78,7 @@ section: airbeam
         <span class="heading--underlined heading--underlined--ac">3</span>
         <span class="heading--capitilized">Beam</span>
       </h2>
-      <img class="logo logo--body" alt="Aircasting logo" src="/assets/img/svg/Aircasting-Logo-Body.svg" />
+      <img class="logo logo--body" alt="AirCasting logo" src="/assets/img/svg/Aircasting-Logo-Body.svg" />
       <p class="p--body">
         When used in mobile mode as a wearable, the AirBeam communicates measurements to the Android device every second via Bluetooth.  When used as a fixed instrument installed indoors or outdoors, the AirBeam communicates measurements directly to the AirCasting website every minute via either the WiFi or cellular network.
       </p>
@@ -99,7 +99,7 @@ section: airbeam
               /assets/img/pages/how-it-works/app.png 767w,
               /assets/img/pages/how-it-works/app.png?nf_resize=fit&w=600 1024w,
               /assets/img/pages/how-it-works/app.png"
-      alt="Aircasting Mobile App"
+      alt="AirCasting Mobile App"
       class="img img--margin-top img--fade-in"
     />
   </div>
