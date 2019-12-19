@@ -624,11 +624,11 @@ faq_items:
   - answer: >-
       Due to financial constraints, we have yet to develop a version of the
       AirCasting app for iOS, however, we would very much like to. If you’d like
-      to help us bring an iOS app to fruition, please consider making a donation
-      [insert link]. So that we know your donation is earmarked for AirCasting
-      iOS app dvelopment, please write “iOS development” in the notes when
-      making your donation. When we reach $50k in iOS development donations we
-      will begin coding the app.
+      to help us bring an iOS app to fruition, please consider making a <a
+      href="https://www.habitatmap.org/donate">donation</a>. So that we know
+      your donation is earmarked for AirCasting iOS app dvelopment, please write
+      “iOS development” in the notes when making your donation. When we reach
+      $50k in iOS development donations we will begin coding the app.
     category: GENERAL
     question: Is there an AirCasting app for Apple’s iOS?
   - answer: >-
