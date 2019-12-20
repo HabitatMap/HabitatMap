@@ -2,7 +2,7 @@
 layout: user_story
 title: Environmental Law & Policy Center
 featured: true
-image: /images/uploads/elpc_cropped.png
+image: /images/uploads/elpc_cropped.jpg
 intro: >-
   Chicago residents are hospitalized for asthma at twice the national average. 
   Making matters worse, the rate of asthma hospitalizations is even higher in
