@@ -80,9 +80,9 @@ section: airbeam
     <div>
       <a href="http://aircasting.habitatmap.org/map">
         <img
-          srcset="/assets/img/habitatmap-aircasting-map-placeholder.png?nf_resize=fit&w=800 480w,
-                  /assets/img/habitatmap-aircasting-map-placeholder.png?nf_resize=fit&w=1150 768w,
-                  /assets/img/habitatmap-aircasting-map-placeholder.png"
+          srcset="/assets/img/habitatmap-aircasting-map-screenshot.png?nf_resize=fit&w=800 480w,
+                  /assets/img/habitatmap-aircasting-map-screenshot.png?nf_resize=fit&w=1150 768w,
+                  /assets/img/habitatmap-aircasting-map-screenshot.png"
           alt="AirCasting Map"
           class="img--fade-in"
         />
