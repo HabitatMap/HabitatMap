@@ -44,14 +44,19 @@ section: home
               <a href="/airbeam/user-stories#user-stories" class="button button--ac-on-teal">More User Stories</a>
             </div>
             {% assign image_url = story.image %}
-            <img
-              src="{{ image_url | append: '?nf_resize=fit&w=1875'  }}"
-              srcset="{{ image_url | append: '?nf_resize=fit&w=576 768w' }},
-                      {{ image_url | append: '?nf_resize=fit&w=960 1280w' }},
-                      {{ image_url | append: '?nf_resize=fit&w=1080 1440w' }},
-                      {{ image_url | append: '?nf_resize=fit&w=1875 2500w' }}"
-              class="slide__photo"
-            />
+            <div class="split--50 slide__photo">
+              <picture>
+                <source data-srcset="{{ image_url | append: '?nf_resize=fit&w=767' }}" media="(max-width: 767px)" />
+                <source data-srcset="{{ image_url | append: '?nf_resize=fit&w=960' }}" media="(max-width: 1280px)" />
+                <source data-srcset="{{ image_url | append: '?nf_resize=fit&w=1080' }}" media="(max-width: 1440px)" />
+                <img
+                  alt="{{ story.title }}"
+                  class="lazyload"
+                  data-src="{{ image_url | append: '?nf_resize=fit&w=1875' }}"
+                  src="{{ image_url | append: '?nf_resize=fit&w=20' }}"
+                />
+              </picture>
+            </div>
           </div>
         </div>
       {% endunless %}
@@ -74,17 +79,19 @@ section: home
 </section>
 
 <section class="panel">
-  <div>
-    <a href="http://aircasting.habitatmap.org/map">
+  <a href="http://aircasting.habitatmap.org/map" class="u--full-width">
+    <picture>
+      <source data-srcset="/assets/img/habitatmap-aircasting-map-screenshot.png?nf_resize=fit&w=720" media="(max-width: 480px)" />
+      <source data-srcset="/assets/img/habitatmap-aircasting-map-screenshot.png?nf_resize=fit&w=1150" media="(max-width: 1024px)" />
       <img
-        srcset="/assets/img/habitatmap-aircasting-map-screenshot.png?nf_resize=fit&w=800 480w,
-                /assets/img/habitatmap-aircasting-map-screenshot.png?nf_resize=fit&w=1150 768w,
-                /assets/img/habitatmap-aircasting-map-screenshot.png"
         alt="AirCasting Map"
-        class="img--fade-in"
+        class="lazyload"
+        data-sizes="auto"
+        data-src="/assets/img/habitatmap-aircasting-map-screenshot.png"
+        src="/assets/img/habitatmap-aircasting-map-screenshot.png?nf_resize=fit&w=20"
       />
-    </a>
-  </div>
+    </picture>
+  </a>
 </section>
 
 <section class="panel panel--quote u--bg-blue-dark arc-background arc-background--left-opacity-15 arc-background--left-quote">
@@ -99,3 +106,5 @@ section: home
 </section>
 
 {% include slider-init.html %}
+
+<script defer type="text/javascript" src="/assets/js/lazysizes.min.js"></script>

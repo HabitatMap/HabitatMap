@@ -1,0 +1,16 @@
+picture {
+  width: 100%; /* stretch to fit its containing element */
+  overflow: hidden;
+}
+
+picture img {
+  width: 100%; /* stretch to fill the picture element */
+}
+
+img.lazyloaded {
+  transition: 0.5s filter;
+}
+
+img.lazyloading {
+  filter: blur(20px);
+}
