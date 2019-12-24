@@ -106,5 +106,3 @@ section: home
 </section>
 
 {% include slider-init.html %}
-
-<script defer type="text/javascript" src="/assets/js/lazysizes.min.js"></script>

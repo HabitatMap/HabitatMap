@@ -71,9 +71,10 @@ section: about
     </div>
     <div class="split--40 split--padding-left u--align-right">
       <img
-        class="img img--alternate-small img--fade-in"
-        src="/assets/img/pages/about-habitatmap/airbeam.jpg"
         alt="Airbeam"
+        class="img img--alternate-small lazyload"
+        data-src="/assets/img/pages/about-habitatmap/airbeam.jpg?nf_resize=fit&w=570"
+        src="/assets/img/pages/about-habitatmap/airbeam.jpg?nf_resize=fit&w=20"
       />
     </div>
   </div>
@@ -81,9 +82,10 @@ section: about
   <div class="panel">
     <div class="split--60 split--padding-right split--order-secondary">
       <img
-        class="img img--alternate-medium img--fade-in"
-        src="/assets/img/pages/about-habitatmap/MichaelHeimbinder.jpeg"
-        alt="Airbeam"
+        alt="Michael Heimbinder"
+        class="img img--alternate-medium lazyload"
+        data-src="/assets/img/pages/about-habitatmap/MichaelHeimbinder.jpeg?nf_resize=fit&w=750"
+        src="/assets/img/pages/about-habitatmap/MichaelHeimbinder.jpeg?nf_resize=fit&w=20"
       />
     </div>
     <div class="split--40 split--padding-left">
