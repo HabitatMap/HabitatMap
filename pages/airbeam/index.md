@@ -17,10 +17,10 @@ section: airbeam
     <div class="panel">
       <div class="split--50 split--padding-right">
         <img
-          class="img img--alternate-medium img--fade-in"
-          srcset="/assets/img/about-airbeam-01.jpg?nf_resize=fit&w=720 480w,
-                  /assets/img/about-airbeam-01.jpg"
           alt="Airbeam device"
+          class="img img--alternate-medium lazyload"
+          data-src="/assets/img/about-airbeam-01.jpg?nf_resize=fit&w=750"
+          src="/assets/img/about-airbeam-01.jpg?nf_resize=fit&w=20"
         />
       </div>
       <div class="split--50 split--padding-left">
@@ -47,12 +47,10 @@ section: airbeam
       </div>
       <div class="split--50 split--padding-left u--align-right">
         <img
-          class="img img--alternate-medium img--fade-in"
-          srcset="/assets/img/about-airbeam-02.jpg?nf_resize=fit&w=720 480w,
-                  /assets/img/about-airbeam-02.jpg 767w,
-                  /assets/img/about-airbeam-02.jpg?nf_resize=fit&w=600 1024w,
-                  /assets/img/about-airbeam-02.jpg"
           alt="HabitatMap Team"
+          class="img img--alternate-medium lazyload"
+          data-src="/assets/img/about-airbeam-02.jpg?nf_resize=fit&w=750"
+          src="/assets/img/about-airbeam-02.jpg?nf_resize=fit&w=20"
         />
       </div>
     </div>
@@ -77,17 +75,7 @@ section: airbeam
     </div>
   </div>
   <div class="panel">
-    <div>
-      <a href="http://aircasting.habitatmap.org/map">
-        <img
-          srcset="/assets/img/habitatmap-aircasting-map-screenshot.png?nf_resize=fit&w=800 480w,
-                  /assets/img/habitatmap-aircasting-map-screenshot.png?nf_resize=fit&w=1150 768w,
-                  /assets/img/habitatmap-aircasting-map-screenshot.png"
-          alt="AirCasting Map"
-          class="img--fade-in"
-        />
-      </a>
-    </div>
+    {% include map-screenshot.html %}
   </div>
 </section>
 
@@ -100,7 +88,7 @@ section: airbeam
     </h2>
   </div>
 
-{% include testimonials-slider.html testimonials = site.testimonials %}
+  {% include testimonials-slider.html testimonials = site.testimonials %}
 
   <a href="/airbeam/faq" class="badge-link badge-link--light-hm">
     <span class="u--vertically-centered">Questions? Check out our FAQ</span>

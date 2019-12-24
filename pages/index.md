@@ -79,19 +79,7 @@ section: home
 </section>
 
 <section class="panel">
-  <a href="http://aircasting.habitatmap.org/map" class="u--full-width">
-    <picture>
-      <source data-srcset="/assets/img/habitatmap-aircasting-map-screenshot.png?nf_resize=fit&w=720" media="(max-width: 480px)" />
-      <source data-srcset="/assets/img/habitatmap-aircasting-map-screenshot.png?nf_resize=fit&w=1150" media="(max-width: 1024px)" />
-      <img
-        alt="AirCasting Map"
-        class="lazyload"
-        data-sizes="auto"
-        data-src="/assets/img/habitatmap-aircasting-map-screenshot.png"
-        src="/assets/img/habitatmap-aircasting-map-screenshot.png?nf_resize=fit&w=20"
-      />
-    </picture>
-  </a>
+  {% include map-screenshot.html %}
 </section>
 
 <section class="panel panel--quote u--bg-blue-dark arc-background arc-background--left-opacity-15 arc-background--left-quote">

@@ -36,12 +36,10 @@ section: airbeam
       In mobile mode, the AirBeam can be worn to capture personal exposures.  In fixed mode, it can be installed indoors or outdoors - it’s weather resistant and doesn’t need a shelter - to keep tabs on pollution levels in your home, office, backyard, or neighborhood 24/7.
     </p>
     <img
-      srcset="/assets/img/pages/how-it-works/airbeam-on-wall.jpg?nf_resize=fit&w=720 480w,
-              /assets/img/pages/how-it-works/airbeam-on-wall.jpg 767w,
-              /assets/img/pages/how-it-works/airbeam-on-wall.jpg?nf_resize=fit&w=600 1024w,
-              /assets/img/pages/how-it-works/airbeam-on-wall.jpg"
       alt="Airbeam attached to a wall at home"
-      class="img img--fade-in"
+      class="img lazyload"
+      data-src="/assets/img/pages/how-it-works/airbeam-on-wall.jpg?nf_resize=fit&w=750"
+      src="/assets/img/pages/how-it-works/airbeam-on-wall.jpg?nf_resize=fit&w=20"
     />
   </div>
 </section>
@@ -49,12 +47,10 @@ section: airbeam
 <section class="panel">
   <div class="split--50 split--padding-right">
     <img
-      srcset="/assets/img/pages/how-it-works/airbeam.jpg?nf_resize=fit&w=720 480w,
-              /assets/img/pages/how-it-works/airbeam.jpg 767w,
-              /assets/img/pages/how-it-works/airbeam.jpg?nf_resize=fit&w=600 1024w,
-              /assets/img/pages/how-it-works/airbeam.jpg"
       alt="Airbeam attached to a backpack"
-      class="img img--margin-top img--fade-in"
+      class="img lazyload"
+      data-src="/assets/img/pages/how-it-works/airbeam.jpg?nf_resize=fit&w=750"
+      src="/assets/img/pages/how-it-works/airbeam.jpg?nf_resize=fit&w=20"
     />
   </div>
 
@@ -95,12 +91,10 @@ section: airbeam
   </div>
   <div class="split--50">
     <img
-      srcset="/assets/img/pages/how-it-works/app.png?nf_resize=fit&w=720 480w,
-              /assets/img/pages/how-it-works/app.png 767w,
-              /assets/img/pages/how-it-works/app.png?nf_resize=fit&w=600 1024w,
-              /assets/img/pages/how-it-works/app.png"
       alt="AirCasting Mobile App"
-      class="img img--margin-top img--fade-in"
+      class="img img--margin-top lazyload"
+      data-src="/assets/img/pages/how-it-works/app.png?nf_resize=fit&w=750"
+      src="/assets/img/pages/how-it-works/app.png?nf_resize=fit&w=20"
     />
   </div>
 </section>
@@ -108,12 +102,10 @@ section: airbeam
 <section class="panel">
   <div class="split--50 split--padding-right">
     <img
-      srcset="/assets/img/pages/how-it-works/airbeam-on-desk.jpg?nf_resize=fit&w=720 480w,
-              /assets/img/pages/how-it-works/airbeam-on-desk.jpg 767w,
-              /assets/img/pages/how-it-works/airbeam-on-desk.jpg?nf_resize=fit&w=600 1024w,
-              /assets/img/pages/how-it-works/airbeam-on-desk.jpg"
       alt="Airbeam on a desk"
-      class="img img--fade-in"
+      class="img lazyload"
+      data-src="/assets/img/pages/how-it-works/airbeam-on-desk.jpg?nf_resize=fit&w=750"
+      src="/assets/img/pages/how-it-works/airbeam-on-desk.jpg?nf_resize=fit&w=20"
     />
   </div>
   <div class="split--50">
