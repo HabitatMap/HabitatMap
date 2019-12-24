@@ -84,8 +84,8 @@ section: about
       <img
         alt="Michael Heimbinder"
         class="img img--alternate-medium lazyload"
-        data-src="/assets/img/pages/about-habitatmap/MichaelHeimbinder.jpeg?nf_resize=fit&w=750"
-        src="/assets/img/pages/about-habitatmap/MichaelHeimbinder.jpeg?nf_resize=fit&w=20"
+        data-src="/assets/img/pages/about-habitatmap/MichaelHeimbinder.jpg?nf_resize=fit&w=750"
+        src="/assets/img/pages/about-habitatmap/MichaelHeimbinder.jpg?nf_resize=fit&w=20"
       />
     </div>
     <div class="split--40 split--padding-left">
