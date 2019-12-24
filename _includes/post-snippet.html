@@ -2,28 +2,33 @@
 
 <li class="post-list__item">
   {% if post.image %}
-    <div class="post-list__thumbnail">
-      <a href="{{ post.url }}">
-        <img
-          class="post-list__thumbnail-img"
-          srcset="{{ post.image | append: '?nf_resize=smartcrop&w=480&h=291 480w' }},
-                  {{ post.image | append: '?nf_resize=smartcrop&w=945&h=573 945w' }}"
-          src="{{ post.image | append: '?nf_resize=smartcrop&w=945&h=573' }}"
+  <div class="post-list__thumbnail">
+    <a href="{{ post.url }}">
+      <picture>
+        <source
+          data-srcset="{{ post.image | append: '?nf_resize=smartcrop&w=480&h=291' }}"
+          media="(max-width: 480px)"
         />
-      </a>
-    </div>
-  {% endif %}
-
-  {% if post.category %}
-    <a href="{{ post.category.url }}" class="link post-list__category heading u--capitalized">
-      {{ post.category }}
+        <img
+          alt="{{ post.title }}"
+          class="post-list__thumbnail-img lazyload"
+          data-src="{{ post.image | append: '?nf_resize=smartcrop&w=945&h=573' }}"
+          src="{{ post.image | append: '?nf_resize=smartcrop&w=20&h=12' }}"
+        />
+      </picture>
     </a>
-  {% endif %}
-
-  {% if post.type %}
-    <p class="post-list__category heading u--capitalized">
-      {{ post.type }}
-    </p>
+  </div>
+  {% endif %} {% if post.category %}
+  <a
+    href="{{ post.category.url }}"
+    class="link post-list__category heading u--capitalized"
+  >
+    {{ post.category }}
+  </a>
+  {% endif %} {% if post.type %}
+  <p class="post-list__category heading u--capitalized">
+    {{ post.type }}
+  </p>
   {% endif %}
 
   <h2 class="post-list__title heading heading--small">
