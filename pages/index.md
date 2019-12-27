@@ -44,14 +44,14 @@ section: home
               <a href="/airbeam/user-stories#user-stories" class="button button--ac-on-teal">More User Stories</a>
             </div>
             {% assign image_url = story.image %}
-            <div class="split--50 slide__photo">
+            <div class="split--50">
               <picture>
                 <source data-srcset="{{ image_url | append: '?nf_resize=fit&w=767' }}" media="(max-width: 767px)" />
                 <source data-srcset="{{ image_url | append: '?nf_resize=fit&w=960' }}" media="(max-width: 1280px)" />
                 <source data-srcset="{{ image_url | append: '?nf_resize=fit&w=1080' }}" media="(max-width: 1440px)" />
                 <img
                   alt="{{ story.title }}"
-                  class="lazyload"
+                  class="lazyload slide__photo"
                   data-src="{{ image_url | append: '?nf_resize=fit&w=1875' }}"
                   src="{{ image_url | append: '?nf_resize=fit&w=20' }}"
                 />
