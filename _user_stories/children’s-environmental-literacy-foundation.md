@@ -1,6 +1,6 @@
 ---
 layout: user_story
-title: Children’s Environmental Literacy Foundation
+title: Children’s Environmental Literacy Fdn
 featured: true
 image: /images/uploads/celf_cropped.jpg
 intro: >-
