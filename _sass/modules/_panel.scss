@@ -64,9 +64,17 @@
   }
 
   @media screen and (min-width: $tablet-min) {
+    background-position: center top;
+    background-size: cover;
+  }
+
+  @media screen and (min-width: $tablet-min) {
+    padding-bottom: 5.5rem;
+  }
+
+  @media screen and (min-width: $small-desktop-min) {
     background-position: center right;
     background-size: 50% auto;
-    padding-bottom: 5.5rem;
   }
 
   @media screen and (min-width: $large-desktop-min) {
@@ -134,6 +142,10 @@
 
 .panel__heading {
   max-width: 27rem;
+
+  @media screen and (min-width: $tablet-min) and (max-width: $tablet-max) {
+    font-size: 2.25rem;
+  }
 }
 
 .panel--quote,
