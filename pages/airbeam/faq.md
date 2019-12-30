@@ -6,7 +6,7 @@ section: faq
 ---
 
 <section class="panel panel--faq-intro u--bg-green">
-  <div class="split--50 split--paddding-right">
+  <div class="split--50 split--padding-right">
     <h1 class="heading heading--large">
       Frequently
       <br />

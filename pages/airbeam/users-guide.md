@@ -6,7 +6,7 @@ section: about
 ---
 
 <section class="panel panel--history-intro u--bg-teal">
-  <div class="split--50 split--paddding-right">
+  <div class="split--50 split--padding-right">
     <h1 class="heading heading--large">
       User's Guide
     </h1>
