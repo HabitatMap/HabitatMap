@@ -22,6 +22,15 @@
   }
 }
 
+.panel--user-stories {
+  @media screen and (min-width: $small-desktop-min) {
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+  }
+}
+
 .panel--big-padding {
   padding-top: $u-space-big;
   padding-bottom: $u-space-big;

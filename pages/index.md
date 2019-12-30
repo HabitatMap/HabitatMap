@@ -32,7 +32,7 @@ section: home
     {% for story in stories %}
       {% unless forloop.index > 6 %}
         <div>
-          <div class="panel u--bg-teal slide">
+          <div class="panel panel--user-stories u--bg-teal slide">
             <div class="split--50 slide__story">
               <h2 class="heading heading--capitilized">Who is using Airbeam?</h2>
               <a href="/airbeam/user-stories/{{story.slug}}">
@@ -43,16 +43,17 @@ section: home
               </a>
               <a href="/airbeam/user-stories#user-stories" class="button button--ac-on-teal">More User Stories</a>
             </div>
-            {% assign image_url = story.image %}
-            <div class="split--50">
+            {% assign image_url = "https://deploy-preview-125--habitatmap.netlify.com/" | append: story.image %}
+            <div class="split--50 slide__image">
               <picture>
                 <source data-srcset="{{ image_url | append: '?nf_resize=fit&w=767' }}" media="(max-width: 767px)" />
-                <source data-srcset="{{ image_url | append: '?nf_resize=fit&w=960' }}" media="(max-width: 1280px)" />
-                <source data-srcset="{{ image_url | append: '?nf_resize=fit&w=1080' }}" media="(max-width: 1440px)" />
+                <source data-srcset="{{ image_url | append: '?nf_resize=fit&w=1024' }}" media="(max-width: 1024px)" />
+                <source data-srcset="{{ image_url | append: '?nf_resize=smartcrop&w=640&h=602' }}" media="(max-width: 1280px)" />
+                <source data-srcset="{{ image_url | append: '?nf_resize=smartcrop&w=720&h=602' }}" media="(max-width: 1440px)" />
                 <img
                   alt="{{ story.title }}"
-                  class="lazyload slide__photo"
-                  data-src="{{ image_url | append: '?nf_resize=fit&w=1875' }}"
+                  class="lazyload"
+                  data-src="{{ image_url | append: '?nf_resize=smartcrop&w=960&h=600' }}"
                   src="{{ image_url | append: '?nf_resize=fit&w=20' }}"
                 />
               </picture>
