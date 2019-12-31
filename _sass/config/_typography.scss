@@ -120,14 +120,8 @@ a,
     }
   }
 
-  .post-list__title & {
-    font-weight: bold;
-  }
-
   .p--body &,
   .post-nav & {
-    font-weight: bold;
-
     [data-current="about"] & {
       color: $teal;
     }
