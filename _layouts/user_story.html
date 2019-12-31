@@ -20,15 +20,23 @@ section: airbeam
 <section class="panel">
   <div class="post-content">
     {% if page.image %}
-    <img
-      class="post-content__featured-image"
-      srcset="{{ page.image | append: '?nf_resize=fit&w=480 480w' }},
-                {{ page.image | append: '?nf_resize=fit&w=720 720w' }},
-                {{ page.image | append: '?nf_resize=fit&w=1200 1200w' }}"
-      src="{{ page.image | append: '?nf_resize=fit&w=1200' }}"
-    />
+      <picture>
+        <source
+          data-srcset="{{ page.image | append: '?nf_resize=fit&w=480' }}"
+          media="(max-width: 480px)"
+        />
+        <source
+          data-srcset="{{ page.image | append: '?nf_resize=fit&w=720' }}"
+          media="(max-width: 720px)"
+        />
+        <img
+          alt="{{ story.title }}"
+          class="post-content__featured-image lazyload"
+          data-src="{{ page.image | append: '?nf_resize=fit&w=1200' }}"
+          src="{{ page.image | append: '?nf_resize=fit&w=20' }}"
+        />
+      </picture>
     {% endif %}
-
     <p class="post-content__intro">{{ page.intro }}</p>
     {{ content }}
   </div>

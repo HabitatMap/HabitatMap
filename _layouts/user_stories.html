@@ -17,7 +17,11 @@ layout: default
     <h2 class="heading heading--capitilized heading--overlined">
       Educators
     </h2>
-    <img src="/assets/img/pages/user-stories/K-12Schools.png" />
+    <img
+      class="lazyload"
+      data-src="/assets/img/pages/user-stories/K-12Schools.png"
+      src="/assets/img/pages/user-stories/K-12Schools.png?nf-resize=fit&w=20"
+    />
     <p>
       Bringing AirBeam and AirCasting to your classroom is a proven way of
       sparking student interest in environmental science and driving civic
@@ -31,7 +35,11 @@ layout: default
     <h2 class="heading heading--capitilized heading--overlined">
       Citizen Scientists
     </h2>
-    <img src="/assets/img/pages/user-stories/RegulatoryAgencies.png" />
+    <img
+      class="lazyload"
+      data-src="/assets/img/pages/user-stories/RegulatoryAgencies.png"
+      src="/assets/img/pages/user-stories/RegulatoryAgencies.png?nf_resize=fit&w=20"
+    />
     <p>
       Our low (and no) cost technologies make the platform an attractive option
       for all citizen scientists. Whether you need data for a specific advocacy
@@ -46,7 +54,11 @@ layout: default
     <h2 class="heading heading--capitilized heading--overlined">
       Researchers
     </h2>
-    <img src="/assets/img/pages/user-stories/14-AB2s.jpg?nf_resize=fit&w=386" />
+    <img
+      class="lazyload"
+      data-src="/assets/img/pages/user-stories/14-AB2s.jpg?nf_resize=fit&w=386"
+      src="/assets/img/pages/user-stories/14-AB2s.jpg?nf_resize=fit&w=20"
+    />
     <p>
       The credibility of your data is important and control of your data is
       paramount. The proven accuracy of the AirBeam’s hyperlocal measurements
@@ -61,7 +73,11 @@ layout: default
     <h2 class="heading heading--capitilized heading--overlined">
       Activists & Non-profits
     </h2>
-    <img src="/assets/img/pages/user-stories/CommunityBasedOrgs.png" />
+    <img
+      class="lazyload"
+      data-src="/assets/img/pages/user-stories/CommunityBasedOrgs.png"
+      src="/assets/img/pages/user-stories/CommunityBasedOrgs.png?nf_resize=fit&w=20"
+    />
     <p>
       Enhancing quality of life in your community is essential and our platform,
       when in your hands, becomes a powerful tool for clean air advocacy.
@@ -85,13 +101,14 @@ layout: default
   {% include testimonials-slider.html testimonials = site.testimonials %}
 </section>
 
-<section id="user-stories" class="posts-index posts-index--with-arc js--posts-index">
+<section
+  id="user-stories"
+  class="posts-index posts-index--with-arc js--posts-index"
+>
   <div class="panel u--margin-top-default">
     <ul class="post-list post-list--grid-view">
-      {% assign stories = site.user_stories | sort: "order" %}
-      {% for story in stories %}
-        {% include post-snippet.html post = story %}
-      {% endfor %}
+      {% assign stories = site.user_stories | sort: "order" %} {% for story in
+      stories %} {% include post-snippet.html post = story %} {% endfor %}
     </ul>
   </div>
 </section>
