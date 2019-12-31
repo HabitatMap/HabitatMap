@@ -29,17 +29,7 @@ section: aircasting
   </div>
 
   <div class="panel u--bg-half-teal-very-light">
-    <div>
-      <a href="http://aircasting.habitatmap.org/map">
-        <img
-          srcset="/assets/img/habitatmap-aircasting-map-placeholder.png?nf_resize=fit&w=800 480w,
-                  /assets/img/habitatmap-aircasting-map-placeholder.png?nf_resize=fit&w=1150 768w,
-                  /assets/img/habitatmap-aircasting-map-placeholder.png"
-          alt="AirCasting Map"
-          class="img--fade-in"
-        />
-      </a>
-    </div>
+    {% include map-screenshot.html %}
   </div>
 </section>
 
@@ -47,12 +37,10 @@ section: aircasting
   <div class="panel">
     <div class="split--50 split--padding-right">
       <img
-        class="img img--alternate-medium img--fade-in"
-        srcset="/assets/img/pages/aircasting/airbeam.jpg?nf_resize=fit&w=720 480w,
-                /assets/img/pages/aircasting/airbeam.jpg 767w,
-                /assets/img/pages/aircasting/airbeam.jpg?nf_resize=fit&w=600 1024w,
-                /assets/img/pages/aircasting/airbeam.jpg"
         alt="Airbeam device on bicycle"
+        class="img img--alternate-medium lazyload"
+        data-src="/assets/img/pages/aircasting/airbeam.jpg?nf_resize=fit&w=750"
+        src="/assets/img/pages/aircasting/airbeam.jpg?nf_resize=fit&w=20"
       />
     </div>
     <div class="split--50 split--padding-left">
@@ -74,15 +62,12 @@ section: aircasting
       </p>
       <a href="/airbeam/how-it-works" class="button">Learn more</a>
     </div>
-    <div class="split--50 split--padding-left u--align-right">
-      <img
-        class="img img--alternate-medium img--fade-in"
-        srcset="/assets/img/pages/aircasting/app-screenshot.jpg?nf_resize=fit&w=720 480w,
-                /assets/img/pages/aircasting/app-screenshot.jpg 767w,
-                /assets/img/pages/aircasting/app-screenshot.jpg?nf_resize=fit&w=600 1024w,
-                /assets/img/pages/aircasting/app-screenshot.jpg"
-        alt="AirCasting App on Mobile"
-      />
+    <img
+      alt="AirCasting App on Mobile"
+      class="img img--alternate-medium lazyload"
+      data-src="/assets/img/pages/aircasting/app-screenshot.jpg?nf_resize=fit&w=750"
+      src="/assets/img/pages/aircasting/app-screenshot.jpg?nf_resize=fit&w=20"
+    />
     </div>
   </div>
 </section>

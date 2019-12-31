@@ -53,9 +53,10 @@ section: airbeam
     </div>
     <div class="split--50 u--align-right">
       <img
-        class="img img--fade-in"
-        src="/assets/img/buy-it-now.jpg"
         alt="Airbeam"
+        class="img lazyload"
+        data-src="/assets/img/buy-it-now.jpg?nf_resize=fit&w=750"
+        src="/assets/img/buy-it-now.jpg?nf_resize=fit&w=20"
       />
     </div>
   </div>

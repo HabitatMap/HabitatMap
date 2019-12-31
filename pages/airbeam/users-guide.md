@@ -20,7 +20,12 @@ section: about
 </section>
 
 <section class="panel panel--history arc-background arc-background--history arc-background--left-teal-light">
-  <img class="p--body" src="/assets/img/pages/users-guide/AB2Features+Dimensions.jpg?nf-resize=fit=1200" alt="AirBeam2 Features and Dimensions" />
+  <img
+    alt="AirBeam2 Features and Dimensions"
+    class="p--body lazyload"
+    data-src="/assets/img/pages/users-guide/AB2Features+Dimensions.jpg?nf-resize=fit&w=1200"
+    src="/assets/img/pages/users-guide/AB2Features+Dimensions.jpg?nf-resize=fit&w=20"
+  />
 
   <ul class="contents-list list p--body">
     <li class="contents-list__item"><a href="#specification">Hardware Specifications</a></li>
@@ -254,19 +259,34 @@ section: about
     Using five-minute averages, we fit equations for PM1, PM2.5, and PM10 that converted the PurpleAir measurements to the GRIMM measurements, see below plots. After removing significant outliers, our dataset included 17,270 data points. The equations for PM1, R2=0.98, and PM2.5, R2=0.96, showed excellent fit, with a suggestion of an exponential response for the PM1 equation. For the PM10 equation, R2=0.41, the fit was average, with especially imprecise measurements in the lower concentration ranges.
   </p>
 
-  <img class="p--body" src="/assets/img/pages/users-guide/PA_Plots.jpg?nf-resize=fit=1200" alt="PurpleAir Plots" />
+  <img
+    class="p--body lazyload"
+    data-src="/assets/img/pages/users-guide/PA_Plots.jpg?nf-resize=fit&w=1200"
+    src="/assets/img/pages/users-guide/PA_Plots.jpg?nf-resize=fit&w=20"
+    alt="PurpleAir Plots"
+  />
 
   <p class="p--body">
     Next, we updated the AirBeam2 firmware to run the calibration equations we derived from fitting the PurpleAir measurements to the GRIMM measurements. Then we validated our calibration equations by comparing the AirBeam2 measurements to the measurements from a <a href="http://www.tsi.com/dusttrak-drx-aerosol-monitor-8533/">TSI DustTrak DRX Aerosol Monitor 8533</a>. Two AirBeam2s and one TSI were placed inside a concentrated air pollutants (CAPS) chamber located at the NYU School of Medicine Sterling Forest campus. The CAPS chamber is designed for animal exposure tests and concentrates outdoor particulate matter into a small sealed enclosure. Unfortunately, we were unable to obtain particle differentiation for PM10 because CAPS removes large particles before concentrating small particles in the exposure chamber.
   </p>
 
-  <img class="p--body" src="/assets/img/pages/users-guide/NYUSOM_CAPS.jpg?nf-resize=fit=1200" alt="NYUSOM CAPS" />
+  <img
+    class="p--body lazyload"
+    data-src="/assets/img/pages/users-guide/NYUSOM_CAPS.jpg?nf-resize=fit&w=1200"
+    src="/assets/img/pages/users-guide/NYUSOM_CAPS.jpg?nf-resize=fit&w=20"
+    alt="NYUSOM CAPS"
+  />
 
   <p class="p--body">
     The plots below show one-minute averages from our validation experiment. The results indicate high linearity and excellent agreement between the AirBeam2 and the TSI for both PM2.5, R2=0.89, and PM1, R2=0.88, with the red lines representing what would be perfect agreement between the two instruments.
   </p>
 
-  <img class="p--body" src="/assets/img/pages/users-guide/AB_Plots.jpg?nf-resize=fit=1200" alt="AirBeam plots" />
+  <img
+    class="p--body lazyload"
+    data-src="/assets/img/pages/users-guide/AB_Plots.jpg?nf-resize=fit&w=1200"
+    src="/assets/img/pages/users-guide/AB_Plots.jpg?nf-resize=fit&w=20"
+    alt="AirBeam plots"
+  />
 
   <p class="p--body">
     Our analysis has several limitations. First, to construct the calibration equations we used data that evaluated the performance of earlier model Plantower sensors, which may perform differently than the Plantower sensor integrated into the AirBeam2. Second, we did not have data available for higher concentration ranges, which may potentially ignore non-linearity in responses. Third, we did not adjust for relative humidity or temperature. Prior academic research indicates these variables, especially humidity, can significantly impact the measurements from light scattering sensors. Fourth, we only tested the AirBeam2 against a single aerosol.  Given the geographic and seasonal variation in aerosols around the world and the variable response of light scattering sensors to differing aerosol compositions, our results will be more relevant in some settings than others.

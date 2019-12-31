@@ -47,9 +47,10 @@ section: donate
     </div>
     <div class="split--50 u--align-right">
       <img
-        class="img img--alternate-small img--fade-in"
-        src="/assets/img/pages/donate/airbeam.jpg"
-        alt="Airbeam"
+        alt="A person holding an Airbeam"
+        class="img img--alternate-small lazyload"
+        data-src="/assets/img/pages/donate/airbeam.jpg?nf_resize=fit&w=570"
+        src="/assets/img/pages/donate/airbeam.jpg?nf_resize=fit&w=20"
       />
     </div>
   </div>
