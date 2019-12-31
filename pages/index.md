@@ -43,7 +43,7 @@ section: home
               </a>
               <a href="/airbeam/user-stories#user-stories" class="button button--ac-on-teal">More User Stories</a>
             </div>
-            {% assign image_url = "https://deploy-preview-125--habitatmap.netlify.com/" | append: story.image %}
+            {% assign image_url = story.image %}
             <div class="split--50 slide__image">
               <picture>
                 <source data-srcset="{{ image_url | append: '?nf_resize=fit&w=767' }}" media="(max-width: 767px)" />
