@@ -84,14 +84,14 @@
 }
 
 .panel--banner {
-  background-image: url("/assets/img/pages/user-stories/banner.jpg");
+  background-image: url("/assets/img/pages/user-stories/airbeam-userstories-footer-banner.jpg");
   background-position: center;
   background-size: cover;
   padding-bottom: 11rem;
   padding-top: 4rem;
 
   @media screen and (max-width: $large-mobile-min) {
-    background-image: url("/assets/img/pages/user-stories/banner.jpg?nf_resize=fit&w=720");
+    background-image: url("/assets/img/pages/user-stories/airbeam-userstories-footer-banner.jpg?nf_resize=fit&w=720");
   }
 }
 
