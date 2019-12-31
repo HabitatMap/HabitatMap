@@ -1,9 +1,23 @@
 .shop-airbeam {
   margin-bottom: $u-space-default;
-}
 
-.shop-airbeam__price {
-  color: $green;
+  .arc-background {
+    @media screen and (min-width: $tablet-min) {
+      background-position: top 150px right 8vw;
+    }
+
+    @media screen and (min-width: $small-desktop-min) {
+      background-position: top 220px right 8vw;
+    }
+
+    @media screen and (min-width: $desktop-min) {
+      background-position: top 190px right 10vw;
+    }
+
+    @media screen and (min-width: $large-desktop-min) {
+      background-position: top 230px right 13vw;
+    }
+  }
 }
 
 .shop-airbeam__caption {

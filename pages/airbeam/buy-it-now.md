@@ -11,7 +11,7 @@ section: airbeam
       AirBeam is a low-cost, palm-sized air quality instrument that measures hyperlocal concentrations of harmful microscopic particles in the air, known as particulate matter, as well as humidity and temperature.
     </h1>
   </div>
-  <div class="panel arc-background arc-background--right-teal-light arc-background--right-bottom">
+  <div class="panel arc-background arc-background--right-teal-light">
     <div class="split--50 split--padding-right split--order-secondary">
       <h2 class="heading heading--medium u--gray-text">
         Payment Methods
