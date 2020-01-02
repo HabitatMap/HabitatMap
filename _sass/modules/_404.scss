@@ -1,9 +1,25 @@
 .not-found {
-  margin-left: auto;
-  margin-right: auto;
+  flex-direction: column;
+  padding-bottom: $u-space-big;
 }
 
 .not-found__image {
   margin: 0 auto;
   max-width: 300px;
+}
+
+.not-found__copy {
+  text-align: center;
+}
+
+.not-found__search-bar {
+  text-align: center;
+
+  .ais-search-box {
+    max-width: 500px;
+  }
+}
+
+.not-found__search-results {
+  display: block;
 }
