@@ -1,8 +1,9 @@
+<a id="category-list" class="anchor"></a>
 <div class="panel categories">
   <ul class="category-list">
     {% for category in site.categories %}
       <li>
-        <a href="{{ category.url }}" class="category-list__link button button--ac" {% if category.url == page.url %} data-current {% endif %}>
+        <a href="{{ category.url | append: '#category-list'}}" class="category-list__link button button--ac" {% if category.url == page.url %} data-current {% endif %}>
           {{ category.name }}
         </a>
       </li>
