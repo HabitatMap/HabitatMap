@@ -13,12 +13,13 @@ gem "jekyll", "~> 4.0.0"
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   gem "hpricot" # jekyll-import dependency
-  gem 'jekyll-algolia', '~> 1.0'
+  gem "jekyll-algolia", "~> 1.0"
   gem "jekyll-feed", "~> 0.12"
   gem "jekyll-import"
   gem "octopress-debugger"
   gem "open_uri_redirections" # jekyll-import dependency
   gem "jekyll-seo-tag"
+  gem "jekyll-sitemap"
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem

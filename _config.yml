@@ -41,6 +41,7 @@ plugins:
   - jekyll-feed
   - jekyll-import
   - jekyll-seo-tag
+  - jekyll-sitemap
 
 # Search plugin config
 algolia:
