@@ -3,7 +3,7 @@ layout: page
 title: HabitatMap - History & People
 permalink: /about/history
 section: about
-image: /assets/img/about-habitatmap/MichaelHeimbinder.jpg
+image: /assets/img/pages/about-habitatmap/MichaelHeimbinder.jpg
 ---
 
 <section class="panel panel--history-intro u--bg-teal">
