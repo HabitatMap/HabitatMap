@@ -3,6 +3,7 @@ layout: page
 title: AirBeam - Buy it now
 permalink: /airbeam/buy-it-now
 section: airbeam
+image: /assets/img/buy-it-now.jpg
 ---
 
 <section class="shop-airbeam">

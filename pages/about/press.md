@@ -3,6 +3,7 @@ layout: page
 title: HabitatMap - Press
 permalink: /about/press
 section: about
+image: /assets/img/about-airbeam-01.jpg
 ---
 
 <section class="panel panel--history-intro u--bg-teal">

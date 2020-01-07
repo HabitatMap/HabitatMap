@@ -3,6 +3,7 @@ layout: page
 title: AirBeam FAQ
 permalink: /airbeam/faq
 section: faq
+image: /assets/img/about-airbeam-01.jpg
 ---
 
 <section class="panel panel--faq-intro u--bg-green">

@@ -2,6 +2,7 @@
 layout: home
 permalink: /
 section: home
+image: /assets/img/habitatmap-home-airbeam-aircasting.png
 ---
 
 <section class="panel panel--hero u--bg-teal-light">

@@ -3,6 +3,7 @@ layout: page
 title: Donate
 permalink: /donate
 section: donate
+image: /assets/img/pages/donate/airbeam.jpg
 ---
 
 <section class="shop-airbeam">

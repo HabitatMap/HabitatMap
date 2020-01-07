@@ -3,6 +3,7 @@ layout: page
 title: Airbeam - User's Guide
 permalink: /airbeam/users-guide
 section: about
+image: /assets/img/about-airbeam-01.jpg
 ---
 
 <section class="panel panel--history-intro u--bg-teal">
