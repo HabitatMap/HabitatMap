@@ -25,3 +25,19 @@
     padding-bottom: 30%;
   }
 }
+
+.img-full-width.lazyloaded {
+  background-image: url("/assets/img/pages/about-habitatmap/hero.jpg");
+
+  @media screen and (max-width: 1366px) {
+    background-image: url("/assets/img/pages/about-habitatmap/hero.jpg?nf_resize=fit&w=2050");
+  }
+
+  @media screen and (max-width: 1024px) {
+    background-image: url("/assets/img/pages/about-habitatmap/hero.jpg?nf_resize=fit&w=1536");
+  }
+
+  @media screen and (max-width: 480px) {
+    background-image: url("/assets/img/pages/about-habitatmap/hero.jpg?nf_resize=fit&w=720");
+  }
+}

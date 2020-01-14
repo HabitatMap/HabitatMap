@@ -53,14 +53,17 @@
 }
 
 .panel--hero {
-  background-image: url("/assets/img/habitatmap-home-airbeam-aircasting.jpg");
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: 100% auto;
   padding-bottom: 65%;
 
-  @media screen and (max-width: $large-mobile-min) {
-    background-image: url("/assets/img/habitatmap-home-airbeam-aircasting.jpg?nf_resize=fit&w=720");
+  &.lazyloaded {
+    background-image: url("/assets/img/habitatmap-home-airbeam-aircasting.jpg");
+
+    @media screen and (max-width: $large-mobile-min) {
+      background-image: url("/assets/img/habitatmap-home-airbeam-aircasting.jpg?nf_resize=fit&w=720");
+    }
   }
 
   @media screen and (min-width: $tablet-min) {
@@ -84,14 +87,17 @@
 }
 
 .panel--banner {
-  background-image: url("/assets/img/pages/user-stories/airbeam-userstories-footer-banner.jpg");
   background-position: center;
   background-size: cover;
   padding-bottom: 11rem;
   padding-top: 4rem;
 
-  @media screen and (max-width: $large-mobile-min) {
-    background-image: url("/assets/img/pages/user-stories/airbeam-userstories-footer-banner.jpg?nf_resize=fit&w=720");
+  &.lazyloaded {
+    background-image: url("/assets/img/pages/user-stories/airbeam-userstories-footer-banner.jpg");
+
+    @media screen and (max-width: $large-mobile-min) {
+      background-image: url("/assets/img/pages/user-stories/airbeam-userstories-footer-banner.jpg?nf_resize=fit&w=720");
+    }
   }
 }
 

@@ -7,36 +7,6 @@ section: about
 image: /assets/img/pages/about-habitatmap/airbeam.jpg
 ---
 
-{% assign hero_image_url = "/assets/img/pages/about-habitatmap/hero.jpg" %}
-{% assign hero_image_mobile_url = "/assets/img/pages/about-habitatmap/hero.jpg?nf_resize=fit&w=720" %}
-{% assign hero_image_tablet_url = "/assets/img/pages/about-habitatmap/hero.jpg?nf_resize=fit&w=1536" %}
-{% assign hero_image_medium_desktop_url = "/assets/img/pages/about-habitatmap/hero.jpg?nf_resize=fit&w=2050" %}
-
-<style scoped>
-  .img-full-width {
-    background-image: url("{{ hero_image_url }}");
-  }
-
-  @media screen and (max-width: 1366px) {
-    .img-full-width {
-      background-image: url("{{ hero_image_medium_desktop_url }}");
-    }
-  }
-
-  @media screen and (max-width: 1024px) {
-    .img-full-width {
-      background-image: url("{{ hero_image_tablet_url }}");
-    }
-  }
-
-  @media screen and (max-width: 480px) {
-    .img-full-width {
-      background-image: url("{{ hero_image_mobile_url }}");
-    }
-  }
-
-</style>
-
 <section class="panel panel--about-intro u--bg-teal">
   <div class="split--50 split--padding-right">
     <h1 class="heading heading--large">
@@ -60,7 +30,7 @@ image: /assets/img/pages/about-habitatmap/airbeam.jpg
   </div>
 </section>
 
-<section class="img-full-width"></section>
+<section class="img-full-width lazyload"></section>
 
 <section class="arc-background arc-background--left-teal-light arc-background--left-center u--vertical-padding">
   <div class="panel">

@@ -6,10 +6,14 @@ picture img {
   width: 100%; /* stretch to fill the picture element */
 }
 
-img.lazyloaded {
+img.lazyloaded,
+.panel--banner.lazyloaded,
+.img-full-width.lazyloaded {
   transition: 0.5s filter;
 }
 
-img.lazyloading {
+img.lazyloading,
+.panel--banner.lazyloading,
+.img-full-width.lazyloading {
   filter: blur(20px);
 }

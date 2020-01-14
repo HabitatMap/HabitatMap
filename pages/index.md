@@ -5,7 +5,7 @@ section: home
 image: /assets/img/habitatmap-home-airbeam-aircasting.png
 ---
 
-<section class="panel panel--hero u--bg-teal-light">
+<section class="panel panel--hero u--bg-teal-light lazyload">
   <div class="split--50">
     <h1 class="heading heading--large u--accent-hm panel__heading">
       Harnessing the Power&nbsp;of&nbsp;People and&nbsp;Technology&nbsp;to Improve the Quality&nbsp;of&nbsp;Lives
