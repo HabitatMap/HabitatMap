@@ -63,12 +63,13 @@ image: /assets/img/aircasting-map-screenshot.png
       </p>
       <a href="/airbeam/how-it-works" class="button">Learn More</a>
     </div>
-    <img
-      alt="AirCasting App on Mobile"
-      class="img img--alternate-medium lazyload"
-      data-src="/assets/img/pages/aircasting/app-screenshot.jpg?nf_resize=fit&w=750"
-      src="/assets/img/pages/aircasting/app-screenshot.jpg?nf_resize=fit&w=20"
-    />
+    <div class="split--50 split--padding-left">
+      <img
+        alt="AirCasting App on Mobile"
+        class="img img--alternate-medium lazyload"
+        data-src="/assets/img/pages/aircasting/app-screenshot.jpg?nf_resize=fit&w=750"
+        src="/assets/img/pages/aircasting/app-screenshot.jpg?nf_resize=fit&w=20"
+      />
     </div>
   </div>
 </section>
