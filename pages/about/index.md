@@ -67,7 +67,7 @@ image: /assets/img/pages/about-habitatmap/airbeam.jpg
       <p class="p--body">
         Since launching HabitatMap in 2006, he has worked with dozens of community-based organizations and schools to create planning and advocacy maps that publicize the issues they care about most.
       </p>
-      <a href="/about/history" class="button button--ac">Learn more</a>
+      <a href="/about/history" class="button button--ac">Learn More</a>
     </div>
   </div>
 </section>
@@ -89,7 +89,7 @@ image: /assets/img/pages/about-habitatmap/airbeam.jpg
     <p class="p--body">
       The AirBeam measures particulate matter with proven accuracy and when used in conjunction with the AirCasting platform - or a custom solution - helps community-based organizations, educators, academics, regulators, city managers, and citizen scientists map air pollution and organize for clean air.
     </p>
-    <a href="/airbeam" class="button button--hm">Learn more</a>
+    <a href="/airbeam" class="button button--hm">Learn More</a>
   </div>
 
   <div class="split--50 split--padding-left">

@@ -61,7 +61,7 @@ image: /assets/img/aircasting-map-screenshot.png
       <p class="p--body">
         The AirBeam measures harmful microscopic air particles (particulate matter), humidity, and temperature.  In mobile mode, the AirBeam can be worn to capture personal exposures.  In fixed mode, it can be installed indoors or outdoors - it’s weather resistant and doesn’t need a shelter - to keep tabs on pollution levels in your home, office, backyard, or neighborhood 24/7.
       </p>
-      <a href="/airbeam/how-it-works" class="button">Learn more</a>
+      <a href="/airbeam/how-it-works" class="button">Learn More</a>
     </div>
     <img
       alt="AirCasting App on Mobile"
