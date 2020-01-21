@@ -44,7 +44,7 @@ image: /assets/img/about-airbeam-01.jpg
         <p class="p--body">
           The AirBeam was designed by HabitatMap to raise awareness of the disproportionate environmental burdens borne by low-income communities and communities of color and equip these communities with tools to advocate for equity and improved quality of life.
         </p>
-        <a href="/airbeam/how-it-works" class="button button--ac">Learn more</a>
+        <a href="/airbeam/how-it-works" class="button button--ac">Learn More</a>
       </div>
       <div class="split--50 split--padding-left u--align-right">
         <img
@@ -89,7 +89,7 @@ image: /assets/img/about-airbeam-01.jpg
     </h2>
   </div>
 
-  {% include testimonials-slider.html testimonials = site.testimonials %}
+{% include testimonials-slider.html testimonials = site.testimonials %}
 
   <a href="/airbeam/faq" class="badge-link badge-link--light-hm">
     <span class="u--vertically-centered">Questions? Check out our FAQ</span>
