@@ -107,7 +107,7 @@ $header-link-color-white: $white;
   color: $header-link-color-homepage;
 
   &[data-current="current page"] {
-    opacity: 0.5;
+    opacity: 0.55;
     color: inherit;
   }
 
@@ -159,7 +159,7 @@ $header-link-color-white: $white;
 
   &:hover,
   &:focus {
-    color: rgba($header-link-color-homepage, 0.5);
+    color: rgba($header-link-color-homepage, 0.75);
   }
 
   [data-current="airbeam"] &,
@@ -169,7 +169,7 @@ $header-link-color-white: $white;
 
     &:hover,
     &:focus {
-      color: rgba($white, 0.5);
+      color: rgba($white, 0.75);
     }
   }
 
@@ -179,7 +179,7 @@ $header-link-color-white: $white;
 
     &:hover,
     &:focus {
-      color: rgba($white, 0.5);
+      color: rgba($white, 0.75);
     }
   }
 
@@ -189,7 +189,7 @@ $header-link-color-white: $white;
 
     &:hover,
     &:focus {
-      color: rgba($teal, 0.5);
+      color: rgba($teal, 0.75);
     }
   }
 
@@ -199,7 +199,7 @@ $header-link-color-white: $white;
 
     &:hover,
     &:focus {
-      color: rgba($green, 0.5);
+      color: rgba($green, 0.75);
     }
   }
 
@@ -209,7 +209,7 @@ $header-link-color-white: $white;
 
     &:hover,
     &:focus {
-      color: rgba($blue, 0.5);
+      color: rgba($blue, 0.75);
     }
   }
 
@@ -220,7 +220,7 @@ $header-link-color-white: $white;
 
       &:hover,
       &:focus {
-        color: rgba($white, 0.5);
+        color: rgba($white, 0.55);
       }
     }
   }
