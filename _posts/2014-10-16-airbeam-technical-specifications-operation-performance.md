@@ -11,6 +11,8 @@ tag:
   - instruments
   - citizen science
 ---
+![Lower Manhattan Ambient Air Linear Regression](/images/uploads/LowerManhattanAmbientAir.jpg)
+
 <p dir="ltr"><span style="text-decoration: underline;">Hardware Specifications</span><br />
 Weight: 7 ounces<br />
 Particle Sensor: Shinyei PPD60PV<br />
