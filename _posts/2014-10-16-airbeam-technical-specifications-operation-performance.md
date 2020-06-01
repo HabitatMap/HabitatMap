@@ -46,7 +46,7 @@ The below claims and disclaimers are based on comparisons between the AirBeam, a
 
 <p>Below 100 micrograms per cubic meter (µg/m³), samples collected in ambient air in Manhattan (samples were collected on 11 different occasions and averaged over 12 hour periods) and while burning cardboard indoors (samples were collected over a 1 hour period and averaged every minute) both showed a strong linear relationship between the AirBeam and pDR-1500 measurements. As illustrated in Figure 1, the R2 values below 24 µg/m³ for two AirBeams in ambient air in Manhattan were .98 or better. </p>
 
-![](/images/uploads/LowerManhattanAmbientAir.jpg)
+![Lower Manhattan Ambient Air Linear Regression](/images/uploads/LowerManhattanAmbientAir.jpg)
 
 <p>As illustrated in Figure 2, the R2 values below 100 µg/m³ for four AirBeams while burning cardboard indoors were .94 or better. Also shown in Figure 2, “out-of-the-box” variability between AirBeams is more pronounced as the measurements climb above 30 µg/m³. Meaning that measurements recorded by two AirBeams exposed to identical air samples may begin to drift apart as PM2.5 concentrations increase. Out-of-the-box variability can be substantially reduced by using the AirCasting app calibration feature (still in beta) and adjusting the side-facing potentiometer on the Shinyei PPD60PV.</p>
 
