@@ -55,9 +55,13 @@ This equipment has been tested and found to comply with the limits for a Class B
 
 <p>Because the relationship between the AirBeam and pDR-1500 measurements becomes increasingly non-linear above 100 µg/m³, a nonlinear regression curve was used to determine the relationship between the AirBeam and pDR-1500 measurements at higher concentrations, see Figure 3 (samples were collected over a 1 hour period and averaged every minute). During separate sampling runs, we calculated R2 values for the nonlinear regression curve ranging from 0.60 to 0.80. The decrease in R2 values as compared to the linear regression is likely attributed to higher variability near and above the AirBeam’s maximum limit of detection, which we estimate to be approximately 400 µg/m³.</p>
 
+![Cooking Indoors Nonlinear Regression](/images/uploads/CookingIndoors.jpg)
+
 <p>Additional research is required to see how the maximum limit of detection is impacted by the reflectivity of the aerosol being sampled. The relative reflectivity of aerosols impacts the AirBeam measurements. Highly reflective aerosols, like wood smoke, bias the AirBeam measurements upwards, whereas less reflective aerosols, like diesel exhaust, bias the AirBeam measurements downwards.</p>
 
 <p>During ambient air sampling in Lower Manhattan during the summer months, measurements from a pDR-1500 and two Airbeams were compared against a teflon filter subjected to gravimetric analysis, see Figure 4. Sampling was done in 12-hour averages each day for 11 days and averaged to compare the real time instruments against the gravimetric filters. When compared against the gravimetric filters, the R2 value of AirBeams was found to be 0.70 compared to 0.76 for the pDR-1500. Time weighted averages of the gravimetric filter data showed consistently higher values as compared to the pDR-1500 at ambient levels. We assume this downward bias is also in effect with the AirBeam, since both are light scattering particle counters. Further, we assume part of this this bias can be attributed to the relative reflectivity of the aerosol being measured. The R2 value of the pDR-1500 measured against the AirBeams during these 12-hour day averages was found to be 0.98.</p>
+
+![Lower Manhattan Ambient Air Linear Regression](/images/uploads/LowerManhattanAmbientAir2.jpg)
 
 <p>Research conducted by others on light scattering particle counters indicates that high relative humidity (&gt;80%) is likely to have a negative impact on the accuracy of the AirBeam. When relative humidity is high, aerosols take on water becoming more reflective. Additional research is required to better characterize this effect as it applies to the AirBeam.</p>
 
