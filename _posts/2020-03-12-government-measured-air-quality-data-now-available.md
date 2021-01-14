@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Government Measured Air Quality Data Now Available
-date: '2020-03-12'
-featured: true
+date: 2020-03-12
+featured: false
 image: /images/uploads/openaq_pm2.5.png
 category: Open Source Software
 tag:
