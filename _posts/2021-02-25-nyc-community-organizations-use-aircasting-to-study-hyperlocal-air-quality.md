@@ -3,6 +3,7 @@ layout: post
 title: NYC Community Organizations use AirCasting to Study Hyperlocal Air Quality
 date: 2021-02-25
 featured: true
+author: Michael Heimbinder
 image: /images/uploads/williamsburghexagonmap.png
 category: Health
 tag:
