@@ -2,7 +2,7 @@
 layout: post
 title: New York Times Reports on Personal Pollution Exposures Using AirBeam2
 date: 2021-01-14
-featured: true
+featured: false
 author: Michael Heimbinder
 image: /images/uploads/personal_pollution_exposures.png
 category: Health
