@@ -93,8 +93,8 @@ section: airbeam
     <img
       alt="AirCasting Mobile App"
       class="img img--margin-top lazyload"
-      data-src="/assets/img/pages/how-it-works/app.png?nf_resize=fit&w=750"
-      src="/assets/img/pages/how-it-works/app.png?nf_resize=fit&w=20"
+      data-src="/assets/img/pages/how-it-works/app-new.png?nf_resize=fit&w=750"
+      src="/assets/img/pages/how-it-works/app-new.png?nf_resize=fit&w=20"
     />
   </div>
 </section>
