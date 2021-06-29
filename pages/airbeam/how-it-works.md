@@ -38,8 +38,8 @@ section: airbeam
     <img
       alt="Airbeam attached to a wall at home"
       class="img lazyload"
-      data-src="/assets/img/pages/how-it-works/airbeam-on-wall.jpg?nf_resize=fit&w=750"
-      src="/assets/img/pages/how-it-works/airbeam-on-wall.jpg?nf_resize=fit&w=20"
+      data-src="/assets/img/pages/how-it-works/how-it-works-1.jpg?nf_resize=fit&w=750"
+      src="/assets/img/pages/how-it-works/how-it-works-1.jpg?nf_resize=fit&w=20"
     />
   </div>
 </section>
@@ -49,8 +49,8 @@ section: airbeam
     <img
       alt="Airbeam attached to a backpack"
       class="img lazyload"
-      data-src="/assets/img/pages/how-it-works/airbeam.jpg?nf_resize=fit&w=750"
-      src="/assets/img/pages/how-it-works/airbeam.jpg?nf_resize=fit&w=20"
+      data-src="/assets/img/pages/how-it-works/how-it-works-2.jpg?nf_resize=fit&w=750"
+      src="/assets/img/pages/how-it-works/how-it-works-2.jpg?nf_resize=fit&w=20"
     />
   </div>
 
@@ -104,8 +104,8 @@ section: airbeam
     <img
       alt="Airbeam on a desk"
       class="img lazyload"
-      data-src="/assets/img/pages/how-it-works/airbeam-on-desk.jpg?nf_resize=fit&w=750"
-      src="/assets/img/pages/how-it-works/airbeam-on-desk.jpg?nf_resize=fit&w=20"
+      data-src="/assets/img/pages/how-it-works/how-it-works-3.jpg?nf_resize=fit&w=750"
+      src="/assets/img/pages/how-it-works/how-it-works-3.jpg?nf_resize=fit&w=20"
     />
   </div>
   <div class="split--50">

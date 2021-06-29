@@ -3,7 +3,7 @@ layout: page
 title: AirBeam - Buy It Now
 permalink: /airbeam/buy-it-now
 section: airbeam
-image: /assets/img/buy-it-now.jpg
+image: /assets/img/airbeam-buy-it-now.jpg
 ---
 
 <section class="shop-airbeam">
@@ -56,8 +56,8 @@ image: /assets/img/buy-it-now.jpg
       <img
         alt="Airbeam"
         class="img lazyload"
-        data-src="/assets/img/buy-it-now.jpg?nf_resize=fit&w=750"
-        src="/assets/img/buy-it-now.jpg?nf_resize=fit&w=20"
+        data-src="/assets/img/airbeam-buy-it-now.jpg?nf_resize=fit&w=750"
+        src="/assets/img/airbeam-buy-it-now.jpg?nf_resize=fit&w=20"
       />
     </div>
   </div>
