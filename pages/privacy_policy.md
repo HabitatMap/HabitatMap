@@ -32,7 +32,7 @@ section: privacy
   <p>You can contact the data controller:</p>
   <ul class="list list--unordered">
     <li>postal address: <strong>34A St Marks Avenue, Brooklyn, NY 11217 USA</strong></li>
-    <li>e-mail address: </strong><a class="link" href="mailto:info@habitatmap.org">info@habitatmap.org</a></strong></li>
+    <li>e-mail address: <strong><a class="link" href="mailto:info@habitatmap.org">info@habitatmap.org</a></strong></li>
   </ul>
 
   <h2 class="heading heading--medium">Categories of Personal Data</h2>
@@ -95,11 +95,11 @@ Providing this data is voluntary and does not affect your ability to use the Air
 
 <p class="p--body"> Sending notifications and access to geolocation data is voluntary and takes place with your consent, which can be withdrawn at any time, without prejudice to the use of other application functions. </p>
 
-<p class="p--body"><strong>3. Contacting you, at your request, and responding to your questions, which are in the exercise of HabitatMap’s legitimate interest (Article 6(1)(f) GDPR).</strong></h3>
+<p class="p--body"><strong>3. Contacting you, at your request, and responding to your questions, which are in the exercise of HabitatMap’s legitimate interest (Article 6(1)(f) GDPR).</strong></p>
 
 <p class="p--body"> HabitatMap allows you to send inquiries and suggestions for improvements to the app via email and will process the email address you provide for this purpose. </p>
 
-<p class="p--body"><strong>4. Maintaining, improving, and developing the application, and customizing some of the app content to your preferences, which are in the exercise of HabitatMap’s legitimate interest (Article 6(1)(f) GDPR).</strong></h3>
+<p class="p--body"><strong>4. Maintaining, improving, and developing the application, and customizing some of the app content to your preferences, which are in the exercise of HabitatMap’s legitimate interest (Article 6(1)(f) GDPR).</strong></p>
 
 <p class="p--body"> HabitatMap processes information that may (but not necessarily) be considered personal data, using third-party-provided tools that perform similar functions to cookies to maintain, improve, and develop the app and to customize some of the content to your preferences. </p>
 
@@ -171,7 +171,7 @@ Providing this data is voluntary and does not affect your ability to use the Air
 <li>lodge a complaint to the President of the Office for Personal Data Protection – in the event of a breach by HabitatMap of the processing of your personal data, you may lodge a complaint with the relevant authority.</li>
 </ul>
 <p class="p--body">You may contact HabitatMap with any request to exercise your rights by email or postal address shown at the beginning of this document or by other means of your choice.
-Details on how to file a complaint with the President of the Office of Personal Data Protection can be found at: https://uodo.gov.pl/pl/p/kontakt. </p>
+Details on how to file a complaint with the President of the Office of Personal Data Protection can be found at: <a href="https://uodo.gov.pl/pl/p/kontakt.">https://uodo.gov.pl/pl/p/kontakt.</a></p>
 
 <h2 class="heading heading--medium">Miscellaneous</h2>
 
