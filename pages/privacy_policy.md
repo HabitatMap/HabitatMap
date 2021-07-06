@@ -19,31 +19,18 @@ section: privacy
 <p class="p--body">  
 This privacy policy sets out the rules for HabitatMap’s processing of your data, including personal data, in relation to your use of the AirCasting mobile application.</p>
 
-  
-<p class="p--body">
-<section class="panel panel--history-intro u--bg-teal">
-  <h1 class="heading heading--large">
-    Personal Data Controller
-  </h1>
-</section>
+# Personal Data Controller
 
-The controller of your personal data is HabitatMap Incorporated, with its registered office located at 34A St Marks Avenue, Brooklyn, NY 11217 USA</p>
+<p class="p--body">   The controller of your personal data is HabitatMap Incorporated, with its registered office located at 34A St Marks Avenue, Brooklyn, NY 11217 USA</p>
 
-<section class="panel panel--history-intro u--bg-teal">
-  <h1 class="heading heading--large">
-    Contact Details of the Personal Data Controller
-  </h1>
-</section>
+# Contact Details of the Personal Data Controller
 
 You can contact the data controller:
 - postal address: 34A St Marks Avenue, Brooklyn, NY 11217 USA
 - e-mail address: info@habitatmap.org
 
-<section class="panel panel--history-intro u--bg-teal">
-  <h1 class="heading heading--large">
-    Categories of Personal Data
-  </h1>
-</section>
+# Categories of Personal Data
+
 1. Data Obtained Directly from Users of the AirCasting App
 HabitatMap controls the personal data that you provide when using the AirCasting mobile app, including the following types of data:
 
@@ -78,11 +65,8 @@ HabitatMap may also have access to data that may (but not necessarily) be consid
   <p class="p--body">
 Providing this data is voluntary and does not affect your ability to use the AirCasting mobile application. The rules for sharing the concerned data are defined by the entities that own such tools (see below for more details on tracking tools).</p>
 
-<section class="panel panel--history-intro u--bg-teal">
-  <h1 class="heading heading--large">
-    Purposes & Legal Basis for the Processing of Personal Data
-  </h1>
-</section>
+# Purposes & Legal Basis for the Processing of Personal Data
+
 Your personal data may be processed for the purpose of:
 
 1. Performing a contract, or taking an action at your request prior to the conclusion of a contract, and for the purpose of pursuing claims under the contract (Article 6(1)(b) and (f) GDPR).
@@ -105,31 +89,21 @@ HabitatMap processes your personal data to enable you to fully enjoy all the fea
 
 <p class="p--body"> HabitatMap processes information that may (but not necessarily) be considered personal data, using third-party-provided tools that perform similar functions to cookies to maintain, improve, and develop the app and to customize some of the content to your preferences. </p>
 
-<section class="panel panel--history-intro u--bg-teal">
-  <h1 class="heading heading--large">
-    How HabitatMap collects your personal data?
-  </h1>
-</section>
+# How HabitatMap collects your personal data?
+
 <p class="p--body">  HabitatMap has direct access only to the personal data you have provided. </p>
 
 <p class="p--body"> Some of the information about you that may (but not necessarily) be considered personal data is processed by HabitatMap through the use of tools that perform similar functions to cookies, provided to HabitatMap by third-party providers (referred to below). </p>
 
-<section class="panel panel--history-intro u--bg-teal">
-  <h1 class="heading heading--large">
-    Tracking Tools and Automated Decision-making
-  </h1>
-</section>
+# Tracking Tools and Automated Decision-making
+
 <p class="p--body"> HabitatMap uses the Firebase Analytics tool provided by Google LLC, which performs similar functions to cookies. In order to maintain, improve, and develop the app, and to customize some of the app content to your preferences, HabitatMap uses information provided by Firebase Analytics. This information may include the identifiers of the mobile devices you use, the language of the device, the time the app is opened, and other data you have provided to Google. </p>
 
 <p class="p--body"> HabitatMap is not able to recognize your identity from the data provided by Firebase Analytics. Information about Firebase Analytics and how it works can be found here: https://policies.google.com/technologies/ads and https://firebase.google.com/terms/. </p>
 
 <p class="p--body"> Data regarding your location may be used for the purpose of automated decision making, consisting in sending information regarding the current quality of air pollution in your location. Automated decision making for the purposes referred to above depends on your consent, which may be withdrawn at any time, without prejudice to the use of the other application functions. </p>
 
-<section class="panel panel--history-intro u--bg-teal">
-  <h1 class="heading heading--large">
-    Categories of the Recipients of Personal Data
-  </h1>
-</section>
+# Categories of the Recipients of Personal Data
 
 <p class="p--body"> For the purposes mentioned above and in particular to enable you to use the AirCasting mobile app, your data may be shared with HabitatMap’s trusted partners. HabitatMap will only share data that are necessary for the purposes of the processing indicated above and only for the fulfillment of these purposes. HabitatMap ensures that your data is shared with the third parties in compliance with the security rules provided by law (in particular the GDPR) as well as in accordance with the provisions of this Privacy Policy. </p>
 
@@ -141,11 +115,7 @@ Your personal data may be processed by entities such as:
 - software as a service providers enabling HabitatMap internal communication, project, and task management;
 - providers of tools that perform similar functions to cookies.
 
-<section class="panel panel--history-intro u--bg-teal">
-  <h1 class="heading heading--large">
-    Recipients of Personal Data Outside the European Economic Area
-  </h1>
-</section>
+# Recipients of Personal Data Outside the European Economic Area
 
 <p class="p--body">In order to enable you to use the app, communicate with HabitatMap, send you notifications upon your request, and maintain, improve, and develop the app, and customize some of its content to your preferences, Google LLC, which is an entity located outside the European Economic Area (EEA), may be a recipient of your personal data. </p>
 
@@ -157,11 +127,8 @@ Your personal data may be processed by entities such as:
 
 - your consent – if none of the above grounds for transferring data to a recipient outside the EEA is applicable, HabitatMap will transfer your data to a third-country recipient only with your express consent. However, we would like to inform you that in this case there is a risk of not ensuring adequate protection of your personal data, in connection with their transfer to a recipient outside the EEA.
 
-<section class="panel panel--history-intro u--bg-teal">
-  <h1 class="heading heading--large">
-    Period of Personal Data Storage
-  </h1>
-</section>
+# Period of Personal Data Storage
+
 Your personal data will be processed:
 - no longer then until the execution of the agreement (i.e. until you uninstall the AirCasting app), and after its execution until the expiry of the statute of limitations for claims related to the agreement (as a rule, a three-year statute of limitations);
 
@@ -169,11 +136,8 @@ Your personal data will be processed:
 
 - where the processing of personal data is based on your consent or permission (e.g. processing of your geo-location data) - until it is withdrawn.
 
-<section class="panel panel--history-intro u--bg-teal">
-  <h1 class="heading heading--large">
-    Rights of the Data Subject
-  </h1>
-</section>
+# Rights of the Data Subject
+
 You have the right to:
 - access to personal data – you can obtain information on, inter alia, what personal data are processed by HabitatMap, for what purposes, to whom they are made available, for what period of time they are processed, etc;
 
@@ -190,11 +154,7 @@ You have the right to:
 <p class="p--body">You may contact HabitatMap with any request to exercise your rights by email or postal address shown at the beginning of this document or by other means of your choice.
 Details on how to file a complaint with the President of the Office of Personal Data Protection can be found at: https://uodo.gov.pl/pl/p/kontakt. </p>
 
-<section class="panel panel--history-intro u--bg-teal">
-  <h1 class="heading heading--large">
-    Miscellaneous
-  </h1>
-</section>
+# Miscellaneous
 
 <p class="p--body">This Privacy Policy may be subject to updates and changes. In such case, HabitatMap will take steps to inform you of any such updates or changes by, for example, sending you a notification. Notwithstanding the foregoing, HabitatMap recommends that you review this page as often as possible. </p>
 
