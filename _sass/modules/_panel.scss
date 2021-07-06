@@ -22,6 +22,10 @@
   }
 }
 
+.panel--column {
+  @include flex-direction(column);
+}
+
 .panel--user-stories {
   @media screen and (min-width: $small-desktop-min) {
     padding-bottom: 0;
