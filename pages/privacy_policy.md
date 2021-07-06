@@ -30,7 +30,7 @@ section: privacy
   <h2 class="heading heading--medium">Contact Details of the Personal Data Controller</h2>
 
   <p>You can contact the data controller:</p>
-  <ul class="list--basic">
+  <ul class="list list--unordered">
     <li>postal address: <strong>34A St Marks Avenue, Brooklyn, NY 11217 USA</strong></li>
     <li>e-mail address: </strong><a class="link" href="mailto:info@habitatmap.org">info@habitatmap.org</a></strong></li>
   </ul>
@@ -39,7 +39,7 @@ section: privacy
 
   <h3 class="heading heading--small">1. Data Obtained Directly from Users of the AirCasting App</h3>
   <p>HabitatMap controls the personal data that you provide when using the AirCasting mobile app, including the following types of data:</p>
-  <ul class="list--basic">
+  <ul class="list list--unordered">
     <li>E-mail address;</li>
     <li>Information regarding your request to receive email newsletters;</li>
     <li>Any data you provide when communicating with HabitatMap via email;</li>
@@ -122,7 +122,7 @@ Providing this data is voluntary and does not affect your ability to use the Air
 <p class="p--body"> For the purposes mentioned above and in particular to enable you to use the AirCasting mobile app, your data may be shared with HabitatMap’s trusted partners. HabitatMap will only share data that are necessary for the purposes of the processing indicated above and only for the fulfillment of these purposes. HabitatMap ensures that your data is shared with the third parties in compliance with the security rules provided by law (in particular the GDPR) as well as in accordance with the provisions of this Privacy Policy. </p>
 
 <p>Your personal data may be processed by entities such as:</p>
-<ul class="list--basic">
+<ul class="list list--unordered">
   <li>HabitatMap’s employees and/or contractors;</li>
   <li>legal and/or accounting services providers;</li>
   <li>hosting and/or cloud computing services providers;</li>
@@ -135,7 +135,7 @@ Providing this data is voluntary and does not affect your ability to use the Air
 <p class="p--body">In order to enable you to use the app, communicate with HabitatMap, send you notifications upon your request, and maintain, improve, and develop the app, and customize some of its content to your preferences, Google LLC, which is an entity located outside the European Economic Area (EEA), may be a recipient of your personal data. </p>
 
 <p>HabitatMap transfers personal data to recipients outside the European Economic Area (so-called recipients from third countries) with the principles set out in Chapter V of the GDPR. In connection with the above, the transfer of your personal data to a third country may take place on the basis of the following legal mechanisms: </p>
-<ul class="list--basic">
+<ul class="list list--unordered">
 <li>standard contractual clauses – HabitatMap transfers personal data to entities outside the EEA that have committed to use standard contractual clauses and ensure an adequate level of security of the personal data received. There are currently three decisions by the European Commission on standard contractual clauses: (i) Decision 2001/497/EC; (ii) Decision 2004/915/EC; (iii) Decision 2010/87/EU. The content of all decisions is available in the Database of European Union legal acts at <a href="http://eur-lex.europa.eu">http://eur-lex.europa.eu;</a></li>
 
 <li>performance of the contract – in some exceptional cases, when the recipient of the data from the third country has not committed to the application of standard contractual clauses, your data may be transferred if it is necessary for the performance of the contract between you and HabitatMap or for the implementation of pre-contractual measures taken on your request;</li>
@@ -146,7 +146,7 @@ Providing this data is voluntary and does not affect your ability to use the Air
 <h2 class="heading heading--medium">Period of Personal Data Storage</h2>
 
 <p>Your personal data will be processed:</p>
-<ul class="list--basic">
+<ul class="list list--unordered">
 <li>no longer then until the execution of the agreement (i.e. until you uninstall the AirCasting app), and after its execution until the expiry of the statute of limitations for claims related to the agreement (as a rule, a three-year statute of limitations);</li>
 
 <li>in case of processing of personal data for the marketing purposes, until such processing is objected to (Article 21(1) of the GDPR) or until the withdrawn of the consent to receive information of a marketing nature;</li>
@@ -157,7 +157,7 @@ Providing this data is voluntary and does not affect your ability to use the Air
 <h2 class="heading heading--medium">Rights of the Data Subject</h2>
 
 <p>You have the right to:</p>
-<ul class="list--basic">
+<ul class="list list--unordered">
 <li>access to personal data – you can obtain information on, inter alia, what personal data are processed by HabitatMap, for what purposes, to whom they are made available, for what period of time they are processed, etc;</li>
 
 <li>rectify and delete the personal – you may request your data to be corrected if they are found to be inaccurate. You may also request the erasure of your personal data, inter alia, if the purpose of the processing ceases to exist or you have withdrawn your consent to the processing;</li>
