@@ -37,7 +37,7 @@ section: privacy
 
   <h2 class="heading heading--medium">Categories of Personal Data</h2>
 
-  <h3 class="heading heading--small">1. Data Obtained Directly from Users of the AirCasting App</h3>
+  <h3 class="heading heading--small p--body">1. Data Obtained Directly from Users of the AirCasting App</h3>
   <p>HabitatMap controls the personal data that you provide when using the AirCasting mobile app, including the following types of data:</p>
   <ul class="list list--unordered">
     <li>E-mail address;</li>
@@ -69,7 +69,7 @@ section: privacy
     USB Storage: To attach photos to notes, the AirCasting app requests permission to read the contents of your USB storage.
   </p>
 
-  <h3 class="heading heading--small">2. Data Received by HabitatMap from Third Parties</h3>
+  <h3 class="heading heading--small p--body">2. Data Received by HabitatMap from Third Parties</h3>
   <p class="p--body">
 HabitatMap may also be considered as the controller of the personal data you provide to the operators of the systems you use that are integrated into the AirCasting app, e.g. Android (Google LLC). This may include data such as your IP address or your device identifier. Despite being considered as the data controller, HabitatMap has no direct access to this data, meaning the data are not visible to HabitatMap. However, the processing of this data is necessary to enable the proper functioning of the HabitatMap AirCasting mobile app.</p>
 
@@ -81,13 +81,13 @@ Providing this data is voluntary and does not affect your ability to use the Air
 
 <h2 class="heading heading--medium">Purposes & Legal Basis for the Processing of Personal Data</h2>
 
-<p>Your personal data may be processed for the purpose of:</p>
+<p class="p--body">Your personal data may be processed for the purpose of:</p>
 
-<h3 class="heading heading--small">1. Performing a contract, or taking an action at your request prior to the conclusion of a contract, and for the purpose of pursuing claims under the contract (Article 6(1)(b) and (f) GDPR).</h3>
+<p class="p--body"><strong>1. Performing a contract, or taking an action at your request prior to the conclusion of a contract, and for the purpose of pursuing claims under the contract (Article 6(1)(b) and (f) GDPR).</strong></p>
 
 <p class="p--body">HabitatMap processes your personal data to enable you to fully enjoy all the features of the AirCasting mobile app. Information, such as the fact of downloading the application and providing you with relevant content, may also be processed after the contract expiration (uninstallation of the app), among others, in the event of HabitatMap being accused of incorrect performance of its obligations. </p>
 
-<h3 class="heading heading--small">2. Providing you, upon your request, with information about the state of air quality at your location, which is in the exercise of HabitatMap’s legitimate interest (Article 6(1)(f) GDPR).</h3>
+<p class="p--body"><strong>2. Providing you, upon your request, with information about the state of air quality at your location, which is in the exercise of HabitatMap’s legitimate interest (Article 6(1)(f) GDPR).</strong></p>
 
 <p class="p--body"> At your request, HabitatMap processes geolocation data to allow you to see the status of air quality at your location in the AirCasting app. </p>
 
@@ -95,11 +95,11 @@ Providing this data is voluntary and does not affect your ability to use the Air
 
 <p class="p--body"> Sending notifications and access to geolocation data is voluntary and takes place with your consent, which can be withdrawn at any time, without prejudice to the use of other application functions. </p>
 
-<h3 class="heading heading--small">3. Contacting you, at your request, and responding to your questions, which are in the exercise of HabitatMap’s legitimate interest (Article 6(1)(f) GDPR).</h3>
+<p class="p--body"><strong>3. Contacting you, at your request, and responding to your questions, which are in the exercise of HabitatMap’s legitimate interest (Article 6(1)(f) GDPR).</strong></h3>
 
 <p class="p--body"> HabitatMap allows you to send inquiries and suggestions for improvements to the app via email and will process the email address you provide for this purpose. </p>
 
-<h3 class="heading heading--small">4. Maintaining, improving, and developing the application, and customizing some of the app content to your preferences, which are in the exercise of HabitatMap’s legitimate interest (Article 6(1)(f) GDPR).</h3>
+<p class="p--body"><strong>4. Maintaining, improving, and developing the application, and customizing some of the app content to your preferences, which are in the exercise of HabitatMap’s legitimate interest (Article 6(1)(f) GDPR).</strong></h3>
 
 <p class="p--body"> HabitatMap processes information that may (but not necessarily) be considered personal data, using third-party-provided tools that perform similar functions to cookies to maintain, improve, and develop the app and to customize some of the content to your preferences. </p>
 
