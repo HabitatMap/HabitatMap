@@ -8,7 +8,7 @@ intro: "The Barry Commoner Center for Health and the Environment is an
   City University of New York. The mission of the Center is to identify and help
   rectify environmental and occupational threats to human health. "
 type: Researchers
-order: 7
+order: 6
 ---
 <p>The Barry Commoner Center for Health and the Environment (BCCHE) is an environmental and occupational health research institute at Queens College, City University of New York. The mission of the Center is to identify and help rectify environmental and occupational threats to human health. BCCHE, in partnership with DOHMH, sought to understand how academic institutions, city governments, and community groups can work together to increase air quality monitoring within communities using citizen-collected data and to enable communities to understand air pollution and its sources.</p>
 <p>As a follow-up study from the New York City Community Air Survey (NYCCAS) project, the objectives behind this Citizen Science project were not just to address the gaps and concerns associated with institutional monitoring, but also to raise awareness of air quality on a community level. It focused on improving community-level engagement through direct public interaction and emphasized the importance of collaboration and establishing the best practices for a scientific study when conducting a citizen science project. This was only possible with the direct involvement of the communities that are impacted by the existing environmental challenges in the areas studied.</p>
