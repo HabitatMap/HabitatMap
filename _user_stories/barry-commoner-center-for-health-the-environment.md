@@ -1,7 +1,7 @@
 ---
 layout: user_story
 title: "Barry Commoner Center for Health & the Environment "
-featured: false
+featured: true
 image: /images/uploads/bcche.jpg
 intro: "The Barry Commoner Center for Health and the Environment is an
   environmental and occupational health research institute at Queens College,
