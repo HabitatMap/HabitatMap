@@ -3,16 +3,15 @@ layout: user_story
 title: Children’s Environmental Literacy Fdn
 featured: true
 image: /images/uploads/celf_cropped.jpg
-intro: >-
-  The <a href="https://www.celfeducation.org/">Children’s Environmental Literacy
-  Foundation</a> (CELF) is a non-profit organization dedicated to integrating
-  sustainability into K-12 curriculum. As part of the <a
+intro: 'The <a href="https://www.celfeducation.org/">Children’s Environmental
+  Literacy Foundation</a> (CELF) is a non-profit organization dedicated to
+  integrating sustainability into K-12 curriculum. As part of the <a
   href="https://www.celfeducation.org/celf-citizen-science-inquiry-to-action"><em>Citizen
   Science: Inquiry to Action</em></a> program, CELF educators work with middle
   school classes in New York City and Houston to implement an interdisciplinary,
-  place-based project focused on air quality monitoring.
+  place-based project focused on air quality monitoring.'
 type: Educators
-order: 5
+order: 7
 ---
 In the course of the project, students assess an environmental concern in their local school community through a six-step process: Inquiry, Collection, Analysis, Collaboration, Innovation, and Action. After generating a driving question that is meaningful to them based on neighborhood air quality concerns, students develop a research plan. The AirBeam is a critical tool employed during the data collection step. For several weeks, students regularly and frequently walk their neighborhoods measuring particle pollution with the AirBeam. Some classes observed spikes near the highway, next to the smokers at a neighboring construction site, and near the rear of an idling ice cream truck.
 
