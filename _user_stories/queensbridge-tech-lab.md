@@ -3,15 +3,14 @@ layout: user_story
 title: Queensbridge Tech Lab
 featured: true
 image: /images/uploads/qtl_cropped.jpg
-intro: >-
-  The <a
+intro: 'The <a
   href="https://www.queenslibrary.org/programs-activities/technology-training/queensbridge-tech-lab">Queensbridge
   Tech Lab</a> (QTL) is a branch of the Queens Public Library located in the
   Queensbridge Houses, the largest public housing development in North America.
   QTL offers workshops on and open access to a variety of digital and analog
-  tools, from 3D printing and graphic design to sewing and robotics. 
+  tools, from 3D printing and graphic design to sewing and robotics. '
 type: Educators
-order: 6
+order: 5
 ---
 QTL is a resource that empowers the Queens community through holistic hands-on technology exploration and mastery. QTL runs <a href="https://docs.google.com/presentation/d/14wsqd3VxVVyZqT6v8L07ggNV4jMWRjhbqzY0mzti2gU/edit?usp=sharing">The Queensbridge Community Science Project</a>, an interdisciplinary intensive eight-week program focused on environmental exploration as a pathway for participants to harness their creative energies and explore science and technology in real-world settings. Each week focuses on a different topic: air, water, soil, or plant life. While exploring these topics, participants build and use their own digital and analog tools such as air quality sensors, microscopes, and water quality detectors.
 
