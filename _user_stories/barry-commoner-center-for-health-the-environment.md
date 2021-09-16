@@ -12,7 +12,7 @@ intro: '<a
 type: Researchers
 order: 6
 ---
-<p>Via a community science project, BCCHE, in partnership with the New York City Dept. of Health & Mental Hygiene, sought to understand how academic institutions, city government, and community groups can work together to increase air quality monitoring within communities using community-collected data and enable communities to better understand air pollution and its sources.</p>
+<p>Via a community science project, BCCHE, in partnership with the New York City Dept. of Health & Mental Hygiene, sought to understand how academic institutions, city government, and community groups can work together to improve air quality monitoring within communities and enable communities to better understand air pollution and its sources.</p>
 
 
 <p>As a follow-on to the annual<a href="https://www1.nyc.gov/site/doh/data/data-publications/air-quality-nyc-community-air-survey.page">New York City Community Air Survey</a>, the objectives behind the community science project were to both address gaps and concerns associated with institutional monitoring and raise awareness around air quality issues in the Brooklyn and Bronx neighbiorhoods where air queality monitoring was conducted. The project focused on improving community engagement through direct public interaction and emphasized the importance of collaboration and establishing best practices for a scientific study when conducting a community science project. This was only possible with the direct involvement of the communities impacted by existing air pollution sources.</p>
