@@ -15,34 +15,34 @@ image: /assets/img/about-airbeam-01.jpg
 
   <div class="split--50">
     <p class="heading heading--small">
-      AirBeam2 User’s Guide: Technical Specifications, Operation & Performance
+      AirBeam3 User’s Guide: Technical Specifications, Operation & Performance
     </p>
   </div>
 </section>
 
 <section class="panel panel--history arc-background arc-background--history arc-background--left-teal-light">
   <img
-    alt="AirBeam2 Features and Dimensions"
+    alt="AirBeam3 Features and Dimensions"
     class="p--body lazyload"
-    data-src="/assets/img/pages/users-guide/AB2Features+Dimensions.jpg?nf-resize=fit&w=1200"
-    src="/assets/img/pages/users-guide/AB2Features+Dimensions.jpg?nf-resize=fit&w=20"
+    data-src="/assets/img/pages/users-guide/AB3Features+Dimensions.jpg?nf-resize=fit&w=1200"
+    src="/assets/img/pages/users-guide/AB3Features+Dimensions.jpg?nf-resize=fit&w=20"
   />
 
   <ul class="contents-list list p--body">
     <li class="contents-list__item"><a href="#specification">Hardware Specifications</a></li>
-    <li class="contents-list__item"><a href="#about">About AirBeam2</a></li>
-    <li class="contents-list__item"><a href="#charging">Charging</a></li>
+    <li class="contents-list__item"><a href="#about">About AirBeam3</a></li>
     <li class="contents-list__item"><a href="#power">Power</a></li>
     <li class="contents-list__item"><a href="#power-on-off">Power On/Off</a></li>
     <li class="contents-list__item"><a href="#intake">Intake & Exhaust</a></li>
     <li class="contents-list__item"><a href="#record-mobile">Record Measurements – Mobile  (Bluetooth) Session</a></li>
     <li class="contents-list__item"><a href="#record-wifi">Record Measurements – Fixed (Wifi) Session</a></li>
     <li class="contents-list__item"><a href="#record-cellular">Record Measurements – Fixed (Cellular) Session</a></li>
-    <li class="contents-list__item"><a href="#connection">Connection Indicator</a></li>
+    <li class="contents-list__item"><a href="#connection">Connection Indicator Color Key</a></li>
+    <li class="contents-list__item"><a href="#standalone">Standalone mode</a></li>
+    <li class="contents-list__item"><a href="#sync">Sync SD Card</a></li>
     <li class="contents-list__item"><a href="#temperature">Temperature & Humidity Measurements</a></li>
     <li class="contents-list__item"><a href="#acquire">Acquire AirBeam2 Data via Serial Monitor</a></li>
     <li class="contents-list__item"><a href="#programming">Programming</a></li>
-    <li class="contents-list__item"><a href="#open-source">Open Source</a></li>
     <li class="contents-list__item"><a href="#compliance">FCC Compliance Statement</a></li>
     <li class="contents-list__item"><a href="#performance">Performance Data</a></li>
   </ul>
@@ -54,34 +54,24 @@ image: /assets/img/about-airbeam-01.jpg
   </h2>
 
   <p class="p--body">
-    Weight: 5 ounces<br>
+    Weight: 6 ounces<br>
     Particle Sensor: Plantower PMS7003<br>
-    Relative Humidity Sensor: Honeywell HIH-5030-001<br>
-    Temperature Sensor: Microchip MCP9700T-E/TT<br>
-    Bluetooth: Nova MDCS42, Version 2.1+EDR<br>
-    WiFi: Espressif ESP8266-ESP-12S, 2.4 GHz<br>
-    Cellular: SIMCOM SIM808, 2G GSM<br>
-    Microcontroller: Teensy++<br>
+    Relative Humidity & Temperature Sensor: Texas Instruments, HDC1080DMBR<br>
+    Bluetooth, WiFi & Microcontroller: Espressif, ESP32-WROOM-32D <br>
+    4G Cellular & GPS: Quectel, LTE BG95-M3<br>
+    MicroSD Card: OEM, 32GB Class 10 formatted to FAT32<br>
+    Real Time Clock: NXP USA, PCF2129T/2,518<br>
+    Battery: PKCell, ICR18650 3350mAh 3.7V
   </p>
 
   <a id="about" class="anchor">
   </a>
   <h2 class="heading heading--small heading--body">
-    About AirBeam2
+    About AirBeam3
   </h2>
 
   <p class="p--body">
-    <a href="/airbeam">AirBeam2</a> measures fine particulate matter (PM1, PM2.5 & PM10), temperature, and relative humidity. AirBeam2 uses a light scattering method to measure particulate matter. Air is drawn through a sensing chamber wherein light from a laser scatters off particles in the airstream. This light scatter is registered by a detector and converted into a measurement that estimates the number of particles in the air. When recording a mobile session, these measurements are communicated once a second to the AirCasting Android app via Bluetooth. When recording a fixed session, these measurements are communicated once a minute to the <a href="/">AirCasting</a> website via WiFi or cellular. At the end of each mobile AirCasting session, the collected data is sent to the AirCasting website, where the data is crowdsourced with data from other AirCasters to generate heat maps indicating where PM concentrations are highest and lowest.
-  </p>
-
-  <a id="charging" class="anchor">
-  </a>
-  <h2 class="heading heading--small heading--body">
-    Charging
-  </h2>
-
-  <p class="p--body">
-    Fully charge your AirBeam2 before powering it on and using it in WiFi or Cellular mode or the AirBeam2 may lose power (even it it’s plugged in).
+    <a href="/airbeam">AirBeam3</a> is a palm-sized air quality instrument weighing six ounces that measures PM1, PM2.5, PM10, temperature, and relative humidity. Its weather resistant enclosure makes it suitable for indoor or outdoor use. It can communicate via BLE, WiFi, or cellular 4G and can be used as a stationary or mobile monitor. Users can map and graph the measurements from AirBeam3 in real-time using an Android or iOS device or the AirCasting website. AirBeam3 includes an onboard GPS, real-time clock, SD card, and battery so after configuration it can operate in standalone mode, i.e. without the need for any additional hardware, such as a smartphone. The performance of the predecessors to the AirBeam3, AirBeam1 & 2, were both positively evaluated by South Coast Air Quality Management Districts’s AQ-SPEC program and testing to date indicates AirBeam3's performance exceeds that of its predecessors. AirBeam3 is open-source as is the AirCasting platform software.
   </p>
 
   <a id="power" class="anchor">
@@ -91,7 +81,7 @@ image: /assets/img/about-airbeam-01.jpg
   </h2>
 
   <p class="p--body">
-    AirBeam2 has a 2000 mAh 3.7V rechargeable lithium battery that can power the instrument for 10 hours when fully charged. The battery charges via the USB-C Port, which can also be used to power the AirBeam2 directly. The Battery Charging Indicator turns solid green when the AirBeam2 is charging and turns off when the AirBeam2 is either fully charged or unplugged.
+    AirBeam3 has a 3350 mAh 3.7V rechargeable lithium battery that can power the instrument for approximately 17 hours when fully charged. The battery charges via the USB-C Port, which can also be used to power the AirBeam3 directly. The Battery Charging Indicator turns solid green when the AirBeam3 is charging and turns off when the AirBeam3 is either fully charged or unplugged.
   </p>
 
   <a id="power-on-off" class="anchor">
@@ -101,7 +91,7 @@ image: /assets/img/about-airbeam-01.jpg
   </h2>
 
   <p class="p--body">
-    While operating the AirBeam2, keep the Intake and Exhaust free from obstructions.
+    To power on the AirBeam3, press down on the Power Button. The AirBeam3 is on when the Connection Indicator lights up. Push the Power Button a second time to power off the AirBeam3.
   </p>
 
   <a id="intake" class="anchor">
@@ -111,7 +101,7 @@ image: /assets/img/about-airbeam-01.jpg
   </h2>
 
   <p class="p--body">
-    While operating the AirBeam2, keep the Intake and Exhaust free from obstructions.
+    While operating the AirBeam3, keep the Intake and Exhaust free from obstructions.
   </p>
 
   <a id="record-mobile" class="anchor">
@@ -121,18 +111,13 @@ image: /assets/img/about-airbeam-01.jpg
   </h2>
 
   <ol class="list list--ordered p--body">
-    <li>Download the <a href="https://play.google.com/store/apps/details?id=pl.llp.aircasting&<li>hl=en">AirCasting app</a> from the Google Play store.</li>
-    <li>Turn on the AirBeam2.</li>
-    <li>Via the Android device “Settings”, pair the AirBeam2 to the Android device.</li>
-    <li>Turn off the AirBeam2.</li>
-    <li>Launch the AirCasting app.</li>
-    <li>Turn on the AirBeam2.</li>
-    <li>When the AirBeam2 “Connection Indicator” turns from red to green > press “Configure AirBeam2″ > press “connect” > press “Mobile”; wait 5 seconds and the AirBeam2 sensor streams will appear on the Dashboard.</li>
-    <li>Press the “record” button in the upper right hand corner, enter a “Title” and “Tags” (neither are required), and press “Start Session”.</li>
+    <li>Download the <a href="https://play.google.com/store/apps/details?id=pl.llp.aircasting&<li>hl=en">AirCasting app</a> from the Google Play store or Apple App Store (available November ‘21).</li>
+    <li>Launch the app and sign in or create a profile.</li>
+    <li>Tap the “+” button at the bottom of the screen then tap “Mobile session” and follow the on screen instructions.</li>
   </ol>
 
   <p class="p--body">
-    When recording a mobile session, measurements are communicated once a second to the AirCasting Android app via Bluetooth. The Android device must stay within 10-20 feet of the AirBeam2 to maintain the Bluetooth connection and receive data from the AirBeam2.
+    When recording a mobile session with AirBeam3, measurements are communicated once a second to the AirCasting app via Bluetooth. The device running the AirCasting app must stay within 10-20 feet of the AirBeam3 to maintain the Bluetooth connection and receive data from the AirBeam3. After recording a mobile session for more than 2 hours, your measurements will be integrated into 5-second averages. After recording a mobile session for more than 9 hours, your measurements will be integrated into 1-minute averages.
   </p>
 
   <a id="record-wifi" class="anchor">
@@ -142,18 +127,13 @@ image: /assets/img/about-airbeam-01.jpg
   </h2>
 
   <ol class="list list--ordered p--body">
-    <li>Download the <a href="https://play.google.com/store/apps/details?id=pl.llp.aircasting&<li>hl=en">AirCasting app</a> from the Google Play store.</li>
-    <li>Turn on the AirBeam2.</li>
-    <li>Via the Android device “Settings”, pair the AirBeam2 to the Android device.</li>
-    <li>Turn off the AirBeam2.</li>
-    <li>Launch the AirCasting app.</li>
-    <li>Turn on the AirBeam2.</li>
-    <li>When the AirBeam2 “Connection Indicator” turns from red to green > press “Configure AirBeam2″ > press “connect” > press “Fixed” > press “WiFi” > enter the “WiFi Network Name” and “WiFi Password” and press “Submit” > enter a “Title” and “Tags” (neither are required) and press either “Start Indoor Session” or “Start Outdoor Session > if you selected “Start Outdoor Session”, then set the location. (Note that the AirBeam2 must be connected to the 2.4 GHz band of your WiFi network, it cannot connect via the 5 GHz band).</li>
-    <li>The Dashboard will read “Retrieving streams, please wait”; wait 2-3 minutes and the AirBeam2 sensor streams will appear on the Dashboard.</li>
+    <li>Download the <a href="https://play.google.com/store/apps/details?id=pl.llp.aircasting&<li>hl=en">AirCasting app</a> from the Google Play store or Apple App Store (available November ‘21).</li>
+    <li>Launch the app and sign in or create a profile.</li>
+    <li>Tap the “+” button at the bottom of the screen then tap “Fixed session” and follow the on screen instructions.</li>
   </ol>
 
   <p class="p--body">
-    When recording a fixed WiFi session, the measurements are communicated once a minute to the <a href="/">AirCasting website</a> via WiFi. The Android device no longer needs to be in proximity to the AirBeam2 as it’s retrieving the data from the web via the Android device’s WiFi or cellular connection.
+    When recording a fixed WiFi session with AirBeam3, the measurements are communicated once a minute to the <a href="/">AirCasting website</a> via WiFi. The Android or iOS device no longer needs to be in proximity to the AirBeam3 as it’s retrieving the data from the web via the Android or iOS device’s WiFi or cellular connection. AirBeam3 must be connected to the 2.4 GHz band of your WiFi network; it cannot connect via the 5 GHz band.
   </p>
 
   <a id="record-cellular" class="anchor">
@@ -163,33 +143,55 @@ image: /assets/img/about-airbeam-01.jpg
   </h2>
 
   <ol class="list list--ordered p--body">
-    <li>Unscrew the AirBeam2 enclosure, pull out the circuit board, carefully push down and lift the SIM card slot, insert the SIM card into the SIM card slot, close the SIM card slot, place the circuit board back inside the enclosure, and screw the AirBeam2 together again. (AirBeam2 data and messaging costs are approximately $25 per month when using a Ting SIM card. Note that 2G cellular service is not available in all locations.)</li>
-    <li>Download the AirCasting app from the Google Play store.</li>
-    <li>Turn on the AirBeam2.</li>
-    <li>Via the Android device “Settings”, pair the AirBeam2 to the Android device.</li>
-    <li>Turn off the AirBeam2.</li>
-    <li>Launch the AirCasting app.</li>
-    <li>Turn on the AirBeam2.</li>
-    <li>When the AirBeam2 “Connection Indicator” turns from red to green > press “Configure AirBeam2″ > press “connect” > press “Fixed” > press “Cellular” > enter a “Title” and “Tags” (neither are required) and press either “Start Indoor Session” or “Start Outdoor Session > if you selected “Start Outdoor Session”, then set the location.</li>
-    <li>The Dashboard will read “Retrieving streams, please wait”; wait 2-3 minutes and the AirBeam2 sensor streams will appear on the Dashboard.</li>
+    <li>Unscrew the AirBeam3 enclosure, slide your activated Nano SIM card into the SIM card slot located directly above the power switch (insert the SIM card so the chip side is against the board and the clipped corner is oriented towards the power button), then screw the AirBeam3 together again. To maintain the AirBeam3s weather resistance, screw the bottom two screws tight before tightening the top screw into the aluminum standoff; do not overtighten.</li>
+    <li>Download the <a href="https://play.google.com/store/apps/details?id=pl.llp.aircasting&<li>hl=en">AirCasting app</a> from the Google Play store or Apple App Store (available November ‘21).</li>
+    <li>Launch the app and sign in or create a profile.</li>
+    <li>Tap the “+” button at the bottom of the screen then tap “Fixed session” and follow the on screen instructions.</li>
   </ol>
 
    <p class="p--body">
-    When recording a fixed WiFi session, the measurements are communicated once a minute to the <a href="/">AirCasting website</a> via WiFi. The Android device no longer needs to be in proximity to the AirBeam2 as it’s retrieving the data from the web via the Android device’s WiFi or cellular connection.
+    When recording a fixed cellular session, the measurements are communicated once a minute to the <a href="/">AirCasting website</a> via WiFi. The Android or iOS device no longer needs to be in proximity to the AirBeam3 as it’s retrieving the data from the web via the Android or IOS device’s WiFi or cellular connection. AirBeam3 data and messaging costs are approximately $25 per month when using a Ting SIM card.
   </p>
 
   <a id="connection" class="anchor">
   </a>
   <h2 class="heading heading--small heading--body">
-    Connection Indicator
+    Connection Indicator Color Key
+  </h2>
+
+  <ul class="list p--body">
+    <li>Solid Green, for 180 seconds = ready to be configured, waiting for Bluetooth connection </li>
+    <li>Solid Blue = Bluetooth connected</li>
+    <li>Solid White, for 120 seconds = AirBeam3 successfully configured and sending data </li>
+    <li>Blink White, once every ten seconds = Bluetooth connected and transmitting data </li>
+    <li>Blink Yellow, once every ten seconds = standalone mode, Bluetooth disconnected, GPS fix missing </li>
+    <li>Blink Orange, once every ten seconds = standalone mode, Bluetooth disconnected, GPS fix present</li>
+    <li>Blink Magenta, once every ten seconds = low power indicator, plug in your AirBeam </li>
+    <li>Solid Cyan = SD card syncing</li>
+  </ul>
+
+  <p class="p--body">
+    When powered on, AirBeam3 will enter and remain in configuration mode for three minutes. During the configuration window, if you don’t connect to the AirBeam3 via Bluetooth, AirBeam3 will load it’s last known configuration. To enter configuration mode again, simply turn your AirBeam3 off and then back on.
+  </p>
+
+  <a id="standalone" class="anchor">
+  </a>
+  <h2 class="heading heading--small heading--body">
+    Standalone Mode
   </h2>
 
   <p class="p--body">
-    When first powered on, the AirBeam2 Connection Indicator will shine red for ten seconds to indicate the AirBeam2 is performing a system check. During the next fifty seconds, the Connection Indicator will shine green to indicate the AirBeam2 is in configuration mode. Once configuration is begun, the configuration window will remain open until configuration is complete. If configuration is not initiated within the fifty-second window, AirBeam2 will load the last know configuration. To reopen the configuration window, power your AirBeam2 off/on.
+    When recording a mobile session with AirBeam3, you can separate the AirBeam3 from your Android or iOS device and continue recording, geolocating, and timestamping your measurements. To do this, tap the three horizontal dots located in the upper right hand corner of the session card, map, or graph and tap “Enter standalone mode”. After entering standalone mode, the connection indicator will blink yellow when you don’t have a GPS fix and blink orange when you do have a GPS fix. When you don’t have a GPS fix, your measurements will be pinned to your last know location. To get a GPS fix, move outside to a location with a clear view of the sky. In some instances, it can take 5-10 minutes before the AirBeam3 gets a GPS fix. <i>Note that an iPhone 8 or higher or an Android 8 or higher plus Bluetooth 5 device is required to utilize the Standalone Mode and Sync SD Card features.</i>
   </p>
 
+  <a id="sync" class="anchor">
+  </a>
+  <h2 class="heading heading--small heading--body">
+    Sync SD Card
+  </h2>
+
   <p class="p--body">
-    When AirBeam2 is configured for a mobile recording session, the AirCasting app will connect to the AirBeam2 via Bluetooth and the Connection Indicator will shine solid white for 2 minutes. If the AirBeam2 is disconnected while in mobile mode, the Connection Indicator will blink red. When AirBeam2 is configured for a fixed recording session, the Connection Indicator will shine blue while acquiring the time and date and then shine white for 2 minutes while AirBeam2 begins taking measurements and sending data to the AirCasting website.
+    Whenever your AirBeam3 is recording a mobile or fixed session, it will log data to its SD card. In instances where your AirBeam is connected to the app via Bluetooth (mobile sessions) or sending data via either the WiFi or cellular network directly to the AirCasting server (fixed sessions), the data on the SD card duplicates the data already submitted to and saved in the AirCasting database. However, if when recording a mobile session you enter standalone mode, or when recording a fixed session the AirBeam3s cellular or WiFi connection is interrupted, you can sync the AirBeam3s SD card to retrieve your data. To do this either a) tap the “finish recording & sync” button on your mobile session card; or b) tap the “+” button at the bottom of the screen then tap “Sync data from AirBeam3” and follow the on screen instructions. After syncing the session data from your SD card to the AirCasting database, the SD card will be deleted. <i>Note that an iPhone 8 or higher or an Android 8 or higher plus Bluetooth 5 device is required to utilize the Standalone Mode and Sync SD Card features.</i>
   </p>
 
   <a id="temperature" class="anchor">
@@ -199,17 +201,17 @@ image: /assets/img/about-airbeam-01.jpg
   </h2>
 
   <p class="p--body">
-    AirBeam2 measures the temperature and relative humidity inside the AirBeam2 enclosure. These measurements are not representative of the ambient temperature and relative humidity.
+    AirBeam3 measures the temperature and relative humidity inside the AirBeam3 enclosure. These measurements are not representative of the ambient temperature and relative humidity.
   </p>
 
   <a id="acquire" class="anchor">
   </a>
   <h2 class="heading heading--small heading--body">
-    Acquire AirBeam2 Data via Serial Monitor
+    Acquire AirBeam3 Data via Serial Monitor
   </h2>
 
   <p class="p--body">
-    You can acquire the AirBeam2 data via the USB-C Port using a serial monitor.
+    You can acquire the AirBeam3 data via the USB-C Port using a serial monitor.
   </p>
 
   <a id="programming" class="anchor">
@@ -219,17 +221,7 @@ image: /assets/img/about-airbeam-01.jpg
   </h2>
 
   <p class="p--body">
-    The AirBeam2 board is based on the Teensy++, so you can reprogram your AirBeam using the Arduino IDE.
-  </p>
-
-  <a id="open-source" class="anchor">
-  </a>
-  <h2 class="heading heading--small heading--body">
-    Open Source
-  </h2>
-
-  <p class="p--body">
-    The AirBeam2 <a href="https://github.com/HabitatMap/AirCastingAndroidClient/tree/master/arduino/aircasting/Airbeam2_Firmware_3_19_18">firmware</a> and <a href="https://github.com/HabitatMap/AirBeam2ElectronicSchematics">electronic schematics</a> are available on GitHub. The <a href="https://www.shapeways.com/shops/aircasting">STL files</a> for 3D printing the AirBeam enclosure can be downloaded from Shapeways.
+    You can reprogram your AirBeam3 using the Arduino IDE.
   </p>
 
   <a id="compliance" class="anchor">
@@ -245,61 +237,49 @@ image: /assets/img/about-airbeam-01.jpg
   <a id="performance" class="anchor">
   </a>
   <h2 class="heading heading--small heading--body">
-    Performance Data
+    AirBeam3 Performance Data
   </h2>
 
   <p class="p--body">
-    When presenting our AirBeam2 performance data below, we include R-squared (R2) values as a way of evaluating intercomparisons between instruments that measure particulate matter. R2 is a statistical measure that indicates how well data fit a statistical model. The R2 value is a number that ranges from 0 to 1 with higher values indicating the regression came more closely to the points. An R2 value of 1 means the predictive power of the model is perfect, that all the data points lie along the line or curve with no scatter.
+    The performance of the predecessor to the AirBeam3, AirBeam2, was <a href="https://www.habitatmap.org/blog/airbeam2-quite-accurate-according-to-newly-released-performance-evaluation">positively evaluated</a> by South Coast Air Quality Management District’s AQ-SPEC program and testing to date indicates AirBeam3's performance exceeds that of its predecessor. To create the AirBeam3 calibration equations for PM1 and PM2.5 we used the <a href="http://www.aqmd.gov/aq-spec/sensordetail/habitatmap-airbeam2">laboratory test results from the AirBeam2’s AQ-SPEC evaluation</a>, wherein AirBeam2 measurements were compared to measurements from a GRIMM Federal Equivalency Method instrument. Both AirBeam2 and AirBeam3 utilize the same particulate matter sensor: the Plantower PMS7003
   </p>
 
   <p class="p--body">
-    To begin, we analyzed data provided by <a href="http://www.aqmd.gov/aq-spec/evaluations">South Coast Air Quality Management District</a> (SCAQMD) comparing the performance of <a href="https://www.purpleair.com/sensors">PurpleAir-I (PA-I) and PurpleAir-II (PA-II)</a> air quality instruments to a <a href="http://wiki.grimm-aerosol.de/index.php?title=ENVIRO-EDM180">GRIMM EDM180</a>, a Federal Equivalent Method air quality instrument. PA-I integrates a Plantower PMS1003 sensor and PA-II integrates a Plantower PMS5003 sensor. Although these sensors are not identical to the Plantower PMS7003 sensor integrated into the AirBeam2, discussions with SCAQMD staff led us to believe that performance variations between <a href="http://www.plantower.com/en/list/?118_1.html">Plantower particulate sensor models</a> were small.
-  </p>
-
-  <p class="p--body">
-    Using five-minute averages, we fit equations for PM1, PM2.5, and PM10 that converted the PurpleAir measurements to the GRIMM measurements, see below plots. After removing significant outliers, our dataset included 17,270 data points. The equations for PM1, R2=0.98, and PM2.5, R2=0.96, showed excellent fit, with a suggestion of an exponential response for the PM1 equation. For the PM10 equation, R2=0.41, the fit was average, with especially imprecise measurements in the lower concentration ranges.
+    To develop the AirBeam3 calibration equation for PM1, we first reverted the AirBeam2s PM1 calibrations to get back to the sensor manufacturer’s default “ambient” PM1 measurements. Next, we fit the AirBeam2s default PM1 measurements against the GRIMM PM1 values by fitting a piecewise linear regression model at breakpoints (identified using ‘segmented’ package in R) to generate the AirBeam3 PM1 calibration equation. After doing this, the newly fitted AirBeam2 PM1 values show highly linear agreement with GRIMM PM1 values; see below figures illustrating the fit before and after. (Note, in the figures below, the red line is the piecewise regression, and the dotted black lines depict a line with slope=1.)
   </p>
 
   <img
     class="p--body lazyload"
-    data-src="/assets/img/pages/users-guide/PA_Plots.jpg?nf-resize=fit&w=1200"
-    src="/assets/img/pages/users-guide/PA_Plots.jpg?nf-resize=fit&w=20"
+    data-src="/assets/img/pages/users-guide/NYUSOM_CAPS1.jpg?nf-resize=fit&w=1200"
+    src="/assets/img/pages/users-guide/NYUSOM_CAPS1.jpg?nf-resize=fit&w=20"
     alt="PurpleAir Plots"
   />
 
   <p class="p--body">
-    Next, we updated the AirBeam2 firmware to run the calibration equations we derived from fitting the PurpleAir measurements to the GRIMM measurements. Then we validated our calibration equations by comparing the AirBeam2 measurements to the measurements from a <a href="http://www.tsi.com/dusttrak-drx-aerosol-monitor-8533/">TSI DustTrak DRX Aerosol Monitor 8533</a>. Two AirBeam2s and one TSI were placed inside a concentrated air pollutants (CAPS) chamber located at the NYU School of Medicine Sterling Forest campus. The CAPS chamber is designed for animal exposure tests and concentrates outdoor particulate matter into a small sealed enclosure. Unfortunately, we were unable to obtain particle differentiation for PM10 because CAPS removes large particles before concentrating small particles in the exposure chamber.
+    Next, we fit the newly calibrated PM1 measurements from AirBeam2 against the GRIMM PM2.5 measurements (again using a piecewise linear regression model) to generate the AirBeam3 PM2.5 calibration equation. We used the newly fit AirBeam2 PM1 calibration to fit the PM2.5 model since it performed better than using the AirBeam2 PM2.5 measurements. The newly fitted AirBeam2 PM2.5 values show highly linear agreement with GRIMM PM2.5 values; see below figures illustrating the fit before and after.
   </p>
 
   <img
     class="p--body lazyload"
-    data-src="/assets/img/pages/users-guide/NYUSOM_CAPS.jpg?nf-resize=fit&w=1200"
-    src="/assets/img/pages/users-guide/NYUSOM_CAPS.jpg?nf-resize=fit&w=20"
+    data-src="/assets/img/pages/users-guide/NYUSOM_CAPS2.jpg?nf-resize=fit&w=1200"
+    src="/assets/img/pages/users-guide/NYUSOM_CAPS2.jpg?nf-resize=fit&w=20"
     alt="NYUSOM CAPS"
   />
 
   <p class="p--body">
-    The plots below show one-minute averages from our validation experiment. The results indicate high linearity and excellent agreement between the AirBeam2 and the TSI for both PM2.5, R2=0.89, and PM1, R2=0.88, with the red lines representing what would be perfect agreement between the two instruments.
-  </p>
-
-  <img
-    class="p--body lazyload"
-    data-src="/assets/img/pages/users-guide/AB_Plots.jpg?nf-resize=fit&w=1200"
-    src="/assets/img/pages/users-guide/AB_Plots.jpg?nf-resize=fit&w=20"
-    alt="AirBeam plots"
-  />
-
-  <p class="p--body">
-    Our analysis has several limitations. First, to construct the calibration equations we used data that evaluated the performance of earlier model Plantower sensors, which may perform differently than the Plantower sensor integrated into the AirBeam2. Second, we did not have data available for higher concentration ranges, which may potentially ignore non-linearity in responses. Third, we did not adjust for relative humidity or temperature. Prior academic research indicates these variables, especially humidity, can significantly impact the measurements from light scattering sensors. Fourth, we only tested the AirBeam2 against a single aerosol.  Given the geographic and seasonal variation in aerosols around the world and the variable response of light scattering sensors to differing aerosol compositions, our results will be more relevant in some settings than others.
+    Finally, since AirBeam2 PM10 measurements did not show good agreement with the GRIMM PM10 measurements gathered during the lab test, we instead fit a piecewise regression against the BAM Federal Equivalency Method instrument it was collocated with during <a href="http://www.aqmd.gov/aq-spec/sensordetail/habitatmap-airbeam2">South Coast Air Quality Management District’s field evaluation of the AirBeam2</a>. However, after the calibration the agreement was still relatively poor, suggesting that AirBeam3 PM10 measurements are much less accurate than desired.
   </p>
 
   <p class="p--body">
-    We look forward to learning more about AirBeam2 performance as additional evaluations are performed. Please contact us if you undertake an evaluation of the AirBeam2 and generate data that can be publicly shared as we would be happy to disseminate your findings via the AirCasting network.
+    It should be noted that AirBeam3 calibration equations do not account for relative humidity. Prior academic research indicates high relative humidity can significantly impact the measurements from light scattering sensors. Also, given the geographic and seasonal variation in aerosols around the world and the variable response of light scattering sensors to differing aerosol compositions, the AirBeam3 measurements will be more accurate in some settings than others.
   </p>
 
   <p class="p--body">
-    <em>
-      AirBeam2 performance data collection, analysis, and findings are the work Chris C. Lim, a doctoral student in the Department of Environmental Medicine at NYU School of Medicine. Michael Heimbinder, Executive Director of HabitatMap, directed the analysis and edited the write-up. Dr. George Thurston, Chris’s academic adviser and professor of Environmental Medicine at NYU School of Medicine, provided guidance and access to some of the materials that made this research possible.
-    </em>
+    We look forward to learning more about AirBeam3 performance as additional evaluations are performed. Please contact us if you undertake an evaluation of the AirBeam3 and generate data that can be publicly shared as we would be happy to disseminate your findings via the AirCasting network.
   </p>
+
+  <p class="p--body">
+    <i>The AirBeam3 calibration equations were developed by <a href="https://www.publichealth.arizona.edu/directory/chris-lim">Chris C. Lim</a>, an assistant professor in the Department of Community, Environment, and Policy at the University of Arizona.</i>
+  </p>
+
 </section>

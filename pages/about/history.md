@@ -26,7 +26,7 @@ image: /assets/img/pages/about-habitatmap/MichaelHeimbinder.jpg
   </p>
 
   <p class="p--body">
-    Encouraged by the positive impact community mapping had, HabitatMap - led by community activist and information designer Michael Heimbinder - expanded its technology platform and in 2011 launched AirCasting: an open-source environmental data visualization platform that consists of an Android app and online mapping system. Later in 2015, HabitatMap rolled out a palm-sized companion air quality instrument called the AirBeam. AirBeam2, HabitatMap’s second version of the product, shipped in mid-2018. This low-cost tool measures hyperlocal concentrations of harmful microscopic particles in the air, known as particulate matter, and in conjunction with the free to use AirCasting platform, helps community-based organizations, educators, academics, regulators, city managers, and citizen scientists map air pollution and organize for clean air.
+    Encouraged by the positive impact community mapping had, HabitatMap - led by community activist and information designer Michael Heimbinder - expanded its technology platform and in 2011 launched AirCasting: an open-source environmental data visualization platform that consists of an Android app and online mapping system. Later in 2015, HabitatMap rolled out a palm-sized companion air quality instrument called the AirBeam. AirBeam2 and AirBeam3, HabitatMap’s second and third versions of the product, began shipping in 2018 and 2021. This low-cost tool measures hyperlocal concentrations of harmful microscopic particles in the air, known as particulate matter, and in conjunction with the free to use AirCasting platform, helps community-based organizations, educators, academics, regulators, city managers, and citizen scientists map air pollution and organize for clean air.
   </p>
 
   <p class="p--body">
@@ -38,7 +38,7 @@ image: /assets/img/pages/about-habitatmap/MichaelHeimbinder.jpg
   </h2>
 
   <p class="p--body">
-    Michael Heimbinder is an information designer, community organizer, and educator. Since launching HabitatMap in 2006, he has worked with dozens of community-based organizations and schools to create planning and advocacy maps that publicize the issues they care about most. In addition to running HabitatMap, Michael serves on the Board of the Newtown Creek Alliance, where he has made community knowledge sharing the keystone of the organization’s successful efforts to clean up the Creek and improve quality of life in surrounding neighborhoods. Michael is a graduate of Colorado College and received his M.A. in International Affairs from the New School for Social Research.
+    Michael Heimbinder is an information designer, community organizer, and educator. Since launching HabitatMap in 2006, he has worked with dozens of community-based organizations and schools to create planning and advocacy maps that publicize the issues they care about most. Michael is a graduate of Colorado College and received his M.A. in International Affairs from the New School.
   </p>
 
   <h2 class="heading heading--small heading--body">
