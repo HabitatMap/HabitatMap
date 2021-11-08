@@ -18,8 +18,10 @@
   subitems:
     - text: AirCasting Maps
       url: http://aircasting.habitatmap.org/map
-    - text: AirCasting App
+    - text: Android App
       url: https://play.google.com/store/apps/details?id=pl.llp.aircasting&hl=en_US
+    - text: iOS App
+      url: https://apps.apple.com/us/app/aircasting/id1587685281#?platform=iphone
 - text: About HabitatMap
   url: /about
   subitems:

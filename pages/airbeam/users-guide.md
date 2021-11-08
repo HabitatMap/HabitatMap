@@ -41,7 +41,7 @@ image: /assets/img/about-airbeam-01.jpg
     <li class="contents-list__item"><a href="#standalone">Standalone mode</a></li>
     <li class="contents-list__item"><a href="#sync">Sync SD Card</a></li>
     <li class="contents-list__item"><a href="#temperature">Temperature & Humidity Measurements</a></li>
-    <li class="contents-list__item"><a href="#acquire">Acquire AirBeam2 Data via Serial Monitor</a></li>
+    <li class="contents-list__item"><a href="#acquire">Acquire AirBeam3 Data via Serial Monitor</a></li>
     <li class="contents-list__item"><a href="#programming">Programming</a></li>
     <li class="contents-list__item"><a href="#compliance">FCC Compliance Statement</a></li>
     <li class="contents-list__item"><a href="#performance">Performance Data</a></li>
@@ -71,7 +71,7 @@ image: /assets/img/about-airbeam-01.jpg
   </h2>
 
   <p class="p--body">
-    <a href="/airbeam">AirBeam3</a> is a palm-sized air quality instrument weighing six ounces that measures PM1, PM2.5, PM10, temperature, and relative humidity. Its weather resistant enclosure makes it suitable for indoor or outdoor use. It can communicate via BLE, WiFi, or cellular 4G and can be used as a stationary or mobile monitor. Users can map and graph the measurements from AirBeam3 in real-time using an Android or iOS device or the AirCasting website. AirBeam3 includes an onboard GPS, real-time clock, SD card, and battery so after configuration it can operate in standalone mode, i.e. without the need for any additional hardware, such as a smartphone. The performance of the predecessors to the AirBeam3, AirBeam1 & 2, were both positively evaluated by South Coast Air Quality Management Districts’s AQ-SPEC program and testing to date indicates AirBeam3's performance exceeds that of its predecessors. AirBeam3 is open-source as is the AirCasting platform software.
+    <a href="/airbeam">AirBeam3</a> is a palm-sized air quality instrument weighing six ounces that measures PM1, PM2.5, PM10, temperature, and relative humidity. Its weather resistant enclosure makes it suitable for indoor or outdoor use. It can communicate via BLE, WiFi, or cellular 4G and can be used as a stationary or mobile monitor. Users can map and graph the measurements from AirBeam3 in real-time using an <a href='https://play.google.com/store/apps/details?id=pl.llp.aircasting&%3Cli%3Ehl=en&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>Android</a> or <a href='https://apps.apple.com/us/app/aircasting/id1587685281#?platform=iphone'>iOS</a> device or the <a href='http://aircasting.habitatmap.org/fixed_map'>AirCasting website</a>. AirBeam3 includes an onboard GPS, real-time clock, SD card, and battery so after configuration it can operate in standalone mode, i.e. without the need for any additional hardware, such as a smartphone. The performance of the predecessors to the AirBeam3, AirBeam1 & 2, were both positively evaluated by South Coast Air Quality Management Districts’s AQ-SPEC program and testing to date indicates AirBeam3's performance exceeds that of its predecessors. AirBeam3 is open-source as is the AirCasting platform software.
   </p>
 
   <a id="power" class="anchor">
@@ -111,13 +111,18 @@ image: /assets/img/about-airbeam-01.jpg
   </h2>
 
   <ol class="list list--ordered p--body">
-    <li>Download the <a href="https://play.google.com/store/apps/details?id=pl.llp.aircasting&<li>hl=en">AirCasting app</a> from the Google Play store or Apple App Store (available November ‘21).</li>
+    <li>Download the AirCasting app from the Google Play store or Apple App Store.</li>
     <li>Launch the app and sign in or create a profile.</li>
     <li>Tap the “+” button at the bottom of the screen then tap “Mobile session” and follow the on screen instructions.</li>
   </ol>
 
   <p class="p--body">
     When recording a mobile session with AirBeam3, measurements are communicated once a second to the AirCasting app via Bluetooth. The device running the AirCasting app must stay within 10-20 feet of the AirBeam3 to maintain the Bluetooth connection and receive data from the AirBeam3. After recording a mobile session for more than 2 hours, your measurements will be integrated into 5-second averages. After recording a mobile session for more than 9 hours, your measurements will be integrated into 1-minute averages.
+  </p>
+
+  <p class="p--body">
+    <a href='https://play.google.com/store/apps/details?id=pl.llp.aircasting&%3Cli%3Ehl=en&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>Google Play store</a><br>
+    <a href='https://apps.apple.com/us/app/aircasting/id1587685281#?platform=iphone'>Apple App Store</a>
   </p>
 
   <a id="record-wifi" class="anchor">
@@ -127,13 +132,18 @@ image: /assets/img/about-airbeam-01.jpg
   </h2>
 
   <ol class="list list--ordered p--body">
-    <li>Download the <a href="https://play.google.com/store/apps/details?id=pl.llp.aircasting&<li>hl=en">AirCasting app</a> from the Google Play store or Apple App Store (available November ‘21).</li>
+    <li>Download the AirCasting app from the Google Play store or Apple App Store.</li>
     <li>Launch the app and sign in or create a profile.</li>
     <li>Tap the “+” button at the bottom of the screen then tap “Fixed session” and follow the on screen instructions.</li>
   </ol>
 
   <p class="p--body">
-    When recording a fixed WiFi session with AirBeam3, the measurements are communicated once a minute to the <a href="/">AirCasting website</a> via WiFi. The Android or iOS device no longer needs to be in proximity to the AirBeam3 as it’s retrieving the data from the web via the Android or iOS device’s WiFi or cellular connection. AirBeam3 must be connected to the 2.4 GHz band of your WiFi network; it cannot connect via the 5 GHz band.
+    When recording a fixed WiFi session with AirBeam3, the measurements are communicated once a minute to the <a href="http://aircasting.habitatmap.org/fixed_map">AirCasting website</a> via WiFi. The Android or iOS device no longer needs to be in proximity to the AirBeam3 as it’s retrieving the data from the web via the Android or iOS device’s WiFi or cellular connection. AirBeam3 must be connected to the 2.4 GHz band of your WiFi network; it cannot connect via the 5 GHz band.
+  </p>
+
+  <p class="p--body">
+    <a href='https://play.google.com/store/apps/details?id=pl.llp.aircasting&%3Cli%3Ehl=en&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>Google Play store</a><br>
+    <a href='https://apps.apple.com/us/app/aircasting/id1587685281#?platform=iphone'>Apple App Store</a>
   </p>
 
   <a id="record-cellular" class="anchor">
@@ -144,13 +154,18 @@ image: /assets/img/about-airbeam-01.jpg
 
   <ol class="list list--ordered p--body">
     <li>Unscrew the AirBeam3 enclosure, slide your activated Nano SIM card into the SIM card slot located directly above the power switch (insert the SIM card so the chip side is against the board and the clipped corner is oriented towards the power button), then screw the AirBeam3 together again. To maintain the AirBeam3s weather resistance, screw the bottom two screws tight before tightening the top screw into the aluminum standoff; do not overtighten.</li>
-    <li>Download the <a href="https://play.google.com/store/apps/details?id=pl.llp.aircasting&<li>hl=en">AirCasting app</a> from the Google Play store or Apple App Store (available November ‘21).</li>
+    <li>Download the AirCasting app from the Google Play store or Apple App Store.</li>
     <li>Launch the app and sign in or create a profile.</li>
     <li>Tap the “+” button at the bottom of the screen then tap “Fixed session” and follow the on screen instructions.</li>
   </ol>
 
    <p class="p--body">
-    When recording a fixed cellular session, the measurements are communicated once a minute to the <a href="/">AirCasting website</a> via WiFi. The Android or iOS device no longer needs to be in proximity to the AirBeam3 as it’s retrieving the data from the web via the Android or IOS device’s WiFi or cellular connection. AirBeam3 data and messaging costs are approximately $25 per month when using a Ting SIM card.
+    When recording a fixed cellular session, the measurements are communicated once a minute to the <a href="http://aircasting.habitatmap.org/fixed_map">AirCasting website</a> via WiFi. The Android or iOS device no longer needs to be in proximity to the AirBeam3 as it’s retrieving the data from the web via the Android or IOS device’s WiFi or cellular connection. AirBeam3 data and messaging costs are approximately $25 per month when using a Ting SIM card.
+  </p>
+
+  <p class="p--body">
+    <a href='https://play.google.com/store/apps/details?id=pl.llp.aircasting&%3Cli%3Ehl=en&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>Google Play store</a><br>
+    <a href='https://apps.apple.com/us/app/aircasting/id1587685281#?platform=iphone'>Apple App Store</a>
   </p>
 
   <a id="connection" class="anchor">
@@ -159,7 +174,7 @@ image: /assets/img/about-airbeam-01.jpg
     Connection Indicator Color Key
   </h2>
 
-  <ul class="list p--body">
+  <ul class="list list--unordered p--body">
     <li>Solid Green, for 180 seconds = ready to be configured, waiting for Bluetooth connection </li>
     <li>Solid Blue = Bluetooth connected</li>
     <li>Solid White, for 120 seconds = AirBeam3 successfully configured and sending data </li>
@@ -181,7 +196,7 @@ image: /assets/img/about-airbeam-01.jpg
   </h2>
 
   <p class="p--body">
-    When recording a mobile session with AirBeam3, you can separate the AirBeam3 from your Android or iOS device and continue recording, geolocating, and timestamping your measurements. To do this, tap the three horizontal dots located in the upper right hand corner of the session card, map, or graph and tap “Enter standalone mode”. After entering standalone mode, the connection indicator will blink yellow when you don’t have a GPS fix and blink orange when you do have a GPS fix. When you don’t have a GPS fix, your measurements will be pinned to your last know location. To get a GPS fix, move outside to a location with a clear view of the sky. In some instances, it can take 5-10 minutes before the AirBeam3 gets a GPS fix. <i>Note that an iPhone 8 or higher or an Android 8 or higher plus Bluetooth 5 device is required to utilize the Standalone Mode and Sync SD Card features.</i>
+    When recording a mobile session with AirBeam3, you can separate the AirBeam3 from your Android or iOS device and continue recording, geolocating, and timestamping your measurements. To do this, tap the three horizontal dots located in the upper right hand corner of the session card, map, or graph and tap “Enter standalone mode”. After entering standalone mode, the connection indicator will blink yellow when you don’t have a GPS fix and blink orange when you do have a GPS fix. When you don’t have a GPS fix, your measurements will be pinned to your last know location. To get a GPS fix, move outside to a location with a clear view of the sky. In some instances, it can take 5-10 minutes before the AirBeam3 gets a GPS fix. <em>Note that an iPhone 8 or higher or an Android 8 or higher plus Bluetooth 5 device is required to utilize the Standalone Mode and Sync SD Card features.</em>
   </p>
 
   <a id="sync" class="anchor">
@@ -191,7 +206,7 @@ image: /assets/img/about-airbeam-01.jpg
   </h2>
 
   <p class="p--body">
-    Whenever your AirBeam3 is recording a mobile or fixed session, it will log data to its SD card. In instances where your AirBeam is connected to the app via Bluetooth (mobile sessions) or sending data via either the WiFi or cellular network directly to the AirCasting server (fixed sessions), the data on the SD card duplicates the data already submitted to and saved in the AirCasting database. However, if when recording a mobile session you enter standalone mode, or when recording a fixed session the AirBeam3s cellular or WiFi connection is interrupted, you can sync the AirBeam3s SD card to retrieve your data. To do this either a) tap the “finish recording & sync” button on your mobile session card; or b) tap the “+” button at the bottom of the screen then tap “Sync data from AirBeam3” and follow the on screen instructions. After syncing the session data from your SD card to the AirCasting database, the SD card will be deleted. <i>Note that an iPhone 8 or higher or an Android 8 or higher plus Bluetooth 5 device is required to utilize the Standalone Mode and Sync SD Card features.</i>
+    Whenever your AirBeam3 is recording a mobile or fixed session, it will log data to its SD card. In instances where your AirBeam is connected to the app via Bluetooth (mobile sessions) or sending data via either the WiFi or cellular network directly to the AirCasting server (fixed sessions), the data on the SD card duplicates the data already submitted to and saved in the AirCasting database. However, if when recording a mobile session you enter standalone mode, or when recording a fixed session the AirBeam3s cellular or WiFi connection is interrupted, you can sync the AirBeam3s SD card to retrieve your data. To do this either a) tap the “finish recording & sync” button on your mobile session card; or b) tap the “+” button at the bottom of the screen then tap “Sync data from AirBeam3” and follow the on screen instructions. After syncing the session data from your SD card to the AirCasting database, the SD card will be deleted. <em>Note that an iPhone 8 or higher or an Android 8 or higher plus Bluetooth 5 device is required to utilize the Standalone Mode and Sync SD Card features.</em>
   </p>
 
   <a id="temperature" class="anchor">
@@ -279,7 +294,7 @@ image: /assets/img/about-airbeam-01.jpg
   </p>
 
   <p class="p--body">
-    <i>The AirBeam3 calibration equations were developed by <a href="https://www.publichealth.arizona.edu/directory/chris-lim">Chris C. Lim</a>, an assistant professor in the Department of Community, Environment, and Policy at the University of Arizona.</i>
+    <em>The AirBeam3 calibration equations were developed by <a href="https://www.publichealth.arizona.edu/directory/chris-lim">Chris C. Lim</a>, an assistant professor in the Department of Community, Environment, and Policy at the University of Arizona.</em>
   </p>
 
 </section>
