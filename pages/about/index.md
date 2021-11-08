@@ -18,7 +18,7 @@ image: /assets/img/pages/about-habitatmap/airbeam.jpg
 
   <div class="split--50 split--padding-left">
     <p class="heading heading--small">
-      HabitatMap is an environmental technology non-profit building open-source, free, and low-cost environmental monitoring and data visualization solutions. Our tools empower organizations and citizen scientists to measure pollution and advocate for equitable solutions to environmental health issues. We focus on low-income communities and communities of color living with disproportionate environmental burdens.
+      HabitatMap is an environmental technology non-profit building open-source, free, and low-cost environmental monitoring and data visualization solutions. Our tools empower organizations and community scientists to measure pollution and advocate for equitable solutions to environmental health issues. We focus on low-income communities and communities of color living with disproportionate environmental burdens.
     </p>
 
     <button class="read-more-button js--show-next">Read more</button>
@@ -87,7 +87,7 @@ image: /assets/img/pages/about-habitatmap/airbeam.jpg
   <div class="split--50 split--padding-right">
     <img class="logo logo--body logo--airbeam" alt="Airbeam logo" src="/assets/img/svg/Airbeam-Logo-Body.svg" />
     <p class="p--body">
-      The AirBeam measures particulate matter with proven accuracy and when used in conjunction with the AirCasting platform - or a custom solution - helps community-based organizations, educators, academics, regulators, city managers, and citizen scientists map air pollution and organize for clean air.
+      The AirBeam measures particulate matter with proven accuracy and when used in conjunction with the AirCasting platform - or a custom solution - helps community-based organizations, educators, academics, regulators, city managers, and community scientists map air pollution and organize for clean air.
     </p>
     <a href="/airbeam" class="button button--hm">Learn More</a>
   </div>
