@@ -111,18 +111,13 @@ image: /assets/img/about-airbeam-01.jpg
   </h2>
 
   <ol class="list list--ordered p--body">
-    <li>Download the AirCasting app from the Google Play store or Apple App Store.</li>
+    <li>Download the AirCasting app from the <a href='https://play.google.com/store/apps/details?id=pl.llp.aircasting&%3Cli%3Ehl=en&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>Google Play store</a> or <a href='https://apps.apple.com/us/app/aircasting/id1587685281#?platform=iphone'>Apple App Store.</a></li>
     <li>Launch the app and sign in or create a profile.</li>
     <li>Tap the “+” button at the bottom of the screen then tap “Mobile session” and follow the on screen instructions.</li>
   </ol>
 
   <p class="p--body">
     When recording a mobile session with AirBeam3, measurements are communicated once a second to the AirCasting app via Bluetooth. The device running the AirCasting app must stay within 10-20 feet of the AirBeam3 to maintain the Bluetooth connection and receive data from the AirBeam3. After recording a mobile session for more than 2 hours, your measurements will be integrated into 5-second averages. After recording a mobile session for more than 9 hours, your measurements will be integrated into 1-minute averages.
-  </p>
-
-  <p class="p--body">
-    <a href='https://play.google.com/store/apps/details?id=pl.llp.aircasting&%3Cli%3Ehl=en&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>Google Play store</a><br>
-    <a href='https://apps.apple.com/us/app/aircasting/id1587685281#?platform=iphone'>Apple App Store</a>
   </p>
 
   <a id="record-wifi" class="anchor">
@@ -132,18 +127,13 @@ image: /assets/img/about-airbeam-01.jpg
   </h2>
 
   <ol class="list list--ordered p--body">
-    <li>Download the AirCasting app from the Google Play store or Apple App Store.</li>
+    <li>Download the AirCasting app from the <a href='https://play.google.com/store/apps/details?id=pl.llp.aircasting&%3Cli%3Ehl=en&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>Google Play store</a> or <a href='https://apps.apple.com/us/app/aircasting/id1587685281#?platform=iphone'>Apple App Store.</a></li>
     <li>Launch the app and sign in or create a profile.</li>
     <li>Tap the “+” button at the bottom of the screen then tap “Fixed session” and follow the on screen instructions.</li>
   </ol>
 
   <p class="p--body">
     When recording a fixed WiFi session with AirBeam3, the measurements are communicated once a minute to the <a href="http://aircasting.habitatmap.org/fixed_map">AirCasting website</a> via WiFi. The Android or iOS device no longer needs to be in proximity to the AirBeam3 as it’s retrieving the data from the web via the Android or iOS device’s WiFi or cellular connection. AirBeam3 must be connected to the 2.4 GHz band of your WiFi network; it cannot connect via the 5 GHz band.
-  </p>
-
-  <p class="p--body">
-    <a href='https://play.google.com/store/apps/details?id=pl.llp.aircasting&%3Cli%3Ehl=en&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>Google Play store</a><br>
-    <a href='https://apps.apple.com/us/app/aircasting/id1587685281#?platform=iphone'>Apple App Store</a>
   </p>
 
   <a id="record-cellular" class="anchor">
@@ -154,18 +144,13 @@ image: /assets/img/about-airbeam-01.jpg
 
   <ol class="list list--ordered p--body">
     <li>Unscrew the AirBeam3 enclosure, slide your activated Nano SIM card into the SIM card slot located directly above the power switch (insert the SIM card so the chip side is against the board and the clipped corner is oriented towards the power button), then screw the AirBeam3 together again. To maintain the AirBeam3s weather resistance, screw the bottom two screws tight before tightening the top screw into the aluminum standoff; do not overtighten.</li>
-    <li>Download the AirCasting app from the Google Play store or Apple App Store.</li>
+    <li>Download the AirCasting app from the <a href='https://play.google.com/store/apps/details?id=pl.llp.aircasting&%3Cli%3Ehl=en&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>Google Play store</a> or <a href='https://apps.apple.com/us/app/aircasting/id1587685281#?platform=iphone'>Apple App Store.</a></li>
     <li>Launch the app and sign in or create a profile.</li>
     <li>Tap the “+” button at the bottom of the screen then tap “Fixed session” and follow the on screen instructions.</li>
   </ol>
 
    <p class="p--body">
-    When recording a fixed cellular session, the measurements are communicated once a minute to the <a href="http://aircasting.habitatmap.org/fixed_map">AirCasting website</a> via WiFi. The Android or iOS device no longer needs to be in proximity to the AirBeam3 as it’s retrieving the data from the web via the Android or IOS device’s WiFi or cellular connection. AirBeam3 data and messaging costs are approximately $25 per month when using a Ting SIM card.
-  </p>
-
-  <p class="p--body">
-    <a href='https://play.google.com/store/apps/details?id=pl.llp.aircasting&%3Cli%3Ehl=en&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>Google Play store</a><br>
-    <a href='https://apps.apple.com/us/app/aircasting/id1587685281#?platform=iphone'>Apple App Store</a>
+    When recording a fixed cellular session, the measurements are communicated once a minute to the <a href="http://aircasting.habitatmap.org/fixed_map">AirCasting website</a> via the 4G cellular network. The Android or iOS device no longer needs to be in proximity to the AirBeam3 as it’s retrieving the data from the web via the Android or IOS device’s WiFi or cellular connection. AirBeam3 data and messaging costs are approximately $25 per month when using a Ting SIM card.
   </p>
 
   <a id="connection" class="anchor">
