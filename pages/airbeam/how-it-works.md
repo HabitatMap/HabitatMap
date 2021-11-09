@@ -76,7 +76,7 @@ section: airbeam
       </h2>
       <img class="logo logo--body" alt="AirCasting logo" src="/assets/img/svg/Aircasting-Logo-Body.svg" />
       <p class="p--body">
-        In mobile mode, the AirBeam communicates measurements to the Android device every second via Bluetooth. In fixed mode, the AirBeam communicates measurements directly to the AirCasting website every minute via either the WiFi or cellular network. AirBeam also includes an onboard GPS, clock, and SD card so it can operate in standalone mode and log data without being connected to a smartphone, WiFi, or cellular network.
+        In mobile mode, the AirBeam communicates measurements to the Android or iOS device every second via Bluetooth. In fixed mode, the AirBeam communicates measurements directly to the AirCasting website every minute via either the WiFi or cellular network. AirBeam also includes an onboard GPS, clock, and SD card so it can operate in standalone mode and log data without being connected to a smartphone, WiFi, or cellular network.
       </p>
     </article>
     <article class="container--narrow u--margin-top-big">
