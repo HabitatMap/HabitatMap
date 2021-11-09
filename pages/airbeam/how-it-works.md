@@ -61,7 +61,7 @@ section: airbeam
         <span class="heading--capitilized">Measure</span>
       </h2>
       <p class="p--body">
-        The AirBeam communicates these measurements to the AirCasting Android App (available from the <a href="https://play.google.com/store/apps/details?id=pl.llp.aircasting&hl=en_US">Google Play Store</a> & <a href="https://apps.apple.com/us/app/aircasting/id1587685281#?platform=iphone">Apple App Store</a>) where your measurements are mapped and graphed in real-time on your smartphone.
+        The AirBeam communicates these measurements to the AirCasting App (available from the <a href="https://play.google.com/store/apps/details?id=pl.llp.aircasting&hl=en_US">Google Play Store</a> & <a href="https://apps.apple.com/us/app/aircasting/id1587685281#?platform=iphone">Apple App Store</a>) where your measurements are mapped and graphed in real-time on your smartphone.
       </p>
     </article>
   </div>
@@ -76,7 +76,7 @@ section: airbeam
       </h2>
       <img class="logo logo--body" alt="AirCasting logo" src="/assets/img/svg/Aircasting-Logo-Body.svg" />
       <p class="p--body">
-        When used in mobile, the AirBeam communicates measurements to the Android device every second via Bluetooth. When used as a fixed instrument, the AirBeam communicates measurements directly to the AirCasting website every minute via either the WiFi or cellular network. AirBeam also includes an onboard GPS, clock, SD card, and battery, so it can operate in standalone mode and log data without being connected to a smartphone, WiFi, or cellular network.
+        In mobile mode, the AirBeam communicates measurements to the Android device every second via Bluetooth. In fixed mode, the AirBeam communicates measurements directly to the AirCasting website every minute via either the WiFi or cellular network. AirBeam also includes an onboard GPS, clock, and SD card so it can operate in standalone mode and log data without being connected to a smartphone, WiFi, or cellular network.
       </p>
     </article>
     <article class="container--narrow u--margin-top-big">
