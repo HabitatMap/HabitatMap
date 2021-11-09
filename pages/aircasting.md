@@ -25,7 +25,8 @@ image: /assets/img/aircasting-map-screenshot.png
     </div>
     <div class="split--order-secondary">
       <a href="http://aircasting.habitatmap.org/map" class="button button--ac ac-intro__button">AirCasting Maps</a>
-      <a href="https://play.google.com/store/apps/details?id=pl.llp.aircasting&hl=en" class="button button--ac ac-intro__button">Download App</a>
+      <a href="https://play.google.com/store/apps/details?id=pl.llp.aircasting&hl=en" class="button button--ac ac-intro__button">Android App</a>
+      <a href="https://apps.apple.com/us/app/aircasting/id1587685281#?platform=iphone" class="button button--ac ac-intro__button">iOS App</a>
     </div>
   </div>
 
