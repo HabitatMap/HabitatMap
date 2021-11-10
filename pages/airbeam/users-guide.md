@@ -150,7 +150,7 @@ image: /assets/img/about-airbeam-01.jpg
   </ol>
 
    <p class="p--body">
-    When recording a fixed cellular session, the measurements are communicated once a minute to the <a href="http://aircasting.habitatmap.org/fixed_map">AirCasting website</a> via the 4G cellular network. The Android or iOS device no longer needs to be in proximity to the AirBeam3 as it’s retrieving the data from the web via the Android or IOS device’s WiFi or cellular connection. AirBeam3 data and messaging costs are approximately $25 per month when using a Ting SIM card.
+    When recording a fixed cellular session, the measurements are communicated once a minute to the <a href="http://aircasting.habitatmap.org/fixed_map">AirCasting website</a> via the 4G cellular network. The Android or iOS device no longer needs to be in proximity to the AirBeam3 as it’s retrieving the data from the web via the Android or iOS device’s WiFi or cellular connection. AirBeam3 data and messaging costs are approximately $25 per month when using a Ting SIM card.
   </p>
 
   <a id="connection" class="anchor">

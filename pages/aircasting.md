@@ -1,7 +1,7 @@
 ---
 layout: page
 title: AirCasting is an open-source environmental data visualization platform.
-desctiption: AirCasting is an open-source environmental data visualization platform that consists of an Android app and online mapping system.
+desctiption: AirCasting is an open-source environmental data visualization platform that consists of a smartphone app and online mapping system.
 permalink: /aircasting
 section: aircasting
 image: /assets/img/aircasting-map-screenshot.png
@@ -10,7 +10,7 @@ image: /assets/img/aircasting-map-screenshot.png
 <section>
   <div class="panel panel--leading-text">
     <h1 class="heading heading--large u--gray-text">
-      AirCasting is an open-source environmental data visualization platform that consists of an Android app and online mapping system.
+      AirCasting is an open-source environmental data visualization platform that consists of a smartphone app and online mapping system.
     </h1>
   </div>
 
