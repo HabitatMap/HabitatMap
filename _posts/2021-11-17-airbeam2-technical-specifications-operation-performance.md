@@ -135,11 +135,11 @@ The performance of the predecessor to the AirBeam3, AirBeam2, was [positively ev
 
 To develop the AirBeam3 calibration equation for PM1, we first reverted the AirBeam2s PM1 calibrations to get back to the sensor manufacturer’s default “ambient” PM1 measurements. Next, we fit the AirBeam2s default PM1 measurements against the GRIMM PM1 values by fitting a piecewise linear regression model at breakpoints (identified using ‘segmented’ package in R) to generate the AirBeam3 PM1 calibration equation. After doing this, the newly fitted AirBeam2 PM1 values show highly linear agreement with GRIMM PM1 values; see below figures illustrating the fit before and after. (Note, in the figures below, the red line is the piecewise regression, and the dotted black lines depict a line with slope=1.)
 
-![PurpleAir Plots](https://www.habitatmap.org/assets/img/pages/users-guide/NYUSOM_CAPS1.jpg?nf-resize=fit&w=1200)
+![](https://www.habitatmap.org/assets/img/pages/users-guide/NYUSOM_CAPS1.jpg?nf-resize=fit&w=1200)
 
 Next, we fit the newly calibrated PM1 measurements from AirBeam2 against the GRIMM PM2.5 measurements (again using a piecewise linear regression model) to generate the AirBeam3 PM2.5 calibration equation. We used the newly fit AirBeam2 PM1 calibration to fit the PM2.5 model since it performed better than using the AirBeam2 PM2.5 measurements. The newly fitted AirBeam2 PM2.5 values show highly linear agreement with GRIMM PM2.5 values; see below figures illustrating the fit before and after.
 
-![NYUSOM CAPS](https://www.habitatmap.org/assets/img/pages/users-guide/NYUSOM_CAPS2.jpg?nf-resize=fit&w=1200)
+![](https://www.habitatmap.org/assets/img/pages/users-guide/NYUSOM_CAPS2.jpg?nf-resize=fit&w=1200)
 
 Finally, since AirBeam2 PM10 measurements did not show good agreement with the GRIMM PM10 measurements gathered during the lab test, we instead fit a piecewise regression against the BAM Federal Equivalency Method instrument it was collocated with during [South Coast Air Quality Management District’s field evaluation of the AirBeam2](http://www.aqmd.gov/aq-spec/sensordetail/habitatmap-airbeam2). However, after the calibration the agreement was still relatively poor, suggesting that AirBeam3 PM10 measurements are much less accurate than desired.
 
