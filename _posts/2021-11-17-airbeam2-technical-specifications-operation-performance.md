@@ -147,4 +147,4 @@ It should be noted that AirBeam3 calibration equations do not account for relati
 
 We look forward to learning more about AirBeam3 performance as additional evaluations are performed. Please contact us if you undertake an evaluation of the AirBeam3 and generate data that can be publicly shared as we would be happy to disseminate your findings via the AirCasting network.
 
-*he AirBeam3 calibration equations were developed by [Chris C. Lim](https://www.publichealth.arizona.edu/directory/chris-lim), an assistant professor in the Department of Community, Environment, and Policy at the University of Arizona.*
+*The AirBeam3 calibration equations were developed by [Chris C. Lim](https://www.publichealth.arizona.edu/directory/chris-lim), an assistant professor in the Department of Community, Environment, and Policy at the University of Arizona.*
