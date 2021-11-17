@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "AirBeam2 Technical Specifications, Operation & Performance "
+title: "AirBeam3 Technical Specifications, Operation & Performance "
 date: 2021-11-17
 featured: false
 author: Michael Heimbinder & Chris Lim
