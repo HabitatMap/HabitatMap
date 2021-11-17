@@ -33,4 +33,4 @@ In the Bronx and Brooklyn, the New York City Environmental Justice Alliance’s 
 
 Ultimately, reducing air pollution exposures for children and their caregivers is dependent on a transformation, not just in how governments build - directive one - but in how they operate - directive two.  We need to see children and their caregivers not as agents to be acted upon, but as agents in their own right who are embedded in communities that have been acting for decades, if not centuries, to overcome the deficits in their quality of life versus more privileged citizens.  Communities whose struggles for equality are the foundation from which our conception of inalienable human rights have arisen, including the right to breathe clean air.
 
-Image Credit: [letscleartheairliverpool.co.uk/what-is-air-pollution/](letscleartheairliverpool.co.uk/what-is-air-pollution/)
+Image Credit: [letscleartheairliverpool.co.uk/what-is-air-pollution/](https://letscleartheairliverpool.co.uk/what-is-air-pollution/)
