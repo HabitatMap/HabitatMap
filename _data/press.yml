@@ -1,14 +1,59 @@
 press_articles:
-  - date: 2019-05-13
-    publication: DNA
-    link: https://www.dna.fr/edition-de-strasbourg/2019/05/13/rendre-visible-la-pollution-atmospherique
-    title: "A Strasbourg, des citoyens volontaires captent pour vous la pollution
-      atmosphérique "
-  - date: 2019-04-24
-    title: "Strasbourg: Avec leur microcapteurs à particules, des citoyens mesurent
-      la pollution de l'air en temps réel"
-    link: https://www.20minutes.fr/planete/2503227-20190424-strasbourg-microcapteurs-particules-citoyens-mesurent-pollution-air-temps-reel
-    publication: 20 Minutes
+  - date: 2021-08-18
+    title: Clearing the Air in the Historic West End
+    link: https://storymaps.arcgis.com/stories/5071792639ef47729fad54da835d37d3
+    publication: Clean Air Carolina
+  - date: 2021-08-01
+    title: Measuring PM2.5 with Low-Cost Sensors
+    publication: WRI Brasil
+    link: https://wribrasil.org.br/pt/publicacoes/medindo-mp25-com-sensores-da-baixo-custo
+  - date: 2021-05-26
+    title: Air Grievances
+    link: https://urbanomnibus.net/2021/05/air-grievances/
+    publication: Urban Omnibus
+  - date: 2021-03-05
+    title: Community-led air quality study in Williamsburg unearths pollution hot
+      spots
+    link: https://www.brooklynpaper.com/south-williamsburg-air-quality-up-to-20-times-worse-than-previously-known-study/
+    publication: Brooklyn Paper
+  - date: 2020-12-24
+    title: How We Reported on Pollution in New Delhi Through Two Children
+    link: https://www.nytimes.com/2020/12/24/insider/india-measuring-pollution.html?smid=tw-share
+    publication: New York Times
+  - date: 2020-12-16
+    title: Who Gets to Breathe Clean Air in New Delhi?
+    publication: New York Times
+    link: https://www.nytimes.com/interactive/2020/12/17/world/asia/india-pollution-inequality.html
+  - date: 2020-10-01
+    title: "Air Quality Citizen Science Research Project in NYC: Toolkit & Case
+      Studies"
+    link: https://www.researchgate.net/publication/344575711_Air_Quality_Citizen_Science_Research_Project_in_NYC_Toolkit_Case_Studies
+    publication: Research Gate
+  - date: 2020-08-19
+    title: "Self-Portraits of Personal Exposure to Air Pollution: on where and when
+      People Are Exposed, and on why it Is Difficult to Avoid"
+    link: https://link.springer.com/epdf/10.1007/s10745-020-00176-y?sharing_token=NW3GrH76Sf7ohzWi5vM5rPe4RwlQNchNByi7wbcMAY5iKUjKzy8wr1En4gO6gtygPaRoKlMzrgBFAOdNiFAW5TrLV2v9Y_zE7Tg3-B7jJOsG6x0ZO7z0E2Ph7fyHzZnaSeCnNk2ax7LO6fBhpHMls2HvDnvNnM_EHE5rBU4k_eM%3D
+    publication: Human Ecology
+  - date: 2020-08-11
+    title: Portable pollution sensors feasible for measuring personal exposure
+    link: https://www.healio.com/news/pulmonology/20200811/portable-pollution-sensors-feasible-for-measuring-personal-exposure
+    publication: American Thoracic Society International Conference
+  - date: 2020-06-01
+    title: Spatial modelling of particulate matter air pollution sensor measurements
+      collected by community scientists while cycling, land use regression with
+      spatial cross-validation, and applications of machine learning for data
+      correction
+    link: https://www.sciencedirect.com/science/article/abs/pii/S1352231020302168?dgcid=coauthor
+    publication: Atmospheric Environment
+  - date: 2019-11-20
+    link: https://www.mdpi.com/1660-4601/17/1/93
+    publication: International Journal of Environmental Research and Public Health
+    title: "Youth Engaged Participatory Air Monitoring: A ‘Day in the Life’ in Urban
+      Environmental Justice Communities "
+  - date: 2019-11-07
+    title: "Ahumados bajo tierra "
+    link: https://www.lasprovincias.es/gente-estilo/ahumados-bajo-tierra-20191107011802-ntvo.html
+    publication: Las Provincias
   - date: 2019-10-16
     link: https://ggwash.org/view/74288/take-a-walk-on-the-tysons-side-walkability-virginia-research
     publication: Greater Greater Washington
@@ -21,6 +66,20 @@ press_articles:
     link: https://www.iotplaybook.com/article/nonprofits-profit-internet-things
     publication: IoT Playbook
     title: Nonprofits Profit from the Internet of Things
+  - date: 2019-06-06
+    publication: Rue89 Strasbourg
+    link: https://www.rue89strasbourg.com/enseignements-strasbourgeois-capteurs-pollution-154643
+    title: Les enseignements de Strasbourgeois équipés de capteurs de pollution
+  - date: 2019-05-13
+    publication: DNA
+    link: https://www.dna.fr/edition-de-strasbourg/2019/05/13/rendre-visible-la-pollution-atmospherique
+    title: "A Strasbourg, des citoyens volontaires captent pour vous la pollution
+      atmosphérique "
+  - date: 2019-04-24
+    title: "Strasbourg: Avec leur microcapteurs à particules, des citoyens mesurent
+      la pollution de l'air en temps réel"
+    link: https://www.20minutes.fr/planete/2503227-20190424-strasbourg-microcapteurs-particules-citoyens-mesurent-pollution-air-temps-reel
+    publication: 20 Minutes
   - date: 2019-03-15
     link: https://www.medpagetoday.com/publichealthpolicy/environmentalhealth/78582?vpass=1
     publication: Medpage  Today
