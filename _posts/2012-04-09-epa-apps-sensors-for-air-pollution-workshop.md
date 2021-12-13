@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Apps & Sensors for Air Pollution
-date: '2012-04-09'
+date: 2012-04-09
 featured: false
 image: /images/uploads/helicopter.jpg
 category: Sensors & Instruments
@@ -18,7 +18,7 @@ tag:
 <p>Brian Beveridge from the <a href="http://www.woeip.org/" target="_blank">West Oakland Environmental Indicators Project</a> presented the air quality monitoring his community group did in their residential neighborhood located next to the seventh largest port in the US. They used a range of different air quality monitoring devices including the Intel-Berkeley Common Sense badge.</p>
 <p><img title="CommonSenseBadge" src="{{ site.baseurl }}/assets/CommonSenseBadge.jpg" alt="" width="600" height="358" /></p>
 
-<p>Joe Saavedra from Parsons presented Citizen Sensorand the Air Quality Egg. Two citizen science projects that prioritize public engagement as a core value.</p>
+<p>Joe Saavedra from Parsons presented Citizen Sensor and the Air Quality Egg. Two citizen science projects that prioritize public engagement as a core value.</p>
 <p><img title="CitizenSensor" src="{{ site.baseurl }}/assets/CitizenSensor.jpg" alt="" width="600" height="458" /></p>
 
 <p>Prabal Dutta from the University of Michigan presented a bird's eye view of the evolution of  pervasive sensing systems and identified some of the opportunities that will emerge as these systems proliferate. He should know since he was one of the big brain's behind the previously mentioned Common Sense badge and <a href="http://web.eecs.umich.edu/~prabal/projects/hijack/" target="_blank">HiJack</a>, a hardware/software platform for creating cubic-inch sensor peripherals for smartphones that harvest power and bandwidth from the headset jack.</p>
