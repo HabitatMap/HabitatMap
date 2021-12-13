@@ -3,8 +3,7 @@ layout: user_story
 title: Clean Air Carolina
 featured: true
 image: /images/uploads/cac_cropped.jpg
-intro: >-
-  <a href="https://cleanaircarolina.org/">Clean Air Carolina</a> (CAC), a
+intro: <a href="https://cleanaircarolina.org/">Clean Air Carolina</a> (CAC), a
   Charlotte-based non-profit, works to ensure cleaner air quality for all North
   Carolinians through education and advocacy and by working with their partners
   to reduce sources of pollution. For the past two years, CAC has been
@@ -14,7 +13,7 @@ intro: >-
 type: Activists & Non-profits
 order: 4
 ---
-The AirKeepers program is designed to empower Historic West End residents and community leaders to build a community-level monitoring network that gathers real-time air quality data using free and low-cost citizen science tools, like the AirCasting platform and the AirBeam.
+The AirKeepers program is designed to empower Historic West End residents and community leaders to build a community-level monitoring network that gathers real-time air quality data using free and low-cost community science tools, like the AirCasting platform and the AirBeam.
 
 During the separate-and-unequal era of Jim Crow segregation, Black neighborhoods in Charlotte were concentrated on the west side of town, close to a major railroad line and one of the city's main industrial areas. From the 1960s through the 1980s, as the nation's growing web of interstate highways reached Charlotte, three major roads (I-85, I-77, and NC-16) were routed through the west side. In subsequent decades, public and private investment focused on developing suburban neighborhoods for well-off residents at the edges of town while Black neighborhoods received little to no investment.
 
