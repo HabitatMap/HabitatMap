@@ -7,7 +7,7 @@ image: /images/uploads/1000AirBeamsWorldwide.png
 category: Open Source Software
 tag:
   - community-based-organization
-  - citizen science
+  - community science
   - education
   - instruments
   - open-source

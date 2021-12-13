@@ -8,7 +8,7 @@ category: Health
 tag:
   - video
   - health
-  - citizen science
+  - community science
   - instruments
   - open-source
 ---

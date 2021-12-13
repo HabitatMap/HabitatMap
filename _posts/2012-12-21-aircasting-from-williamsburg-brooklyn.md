@@ -6,7 +6,7 @@ featured: false
 image: /images/uploads/Bike+AirCastingAirMonitors.jpg
 category: Health
 tag:
-  - citizen science
+  - community science
   - environmental-justice
   - instruments
   - health

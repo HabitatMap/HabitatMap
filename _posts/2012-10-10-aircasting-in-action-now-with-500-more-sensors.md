@@ -7,7 +7,7 @@ image: /images/uploads/BQEtoLongMeadow.jpg
 category: Sensors & Instruments
 tag:
   - instruments
-  - citizen science
+  - community science
 ---
 <p>This evening I clipped an AirCasting Air Monitor to my backpack, strapped a Zephyr heart rate monitor to my chest, and set out to find a good place to measure bad air. Conjecturing that car and truck exhaust might accumulate in the area where the Brooklyn-Queens Expressway dips below street level before barreling into the Gowanus Expressway, I grabbed my bike and headed for the intersection of Union Street and the BQE. I was curious to find out whether my air monitor would confirm my hypothesis: that the air around this stretch of the BQE had more carbon monoxide (CO) and nitrogen dioxide (NO2) than the air in the middle of Prospect Park. I was also interested to see if the monitor would register any changes in humidity or temperature as I moved from city streets into the park. And the heart rate monitor was just for fun. I wanted to see how the “slope” in park slope might kick my ticker. (Note that I lost my GPS fix as I cycled through the southern end of the park loop. These readings then got marked as having been recorded at 8th Ave. and 3rd St. Dang GPS!)</p>
 

@@ -9,7 +9,7 @@ tag:
   - instruments
   - open-source
   - environmental-justice
-  - citizen science
+  - community science
 ---
 <p>After taking time this weekend and yesterday to do more testing, we officially launched AirCasting today.  Below I've described a couple of my recent sessions to illustrate AirCasting in action.</p>
 <p>Times Square to Central Park:<br />

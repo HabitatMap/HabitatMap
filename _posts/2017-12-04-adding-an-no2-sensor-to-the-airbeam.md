@@ -7,7 +7,7 @@ author: Remi Pincent
 image: /images/uploads/MobicitairExperimentReport.jpg
 category: Sensors & Instruments
 tag:
-  - citizen science
+  - community science
   - instruments
   - open-source
 ---

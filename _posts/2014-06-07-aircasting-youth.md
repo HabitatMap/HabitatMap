@@ -7,7 +7,7 @@ image: /images/uploads/AirCastingYouthMarina.jpg
 category: Education
 tag:
   - community-based-organization
-  - citizen science
+  - community science
   - education
 ---
 <p><em>AirCasting Youth</em> is an educational program for high school students that teaches how to build AirCasting air quality instruments, develop air quality monitoring plans, utilize the <a href="http://aircasting.org/" target="_blank">AirCasting platform</a> to record, map, interpret, and share air quality data, and lead change through civic action. Thanks to support from the <a href="http://www.knightfoundation.org/funding-initiatives/knight-prototype-fund/" target="_blank">Knight Prototype Fund</a>, we’ve been working with <a href="http://www.sonomatech.com/" target="_blank">Sonoma Technology</a> - an employee-owned firm that provides air quality and meteorological analysis, forecasting, and communications services - to rapid prototype the <em>AirCasting Youth</em> program.</p>

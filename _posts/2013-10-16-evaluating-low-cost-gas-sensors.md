@@ -7,7 +7,7 @@ image: /images/uploads/LabSetUp.jpg
 category: Sensors & Instruments
 tag:
   - instruments
-  - citizen science
+  - community science
   - open-source
 ---
 <p>One of the major challenges facing air quality scientists and citizen scientists is the dearth of information available regarding the performance of low-cost gas sensors. Though manufacturers provide data sheets that describe the performance of their wares, these data sheets are usually incomplete - lacking the information required to evaluate whether the gas sensor is suitable for mobile ambient air quality monitoring. Since the data sheets don’t provide the information we need, we decided to develop our own lab for evaluating the performance of low-cost gas sensors.</p>
