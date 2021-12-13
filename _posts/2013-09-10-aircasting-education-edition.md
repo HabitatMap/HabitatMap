@@ -10,7 +10,7 @@ tag:
   - environmental-justice
   - instruments
   - education
-  - citizen science
+  - community science
   - video
   - health
   - open-source

@@ -8,7 +8,7 @@ image: /images/uploads/williamsburghexagonmap.png
 category: Health
 tag:
   - community-based-organization
-  - citizen science
+  - community science
   - education
   - health
   - environmental-justice

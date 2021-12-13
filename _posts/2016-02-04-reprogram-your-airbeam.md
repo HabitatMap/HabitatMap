@@ -8,7 +8,7 @@ category: Open Source Software
 tag:
   - instruments
   - open-source
-  - citizen science
+  - community science
 ---
 <p><a href="http://www.takingspace.org/aircasting/airbeam/">The AirBeam</a> - HabitatMap’s low-cost, open-source air quality instrument for measuring PM2.5 - can be reprogrammed to meet the specific needs of your monitoring initiative. Don’t worry; it doesn’t require a PhD in computer engineering. Anyone can do it!  Just follow the step-by-step guide posted below.</p>
 <p>There are several reasons why you may opt to reprogram your AirBeam. These include changing the averaging time interval, changing the temperature output to Celsius, outputting the PM2.5 measurement as a particle count, connecting multiple AirBeams to a single Android device, and improving the AirBeam’s accuracy. Directly after the step-by-step guide you'll find instructions for altering the code to achieve these specific outcomes.</p>

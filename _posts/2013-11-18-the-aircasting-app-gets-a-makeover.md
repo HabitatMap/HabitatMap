@@ -7,7 +7,7 @@ image: /images/uploads/AirCastingScreenshots.png
 category: Open Source Software
 tag:
   - open-source
-  - citizen science
+  - community science
 ---
 <p>We launched the <a href="https://play.google.com/store/apps/details?id=pl.llp.aircasting&amp;hl=en" target="_blank">AirCasting app</a> in December 2011. Over the past two years we've rolled out a slew of new features but never had a chance to rethink the user interface.  That is until about three months ago when we found the time, and most importantly, the funding.* Since then we've been busy translating the constructive feedback we've gotten from AirCasters the world over into a new and improved user interface.  If you already have the AirCasting app on your Android phone or tablet, update it now! If not, head to the <a href="https://play.google.com/store/apps/details?id=pl.llp.aircasting&amp;hl=en" target="_blank">Google Play Store and check it out</a>. Wondering how it all works? Have a look at the screenshots and "how to" below.</p>
 <p>AirCasting provides three ways to view your sensor data: the Map, the Graph, and the Sensors Dashboard. The default view is the Sensors Dashboard.</p>

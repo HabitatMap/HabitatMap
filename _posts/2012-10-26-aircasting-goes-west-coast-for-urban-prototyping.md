@@ -6,7 +6,7 @@ featured: false
 image: /images/uploads/StreetSensingAtUP.jpg
 category: Sensors & Instruments
 tag:
-  - citizen science
+  - community science
   - health
   - instruments
   - open-source

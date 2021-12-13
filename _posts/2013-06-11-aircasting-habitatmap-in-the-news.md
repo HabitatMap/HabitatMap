@@ -8,7 +8,7 @@ category: Health
 tag:
   - health
   - environmental-justice
-  - citizen science
+  - community science
   - instruments
   - video
 ---

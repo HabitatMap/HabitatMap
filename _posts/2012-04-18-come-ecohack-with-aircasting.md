@@ -9,7 +9,7 @@ tag:
   - open-source
   - instruments
   - health
-  - citizen science
+  - community science
 ---
 <p>Join AirCasting at EcoHack NYC this weekend, 4/20 - 4/21. I'll be giving an ignite talk Friday night to rally contributors for Saturday's Hackathon. I've posted my ignite talk abstract below.</p>
 <p><em>Much of what happens in our immediate environment and our bodies passes without note despite the positive contribution that recording and crowdsourcing these moments might have on our understanding of our health and the health of our communities. AirCasting is a platform for capturing this lost reality and returning it to us as useful, actionable data. Using the AirCasting Android app, AirCasters can record, map, and share sound levels from their phone microphone and temperature, humidity, and CO gas concentrations from a handheld Arduino-powered sensor package. </em></p>

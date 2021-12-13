@@ -9,7 +9,7 @@ category: Sensors & Instruments
 tag:
   - open-source
   - instruments
-  - citizen science
+  - community science
 ---
 <p dir="ltr"><span style="text-decoration: underline;">Hardware Specifications</span><br />
 Weight: 7 ounces<br />
