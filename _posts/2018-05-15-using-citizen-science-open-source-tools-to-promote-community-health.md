@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Using Citizen Science & Open Source Tools to Promote Community Health
-date: '2018-05-15'
+title: Using Community Science & Open Source Tools to Promote Community Health
+date: 2018-05-15
 featured: false
 author: Open Source Stories
 image: /images/uploads/scienceofcollectivediscovery_exacto.jpg
