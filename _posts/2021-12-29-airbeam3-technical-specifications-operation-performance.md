@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "AirBeam3 Technical Specifications, Operation & Performance "
-date: 2021-12-29
+date: 2021-11-17
 featured: false
 author: Michael Heimbinder & Chris Lim
 image: /images/uploads/ab3features-dimensions.png
