@@ -177,6 +177,6 @@ Providing this data is voluntary and does not affect your ability to use the Air
 <p class="p--body">This Privacy Policy may be subject to updates and changes. In such case, HabitatMap will take steps to inform you of any such updates or changes by, for example, sending you a notification. Notwithstanding the foregoing, HabitatMap recommends that you review this page as often as possible. </p>
 
 
-<p class="p--body">This Privacy Policy was last updated on July 5, 2021.</p>
+<p class="p--body">This Privacy Policy was last updated on February 24, 2022.</p>
 
 </section>
