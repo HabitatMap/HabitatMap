@@ -15,7 +15,7 @@ image: /assets/img/airbeam-buy-it-now.jpg
   <div class="panel arc-background arc-background--right-teal-light">
     <div class="split--50 split--padding-right split--order-secondary">
       <h2 class="heading heading--medium u--gray-text">
-        Payment Methods
+        Payment Methodz
       </h2>
       <p class="p--body">
         HabitatMap accepts credit card payments through PayPal. You do not need a PayPal account to checkout using PayPal. If you prefer to make payment via check or wire transfer, please email us at info@habitatmap.org with your shipping address and the number of AirBeams you would like to purchase. Note that we do not accept purchase orders.
