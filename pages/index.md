@@ -14,15 +14,18 @@ image: /assets/img/habitatmap-home-airbeam-aircasting.png
 </section>
 
 <section class="panel panel--airbeam panel--align-center arc-background arc-background--right-opacity-50 arc-background--right-bottom">
-  <div class="split--60">
+  <div class="split--50">
     <img class="logo logo--body" alt="Airbeam" src="assets/img/svg/AirBeam-Logo-Body.svg" />
     <p class="p--large u--gray-text">
       AirBeam is a low-cost, palm-sized air quality instrument that measures hyperlocal concentrations of harmful microscopic particles in the air, known as particulate matter, as well as humidity and temperature.
     </p>
   </div>
-  <div class="split--40 u--align-center">
+  <div class="split--50 badge-links u--align-center">
     <a href="/airbeam/buy-it-now" class="badge-link badge-link--hm">
-      <span class="u--vertically-centered">Get Airbeam</span>
+      <span class="u--vertically-centered">Get AirBeam</span>
+    </a>
+    <a href="https://aircastingactions.org" class="badge-link badge-link--hm">
+      <span class="u--vertically-centered">Breathe Better with AirCasting Actions</span>
     </a>
   </div>
 </section>
