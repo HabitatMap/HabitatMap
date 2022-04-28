@@ -15,7 +15,13 @@ image: /assets/img/airbeam-buy-it-now.jpg
   <div class="panel arc-background arc-background--right-teal-light">
     <div class="split--50 split--padding-right split--order-secondary">
       <h2 class="heading heading--medium u--gray-text">
-        Payment Methodz
+        TEMPORARILY SOLD OUT
+      </h2>
+      <p class="p--body">
+        AirBeam3 is temporarily sold out. AirBeam3 will be back in stock at the end of August 2022.  If you purchase an AirBeam3 now, it will not ship until the end of August or beginning of September 2022.  Orders will be fulfilled in the order they are received.
+      </p>
+      <h2 class="heading heading--medium u--gray-text">
+        Payment Methods
       </h2>
       <p class="p--body">
         HabitatMap accepts credit card payments through PayPal. You do not need a PayPal account to checkout using PayPal. If you prefer to make payment via check or wire transfer, please email us at info@habitatmap.org with your shipping address and the number of AirBeams you would like to purchase. Note that we do not accept purchase orders.
@@ -28,16 +34,10 @@ image: /assets/img/airbeam-buy-it-now.jpg
         If you would like to purchase more than 5 AirBeams please email info@habitatmap.org with your shipping address and the number of AirBeams you would like to order. There is a 5% discount on orders of 20 or more AirBeams and a 7% discount on orders of a 100 or more.
       </p>
       <h2 class="heading heading--medium u--gray-text">
-        FREE Shipping Within the US
+        Shipping
       </h2>
       <p class="p--body">
-        Domestic shipping via USPS First Class Mail is FREE. AirBeams are shipped the next business day after payment is received.
-      </p>
-      <h2 class="heading heading--medium u--gray-text">
-        International Shipping
-      </h2>
-      <p class="p--body">
-        Shipping outside the United States is $25 for the first unit and $10 for each additional unit. If you need faster shipping, better tracking, or insurance please email info@habitatmap.org with your shipping address and the number of AirBeams you would like to order. We are not responsible for the loss or damage of AirBeams mailed internationally via USPS First Class mail. If your national postal service is unreliable, please contact us to upgrade your shipping and insure your package. AirBeams are shipped the next business day after payment is received.
+        Domestic US shipping via USPS is $8 for the first unit and $4 for each additional unit. Shipping outside the United States via USPS is $30 for the first unit and $10 for each additional unit. If you need faster shipping, better tracking, or insurance please email info@habitatmap.org with your shipping address and the number of AirBeams you would like to order. We are not responsible for the loss or damage of AirBeams mailed internationally via USPS First Class mail. If your national postal service is unreliable, please contact us to upgrade your shipping and insure your package. AirBeams are shipped the next business day after payment is received. 
       </p>
       <h2 class="heading heading--medium u--gray-text">
         Warranty
