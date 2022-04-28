@@ -1,3 +1,8 @@
+.badge-links {
+  @include flexbox;
+  vertical-align: top;
+}
+
 .badge-link {
   border-radius: 50%;
   border-width: 1px;
@@ -5,11 +10,16 @@
   display: inline-block;
   font-family: $bold-font;
   font-size: $base-font-size2;
-  height: 13rem;
+  height: 10rem;
   line-height: 1.2;
   padding: 0.9rem;
   text-align: center;
-  width: 13rem;
+  width: 10rem;
+  margin: 0.5rem;
+  @media screen and (min-width: $tablet-min) {
+    height: 13rem;
+    width: 13rem;
+  }
 }
 
 .badge-link--hm,

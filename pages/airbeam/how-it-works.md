@@ -121,6 +121,9 @@ section: airbeam
         <a href="/airbeam/buy-it-now" class="badge-link badge-link--hm">
           <span class="u--vertically-centered">Get Started with AirBeam</span>
         </a>
+        <a href="https://aircastingactions.org" class="badge-link badge-link--hm">
+          <span class="u--vertically-centered">Breathe Better with AirCasting Actions</span>
+        </a>
       </div>
     </article>
   </div>
