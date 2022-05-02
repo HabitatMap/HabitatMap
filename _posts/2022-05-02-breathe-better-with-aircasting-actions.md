@@ -5,7 +5,20 @@ date: 2022-05-02
 featured: true
 author: Michael Heimbinder
 image: /images/uploads/aircastingactions_getstarted.jpg
-intro: ""
+intro: "[AirCasting Actions](<AirCasting Actions is a free resource for helping
+  you and your community actively understand the air you are breathing and start
+  taking action to improve it. Whether you’re a concerned individual or
+  household, a community-based organization, or a teacher the AirCasting Actions
+  digital toolkit has what you need to get started with air quality monitoring.
+  Navigate to your focus area for guides, worksheets, inspiration, and
+  activities to help inform and activate action plans for cleaner air. >) is a
+  free resource for helping you and your community actively understand the air
+  you are breathing and start taking action to improve it. Whether you’re a
+  concerned individual or household, a community-based organization, or a
+  teacher the AirCasting Actions digital toolkit has what you need to get
+  started with air quality monitoring. Navigate to your focus area for guides,
+  worksheets, inspiration, and activities to help inform and activate action
+  plans for cleaner air."
 category: Education
 tag:
   - community-based-organization
