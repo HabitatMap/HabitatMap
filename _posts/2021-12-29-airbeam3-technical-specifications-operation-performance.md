@@ -5,6 +5,9 @@ date: 2021-11-17
 featured: false
 author: Michael Heimbinder & Chris Lim
 image: /images/uploads/ab3features-dimensions.png
+intro: "AirBeam is a low-cost, palm-sized air quality instrument that measures
+  hyperlocal concentrations of harmful microscopic particles in the air, known
+  as particulate matter, as well as humidity and temperature. "
 category: Sensors & Instruments
 tag:
   - open-source
