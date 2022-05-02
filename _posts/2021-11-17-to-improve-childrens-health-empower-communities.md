@@ -2,7 +2,7 @@
 layout: post
 title: To Improve Children's Health, Empower Communities
 date: 2021-11-17
-featured: true
+featured: false
 author: Michael Heimbinder
 image: /images/uploads/aq-child.jpg
 category: Health
