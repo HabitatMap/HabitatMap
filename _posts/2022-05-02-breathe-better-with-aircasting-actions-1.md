@@ -2,7 +2,7 @@
 layout: post
 title: Breathe Better With AirCasting Actions
 date: 2022-05-02
-featured: false
+featured: true
 author: Michael Heimbinder
 image: /images/uploads/aircastingactions_getstarted.jpg
 category: Education
