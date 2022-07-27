@@ -15,12 +15,6 @@ image: /assets/img/airbeam-buy-it-now.jpg
   <div class="panel arc-background arc-background--right-teal-light">
     <div class="split--50 split--padding-right split--order-secondary">
       <h2 class="heading heading--medium u--gray-text">
-        TEMPORARILY SOLD OUT
-      </h2>
-      <p class="p--body">
-        AirBeam3 is temporarily sold out. AirBeam3 will be back in stock at the end of July 2022. If you purchase an AirBeam3 now, it will not ship until the end of July 2022. Orders will be fulfilled in the order they are received.
-      </p>
-      <h2 class="heading heading--medium u--gray-text">
         Payment Methods
       </h2>
       <p class="p--body">
