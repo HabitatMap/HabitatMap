@@ -2,7 +2,7 @@
 layout: post
 title: Evaluation Proves AirBeam3 Most Accurate AirBeam Ever
 date: 2022-07-13
-featured: true
+featured: false
 author: Michael Heimbinder
 image: /images/uploads/scaqmd-airbeam3-evaluation.png
 category: Sensors & Instruments
