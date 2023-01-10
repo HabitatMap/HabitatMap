@@ -1,4 +1,6 @@
-# HabitatMap blog & static pages
+[![Netlify Status](https://api.netlify.com/api/v1/badges/fdecfe4b-48cc-482e-b55e-1718b3f26da7/deploy-status)](https://app.netlify.com/sites/habitatmap/deploys)
+
+# HabitatMap blog & static pages 
 
 ## Run Locally
 
