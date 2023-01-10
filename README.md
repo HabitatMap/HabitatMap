@@ -2,8 +2,15 @@
 
 # HabitatMap blog & static pages 
 
-## Run Locally
+## Development
 
+1. Install [Netlify Git's credential helper](https://github.com/netlify/netlify-credential-helper):
+```bash
+brew tap netlify/git-credential-netlify
+brew install git-credential-netlify
+```
+2. Clone the repository.
+3. Run locally:
 ```bash
 bundle exec jekyll serve --watch
 ```
