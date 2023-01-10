@@ -10,12 +10,22 @@ brew tap netlify/git-credential-netlify
 brew install git-credential-netlify
 ```
 2. Clone the repository.
-3. Run locally:
+
+3. Install gems:
+
+```
+bundle install
+```
+
+**Note:** If Bundler fails on installing `eventmachine`, try running `gem install eventmachine -- --with-cppflags=-I/usr/local/opt/openssl/include` to solve the issue.
+
+
+4. Run locally:
 ```bash
 bundle exec jekyll serve --watch
 ```
 
-Note: If you change `_config.yml`, you must restart the server for the changes to take effect.
+**Note:** If you change `_config.yml`, you must restart the server for the changes to take effect.
 
 ## CMS
 
