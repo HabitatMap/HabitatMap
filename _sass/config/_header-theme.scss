@@ -7,8 +7,7 @@ $header-link-color-white: $white;
 
 .logo--hm,
 .logo--hm-vertical,
-.icon-search,
-.icon-search-close {
+.icon-search {
   fill: $gray;
 
   [data-current="airbeam"] &,
@@ -66,8 +65,7 @@ $header-link-color-white: $white;
 
 // Header background themes
 
-.header,
-.search-form {
+.header {
   background-color: $teal-light;
 
   [data-current="airbeam"] &,
