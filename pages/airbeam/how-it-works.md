@@ -29,7 +29,7 @@ section: airbeam
   </div>
 
   <div class="split--50 u--align-right">
-    <h1 class="heading heading--large u--gray-text page-title u--tablet-hidden">
+    <h1 class="heading heading--large u--gray-text page-title u--tablet-min-hidden">
       The AirBeam measures harmful microscopic air particles (particulate matter), humidity, and temperature.
     </h1>
     <p class="p--body u--tablet-hidden">

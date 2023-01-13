@@ -1,6 +1,15 @@
 {% assign navurl = page.url | remove: 'index.html' %}
 <nav class="nav">
   <div class="nav-main">
+    <div class="desktop-nav-header u--tablet-max-hidden">
+      <a href="{{ "/" | relative_url }}">
+        {% include /svg/logo-hm-vertical.html %}
+      </a>
+      <button class="desktop-nav-header__close-button js--toggle-nav">
+        {% include /svg/icon_close.html %}
+      </button>
+    </div>
+
     <ul class="nav-list">
       {% for item in include.navigation %}
         <li class="nav-list__element">
