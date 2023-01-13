@@ -134,12 +134,13 @@ $header-link-color-white: $white;
     $bg-color-hover: $header-link-color-gray
   );
 
-  [data-current="home"] .nav-sub & {
+  .header--nav-expanded .nav-sub & {
     @include button-color(
       $text-color: $header-link-color-white,
       $border-color: $header-link-color-white,
       $bg-color: none,
-      $bg-color-hover: $header-link-color-white
+      $bg-color-hover: $header-link-color-white,
+      $text-color-hover: $green
     );
   }
 
@@ -201,16 +202,30 @@ $header-link-color-white: $white;
 
   .sticky & {
     [data-current="about"] & {
-      @include button-color($teal, $teal, $header-link-color-white, $teal);
-      color: $teal;
+      @include button-color(
+        $text-color: $teal,
+        $border-color: $teal,
+        $bg-color: $header-link-color-white,
+        $bg-color-hover: $teal
+      );
     }
 
     [data-current="blog"] & {
-      @include button-color($blue, $blue, $header-link-color-white, $blue);
+      @include button-color(
+        $text-color: $blue,
+        $border-color: $blue,
+        $bg-color: $header-link-color-white,
+        $bg-color-hover: $blue
+      );
     }
 
     [data-current="faq"] & {
-      @include button-color($green, $green, $header-link-color-white, $green);
+      @include button-color(
+        $text-color: $green,
+        $border-color: $green,
+        $bg-color: $header-link-color-white,
+        $bg-color-hover: $green
+      );
     }
   }
 
@@ -224,10 +239,10 @@ $header-link-color-white: $white;
       [data-current="home"] &,
       [data-current="faq"] & {
         @include button-color(
-          $header-link-color-white,
-          $header-link-color-white,
-          $gray,
-          $header-link-color-white
+          $text-color: $header-link-color-white,
+          $border-color: $header-link-color-white,
+          $bg-color: $gray,
+          $bg-color-hover: $header-link-color-white
         );
       }
     }
