@@ -106,8 +106,7 @@ $header-link-color-white: $white;
   color: $white;
 
   &[data-current="current page"] {
-    opacity: 0.55;
-    color: inherit;
+    color: rgba($white, 0.55);
   }
 }
 
@@ -117,7 +116,7 @@ $header-link-color-white: $white;
   color: $white;
 
   .header--nav-expanded & {
-
+    &[data-current="current page"],
     &:hover,
     &:focus {
       color: rgba($white, 0.55);
