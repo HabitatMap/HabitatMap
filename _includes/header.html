@@ -1,9 +1,10 @@
 <header id="js-header" class="header">
   <div class="header__brand">
-    <button class="header__nav-toggle-button js--toggle-nav">
+    <button class="header__nav-toggle-button js--toggle-nav u--desktop-hidden">
       {% include /svg/icon_nav.html %}
       {% include /svg/icon_close.html %}
     </button>
+
     <div class="logo header__logo">
       <a href="{{ "/" | relative_url }}">
         {% include /svg/logo_hm.html %}
@@ -13,4 +14,12 @@
   </div>
 
   {% include navigation.html navigation=site.data.navigation %}
+
+  <div class="u--tablet-max-hidden">
+    <a href="/airbeam/buy-it-now" class="button button--small header__button">Get AirBeam</a>
+    <button class="header__nav-toggle-button js--toggle-nav">
+      {% include /svg/icon_nav.html %}
+      {% include /svg/icon_close.html %}
+    </button>
+  </div>
 </header>

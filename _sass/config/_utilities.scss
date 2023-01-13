@@ -117,13 +117,25 @@
 
 .u--mobile-hidden {
   @media screen and (max-width: $large-mobile-max) {
-    display: none;
+    display: none !important;
   }
 }
 
-.u--tablet-hidden {
+.u--tablet-min-hidden {
   @media screen and (min-width: $tablet-min) {
-    display: none;
+    display: none !important;
+  }
+}
+
+.u--tablet-max-hidden {
+  @media screen and (max-width: $tablet-max) {
+    display: none !important;
+  }
+}
+
+.u--desktop-hidden {
+  @media screen and (min-width: $small-desktop-min) {
+    display: none !important;
   }
 }
 
