@@ -149,7 +149,7 @@ $header-link-color-white: $white;
       $text-color: $gray-dark,
       $border-color: $cta-color,
       $bg-color: $cta-color,
-      $bg-color-hover: $cta-color,
+      $bg-color-hover: rgba($cta-color, 0.75),
       $text-color-hover: $gray-dark
     );
   }
