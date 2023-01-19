@@ -65,24 +65,6 @@ image: /assets/img/pages/home/airbeam.jpg
   </div>
 </section>
 
-<section class="panel panel--align-center ac-intro">
-  <div class="split--60">
-    <img class="logo logo--body" alt="AirCasting" src="assets/img/svg/AirCasting-Logo-Body.svg" />
-    <p class="p--large u--gray-text">
-      AirCasting is an open-source environmental data visualization platform that consists of an Android app and online mapping system.
-    </p>
-  </div>
-  <div class="split--80 u--align-left">
-    <a href="http://aircasting.habitatmap.org/map" class="button button--ac ac-intro__button">See the Maps</a>
-    <a href="https://play.google.com/store/apps/details?id=pl.llp.aircasting&hl=en" class="button button--ac ac-intro__button">Android App</a>
-    <a href="https://apps.apple.com/us/app/aircasting/id1587685281#?platform=iphone" class="button button--ac ac-intro__button">iOS App</a>
-  </div>
-</section>
-
-<section class="panel">
-  {% include map-screenshot.html %}
-</section>
-
 <section class="panel panel--quote u--bg-blue-dark arc-background arc-background--left-opacity-15 arc-background--left-quote">
   <div class="split--40">
     <h2 class="heading heading--medium">
