@@ -65,15 +65,4 @@ image: /assets/img/habitatmap-home-airbeam-aircasting.png
   </div>
 </section>
 
-<section class="panel panel--quote u--bg-blue-dark arc-background arc-background--left-opacity-15 arc-background--left-quote">
-  <div class="split--40">
-    <h2 class="heading heading--medium">
-      AirBeam
-      <br />
-      in the News
-    </h2>
-  </div>
-  {% include news-quotes-slider.html news_quotes = site.news_quotes %}
-</section>
-
 {% include slider-init.html %}
