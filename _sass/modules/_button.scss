@@ -39,6 +39,16 @@ $ac-brand-transparent: transparentize($ac-brand, 0.4);
   @include button-color($ac-brand, $ac-brand, $teal-very-light, $ac-brand);
 }
 
+.button--cta {
+  @include button-color(
+    $text-color: $gray-dark,
+    $border-color: transparent,
+    $bg-color: $cta-color,
+    $bg-color-hover: lighten($cta-color, 15%),
+    $text-color-hover: $gray-dark
+  );
+}
+
 .button--small {
   height: 43px;
 }

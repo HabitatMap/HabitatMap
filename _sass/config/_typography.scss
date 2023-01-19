@@ -74,6 +74,18 @@ p {
   margin-bottom: $u-space-default;
 }
 
+.p--hero {
+  font-family: $body-font;
+  font-size: $base-font-size1;
+  margin-bottom: $u-space-small;
+  margin-top: $u-space-small;
+
+  @media screen and (min-width: $small-desktop-min) {
+    font-size: $base-font-size2;
+    padding-right: $u-space-small;
+  }
+}
+
 .p--large {
   font-family: $bold-font;
   font-size: $base-font-size1;
