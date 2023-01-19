@@ -2,16 +2,28 @@
 layout: home
 permalink: /
 section: home
-image: /assets/img/habitatmap-home-airbeam-aircasting.png
+image: /assets/img/pages/home/airbeam.jpg
 ---
 
-<section class="panel panel--hero u--bg-teal-light lazyload">
+<section class="panel panel--hero u--bg-cyan lazyload">
   <div class="split--50">
-    <h1 class="heading heading--large u--accent-hm panel__heading">
-      Harnessing the Power&nbsp;of&nbsp;People and&nbsp;Technology&nbsp;to Improve the Quality&nbsp;of&nbsp;Lives
+    <h1 class="heading heading--large panel__heading">
+      Know&nbsp;What&nbsp;is Really in&nbsp;Your&nbsp;Air
     </h1>
+    <p class="p--hero">
+      Portable&nbsp;Realtime Air&nbsp;Quality Visualization&nbsp;Tools&nbsp;for
+      <br>
+      <b>Researchers</b>
+    </p>
+    <button class="button button--cta">Get started</button>
   </div>
 </section>
+
+<img
+  data-src="/assets/img/pages/home/airbeam.jpg"
+  src="/assets/img/pages/home/airbeam.jpg?nf_resize=fit&w=20"
+  class="u--tablet-min-hidden lazyload"
+/>
 
 <section class="panel panel--airbeam panel--align-center arc-background arc-background--right-opacity-50 arc-background--right-bottom">
   <div class="split--50">
