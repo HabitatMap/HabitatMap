@@ -38,6 +38,12 @@ body {
   margin-bottom: 1rem;
 }
 
+.heading--hero {
+  @media screen and (min-width: $tablet-min) and (max-width: $tablet-max) {
+    font-size: 2.25rem;
+  }
+}
+
 .heading--uppercase {
   font-size: $base-font-size-1;
   margin-bottom: $u-space-small;
