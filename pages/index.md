@@ -139,7 +139,7 @@ image: /assets/img/habitatmap-home-airbeam-aircasting.png
         <img
           data-src="/assets/img/pages/home/download-on-the-app-store-badge.png"
           src="/assets/img/pages/home/download-on-the-app-store-badge.png?nf_resize=fit&w=20"
-          class="lazyload badge"
+          class="lazyload"
           alt="Download on the App Store badge"
         />
       </a>
@@ -151,7 +151,7 @@ image: /assets/img/habitatmap-home-airbeam-aircasting.png
         <img
           data-src="/assets/img/pages/home/google-play-badge.png"
           src="/assets/img/pages/home/google-play-badge.png?nf_resize=fit&w=20"
-          class="lazyload badge"
+          class="lazyload"
           alt="Google Play badge"
         />
       </a>
