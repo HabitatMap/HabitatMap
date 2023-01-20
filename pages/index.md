@@ -6,7 +6,7 @@ image: /assets/img/pages/home/airbeam.jpg
 ---
 
 <section class="panel panel--hero u--bg-cyan lazyload">
-  <div class="split--50">
+  <div class="split--40">
     <h1 class="heading heading--large panel__heading">
       Know&nbsp;What&nbsp;is Really in&nbsp;Your&nbsp;Air
     </h1>
