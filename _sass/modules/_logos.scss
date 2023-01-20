@@ -1,0 +1,17 @@
+
+.logos {
+  gap: $u-space-default;
+
+  &__item {
+    @include flex(0 0 30%);
+    margin: 0 auto;
+
+    img {
+      display: inline-block;
+      height: auto;
+      max-height: 3rem;
+      max-width: 220px;
+      width: auto;
+    }
+  }
+}

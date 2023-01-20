@@ -55,7 +55,6 @@ image: /assets/img/pages/home/airbeam.jpg
       User-friendly dashboard makes seeing and
       presenting trends and patterns easy.
     </p>
-
   </div>
 
   <div class="highlights__item">
@@ -157,5 +156,48 @@ image: /assets/img/pages/home/airbeam.jpg
         />
       </a>
     </p>
+  </div>
+</section>
+
+<section class="panel panel--big-padding u--bg-blue-dark logos">
+  <div class="logos__item">
+    <img
+      data-src="/assets/img/pages/home/logos/the-new-york-times.png"
+      src="/assets/img/pages/home/logos/the-new-york-times.png?nf_resize=fit&w=20"
+      alt="The New York Times logo"
+      class="lazyload"
+    />
+  </div>
+  <div class="logos__item">
+    <img
+      data-src="/assets/img/pages/home/logos/fast-company.png"
+      src="/assets/img/pages/home/logos/fast-company.png?nf_resize=fit&w=20"
+      alt="Fast Company logo"
+      class="lazyload"
+    />
+  </div>
+  <div class="logos__item">
+    <img
+      data-src="/assets/img/pages/home/logos/daily-news.png"
+      src="/assets/img/pages/home/logos/daily-news.png?nf_resize=fit&w=20"
+      alt="Daily News logo"
+      class="lazyload"
+    />
+  </div>
+  <div class="logos__item">
+    <img
+      data-src="/assets/img/pages/home/logos/popular-science.png"
+      src="/assets/img/pages/home/logos/popular-science.png?nf_resize=fit&w=20"
+      alt="Popular Science logo"
+      class="lazyload"
+    />
+  </div>
+  <div class="logos__item">
+    <img
+      data-src="/assets/img/pages/home/logos/wired.png"
+      src="/assets/img/pages/home/logos/wired.png?nf_resize=fit&w=20"
+      alt="Wired logo"
+      class="lazyload"
+    />
   </div>
 </section>
