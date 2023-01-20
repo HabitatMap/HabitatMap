@@ -18,7 +18,7 @@ section: airbeam
     <article class="container--narrow u--margin-top-huge">
       <h2 class="heading heading--medium">
         <span class="heading--underlined">1</span>
-        <span class="heading--capitilized">Collect</span>
+        <span class="heading--uppercase">Collect</span>
       </h2>
       <img class="logo logo--body" alt="Airbeam logo" src="/assets/img/svg/Airbeam-Logo-Body.svg" />
       <p class="p--body">
@@ -58,7 +58,7 @@ section: airbeam
     <article class="container--narrow container--centered">
       <h2 class="heading heading--medium">
         <span class="heading--underlined">2</span>
-        <span class="heading--capitilized">Measure</span>
+        <span class="heading--uppercase">Measure</span>
       </h2>
       <p class="p--body">
         The AirBeam communicates these measurements to the AirCasting App (available from the <a href="https://play.google.com/store/apps/details?id=pl.llp.aircasting&hl=en_US">Google Play Store</a> & <a href="https://apps.apple.com/us/app/aircasting/id1587685281#?platform=iphone">Apple App Store</a>) where your measurements are mapped and graphed in real-time on your smartphone.
@@ -72,7 +72,7 @@ section: airbeam
     <article class="container--narrow">
       <h2 class="heading heading--medium">
         <span class="heading--underlined heading--underlined--ac">3</span>
-        <span class="heading--capitilized">Beam</span>
+        <span class="heading--uppercase">Beam</span>
       </h2>
       <img class="logo logo--body" alt="AirCasting logo" src="/assets/img/svg/Aircasting-Logo-Body.svg" />
       <p class="p--body">
@@ -82,7 +82,7 @@ section: airbeam
     <article class="container--narrow u--margin-top-big">
       <h2 class="heading heading--medium">
         <span class="heading--underlined heading--underlined--ac">4</span>
-        <span class="heading--capitilized">Visualize</span>
+        <span class="heading--uppercase">Visualize</span>
       </h2>
       <p class="p--body">
         AirBeam data is then aggregated and crowdsourced on the AirCasting website, allowing AirCasters to visualize areas where air pollutant concentrations are highest and lowest and share their data with their community.
@@ -112,7 +112,7 @@ section: airbeam
     <article class="container--narrow container--centered">
       <h2 class="heading heading--medium">
         <span class="heading--underlined">5</span>
-        <span class="heading--capitilized">Stay informed</span>
+        <span class="heading--uppercase">Stay informed</span>
       </h2>
       <p class="p--body">
         Good decisions are informed decisions. Integrating the AirCasting platform into your daily routine can guide healthier day-to-day decisions and help collect quality data to support environmental campaigns or research aimed at cleaner and healthier environments.
@@ -137,7 +137,7 @@ section: airbeam
         <div>
           <div class="panel panel--user-stories u--bg-teal slide">
             <div class="split--50 slide__story">
-              <h2 class="heading heading--capitilized">Who is using Airbeam?</h2>
+              <h2 class="heading heading--uppercase">Who is using Airbeam?</h2>
               <a href="/airbeam/user-stories/{{story.slug}}">
                 <h3 class="heading heading--medium">{{ story.title }}</h3>
                 <p class="p--body">
