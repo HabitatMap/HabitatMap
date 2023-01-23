@@ -28,7 +28,7 @@ image: /assets/img/about-airbeam-01.jpg
   {% assign categories = site.faq_categories | sort: "order" %}
   {% for category in categories %}
     <div class="faq__category js--faq-section">
-      <h2 class="heading heading--capitilized faq__category-name js--faq-heading">{{ category.name }}</h2>
+      <h2 class="heading heading--uppercase faq__category-name js--faq-heading">{{ category.name }}</h2>
       {% assign faqs = site.data.faq.faq_items | where: "category", category.name %}
       {% for faq in faqs %}
         <h3 class="heading heading--small faq__question">{{ faq.question }}</h3>
