@@ -25,12 +25,18 @@ $cta-color: $yellow;
 
 // viewport breakpoints
 $large-desktop-min: 1920px;
-$desktop-max: $large-desktop-min - 1px;
+
 $desktop-min: 1366px;
+
+$desktop-mdpi-max: $desktop-min - 1px;
+$desktop-mdpi-min: 1280px;
+
 $small-desktop-max: $desktop-min - 1px;
 $small-desktop-min: 1025px;
+
 $tablet-max: $small-desktop-min - 1px;
 $tablet-min: 768px;
+
 $large-mobile-max: $tablet-min - 1px;
 $large-mobile-min: 480px;
 

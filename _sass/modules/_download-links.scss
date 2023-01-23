@@ -1,0 +1,15 @@
+.download-links {
+  @include flexbox;
+  gap: 1rem;
+  margin-top: 1rem;
+
+  &__item {
+    @include flex(0 0 auto);
+
+    img {
+      height: 2.5rem;
+      width: auto;
+    }
+  }
+}
+

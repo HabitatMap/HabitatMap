@@ -2,101 +2,209 @@
 layout: home
 permalink: /
 section: home
-image: /assets/img/habitatmap-home-airbeam-aircasting.png
+image: /assets/img/pages/home/airbeam.jpg
 ---
 
-<section class="panel panel--hero u--bg-teal-light lazyload">
-  <div class="split--50">
-    <h1 class="heading heading--large u--accent-hm panel__heading">
-      Harnessing the Power&nbsp;of&nbsp;People and&nbsp;Technology&nbsp;to Improve the Quality&nbsp;of&nbsp;Lives
-    </h1>
-  </div>
-</section>
-
-<section class="panel panel--airbeam panel--align-center arc-background arc-background--right-opacity-50 arc-background--right-bottom">
-  <div class="split--50">
-    <img class="logo logo--body" alt="Airbeam" src="assets/img/svg/AirBeam-Logo-Body.svg" />
-    <p class="p--large u--gray-text">
-      AirBeam is a low-cost, palm-sized air quality instrument that measures hyperlocal concentrations of harmful microscopic particles in the air, known as particulate matter, as well as humidity and temperature.
-    </p>
-  </div>
-  <div class="split--50 badge-links u--align-center">
-    <a href="/airbeam/buy-it-now" class="badge-link badge-link--hm">
-      <span class="u--vertically-centered">Get AirBeam</span>
-    </a>
-    <a href="https://aircastingactions.org" class="badge-link badge-link--hm">
-      <span class="u--vertically-centered">Breathe Better with AirCasting Actions</span>
-    </a>
-  </div>
-</section>
-
-<section class="slider slider--user-stories">
-  <div class="js-slider">
-    {% assign stories = site.user_stories | where: 'featured', true | sort: "order" %}
-    {% for story in stories %}
-      {% unless forloop.index > 6 %}
-        <div>
-          <div class="panel panel--user-stories u--bg-teal slide">
-            <div class="split--50 slide__story">
-              <h2 class="heading heading--capitilized">Who is using Airbeam?</h2>
-              <a href="/airbeam/user-stories/{{story.slug}}">
-                <h3 class="heading heading--medium">{{ story.title }}</h3>
-                <p class="p--body">
-                  {{ story.intro | strip_html }}
-                </p>
-              </a>
-              <a href="/airbeam/user-stories#user-stories" class="button button--ac-on-teal">More User Stories</a>
-            </div>
-            {% assign image_url = story.image %}
-            <div class="split--50 slide__image">
-              <picture>
-                <source data-srcset="{{ image_url | append: '?nf_resize=fit&w=767' }}" media="(max-width: 767px)" />
-                <source data-srcset="{{ image_url | append: '?nf_resize=fit&w=1024' }}" media="(max-width: 1024px)" />
-                <source data-srcset="{{ image_url | append: '?nf_resize=smartcrop&w=640&h=602' }}" media="(max-width: 1280px)" />
-                <source data-srcset="{{ image_url | append: '?nf_resize=smartcrop&w=720&h=602' }}" media="(max-width: 1440px)" />
-                <img
-                  alt="{{ story.title }}"
-                  class="lazyload"
-                  data-src="{{ image_url | append: '?nf_resize=smartcrop&w=960&h=600' }}"
-                  src="{{ image_url | append: '?nf_resize=fit&w=20' }}"
-                />
-              </picture>
-            </div>
-          </div>
-        </div>
-      {% endunless %}
-    {% endfor %}
-
-  </div>
-</section>
-
-<section class="panel panel--align-center ac-intro">
-  <div class="split--60">
-    <img class="logo logo--body" alt="AirCasting" src="assets/img/svg/AirCasting-Logo-Body.svg" />
-    <p class="p--large u--gray-text">
-      AirCasting is an open-source environmental data visualization platform that consists of an Android app and online mapping system.
-    </p>
-  </div>
-  <div class="split--80 u--align-left">
-    <a href="http://aircasting.habitatmap.org/map" class="button button--ac ac-intro__button">See the Maps</a>
-    <a href="https://play.google.com/store/apps/details?id=pl.llp.aircasting&hl=en" class="button button--ac ac-intro__button">Android App</a>
-    <a href="https://apps.apple.com/us/app/aircasting/id1587685281#?platform=iphone" class="button button--ac ac-intro__button">iOS App</a>
-  </div>
-</section>
-
-<section class="panel">
-  {% include map-screenshot.html %}
-</section>
-
-<section class="panel panel--quote u--bg-blue-dark arc-background arc-background--left-opacity-15 arc-background--left-quote">
+<section class="panel panel--hero u--bg-cyan lazyload">
   <div class="split--40">
-    <h2 class="heading heading--medium">
-      AirBeam
-      <br />
-      in the News
-    </h2>
+    <h1 class="heading heading--large heading--hero">
+      Know&nbsp;What&nbsp;is Really in&nbsp;Your&nbsp;Air
+    </h1>
+    <p class="p--hero">
+      Portable&nbsp;Realtime Air&nbsp;Quality Visualization&nbsp;Tools&nbsp;for
+      <br>
+      <b>Researchers</b>
+    </p>
+    <button class="button button--cta">Get started</button>
   </div>
-  {% include news-quotes-slider.html news_quotes = site.news_quotes %}
 </section>
 
-{% include slider-init.html %}
+<img
+  data-src="/assets/img/pages/home/airbeam.jpg"
+  src="/assets/img/pages/home/airbeam.jpg?nf_resize=fit&w=20"
+  class="u--tablet-min-hidden lazyload"
+/>
+
+<section class="panel highlights">
+  <div class="highlights__item">
+    <h2 class="heading heading--small heading--body">
+      No Subscriptions or Hidden Fees
+    </h2>
+    <p>
+      Rest assured there won’t ever be hidden fees or
+      subscriptions. We won’t sell your data or charge you
+      to access yours.
+    </p>
+  </div>
+
+  <div class="highlights__item">
+    <h2 class="heading heading--small heading--body">
+      Easy Setup in 5 Minutes or Less!
+    </h2>
+    <p>
+      App walks you through step by step + access
+      to video tutorial library.
+    </p>
+  </div>
+
+  <div class="highlights__item">
+    <h2 class="heading heading--small heading--body">
+      Easy to Understand & Digest Data
+    </h2>
+    <p>
+      User-friendly dashboard makes seeing and
+      presenting trends and patterns easy.
+    </p>
+  </div>
+
+  <div class="highlights__item">
+    <h2 class="heading heading--small heading--body">
+      Recommended by Top Institutions
+    </h2>
+    <p>
+      Trusted by Educators and Researchers at Top Educational
+      Institutions and Backed by the Clean Air Fund.
+    </p>
+  </div>
+
+  <div class="highlights__item">
+    <h2 class="heading heading--small heading--body">
+      Automatic Data Back-ups
+    </h2>
+    <p>
+      Integrated SD card saves measurements
+      so you’ll never lose data.
+    </p>
+  </div>
+
+  <div class="highlights__item">
+    <h2 class="heading heading--small heading--body">
+      Transparency & Our Non-Profit Ethos
+    </h2>
+    <p>
+      Easy and Free Access to Data, no restrictions.
+      Always Open Source Built!
+    </p>
+  </div>
+
+  <div class="highlights__item">
+    <h2 class="heading heading--small heading--body">
+      Free Research Design Tools, Download Toolkits & Curriculums
+    </h2>
+    <p>
+      AirCasting Actions has everything you need to get started
+      with air monitoring, whether you’re an individual,
+      an educator, or part of an organized community effort.
+      <br>
+      <a href="https://aircastingactions.org" target="_blank" class="link--underlined">Explore Tools and Curriculum</a>
+    </p>
+  </div>
+
+  <div class="highlights__item">
+    <h2 class="heading heading--small heading--body">
+      Buy More in Bulk
+    </h2>
+    <p>
+      Big savings + tech and planning support from the
+      AirBeam team when you buy 5 or more AirBeams!
+      <br>
+      <a href="#" class="link--underlined">Inquire about Bulk Ordering</a>
+    </p>
+
+  </div>
+
+  <div class="highlights__item">
+    <h2 class="heading heading--small heading--body">
+      Designed for Mobile Monitoring
+    </h2>
+    <p>
+      Lightweight & Portable. Designed to withstand the elements
+      with weather resistant shell and Sturdy Design.
+    </p>
+  </div>
+
+  <div class="highlights__item">
+    <h2 class="heading heading--small heading--body">
+      FREE to Use
+    </h2>
+    <p>
+      The AirCasting platform (including app) are free to use.
+    </p>
+    <p class="download-links">
+      <a
+        href="https://apps.apple.com/us/app/aircasting/id1587685281#?platform=iphone"
+        target="_blank"
+        class="download-links__item"
+      >
+        <img
+          data-src="/assets/img/pages/home/download-on-the-app-store-badge.png"
+          src="/assets/img/pages/home/download-on-the-app-store-badge.png?nf_resize=fit&w=20"
+          class="lazyload"
+          alt="Download on the App Store badge"
+        />
+      </a>
+      <a
+        href="https://play.google.com/store/apps/details?id=pl.llp.aircasting&hl=en_US"
+        target="_blank"
+        class="download-links__item"
+      >
+        <img
+          data-src="/assets/img/pages/home/google-play-badge.png"
+          src="/assets/img/pages/home/google-play-badge.png?nf_resize=fit&w=20"
+          class="lazyload"
+          alt="Google Play badge"
+        />
+      </a>
+    </p>
+  </div>
+</section>
+
+<section class="panel panel--big-padding u--bg-blue-dark logos">
+  <div class="logos__item">
+    <img
+      data-src="/assets/img/pages/home/logos/the-new-york-times.png"
+      src="/assets/img/pages/home/logos/the-new-york-times.png?nf_resize=fit&w=20"
+      alt="The New York Times logo"
+      class="lazyload"
+    />
+  </div>
+  <div class="logos__item">
+    <img
+      data-src="/assets/img/pages/home/logos/fast-company.png"
+      src="/assets/img/pages/home/logos/fast-company.png?nf_resize=fit&w=20"
+      alt="Fast Company logo"
+      class="lazyload"
+    />
+  </div>
+  <div class="logos__item">
+    <img
+      data-src="/assets/img/pages/home/logos/daily-news.png"
+      src="/assets/img/pages/home/logos/daily-news.png?nf_resize=fit&w=20"
+      alt="Daily News logo"
+      class="lazyload"
+    />
+  </div>
+  <div class="logos__item">
+    <img
+      data-src="/assets/img/pages/home/logos/popular-science.png"
+      src="/assets/img/pages/home/logos/popular-science.png?nf_resize=fit&w=20"
+      alt="Popular Science logo"
+      class="lazyload"
+    />
+  </div>
+  <div class="logos__item">
+    <img
+      data-src="/assets/img/pages/home/logos/wired.png"
+      src="/assets/img/pages/home/logos/wired.png?nf_resize=fit&w=20"
+      alt="Wired logo"
+      class="lazyload"
+    />
+  </div>
+</section>
+
+<section class="for-teams u--align-center">
+  <h1 class="for-teams__heading heading">Need AirBeams for Your Team or Classroom?</h1>
+  <p class="for-teams__get-help">Get One-on-One Research Design and Implementation Help</p>
+  <p class="for-teams__save-up">Save up to $1,743.00! (orders of 100+)</p>
+  <button class="button button--cta">Schedule a Free Consultation</button>
+</section>

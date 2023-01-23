@@ -35,7 +35,7 @@ image: /assets/img/pages/about-habitatmap/airbeam.jpg
 <section class="arc-background arc-background--left-teal-light arc-background--left-center u--vertical-padding">
   <div class="panel">
     <div class="split--60 split--padding-right">
-      <h2 class="heading heading--capitilized">Our mission</h2>
+      <h2 class="heading heading--uppercase">Our mission</h2>
       <p class="p--xlarge u--gray-text">
         We make technologies accessible so communities facing disproportionate environmental burdens can advocate for equity and improved quality&nbsp;of life.
       </p>
@@ -60,7 +60,7 @@ image: /assets/img/pages/about-habitatmap/airbeam.jpg
       />
     </div>
     <div class="split--40 split--padding-left">
-      <h2 class="heading heading--capitilized">Founder & Executive Director</h2>
+      <h2 class="heading heading--uppercase">Founder & Executive Director</h2>
       <p class="p--body heading heading--small">
         Michael Heimbinder is an information designer, community organizer, and educator.
       </p>
