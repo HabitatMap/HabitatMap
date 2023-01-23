@@ -206,5 +206,5 @@ image: /assets/img/pages/home/airbeam.jpg
   <h1 class="for-teams__heading heading">Need AirBeams for Your Team or Classroom?</h1>
   <p class="for-teams__get-help">Get One-on-One Research Design and Implementation Help</p>
   <p class="for-teams__save-up">Save up to $1,743.00! (orders of 100+)</p>
-  <button class="button button--cta">SCHEDULE A FREE CONSULTATION</button>
+  <button class="button button--cta">Schedule a Free Consultation</button>
 </section>
