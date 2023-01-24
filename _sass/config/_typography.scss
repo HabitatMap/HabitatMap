@@ -83,7 +83,7 @@ p {
 .p--hero {
   font-family: $body-font;
   font-size: $base-font-size1;
-  margin-bottom: $u-space-small;
+  margin-bottom: $u-space-default;
   margin-top: $u-space-small;
 
   @media screen and (min-width: $small-desktop-min) {
