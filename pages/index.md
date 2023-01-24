@@ -12,9 +12,13 @@ image: /assets/img/pages/home/airbeam.jpg
     </h1>
     <p class="p--hero">
       Portable&nbsp;Realtime Air&nbsp;Quality Visualization&nbsp;Tools&nbsp;for
-      <br>
-      <b>Researchers</b>
+      <span class="rotating-text">
+        <b class="rotating-text__word">Researchers</b>
+        <b class="rotating-text__word">Educators</b>
+        <b class="rotating-text__word">Community Organizers</b>
+      </span>
     </p>
+    <br>
     <button class="button button--cta">Get started</button>
   </div>
 </section>
@@ -208,3 +212,5 @@ image: /assets/img/pages/home/airbeam.jpg
   <p class="for-teams__save-up">Save up to $1,743.00! (orders of 100+)</p>
   <button class="button button--cta">Schedule a Free Consultation</button>
 </section>
+
+<script defer type="text/javascript" src="/assets/js/rotating-text.js"></script>
