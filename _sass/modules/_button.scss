@@ -1,4 +1,3 @@
-$button-font-size: 1.1rem;
 $ac-brand-transparent: transparentize($ac-brand, 0.4);
 
 .button {
@@ -7,8 +6,8 @@ $ac-brand-transparent: transparentize($ac-brand, 0.4);
   display: inline-block;
   font-family: $bold-font;
   font-size: $button-font-size;
-  height: 50px;
-  padding: 0.8rem 1.2rem;
+  height: $button-base-height;
+  padding: $button-padding;
   text-align: center;
 }
 
