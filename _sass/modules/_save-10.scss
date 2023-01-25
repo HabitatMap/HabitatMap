@@ -4,6 +4,18 @@
   background-size: cover;
   overflow: auto;
 
+  @media screen and (max-width: $desktop-min) {
+    background-image: url("/assets/img/pages/save-10-now/marcin-jozwiak-T-eDxGcn-Ok-unsplash.jpg?nf_resize=fit&w=2050");
+  }
+
+  @media screen and (max-width: $small-desktop-max) {
+    background-image: url("/assets/img/pages/save-10-now/marcin-jozwiak-T-eDxGcn-Ok-unsplash.jpg?nf_resize=fit&w=1536");
+  }
+
+  @media screen and (max-width: $large-mobile-min) {
+    background-image: url("/assets/img/pages/save-10-now/marcin-jozwiak-T-eDxGcn-Ok-unsplash.jpg?nf_resize=fit&w=720");
+  }
+
   @media screen and (min-width: $large-desktop-min) {
     min-height: 67vh;
   }
