@@ -1,0 +1,41 @@
+.save-10 {
+  background: url("/assets/img/pages/save-10-now/marcin-jozwiak-T-eDxGcn-Ok-unsplash.jpg")
+    center no-repeat;
+  background-size: cover;
+  overflow: auto;
+
+  @media screen and (min-width: $large-desktop-min) {
+    min-height: 67vh;
+  }
+
+  &__container {
+    background: $white;
+    margin: $u-space-big auto;
+    padding: 5rem 4rem;
+    text-align: center;
+    width: 30rem;
+
+    @media screen and (min-width: $large-desktop-min) {
+      margin: $u-space-huge auto;
+    }
+  }
+
+  &__heading {
+    color: $cyan;
+  }
+
+  &__paragraph {
+    font-size: $base-font-size2;
+    margin: $u-space-small 0;
+  }
+
+  &__input {
+    border-radius: 0;
+    border: 1px solid $gray;
+    font-size: $base-font-size-1;
+    height: $button-base-height;
+    padding: 0.8rem 1.2rem 0.5rem;
+    margin-bottom: $u-space-small;
+    width: 100%;
+  }
+}
