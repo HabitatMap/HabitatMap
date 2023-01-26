@@ -1,25 +1,36 @@
 <header id="js-header" class="header">
-  <div class="header__brand">
-    <button class="header__nav-toggle-button js--toggle-nav u--desktop-hidden">
-      {% include /svg/icon_nav.html %}
-      {% include /svg/icon_close.html %}
-    </button>
-
-    <div class="logo header__logo">
-      <a href="{{ "/" | relative_url }}">
-        {% include /svg/logo_hm.html %}
-        {% include /svg/logo-hm-vertical.html %}
+  {% if page.section == "home" %}
+    <div class="header__banner">
+      Buy AirBeam3 Today and Get $10 0ff!
+      <a href="/airbeam/save-10-now" class="link--underlined">
+        ORDER NOW
       </a>
     </div>
-  </div>
+  {% endif %}
 
-  {% include navigation.html navigation=site.data.navigation %}
+  <div class="header__menu">
+    <div class="header__brand">
+      <button class="header__nav-toggle-button js--toggle-nav u--desktop-hidden">
+        {% include /svg/icon_nav.html %}
+        {% include /svg/icon_close.html %}
+      </button>
 
-  <div class="u--tablet-max-hidden">
-    <a href="/airbeam/buy-it-now" class="button button--small header__button">Get AirBeam</a>
-    <button class="header__nav-toggle-button js--toggle-nav">
-      {% include /svg/icon_nav.html %}
-      {% include /svg/icon_close.html %}
-    </button>
+      <div class="logo header__logo">
+        <a href="{{ "/" | relative_url }}">
+          {% include /svg/logo_hm.html %}
+          {% include /svg/logo-hm-vertical.html %}
+        </a>
+      </div>
+    </div>
+
+    {% include navigation.html navigation=site.data.navigation %}
+
+    <div class="u--tablet-max-hidden">
+      <a href="/airbeam/buy-it-now" class="button button--small header__button">Get AirBeam</a>
+      <button class="header__nav-toggle-button js--toggle-nav">
+        {% include /svg/icon_nav.html %}
+        {% include /svg/icon_close.html %}
+      </button>
+    </div>
   </div>
 </header>

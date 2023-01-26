@@ -3,9 +3,7 @@ $nav-font-size-desktop: $base-font-size1;
 $header-z-index: 999;
 
 .header {
-  @include transition(all 0.5s ease);
-  font-family: $bold-font;
-  font-size: $base-font-size2;
+  color: $gray-dark;
   padding: 2rem 0 0.9rem;
   position: fixed;
   top: 0;
@@ -24,13 +22,46 @@ $header-z-index: 999;
   }
 
   @media screen and (min-width: $small-desktop-min) {
-    @include flexbox;
-    @include justify-content(space-between);
-    height: auto;
-
     &.sticky {
       padding: 1rem 0 0.5rem;
     }
+  }
+}
+
+.header__banner {
+  background-color: $cta-color;
+  font-size: $base-font-size;
+  line-height: $banner-height;
+  height: $banner-height;
+  position: absolute;
+  top: 0;
+  text-align: center;
+  width: 100%;
+
+  a {
+    color: $gray-dark;
+    font-weight: bold;
+    text-decoration: underline;
+
+    &:hover {
+      color: lighten($gray-dark, 10%);
+    }
+  }
+}
+
+.header__menu {
+  @include transition(all 0.5s ease);
+  font-family: $bold-font;
+  font-size: $base-font-size2;
+
+  .header__banner + & {
+    margin-top: $banner-height;
+  }
+
+  @media screen and (min-width: $small-desktop-min) {
+    @include flexbox;
+    @include justify-content(space-between);
+    height: auto;
   }
 }
 
