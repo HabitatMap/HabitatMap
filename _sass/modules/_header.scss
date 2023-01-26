@@ -29,25 +29,30 @@ $header-z-index: 999;
 }
 
 .header__banner {
+  align-items: center;
   background-color: $cta-color;
   display: flex;
   font-size: $base-font-size-1;
   height: $banner-height;
   justify-content: space-between;
-  line-height: $banner-height;
   position: absolute;
   top: 0;
   text-align: center;
   width: 100%;
   padding: 0 1rem;
-  overflow: hidden;
 
   @media screen and (min-width: $desktop-min) {
-  font-size: $base-font-size;
-  padding: 0 $u-space-default;
+    font-size: $base-font-size;
+    padding: 0 $u-space-default;
+  }
+
+  @media screen and (max-width: $small-mobile-max) {
+    height: $banner-height-mobile;
+    line-height: $base-font-size1;
   }
 
   .icon-nav-close {
+    cursor: pointer;
     stroke: $gray-dark;
     vertical-align: middle;
   }
@@ -78,6 +83,10 @@ $header-z-index: 999;
 
   .header__banner ~ & {
     margin-top: $banner-height;
+
+    @media screen and (max-width: $small-mobile-max) {
+      margin-top: $banner-height-mobile;
+    }
   }
 
   @media screen and (min-width: $small-desktop-min) {

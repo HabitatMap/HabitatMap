@@ -10,6 +10,10 @@ body {
     @media screen and (max-width: $tablet-max) {
       padding-top: $header-height-mobile + $banner-height;
     }
+
+    @media screen and (max-width: $small-mobile-max) {
+      padding-top: $header-height-mobile + $banner-height-mobile;
+    }
   }
 
   @media screen and (max-width: $tablet-max) {

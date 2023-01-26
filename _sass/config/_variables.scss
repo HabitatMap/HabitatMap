@@ -40,6 +40,8 @@ $tablet-min: 768px;
 $large-mobile-max: $tablet-min - 1px;
 $large-mobile-min: 480px;
 
+$small-mobile-max: $large-mobile-min - 1px;
+
 //spacing
 $u-space-tiny: 0.5rem;
 $u-space-small: 1.5rem;
@@ -66,6 +68,7 @@ $narrow-content: 18.75rem;
 $medium-content: 47rem;
 
 $banner-height: 50px;
+$banner-height-mobile: 70px;
 $button-base-height: 50px;
 $button-font-size: 1.1rem;
 $button-padding: 0.8rem 1.2rem;
