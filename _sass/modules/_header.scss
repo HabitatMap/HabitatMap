@@ -3,9 +3,7 @@ $nav-font-size-desktop: $base-font-size1;
 $header-z-index: 999;
 
 .header {
-  @include transition(all 0.5s ease);
-  font-family: $bold-font;
-  font-size: $base-font-size2;
+  color: $gray-dark;
   padding: 2rem 0 0.9rem;
   position: fixed;
   top: 0;
@@ -24,13 +22,83 @@ $header-z-index: 999;
   }
 
   @media screen and (min-width: $small-desktop-min) {
-    @include flexbox;
-    @include justify-content(space-between);
-    height: auto;
-
     &.sticky {
       padding: 1rem 0 0.5rem;
     }
+  }
+}
+
+.header__banner {
+  align-items: center;
+  background-color: $cta-color;
+  display: flex;
+  font-size: $base-font-size-1;
+  height: $banner-height;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  text-align: center;
+  width: 100%;
+  padding: 0 1rem;
+
+  @media screen and (min-width: $desktop-min) {
+    font-size: $base-font-size;
+    padding: 0 $u-space-default;
+  }
+
+  @media screen and (max-width: $small-mobile-max) {
+    height: $banner-height-mobile;
+    line-height: $base-font-size1;
+  }
+
+  .icon-nav-close {
+    cursor: pointer;
+    stroke: $gray-dark;
+    vertical-align: middle;
+  }
+}
+
+.header__save-10-link {
+  color: $gray-dark;
+  font-weight: bold;
+  text-decoration: underline;
+
+  &:hover {
+    color: lighten($gray-dark, 10%);
+  }
+}
+
+.header__menu {
+  @include transition(all 0.5s ease);
+  font-family: $bold-font;
+  font-size: $base-font-size2;
+
+  .icon-nav-close {
+    display: none;
+
+    .header--nav-expanded & {
+      display: block;
+    }
+  }
+
+  .header__banner ~ & {
+    margin-top: $banner-height;
+
+    @media screen and (max-width: $small-mobile-max) {
+      margin-top: $banner-height-mobile;
+    }
+  }
+
+  @media screen and (min-width: $small-desktop-min) {
+    @include flexbox;
+    @include justify-content(space-between);
+    height: auto;
+  }
+}
+
+.icon-nav-open {
+  .header--nav-expanded & {
+    display: none;
   }
 }
 
@@ -72,20 +140,6 @@ $header-z-index: 999;
 
   @media screen and (min-width: $large-desktop-min) {
     width: 21vw;
-  }
-}
-
-.icon-nav-open {
-  .header--nav-expanded & {
-    display: none;
-  }
-}
-
-.icon-nav-close {
-  display: none;
-
-  .header--nav-expanded & {
-    display: block;
   }
 }
 
