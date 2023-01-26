@@ -1,5 +1,5 @@
-window.addEventListener("scroll", function() {
+window.addEventListener("scroll", function () {
   document
-    .getElementById("js-header")
+    .querySelector("js--header")
     .classList[window.scrollY > 100 ? "add" : "remove"]("sticky");
 });

@@ -1,11 +1,17 @@
-<header id="js-header" class="header">
+<header class="header js--header">
   {% if page.section == "home" %}
     <div class="header__banner">
-      Buy AirBeam3 Today and Get $10 0ff!
-      <a href="/airbeam/save-10-now" class="link--underlined">
-        ORDER NOW
-      </a>
+      <span></span>
+      <span>
+        Buy AirBeam3 Today and Get $10 0ff!
+        <a href="/airbeam/save-10-now" class="link--underlined header__save-10-link">
+          ORDER NOW
+        </a>
+      </span>
+      <a class="js--close-banner">{% include /svg/icon_close.html %}</a>
     </div>
+
+    <script defer type="text/javascript" src="/assets/js/banner.js"></script>
   {% endif %}
 
   <div class="header__menu">

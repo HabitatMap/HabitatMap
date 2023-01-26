@@ -4,16 +4,16 @@ $header-height-mobile: 72px;
 body {
   padding-top: $header-height;
 
-  [data-current="home"] & {
+  &.js--with-banner {
     padding-top: $header-height + $banner-height;
+
+    @media screen and (max-width: $tablet-max) {
+      padding-top: $header-height-mobile + $banner-height;
+    }
   }
 
   @media screen and (max-width: $tablet-max) {
     padding-top: $header-height-mobile;
-
-    [data-current="home"] & {
-      padding-top: $header-height-mobile + $banner-height;
-    }
   }
 }
 

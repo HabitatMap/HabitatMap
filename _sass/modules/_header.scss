@@ -30,22 +30,36 @@ $header-z-index: 999;
 
 .header__banner {
   background-color: $cta-color;
-  font-size: $base-font-size;
-  line-height: $banner-height;
+  display: flex;
+  font-size: $base-font-size-1;
   height: $banner-height;
+  justify-content: space-between;
+  line-height: $banner-height;
   position: absolute;
   top: 0;
   text-align: center;
   width: 100%;
+  padding: 0 1rem;
+  overflow: hidden;
 
-  a {
-    color: $gray-dark;
-    font-weight: bold;
-    text-decoration: underline;
+  @media screen and (min-width: $desktop-min) {
+  font-size: $base-font-size;
+  padding: 0 $u-space-default;
+  }
 
-    &:hover {
-      color: lighten($gray-dark, 10%);
-    }
+  .icon-nav-close {
+    stroke: $gray-dark;
+    vertical-align: middle;
+  }
+}
+
+.header__save-10-link {
+  color: $gray-dark;
+  font-weight: bold;
+  text-decoration: underline;
+
+  &:hover {
+    color: lighten($gray-dark, 10%);
   }
 }
 
@@ -54,7 +68,15 @@ $header-z-index: 999;
   font-family: $bold-font;
   font-size: $base-font-size2;
 
-  .header__banner + & {
+  .icon-nav-close {
+    display: none;
+
+    .header--nav-expanded & {
+      display: block;
+    }
+  }
+
+  .header__banner ~ & {
     margin-top: $banner-height;
   }
 
@@ -62,6 +84,12 @@ $header-z-index: 999;
     @include flexbox;
     @include justify-content(space-between);
     height: auto;
+  }
+}
+
+.icon-nav-open {
+  .header--nav-expanded & {
+    display: none;
   }
 }
 
@@ -103,20 +131,6 @@ $header-z-index: 999;
 
   @media screen and (min-width: $large-desktop-min) {
     width: 21vw;
-  }
-}
-
-.icon-nav-open {
-  .header--nav-expanded & {
-    display: none;
-  }
-}
-
-.icon-nav-close {
-  display: none;
-
-  .header--nav-expanded & {
-    display: block;
   }
 }
 
