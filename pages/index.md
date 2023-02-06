@@ -213,28 +213,19 @@ image: /assets/img/pages/home/airbeam.jpg
   <button class="button button--cta">Schedule a Free Consultation</button>
 </section>
 
-<section class="panel panel--big-padding">
-  {% assign set_numbers = "1 2 3 4 5 6" | split: " " %}
-  {% assign set_number = set_numbers | sample: 1 %}
-  {% assign citation_set = site.data.citations.citations | where: "set", set_number %}
-
-  <figure class="split--50 split--padding-right quote">
-    <blockquote class="citations__item quote__body">
-      <em>”{{ citation_set[0].quote }}”</em>
-    </blockquote>
-    <figcaption class="quote__name">
-      - {{ citation_set[0].author }}
-    </figcaption>
-  </figure>
-
-  <figure class="split--50 split--padding-left quote">
-    <blockquote class="citations__item quote__body">
-      <em>”{{ citation_set[1].quote }}”</em>
-    </blockquote>
-    <figcaption class="quote__name">
-      - {{ citation_set[1].author }}
-    </figcaption>
-  </figure>
+<section class="quote panel panel--big-padding">
+  {% assign citations = site.data.citations.citations %}
+  {% for citation in citations %}
+    <figure class="split--50 quote u--hidden" data-set="{{citation.set}}">
+      <blockquote class="quote__body">
+        <em>”{{ citation.quote }}”</em>
+      </blockquote>
+      <figcaption class="quote__name">
+        - {{ citation.author }}
+      </figcaption>
+    </figure>
+  {% endfor %}
 </section>
 
 <script defer type="text/javascript" src="/assets/js/rotating-text.js"></script>
+<script defer type="text/javascript" src="/assets/js/citations.js"></script>
