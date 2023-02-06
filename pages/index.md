@@ -213,4 +213,19 @@ image: /assets/img/pages/home/airbeam.jpg
   <button class="button button--cta">Schedule a Free Consultation</button>
 </section>
 
+<section class="quote panel panel--big-padding">
+  {% assign citations = site.data.citations.citations %}
+  {% for citation in citations %}
+    <figure class="split--50 quote u--hidden" data-set="{{citation.set}}">
+      <blockquote class="quote__body">
+        <em>”{{ citation.quote }}”</em>
+      </blockquote>
+      <figcaption class="quote__name">
+        - {{ citation.author }}
+      </figcaption>
+    </figure>
+  {% endfor %}
+</section>
+
 <script defer type="text/javascript" src="/assets/js/rotating-text.js"></script>
+<script defer type="text/javascript" src="/assets/js/citations.js"></script>
