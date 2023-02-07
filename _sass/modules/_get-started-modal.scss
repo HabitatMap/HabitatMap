@@ -1,0 +1,112 @@
+$modal-width: 58rem;
+
+.get-started-modal {
+  background: $gray-dark;
+  color: $white;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  overflow: auto;
+  padding: $u-space-small;
+  z-index: $header-z-index + 1;
+
+  &__close-button {
+    position: absolute;
+    top: $u-space-small;
+    right: $u-space-small;
+  }
+
+  &__close-button, &__decline {
+    cursor: pointer;
+  }
+
+  &__decline {
+    float: right;
+  }
+
+  &__heading {
+    font-size: $base-font-size3;
+    margin-bottom: $u-space-small;
+    padding: 0 1rem;
+    text-align: center;
+
+    @media screen and (min-width: $small-desktop-min) {
+      font-size: 2.5rem;
+    }
+  }
+
+  @media screen and (min-width: $small-desktop-min) {
+    height: auto;
+    padding: $u-space-default;
+    position: absolute;
+    left: calc(50% - #{$modal-width}/2);
+    top: 15vh;
+    width: $modal-width;
+  }
+}
+
+$square-size: 231px;
+
+.get-started-modal__icon-box {
+  flex: 0 0 $square-size;
+  height: $square-size;
+}
+
+.get-started-modal__text-box {
+  flex-grow: 1;
+  padding: $u-space-default $u-space-small;
+
+  @media screen and (min-width: $tablet-min) {
+    height: $square-size;
+  }
+
+  @media screen and (min-width: $small-desktop-min) {
+    padding: $u-space-default;
+  }
+}
+
+.get-started-modal__paragraph {
+  font-family: $bold-font;
+  font-size: $base-font-size1;
+  margin-bottom: $u-space-small;
+
+  @media screen and (min-width: $tablet-min) {
+    font-size: $base-font-size2;
+  }
+}
+
+.get-started-modal__section {
+  @media screen and (min-width: $tablet-min) {
+    @include flexbox();
+  }
+
+  &--buy-now {
+    background: $hm-brand;
+
+    .get-started-modal__icon-box {
+      @media screen and (min-width: $tablet-min) {
+        background-color: desaturate(lighten($hm-brand, 10%), 20%);
+        background-image: url("/assets/img/svg/popup-airbeam-icon.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 86px;
+      }
+    }
+  }
+
+  &--get-consult {
+    margin-bottom: $u-space-small;
+    background-color: $cyan;
+
+    .get-started-modal__icon-box {
+      @media screen and (min-width: $tablet-min) {
+        background-color: lighten($cyan, 5%);
+        background-image: url("/assets/img/svg/popup-people-icon.svg"), url("/assets/img/svg/Air-Icon_left--opacity50.svg");
+        background-repeat: no-repeat, no-repeat;
+        background-position: bottom $u-space-small left $u-space-small, bottom $u-space-default left $u-space-default;
+        background-size: 64px, 148px;
+      }
+    }
+  }
+}
