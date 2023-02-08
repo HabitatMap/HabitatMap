@@ -1,22 +1,25 @@
 .save-10 {
-  background-image: url("/assets/img/pages/save-10-now/marcin-jozwiak-T-eDxGcn-Ok-unsplash.jpg");
-
-  @media screen and (max-width: $desktop-min) {
-    background-image: url("/assets/img/pages/save-10-now/marcin-jozwiak-T-eDxGcn-Ok-unsplash.jpg?nf_resize=fit&w=2050");
-  }
-
-  @media screen and (max-width: $small-desktop-max) {
+  @media screen and (min-width: $tablet-min) {
     background-image: url("/assets/img/pages/save-10-now/marcin-jozwiak-T-eDxGcn-Ok-unsplash.jpg?nf_resize=fit&w=1536");
   }
 
-  @media screen and (max-width: $large-mobile-min) {
-    background-image: url("/assets/img/pages/save-10-now/marcin-jozwiak-T-eDxGcn-Ok-unsplash.jpg?nf_resize=fit&w=720");
+  @media screen and (min-width: $desktop-min) {
+    background-image: url("/assets/img/pages/save-10-now/marcin-jozwiak-T-eDxGcn-Ok-unsplash.jpg?nf_resize=fit&w=2050");
+  }
+
+  @media screen and (min-width: $large-desktop-min) {
+    background-image: url("/assets/img/pages/save-10-now/marcin-jozwiak-T-eDxGcn-Ok-unsplash.jpg");
   }
 
   &__container {
-    margin: $u-space-big auto;
-    padding: 5rem 4rem;
+    margin: 0 auto;
+    padding: 2rem 4rem;
     width: 30rem;
+
+    @media screen and (min-width: $tablet-min) {
+      margin: $u-space-big auto;
+      padding: 5rem 4rem;
+    }
 
     @media screen and (min-width: $large-desktop-min) {
       margin: $u-space-huge auto;

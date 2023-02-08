@@ -1,22 +1,25 @@
 .get-consultation {
-  background-image: url("/assets/img/pages/get-consultation/carson-foreman-cuuHNrzr4mQ-unsplash.jpg");
-
-  @media screen and (max-width: $desktop-min) {
-    background-image: url("/assets/img/pages/get-consultation/carson-foreman-cuuHNrzr4mQ-unsplash.jpg?nf_resize=fit&w=2050");
-  }
-
-  @media screen and (max-width: $small-desktop-max) {
+  @media screen and (min-width: $tablet-min) {
     background-image: url("/assets/img/pages/get-consultation/carson-foreman-cuuHNrzr4mQ-unsplash.jpg?nf_resize=fit&w=1536");
   }
 
-  @media screen and (max-width: $large-mobile-min) {
-    background-image: url("/assets/img/pages/get-consultation/carson-foreman-cuuHNrzr4mQ-unsplash.jpg?nf_resize=fit&w=720");
+  @media screen and (min-width: $desktop-min) {
+    background-image: url("/assets/img/pages/get-consultation/carson-foreman-cuuHNrzr4mQ-unsplash.jpg?nf_resize=fit&w=2050");
+  }
+
+  @media screen and (min-width: $large-desktop-min) {
+    background-image: url("/assets/img/pages/get-consultation/carson-foreman-cuuHNrzr4mQ-unsplash.jpg");
   }
 
   &__container {
-    margin: 5rem auto;
-    padding: $u-space-default 4rem;
+    margin: 2rem auto;
+    padding: 0 4rem;
     width: 40rem;
+
+    @media screen and (min-width: $tablet-min) {
+      margin: 5rem auto;
+      padding: $u-space-default 4rem;
+    }
 
     @media screen and (min-width: $large-desktop-min) {
       margin: $u-space-huge auto;
