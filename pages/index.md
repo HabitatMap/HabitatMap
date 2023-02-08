@@ -210,7 +210,7 @@ image: /assets/img/pages/home/airbeam.jpg
   <h1 class="for-teams__heading heading">Need AirBeams for Your Team or Classroom?</h1>
   <p class="for-teams__get-help">Get One-on-One Research Design and Implementation Help</p>
   <p class="for-teams__save-up">Save up to $1,743.00! (orders of 100+)</p>
-  <button class="button button--cta">Schedule a Free Consultation</button>
+  <a href="/airbeam/get-consultation" class="button button--cta">Schedule a Free Consultation</a>
 </section>
 
 <section class="quote panel panel--big-padding">
@@ -248,7 +248,7 @@ image: /assets/img/pages/home/airbeam.jpg
     </div>
     <div class="get-started-modal__text-box u--align-center">
       <p class="get-started-modal__paragraph">Need 5 or more AirBeams?<br/>Get a FREE consult and save big!</p>
-      <a href="#" class="button button--cta">Get a free consult</a>
+      <a href="/airbeam/get-consultation" class="button button--cta">Get a free consult</a>
     </div>
   </div>
   <a class="get-started-modal__decline link link--light link--underlined js--close-get-started-modal">DECLINE OFFER</a>
