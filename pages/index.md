@@ -112,7 +112,7 @@ image: /assets/img/pages/home/airbeam.jpg
       Big savings + tech and planning support from the
       AirBeam team when you buy 5 or more AirBeams!
       <br>
-      <a href="#" class="link--underlined">Inquire about Bulk Ordering</a>
+      <a href="/airbeam/get-consultation" class="link--underlined">Inquire about Bulk Ordering</a>
     </p>
 
   </div>

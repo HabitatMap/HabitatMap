@@ -1,8 +1,5 @@
 .get-consultation {
-  background: url("/assets/img/pages/get-consultation/carson-foreman-cuuHNrzr4mQ-unsplash.jpg")
-    center no-repeat;
-  background-size: cover;
-  overflow: auto;
+  background-image: url("/assets/img/pages/get-consultation/carson-foreman-cuuHNrzr4mQ-unsplash.jpg");
 
   @media screen and (max-width: $desktop-min) {
     background-image: url("/assets/img/pages/get-consultation/carson-foreman-cuuHNrzr4mQ-unsplash.jpg?nf_resize=fit&w=2050");
@@ -16,7 +13,13 @@
     background-image: url("/assets/img/pages/get-consultation/carson-foreman-cuuHNrzr4mQ-unsplash.jpg?nf_resize=fit&w=720");
   }
 
-  @media screen and (min-width: $large-desktop-min) {
-    min-height: 67vh;
+  &__container {
+    margin: 5rem auto;
+    padding: $u-space-default 4rem;
+    width: 40rem;
+
+    @media screen and (min-width: $large-desktop-min) {
+      margin: $u-space-huge auto;
+    }
   }
 }
