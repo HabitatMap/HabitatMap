@@ -12,6 +12,16 @@ body {
   line-height: 1.2;
 }
 
+.heading--conversion {
+  font-family: $body-font;
+  font-weight: 900;
+  font-size: 2.25rem;
+
+  @media screen and (min-width: $tablet-min) {
+    font-size: $base-font-size4;
+  }
+}
+
 .heading--large {
   font-size: $base-font-size3;
 
