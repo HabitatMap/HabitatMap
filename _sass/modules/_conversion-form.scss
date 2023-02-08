@@ -19,8 +19,12 @@
   }
 
   &__paragraph {
-    font-size: $base-font-size2;
+    font-size: $base-font-size1;
     margin: $u-space-small 0;
+
+    @media screen and (min-width: $tablet-min) {
+      font-size: $base-font-size2;
+    }
   }
 
   &__input {
