@@ -26,13 +26,11 @@ $modal-width: 58rem;
   }
 
   &__heading {
-    font-size: $base-font-size3;
     margin-bottom: $u-space-small;
-    padding: 0 1rem;
-    text-align: center;
+    padding: 0 $u-space-small;
 
-    @media screen and (min-width: $small-desktop-min) {
-      font-size: 2.5rem;
+    @media screen and (min-width: $tablet-min) {
+      padding: 0 4rem;
     }
   }
 

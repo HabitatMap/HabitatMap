@@ -230,7 +230,7 @@ image: /assets/img/pages/home/airbeam.jpg
 <div class="get-started-modal u--hidden">
   <a class="get-started-modal__close-button js--close-get-started-modal">{% include /svg/icon_close.html %}</a>
 
-  <h1 class="heading get-started-modal__heading">
+  <h1 class="get-started-modal__heading heading heading--conversion u--align-center">
     Get Started with AirBeam Today and Save!
   </h1>
 
