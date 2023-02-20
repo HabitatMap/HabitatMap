@@ -1,0 +1,39 @@
+.conversion-form {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: auto;
+
+  @media screen and (min-width: $large-desktop-min) {
+    min-height: 67vh;
+  }
+
+  &__container {
+    background: $white;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  &__heading {
+    color: $cyan;
+  }
+
+  &__paragraph {
+    font-size: $base-font-size1;
+    margin: $u-space-small 0;
+
+    @media screen and (min-width: $tablet-min) {
+      font-size: $base-font-size2;
+    }
+  }
+
+  &__input {
+    border-radius: 0;
+    border: 1px solid $gray;
+    font-size: $base-font-size-1;
+    height: $button-base-height;
+    padding: 0.8rem 1.2rem 0.5rem;
+    margin-bottom: $u-space-small;
+    width: 100%;
+  }
+}
