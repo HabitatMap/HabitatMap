@@ -81,6 +81,7 @@ $square-size: 231px;
 
   &--buy-now {
     background: $hm-brand;
+    margin-bottom: $u-space-small;
 
     .get-started-modal__icon-box {
       @media screen and (min-width: $tablet-min) {
