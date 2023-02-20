@@ -251,7 +251,7 @@ image: /assets/img/pages/home/airbeam.jpg
       <a href="/airbeam/get-consultation" class="button button--cta">Get a free consult</a>
     </div>
   </div>
-  <a class="get-started-modal__decline link link--light link--underlined js--close-get-started-modal">DECLINE OFFER</a>
+  <a class="get-started-modal__decline link link--light link--underlined js--close-get-started-modal"><b>DECLINE OFFER</b></a>
 </div>
 
 <script defer type="text/javascript" src="/assets/js/rotating-text.js"></script>
