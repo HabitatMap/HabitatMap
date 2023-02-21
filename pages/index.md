@@ -227,33 +227,7 @@ image: /assets/img/pages/home/airbeam.jpg
   {% endfor %}
 </section>
 
-<div class="get-started-modal u--hidden">
-  <a class="get-started-modal__close-button js--close-get-started-modal">{% include /svg/icon_close.html %}</a>
-
-  <h1 class="get-started-modal__heading heading heading--conversion u--align-center">
-    Get Started with AirBeam Today and Save!
-  </h1>
-
-  <div class="get-started-modal__section get-started-modal__section--buy-now">
-    <div class="get-started-modal__icon-box u--mobile-hidden">
-    </div>
-    <div class="get-started-modal__text-box u--align-center">
-      <p class="get-started-modal__paragraph">AirBeam3 is available for immediate shipping.</p>
-      <a href="/airbeam/save-10-now" class="button button--cta">Buy now and get $10 off</a>
-    </div>
-  </div>
-
-  <div class="get-started-modal__section get-started-modal__section--get-consult">
-    <div class="get-started-modal__icon-box u--mobile-hidden">
-    </div>
-    <div class="get-started-modal__text-box u--align-center">
-      <p class="get-started-modal__paragraph">Need 5 or more AirBeams?<br/>Get a FREE consult and save big!</p>
-      <a href="/airbeam/get-consultation" class="button button--cta">Get a free consult</a>
-    </div>
-  </div>
-  <a class="get-started-modal__decline link link--light link--underlined js--close-get-started-modal"><b>DECLINE OFFER</b></a>
-</div>
+{% include get-started-modal.html %}
 
 <script defer type="text/javascript" src="/assets/js/rotating-text.js"></script>
 <script defer type="text/javascript" src="/assets/js/citations.js"></script>
-<script defer type="text/javascript" src="/assets/js/get-started-modal.js"></script>
