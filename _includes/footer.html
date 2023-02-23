@@ -41,6 +41,7 @@
         <h2 class="footer-column__heading heading u--capitalized">Stay Current</h2>
         <p class="u--bold">Sign up to receive AirBeam product updates and HabitatMap news (quarterly):</p>
         <form name="newsletter" method="POST" data-netlify="true">
+          <input type="hidden" name="subject" value="New newsletter subscription" />
           <label class="u--visually-hidden" for="newsletter">Email</label>
           <input class="input input--light input--full-width" type="email" placeholder="Your email" name="email" id="newsletter" autocomplete="email" />
           <input type="submit" style="position: absolute; left: -9999px; width: 1px; height: 1px;" tabindex="-1" />
