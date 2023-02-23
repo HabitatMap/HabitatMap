@@ -4,6 +4,7 @@
 
   .header--nav-expanded & {
     display: block;
+    background-color: $green;
 
     @media screen and (max-width: $tablet-max) {
       @include animation("slide-down 1s ease 1");
@@ -12,7 +13,6 @@
 
     @media screen and (min-width: $small-desktop-min) {
       @include animation("slide-left 300ms ease 1");
-      background-color: $green;
       padding: 1.5rem 2rem;
       position: absolute;
       right: 0;
