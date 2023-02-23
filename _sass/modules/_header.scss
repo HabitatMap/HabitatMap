@@ -115,13 +115,8 @@
   padding-left: $u-space-small;
 
   @media screen and (max-width: $tablet-max) {
-    padding-left: 0;
-    padding-right: 25px;
+    padding-left: 25px; // hamburger icon width
     margin: 0 auto;
-
-    .header--nav-expanded & {
-      padding-right: 20px;
-    }
   }
 
   @media screen and (min-width: $desktop-min) {
