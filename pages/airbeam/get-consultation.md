@@ -12,9 +12,9 @@ image: /assets/img/pages/get-consultation/carson-foreman-cuuHNrzr4mQ-unsplash.jp
     <p class="conversion-form__paragraph">Enter your email and number of&nbsp;AirBeams you are interested in and we will contact you!</p>
     <form name="consultation" class="conversion-form__form" method="post" data-netlify="true">
       <input type="hidden" name="subject" value="New consultation request" />
-      <input name="email" type="email" placeholder="YOUR EMAIL ADDRESS" class="conversion-form__input u--block" />
-      <input name="quantity" type="number" step="1" min="1" placeholder="YOUR AIRBEAM QUANTITY" class="conversion-form__input u--block" />
-      <input name="name" type="text" placeholder="YOUR NAME" class="conversion-form__input u--block" />
+      <input name="email" type="email" placeholder="YOUR EMAIL ADDRESS" class="conversion-form__input u--block" required />
+      <input name="quantity" type="number" step="1" min="1" placeholder="YOUR AIRBEAM QUANTITY" class="conversion-form__input u--block" required />
+      <input name="name" type="text" placeholder="YOUR NAME" class="conversion-form__input u--block" required />
       <input type="submit" value="Submit" class="button button--cta input--full-width" />
     </form>
   </div>
