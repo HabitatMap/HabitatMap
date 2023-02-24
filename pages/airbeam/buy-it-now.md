@@ -50,7 +50,7 @@ image: /assets/img/airbeam-buy-it-now.jpg
         Payment Methods
       </h2>
       <p class="p--body">
-        HabitatMap accepts credit card payments through PayPal. You do not need a PayPal account to checkout using PayPal. If you prefer to make payment via check or wire transfer, please email us at info@habitatmap.org with your shipping address and the number of AirBeams you would like to purchase. Note that we do not accept purchase orders.
+        HabitatMap accepts Mastercard, Visa, and Discover credit card payments. Payment can also be made via PayPal, Venmo, and Google Pay. If you prefer to make payment via check or wire transfer, please email us at <a href="mailto:info@habitatmap.org">info@habitatmap.org</a> with your shipping address and the number of AirBeams you would like to purchase. Note that we do not accept purchase orders.
       </p>
     </div>
     <div class="shop-airbeam-information__item">
