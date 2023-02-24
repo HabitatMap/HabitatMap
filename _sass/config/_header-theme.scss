@@ -95,7 +95,7 @@ $header-link-color-white: $white;
   @media screen and (max-width: $tablet-max) {
     &.header--nav-expanded,
     .header--nav-expanded & {
-      background-color: $gray;
+      background-color: $green;
     }
   }
 }
