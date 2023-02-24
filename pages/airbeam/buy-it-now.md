@@ -55,7 +55,7 @@ image: /assets/img/airbeam-buy-it-now.jpg
     </div>
     <div class="shop-airbeam-information__item">
       <h2 class="heading heading--medium u--gray-text">
-        Orders >5, Bulk Order Discounts
+        Buy More, Save More!
       </h2>
       <p class="p--body">
         If you would like to purchase more than 5 AirBeams please email info@habitatmap.org with your shipping address and the number of AirBeams you would like to order. There is a 5% discount on orders of 20 or more AirBeams and a 7% discount on orders of a 100 or more.
@@ -81,7 +81,7 @@ image: /assets/img/airbeam-buy-it-now.jpg
         FAQ
       </h2>
       <p class="p--body">
-        Questions about the AirBeam or the AirCasting Platform? Visit our <a href="/airbeam/FAQ">FAQ</a>!
+        To learn more about the AirBeam and AirCasting apps have a look at the <a href="/airbeam/users-guide">AirBeam3 User's Guide</a> or visit our <a href="/airbeam/FAQ">FAQ page</a>.
       </p>
     </div>
   </div>
