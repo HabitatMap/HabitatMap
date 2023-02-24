@@ -12,7 +12,7 @@ image: /assets/img/pages/save-10-now/marcin-jozwiak-T-eDxGcn-Ok-unsplash.jpg
     <p class="conversion-form__paragraph">Enter your email and receive a&nbsp;code for instant savings!</p>
     <form name="discount-code" class="conversion-form__form" method="post" data-netlify="true">
       <input type="hidden" name="subject" value="New discount code request" />
-      <input name="email" type="email" placeholder="YOUR EMAIL ADDRESS" class="conversion-form__input u--block" required />
+      <input name="email" type="email" placeholder="YOUR EMAIL ADDRESS" class="conversion-form__input u--block" required autocomplete="email" />
       <input type="submit" value="Get code" class="button button--cta input--full-width" />
     </form>
   </div>
