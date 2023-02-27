@@ -8,6 +8,10 @@
   color: $ac-brand;
 }
 
+.u--accent-cyan {
+  color: $cyan;
+}
+
 .u--align-center {
   text-align: center;
 }
@@ -74,6 +78,10 @@
 
 .u--gray-text {
   color: $gray;
+}
+
+.u--margin-bottom-tiny {
+  margin-bottom: $u-space-tiny;
 }
 
 .u--margin-top-default {

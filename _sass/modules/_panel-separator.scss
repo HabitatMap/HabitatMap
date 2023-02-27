@@ -1,0 +1,20 @@
+.panel-separator {
+  border-bottom: none;
+  border-color: $gray-medium;
+  margin: 0 4vw;
+
+  @media screen and (min-width: $tablet-min) {
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+
+  @media screen and (min-width: $desktop-min) {
+    margin-left: 15vw;
+    margin-right: 15vw;
+  }
+
+  @media screen and (min-width: $large-desktop-min) {
+    margin-left: 21vw;
+    margin-right: 21vw;
+  }
+}
