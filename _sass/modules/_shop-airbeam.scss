@@ -2,24 +2,92 @@
   margin-bottom: $u-space-default;
 
   .arc-background {
+
+    @media screen and (max-width: $large-mobile-max) {
+      background: none;
+    }
+
     @media screen and (min-width: $tablet-min) {
-      background-position: top 150px right 8vw;
+      background-position: bottom 70px right 4vw;
     }
 
     @media screen and (min-width: $small-desktop-min) {
-      background-position: top 220px right 8vw;
+      background-position: bottom 40px right 4vw;
     }
 
     @media screen and (min-width: $desktop-min) {
-      background-position: top 190px right 10vw;
+      background-position: bottom 70px right 8vw;
     }
 
     @media screen and (min-width: $large-desktop-min) {
-      background-position: top 230px right 13vw;
+      background-position: bottom 70px right 16vw;
+    }
+  }
+
+  &__heading {
+    font-weight: bold;
+
+    @media screen and (min-width: $tablet-min) {
+      font-size: 3rem;
+    }
+  }
+
+  &__caption {
+    font-size: 1.5rem;
+    margin: $u-space-small 0 0;
+
+    @media screen and (min-width: $tablet-min) {
+      font-size: 2.25rem;
+      margin: $u-space-small 0;
+    }
+  }
+
+  &__buy-button {
+    margin: $u-space-default 0 $u-space-small -22px;
+  }
+
+  &__get-consult-button {
+    width: 235px;
+    font-size: 13px;
+    line-height: 25px;
+  }
+
+  &__action-panel {
+
+    @media screen and (min-width: $tablet-min) {
+      padding-bottom: 6rem;
+    }
+
+    @media screen and (min-width: $desktop-min) {
+      padding-bottom: 10rem;
+    }
+  }
+
+  &__sub {
+    padding-top: 1rem;
+    margin: 0 4vw;
+
+    @media screen and (min-width: $tablet-min) {
+      margin-left: 10vw;
+      margin-right: 10vw;
+    }
+
+    @media screen and (min-width: $desktop-min) {
+      margin-left: 15vw;
+      margin-right: 15vw;
+    }
+
+    @media screen and (min-width: $large-desktop-min) {
+      margin-left: 21vw;
+      margin-right: 21vw;
     }
   }
 }
 
-.shop-airbeam__caption {
-  margin: $u-space-small 0 $u-space-default;
+.shop-airbeam-information {
+  gap: $u-space-small;
+
+  &__item {
+    @include flex(0 0 45%);
+  }
 }

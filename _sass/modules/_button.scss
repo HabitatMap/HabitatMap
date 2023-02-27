@@ -50,6 +50,10 @@ $ac-brand-transparent: transparentize($ac-brand, 0.4);
   );
 }
 
+.button--secondary {
+  @include button-color($text-color, $text-color, $white, $text-color);
+}
+
 .button--small {
   height: 43px;
 }
