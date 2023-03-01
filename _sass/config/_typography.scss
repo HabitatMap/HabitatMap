@@ -137,24 +137,24 @@ a,
   color: $link-color;
 
   .post-list__item & {
-    [data-current="about"] & {
+    [data-current^="about"] & {
       color: $teal;
     }
 
-    [data-current="airbeam"] &,
-    [data-current="donate"] & {
+    [data-current^="airbeam"] &,
+    [data-current^="donate"] & {
       color: $green;
     }
   }
 
   .p--body &,
   .post-nav & {
-    [data-current="about"] & {
+    [data-current^="about"] & {
       color: $teal;
     }
 
-    [data-current="airbeam"] &,
-    [data-current="donate"] & {
+    [data-current^="airbeam"] &,
+    [data-current^="donate"] & {
       color: $green;
     }
   }

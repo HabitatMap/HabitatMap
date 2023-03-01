@@ -2,7 +2,7 @@
 layout: page
 title: AirBeam - Buy It Now
 permalink: /airbeam/buy-it-now
-section: airbeam
+section: airbeam buy-now
 image: /assets/img/airbeam-buy-it-now.jpg
 ---
 
