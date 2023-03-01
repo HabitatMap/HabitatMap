@@ -134,7 +134,7 @@ $header-link-color-white: $white;
     $bg-color-hover: $header-link-color-gray
   );
 
-  .header--nav-expanded .nav-sub & {
+  .header--nav-expanded .nav-sub > & {
     @include button-color(
       $text-color: $header-link-color-white,
       $border-color: $header-link-color-white,
@@ -226,25 +226,6 @@ $header-link-color-white: $white;
         $bg-color: $header-link-color-white,
         $bg-color-hover: $green
       );
-    }
-  }
-
-  @media screen and (max-width: $tablet-max) {
-    .header--nav-expanded & {
-      [data-current="about"] &,
-      [data-current="airbeam"] &,
-      [data-current="aircasting"] &,
-      [data-current="donate"] &,
-      [data-current="blog"] &,
-      [data-current="home"] &,
-      [data-current="faq"] & {
-        @include button-color(
-          $text-color: $header-link-color-white,
-          $border-color: $header-link-color-white,
-          $bg-color: $gray,
-          $bg-color-hover: $header-link-color-white
-        );
-      }
     }
   }
 }
