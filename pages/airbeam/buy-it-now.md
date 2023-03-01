@@ -58,7 +58,7 @@ image: /assets/img/airbeam-buy-it-now.jpg
         Buy More, Save More!
       </h2>
       <p class="p--body">
-        If you would like to purchase more than 5 AirBeams please email info@habitatmap.org with your shipping address and the number of AirBeams you would like to order. There is a 5% discount on orders of 20 or more AirBeams and a 7% discount on orders of a 100 or more.
+        Buy 10 or more AirBeams and save 3%. Buy 20 or more AirBeams and save 5%. Buy 100 or more AirBeams and save 7%. Discounts are automatically applied at checkout.
       </p>
     </div>
     <div class="shop-airbeam-information__item">
