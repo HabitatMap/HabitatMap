@@ -1,6 +1,8 @@
 .nav {
-  padding: 0 $u-space-small;
+  height: 100vh;
   display: none;
+  overflow: scroll;
+  padding: 0 $u-space-small;
 
   .header--nav-expanded & {
     display: block;
