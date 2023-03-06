@@ -52,13 +52,11 @@ image: /assets/img/airbeam-buy-it-now.jpg
       <p class="p--body">
         HabitatMap accepts Mastercard, Visa, and Discover credit card payments. Payment can also be made via PayPal, Venmo, and Google Pay. If you prefer to make payment via check or wire transfer, please email us at <a href="mailto:info@habitatmap.org">info@habitatmap.org</a> with your shipping address and the number of AirBeams you would like to purchase. Note that we do not accept purchase orders.
       </p>
-    </div>
-    <div class="shop-airbeam-information__item">
       <h2 class="heading heading--medium u--gray-text">
-        Buy More, Save More!
+        FAQ
       </h2>
       <p class="p--body">
-        Buy 10 or more AirBeams and save 3%. Buy 20 or more AirBeams and save 5%. Buy 100 or more AirBeams and save 7%. Discounts are automatically applied at checkout.
+        To learn more about the AirBeam and AirCasting apps have a look at the <a href="/airbeam/users-guide">AirBeam3 User's Guide</a> or visit our <a href="/airbeam/FAQ">FAQ page</a>.
       </p>
     </div>
     <div class="shop-airbeam-information__item">
@@ -72,16 +70,18 @@ image: /assets/img/airbeam-buy-it-now.jpg
     </div>
     <div class="shop-airbeam-information__item">
       <h2 class="heading heading--medium u--gray-text">
+        Buy More, Save More!
+      </h2>
+      <p class="p--body">
+        Buy 10 or more AirBeams and save 3%. Buy 20 or more AirBeams and save 5%. Buy 100 or more AirBeams and save 7%. Discounts are automatically applied at checkout.
+      </p>
+    </div>
+    <div class="shop-airbeam-information__item">
+      <h2 class="heading heading--medium u--gray-text">
         Warranty
       </h2>
       <p class="p--body">
         AirBeam is guaranteed to be operating properly at time of receipt. AirBeams that are not operating properly at time of receipt can be sent back for replacement within 30 days. All sales are final.
-      </p>
-      <h2 class="heading heading--medium u--gray-text">
-        FAQ
-      </h2>
-      <p class="p--body">
-        To learn more about the AirBeam and AirCasting apps have a look at the <a href="/airbeam/users-guide">AirBeam3 User's Guide</a> or visit our <a href="/airbeam/FAQ">FAQ page</a>.
       </p>
     </div>
   </div>
