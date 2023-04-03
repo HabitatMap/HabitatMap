@@ -10,7 +10,7 @@ $modal-width: 50rem;
   top: 0;
   overflow: auto;
   padding: $u-space-small;
-  z-index: $header-z-index + 1;
+  z-index: 2;
 
   &__close-button {
     position: absolute;

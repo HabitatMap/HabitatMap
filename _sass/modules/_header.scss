@@ -4,7 +4,6 @@
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: $header-z-index;
 
   @media screen and (max-width: $tablet-max) {
     padding: 0.5rem 0;

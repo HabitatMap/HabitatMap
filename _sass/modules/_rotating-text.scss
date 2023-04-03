@@ -1,6 +1,7 @@
 .rotating-text {
   display: block;
   position: relative;
+  z-index: 1;
 }
 
 .rotating-text__word {
