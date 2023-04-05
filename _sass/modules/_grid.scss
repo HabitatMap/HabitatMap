@@ -1,8 +1,23 @@
+$header-height: 6 * $base-font-size;
+$header-height-mobile: 72px;
+
 body {
-  padding-top: 6rem;
+  padding-top: $header-height;
+
+  &.js--with-banner {
+    padding-top: $header-height + $banner-height;
+
+    @media screen and (max-width: $tablet-max) {
+      padding-top: $header-height-mobile + $banner-height;
+    }
+
+    @media screen and (max-width: $small-mobile-max) {
+      padding-top: $header-height-mobile + $banner-height-mobile;
+    }
+  }
 
   @media screen and (max-width: $tablet-max) {
-    padding-top: 72px; // mobile header height
+    padding-top: $header-height-mobile;
   }
 }
 

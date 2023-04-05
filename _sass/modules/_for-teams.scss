@@ -1,0 +1,48 @@
+.for-teams {
+  padding: $u-space-big 4vw 0;
+
+  @media screen and (min-width: $tablet-min) {
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+
+  @media screen and (min-width: $desktop-min) {
+    padding-left: 15vw;
+    padding-right: 15vw;
+  }
+
+  @media screen and (min-width: $large-desktop-min) {
+    padding-left: 21vw;
+    padding-right: 21vw;
+  }
+
+  &__heading {
+    color: $hm-brand;
+    font-size: $base-font-size2;
+    margin-bottom: $u-space-small;
+
+    @media screen and (min-width: $tablet-min) {
+      font-size: 2.25rem;
+    }
+  }
+
+  &__get-help {
+    font-size: $base-font-size1;
+    margin-bottom: $u-space-tiny;
+
+    @media screen and (min-width: $tablet-min) {
+      font-size: $base-font-size2;
+    }
+  }
+
+  &__save-up {
+    color: $blue-dark;
+    font-size: $base-font-size1;
+    font-weight: bold;
+    margin-bottom: $u-space-small;
+
+    @media screen and (min-width: $tablet-min) {
+      font-size: $base-font-size2;
+    }
+  }
+}

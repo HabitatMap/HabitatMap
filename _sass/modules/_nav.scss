@@ -1,0 +1,84 @@
+.nav {
+  height: 100vh;
+  display: none;
+  overflow: scroll;
+  padding: 0 $u-space-small;
+
+  .header--nav-expanded & {
+    display: block;
+    background-color: $green;
+
+    @media screen and (max-width: $tablet-max) {
+      @include animation("slide-down 1s ease 1");
+      margin-top: $u-space-default;
+    }
+
+    @media screen and (min-width: $small-desktop-min) {
+      @include animation("slide-left 300ms ease 1");
+      padding: 1.5rem 2rem;
+      position: absolute;
+      right: 0;
+      top: 0;
+      min-width: 22rem;
+    }
+  }
+
+  @media screen and (min-width: $desktop-min) {
+    padding-right: $u-space-default;
+  }
+}
+
+.nav-sub {
+  @include flexbox;
+  @include justify-content(space-between);
+  @include align-items(center);
+  @include flex(0 0 17rem);
+  border-top: 1px solid $white;
+  padding-top: $u-space-small;
+  position: relative;
+}
+
+.nav-list {
+  @media screen and (min-width: $small-desktop-min) {
+    font-size: $nav-font-size-desktop;
+  }
+}
+
+.nav-list__link {
+  display: block;
+  padding: $u-space-tiny 0;
+
+  &.nav-list__link--donate {
+    border: none;
+    display: inline-block;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.75;
+  }
+}
+
+.subnav-list {
+  min-width: 14rem;
+  padding: 0.5rem 0 1rem;
+}
+
+.nav-list__element {
+  border-top: 1px solid $white;
+}
+
+.subnav-list__element {
+  margin-bottom: 4px;
+}
+
+.subnav-list__link {
+  display: inline-block;
+  font-size: $base-font-size1;
+  white-space: nowrap;
+  padding: 0.25rem 0;
+
+  @media screen and (min-width: $small-desktop-min) {
+    font-size: $subnav-font-size-desktop;
+  }
+}

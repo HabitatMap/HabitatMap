@@ -29,15 +29,15 @@
 .img-full-width.lazyloaded {
   background-image: url("/assets/img/pages/about-habitatmap/hero.jpg");
 
-  @media screen and (max-width: 1366px) {
+  @media screen and (max-width: $desktop-min) {
     background-image: url("/assets/img/pages/about-habitatmap/hero.jpg?nf_resize=fit&w=2050");
   }
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: $small-desktop-max) {
     background-image: url("/assets/img/pages/about-habitatmap/hero.jpg?nf_resize=fit&w=1536");
   }
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: $large-mobile-min) {
     background-image: url("/assets/img/pages/about-habitatmap/hero.jpg?nf_resize=fit&w=720");
   }
 }

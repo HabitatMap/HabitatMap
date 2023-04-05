@@ -1,41 +1,40 @@
-$header-link-color-homepage: $gray;
+$header-link-color-gray: $gray;
 $header-link-color-hm: $green;
 $header-link-color-ac: $blue;
 $header-link-color-white: $white;
 
 // Logo themes
 
-.logo--hm,
-.logo--hm-vertical,
-.icon-search,
-.icon-search-close {
+.header__logo .logo--hm,
+.header__logo .logo--hm-vertical {
   fill: $gray;
 
-  [data-current="airbeam"] &,
-  [data-current="donate"] & {
+  [data-current^="home"] &,
+  [data-current^="airbeam"] &,
+  [data-current^="donate"] & {
     fill: $green;
   }
 
-  [data-current="faq"] &,
-  [data-current="about"] &,
-  [data-current="blog"] & {
+  [data-current^="faq"] &,
+  [data-current^="about"] &,
+  [data-current^="blog"] & {
     fill: $white;
   }
 
-  [data-current="aircasting"] & {
+  [data-current^="aircasting"] & {
     fill: $blue;
   }
 
   .sticky & {
-    [data-current="about"] & {
+    [data-current^="about"] & {
       fill: $teal;
     }
 
-    [data-current="blog"] & {
+    [data-current^="blog"] & {
       fill: $header-link-color-ac;
     }
 
-    [data-current="faq"] & {
+    [data-current^="faq"] & {
       fill: $header-link-color-hm;
     }
   }
@@ -66,25 +65,25 @@ $header-link-color-white: $white;
 
 // Header background themes
 
-.header,
-.search-form {
+.header {
   background-color: $teal-light;
 
-  [data-current="airbeam"] &,
-  [data-current="aircasting"] &,
-  [data-current="donate"] & {
+  [data-current^="home"] &,
+  [data-current^="airbeam"] &,
+  [data-current^="aircasting"] &,
+  [data-current^="donate"] & {
     background-color: $white;
   }
 
-  [data-current="faq"] & {
+  [data-current^="faq"] & {
     background-color: $green;
   }
 
-  [data-current="about"] & {
+  [data-current^="about"] & {
     background-color: $teal;
   }
 
-  [data-current="blog"] & {
+  [data-current^="blog"] & {
     background-color: $blue;
   }
 
@@ -96,7 +95,7 @@ $header-link-color-white: $white;
   @media screen and (max-width: $tablet-max) {
     &.header--nav-expanded,
     .header--nav-expanded & {
-      background-color: $gray;
+      background-color: $green;
     }
   }
 }
@@ -104,124 +103,23 @@ $header-link-color-white: $white;
 // Main navigation links themes
 
 .nav-list__link {
-  color: $header-link-color-homepage;
+  color: $white;
 
-  &[data-current="current page"] {
-    opacity: 0.55;
-    color: inherit;
+  &[data-current^="current page"] {
+    color: rgba($white, 0.55);
   }
-
-  [data-current="airbeam"] &,
-  [data-current="donate"] & {
-    color: $header-link-color-hm;
-  }
-
-  [data-current="aircasting"] & {
-    color: $header-link-color-ac;
-  }
-
-  [data-current="faq"] &,
-  [data-current="about"] &,
-  [data-current="blog"] & {
-    color: $header-link-color-white;
-  }
-
-  .sticky & {
-    [data-current="about"] & {
-      color: $teal;
-    }
-
-    [data-current="blog"] & {
-      color: $header-link-color-ac;
-    }
-
-    [data-current="faq"] & {
-      color: $header-link-color-hm;
-    }
-  }
-
-  @media screen and (max-width: $tablet-max) {
-    .header--nav-expanded & {
-      color: $white !important;
-    }
-  }
-}
-
-.nav-list__link--search {
-  line-height: 1;
 }
 
 // Subnavigation links themes
 
 .subnav-list__link {
-  background-color: $white;
-  color: $header-link-color-homepage;
+  color: $white;
 
-  &:hover,
-  &:focus {
-    color: rgba($header-link-color-homepage, 0.75);
-  }
-
-  [data-current="airbeam"] &,
-  [data-current="donate"] & {
-    background-color: $green;
-    color: $white;
-
+  .header--nav-expanded & {
+    &[data-current^="current page"],
     &:hover,
     &:focus {
-      color: rgba($white, 0.75);
-    }
-  }
-
-  [data-current="aircasting"] & {
-    background-color: $blue;
-    color: $white;
-
-    &:hover,
-    &:focus {
-      color: rgba($white, 0.75);
-    }
-  }
-
-  [data-current="about"] & {
-    background-color: $white;
-    color: $teal;
-
-    &:hover,
-    &:focus {
-      color: rgba($teal, 0.75);
-    }
-  }
-
-  [data-current="faq"] & {
-    background-color: $white;
-    color: $green;
-
-    &:hover,
-    &:focus {
-      color: rgba($green, 0.75);
-    }
-  }
-
-  [data-current="blog"] & {
-    background-color: $white;
-    color: $blue;
-
-    &:hover,
-    &:focus {
-      color: rgba($blue, 0.75);
-    }
-  }
-
-  @media screen and (max-width: $tablet-max) {
-    .header--nav-expanded & {
-      background: none;
-      color: $white;
-
-      &:hover,
-      &:focus {
-        color: rgba($white, 0.55);
-      }
+      color: rgba($white, 0.55);
     }
   }
 }
@@ -230,93 +128,104 @@ $header-link-color-white: $white;
 
 .header__button {
   @include button-color(
-    $header-link-color-homepage,
-    $header-link-color-homepage,
-    $teal-light,
-    $header-link-color-homepage
+    $text-color: $header-link-color-gray,
+    $border-color: $header-link-color-gray,
+    $bg-color: $teal-light,
+    $bg-color-hover: $header-link-color-gray
   );
 
-  [data-current="airbeam"] &,
-  [data-current="donate"] & {
+  .header--nav-expanded .nav-sub > & {
     @include button-color(
-      $header-link-color-hm,
-      $header-link-color-hm,
-      $white,
-      $header-link-color-hm
+      $text-color: $header-link-color-white,
+      $border-color: $header-link-color-white,
+      $bg-color: none,
+      $bg-color-hover: $header-link-color-white,
+      $text-color-hover: $green
     );
   }
 
-  [data-current="aircasting"] & {
+  [data-current^="home"] & {
     @include button-color(
-      $header-link-color-ac,
-      $header-link-color-ac,
-      $white,
-      $header-link-color-ac
+      $text-color: $gray-dark,
+      $border-color: $cta-color,
+      $bg-color: $cta-color,
+      $bg-color-hover: rgba($cta-color, 0.75),
+      $text-color-hover: $gray-dark
     );
   }
 
-  [data-current="about"] & {
+  [data-current^="airbeam"] &,
+  [data-current^="donate"] & {
     @include button-color(
-      $header-link-color-white,
-      $header-link-color-white,
-      $teal,
-      $header-link-color-white
+      $text-color: $header-link-color-hm,
+      $border-color: $header-link-color-hm,
+      $bg-color: $white,
+      $bg-color-hover: $header-link-color-hm
     );
   }
 
-  [data-current="faq"] & {
+  [data-current^="aircasting"] & {
     @include button-color(
-      $header-link-color-white,
-      $header-link-color-white,
-      $green,
-      $header-link-color-white
+      $text-color: $header-link-color-ac,
+      $border-color: $header-link-color-ac,
+      $bg-color: $white,
+      $bg-color-hover: $header-link-color-ac
     );
   }
 
-  [data-current="blog"] & {
+  [data-current^="about"] & {
     @include button-color(
-      $header-link-color-white,
-      $header-link-color-white,
-      $blue,
-      $header-link-color-white
+      $text-color: $header-link-color-white,
+      $border-color: $header-link-color-white,
+      $bg-color: $teal,
+      $bg-color-hover: $header-link-color-white
+    );
+  }
+
+  [data-current^="faq"] & {
+    @include button-color(
+      $text-color: $header-link-color-white,
+      $border-color: $header-link-color-white,
+      $bg-color: $green,
+      $bg-color-hover: $header-link-color-white
+    );
+  }
+
+  [data-current^="blog"] & {
+    @include button-color(
+      $text-color: $header-link-color-white,
+      $border-color: $header-link-color-white,
+      $bg-color: $blue,
+      $bg-color-hover: $header-link-color-white
     );
   }
 
   .sticky & {
-    [data-current="about"] & {
-      @include button-color($teal, $teal, $header-link-color-white, $teal);
-      color: $teal;
+    [data-current^="about"] & {
+      @include button-color(
+        $text-color: $teal,
+        $border-color: $teal,
+        $bg-color: $header-link-color-white,
+        $bg-color-hover: $teal
+      );
     }
 
-    [data-current="blog"] & {
-      @include button-color($blue, $blue, $header-link-color-white, $blue);
+    [data-current^="blog"] & {
+      @include button-color(
+        $text-color: $blue,
+        $border-color: $blue,
+        $bg-color: $header-link-color-white,
+        $bg-color-hover: $blue
+      );
     }
 
-    [data-current="faq"] & {
-      @include button-color($green, $green, $header-link-color-white, $green);
-    }
-
-    [data-current="home"] & {
-      @include button-color($gray, $gray, $header-link-color-white, $gray);
-    }
-  }
-
-  @media screen and (max-width: $tablet-max) {
-    .header--nav-expanded & {
-      [data-current="about"] &,
-      [data-current="airbeam"] &,
-      [data-current="aircasting"] &,
-      [data-current="donate"] &,
-      [data-current="blog"] &,
-      [data-current="home"] &,
-      [data-current="faq"] & {
-        @include button-color(
-          $header-link-color-white,
-          $header-link-color-white,
-          $gray,
-          $header-link-color-white
-        );
-      }
+    [data-current^="faq"] & {
+      @include button-color(
+        $text-color: $green,
+        $border-color: $green,
+        $bg-color: $header-link-color-white,
+        $bg-color-hover: $green
+      );
     }
   }
 }
@@ -326,31 +235,31 @@ $header-link-color-white: $white;
 .icon-nav-open {
   stroke: $gray;
 
-  [data-current="airbeam"] &,
-  [data-current="donate"] & {
+  [data-current^="airbeam"] &,
+  [data-current^="donate"] & {
     stroke: $green;
   }
 
-  [data-current="faq"] &,
-  [data-current="about"] &,
-  [data-current="blog"] & {
+  [data-current^="faq"] &,
+  [data-current^="about"] &,
+  [data-current^="blog"] & {
     stroke: $white;
   }
 
-  [data-current="aircasting"] & {
+  [data-current^="aircasting"] & {
     stroke: $blue;
   }
 
   .sticky & {
-    [data-current="about"] & {
+    [data-current^="about"] & {
       stroke: $teal;
     }
 
-    [data-current="blog"] & {
+    [data-current^="blog"] & {
       stroke: $header-link-color-ac;
     }
 
-    [data-current="faq"] & {
+    [data-current^="faq"] & {
       stroke: $header-link-color-hm;
     }
   }
