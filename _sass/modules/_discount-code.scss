@@ -1,0 +1,17 @@
+.discount-code {
+  @include flexbox();
+  margin-bottom: $u-space-small;
+
+  &__input {
+    @include flex(0 0 50%);
+    border: 1px solid #818181;
+    border-right: 1px solid transparent;
+    font-size: $button-font-size;
+    padding: 0.2rem 0 0 0;
+    text-align: center;
+  }
+
+  &__button {
+    @include flex(1 0 35%);
+  }
+}

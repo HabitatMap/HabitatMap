@@ -12,6 +12,15 @@ body {
   line-height: 1.2;
 }
 
+.heading--conversion {
+  font-weight: 400;
+  font-size: 2.25rem;
+
+  @media screen and (min-width: $tablet-min) {
+    font-size: $base-font-size4;
+  }
+}
+
 .heading--large {
   font-size: $base-font-size3;
 
@@ -38,7 +47,13 @@ body {
   margin-bottom: 1rem;
 }
 
-.heading--capitilized {
+.heading--hero {
+  @media screen and (min-width: $tablet-min) and (max-width: $tablet-max) {
+    font-size: 2.25rem;
+  }
+}
+
+.heading--uppercase {
   font-size: $base-font-size-1;
   margin-bottom: $u-space-small;
   text-transform: uppercase;
@@ -72,6 +87,17 @@ p {
 
 .p--body {
   margin-bottom: $u-space-default;
+}
+
+.p--hero {
+  font-family: $body-font;
+  font-size: $base-font-size1;
+  margin-top: $u-space-small;
+
+  @media screen and (min-width: $small-desktop-min) {
+    font-size: $base-font-size2;
+    padding-right: $u-space-small;
+  }
 }
 
 .p--large {
@@ -110,24 +136,24 @@ a,
   color: $link-color;
 
   .post-list__item & {
-    [data-current="about"] & {
+    [data-current^="about"] & {
       color: $teal;
     }
 
-    [data-current="airbeam"] &,
-    [data-current="donate"] & {
+    [data-current^="airbeam"] &,
+    [data-current^="donate"] & {
       color: $green;
     }
   }
 
   .p--body &,
   .post-nav & {
-    [data-current="about"] & {
+    [data-current^="about"] & {
       color: $teal;
     }
 
-    [data-current="airbeam"] &,
-    [data-current="donate"] & {
+    [data-current^="airbeam"] &,
+    [data-current^="donate"] & {
       color: $green;
     }
   }
@@ -143,4 +169,8 @@ a,
   &:hover {
     color: $white;
   }
+}
+
+.link--underlined {
+  text-decoration: underline;
 }

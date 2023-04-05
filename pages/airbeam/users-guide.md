@@ -32,6 +32,7 @@ image: /assets/img/about-airbeam-01.jpg
     <li class="contents-list__item"><a href="#specification">Hardware Specifications</a></li>
     <li class="contents-list__item"><a href="#about">About AirBeam3</a></li>
     <li class="contents-list__item"><a href="#videos">AirBeam3 Instructional Videos</a></li>
+    <li class="contents-list__item"><a href="#weather-resistant">Weather Resistant</a></li>
     <li class="contents-list__item"><a href="#power">Power</a></li>
     <li class="contents-list__item"><a href="#power-on-off">Power On/Off</a></li>
     <li class="contents-list__item"><a href="#intake">Intake & Exhaust</a></li>
@@ -86,6 +87,16 @@ image: /assets/img/about-airbeam-01.jpg
     <br />
     <iframe width="700" height="394" src="https://www.youtube.com/embed/svGQDWFl_KU?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <iframe width="700" height="394" src="https://www.youtube.com/embed/xJnMy77KPQQ?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </p>
+
+  <a id="weather-resistant" class="anchor">
+  </a>
+  <h2 class="heading heading--small heading--body">
+    Weather Resistant
+  </h2>
+
+  <p class="p--body">
+    AirBeam3 is weather resistant not weatherproof. When used outdoors, care should be taken to protect AirBeam3 from direct exposure to rain, for instance, by hanging it under an eave.
   </p>
 
   <a id="power" class="anchor">
@@ -262,7 +273,7 @@ image: /assets/img/about-airbeam-01.jpg
     To develop the AirBeam3 calibration equation for PM1, we first reverted the AirBeam2s PM1 calibrations to get back to the sensor manufacturer’s default “ambient” PM1 measurements. Next, we fit the AirBeam2s default PM1 measurements against the GRIMM PM1 values by fitting a piecewise linear regression model at breakpoints (identified using ‘segmented’ package in R) to generate the AirBeam3 PM1 calibration equation. After doing this, the newly fitted AirBeam2 PM1 values show highly linear agreement with GRIMM PM1 values; see below figures illustrating the fit before and after. (Note, in the figures below, the red line is the piecewise regression, and the dotted black lines depict a line with slope=1.)
   </p>
 
-  <img
+<img
     class="p--body lazyload"
     data-src="/assets/img/pages/users-guide/NYUSOM_CAPS1.jpg?nf-resize=fit&w=1200"
     src="/assets/img/pages/users-guide/NYUSOM_CAPS1.jpg?nf-resize=fit&w=20"
@@ -273,7 +284,7 @@ image: /assets/img/about-airbeam-01.jpg
     Next, we fit the newly calibrated PM1 measurements from AirBeam2 against the GRIMM PM2.5 measurements (again using a piecewise linear regression model) to generate the AirBeam3 PM2.5 calibration equation. We used the newly fit AirBeam2 PM1 calibration to fit the PM2.5 model since it performed better than using the AirBeam2 PM2.5 measurements. The newly fitted AirBeam2 PM2.5 values show highly linear agreement with GRIMM PM2.5 values; see below figures illustrating the fit before and after.
   </p>
 
-  <img
+<img
     class="p--body lazyload"
     data-src="/assets/img/pages/users-guide/NYUSOM_CAPS2.jpg?nf-resize=fit&w=1200"
     src="/assets/img/pages/users-guide/NYUSOM_CAPS2.jpg?nf-resize=fit&w=20"

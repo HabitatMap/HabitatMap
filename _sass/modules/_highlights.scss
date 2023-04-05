@@ -1,0 +1,7 @@
+.highlights {
+  gap: $u-space-small;
+
+  &__item {
+    @include flex(0 0 45%);
+  }
+}

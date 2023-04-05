@@ -3,7 +3,7 @@
     {% assign news_quotes = include.news_quotes | sample: 20 %}
     {% for news_quote in news_quotes %}
       <a href="{{ news_quote.link }}" target="_blank">
-        <div class="slide">
+        <div class="slide quote">
           <p class="heading u--capitalized quote__heading">
             From {{ news_quote.publication }}:
           </p>

@@ -8,6 +8,10 @@
   color: $ac-brand;
 }
 
+.u--accent-cyan {
+  color: $cyan;
+}
+
 .u--align-center {
   text-align: center;
 }
@@ -76,6 +80,10 @@
   color: $gray;
 }
 
+.u--margin-bottom-tiny {
+  margin-bottom: $u-space-tiny;
+}
+
 .u--margin-top-default {
   margin-top: $u-space-small;
 
@@ -104,6 +112,10 @@
   font-size: $base-font-size-2;
 }
 
+.u--hidden {
+  display: none;
+}
+
 .u--visually-hidden {
   position: absolute;
   height: 1px;
@@ -117,13 +129,25 @@
 
 .u--mobile-hidden {
   @media screen and (max-width: $large-mobile-max) {
-    display: none;
+    display: none !important;
   }
 }
 
-.u--tablet-hidden {
+.u--tablet-min-hidden {
   @media screen and (min-width: $tablet-min) {
-    display: none;
+    display: none !important;
+  }
+}
+
+.u--tablet-max-hidden {
+  @media screen and (max-width: $tablet-max) {
+    display: none !important;
+  }
+}
+
+.u--desktop-hidden {
+  @media screen and (min-width: $small-desktop-min) {
+    display: none !important;
   }
 }
 
