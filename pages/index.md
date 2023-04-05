@@ -10,14 +10,16 @@ image: /assets/img/pages/home/airbeam.jpg
     <h1 class="heading heading--large heading--hero">
       Know&nbsp;What&nbsp;is Really in&nbsp;Your&nbsp;Air
     </h1>
-    <p class="p--hero">
+      <p class="p--hero">
       Portable&nbsp;Realtime Air&nbsp;Quality Visualization&nbsp;Tools&nbsp;for
-      <span class="rotating-text">
-        <b class="rotating-text__word">Researchers</b>
-        <b class="rotating-text__word">Educators</b>
-        <b class="rotating-text__word">Community Organizers</b>
-      </span>
-    </p>
+      </p>
+      <div class="flipping-text">
+        <ul class="flipping-text__list">
+          <li class="flipping-text__list__item">Researchers</li>
+          <li class="flipping-text__list__item">Educators</li>
+          <li class="flipping-text__list__item">Community Organizers</li>
+        </ul>
+      </div>
     <br>
     <button class="button button--cta js--open-get-started-modal">Get started</button>
   </div>
