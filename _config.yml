@@ -36,6 +36,7 @@ facebook:
   publisher: https://www.facebook.com/HabitatMap
 
 google_tag_manager: GTM-T948MNX
+google_tag_manager2: AW-977819281
 
 plugins:
   - jekyll-feed
