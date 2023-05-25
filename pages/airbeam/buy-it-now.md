@@ -29,7 +29,7 @@ image: /assets/img/airbeam-buy-it-now.jpg
         {% include checkout-button.html %}
       </div>
       <a href="/airbeam/get-consultation" class="shop-airbeam__get-consult-button button button--secondary">
-        CONTACT FOR BULK ORDERS
+        HAVE QUESTIONS?
       </a>
     </div>
     <div class="split--50 u--align-right">
