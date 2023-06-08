@@ -1,13 +1,13 @@
 ---
 layout: page
 title: Your $10 off is active!
-permalink: /airbeam/save-10-now/discount-code
+permalink: /airbeam/save-now/discount-code
 section: airbeam
-image: /assets/img/pages/save-10-now/marcin-jozwiak-T-eDxGcn-Ok-unsplash.jpg
+image: /assets/img/pages/save-now/marcin-jozwiak-T-eDxGcn-Ok-unsplash.jpg
 ---
 
-<div class="conversion-form save-10">
-  <div class="conversion-form__container save-10__container">
+<div class="conversion-form save-now">
+  <div class="conversion-form__container save-now__container">
     <h1 class="conversion-form__heading heading heading--conversion">Your $10 off is active!</h1>
     <p class="conversion-form__paragraph">Add this coupon to your cart. Limit one per customer.</p>
     <div class="discount-code">
