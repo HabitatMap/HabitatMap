@@ -22,7 +22,7 @@ const handler = async (event) => {
         'email': 'info@habitatmap.org',
         'name': 'HabitatMap'
       },
-      'template_id': 'd-474ee09b56e449428bf83e0759bac91c'
+      'template_id': 'd-6564f57665a8401e922df6629ec32272'
     };
 
     try {
