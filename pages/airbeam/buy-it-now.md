@@ -22,7 +22,7 @@ image: /assets/img/airbeam-buy-it-now.jpg
       <p class="p--body">
         Price: $249
         <br>
-        <small class="u--tiny-text">AirBeam3 is in stock, but our checkout is broken. Please email info@habitatmap.org to place your order. Shipping costs will be calculated at checkout.</small>
+        <small class="u--tiny-text">AirBeam3 is in stock, but our checkout is broken. Please email info@habitatmap.org to place your order.</small>
       </p>
       <div class="shop-airbeam__buy-button">
         {% include checkout-button.html %}
