@@ -20,25 +20,6 @@ image: /assets/img/airbeam-buy-it-now.jpg
     <div class="split--50 split--padding-right split--order-secondary">
       <h1 class="heading heading--medium u--accent-cyan">Buy Now!</h1>
       <h2 class="heading heading--small u--margin-bottom-tiny">AirBeam3</h2>
- </p>
-      <label class="label" for="quantity">Quantity</label>
-      <input class="input input--quantity" type="number"  min="1" value="1" name="quantity">
-      <p class="heading heading--small shop-airbeam__price">Total: $249</p>
-      <p class="caption shop-airbeam__caption">
-        Shipping costs will be calculated at checkout.
-      </p>
-      <a href="/airbeam/buy-it-now" class="badge-link badge-link--hm">
-        <span class="u--vertically-centered">Check Out <br /> with PayPal</span>
-      </a>
-    </div>
-    <div class="split--50 u--align-right">
-      <img
-        class="img img--alternate-small"
-        src="{{ site.produrl | append: "/assets/img/about-habitatmap-02.jpg" }}"
-        alt="Airbeam"
-      />
-    </div>
-      
       <p class="p--body">
         Price: $249
         <br>
