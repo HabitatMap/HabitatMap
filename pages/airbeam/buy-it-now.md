@@ -15,17 +15,6 @@ image: /assets/img/airbeam-buy-it-now.jpg
       AirBeam is a low-cost, palm-sized air quality instrument that measures hyperlocal concentrations of harmful microscopic particles in the air, known as particulate matter, as well as humidity and temperature.
     </p>
   </div>
-
-  <label class="label" for="quantity">Quantity</label>
-      <input class="input input--quantity" type="number"  min="1" value="1" name="quantity">
-      <p class="heading heading--small shop-airbeam__price">Total: $249</p>
-      <p class="caption shop-airbeam__caption">
-        Shipping costs will be calculated at checkout.
-      </p>
-      <a href="/airbeam/buy-it-now" class="badge-link badge-link--hm">
-        <span class="u--vertically-centered">Check Out <br /> with PayPal</span>
-      </a>
-
   <div class="shop-airbeam__action-panel panel arc-background arc-background--right-teal-light">
     <div class="split--50 split--padding-right split--order-secondary">
       <h1 class="heading heading--medium u--accent-cyan">Buy Now!</h1>
