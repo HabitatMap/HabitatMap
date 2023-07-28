@@ -26,7 +26,7 @@ image: /assets/img/airbeam-buy-it-now.jpg
 </small>
       </p>
       <div class="shop-airbeam__buy-button">
-        {% include checkout-button.html %}
+        {% include stripe-button.html %}
       </div>
       <a href="/airbeam/get-consultation" class="shop-airbeam__get-consult-button button button--secondary">
         HAVE QUESTIONS?
