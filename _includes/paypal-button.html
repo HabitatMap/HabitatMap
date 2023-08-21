@@ -1,0 +1,106 @@
+
+<script src="https://www.paypal.com/sdk/js?client-id=AU7621qddj4yLzUySUUbk0XDBNZH04GScHgtABUPnY-C1eVyl9mZu3CSoMY8FgNIf8G68qjCAFrp6Fu3&currency=USD"></script>
+<!-- Set up a container element for the button -->
+<div id="paypal-button-container"></div>
+<script>
+  paypal.Buttons({
+    createOrder: async (data, actions) => {
+      const quantity = document.querySelector("#quantity")?.value;
+      const shippingOption = document.querySelector("#shipping-options")?.value;
+
+      const response = await fetch("/.netlify/functions/paypal", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          action: "create",
+          cart: [
+            {
+              sku: "psc",
+              quantity: quantity,
+              shippingOption: shippingOption
+            },
+          ]
+        })
+      });
+
+      const details = await response.json();
+      return details.id;
+    },
+
+    onApprove: async (data, actions) => {
+      const response = await fetch("/.netlify/functions/paypal", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          action: "capture",
+          orderID: data.orderID,
+        })
+      });
+
+      const orderData = await response.json();
+      const error = Array.isArray(orderData.details) && orderData.details[0];
+
+      const notificationContainer = document.getElementById("notification");
+
+      if (error) {
+        const msg = `Sorry, your transaction could not be processed. ${error?.description} (${orderData?.debug_id})`;
+        if (notificationContainer) {
+          notificationContainer.classList.add("notification-text--error");
+
+          let title = document.createElement('div');
+          title.className = "notification-title";
+          title.textContent = "Something went wrong!";
+
+          let content = document.createElement('div');
+          content.className = "notification-content";
+          content.textContent = msg;
+
+          notificationContainer.append(title, content);
+          notificationContainer.classList.add("notification-text--visible");
+
+          setTimeout(() => {
+            notificationContainer.classList.remove("notification-text--visible");
+            notificationContainer.classList.remove("notification-text--error");
+
+            while (notificationContainer.firstChild) {
+              notificationContainer.removeChild(notificationContainer.firstChild);
+            }
+          }, 10000)
+        }
+      } else {
+        const transaction = orderData.purchase_units[0].payments.captures[0];
+
+        if (notificationContainer) {
+          notificationContainer.classList.add("notification-text--success");
+          let title = document.createElement('div');
+          title.className = "notification-title";
+          title.textContent = "Success!";
+
+          let content = document.createElement('div');
+          content.className = "notification-content";
+          content.textContent = `Your transaction #${transaction.id} was completed. Thank you for your purchase!`;
+
+          notificationContainer.append(title, content);
+          notificationContainer.classList.add("notification-text--visible");
+
+          setTimeout(() => {
+            notificationContainer.classList.remove("notification-text--visible");
+            notificationContainer.classList.remove("notification-text--success");
+
+            while (notificationContainer.firstChild) {
+              notificationContainer.removeChild(notificationContainer.firstChild);
+            }
+          }, 10000)
+        }
+      }
+    },
+
+    onError: async (data, actions) => {
+      console.log('onError', data);
+    }
+  }).render('#paypal-button-container');
+</script>

@@ -1,6 +1,6 @@
-.split--50 {
+.split--65 {
   @media screen and (min-width: $tablet-min) {
-    @include flex(0 0 50%);
+    @include flex(0 0 65%);
   }
 }
 
@@ -10,9 +10,21 @@
   }
 }
 
+.split--50 {
+  @media screen and (min-width: $tablet-min) {
+    @include flex(0 0 50%);
+  }
+}
+
 .split--40 {
   @media screen and (min-width: $tablet-min) {
     @include flex(0 0 40%);
+  }
+}
+
+.split--30 {
+  @media screen and (min-width: $tablet-min) {
+    @include flex(0 0 30%);
   }
 }
 
