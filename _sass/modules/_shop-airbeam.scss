@@ -40,16 +40,6 @@
     }
   }
 
-  &__buy-button {
-    margin: $u-space-default 0 $u-space-small -22px;
-  }
-
-  &__get-consult-button {
-    width: 235px;
-    font-size: 13px;
-    line-height: 25px;
-  }
-
   &__action-panel {
 
     @media screen and (min-width: $tablet-min) {
@@ -88,4 +78,71 @@
   &__item {
     @include flex(0 0 45%);
   }
+}
+
+.order-details-container {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+.quantity-input {
+  margin: 10px 0;
+  max-width: 50px;
+}
+
+.shipping-info {
+  margin: 10px 0;
+}
+
+.notification-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  margin-top: 10px;
+  z-index: 1000;
+}
+
+.notification-text {
+  padding: 15px 30px;
+  border-radius: 3px;
+  visibility: hidden;
+  width: 70vw;
+}
+
+.notification-text--visible {
+  visibility: visible;
+}
+
+.notification-text--success {
+  background-color: $green-light;
+  color: $green;
+}
+
+.notification-text--error {
+  background-color: $red-light;
+  color: $red;
+}
+
+.notification-title {
+  font-size: 18px;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+
+
+.get-consult-button {
+  font-size: 13px;
+  line-height: 25px;
+}
+
+.get-consult-button, .shop-airbeam__buy-button {
+  width: 100%;
+}
+
+.shop-airbeam-image {
+  height: 100%;
+  object-fit: cover;
 }

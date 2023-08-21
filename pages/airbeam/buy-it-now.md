@@ -7,6 +7,9 @@ image: /assets/img/airbeam-buy-it-now.jpg
 ---
 
 <section class="shop-airbeam">
+  <div class="notification-container">
+    <div class="notification-text" id="notification"></div>
+  </div>
   <div class="panel panel--leading-text">
     <h1 class="shop-airbeam__heading heading heading--large u--accent-cyan">
       Buy the Best! Results are in: AirBeam3 Found to be the Most Accurate and Versatile Portable Air Quality Monitor*
@@ -16,30 +19,40 @@ image: /assets/img/airbeam-buy-it-now.jpg
     </p>
   </div>
   <div class="shop-airbeam__action-panel panel arc-background arc-background--right-teal-light">
-    <div class="split--50 split--padding-right split--order-secondary">
+    <div class="split--30 split--order-secondary">
       <h1 class="heading heading--medium u--accent-cyan">Buy Now!</h1>
       <h2 class="heading heading--small u--margin-bottom-tiny">AirBeam3</h2>
-      <p class="p--body">
-        Price: $249
-        <br>
-        <small class="u--tiny-text">Shipping costs will be calculated at checkout.
-</small>
-      </p>
-      <div class="shop-airbeam__buy-button">
-        {% include checkout-button.html %}
+      <div class="order-details-container">
+        <span>Price per unit: $249</span>
+        <div>
+          <label for="quantity">Quantity:</label>
+          <input class="quantity-input" id="quantity" type="number" min='1' value='1'>
+        </div>
+        <div class="shipping-options-container">
+          <label for="shipping-options">Shipping:</label>
+          <select name="shipping-options" id="shipping-options">
+            <option value="domestic">Domestic US</option>
+            <option value="international">Outside the US</option>
+          </select>
+        </div>
+        <small class="u--tiny-text shipping-info">Shipping costs will be calculated at checkout.</small>
       </div>
-      <a href="/airbeam/get-consultation" class="shop-airbeam__get-consult-button button button--secondary">
+      <div class="shop-airbeam__buy-button">
+        {% include paypal-button.html %}
+      </div>
+      <a href="/airbeam/get-consultation" class="get-consult-button button button--secondary">
         HAVE QUESTIONS?
       </a>
     </div>
-    <div class="split--50 u--align-right">
+    <div class="split--65 u--align-right">
       <img
         alt="Airbeam"
-        class="img lazyload"
+        class="img lazyload shop-airbeam-image"
         data-src="/assets/img/airbeam-buy-it-now.jpg?nf_resize=fit&w=750"
         src="/assets/img/airbeam-buy-it-now.jpg?nf_resize=fit&w=20"
       />
     </div>
+
   </div>
 
   <hr class="panel-separator">
