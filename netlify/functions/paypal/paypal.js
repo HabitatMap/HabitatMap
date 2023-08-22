@@ -96,10 +96,7 @@ const createOrder = async (quantity, shippingOption) => {
 
   const data = await response.json();
 
-  console.log("createOrder BE", data);
-
   return { statusCode: response.status, body: JSON.stringify(data) };
-
 }
 
 const capturePayment = async (orderID) => {
@@ -115,9 +112,6 @@ const capturePayment = async (orderID) => {
   })
 
   const data = await response.json();
-
-  console.log("capturePayment BE status", response.status);
-  console.log("capturePayment BE", data);
 
   return { statusCode: response.status, body: JSON.stringify(data) };
 };
@@ -139,15 +133,6 @@ const handler = async (req) => {
   }
 };
 
-async function handleResponse(response) {
-  if (response.status === 200 || response.status === 201) {
-    return response;
-  }
-
-  const errorMessage = await response.text();
-  throw new Error(errorMessage);
-}
-
 const calculateDiscountValue = (quantity,totalItemValue) => {
   if (quantity >= 10 && quantity < 20) {
     return totalItemValue * 0.03;
@@ -161,7 +146,6 @@ const calculateDiscountValue = (quantity,totalItemValue) => {
   else {
     return 0;
   }
-
 }
 
 const calculateShippingCosts = (quantity, shippingOption) => {
@@ -178,7 +162,6 @@ const calculateShippingCosts = (quantity, shippingOption) => {
   }
 
   if (quantity == 1) {
-    console.log("here");
     return firstUnitPrice;
   }
   else if (quantity >= 2) {
