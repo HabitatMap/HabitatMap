@@ -14,7 +14,7 @@ section: privacy
 <section class="panel panel--column">
   
   <p class="p--body">
-You can delete your AirCasting app account at any time using the AirCasting app in app delete account feature or by emailing info@habitatmap.org with your profile name and the associated email address.  When you delete your account, all data associated with your account will also be permanently deleted.
+You can delete your AirCasting app account at any time using the AirCasting app in app delete account feature or by emailing info@habitatmap.org with your profile name and the associated email address.  When you delete your account, all data associated with your account will also be permanently and immediately deleted.
   </p>
 
  <p class="p--body">
