@@ -15,7 +15,9 @@ section: privacy
   
   <p class="p--body">
 You can delete your AirCasting app account at any time using the AirCasting app in app delete account feature or by emailing info@habitatmap.org with your profile name and the associated email address.  When you delete your account, all data associated with your account will also be permanently deleted.
+  </p>
 
+ <p class="p--body">
 HabitatMap protects the personal data of AirCasting mobile application users, and fulfills conditions deriving from the law, especially from the Regulation (EU) 2016/679 of the  European Parliament and of the Council of 27 April 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (GDPR). HabitatMap protects the security of the data of AirCasting app users using appropriate technical, logistical, administrative, and physical protection measures. AirCasting ensures that its employees and contractors are given training in protection of personal data.
   </p>
 
