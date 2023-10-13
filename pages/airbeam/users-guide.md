@@ -73,7 +73,7 @@ image: /assets/img/about-airbeam-01.jpg
   </h2>
 
   <p class="p--body">
-    <a href="/airbeam">AirBeam3</a> is a palm-sized air quality instrument weighing six ounces that measures PM1, PM2.5, PM10, temperature, and relative humidity. Its weather resistant enclosure makes it suitable for indoor or outdoor use. It can communicate via BLE, WiFi, or cellular 4G and can be used as a stationary or mobile monitor. Users can map and graph the measurements from AirBeam3 in real-time using an <a href='https://play.google.com/store/apps/details?id=pl.llp.aircasting&%3Cli%3Ehl=en&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>Android</a> or <a href='https://apps.apple.com/us/app/aircasting/id1587685281#?platform=iphone'>iOS</a> device or the <a href='http://aircasting.habitatmap.org/fixed_map'>AirCasting website</a>. AirBeam3 includes an onboard GPS, real-time clock, SD card, and battery so after configuration it can operate in standalone mode, i.e. without the need for any additional hardware, such as a smartphone. The performance of the predecessors to the AirBeam3, AirBeam1 & 2, were both positively evaluated by South Coast Air Quality Management Districts’s AQ-SPEC program and testing to date indicates AirBeam3's performance exceeds that of its predecessors. AirBeam3 is open-source as is the AirCasting platform software.
+    <a href="/airbeam">AirBeam3</a> is a palm-sized air quality instrument weighing six ounces that measures PM1, PM2.5, PM10, temperature, and relative humidity. Its weather resistant enclosure makes it suitable for indoor or outdoor use. It can communicate via BLE, WiFi, or cellular 4G and can be used as a stationary or mobile monitor. Users can map and graph the measurements from AirBeam3 in real-time using an <a href='https://play.google.com/store/apps/details?id=pl.llp.aircasting&%3Cli%3Ehl=en&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>Android</a> or <a href='https://apps.apple.com/us/app/aircasting/id1587685281#?platform=iphone'>iOS</a> device or the <a href='http://aircasting.habitatmap.org/fixed_map'>AirCasting website</a>. AirBeam3 includes an onboard GPS, real-time clock, SD card, and battery so after configuration it can operate in standalone mode, i.e. without the need for any additional hardware, such as a smartphone. AirBeam3 is the most accurate and versatile portable air quality monitor on the market. Of the 75 PM2.5 measuring instruments evaluated by the <a href="http://www.aqmd.gov/aq-spec/sensordetail/habitatmap---airbeam3">SCAQMD AQ-SPEC program</a>, AirBeam3 is the most accurate when both the field and lab evaluations are considered. AirBeam3 is open-source as is the AirCasting platform software.
   </p>
 
   <a id="videos" class="anchor">
@@ -96,7 +96,7 @@ image: /assets/img/about-airbeam-01.jpg
   </h2>
 
   <p class="p--body">
-    AirBeam3 is weather resistant not weatherproof. When used outdoors, care should be taken to protect AirBeam3 from direct exposure to rain, for instance, by hanging it under an eave.
+    AirBeam3 is weather resistant not weatherproof. When used outdoors, care should be taken to protect AirBeam3 from direct exposure to rain, for instance, by hanging it under an eave. In addition, when temperatures exceed 100 degrees Fahrenheit, AirBeam3 should be shaded to prevent damage to the battery.
   </p>
 
   <a id="power" class="anchor">
