@@ -106,7 +106,7 @@ image: /assets/img/about-airbeam-01.jpg
   </h2>
 
   <p class="p--body">
-    AirBeam3 has a 3350 mAh 3.7V rechargeable lithium battery that when fully charged can power the instrument for approximately 17 hours in Mobile mode and 24 hours in Fixed-WiFi mode . The battery charges via the USB-C Port, which can also be used to power the AirBeam3 directly. The Battery Charging Indicator turns solid green when the AirBeam3 is charging and turns off when the AirBeam3 is either fully charged or unplugged.
+    AirBeam3 has a 3350 mAh 3.7V rechargeable lithium battery that when fully charged can power the instrument for approximately 17 hours in Mobile mode and 24 hours in Fixed-WiFi mode. The battery charges via the USB-C Port, which can also be used to power the AirBeam3 directly. The Battery Charging Indicator turns solid green when the AirBeam3 is charging and turns off when the AirBeam3 is either fully charged or unplugged.
   </p>
 
   <a id="power-on-off" class="anchor">
