@@ -37,7 +37,6 @@ const createOrder = async (quantity, shippingOption, coupon) => {
   const couponDicount = calculateCouponDiscount(coupon);
   console.log("coupon discount", couponDicount);
 
-
   const url = `${PAYPAL_API_URL}/v2/checkout/orders`;
   const itemTotalValue = quantity * UNIT_PRICE;
   const shippingCosts = calculateShippingCosts(quantity, shippingOption);
@@ -128,8 +127,8 @@ const handler = async (req) => {
 
   if (action === "create") {
     const { cart } = JSON.parse(req.body);
-    const { quantity, shippingOption } = cart[0];
-    return await createOrder(quantity, shippingOption);
+    const { quantity, shippingOption, coupon } = cart[0];
+    return await createOrder(quantity, shippingOption, coupon);
   }
   else if (action === "capture") {
     const { orderID } = JSON.parse(req.body);
