@@ -2,8 +2,7 @@
 const process = require('process');
 const fetch = require('node-fetch')
 
-const { PAYPAL_CLIENT_ID, PAYPAL_APP_SECRET } = process.env;
-const PAYPAL_API_URL = "https://api-m.paypal.com";
+const { PAYPAL_CLIENT_ID, PAYPAL_APP_SECRET, PAYPAL_API_URL } = process.env;
 const UNIT_PRICE = 249;
 
 const generateAccessToken = async () => {
