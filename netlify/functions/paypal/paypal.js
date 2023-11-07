@@ -30,6 +30,7 @@ const generateAccessToken = async () => {
 
 const createOrder = async (quantity, shippingOption) => {
   const accessToken = await generateAccessToken();
+  console.log("Test");
 
   const url = `${PAYPAL_API_URL}/v2/checkout/orders`;
   const itemTotalValue = quantity * UNIT_PRICE;
