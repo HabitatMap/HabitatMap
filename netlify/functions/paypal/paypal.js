@@ -138,7 +138,7 @@ const handler = async (req) => {
 
 const calculateCouponDiscount = (coupon) => {
   try {
-    return coupon == COUPON_CODE ? COUPON_DISCOUNT_AMOUNT : 0;
+    return coupon.trim() == COUPON_CODE ? COUPON_DISCOUNT_AMOUNT : 0;
   } catch(e) {
     console.log("Error calculating coupon discount.")
   }
