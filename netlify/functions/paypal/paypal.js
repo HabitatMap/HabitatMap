@@ -31,14 +31,11 @@ const generateAccessToken = async () => {
 };
 
 const createOrder = async (quantity, shippingOption, coupon) => {
-  const accessToken = await generateAccessToken();
-  console.log("coupon", coupon);
-
-  const couponDicount = calculateCouponDiscount(coupon);
-  console.log("coupon discount", couponDicount);
-
   const url = `${PAYPAL_API_URL}/v2/checkout/orders`;
+  const accessToken = await generateAccessToken();
+
   const itemTotalValue = quantity * UNIT_PRICE;
+  const couponDicount = calculateCouponDiscount(coupon);
   const shippingCosts = calculateShippingCosts(quantity, shippingOption);
   const discountValue = calculateDiscountValue(quantity, itemTotalValue) + couponDicount;
   const totalValue = itemTotalValue + shippingCosts - discountValue;
@@ -139,7 +136,15 @@ const handler = async (req) => {
   }
 };
 
-const calculateDiscountValue = (quantity,totalItemValue) => {
+const calculateCouponDiscount = (coupon) => {
+  try {
+    return coupon == COUPON_CODE ? COUPON_DISCOUNT_AMOUNT : 0;
+  } catch(e) {
+    console.log("Error calculating coupon discount.")
+  }
+};
+
+const calculateDiscountValue = (quantity, totalItemValue) => {
   if (quantity >= 10 && quantity < 20) {
     return totalItemValue * 0.03;
   }
@@ -153,14 +158,6 @@ const calculateDiscountValue = (quantity,totalItemValue) => {
     return 0;
   }
 }
-
-const calculateCouponDiscount = (coupon) => {
-  try {
-    return coupon == COUPON_CODE ? COUPON_DISCOUNT_AMOUNT : 0;
-} catch(e) {
-  console.log("Error calculating coupon discount.")
-}
-};
 
 const calculateShippingCosts = (quantity, shippingOption) => {
   var firstUnitPrice;
