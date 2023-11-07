@@ -4,6 +4,9 @@ const fetch = require('node-fetch')
 
 const { PAYPAL_CLIENT_ID, PAYPAL_APP_SECRET, PAYPAL_API_URL } = process.env;
 const UNIT_PRICE = 249;
+const COUPON_CODE = "survey-supporter-2023";
+const COUPON_DISCOUNT_AMOUNT = 20.00;
+
 
 const generateAccessToken = async () => {
   try {
@@ -27,14 +30,18 @@ const generateAccessToken = async () => {
   }
 };
 
-const createOrder = async (quantity, shippingOption) => {
+const createOrder = async (quantity, shippingOption, coupon) => {
   const accessToken = await generateAccessToken();
-  console.log("Test");
+  console.log("coupon", coupon);
+
+  const couponDicount = calculateCouponDiscount(coupon);
+  console.log("coupon discount", couponDicount);
+
 
   const url = `${PAYPAL_API_URL}/v2/checkout/orders`;
   const itemTotalValue = quantity * UNIT_PRICE;
   const shippingCosts = calculateShippingCosts(quantity, shippingOption);
-  const discountValue = calculateDiscountValue(quantity, itemTotalValue);
+  const discountValue = calculateDiscountValue(quantity, itemTotalValue) + couponDicount;
   const totalValue = itemTotalValue + shippingCosts - discountValue;
 
   const body = JSON.stringify({
@@ -147,6 +154,14 @@ const calculateDiscountValue = (quantity,totalItemValue) => {
     return 0;
   }
 }
+
+const calculateCouponDiscount = (coupon) => {
+  try {
+    return coupon == COUPON_CODE ? COUPON_DISCOUNT_AMOUNT : 0;
+} catch(e) {
+  console.log("Error calculating coupon discount.")
+}
+};
 
 const calculateShippingCosts = (quantity, shippingOption) => {
   var firstUnitPrice;
