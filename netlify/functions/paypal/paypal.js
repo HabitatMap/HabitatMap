@@ -4,8 +4,8 @@ const fetch = require('node-fetch')
 
 const { PAYPAL_CLIENT_ID, PAYPAL_APP_SECRET, PAYPAL_API_URL } = process.env;
 const UNIT_PRICE = 249;
-const COUPON_CODE = "survey-supporter-2023";
-const COUPON_DISCOUNT_AMOUNT = 20.00;
+const COUPON_CODE = "SAVE100";
+const COUPON_DISCOUNT_AMOUNT = 100.00;
 
 
 const generateAccessToken = async () => {
