@@ -7,7 +7,6 @@ const UNIT_PRICE = 249;
 const COUPON_CODE = "SAVE100";
 const COUPON_DISCOUNT_AMOUNT = 100.00;
 
-
 const generateAccessToken = async () => {
   try {
       const auth = Buffer.from(PAYPAL_CLIENT_ID + ":" + PAYPAL_APP_SECRET).toString("base64");
