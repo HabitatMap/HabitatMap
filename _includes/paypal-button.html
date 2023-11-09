@@ -7,6 +7,7 @@
     createOrder: async (data, actions) => {
       const quantity = document.querySelector("#quantity")?.value;
       const shippingOption = document.querySelector("#shipping-options")?.value;
+      const coupon = document.querySelector("#coupon")?.value;
 
       const response = await fetch("/.netlify/functions/paypal", {
         method: "POST",
@@ -18,8 +19,9 @@
           cart: [
             {
               sku: "psc",
-              quantity: quantity,
-              shippingOption: shippingOption
+              quantity,
+              shippingOption,
+              coupon,
             },
           ]
         })
