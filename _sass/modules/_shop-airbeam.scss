@@ -93,6 +93,7 @@
 
 .shipping-info {
   margin: 10px 0;
+  width: 100%;
 }
 
 .notification-container {
@@ -144,4 +145,21 @@
 
 .shop-airbeam-image {
   object-fit: cover;
+}
+
+.coupon-container {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+
+  @media screen and (min-width: $large-mobile-min) {
+    flex-direction: row;
+  }
+}
+
+.coupon-input {
+  @media screen and (min-width: $large-mobile-min) {
+    margin-left: 5px;
+    flex-direction: row;
+  }
 }
