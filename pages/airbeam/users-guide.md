@@ -117,7 +117,7 @@ image: /assets/img/about-airbeam-01.jpg
   </h2>
 
   <p class="p--body">
-    AirBeam3 contains a lithium battery. Exposure of the AirBeam 3 to extreme heat will degrade the batteries performance and could lead to overheating and fire.  If the battery gives off an odor, generates heat, becomes discolored or deformed, or in any way appears abnormal, remove it from the AirBeam3 enclosure and place it in a contained vessel, such as a metal box.
+    AirBeam3 contains a lithium battery. Exposing AirBeam 3 to extreme heat will degrade the batteries performance and could lead to overheating and fire.  If the battery gives off an odor, generates heat, becomes discolored or deformed, or in any way appears abnormal immediately unplug and power off the the AirBeam3 and place it in a contained vessel, such as a metal box.
   </p>
 
 
