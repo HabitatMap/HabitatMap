@@ -278,7 +278,11 @@ image: /assets/img/about-airbeam-01.jpg
   </h2>
 
   <p class="p--body">
-    The performance of the predecessor to AirBeam3, AirBeam2, was <a href="https://www.habitatmap.org/blog/airbeam2-quite-accurate-according-to-newly-released-performance-evaluation">positively evaluated</a> by South Coast Air Quality Management District’s AQ-SPEC program and testing to date indicates AirBeam3's performance exceeds that of its predecessor. To create AirBeam3 calibration equations for PM1 and PM2.5 we used the <a href="http://www.aqmd.gov/aq-spec/sensordetail/habitatmap-airbeam2">laboratory test results from the AirBeam2’s AQ-SPEC evaluation</a>, wherein AirBeam2 measurements were compared to measurements from a GRIMM Federal Equivalency Method instrument. Both AirBeam2 and AirBeam3 utilize the same particulate matter sensor: the Plantower PMS7003
+    AirBeam3 is the most accurate and versatile portable air quality monitor on the market. Of the 75 PM2.5 measuring instruments evaluated by the <a href="http://www.aqmd.gov/aq-spec/sensordetail/habitatmap---airbeam3">SCAQMD AQ-SPEC program</a>, AirBeam3 is the most accurate when both the field and lab evaluations are considered. 
+  </p>
+
+    <p class="p--body">
+    To create AirBeam3 calibration equations for PM1 and PM2.5 we used the <a href="http://www.aqmd.gov/aq-spec/sensordetail/habitatmap-airbeam2">laboratory test results from the AirBeam2’s AQ-SPEC evaluation</a>, wherein AirBeam2 measurements were compared to measurements from a GRIMM Federal Equivalency Method instrument. Both AirBeam2 and AirBeam3 utilize the same particulate matter sensor: the Plantower PMS7003
   </p>
 
   <p class="p--body">
