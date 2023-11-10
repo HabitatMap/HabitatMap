@@ -1,8 +1,6 @@
 const process = require("process");
 const fetch = require("node-fetch");
 
-const { calculateShippingCosts } = require("../../../assets/js/paypal-helper");
-
 const { PAYPAL_CLIENT_ID, PAYPAL_APP_SECRET, PAYPAL_API_URL } = process.env;
 const UNIT_PRICE = 249;
 const COUPON_CODE = "SAVE100";
@@ -155,6 +153,25 @@ const calculateDiscountValue = (quantity, totalItemValue) => {
     return totalItemValue * 0.07;
   } else {
     return 0;
+  }
+};
+
+export const calculateShippingCosts = (quantity, shippingOption) => {
+  var firstUnitPrice;
+  var additionalUnitPrice;
+
+  if (shippingOption === "domestic") {
+    firstUnitPrice = 8;
+    additionalUnitPrice = 4;
+  } else if (shippingOption === "international") {
+    firstUnitPrice = 30;
+    additionalUnitPrice = 10;
+  }
+
+  if (quantity == 1) {
+    return firstUnitPrice;
+  } else if (quantity >= 2) {
+    return firstUnitPrice + (quantity - 1) * additionalUnitPrice;
   }
 };
 
