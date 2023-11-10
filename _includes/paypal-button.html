@@ -14,65 +14,6 @@
           document.querySelector("#shipping-options")?.value;
         const couponValue = document.querySelector("#coupon")?.value;
 
-        // const calculateCouponDiscount = (coupon) => {
-        //   try {
-        //     return coupon.trim() == COUPON_CODE ? COUPON_DISCOUNT_AMOUNT : 0;
-        //   } catch (e) {
-        //     console.log("Error calculating coupon discount.", e);
-        //   }
-        // };
-
-        // const calculateDiscountValue = (quantity, totalItemValue) => {
-        //   if (quantity >= 10 && quantity < 20) {
-        //     return totalItemValue * 0.03;
-        //   } else if (quantity >= 20 && quantity < 99) {
-        //     return totalItemValue * 0.05;
-        //   } else if (quantity >= 100) {
-        //     return totalItemValue * 0.07;
-        //   } else {
-        //     return 0;
-        //   }
-        // };
-
-        // const calculateShippingCosts = (quantity, shippingOption) => {
-        //   var firstUnitPrice;
-        //   var additionalUnitPrice;
-
-        //   if (shippingOption === "domestic") {
-        //     firstUnitPrice = 8;
-        //     additionalUnitPrice = 4;
-        //   } else if (shippingOption === "international") {
-        //     firstUnitPrice = 30;
-        //     additionalUnitPrice = 10;
-        //   }
-
-        //   if (quantity == 1) {
-        //     return firstUnitPrice;
-        //   } else if (quantity >= 2) {
-        //     return firstUnitPrice + (quantity - 1) * additionalUnitPrice;
-        //   }
-        // };
-
-        // const itemTotalValue = quantityValue * UNIT_PRICE;
-        // console.log("itemTotalValue", itemTotalValue);
-
-        // const couponDicount = calculateCouponDiscount(couponValue);
-        // console.log("couponDicount", couponDicount);
-        // const shippingCosts = calculateShippingCosts(
-        //   quantityValue,
-        //   shippingOptionValue
-        // );
-        // console.log("shippingCosts", shippingCosts);
-        // const discountValue =
-        //   calculateDiscountValue(quantityValue, itemTotalValue) + couponDicount;
-        // console.log("discountValue", discountValue);
-        // const totalValue = itemTotalValue + shippingCosts - discountValue;
-        // console.log("total", totalValue);
-
-        // const costInfoContainer = document.getElementById("cost-info");
-        // costInfoContainer.textContent = `Order summary: ${totalValue}`;
-        // costInfoContainer.classList.add("cost-info--calculated");
-
         const response = await fetch("/.netlify/functions/paypal", {
           method: "POST",
           headers: {
@@ -92,6 +33,7 @@
         });
 
         const details = await response.json();
+
         return details.id;
       },
 
