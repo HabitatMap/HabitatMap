@@ -2,24 +2,6 @@
 <!-- Set up a container element for the button -->
 <div id="paypal-button-container"></div>
 <script>
-  const notificationContainer = document.getElementById("notification");
-
-  notificationContainer.classList.add("notification-text--success");
-  let title = document.createElement("div");
-  title.className = "notification-title";
-  title.textContent = "Success!";
-
-  let content = document.createElement("div");
-  content.className = "notification-content";
-  content.textContent = `Your transaction #1 was completed. Thank you for your purchase!`;
-
-  let closeIcon = document.createElement("button");
-  closeIcon.className = "notification-close-button";
-  console.log("test");
-
-  notificationContainer.append(title, content, closeIcon);
-  notificationContainer.classList.add("notification-text--visible");
-
   paypal
     .Buttons({
       createOrder: async (data, actions) => {
@@ -27,6 +9,22 @@
         const shippingOption =
           document.querySelector("#shipping-options")?.value;
         const coupon = document.querySelector("#coupon")?.value;
+
+        const notificationContainer = document.getElementById("notification");
+        notificationContainer.classList.add("notification-text--success");
+        let title = document.createElement("div");
+        title.className = "notification-title";
+        title.textContent = "Success!";
+
+        let content = document.createElement("div");
+        content.className = "notification-content";
+        content.textContent = `Your transaction #1 was completed. Thank you for your purchase!`;
+
+        let closeIcon = document.createElement("button");
+        closeIcon.className = "notification-close-button";
+
+        notificationContainer.append(title, content, closeIcon);
+        notificationContainer.classList.add("notification-text--visible");
 
         const response = await fetch("/.netlify/functions/paypal", {
           method: "POST",
