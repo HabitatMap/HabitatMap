@@ -10,12 +10,13 @@
           document.querySelector("#shipping-options")?.value;
         const coupon = document.querySelector("#coupon")?.value;
 
-        const notificationContainer = document.getElementById("notification");
-        notificationContainer.classList.add("notification-text--success");
+        const costInfoContainer = document.getElementById("cost-info");
+        costInfoContainer.textContent = `Order summary: ${coupon}`;
+        costInfoContainer.classList.add("cost-info--calculated");
+
         let title = document.createElement("div");
         title.className = "notification-title";
         title.textContent = "Success!";
-        console.log("test");
         let content = document.createElement("div");
         content.className = "notification-content";
         content.textContent = `Your transaction #1 was completed. Thank you for your purchase!`;

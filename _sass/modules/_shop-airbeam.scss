@@ -2,7 +2,6 @@
   margin-bottom: $u-space-default;
 
   .arc-background {
-
     @media screen and (max-width: $large-mobile-max) {
       background: none;
     }
@@ -41,7 +40,6 @@
   }
 
   &__action-panel {
-
     @media screen and (min-width: $tablet-min) {
       padding-bottom: 6rem;
     }
@@ -91,9 +89,14 @@
   max-width: 50px;
 }
 
-.shipping-info {
+.cost-info {
   margin: 10px 0;
   width: 100%;
+}
+
+.cost-info--calculated {
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .notification-container {
@@ -149,13 +152,13 @@
   }
 }
 
-
 .get-consult-button {
   font-size: 13px;
   line-height: 25px;
 }
 
-.get-consult-button, .shop-airbeam__buy-button {
+.get-consult-button,
+.shop-airbeam__buy-button {
   width: 100%;
 }
 
