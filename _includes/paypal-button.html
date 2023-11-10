@@ -7,10 +7,10 @@
       createOrder: async (data, actions) => {
         const UNIT_PRICE = 249;
 
-        const quantity = document.querySelector("#quantity")?.value;
-        const shippingOption =
+        const quantityValue = document.querySelector("#quantity")?.value;
+        const shippingOptionValue =
           document.querySelector("#shipping-options")?.value;
-        const coupon = document.querySelector("#coupon")?.value;
+        const couponValue = document.querySelector("#coupon")?.value;
 
         const calculateCouponDiscount = (coupon) => {
           try {
@@ -51,11 +51,14 @@
           }
         };
 
-        const itemTotalValue = quantity * UNIT_PRICE;
-        const couponDicount = calculateCouponDiscount(coupon);
-        const shippingCosts = calculateShippingCosts(quantity, shippingOption);
+        const itemTotalValue = quantityValue * UNIT_PRICE;
+        const couponDicount = calculateCouponDiscount(couponValue);
+        const shippingCosts = calculateShippingCosts(
+          quantityValue,
+          shippingOptionValue
+        );
         const discountValue =
-          calculateDiscountValue(quantity, itemTotalValue) + couponDicount;
+          calculateDiscountValue(quantityValue, itemTotalValue) + couponDicount;
         const totalValue = itemTotalValue + shippingCosts - discountValue;
 
         const costInfoContainer = document.getElementById("cost-info");
@@ -72,9 +75,9 @@
             cart: [
               {
                 sku: "psc",
-                quantity,
-                shippingOption,
-                coupon,
+                quantityValue,
+                shippingOptionValue,
+                couponValue,
               },
             ],
           }),
