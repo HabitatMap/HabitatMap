@@ -17,15 +17,6 @@
         let title = document.createElement("div");
         title.className = "notification-title";
         title.textContent = "Success!";
-        let content = document.createElement("div");
-        content.className = "notification-content";
-        content.textContent = `Your transaction #1 was completed. Thank you for your purchase!`;
-
-        let closeIcon = document.createElement("button");
-        closeIcon.className = "notification-close-button";
-
-        notificationContainer.append(title, content, closeIcon);
-        notificationContainer.classList.add("notification-text--visible");
 
         const response = await fetch("/.netlify/functions/paypal", {
           method: "POST",
