@@ -6,6 +6,8 @@
     .Buttons({
       createOrder: async (data, actions) => {
         const UNIT_PRICE = 249;
+        const COUPON_CODE = "SAVE100";
+        const COUPON_DISCOUNT_AMOUNT = 100.0;
 
         const quantityValue = document.querySelector("#quantity")?.value;
         const shippingOptionValue =
@@ -16,7 +18,7 @@
           try {
             return coupon.trim() == COUPON_CODE ? COUPON_DISCOUNT_AMOUNT : 0;
           } catch (e) {
-            console.log("Error calculating coupon discount.");
+            console.log("Error calculating coupon discount.", e);
           }
         };
 
