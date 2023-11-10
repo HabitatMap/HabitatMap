@@ -52,14 +52,20 @@
         };
 
         const itemTotalValue = quantityValue * UNIT_PRICE;
+        console.log("itemTotalValue", itemTotalValue);
+
         const couponDicount = calculateCouponDiscount(couponValue);
+        console.log("couponDicount", couponDicount);
         const shippingCosts = calculateShippingCosts(
           quantityValue,
           shippingOptionValue
         );
+        console.log("shippingCosts", shippingCosts);
         const discountValue =
           calculateDiscountValue(quantityValue, itemTotalValue) + couponDicount;
+        console.log("discountValue", discountValue);
         const totalValue = itemTotalValue + shippingCosts - discountValue;
+        console.log("total", totalValue);
 
         const costInfoContainer = document.getElementById("cost-info");
         costInfoContainer.textContent = `Order summary: ${totalValue}`;
