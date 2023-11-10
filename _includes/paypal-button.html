@@ -5,6 +5,8 @@
   paypal
     .Buttons({
       createOrder: async (data, actions) => {
+        const UNIT_PRICE = 249;
+
         const quantity = document.querySelector("#quantity")?.value;
         const shippingOption =
           document.querySelector("#shipping-options")?.value;
