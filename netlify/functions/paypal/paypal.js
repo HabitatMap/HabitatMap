@@ -156,7 +156,7 @@ const calculateDiscountValue = (quantity, totalItemValue) => {
   }
 };
 
-export const calculateShippingCosts = (quantity, shippingOption) => {
+const calculateShippingCosts = (quantity, shippingOption) => {
   var firstUnitPrice;
   var additionalUnitPrice;
 
