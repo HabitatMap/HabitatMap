@@ -138,13 +138,15 @@
 }
 
 .notification-close-button {
+  padding: 5px;
+  cursor: pointer;
   font-size: 34px;
   font-weight: 600;
   color: inherit;
   display: inline-block;
   position: absolute;
-  right: 15px;
-  top: 1px;
+  right: 10px;
+  top: -5px;
   background-color: none;
 
   &::after {
