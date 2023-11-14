@@ -198,22 +198,6 @@
         const couponInput = document.querySelector("#coupon");
         couponInput.value = "";
       },
-      onCancel: async (data) => {
-        // Reset inputs
-        const costInfoContainer = document.getElementById("cost-info");
-        costInfoContainer.textContent =
-          "Shipping costs will be calculated at checkout";
-        costInfoContainer.classList.remove("cost-info--calculated");
-
-        const quantityInput = document.querySelector("#quantity");
-        quantityInput.value = 1;
-
-        const shippingOptionInput = document.querySelector("#shipping-options");
-        shippingOptionInput.value = "domestic";
-
-        const couponInput = document.querySelector("#coupon");
-        couponInput.value = "";
-      },
     })
     .render("#paypal-button-container");
 </script>
