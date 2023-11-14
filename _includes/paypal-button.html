@@ -68,11 +68,10 @@
           style: "currency",
           currency: "USD",
         });
-
-        console.log(formatter.format(totalValue));
+        const formattedTotalValue = formatter.format(totalValue);
 
         const costInfoContainer = document.getElementById("cost-info");
-        costInfoContainer.textContent = `Order summary: ${totalValue}`;
+        costInfoContainer.textContent = `Order summary: ${formattedTotalValue}`;
         costInfoContainer.classList.add("cost-info--calculated");
 
         const response = await fetch("/.netlify/functions/paypal", {
