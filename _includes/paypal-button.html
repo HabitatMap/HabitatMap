@@ -194,6 +194,9 @@
               }
             });
 
+            notificationContainer.append(title, content, closeIcon);
+            notificationContainer.classList.add("notification-text--visible");
+
             setTimeout(() => {
               notificationContainer.classList.remove(
                 "notification-text--visible"
