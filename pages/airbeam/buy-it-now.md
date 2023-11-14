@@ -39,7 +39,7 @@ image: /assets/img/airbeam-buy-it-now.jpg
           <label for="coupon">Discount Code:</label>
           <input class="coupon-input" id="coupon" type="string">
         </div>
-        <small class="u--tiny-text shipping-info">Shipping costs will be calculated at checkout.</small>
+        <div id="cost-info" class="cost-info">Shipping costs will be calculated at checkout.</div>
       </div>
       <div class="shop-airbeam__buy-button">
         {% include paypal-button.html %}
