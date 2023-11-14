@@ -127,10 +127,7 @@
             content.className = "notification-content";
             content.textContent = msg;
 
-            let closeIcon = document.createElement("div");
-            closeIcon.className = "notification-close-button";
-
-            notificationContainer.append(title, content, closeIcon);
+            notificationContainer.append(title, content);
             notificationContainer.classList.add("notification-text--visible");
 
             setTimeout(() => {
@@ -161,10 +158,7 @@
             content.className = "notification-content";
             content.textContent = `Your transaction #${transaction.id} was completed. Thank you for your purchase!`;
 
-            let closeIcon = document.createElement("div");
-            closeIcon.className = "notification-close-button";
-
-            notificationContainer.append(title, content, closeIcon);
+            notificationContainer.append(title, content);
             notificationContainer.classList.add("notification-text--visible");
 
             setTimeout(() => {
