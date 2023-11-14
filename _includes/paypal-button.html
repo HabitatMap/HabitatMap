@@ -114,6 +114,11 @@
 
         const notificationContainer = document.getElementById("notification");
 
+        const costInfoContainer = document.getElementById("cost-info");
+        costInfoContainer.textContent =
+          "Shipping costs will be calculated at checkout";
+        costInfoContainer.classList.remove("cost-info--calculated");
+
         if (error) {
           const msg = `Sorry, your transaction could not be processed. ${error?.description} (${orderData?.debug_id})`;
           if (notificationContainer) {
