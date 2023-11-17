@@ -1,4 +1,4 @@
-<script src="https://www.paypal.com/sdk/js?client-id=AU7621qddj4yLzUySUUbk0XDBNZH04GScHgtABUPnY-C1eVyl9mZu3CSoMY8FgNIf8G68qjCAFrp6Fu3&currency=USD&commit=false"></script>
+<script src="https://www.paypal.com/sdk/js?client-id=AQBRlDAwZfh2-QGZEb1kkD53-LjqhIl_qFJqhx989b6lgRTjQwKPaxH_GD4V1c88yersfGVRvCkGsWKr&currency=USD&commit=false"></script>
 <!-- Set up a container element for the button -->
 <div id="paypal-button-container"></div>
 <script>
@@ -6,21 +6,10 @@
     .Buttons({
       createOrder: async (data, actions) => {
         const UNIT_PRICE = 249;
-        const COUPON_CODE = "SAVE100";
-        const COUPON_DISCOUNT_AMOUNT = 100.0;
 
         const quantityValue = document.querySelector("#quantity")?.value;
         const shippingOptionValue =
           document.querySelector("#shipping-options")?.value;
-        const couponValue = document.querySelector("#coupon")?.value;
-
-        const calculateCouponDiscount = (coupon) => {
-          try {
-            return coupon.trim() == COUPON_CODE ? COUPON_DISCOUNT_AMOUNT : 0;
-          } catch (e) {
-            console.log("Error calculating coupon discount.", e);
-          }
-        };
 
         const calculateDiscountValue = (quantity, totalItemValue) => {
           if (quantity >= 10 && quantity < 20) {
@@ -55,13 +44,14 @@
 
         const itemTotalValue = quantityValue * UNIT_PRICE;
 
-        const couponDicount = calculateCouponDiscount(couponValue);
         const shippingCosts = calculateShippingCosts(
           quantityValue,
           shippingOptionValue
         );
-        const discountValue =
-          calculateDiscountValue(quantityValue, itemTotalValue) + couponDicount;
+        const discountValue = calculateDiscountValue(
+          quantityValue,
+          itemTotalValue
+        );
         const totalValue = itemTotalValue + shippingCosts - discountValue;
 
         const formatter = new Intl.NumberFormat("en-US", {
@@ -86,7 +76,6 @@
                 sku: "psc",
                 quantity: quantityValue,
                 shippingOption: shippingOptionValue,
-                coupon: couponValue,
               },
             ],
           }),
@@ -224,9 +213,6 @@
 
         const shippingOptionInput = document.querySelector("#shipping-options");
         shippingOptionInput.value = "domestic";
-
-        const couponInput = document.querySelector("#coupon");
-        couponInput.value = "";
       },
       onCancel: async (data) => {
         const costInfoContainer = document.getElementById("cost-info");
@@ -239,9 +225,6 @@
 
         const shippingOptionInput = document.querySelector("#shipping-options");
         shippingOptionInput.value = "domestic";
-
-        const couponInput = document.querySelector("#coupon");
-        couponInput.value = "";
       },
     })
     .render("#paypal-button-container");

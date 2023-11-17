@@ -35,10 +35,6 @@ image: /assets/img/airbeam-buy-it-now.jpg
             <option value="international">Outside the US</option>
           </select>
         </div>
-        <div class="coupon-container">
-          <label for="coupon">Discount Code:</label>
-          <input class="coupon-input" id="coupon" type="string">
-        </div>
         <div id="cost-info" class="cost-info">Shipping costs will be calculated at checkout.</div>
       </div>
       <div class="shop-airbeam__buy-button">
