@@ -3,10 +3,6 @@ const fetch = require("node-fetch");
 
 const { PAYPAL_CLIENT_ID, PAYPAL_APP_SECRET, PAYPAL_API_URL } = process.env;
 const UNIT_PRICE = 249;
-const COUPON_CODE = "SAVE100";
-const COUPON_DISCOUNT_AMOUNT = 100.0;
-
-console.log("test");
 
 const generateAccessToken = async () => {
   try {
@@ -32,15 +28,13 @@ const generateAccessToken = async () => {
   }
 };
 
-const createOrder = async (quantity, shippingOption, coupon) => {
+const createOrder = async (quantity, shippingOption) => {
   const url = `${PAYPAL_API_URL}/v2/checkout/orders`;
   const accessToken = await generateAccessToken();
 
   const itemTotalValue = quantity * UNIT_PRICE;
-  const couponDicount = calculateCouponDiscount(coupon);
   const shippingCosts = calculateShippingCosts(quantity, shippingOption);
-  const discountValue =
-    calculateDiscountValue(quantity, itemTotalValue) + couponDicount;
+  const discountValue = calculateDiscountValue(quantity, itemTotalValue);
   const totalValue = itemTotalValue + shippingCosts - discountValue;
 
   const body = JSON.stringify({
@@ -126,21 +120,13 @@ const handler = async (req) => {
 
   if (action === "create") {
     const { cart } = JSON.parse(req.body);
-    const { quantity, shippingOption, coupon } = cart[0];
-    return await createOrder(quantity, shippingOption, coupon);
+    const { quantity, shippingOption } = cart[0];
+    return await createOrder(quantity, shippingOption);
   } else if (action === "capture") {
     const { orderID } = JSON.parse(req.body);
     return await capturePayment(orderID);
   } else {
     return { statusCode: 400 };
-  }
-};
-
-const calculateCouponDiscount = (coupon) => {
-  try {
-    return coupon.trim() == COUPON_CODE ? COUPON_DISCOUNT_AMOUNT : 0;
-  } catch (e) {
-    console.log("Error calculating coupon discount.");
   }
 };
 
