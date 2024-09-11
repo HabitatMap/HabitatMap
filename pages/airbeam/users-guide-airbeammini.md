@@ -30,7 +30,7 @@ image: /assets/img/about-airbeam-01.jpg
 
   <ul class="contents-list list p--body">
     <li class="contents-list__item"><a href="#specification">Hardware Specifications</a></li>
-    <li class="contents-list__item"><a href="#about">About AirBeam3</a></li>
+    <li class="contents-list__item"><a href="#about">About AirBeam Mini</a></li>
     <li class="contents-list__item"><a href="#videos">AirBeam3 Instructional Videos</a></li>
     <li class="contents-list__item"><a href="#weather-resistant">Weather Resistant</a></li>
     <li class="contents-list__item"><a href="#power">Power</a></li>
@@ -39,7 +39,6 @@ image: /assets/img/about-airbeam-01.jpg
     <li class="contents-list__item"><a href="#intake">Intake & Exhaust</a></li>
     <li class="contents-list__item"><a href="#record-mobile">Record Measurements – Mobile  (Bluetooth) Session</a></li>
     <li class="contents-list__item"><a href="#record-wifi">Record Measurements – Fixed (Wifi) Session</a></li>
-    <li class="contents-list__item"><a href="#record-cellular">Record Measurements – Fixed (Cellular) Session</a></li>
     <li class="contents-list__item"><a href="#connection">Connection Indicator Color Key</a></li>
     <li class="contents-list__item"><a href="#standalone">Standalone mode</a></li>
     <li class="contents-list__item"><a href="#sync">Sync SD Card</a></li>
@@ -47,7 +46,6 @@ image: /assets/img/about-airbeam-01.jpg
     <li class="contents-list__item"><a href="#acquire">Acquire AirBeam3 Data via Serial Monitor</a></li>
     <li class="contents-list__item"><a href="#programming">Programming</a></li>
     <li class="contents-list__item"><a href="#compliance">FCC Compliance Statement</a></li>
-    <li class="contents-list__item"><a href="#performance">Performance Data</a></li>
   </ul>
 
   <a id="specification" class="anchor">
