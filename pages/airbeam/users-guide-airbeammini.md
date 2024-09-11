@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Airbeam - User's Guide
+title: AirBeam Mini - User's Guide
 permalink: /airbeam/users-guide-airbeammini
 section: about
 image: /assets/img/about-airbeam-01.jpg
@@ -15,7 +15,7 @@ image: /assets/img/about-airbeam-01.jpg
 
   <div class="split--50">
     <p class="heading heading--small">
-      AirBeam3 User’s Guide: Technical Specifications, Operation & Performance
+      AirBeam Mini User’s Guide
     </p>
   </div>
 </section>
