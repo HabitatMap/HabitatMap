@@ -9,13 +9,13 @@ image: /assets/img/about-airbeam-01.jpg
 <section class="panel panel--history-intro u--bg-teal">
   <div class="split--50 split--padding-right">
     <h1 class="heading heading--large">
-      User's Guide
+      AirBeam Mini User's Guide
     </h1>
   </div>
 
   <div class="split--50">
     <p class="heading heading--small">
-      AirBeam Mini User’s Guide
+      
     </p>
   </div>
 </section>
