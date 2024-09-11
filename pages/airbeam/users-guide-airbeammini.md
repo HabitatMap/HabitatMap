@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Airbeam - User's Guide
-permalink: /airbeam/users-guide
+permalink: /airbeam/users-guide-airbeammini
 section: about
 image: /assets/img/about-airbeam-01.jpg
 ---
