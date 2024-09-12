@@ -78,6 +78,7 @@ image: /assets/img/about-airbeam-01.jpg
   </h2>
 
   <p class="p--body">
+Operation of AirBeam Mini is nearly identical to operation of AirBeam3, so the below videos can be used with AirBeam Mini.  However, please note that AirBeam Mini does not have a cellular or GPS module, so instructions related to fixed-cellular mode and standalone location tracking should be disregarded.
     <iframe width="700" height="394" src="https://www.youtube.com/embed/uyVWYWLMvjQ?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <br />
     <iframe width="700" height="394" src="https://www.youtube.com/embed/svGQDWFl_KU?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
