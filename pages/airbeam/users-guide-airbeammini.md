@@ -24,8 +24,8 @@ image: /assets/img/about-airbeam-01.jpg
   <img
     alt="AirBeam Mini Features and Dimensions"
     class="p--body lazyload"
-    data-src="/assets/img/pages/users-guide/AB3Features+Dimensions.jpg?nf-resize=fit&w=1200"
-    src="/assets/img/pages/users-guide/AB3Features+Dimensions.jpg?nf-resize=fit&w=20"
+    data-src="/assets/img/pages/users-guide/ABMiniFeatures+Dimensions.png?nf-resize=fit&w=1200"
+    src="/assets/img/pages/users-guide/ABMiniFeatures+Dimensions.png?nf-resize=fit&w=20"
   />
 
   <ul class="contents-list list p--body">
