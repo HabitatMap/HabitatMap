@@ -196,7 +196,7 @@ Operation of AirBeam Mini is nearly identical to operation of AirBeam3, so the b
   </h2>
 
   <p class="p--body">
-    When recording a mobile session with AirBeam Mini, you can separate AirBeam Mini from your Android or iOS device and continue recording and timestamping your measurements. To do this, tap the three horizontal dots located in the upper right hand corner of the session card, map, or graph and tap “Enter standalone mode”. After entering standalone mode, the connection indicator will blink yellow when you don’t have a GPS fix and blink orange when you do have a GPS fix. When you don’t have a GPS fix, your measurements will be pinned to your last know location. Note that after entering standalone mode, all your measurements will be pegged to your last known location, that is to say your location will not update.<em>An iPhone 8 or higher or an Android 8 or higher plus Bluetooth 5 device is required to utilize the Standalone Mode and Sync SD Card features.</em>
+    When recording a mobile session with AirBeam Mini, you can separate AirBeam Mini from your Android or iOS device and continue recording and timestamping your measurements. To do this, tap the three horizontal dots located in the upper right hand corner of the session card, map, or graph and tap “Enter standalone mode”. After entering standalone mode, the connection indicator will blink yellow. Note that after entering standalone mode, all your measurements will be pegged to your last known location, that is to say, your location will not update.<em>An iPhone 8 or higher or an Android 8 or higher plus Bluetooth 5 device is required to utilize the Standalone Mode and Sync SD Card features.</em>
   </p>
 
   <a id="sync" class="anchor">
