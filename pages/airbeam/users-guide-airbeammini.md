@@ -24,8 +24,8 @@ image: /assets/img/about-airbeam-01.jpg
   <img
     alt="AirBeam Mini Features and Dimensions"
     class="p--body lazyload"
-    data-src="/assets/img/pages/users-guide/ABMiniFeatures+Dimensions.png?nf-resize=fit&w=1200"
-    src="/assets/img/pages/users-guide/ABMiniFeatures+Dimensions.png?nf-resize=fit&w=20"
+    data-src="https://www.habitatmap.org/images/uploads/abminifeatures_dimensions.png?nf_resize=fit&w=1200"
+    src="https://www.habitatmap.org/images/uploads/abminifeatures_dimensions.png?nf_resize=fit&w=1200"
   />
 
   <ul class="contents-list list p--body">
