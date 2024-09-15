@@ -75,7 +75,7 @@ image: /assets/img/about-airbeam-01.jpg
    <a id="extract" class="anchor">
   </a>
   <h2 class="heading heading--small heading--body">
-    How to Extract AirBeam Mini from Sleeve
+    How to Remove AirBeam Mini from Sleeve
   </h2>
   
   <p class="p--body">
