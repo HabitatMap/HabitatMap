@@ -31,7 +31,7 @@ image: /assets/img/about-airbeam-01.jpg
   <ul class="contents-list list p--body">
     <li class="contents-list__item"><a href="#specification">Hardware Specifications</a></li>
     <li class="contents-list__item"><a href="#about">About AirBeam Mini</a></li>
-    <li class="contents-list__item"><a href="#extract">AirBeam Mini from Sleeve</a></li>
+    <li class="contents-list__item"><a href="#extract">AirBeam Mini Sleeve</a></li>
     <li class="contents-list__item"><a href="#videos">AirBeam3 Instructional Videos</a></li>
     <li class="contents-list__item"><a href="#weather-resistant">Weather Resistant</a></li>
     <li class="contents-list__item"><a href="#power">Power</a></li>
@@ -75,11 +75,11 @@ image: /assets/img/about-airbeam-01.jpg
    <a id="extract" class="anchor">
   </a>
   <h2 class="heading heading--small heading--body">
-    AirBeam Mini from Sleeve
+    AirBeam Mini Sleeve
   </h2>
   
   <p class="p--body">
-Outfitted with its sleeve, AirBeam Mini becomes drop proof and rain proof. The sleeve includes a carbiner attachment point to simplify outdoor installation. Remove the sleeve for a more streamlined profile or to attach the belt clip. The fit between the AirBeam Mini and its sleeve is intentionally tight to prevent the AirBeam from falling out of the sleeve. The below video shows how to remove the AirBeam Mini from its sleeve.
+Outfitted with its sleeve, AirBeam Mini becomes drop proof and rain proof. The sleeve includes a carbiner attachment point to simplify outdoor installation. Remove the sleeve for a more streamlined profile or to attach the belt clip. The fit between the AirBeam Mini and its sleeve is intentionally tight to keep the AirBeam from falling out of the sleeve. The below video shows how to remove the AirBeam Mini from its sleeve.
 <br><br />
   <iframe width="700" height="394" src="https://www.youtube.com/embed/0yW9H_xC9p4?si=bfhaDUWxo1zHXUiv?&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
