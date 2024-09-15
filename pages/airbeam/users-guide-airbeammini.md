@@ -31,7 +31,7 @@ image: /assets/img/about-airbeam-01.jpg
   <ul class="contents-list list p--body">
     <li class="contents-list__item"><a href="#specification">Hardware Specifications</a></li>
     <li class="contents-list__item"><a href="#about">About AirBeam Mini</a></li>
-    <li class="contents-list__item"><a href="#extract">How to Remove AirBeam Mini from Sleeve</a></li>
+    <li class="contents-list__item"><a href="#extract">Removing AirBeam Mini from Sleeve</a></li>
     <li class="contents-list__item"><a href="#videos">AirBeam3 Instructional Videos</a></li>
     <li class="contents-list__item"><a href="#weather-resistant">Weather Resistant</a></li>
     <li class="contents-list__item"><a href="#power">Power</a></li>
@@ -75,7 +75,7 @@ image: /assets/img/about-airbeam-01.jpg
    <a id="extract" class="anchor">
   </a>
   <h2 class="heading heading--small heading--body">
-    How to Remove AirBeam Mini from Sleeve
+    Removing AirBeam Mini from Sleeve
   </h2>
   
   <p class="p--body">
