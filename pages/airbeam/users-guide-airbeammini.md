@@ -31,7 +31,7 @@ image: /assets/img/about-airbeam-01.jpg
   <ul class="contents-list list p--body">
     <li class="contents-list__item"><a href="#specification">Hardware Specifications</a></li>
     <li class="contents-list__item"><a href="#about">About AirBeam Mini</a></li>
-    <li class="contents-list__item"><a href="#extract">Removing AirBeam Mini from Sleeve</a></li>
+    <li class="contents-list__item"><a href="#extract">AirBeam Mini from Sleeve</a></li>
     <li class="contents-list__item"><a href="#videos">AirBeam3 Instructional Videos</a></li>
     <li class="contents-list__item"><a href="#weather-resistant">Weather Resistant</a></li>
     <li class="contents-list__item"><a href="#power">Power</a></li>
@@ -58,7 +58,7 @@ image: /assets/img/about-airbeam-01.jpg
   <p class="p--body">
     Weight: 4 ounces<br>
     Particle Sensor: Plantower PMS7003<br>
-    Bluetooth, WiFi & Microcontroller: Espressif, ESP32-C3-WROOM-02-N4 <br>
+    BLE, WiFi & Microcontroller: Espressif, ESP32-C3-WROOM-02-N4 <br>
     Battery: PKCell, LP505060 1800mAh 3.7V
   </p>
 
@@ -69,16 +69,18 @@ image: /assets/img/about-airbeam-01.jpg
   </h2>
 
   <p class="p--body">
-    <a href="/airbeam">AirBeam Mini</a> is a portable air quality instrument weighing four ounces that measures PM1 and PM2.5. Its weather resistant rubber sleeve makes it suitable for indoor or outdoor use. It can communicate via BLE and WiFi and can be used as a stationary or mobile monitor. Users can map and graph the measurements from AirBeam Mini in real-time using an <a href='https://play.google.com/store/apps/details?id=pl.llp.aircasting&%3Cli%3Ehl=en&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>Android</a> or <a href='https://apps.apple.com/us/app/aircasting/id1587685281#?platform=iphone'>iOS</a> device or the <a href='http://aircasting.habitatmap.org/fixed_map'>AirCasting website</a>. AirBeam Mini has internal storage, a clock, and battery so after configuration it can operate in standalone mode, i.e. without the need for any additional hardware, such as a smartphone. AirBeam Mini is open-source as is the AirCasting platform software.
+    <a href="/airbeam">AirBeam Mini</a> is a portable air quality instrument weighing four ounces that measures PM1 and PM2.5. Its weather resistant rubber sleeve makes it suitable for indoor or outdoor use. It can communicate via Bluetooth and WiFi and can be used as a stationary or mobile monitor. Users can map and graph the measurements from AirBeam Mini in real-time using an <a href='https://play.google.com/store/apps/details?id=pl.llp.aircasting&%3Cli%3Ehl=en&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>Android</a> or <a href='https://apps.apple.com/us/app/aircasting/id1587685281#?platform=iphone'>iOS</a> device or the <a href='http://aircasting.habitatmap.org/fixed_map'>AirCasting website</a>. AirBeam Mini has internal storage, a clock, and battery so after configuration it can operate in standalone mode, i.e. without the need for any additional hardware, such as a smartphone. AirBeam Mini ships with a sleeve, carabiner, belt clip and 6ft USB-A to USB-C cable.  AirBeam Mini is open-source as is the AirCasting platform software.
   </p>
 
    <a id="extract" class="anchor">
   </a>
   <h2 class="heading heading--small heading--body">
-    Removing AirBeam Mini from Sleeve
+    AirBeam Mini from Sleeve
   </h2>
   
   <p class="p--body">
+Outfitted with its sleeve, AirBeam Mini becomes drop proof and rain proof. The sleeve includes a carbiner attachment point to simplify outdoor installation. Remove the sleeve for a more streamlined profile or to attach the belt clip. The fit between the AirBeam Mini and its sleeve is intentionally tight to prevent the AirBeam from falling out of the sleeve. The below video shows how to remove the AirBeam Mini from its sleeve.
+<br><br />
   <iframe width="700" height="394" src="https://www.youtube.com/embed/0yW9H_xC9p4?si=bfhaDUWxo1zHXUiv?&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
   </p>
