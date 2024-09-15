@@ -79,7 +79,7 @@ image: /assets/img/about-airbeam-01.jpg
   </h2>
   
   <p class="p--body">
-  <iframe width="700" height="394" src="https://www.youtube.com/embed/0yW9H_xC9p4?si=bfhaDUWxo1zHXUiv?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe width="700" height="394" src="https://www.youtube.com/embed/0yW9H_xC9p4?si=bfhaDUWxo1zHXUiv?&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
   </p>
 
