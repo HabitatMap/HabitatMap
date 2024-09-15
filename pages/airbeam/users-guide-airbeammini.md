@@ -69,7 +69,7 @@ image: /assets/img/about-airbeam-01.jpg
   </h2>
 
   <p class="p--body">
-    <a href="/airbeam">AirBeam Mini</a> is a portable air quality instrument weighing four ounces that measures PM1 and PM2.5. Its weather resistant rubber sleeve makes it suitable for indoor or outdoor use. It can communicate via Bluetooth and WiFi and can be used as a stationary or mobile monitor. Users can map and graph the measurements from AirBeam Mini in real-time using an <a href='https://play.google.com/store/apps/details?id=pl.llp.aircasting&%3Cli%3Ehl=en&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>Android</a> or <a href='https://apps.apple.com/us/app/aircasting/id1587685281#?platform=iphone'>iOS</a> device or the <a href='http://aircasting.habitatmap.org/fixed_map'>AirCasting website</a>. AirBeam Mini has internal storage, a clock, and battery so after configuration it can operate in standalone mode, i.e. without the need for any additional hardware, such as a smartphone. AirBeam Mini ships with a sleeve, carabiner, belt clip and 6ft USB-A to USB-C cable.  AirBeam Mini is open-source as is the AirCasting platform software.
+    <a href="/airbeam">AirBeam Mini</a> is a portable air quality instrument weighing four ounces that measures PM1 and PM2.5. Its weather resistant rubber sleeve makes it suitable for indoor or outdoor use. It can communicate via Bluetooth and WiFi and can be used as a stationary or mobile monitor. Users can map and graph the measurements from AirBeam Mini in real-time using an <a href='https://play.google.com/store/apps/details?id=pl.llp.aircasting&%3Cli%3Ehl=en&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>Android</a> or <a href='https://apps.apple.com/us/app/aircasting/id1587685281#?platform=iphone'>iOS</a> device or the <a href='http://aircasting.org/'>AirCasting website</a>. AirBeam Mini has internal storage, a clock, and battery so after configuration it can operate in standalone mode, i.e. without the need for any additional hardware, such as a smartphone. AirBeam Mini ships with a sleeve, carabiner, belt clip and 6ft USB-A to USB-C cable.  AirBeam Mini is open-source as is the AirCasting platform software.
   </p>
 
    <a id="extract" class="anchor">
@@ -180,7 +180,7 @@ Operation of AirBeam Mini is nearly identical to operation of AirBeam3, so the b
   </ol>
 
   <p class="p--body">
-    When recording a fixed WiFi session with AirBeam Mini, the measurements are communicated once a minute to the <a href="http://aircasting.habitatmap.org/fixed_map">AirCasting website</a> via WiFi. The Android or iOS device no longer needs to be in proximity to AirBeam3 as it’s retrieving the data from the web via the Android or iOS device’s WiFi or cellular connection. AirBeam Mini must be connected to the 2.4 GHz band of your WiFi network; it cannot connect via the 5 GHz band.
+    When recording a fixed WiFi session with AirBeam Mini, the measurements are communicated once a minute to the <a href="http://aircasting.org/">AirCasting website</a> via WiFi. The Android or iOS device no longer needs to be in proximity to AirBeam3 as it’s retrieving the data from the web via the Android or iOS device’s WiFi or cellular connection. AirBeam Mini must be connected to the 2.4 GHz band of your WiFi network; it cannot connect via the 5 GHz band.
   </p>
 
   <a id="connection" class="anchor">
