@@ -31,6 +31,7 @@ image: /assets/img/about-airbeam-01.jpg
   <ul class="contents-list list p--body">
     <li class="contents-list__item"><a href="#specification">Hardware Specifications</a></li>
     <li class="contents-list__item"><a href="#about">About AirBeam Mini</a></li>
+    <li class="contents-list__item"><a href="#extract">How to Remove AirBeam Mini from Sleeve</a></li>
     <li class="contents-list__item"><a href="#videos">AirBeam3 Instructional Videos</a></li>
     <li class="contents-list__item"><a href="#weather-resistant">Weather Resistant</a></li>
     <li class="contents-list__item"><a href="#power">Power</a></li>
@@ -69,6 +70,17 @@ image: /assets/img/about-airbeam-01.jpg
 
   <p class="p--body">
     <a href="/airbeam">AirBeam Mini</a> is a portable air quality instrument weighing four ounces that measures PM1 and PM2.5. Its weather resistant rubber sleeve makes it suitable for indoor or outdoor use. It can communicate via BLE and WiFi and can be used as a stationary or mobile monitor. Users can map and graph the measurements from AirBeam Mini in real-time using an <a href='https://play.google.com/store/apps/details?id=pl.llp.aircasting&%3Cli%3Ehl=en&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>Android</a> or <a href='https://apps.apple.com/us/app/aircasting/id1587685281#?platform=iphone'>iOS</a> device or the <a href='http://aircasting.habitatmap.org/fixed_map'>AirCasting website</a>. AirBeam Mini has internal storage, a clock, and battery so after configuration it can operate in standalone mode, i.e. without the need for any additional hardware, such as a smartphone. AirBeam Mini is open-source as is the AirCasting platform software.
+  </p>
+
+   <a id="extract" class="anchor">
+  </a>
+  <h2 class="heading heading--small heading--body">
+    How to Extract AirBeam Mini from Sleeve
+  </h2>
+  
+  <p class="p--body">
+  https://youtube.com/shorts/0yW9H_xC9p4?si=GLGuCxDX6t-xCIsj
+
   </p>
 
   <a id="videos" class="anchor">
