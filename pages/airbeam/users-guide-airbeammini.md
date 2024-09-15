@@ -69,7 +69,7 @@ image: /assets/img/about-airbeam-01.jpg
   </h2>
 
   <p class="p--body">
-    <a href="/airbeam">AirBeam Mini</a> is a portable air quality instrument weighing four ounces that measures PM1 and PM2.5. Its weather resistant rubber sleeve makes it suitable for indoor or outdoor use. It can communicate via Bluetooth and WiFi and can be used as a stationary or mobile monitor. Users can map and graph the measurements from AirBeam Mini in real-time using an <a href='https://play.google.com/store/apps/details?id=pl.llp.aircasting&%3Cli%3Ehl=en&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>Android</a> or <a href='https://apps.apple.com/us/app/aircasting/id1587685281#?platform=iphone'>iOS</a> device or the <a href='http://aircasting.org/'>AirCasting website</a>. AirBeam Mini has internal storage, a clock, and battery so after configuration it can operate in standalone mode, i.e. without the need for any additional hardware, such as a smartphone. AirBeam Mini ships with a sleeve, carabiner, belt clip and 6ft USB-A to USB-C cable.  AirBeam Mini is open-source as is the AirCasting platform software.
+    <a href="/airbeam">AirBeam Mini</a> is a portable air quality instrument weighing four ounces that measures PM1 and PM2.5. Its rain-proof, weather resistant rubber sleeve makes it suitable for indoor or outdoor use. It can communicate via Bluetooth and WiFi and can be used as a stationary or mobile monitor. Users can map and graph the measurements from AirBeam Mini in real-time using an <a href='https://play.google.com/store/apps/details?id=pl.llp.aircasting&%3Cli%3Ehl=en&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>Android</a> or <a href='https://apps.apple.com/us/app/aircasting/id1587685281#?platform=iphone'>iOS</a> device or the <a href='http://aircasting.org/'>AirCasting website</a>. AirBeam Mini has internal storage, a clock, and battery so after configuration it can operate in standalone mode, i.e. without the need for any additional hardware, such as a smartphone. AirBeam Mini ships with a sleeve, carabiner, belt clip and 6ft USB-A to USB-C cable.  AirBeam Mini is open-source as is the AirCasting platform software.
   </p>
 
    <a id="extract" class="anchor">
@@ -79,7 +79,7 @@ image: /assets/img/about-airbeam-01.jpg
   </h2>
   
   <p class="p--body">
-Outfitted with its sleeve, AirBeam Mini becomes drop proof and rain proof. The sleeve includes a carbiner attachment point to simplify outdoor installation. Remove the sleeve for a more streamlined profile or to attach the belt clip. The fit between the AirBeam Mini and its sleeve is intentionally tight to keep the AirBeam from falling out of the sleeve. The below video shows how to remove the AirBeam Mini from its sleeve.
+Outfitted with its sleeve, AirBeam Mini becomes drop-proof and rain-proof. The sleeve includes a carbiner attachment point to simplify outdoor installation. Remove the sleeve for a more streamlined profile or to attach the belt clip. The fit between the AirBeam Mini and its sleeve is intentionally tight to keep the AirBeam from falling out of the sleeve. The below video shows how to remove the AirBeam Mini from its sleeve.
 <br><br />
   <iframe width="700" height="394" src="https://www.youtube.com/embed/0yW9H_xC9p4?si=bfhaDUWxo1zHXUiv?&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -107,7 +107,7 @@ Operation of AirBeam Mini is nearly identical to operation of AirBeam3, so the b
   </h2>
 
   <p class="p--body">
-    AirBeam Mini is weather resistant when used with the included rubber sleeve. When temperatures exceed 100 degrees Fahrenheit, AirBeam3 should be shaded to prevent damage to the battery and AirBeam Mini should never be charged in an environment where the temperature exceeds 110 degrees Fahrenheit.
+    AirBeam Mini is rain-proof and weather resistant when used with its sleeve and hung from its carabiner attachement point. When temperatures exceed 100 degrees Fahrenheit, AirBeam3 should be shaded to prevent damage to the battery and AirBeam Mini should never be charged in an environment where the temperature exceeds 110 degrees Fahrenheit.
   </p>
 
   <a id="power" class="anchor">
