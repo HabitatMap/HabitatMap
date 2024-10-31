@@ -1,0 +1,240 @@
+<!-- Set up a container element for the button -->
+<div id="paypal-ab-mini-button-container"></div>
+<script>
+  window.addEventListener("load", function () {
+    if (typeof paypal !== "undefined") {
+      paypal
+        .Buttons({
+          createOrder: async (data, actions) => {
+            const UNIT_PRICE = 99;
+
+            const quantityValue =
+              document.querySelector("#ab-mini-quantity")?.value;
+            const shippingOptionValue = document.querySelector(
+              "#ab-mini-shipping-options"
+            )?.value;
+
+            const calculateShippingCosts = (quantity, shippingOption) => {
+              var firstUnitPrice;
+              var additionalUnitPrice;
+
+              if (shippingOption === "domestic") {
+                firstUnitPrice = 8;
+                additionalUnitPrice = 4;
+              } else if (shippingOption === "international") {
+                firstUnitPrice = 30;
+                additionalUnitPrice = 10;
+              }
+
+              if (quantity == 1) {
+                return firstUnitPrice;
+              } else if (quantity >= 2) {
+                return firstUnitPrice + (quantity - 1) * additionalUnitPrice;
+              }
+            };
+
+            const itemTotalValue = quantityValue * UNIT_PRICE;
+
+            const shippingCosts = calculateShippingCosts(
+              quantityValue,
+              shippingOptionValue
+            );
+            const totalValue = itemTotalValue + shippingCosts;
+
+            const formatter = new Intl.NumberFormat("en-US", {
+              style: "currency",
+              currency: "USD",
+            });
+            const formattedTotalValue = formatter.format(totalValue);
+
+            const costInfoContainer =
+              document.getElementById("ab-mini-cost-info");
+            costInfoContainer.textContent = `Order summary: ${formattedTotalValue}`;
+            costInfoContainer.classList.add("cost-info--calculated");
+
+            const response = await fetch("/.netlify/functions/paypal", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify({
+                action: "create",
+                cart: [
+                  {
+                    name: "AirBeam Mini",
+                    sku: "psc",
+                    quantity: quantityValue,
+                    shippingOption: shippingOptionValue,
+                  },
+                ],
+              }),
+            });
+
+            const details = await response.json();
+
+            return details.id;
+          },
+
+          onApprove: async (data, actions) => {
+            const response = await fetch("/.netlify/functions/paypal", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify({
+                action: "capture",
+                orderID: data.orderID,
+              }),
+            });
+
+            const orderData = await response.json();
+            const error =
+              Array.isArray(orderData.details) && orderData.details[0];
+
+            const notificationContainer = document.getElementById(
+              "ab-mini-notification"
+            );
+
+            if (error) {
+              const msg = `Sorry, your transaction could not be processed. ${error?.description} (${orderData?.debug_id})`;
+              if (notificationContainer) {
+                notificationContainer.classList.add("notification-text--error");
+
+                let title = document.createElement("div");
+                title.className = "notification-title";
+                title.textContent = "Something went wrong!";
+
+                let content = document.createElement("div");
+                content.className = "notification-content";
+                content.textContent = msg;
+
+                let closeIcon = document.createElement("div");
+                closeIcon.className = "notification-close-button";
+
+                closeIcon.addEventListener("click", () => {
+                  notificationContainer.classList.remove(
+                    "notification-text--visible"
+                  );
+                  notificationContainer.classList.remove(
+                    "notification-text--error"
+                  );
+
+                  while (notificationContainer.firstChild) {
+                    notificationContainer.removeChild(
+                      notificationContainer.firstChild
+                    );
+                  }
+                });
+
+                notificationContainer.append(title, content, closeIcon);
+                notificationContainer.classList.add(
+                  "notification-text--visible"
+                );
+
+                setTimeout(() => {
+                  notificationContainer.classList.remove(
+                    "notification-text--visible"
+                  );
+                  notificationContainer.classList.remove(
+                    "notification-text--error"
+                  );
+
+                  while (notificationContainer.firstChild) {
+                    notificationContainer.removeChild(
+                      notificationContainer.firstChild
+                    );
+                  }
+                }, 10000);
+              }
+            } else {
+              const transaction =
+                orderData.purchase_units[0].payments.captures[0];
+
+              if (notificationContainer) {
+                notificationContainer.classList.add(
+                  "notification-text--success"
+                );
+                let title = document.createElement("div");
+                title.className = "notification-title";
+                title.textContent = "Success!";
+
+                let content = document.createElement("div");
+                content.className = "notification-content";
+                content.textContent = `Your transaction #${transaction.id} was completed. Thank you for your purchase!`;
+
+                let closeIcon = document.createElement("div");
+                closeIcon.className = "notification-close-button";
+
+                closeIcon.addEventListener("click", () => {
+                  notificationContainer.classList.remove(
+                    "notification-text--visible"
+                  );
+                  notificationContainer.classList.remove(
+                    "notification-text--success"
+                  );
+
+                  while (notificationContainer.firstChild) {
+                    notificationContainer.removeChild(
+                      notificationContainer.firstChild
+                    );
+                  }
+                });
+
+                notificationContainer.append(title, content, closeIcon);
+                notificationContainer.classList.add(
+                  "notification-text--visible"
+                );
+
+                setTimeout(() => {
+                  notificationContainer.classList.remove(
+                    "notification-text--visible"
+                  );
+                  notificationContainer.classList.remove(
+                    "notification-text--success"
+                  );
+
+                  while (notificationContainer.firstChild) {
+                    notificationContainer.removeChild(
+                      notificationContainer.firstChild
+                    );
+                  }
+                }, 10000);
+              }
+            }
+
+            const costInfoContainer =
+              document.getElementById("ab-mini-cost-info");
+            costInfoContainer.textContent =
+              "Shipping costs will be calculated at checkout";
+            costInfoContainer.classList.remove("cost-info--calculated");
+
+            const quantityInput = document.querySelector("#ab-mini-quantity");
+            quantityInput.value = 1;
+
+            const shippingOptionInput = document.querySelector(
+              "#ab-mini-shipping-options"
+            );
+            shippingOptionInput.value = "domestic";
+          },
+          onCancel: async (data) => {
+            const costInfoContainer =
+              document.getElementById("ab-mini-cost-info");
+            costInfoContainer.textContent =
+              "Shipping costs will be calculated at checkout";
+            costInfoContainer.classList.remove("cost-info--calculated");
+
+            const quantityInput = document.querySelector("#ab-mini-quantity");
+            quantityInput.value = 1;
+
+            const shippingOptionInput = document.querySelector(
+              "#ab-mini-shipping-options"
+            );
+            shippingOptionInput.value = "domestic";
+          },
+        })
+        .render("#paypal-ab-mini-button-container");
+    } else {
+      console.error("PayPal SDK not loaded");
+    }
+  });
+</script>
