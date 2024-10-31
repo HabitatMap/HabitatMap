@@ -11,18 +11,6 @@
         const shippingOptionValue =
           document.querySelector("#shipping-options")?.value;
 
-        const calculateDiscountValue = (quantity, totalItemValue) => {
-          if (quantity >= 10 && quantity < 20) {
-            return totalItemValue * 0.03;
-          } else if (quantity >= 20 && quantity < 99) {
-            return totalItemValue * 0.05;
-          } else if (quantity >= 100) {
-            return totalItemValue * 0.07;
-          } else {
-            return 0;
-          }
-        };
-
         const calculateShippingCosts = (quantity, shippingOption) => {
           var firstUnitPrice;
           var additionalUnitPrice;
@@ -48,11 +36,7 @@
           quantityValue,
           shippingOptionValue
         );
-        const discountValue = calculateDiscountValue(
-          quantityValue,
-          itemTotalValue
-        );
-        const totalValue = itemTotalValue + shippingCosts - discountValue;
+        const totalValue = itemTotalValue + shippingCosts;
 
         const formatter = new Intl.NumberFormat("en-US", {
           style: "currency",

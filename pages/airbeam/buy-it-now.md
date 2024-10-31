@@ -23,7 +23,7 @@ image: /assets/img/airbeam-buy-it-now.jpg
   </div>
 
   <h1 class="panel panel--buy-now heading heading--medium u--accent-cyan">Buy Now!</h1>
-  <div class="panel arc-background arc-background--right-teal-light">
+  <div class="panel">
     <div class="split--30 split--order-secondary">
       <h2 class="heading heading--small u--margin-bottom-tiny">AirBeam3</h2>
       <div class="order-details-container">

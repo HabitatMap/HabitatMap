@@ -14,18 +14,6 @@
               "#ab-mini-shipping-options"
             )?.value;
 
-            const calculateDiscountValue = (quantity, totalItemValue) => {
-              if (quantity >= 10 && quantity < 20) {
-                return totalItemValue * 0.03;
-              } else if (quantity >= 20 && quantity < 99) {
-                return totalItemValue * 0.05;
-              } else if (quantity >= 100) {
-                return totalItemValue * 0.07;
-              } else {
-                return 0;
-              }
-            };
-
             const calculateShippingCosts = (quantity, shippingOption) => {
               var firstUnitPrice;
               var additionalUnitPrice;
@@ -51,11 +39,7 @@
               quantityValue,
               shippingOptionValue
             );
-            const discountValue = calculateDiscountValue(
-              quantityValue,
-              itemTotalValue
-            );
-            const totalValue = itemTotalValue + shippingCosts - discountValue;
+            const totalValue = itemTotalValue + shippingCosts;
 
             const formatter = new Intl.NumberFormat("en-US", {
               style: "currency",
@@ -66,7 +50,7 @@
             const costInfoContainer =
               document.getElementById("ab-mini-cost-info");
             costInfoContainer.textContent = `Order summary: ${formattedTotalValue}`;
-            costInfoContainer.classList.add("ab-mini-cost-info--calculated");
+            costInfoContainer.classList.add("cost-info--calculated");
 
             const response = await fetch("/.netlify/functions/paypal", {
               method: "POST",
@@ -222,7 +206,7 @@
               document.getElementById("ab-mini-cost-info");
             costInfoContainer.textContent =
               "Shipping costs will be calculated at checkout";
-            costInfoContainer.classList.remove("ab-mini-cost-info--calculated");
+            costInfoContainer.classList.remove("cost-info--calculated");
 
             const quantityInput = document.querySelector("#ab-mini-quantity");
             quantityInput.value = 1;
@@ -237,7 +221,7 @@
               document.getElementById("ab-mini-cost-info");
             costInfoContainer.textContent =
               "Shipping costs will be calculated at checkout";
-            costInfoContainer.classList.remove("ab-mini-cost-info--calculated");
+            costInfoContainer.classList.remove("cost-info--calculated");
 
             const quantityInput = document.querySelector("#ab-mini-quantity");
             quantityInput.value = 1;
