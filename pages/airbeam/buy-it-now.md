@@ -10,6 +10,9 @@ image: /assets/img/airbeam-buy-it-now.jpg
   <div class="notification-container">
     <div class="notification-text" id="notification"></div>
   </div>
+    <div class="notification-container">
+    <div class="notification-text" id="ab-mini-notification"></div>
+  </div>
   <div class="panel panel--leading-text">
     <h1 class="shop-airbeam__heading heading heading--large u--accent-cyan">
       Buy the Best! Results are in: AirBeam3 Found to be the Most Accurate and Versatile Portable Air Quality Monitor*
@@ -62,19 +65,19 @@ image: /assets/img/airbeam-buy-it-now.jpg
         <span>Price per unit: $99</span>
         <div>
           <label for="quantity">Quantity:</label>
-          <input class="quantity-input" id="quantity" type="number" min='1' value='1'>
+          <input class="quantity-input" id="ab-mini-quantity" type="number" min='1' value='1'>
         </div>
         <div class="shipping-options-container">
           <label for="shipping-options">Shipping:</label>
-          <select name="shipping-options" id="shipping-options">
+          <select name="shipping-options" id="ab-mini-shipping-options">
             <option value="domestic">Domestic US</option>
             <option value="international">Outside the US</option>
           </select>
         </div>
-        <div id="cost-info" class="cost-info">Shipping costs will be calculated at checkout.</div>
+        <div id="ab-mini-cost-info" class="cost-info">Shipping costs will be calculated at checkout.</div>
       </div>
       <div class="shop-airbeam__buy-button">
-        {% include paypal-button.html %}
+        {% include paypal-button-ab-mini.html %}
       </div>
       <a href="/airbeam/get-consultation" class="get-consult-button button button--secondary">
         HAVE QUESTIONS?
@@ -104,12 +107,6 @@ image: /assets/img/airbeam-buy-it-now.jpg
   <div class="panel shop-airbeam-information">
     <div class="shop-airbeam-information__item">
       <h2 class="heading heading--medium u--gray-text">
-        FAQ
-      </h2>
-      <p class="p--body">
-        To learn more about the AirBeam and AirCasting apps have a look at the <a href="/airbeam/users-guide">AirBeam3 User's Guide</a> or visit our <a href="/airbeam/FAQ">FAQ page</a>.
-      </p>
-      <h2 class="heading heading--medium u--gray-text">
         Payment Methods
       </h2>
       <p class="p--body">
@@ -129,6 +126,12 @@ image: /assets/img/airbeam-buy-it-now.jpg
       <p class="p--body">
         Domestic US shipping via USPS is $8 for the first unit and $4 for each additional unit. Shipping outside the United States via USPS is $30 for the first unit and $10 for each additional unit. If you need faster shipping, better tracking, or insurance please email info@habitatmap.org with your shipping address and the number of AirBeams you would like to order. We are not responsible for the loss or damage of AirBeams mailed internationally via USPS First Class mail. If your national
         postal service is unreliable, please contact us to upgrade your shipping and insure your package. AirBeams are shipped the next business day after payment is received.
+      </p>
+            <h2 class="heading heading--medium u--gray-text">
+        FAQ
+      </h2>
+      <p class="p--body">
+        To learn more about the AirBeam and AirCasting apps have a look at the <a href="/airbeam/users-guide">AirBeam3 User's Guide</a> or visit our <a href="/airbeam/FAQ">FAQ page</a>.
       </p>
     </div>
   </div>
