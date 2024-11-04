@@ -78,8 +78,7 @@ image: /assets/img/pages/home/airbeam.jpg
       Automatic Data Back-ups
     </h2>
     <p>
-      Integrated SD card saves measurements
-      so you’ll never lose data.
+      On-board storage saves measurements so you’ll never lose data.
     </p>
   </div>
 

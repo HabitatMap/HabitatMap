@@ -131,7 +131,7 @@ image: /assets/img/airbeam-buy-it-now.jpg
         FAQ
       </h2>
       <p class="p--body">
-        To learn more about the AirBeam and AirCasting apps have a look at the <a href="/airbeam/users-guide">AirBeam3 User's Guide</a> or visit our <a href="/airbeam/FAQ">FAQ page</a>.
+        To learn more about the AirBeam and AirCasting apps have a look at the <a href="/airbeam/users-guide">AirBeam3 User's Guide</a>, <a href="/airbeam/users-guide-airbeammini">AirBeam Mini User's Guide</a> or visit our <a href="/airbeam/FAQ">FAQ page</a>.
       </p>
     </div>
   </div>
