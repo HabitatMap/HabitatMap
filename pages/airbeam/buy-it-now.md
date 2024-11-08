@@ -10,7 +10,7 @@ image: /assets/img/airbeam-buy-it-now.jpg
   <div class="notification-container">
     <div class="notification-text" id="notification"></div>
   </div>
-    <div class="notification-container">
+  <div class="notification-container">
     <div class="notification-text" id="ab-mini-notification"></div>
   </div>
   <div class="panel panel--leading-text">
@@ -56,6 +56,7 @@ image: /assets/img/airbeam-buy-it-now.jpg
         src="/assets/img/airbeam-buy-it-now.jpg?nf_resize=fit&w=20"
       />
     </div>
+
   </div>
 
   <div class="panel arc-background arc-background--right-teal-light">
@@ -65,7 +66,10 @@ image: /assets/img/airbeam-buy-it-now.jpg
         <span>Price per unit: $99</span>
         <div>
           <label for="quantity">Quantity:</label>
-          <input class="quantity-input" id="ab-mini-quantity" type="number" min='1' value='1'>
+          <input class="quantity-input" id="ab-mini-quantity" type="number" min='1' value='1' onchange="validateQuantityABMini(this)">
+        </div>
+         <div class="quantity-notification-container">
+          <div class="quantity-notification-text" id="ab-mini-quantity-notification"></div>
         </div>
         <div class="shipping-options-container">
           <label for="shipping-options">Shipping:</label>
@@ -141,4 +145,7 @@ image: /assets/img/airbeam-buy-it-now.jpg
   <p class="shop-airbeam__sub p--body">
     *Of the 75 PM2.5 measuring instruments evaluated by the <a href="http://www.aqmd.gov/aq-spec/sensordetail/habitatmap---airbeam3" class="link" target="_blank">SCAQMD AQ-SPEC program</a>, AirBeam3 is the most accurate when both the field and lab evaluations are considered.
   </p>
+
+{% include inputValidate.html %}
+
 </section>

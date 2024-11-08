@@ -1,0 +1,23 @@
+<script>
+  function validateQuantityABMini(input) {
+    const buyButton = input.closest(
+      ".order-details-container"
+    ).nextElementSibling;
+    const notification = document.getElementById(
+      "ab-mini-quantity-notification"
+    );
+
+    if (parseInt(input.value) > 50) {
+      notification.innerHTML =
+        "To purchase more than 50 AirBeams email <a href='mailto:info@habitatmap.org' style='text-decoration: underline;'>info@habitatmap.org</a>.";
+      notification.style.display = "block";
+      notification.style.color = "#00b2ef";
+      notification.style.marginBottom = "10px";
+      buyButton.style.display = "none";
+    } else {
+      notification.textContent = "";
+      notification.style.display = "none";
+      buyButton.style.display = "block";
+    }
+  }
+</script>
