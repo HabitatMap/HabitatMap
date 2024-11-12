@@ -2,7 +2,12 @@ const process = require("process");
 const fetch = require("node-fetch");
 
 const { PAYPAL_CLIENT_ID, PAYPAL_APP_SECRET, PAYPAL_API_URL } = process.env;
-const UNIT_PRICE = 249;
+const getUnitPrice = (name) => {
+  if (name === "AirBeam Mini") {
+    return 99;
+  }
+  return 199;
+};
 
 const generateAccessToken = async () => {
   try {
@@ -28,14 +33,14 @@ const generateAccessToken = async () => {
   }
 };
 
-const createOrder = async (quantity, shippingOption) => {
+const createOrder = async (quantity, shippingOption, name) => {
   const url = `${PAYPAL_API_URL}/v2/checkout/orders`;
   const accessToken = await generateAccessToken();
 
+  const UNIT_PRICE = getUnitPrice(name);
   const itemTotalValue = quantity * UNIT_PRICE;
   const shippingCosts = calculateShippingCosts(quantity, shippingOption);
-  const discountValue = calculateDiscountValue(quantity, itemTotalValue);
-  const totalValue = itemTotalValue + shippingCosts - discountValue;
+  const totalValue = itemTotalValue + shippingCosts;
 
   const body = JSON.stringify({
     intent: "CAPTURE",
@@ -56,13 +61,13 @@ const createOrder = async (quantity, shippingOption) => {
             },
             discount: {
               currency_code: "USD",
-              value: discountValue,
+              value: 0,
             },
           },
         },
         items: [
           {
-            name: "AirBeam",
+            name: name,
             quantity: quantity,
             unit_amount: {
               currency_code: "USD",
@@ -120,25 +125,13 @@ const handler = async (req) => {
 
   if (action === "create") {
     const { cart } = JSON.parse(req.body);
-    const { quantity, shippingOption } = cart[0];
-    return await createOrder(quantity, shippingOption);
+    const { quantity, shippingOption, name } = cart[0];
+    return await createOrder(quantity, shippingOption, name);
   } else if (action === "capture") {
     const { orderID } = JSON.parse(req.body);
     return await capturePayment(orderID);
   } else {
     return { statusCode: 400 };
-  }
-};
-
-const calculateDiscountValue = (quantity, totalItemValue) => {
-  if (quantity >= 10 && quantity < 20) {
-    return totalItemValue * 0.03;
-  } else if (quantity >= 20 && quantity < 99) {
-    return totalItemValue * 0.05;
-  } else if (quantity >= 100) {
-    return totalItemValue * 0.07;
-  } else {
-    return 0;
   }
 };
 

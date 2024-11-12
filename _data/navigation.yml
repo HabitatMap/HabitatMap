@@ -9,8 +9,10 @@
       url: /airbeam/how-it-works
     - text: FAQ
       url: /airbeam/faq
-    - text: User's Guide
+    - text: AirBeam3 User’s Guide
       url: /airbeam/users-guide
+    - text: AirBeam Mini User’s Guide
+      url: /airbeam/users-guide-airbeammini
     - text: Buy it Now
       url: /airbeam/buy-it-now
 - text: AirCasting

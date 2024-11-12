@@ -78,8 +78,7 @@ image: /assets/img/pages/home/airbeam.jpg
       Automatic Data Back-ups
     </h2>
     <p>
-      Integrated SD card saves measurements
-      so you’ll never lose data.
+      On-board storage saves measurements so you’ll never lose data.
     </p>
   </div>
 
@@ -108,19 +107,6 @@ image: /assets/img/pages/home/airbeam.jpg
 
   <div class="highlights__item">
     <h2 class="heading heading--small heading--body">
-      Buy More in Bulk
-    </h2>
-    <p>
-      Big savings + tech and planning support from the
-      AirBeam team when you buy 5 or more AirBeams!
-      <br>
-      <a href="/airbeam/get-consultation" class="link--underlined">Inquire about Bulk Ordering</a>
-    </p>
-
-  </div>
-
-  <div class="highlights__item">
-    <h2 class="heading heading--small heading--body">
       Designed for Mobile Monitoring
     </h2>
     <p>
@@ -136,6 +122,9 @@ image: /assets/img/pages/home/airbeam.jpg
     <p>
       The AirCasting platform (including app) are free to use.
     </p>
+  </div>
+
+  <div class="highlights__item">
     <p class="download-links">
       <a
         href="https://apps.apple.com/us/app/aircasting/id1587685281#?platform=iphone"
@@ -211,7 +200,6 @@ image: /assets/img/pages/home/airbeam.jpg
 <section class="for-teams u--align-center">
   <h1 class="for-teams__heading heading">Need AirBeams for Your Team or Classroom?</h1>
   <p class="for-teams__get-help">Get One-on-One Research Design and Implementation Help</p>
-  <p class="for-teams__save-up">Save up to $1,743.00! (orders of 100+)</p>
   <a href="/airbeam/get-consultation" class="button button--cta">Schedule a Free Consultation</a>
 </section>
 
