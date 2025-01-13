@@ -42,7 +42,7 @@ image: /assets/img/about-airbeam-01.jpg
     <li class="contents-list__item"><a href="#record-wifi">Record Measurements – Fixed (Wifi) Session</a></li>
     <li class="contents-list__item"><a href="#connection">Connection Indicator Color Key</a></li>
     <li class="contents-list__item"><a href="#standalone">Standalone mode</a></li>
-    <li class="contents-list__item"><a href="#sync">Sync SD Card</a></li>
+    <li class="contents-list__item"><a href="#sync">Sync Internal Storage</a></li>
     <li class="contents-list__item"><a href="#temperature">Temperature & Humidity Measurements</a></li>
     <li class="contents-list__item"><a href="#acquire">Acquire AirBeam Mini Data via Serial Monitor</a></li>
     <li class="contents-list__item"><a href="#programming">Programming</a></li>
@@ -196,7 +196,7 @@ Operation of AirBeam Mini is nearly identical to operation of AirBeam3, so the b
     <li>Blink White, once every ten seconds = Bluetooth connected and transmitting data </li>
     <li>Blink Yellow, once every ten seconds = standalone mode, Bluetooth disconnected, GPS fix missing </li>
     <li>Blink Magenta, once every ten seconds = low power indicator, plug in your AirBeam </li>
-    <li>Solid Cyan = SD card syncing</li>
+    <li>Solid Cyan = Internal data storage syncing</li>
   </ul>
 
   <p class="p--body">
@@ -210,7 +210,7 @@ Operation of AirBeam Mini is nearly identical to operation of AirBeam3, so the b
   </h2>
 
   <p class="p--body">
-    When recording a mobile session with AirBeam Mini, you can separate AirBeam Mini from your Android or iOS device and continue recording and timestamping your measurements. To do this, tap the three horizontal dots located in the upper right hand corner of the session card, map, or graph and tap “Enter standalone mode”. After entering standalone mode, the connection indicator will blink yellow. Note that after entering standalone mode, all your measurements will be pegged to your last known location, that is to say, your location will not update. <em> An iPhone 8 or higher or an Android 8 or higher plus Bluetooth 5 device is required to utilize the Standalone Mode and Sync SD Card features.</em>
+    When recording a mobile session with AirBeam Mini, you can separate AirBeam Mini from your Android or iOS device and continue recording and timestamping your measurements. To do this, tap the three horizontal dots located in the upper right hand corner of the session card, map, or graph and tap “Enter standalone mode”. After entering standalone mode, the connection indicator will blink yellow. Note that after entering standalone mode, all your measurements will be pegged to your last known location, that is to say, your location will not update. <em> An iPhone 8 or higher or an Android 8 or higher plus Bluetooth 5 device is required to utilize the standalone mode and sync internal storage features.</em>
   </p>
 
   <a id="sync" class="anchor">
@@ -220,7 +220,7 @@ Operation of AirBeam Mini is nearly identical to operation of AirBeam3, so the b
   </h2>
 
   <p class="p--body">
-    Whenever your AirBeam Mini is recording a mobile or fixed session, it will log data to its internal storage. In instances where your AirBeam is connected to the app via Bluetooth (mobile sessions) or sending data via WiFi directly to the AirCasting server (fixed sessions), the internal storage duplicates the data already submitted to and saved in the AirCasting database. However, if when recording a mobile session you enter standalone mode, or when recording a fixed session AirBeam Mini's WiFi connection is interrupted, you can sync AirBeam Mini's internal storage to retrieve your data. To do this either a) tap the “finish recording & sync” button on your mobile session card; or b) tap the “+” button at the bottom of the screen then tap “Sync storage” and follow the on screen instructions. After syncing the session data from internal storage to the AirCasting database, the internal storage will be cleared. <em> An iPhone 8 or higher or an Android 8 or higher plus Bluetooth 5 device is required to utilize the Standalone Mode and Sync SD Card features.</em>
+    Whenever your AirBeam Mini is recording a mobile or fixed session, it will log data to its internal storage. In instances where your AirBeam is connected to the app via Bluetooth (mobile sessions) or sending data via WiFi directly to the AirCasting server (fixed sessions), the internal storage duplicates the data already submitted to and saved in the AirCasting database. However, if when recording a mobile session you enter standalone mode, or when recording a fixed session AirBeam Mini's WiFi connection is interrupted, you can sync AirBeam Mini's internal storage to retrieve your data. To do this either a) tap the “finish recording & sync” button on your mobile session card; or b) tap the “+” button at the bottom of the screen then tap “Sync storage” and follow the on screen instructions. After syncing the session data from internal storage to the AirCasting database, the internal storage will be cleared. <em> An iPhone 8 or higher or an Android 8 or higher plus Bluetooth 5 device is required to utilize the standalone mode and sync internal storage features.</em>
   </p>
 
   <a id="acquire" class="anchor">
