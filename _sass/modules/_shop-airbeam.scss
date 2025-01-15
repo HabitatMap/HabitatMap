@@ -211,3 +211,11 @@
     margin-bottom: 0;
   }
 }
+
+.shop-airbeam__description {
+  padding-bottom: 20px;
+
+  @media screen and (min-width: $tablet-min) {
+    padding-bottom: 40px;
+  }
+}
