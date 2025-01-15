@@ -157,13 +157,57 @@
 .get-consult-button {
   font-size: 13px;
   line-height: 25px;
+  margin-top: 10px;
+  white-space: nowrap;
 }
 
-.get-consult-button,
 .shop-airbeam__buy-button {
   width: 100%;
 }
 
 .shop-airbeam-image {
   object-fit: cover;
+}
+
+.shop-airbeam__products {
+  padding-bottom: 0px;
+  @media screen and (min-width: $tablet-min) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+}
+
+.shop-airbeam__product {
+  padding: 0;
+
+  &:first-of-type {
+    padding-bottom: 40px;
+  }
+
+  @media screen and (min-width: $tablet-min) {
+    &:first-of-type {
+      padding-bottom: 0;
+    }
+  }
+}
+
+.product__content {
+  padding-top: 20px;
+
+  @media screen and (min-width: $small-desktop-min) {
+    display: flex;
+    padding: 20px 0;
+  }
+}
+
+.shop-airbeam__buttons-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: $tablet-min) {
+    margin-bottom: 0;
+  }
 }
