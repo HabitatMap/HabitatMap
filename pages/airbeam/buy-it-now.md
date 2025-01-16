@@ -23,78 +23,95 @@ image: /assets/img/airbeam-buy-it-now.jpg
   </div>
 
   <h1 class="panel panel--buy-now heading heading--medium u--accent-cyan">Buy Now!</h1>
-  <div class="panel">
-    <div class="split--30 split--order-secondary">
-      <h2 class="heading heading--small u--margin-bottom-tiny">AirBeam3</h2>
-      <div class="order-details-container">
-        <span>Price per unit: $199</span>
-        <div>
-          <label for="quantity">Quantity:</label>
-          <input class="quantity-input" id="quantity" type="number" min='1' value='1'>
-        </div>
-        <div class="shipping-options-container">
-          <label for="shipping-options">Shipping:</label>
-          <select name="shipping-options" id="shipping-options">
-            <option value="domestic">Domestic US</option>
-            <option value="international">Outside the US</option>
-          </select>
-        </div>
-        <div id="cost-info" class="cost-info">Shipping costs will be calculated at checkout.</div>
-      </div>
-      <div class="shop-airbeam__buy-button">
-        {% include paypal-button.html %}
-      </div>
-      <a href="/airbeam/get-consultation" class="get-consult-button button button--secondary">
-        HAVE QUESTIONS?
-      </a>
-    </div>
-    <div class="split--65 u--align-right">
-      <img
-        alt="Airbeam"
-        class="img lazyload shop-airbeam-image"
-        data-src="/assets/img/airbeam-buy-it-now.jpg?nf_resize=fit&w=750"
-        src="/assets/img/airbeam-buy-it-now.jpg?nf_resize=fit&w=20"
-      />
-    </div>
 
+  <div class="panel shop-airbeam__products">
+    <div class="panel shop-airbeam__product">
+      <img
+          alt="Airbeam"
+          class="img lazyload shop-airbeam-image"
+          data-src="/assets/img/airbeam-buy-it-now.jpg?nf_resize=fit&w=750"
+          src="/assets/img/airbeam-buy-it-now.jpg?nf_resize=fit&w=20"
+      />
+      <div class="product__content">
+        <div>
+          <h2 class="heading heading--small u--margin-bottom-tiny">AirBeam3</h2>
+          <div class="order-details-container">
+            <span>Price per unit: $199</span>
+            <div>
+              <label for="quantity">Quantity:</label>
+              <input class="quantity-input" id="quantity" type="number" min='1' value='1'>
+            </div>
+            <div class="shipping-options-container">
+              <label for="shipping-options">Shipping:</label>
+              <select name="shipping-options" id="shipping-options">
+                <option value="domestic">Domestic US</option>
+                <option value="international">Outside the US</option>
+              </select>
+            </div>
+            <div id="cost-info" class="cost-info">Shipping costs will be calculated at checkout.</div>
+          </div>
+        </div>
+        <div class="shop-airbeam__buttons-container">
+          <div class="shop-airbeam__buy-button">
+            {% include paypal-button.html %}
+          </div>
+          <a href="/airbeam/get-consultation" class="get-consult-button button button--secondary">
+            HAVE QUESTIONS?
+          </a>
+          <a href="/airbeam/users-guide" class="get-consult-button button button--secondary">
+            AIRBEAM 3 USER GUIDE
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="panel shop-airbeam__product">
+    <img
+          alt="Airbeam Mini"
+          class="img lazyload shop-airbeam-image"
+          data-src="/assets/AirBeamMiniBlur.png?nf_resize=fit&w=750"
+          src="/assets/AirBeamMiniBlur.png?nf_resize=fit&w=20"
+      />
+      <div class="product__content">
+        <div>
+          <h2 class="heading heading--small u--margin-bottom-tiny">AirBeam Mini</h2>
+          <div class="order-details-container">
+            <span>Price per unit: $99</span>
+            <div>
+              <label for="quantity">Quantity:</label>
+              <input class="quantity-input" id="ab-mini-quantity" type="number" min='1' value='1' onchange="validateQuantityABMini(this)">
+            </div>
+            <div class="quantity-notification-container">
+              <div class="quantity-notification-text" id="ab-mini-quantity-notification"></div>
+            </div>
+            <div class="shipping-options-container">
+              <label for="shipping-options">Shipping:</label>
+              <select name="shipping-options" id="ab-mini-shipping-options">
+                <option value="domestic">Domestic US</option>
+                <option value="international">Outside the US</option>
+              </select>
+            </div>
+            <div id="ab-mini-cost-info" class="cost-info">Shipping costs will be calculated at checkout.</div>
+          </div>
+        </div>
+        <div class="shop-airbeam__buttons-container" >
+          <div class="shop-airbeam__buy-button">
+            {% include paypal-button-ab-mini.html %}
+          </div>
+          <a href="/airbeam/get-consultation" class="get-consult-button button button--secondary">
+            HAVE QUESTIONS?
+          </a>
+          <a href="/airbeam/users-guide-airbeammini" class="get-consult-button button button--secondary">
+            AIRBEAM MINI USER GUIDE
+          </a>
+        </div>
+      </div>
+    </div>
   </div>
 
-  <div class="panel arc-background arc-background--right-teal-light">
-    <div class="split--30 split--order-secondary">
-      <h2 class="heading heading--small u--margin-bottom-tiny">AirBeam Mini</h2>
-      <div class="order-details-container">
-        <span>Price per unit: $99</span>
-        <div>
-          <label for="quantity">Quantity:</label>
-          <input class="quantity-input" id="ab-mini-quantity" type="number" min='1' value='1' onchange="validateQuantityABMini(this)">
-        </div>
-         <div class="quantity-notification-container">
-          <div class="quantity-notification-text" id="ab-mini-quantity-notification"></div>
-        </div>
-        <div class="shipping-options-container">
-          <label for="shipping-options">Shipping:</label>
-          <select name="shipping-options" id="ab-mini-shipping-options">
-            <option value="domestic">Domestic US</option>
-            <option value="international">Outside the US</option>
-          </select>
-        </div>
-        <div id="ab-mini-cost-info" class="cost-info">Shipping costs will be calculated at checkout.</div>
-      </div>
-      <div class="shop-airbeam__buy-button">
-        {% include paypal-button-ab-mini.html %}
-      </div>
-      <a href="/airbeam/get-consultation" class="get-consult-button button button--secondary">
-        HAVE QUESTIONS?
-      </a>
-    </div>
-    <div class="split--65 u--align-right">
-      <img
-        alt="Airbeam Mini"
-        class="img lazyload shop-airbeam-image"
-        data-src="/assets/AirBeamMiniBlur.png?nf_resize=fit&w=750"
-        src="/assets/AirBeamMiniBlur.png?nf_resize=fit&w=20"
-      />
-    </div>
+  <div class="panel shop-airbeam__description">
+    <p>
+      The AirCasting app collects measurements from the AirBeam and relays it to the maps. With thousands of AirBeams measuring particulate matter worldwide and nearly 4 billion data points recorded, the AirCasting platform is the largest open-source database of community-collected air quality measurements ever created. By documenting and leveraging health and environmental data to inform personal decision-making and public policy, the AirCasting platform empowers people to map air pollution and organize for clean air.
+    </p>
   </div>
 
   <div class="panel">

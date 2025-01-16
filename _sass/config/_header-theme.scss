@@ -90,6 +90,7 @@ $header-link-color-white: $white;
   &.sticky,
   .sticky & {
     background-color: $white;
+    z-index: 101;
   }
 
   @media screen and (max-width: $tablet-max) {
