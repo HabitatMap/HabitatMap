@@ -171,6 +171,7 @@
 
 .shop-airbeam__products {
   padding-bottom: 0px;
+
   @media screen and (min-width: $tablet-min) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -217,5 +218,29 @@
 
   @media screen and (min-width: $tablet-min) {
     padding-bottom: 40px;
+  }
+}
+
+.shop-airbeam__chart-image {
+  width: 100%;
+  height: auto;
+  max-width: 250px;
+  display: block;
+  margin: 0 auto;
+}
+
+table {
+  th {
+    padding: 15px;
+    vertical-align: middle;
+
+    &:first-child,
+    &:last-child {
+      width: 40%;
+    }
+
+    &:nth-child(2) {
+      width: 20%;
+    }
   }
 }

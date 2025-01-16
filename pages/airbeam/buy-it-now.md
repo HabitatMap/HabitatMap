@@ -115,12 +115,7 @@ image: /assets/img/airbeam-buy-it-now.jpg
   </div>
 
   <div class="panel">
-    <img
-      alt="AB3 vs AB Mini chart"
-      class="img lazyload shop-airbeam-image"
-      data-src="/assets/ABMvAB3_Chart.png?nf_resize=fit&w=750"
-      src="/assets/AB3vsABMini.png?nf_resize=fit&w=20"
-    />
+    {% include airbeam-comparison-table.html %}
   </div>
 
   <hr class="panel-separator">
