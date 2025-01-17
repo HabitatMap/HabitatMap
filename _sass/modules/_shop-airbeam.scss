@@ -264,6 +264,15 @@
   background-size: cover;
 }
 
+.shop-airbeam__chart-label {
+  font-size: 14px;
+  font-weight: 600;
+
+  @media screen and (min-width: $tablet-min) {
+    font-size: 18px;
+  }
+}
+
 table {
   border: 1px solid $teal-light;
   border-radius: 5px;
