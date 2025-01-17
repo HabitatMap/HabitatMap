@@ -114,8 +114,37 @@ image: /assets/img/airbeam-buy-it-now.jpg
     </p>
   </div>
 
-  <div class="panel">
-    {% include airbeam-comparison-table.html %}
+  <div class="panel shop-airbeam__comparison-container">
+    <div class="shop-airbeam__comparison">
+      {% include airbeam-comparison-table.html %}
+      <div class="shop-airbeam__comparison-summary">
+        <div>
+          <h3 class="heading heading--small u--gray-text">
+            Choose AirBeam Mini if you want:
+          </h3>
+          <ul class="comparison-summary__list">
+            <li>Lower cost</li>
+            <li>Smaller size</li>
+            <li>Lighter weight</li>
+            <li>Fully weather resistant</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="heading heading--small u--gray-text">
+            Choose AirBeam3 if you want:
+          </h3>
+          <ul class="comparison-summary__list">
+            <li>Cellular data transmission</li>
+            <li>Temperature & humidity measurements</li>
+            <li>Standalone location tracking</li>
+            <li>Longer battery runtime</li>
+            <li>Removable data storage</li>
+            <li class="comparison-summary__item">Higher capacity data storage</li>
+            <li class="comparison-summary__item">Mobile data stored at 1-second intervals</li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
 
   <hr class="panel-separator">

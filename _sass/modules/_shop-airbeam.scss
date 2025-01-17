@@ -221,26 +221,168 @@
   }
 }
 
-.shop-airbeam__chart-image {
+.shop-airbeam__comparison-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  height: auto;
+}
+
+.shop-airbeam__comparison {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 900px;
+}
+
+.shop-airbeam__chart-image {
+  min-height: 100px;
+  width: 100%;
   max-width: 250px;
-  display: block;
-  margin: 0 auto;
+  border-radius: 5px;
+  display: inline-block;
+
+  @media screen and (min-width: $large-mobile-min) {
+    background-size: contain;
+    min-height: 120px;
+  }
+
+  @media screen and (min-width: $tablet-min) {
+    min-height: 150px;
+  }
+}
+
+.image-abmini {
+  background: url("/assets/AirBeamMiniBlur.png") no-repeat center center;
+  background-size: cover;
+}
+
+.image-ab3 {
+  background: url("/assets/img/airbeam-buy-it-now.jpg") no-repeat center center;
+  background-size: cover;
 }
 
 table {
-  th {
-    padding: 15px;
+  border: 1px solid $teal-light;
+  border-radius: 5px;
+  border-collapse: separate;
+  border-spacing: 0;
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 14px;
+
+  @media screen and (min-width: $tablet-min) {
+    font-size: 16px;
+  }
+
+  th,
+  td {
+    padding: 5px;
+    text-align: center;
     vertical-align: middle;
 
-    &:first-child,
-    &:last-child {
-      width: 40%;
-    }
-
-    &:nth-child(2) {
-      width: 20%;
+    @media screen and (min-width: $tablet-min) {
+      padding: 15px;
     }
   }
+
+  th {
+    &:second-child,
+    &:last-child {
+      width: 35%;
+    }
+
+    &:first-child {
+      width: 25%;
+    }
+  }
+
+  thead > tr > th {
+    border-right: 1px solid $teal-light;
+
+    &:last-child {
+      border-right: none;
+    }
+  }
+
+  tbody > tr > td {
+    border-top: 1px solid $teal-light;
+    border-right: 1px solid $teal-light;
+
+    &:first-child {
+      font-weight: bolder;
+    }
+
+    &:last-child {
+      border-right: none;
+    }
+  }
+}
+
+.shop-airbeam__checkmark {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  background-color: $green;
+  margin: 0 auto;
+
+  &::before {
+    content: "";
+    width: 12px;
+    height: 100%;
+    background: url("/assets/img/svg/check-solid.svg") no-repeat center;
+    background-size: contain;
+  }
+}
+
+.shop-airbeam__minus {
+  border: 2px solid $red-light;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: $white;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+
+  &::before {
+    content: "";
+    width: 12px;
+    height: 100%;
+    background: url("/assets/img/svg/minus.svg") no-repeat center;
+    background-size: contain;
+  }
+}
+
+.shop-airbeam__comparison-summary {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+
+  @media screen and (min-width: $tablet-min) {
+    margin-top: 40px;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+  }
+}
+
+.comparison-summary__list {
+  margin-top: 10px;
+}
+
+.comparison-summary__list > li {
+  list-style-type: disc;
+  list-style-position: inside;
+  padding-left: 5px;
 }
