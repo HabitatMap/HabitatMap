@@ -29,8 +29,8 @@ image: /assets/img/airbeam-buy-it-now.jpg
       <img
           alt="Airbeam"
           class="img lazyload shop-airbeam-image"
-          data-src="/assets/img/airbeam-buy-it-now.jpg?nf_resize=fit&w=750"
-          src="/assets/img/airbeam-buy-it-now.jpg?nf_resize=fit&w=20"
+          data-src="/assets/img/airbeam-buy-it-now.jpg?w=750"
+          src="/assets/img/airbeam-buy-it-now.jpg?w=20"
       />
       <div class="product__content">
         <div>
@@ -68,8 +68,8 @@ image: /assets/img/airbeam-buy-it-now.jpg
     <img
           alt="Airbeam Mini"
           class="img lazyload shop-airbeam-image"
-          data-src="/assets/AirBeamMiniBlur.png?nf_resize=fit&w=750"
-          src="/assets/AirBeamMiniBlur.png?nf_resize=fit&w=20"
+          data-src="/assets/AirBeamMiniBlur.png?w=750"
+          src="/assets/AirBeamMiniBlur.png?w=20"
       />
       <div class="product__content">
         <div>
@@ -169,7 +169,7 @@ image: /assets/img/airbeam-buy-it-now.jpg
         Shipping
       </h2>
       <p class="p--body">
-        Domestic US shipping via USPS is $8 for the first unit and $4 for each additional unit. Shipping outside the United States via USPS is $30 for the first unit and $10 for each additional unit. If you need faster shipping, better tracking, or insurance please email info@habitatmap.org with your shipping address and the number of AirBeams you would like to order. We are not responsible for the loss or damage of AirBeams mailed internationally via USPS First Class mail. If your national
+        Domestic US shipping via USPS is $10 for the first unit and $5 for each additional unit. Shipping outside the United States via USPS is $35 for the first unit and $10 for each additional unit. If you need faster shipping, better tracking, or insurance please email info@habitatmap.org with your shipping address and the number of AirBeams you would like to order. We are not responsible for the loss or damage of AirBeams mailed internationally via USPS First Class mail. If your national
         postal service is unreliable, please contact us to upgrade your shipping and insure your package. AirBeams are shipped the next business day after payment is received.
       </p>
             <h2 class="heading heading--medium u--gray-text">
