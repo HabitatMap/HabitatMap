@@ -178,9 +178,10 @@
 
   @media screen and (min-width: $tablet-min) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
     gap: 40px;
   }
+
 }
 
 .shop-airbeam__product {

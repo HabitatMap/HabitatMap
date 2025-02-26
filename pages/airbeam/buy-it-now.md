@@ -31,6 +31,8 @@ image: /assets/img/airbeam-buy-it-now.jpg
           class="img lazyload shop-airbeam-image"
           data-src="/assets/img/airbeam-buy-it-now.jpg?nf_resize=fit&w=750"
           src="/assets/img/airbeam-buy-it-now.jpg?nf_resize=fit&w=20"
+           width="750"
+           height="422"
       />
       <div class="product__content">
         <div>
@@ -70,6 +72,8 @@ image: /assets/img/airbeam-buy-it-now.jpg
           class="img lazyload shop-airbeam-image"
           data-src="/assets/AirBeamMiniBlur.png?nf_resize=fit&w=750"
           src="/assets/AirBeamMiniBlur.png?nf_resize=fit&w=20"
+          width="750"
+          height="422"
       />
       <div class="product__content">
         <div>
