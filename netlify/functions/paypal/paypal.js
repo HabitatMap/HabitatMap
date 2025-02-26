@@ -140,10 +140,10 @@ const calculateShippingCosts = (quantity, shippingOption) => {
   var additionalUnitPrice;
 
   if (shippingOption === "domestic") {
-    firstUnitPrice = 8;
-    additionalUnitPrice = 4;
+    firstUnitPrice = 10;
+    additionalUnitPrice = 5;
   } else if (shippingOption === "international") {
-    firstUnitPrice = 30;
+    firstUnitPrice = 35;
     additionalUnitPrice = 10;
   }
 

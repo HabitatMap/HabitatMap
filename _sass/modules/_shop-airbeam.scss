@@ -166,16 +166,20 @@
 }
 
 .shop-airbeam-image {
+  width: 100%;
+  max-width: 750px;
+  height: auto;
   object-fit: cover;
+  aspect-ratio: 16 / 9;
 }
 
 .shop-airbeam__products {
   padding-bottom: 0px;
-
   @media screen and (min-width: $tablet-min) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
+    align-items: start;
   }
 }
 
