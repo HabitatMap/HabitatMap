@@ -175,13 +175,12 @@
 
 .shop-airbeam__products {
   padding-bottom: 0px;
-
   @media screen and (min-width: $tablet-min) {
     display: grid;
-    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    grid-template-columns: 1fr 1fr;
     gap: 40px;
+    align-items: start;
   }
-
 }
 
 .shop-airbeam__product {
