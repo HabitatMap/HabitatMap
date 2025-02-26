@@ -166,7 +166,11 @@
 }
 
 .shop-airbeam-image {
+  width: 100%;
+  max-width: 750px;
+  height: auto;
   object-fit: cover;
+  aspect-ratio: 16 / 9;
 }
 
 .shop-airbeam__products {
