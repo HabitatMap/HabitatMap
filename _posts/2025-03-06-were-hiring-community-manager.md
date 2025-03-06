@@ -5,6 +5,10 @@ date: 2025-03-06
 featured: true
 author: Michael Heimbinder
 image: /images/uploads/hiring_community_manager.png
+intro: Join Us! The HabitatMap team is looking for a Community Manager.
+  Reporting to the Executive Director, the Community Manager will be responsible
+  for growing and supporting the global AirCasting community by developing
+  strategies that increase brand awareness and audience engagement.
 category: Education
 tag:
   - community-based-organization
