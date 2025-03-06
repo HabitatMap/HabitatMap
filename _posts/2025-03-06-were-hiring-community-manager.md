@@ -2,7 +2,7 @@
 layout: post
 title: "We're Hiring: Community Manager"
 date: 2025-03-06
-featured: false
+featured: true
 author: Michael Heimbinder
 image: /images/uploads/hiring_community_manager.png
 category: Education
