@@ -22,29 +22,23 @@ HabitatMap is an environmental technology non-profit building open-source, free,
 
 Our central data visualization platform - AirCasting - and its companion palm-sized air quality measurement device - AirBeam - support schools, researchers, community-based organizations, municipalities, and regulatory agencies in obtaining valid environmental data that can be used to make decisions in real-time and craft data-informed policy.
 
-
-
 **About the Job**
 
 Join Us! The HabitatMap team is looking for a Community Manager. Reporting to the Executive Director, the Community Manager will be responsible for growing and supporting the global AirCasting community by developing strategies that increase brand awareness and audience engagement. The ideal candidate will have strong writing skills, strong verbal communication skills, a deep understanding of social media trends, and experience producing and managing photographic and video production for social media. Familiarity with the AirBeam and AirCasting platform are a plus but not required.
 
+*Title*: Community Manager
 
+*Status*: Part-time, Contractor, 12-month term with potential to extend
 
-Title: Community Manager
+*Hours*: Flexible, 30-40 hours per week, Required to meet daily over video conference in the morning Monday through Friday
 
-Status: Part-time, Contractor, 12-month term with potential to extend
+*Location*: Remote, Candidates must be based in the US or Canada
 
-Hours: Flexible, 30-40 hours per week, Required to meet daily over video conference in the morning Monday through Friday
-
-Location: Remote, Candidates must be based in the US or Canada
-
-Hourly Pay: $40 per hour
-
-
+*Hourly Pay*: $40 per hour
 
 **What You'll be Doing**
 
-Social Media Management & Content Production
+*Social Media Management & Content Production*
 
 * Manage the day-to-day operations of HabitatMap’s social media platforms, including Instagram, Facebook, Bluesky, YouTube, and LinkedIn.
 * Create visually appealing, high-quality social media content, including posts, stories, graphics, and videos.
@@ -56,23 +50,17 @@ Social Media Management & Content Production
 * Foster a sense of community by initiating conversations, asking questions, and interacting with followers.
 * Foster and strengthen new relationships with key influencers within the community.
 
-
-
-Community Management & Engagement
+*Community Management & Engagement*
 
 * Outreach to AirBeam users to solicit product feedback, gather referrals, connect users with technical support resources, and gather information for AirBeam user case studies.
 * Establish and manage a community forum for AirBeam users, actively engaging with forum members.
 * Organize, convene, and moderate an annual webinar and survey of AirBeam users.
 * Update and maintain the Frequently Asked Questions page of the AirCasting website.
 
-
-
-Copywriting & Editorial Planning
+*Copywriting & Editorial Planning*
 
 * Write compelling and brand-aligned content for a variety of platforms, including social media, newsletters, and blogs.
 * Write case studies of AirBeam users, highlighting the most innovative and successful applications of the AirBeam and AirCasting technologies.
-
-
 
 **Minimum Qualifications**
 
@@ -91,13 +79,9 @@ Copywriting & Editorial Planning
 * Self-motivated with the ability to work independently as well as collaboratively.
 * A passion for civic engagement and community building.
 
-
-
 **How to Apply**
 
 *Please send your resume, portfolio, and answers to the following questions (cover letter) as part of your application to Michael Heimbinder, Executive Director, mheimbinder@habitatmap.org*
-
-
 
 * How has your work history and prior experiences prepared you to be successful in this role at HabitatMap. Please share the number of years and describe the type of experience had with social media management, content strategy, video and photo production management, and community engagement.
 * Please include your portfolio (or a document that includes three writing samples and three design samples). We would love to see some of your creative capabilities: examples of your writing, graphic design, advertising, social media posts, and/or photography/videography.
