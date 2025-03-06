@@ -2,7 +2,7 @@
 layout: post
 title: "The Empowering Virtues of Citizen Science: Claiming Clean Air in Brussels"
 date: 2022-09-14
-featured: true
+featured: false
 author: Nicola da Schio
 image: /images/uploads/radiographie.jpg
 category: Health
