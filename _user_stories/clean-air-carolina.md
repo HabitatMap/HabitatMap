@@ -3,10 +3,10 @@ layout: user_story
 title: CleanAIRE NC
 featured: true
 image: /images/uploads/cac_cropped.jpg
-intro: <a href="https://cleanairenc.org/">CleanAIRE NC</a> (CAC), a
-  Charlotte-based non-profit, works to ensure cleaner air quality for all North
-  Carolinians through education and advocacy and by working with their partners
-  to reduce sources of pollution. For the past two years, CleanAIRE NC has been
+intro: <a href="https://cleanairenc.org/">CleanAIRE NC</a>, a Charlotte-based
+  non-profit, works to ensure cleaner air quality for all North Carolinians
+  through education and advocacy and by working with their partners to reduce
+  sources of pollution. For the past two years, CleanAIRE NC has been
   distributing mobile and stationary air quality instruments and providing
   hands-on training to Charlotte residents as part of their <a
   href="https://cleanairenc.org/blog/2020/04/09/clearing-the-air-in-the-historic-west-end/">AirKeepers
