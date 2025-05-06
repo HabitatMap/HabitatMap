@@ -9,7 +9,8 @@ intro: <a href="https://cleanairenc.org/">CleanAIRE NC</a> (CAC), a
   to reduce sources of pollution. For the past two years, CleanAIRE NC has been
   distributing mobile and stationary air quality instruments and providing
   hands-on training to Charlotte residents as part of their <a
-  href="https://cleanaircarolina.org/airkeepers/">AirKeepers program</a>.
+  href="https://cleanairenc.org/blog/2020/04/09/clearing-the-air-in-the-historic-west-end/">AirKeepers
+  program</a>.
 type: Activists & Non-profits
 order: 4
 ---
