@@ -34,7 +34,7 @@ image: /assets/img/product-shot_crop.jpg
           AirBeam is a low-cost, palm-sized air quality instrument that measures hyperlocal concentrations of harmful microscopic particles in the air, known as particulate matter, as well as humidity and temperature. The AirBeam measures particulate matter with proven accuracy and when used in conjunction with the AirCasting platform - or a custom solution - helps community-based organizations, educators, academics, regulators, city managers, and community scientists map air pollution and organize for&nbsp;clean&nbsp;air.
         </p>
         <a href="/airbeam/buy-it-now" class="badge-link badge-link--hm">
-          <span class="u--vertically-centered">Get Started with AirBeam</span>
+          <span class="u--vertically-centered">Get AirBeam</span>
         </a>
       </div>
     </div>

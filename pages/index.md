@@ -11,17 +11,10 @@ image: /assets/img/pages/home/airbeam.jpg
       Breathe&nbsp;Smarter&nbsp;with AirBeam
     </h1>
       <p class="p--hero">
-      Portable&nbsp;Realtime Air&nbsp;Quality Visualization&nbsp;Tools&nbsp;for
-      </p>
-      <div class="flipping-text">
-        <ul class="flipping-text__list">
-          <li class="flipping-text__list__item">Researchers</li>
-          <li class="flipping-text__list__item">Educators</li>
-          <li class="flipping-text__list__item">Community Organizers</li>
-        </ul>
-      </div>
+        A portable and easy to use air quality monitor that lets you see the pollution around you in real time.
+        Empower your community, protect your health, and take action with data you can trust.</p>
     <br>
-    <button class="button button--cta js--open-get-started-modal">Get started</button>
+    <button class="button button--cta js--open-get-started-modal">Get AirB</button>
   </div>
 </section>
 
