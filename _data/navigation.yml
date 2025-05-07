@@ -36,5 +36,5 @@
       url: /about/history
     - text: Press
       url: /about/press
-- text: TakingSpace Blog
-  url: /blog
+    - text: Blog
+      url: /blog

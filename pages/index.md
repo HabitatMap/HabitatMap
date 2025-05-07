@@ -8,20 +8,15 @@ image: /assets/img/pages/home/airbeam.jpg
 <section class="panel panel--hero u--bg-cyan lazyload">
   <div class="split--40">
     <h1 class="heading heading--large heading--hero">
-      Know&nbsp;What&nbsp;is Really in&nbsp;Your&nbsp;Air
+      Breathe&nbsp;Smarter&nbsp;with AirBeam
     </h1>
       <p class="p--hero">
-      Portable&nbsp;Realtime Air&nbsp;Quality Visualization&nbsp;Tools&nbsp;for
-      </p>
-      <div class="flipping-text">
-        <ul class="flipping-text__list">
-          <li class="flipping-text__list__item">Researchers</li>
-          <li class="flipping-text__list__item">Educators</li>
-          <li class="flipping-text__list__item">Community Organizers</li>
-        </ul>
-      </div>
+        A portable and easy to use air quality monitor that lets you see the pollution around you in real time.
+        Empower your community, protect your health, and take action with data you can trust.</p>
     <br>
-    <button class="button button--cta js--open-get-started-modal">Get started</button>
+    <a href="/airbeam/buy-it-now">
+      <button class="button button--cta">Get AirBeam</button>
+    </a>
   </div>
 </section>
 
