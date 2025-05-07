@@ -14,7 +14,9 @@ image: /assets/img/pages/home/airbeam.jpg
         A portable and easy to use air quality monitor that lets you see the pollution around you in real time.
         Empower your community, protect your health, and take action with data you can trust.</p>
     <br>
-    <button class="button button--cta js--open-get-started-modal">Get AirBeam</button>
+    <a href="/airbeam/buy-it-now">
+      <button class="button button--cta">Get AirBeam</button>
+    </a>
   </div>
 </section>
 
