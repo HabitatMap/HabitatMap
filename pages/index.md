@@ -8,7 +8,7 @@ image: /assets/img/pages/home/airbeam.jpg
 <section class="panel panel--hero u--bg-cyan lazyload">
   <div class="split--40">
     <h1 class="heading heading--large heading--hero">
-      Breathe&nbsp;Smarter&nbsp;with AirBeam
+      Breathe Smarter with AirBeam
     </h1>
       <p class="p--hero">
         A portable and easy to use air quality monitor that lets you see the pollution around you in real time.
