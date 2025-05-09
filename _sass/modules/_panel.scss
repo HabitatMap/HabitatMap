@@ -86,26 +86,40 @@
 }
 
 .panel--hero {
-  &.lazyloaded {
+  position: relative;
+
+  > .split--40 {
+    width: 100%;
+
     @media screen and (min-width: $tablet-min) {
+      width: auto;
+      position: relative;
+      z-index: 1;
+      padding-right: $u-space-default;
+    }
+  }
+
+  @media screen and (min-width: $tablet-min) {
+    position: relative;
+
+    &.lazyloaded::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      height: 100%;
+      left: 45%;
+      width: 55%;
       background-image: url("/assets/img/pages/home/airbeam.jpg");
       background-repeat: no-repeat;
-      background-position: 50vw center;
-      background-size: contain;
+      background-size: cover;
+      background-position: center;
+      z-index: 0;
     }
+  }
 
-    @media screen and (min-width: $tablet-max) {
-      background-position-y: top;
-    }
-
-    @media screen and (min-width: $desktop-min) {
-      padding-bottom: 5rem;
-      padding-top: 5rem;
-    }
-
-    @media screen and (min-width: 1200px) {
-      background-size: 52vw;
-    }
+  @media screen and (min-width: $desktop-min) {
+    padding-bottom: 5rem;
+    padding-top: 5rem;
   }
 }
 
