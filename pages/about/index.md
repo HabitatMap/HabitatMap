@@ -97,7 +97,7 @@ image: /assets/img/pages/about-habitatmap/airbeam.jpg
     <p class="p--body">
       AirCasting is an open-source environmental data visualization platform that consists of an Android app and online mapping system and is one of the largest open-source databases of community-collected air quality measurements ever created.
     </p>
-    <a href="http://aircasting.habitatmap.org/map" class="button button--ac button--ac-about">AirCasting Maps</a>
+    <a href="https://aircasting.org" class="button button--ac button--ac-about">AirCasting Maps</a>
   </div>
 </section>
 

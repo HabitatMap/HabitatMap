@@ -6,13 +6,13 @@ force = false
 
 [[redirects]]
 from = "/markers"
-to = "http://aircasting.habitatmap.org/map"
+to = "https://aircasting.org"
 status = 301
 force = false
 
 [[redirects]]
 from = "/markers/*"
-to = "http://aircasting.habitatmap.org/map"
+to = "https://aircasting.org"
 status = 301
 force = false
 
