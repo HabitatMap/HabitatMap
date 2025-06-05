@@ -9,6 +9,7 @@ from = "/markers"
 to = "http://aircasting.habitatmap.org/map"
 status = 301
 force = false
+query = {lat = ":lat", lng = ":lng", z = ":z", t = ":t", maps = ":maps", nopol = ":nopol", nogrp = ":nogrp", marker_id = ":marker_id"}
 
 [[redirects]]
 from = "/markers/*"
@@ -139,3 +140,28 @@ to = "/airbeam"
 status = 301
 force = false
 query = {from = ":from", source = ":source"}
+
+[[redirects]]
+from = "/blog/*/"
+to = "/blog/:splat"
+status = 301
+force = false
+
+[[redirects]]
+from = "/blog/*"
+to = "/blog/:splat"
+status = 301
+force = false
+query = {utm_source = ":utm_source", utm_medium = ":utm_medium", utm_campaign = ":utm_campaign"}
+
+[[redirects]]
+from = "/airbeam/"
+to = "/airbeam"
+status = 301
+force = false
+
+[[redirects]]
+from = "/airbeam/FAQ"
+to = "/airbeam/faq"
+status = 301
+force = false
