@@ -69,3 +69,38 @@ from = "/habitatmap_docs/HowToBuildAnAirCastingAirMonitor.pdf"
 to = "/assets/HowToBuildAnAirCastingAirMonitor.pdf"
 status = 301
 force = false
+
+[[redirects]]
+from = "/blog/airbeam-technical-specifications-operation-"
+to = "/blog/airbeam2-technical-specifications-operation-performance"
+status = 301
+
+[[redirects]]
+from = "/blog/airbeam2-technicalspeci"
+to = "/blog/airbeam2-technical-specifications-operation-performance"
+status = 301
+
+[[redirects]]
+from = "/blog/airbeam2-technical-specificationsoperation-performance"
+to = "/blog/airbeam2-technical-specifications-operation-performance"
+status = 301
+
+[[redirects]]
+from = "/blog/airbeam2-technical-specifications-operation-"
+to = "/blog/airbeam2-technical-specifications-operation-performance"
+status = 301
+
+[[redirects]]
+from = "/blog/airbeam2-technical-specifications-"
+to = "/blog/airbeam2-technical-specifications-operation-performance"
+status = 301
+
+[[redirects]]
+from = "/blog/airbeam3-"
+to = "/blog/airbeam3-technical-specifications-operation-performance"
+status = 301
+
+[[redirects]]
+from = "/airbeam/users-guideHan"
+to = "/airbeam/users-guide"
+status = 301

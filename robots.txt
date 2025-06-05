@@ -2,5 +2,6 @@ Sitemap: https://www.habitatmap.org/sitemap.xml
 Disallow: /habitatmap_docs/MakeYourOwnAirCastingLuminescentApparel.pdf
 Disallow: /habitatmap_docs/HowToBuildAnAirCastingAirMonitor.pdf
 Disallow: /faq_categories/
+Disallow: /.netlify/
 User-agent: *
 Disallow: /admin/
