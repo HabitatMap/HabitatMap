@@ -8,13 +8,39 @@ and this is more needed than having the FAQ indexed and separate FAQ pages -->
 <section class="panel panel--faq-intro u--bg-green">
   <div class="split--50 split--padding-right">
     <h1 class="heading heading--large">
-      {{ page.question }}
+      {{ page.title }}
     </h1>
+    {% if page.description %}
+    <p class="p--body">
+      {{ page.description }}
+    </p>
+    {% endif %}
   </div>
 </section>
 
 <section class="panel faq">
-  <p class="p--body">
-    {{ page.answer }}
-  </p>
+  <div class="faq-content">
+    {{ content }}
+  </div>
 </section>
+
+<!-- Add structured data for FAQ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {% assign questions = content | split: '## ' %}
+    {% for question in questions offset:1 %}
+    {
+      "@type": "Question",
+      "name": "{{ question | split: '?' | first }}?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "{{ question | split: '?' | last | strip_html }}"
+      }
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+}
+</script>

@@ -19,7 +19,7 @@ image: /assets/img/about-airbeam-01.jpg
 
   <div class="split--50">
     <p class="heading heading--small">
-      This FAQ section is a way for us to share answers to frequently asked questions with the worldwide AirCasting community. If you have a question and don’t see your answer here, please email us at <a href="mailto:info@habitatmap.org">info@habitatmap.org</a> so we can continue to expand and share our knowledge base. You can also connect with us via the <a href="https://www.facebook.com/groups/667717482567030">Facebook AirCasting Community</a>
+      This FAQ section is a way for us to share answers to frequently asked questions with the worldwide AirCasting community. If you have a question and don't see your answer here, please email us at <a href="mailto:info@habitatmap.org">info@habitatmap.org</a> so we can continue to expand and share our knowledge base. You can also connect with us via the <a href="https://www.facebook.com/groups/667717482567030">Facebook AirCasting Community</a>
     </p>
   </div>
 </section>
@@ -41,3 +41,24 @@ image: /assets/img/about-airbeam-01.jpg
 </section>
 
 <script defer type="text/javascript" src="/assets/js/faq.js"></script>
+
+<!-- Add structured data for FAQ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {% assign all_faqs = site.data.faq.faq_items %}
+    {% for faq in all_faqs %}
+    {
+      "@type": "Question",
+      "name": "{{ faq.question | strip_html }}",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "{{ faq.answer | strip_html }}"
+      }
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+}
+</script>
