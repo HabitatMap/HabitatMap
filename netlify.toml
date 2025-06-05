@@ -104,3 +104,38 @@ status = 301
 from = "/airbeam/users-guideHan"
 to = "/airbeam/users-guide"
 status = 301
+
+[[redirects]]
+from = "/blog/*"
+to = "/blog/:splat"
+status = 301
+force = false
+query = {utm_source = ":utm_source", utm_medium = ":utm_medium", utm_campaign = ":utm_campaign"}
+
+[[redirects]]
+from = "/aircasting"
+to = "/aircasting"
+status = 301
+force = false
+query = {theme = ":theme", amp = ":amp", fbclid = ":fbclid"}
+
+[[redirects]]
+from = "/"
+to = "/"
+status = 301
+force = false
+query = {theme = ":theme", ref = ":ref", page = ":page", fbclid = ":fbclid"}
+
+[[redirects]]
+from = "/blog"
+to = "/blog"
+status = 301
+force = false
+query = {p = ":p"}
+
+[[redirects]]
+from = "/airbeam"
+to = "/airbeam"
+status = 301
+force = false
+query = {from = ":from", source = ":source"}
