@@ -9,6 +9,7 @@ from = "/markers"
 to = "https://aircasting.org"
 status = 301
 force = false
+query = {lat = ":lat", lng = ":lng", z = ":z", t = ":t", maps = ":maps", nopol = ":nopol", nogrp = ":nogrp", marker_id = ":marker_id"}
 
 [[redirects]]
 from = "/markers/*"
@@ -60,12 +61,107 @@ force = false
 
 [[redirects]]
 from = "/habitatmap_docs/MakeYourOwnAirCastingLuminescentApparel.pdf"
-to = "/assets/MakeYourOwnAirCastingLuminescentApparel.pdf"
+to = "https://content.instructables.com/FUH/F976/HAQ3BZA9/FUHF976HAQ3BZA9.pdf"
 status = 301
 force = false
 
 [[redirects]]
 from = "/habitatmap_docs/HowToBuildAnAirCastingAirMonitor.pdf"
 to = "/assets/HowToBuildAnAirCastingAirMonitor.pdf"
+status = 301
+force = false
+
+[[redirects]]
+from = "/blog/airbeam-technical-specifications-operation-"
+to = "/blog/airbeam2-technical-specifications-operation-performance"
+status = 301
+
+[[redirects]]
+from = "/blog/airbeam2-technicalspeci"
+to = "/blog/airbeam2-technical-specifications-operation-performance"
+status = 301
+
+[[redirects]]
+from = "/blog/airbeam2-technical-specificationsoperation-performance"
+to = "/blog/airbeam2-technical-specifications-operation-performance"
+status = 301
+
+[[redirects]]
+from = "/blog/airbeam2-technical-specifications-operation-"
+to = "/blog/airbeam2-technical-specifications-operation-performance"
+status = 301
+
+[[redirects]]
+from = "/blog/airbeam2-technical-specifications-"
+to = "/blog/airbeam2-technical-specifications-operation-performance"
+status = 301
+
+[[redirects]]
+from = "/blog/airbeam3-"
+to = "/blog/airbeam3-technical-specifications-operation-performance"
+status = 301
+
+[[redirects]]
+from = "/airbeam/users-guideHan"
+to = "/airbeam/users-guide"
+status = 301
+
+[[redirects]]
+from = "/blog/*"
+to = "/blog/:splat"
+status = 301
+force = false
+query = {utm_source = ":utm_source", utm_medium = ":utm_medium", utm_campaign = ":utm_campaign"}
+
+[[redirects]]
+from = "/aircasting"
+to = "/aircasting"
+status = 301
+force = false
+query = {theme = ":theme", amp = ":amp", fbclid = ":fbclid"}
+
+[[redirects]]
+from = "/"
+to = "/"
+status = 301
+force = false
+query = {theme = ":theme", ref = ":ref", page = ":page", fbclid = ":fbclid"}
+
+[[redirects]]
+from = "/blog"
+to = "/blog"
+status = 301
+force = false
+query = {p = ":p"}
+
+[[redirects]]
+from = "/airbeam"
+to = "/airbeam"
+status = 301
+force = false
+query = {from = ":from", source = ":source"}
+
+[[redirects]]
+from = "/blog/*/"
+to = "/blog/:splat"
+status = 301
+force = false
+
+[[redirects]]
+from = "/blog/*"
+to = "/blog/:splat"
+status = 301
+force = false
+query = {utm_source = ":utm_source", utm_medium = ":utm_medium", utm_campaign = ":utm_campaign"}
+
+[[redirects]]
+from = "/airbeam/"
+to = "/airbeam"
+status = 301
+force = false
+
+[[redirects]]
+from = "/airbeam/FAQ"
+to = "/airbeam/faq"
 status = 301
 force = false
