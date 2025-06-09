@@ -42,7 +42,6 @@ image: /assets/img/about-airbeam-01.jpg
 
 <script defer type="text/javascript" src="/assets/js/faq.js"></script>
 
-<!-- Add structured data for FAQ -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
