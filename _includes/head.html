@@ -4,8 +4,6 @@
   {% endif %}
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{% if page.section == "home" %}{{ site.title }}{% else %}{{ page.title | default: site.title }}{% endif %}</title>
-  <meta name="description" content="{% if page.section == 'home' %}{{ site.description }}{% else %}{{ page.description | default: site.description }}{% endif %}">
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.typekit.net/ulx6yfe.css">
@@ -19,5 +17,5 @@
   <script defer type="text/javascript" src="/assets/js/nav.js"></script>
   <script defer type="text/javascript" src="/assets/js/sticky-header.js"></script>
   <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-  {% seo title=false %}
+  {% seo %}
 </head>

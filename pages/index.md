@@ -24,6 +24,7 @@ image: /assets/img/pages/home/airbeam.jpg
   data-src="/assets/img/pages/home/airbeam.jpg"
   src="/assets/img/pages/home/airbeam.jpg?nf_resize=fit&w=20"
   class="u--tablet-min-hidden lazyload"
+  alt="AirBeam sensor"
 />
 
 <section class="panel highlights">
@@ -32,8 +33,8 @@ image: /assets/img/pages/home/airbeam.jpg
       No Subscriptions or Hidden Fees
     </h2>
     <p>
-      Rest assured there won’t ever be hidden fees or
-      subscriptions. We won’t sell your data or charge you
+      Rest assured there won't ever be hidden fees or
+      subscriptions. We won't sell your data or charge you
       to access yours.
     </p>
   </div>
@@ -73,7 +74,7 @@ image: /assets/img/pages/home/airbeam.jpg
       Automatic Data Back-ups
     </h2>
     <p>
-      On-board storage saves measurements so you’ll never lose data.
+      On-board storage saves measurements so you'll never lose data.
     </p>
   </div>
 
@@ -93,7 +94,7 @@ image: /assets/img/pages/home/airbeam.jpg
     </h2>
     <p>
       AirCasting Actions has everything you need to get started
-      with air monitoring, whether you’re an individual,
+      with air monitoring, whether you're an individual,
       an educator, or part of an organized community effort.
       <br>
       <a href="https://aircastingactions.org" target="_blank" class="link--underlined">Explore Tools and Curriculum</a>
@@ -193,7 +194,7 @@ image: /assets/img/pages/home/airbeam.jpg
 </section>
 
 <section class="for-teams u--align-center">
-  <h1 class="for-teams__heading heading">Need AirBeams for Your Team or Classroom?</h1>
+  <h2 class="for-teams__heading heading">Need AirBeams for Your Team or Classroom?</h2>
   <p class="for-teams__get-help">Get One-on-One Research Design and Implementation Help</p>
   <a href="/airbeam/get-consultation" class="button button--cta">Schedule a Free Consultation</a>
 </section>
@@ -203,7 +204,7 @@ image: /assets/img/pages/home/airbeam.jpg
   {% for citation in citations %}
     <figure class="split--50 quote u--hidden" data-set="{{citation.set}}">
       <blockquote class="quote__body">
-        <em>”{{ citation.quote }}”</em>
+        <em>"{{ citation.quote }}"</em>
       </blockquote>
       <figcaption class="quote__name">
         - {{ citation.author }}
