@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 'AirBeam2 Technical Specifications, Operation & Performance'
-date: '2018-03-23'
+title: "AirBeam2 Technical Specifications, Operation & Performance"
+date: "2018-03-23"
 featured: false
 author: Michael H and Chris Chaeha Lim
 image: /images/uploads/AB2Features+Dimensions.jpg
@@ -10,6 +10,7 @@ tag:
   - instruments
   - open-source
 ---
+
 <p><span style="text-decoration: underline;">Hardware Specifications</span><br />
 Weight: 5 ounces<br />
 Particle Sensor: Plantower PMS7003<br />
@@ -20,7 +21,7 @@ WiFi: Espressif ESP8266-ESP-12S, 2.4 GHz<br />
 Cellular: SIMCOM SIM808, 2G GSM<br />
 Microcontroller: Teensy++</p>
 <p><span style="text-decoration: underline;">About AirBeam2</span><br />
-<a href="http://www.takingspace.org/aircasting/airbeam/" target="_blank">AirBeam2</a> measures fine particulate matter (PM1, PM2.5 &amp; PM10), temperature, and relative humidity. AirBeam2 uses a light scattering method to measure particulate matter. Air is drawn through a sensing chamber wherein light from a laser scatters off particles in the airstream. This light scatter is registered by a detector and converted into a measurement that estimates the number of particles in the air. When recording a mobile session, these measurements are communicated once a second to the AirCasting Android app via Bluetooth. When recording a fixed session, these measurements are communicated once a minute to the <a href="http://aircasting.org/" target="_blank">AirCasting website</a> via WiFi or cellular. At the end of each mobile AirCasting session, the collected data is sent to the AirCasting website, where the data is crowdsourced with data from other AirCasters to generate heat maps indicating where PM concentrations are highest and lowest.</p>
+<a href="https://www.habitatmap.org/airbeam" target="_blank">AirBeam2</a> measures fine particulate matter (PM1, PM2.5 &amp; PM10), temperature, and relative humidity. AirBeam2 uses a light scattering method to measure particulate matter. Air is drawn through a sensing chamber wherein light from a laser scatters off particles in the airstream. This light scatter is registered by a detector and converted into a measurement that estimates the number of particles in the air. When recording a mobile session, these measurements are communicated once a second to the AirCasting Android app via Bluetooth. When recording a fixed session, these measurements are communicated once a minute to the <a href="http://aircasting.org/" target="_blank">AirCasting website</a> via WiFi or cellular. At the end of each mobile AirCasting session, the collected data is sent to the AirCasting website, where the data is crowdsourced with data from other AirCasters to generate heat maps indicating where PM concentrations are highest and lowest.</p>
 <p><span style="text-decoration: underline;">Charging<br />
 </span>Fully charge your AirBeam2 before powering it on and using it in WiFi or Cellular mode or the AirBeam2 may lose power (even it it’s plugged in).</p>
 <p><span style="text-decoration: underline;">Power</span><br />
