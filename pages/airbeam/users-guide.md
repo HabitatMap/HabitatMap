@@ -15,8 +15,9 @@ image: /assets/img/about-airbeam-01.jpg
 
   <div class="split--50">
     <p class="heading heading--small">
-      
+
     </p>
+
   </div>
 </section>
 
@@ -74,7 +75,7 @@ image: /assets/img/about-airbeam-01.jpg
   </h2>
 
   <p class="p--body">
-    <a href="/airbeam">AirBeam3</a> is a palm-sized air quality instrument weighing six ounces that measures PM1, PM2.5, PM10, temperature, and relative humidity. Its weather resistant enclosure makes it suitable for indoor or outdoor use. It can communicate via BLE, WiFi, or cellular 4G and can be used as a stationary or mobile monitor. Users can map and graph the measurements from AirBeam3 in real-time using an <a href='https://play.google.com/store/apps/details?id=pl.llp.aircasting&%3Cli%3Ehl=en&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>Android</a> or <a href='https://apps.apple.com/us/app/aircasting/id1587685281#?platform=iphone'>iOS</a> device or the <a href='http://aircasting.habitatmap.org/fixed_map'>AirCasting website</a>. AirBeam3 includes an onboard GPS, real-time clock, SD card, and battery so after configuration it can operate in standalone mode, i.e. without the need for any additional hardware, such as a smartphone. AirBeam3 is the most accurate and versatile portable air quality monitor on the market. Of the 75 PM2.5 measuring instruments evaluated by the <a href="http://www.aqmd.gov/aq-spec/sensordetail/habitatmap---airbeam3">SCAQMD AQ-SPEC program</a>, AirBeam3 is the most accurate when both the field and lab evaluations are considered. AirBeam3 is open-source as is the AirCasting platform software.
+    <a href="/airbeam">AirBeam3</a> is a palm-sized air quality instrument weighing six ounces that measures PM1, PM2.5, PM10, temperature, and relative humidity. Its weather resistant enclosure makes it suitable for indoor or outdoor use. It can communicate via BLE, WiFi, or cellular 4G and can be used as a stationary or mobile monitor. Users can map and graph the measurements from AirBeam3 in real-time using an <a href='https://play.google.com/store/apps/details?id=pl.llp.aircasting&%3Cli%3Ehl=en&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>Android</a> or <a href='https://apps.apple.com/us/app/aircasting/id1587685281#?platform=iphone'>iOS</a> device or the <a href='http://aircasting.habitatmap.org/fixed_map'>AirCasting website</a>. AirBeam3 includes an onboard GPS, real-time clock, SD card, and battery so after configuration it can operate in standalone mode, i.e. without the need for any additional hardware, such as a smartphone. AirBeam3 is the most accurate and versatile portable air quality monitor on the market. Of the 75 PM2.5 measuring instruments evaluated by the <a href="https://www.aqmd.gov/docs/default-source/aq-spec/summary/habitatmap-airbeam3---summary-report.pdf">SCAQMD AQ-SPEC program</a>, AirBeam3 is the most accurate when both the field and lab evaluations are considered. AirBeam3 is open-source as is the AirCasting platform software.
   </p>
 
   <a id="videos" class="anchor">
@@ -107,7 +108,7 @@ image: /assets/img/about-airbeam-01.jpg
   </h2>
 
   <p class="p--body">
-    AirBeam3 has a 3350 mAh 3.7V rechargeable lithium battery that when fully charged can power the instrument for approximately 17 hours in Mobile mode and 31 hours in Fixed-WiFi mode. The battery charges via the USB-C Port, which can also be used to power AirBeam3 directly. The Battery Charging Indicator turns solid green when AirBeam3 is charging and turns off when AirBeam3 is either fully charged or unplugged. CAUTION: AirBeam3 should never be charged in an environment where the temperature exceeds 110 degrees Fahrenheit. 
+    AirBeam3 has a 3350 mAh 3.7V rechargeable lithium battery that when fully charged can power the instrument for approximately 17 hours in Mobile mode and 31 hours in Fixed-WiFi mode. The battery charges via the USB-C Port, which can also be used to power AirBeam3 directly. The Battery Charging Indicator turns solid green when AirBeam3 is charging and turns off when AirBeam3 is either fully charged or unplugged. CAUTION: AirBeam3 should never be charged in an environment where the temperature exceeds 110 degrees Fahrenheit.
   </p>
 
   <a id="battery-warning" class="anchor">
@@ -119,7 +120,6 @@ image: /assets/img/about-airbeam-01.jpg
   <p class="p--body">
     AirBeam3 contains a lithium battery. Exposing AirBeam3 to extreme heat will degrade the batteries performance and could lead to overheating and fire. If the battery gives off an odor, generates heat, becomes discolored or deformed, or in any way appears abnormal immediately unplug and power off AirBeam3 and place it in a contained vessel, such as a metal box.
   </p>
-
 
   <a id="power-on-off" class="anchor">
   </a>
@@ -278,11 +278,12 @@ image: /assets/img/about-airbeam-01.jpg
   </h2>
 
   <p class="p--body">
-    AirBeam3 is the most accurate and versatile portable air quality monitor on the market. Of the 75 PM2.5 measuring instruments evaluated by the <a href="http://www.aqmd.gov/aq-spec/sensordetail/habitatmap---airbeam3">SCAQMD AQ-SPEC program</a>, AirBeam3 is the most accurate when both the field and lab evaluations are considered. 
+    AirBeam3 is the most accurate and versatile portable air quality monitor on the market. Of the 75 PM2.5 measuring instruments evaluated by the <a href="https://www.aqmd.gov/docs/default-source/aq-spec/summary/habitatmap-airbeam3---summary-report.pdf">SCAQMD AQ-SPEC program</a>, AirBeam3 is the most accurate when both the field and lab evaluations are considered.
   </p>
 
     <p class="p--body">
-    To create AirBeam3 calibration equations for PM1 and PM2.5 we used the <a href="http://www.aqmd.gov/aq-spec/sensordetail/habitatmap-airbeam2">laboratory test results from the AirBeam2’s AQ-SPEC evaluation</a>, wherein AirBeam2 measurements were compared to measurements from a GRIMM Federal Equivalency Method instrument. Both AirBeam2 and AirBeam3 utilize the same particulate matter sensor: the Plantower PMS7003
+    To create AirBeam3 calibration equations for PM1 and PM2.5 we used the <a href="https://www.aqmd.gov/docs/default-source/aq-spec/summary/habitatmap-airbeam2---summary-report.pdf">laboratory test results from the AirBeam2’s AQ-SPEC evaluation</a>, wherein AirBeam2 measurements were compared to measurements from a GRIMM Federal Equivalency Method instrument. Both AirBeam2 and AirBeam3 utilize the same particulate matter sensor: the Plantower PMS7003
+
   </p>
 
   <p class="p--body">
@@ -308,7 +309,7 @@ image: /assets/img/about-airbeam-01.jpg
   />
 
   <p class="p--body">
-    Finally, since AirBeam2 PM10 measurements did not show good agreement with the GRIMM PM10 measurements gathered during the lab test, we instead fit a piecewise regression against the BAM Federal Equivalency Method instrument it was collocated with during <a href="http://www.aqmd.gov/aq-spec/sensordetail/habitatmap-airbeam2">South Coast Air Quality Management District’s field evaluation of the AirBeam2</a>. However, after the calibration the agreement was still relatively poor, suggesting that AirBeam3 PM10 measurements are much less accurate than desired.
+    Finally, since AirBeam2 PM10 measurements did not show good agreement with the GRIMM PM10 measurements gathered during the lab test, we instead fit a piecewise regression against the BAM Federal Equivalency Method instrument it was collocated with during <a href="https://www.aqmd.gov/docs/default-source/aq-spec/summary/habitatmap-airbeam2---summary-report.pdf">South Coast Air Quality Management District’s field evaluation of the AirBeam2</a>. However, after the calibration the agreement was still relatively poor, suggesting that AirBeam3 PM10 measurements are much less accurate than desired.
   </p>
 
   <p class="p--body">

@@ -188,7 +188,7 @@ image: /assets/img/airbeam-buy-it-now.jpg
   <hr class="panel-separator">
 
   <p class="shop-airbeam__sub p--body">
-    *Of the 75 PM2.5 measuring instruments evaluated by the <a href="http://www.aqmd.gov/aq-spec/sensordetail/habitatmap---airbeam3" class="link" target="_blank">SCAQMD AQ-SPEC program</a>, AirBeam3 is the most accurate when both the field and lab evaluations are considered.
+    *Of the 75 PM2.5 measuring instruments evaluated by the <a href="https://www.aqmd.gov/docs/default-source/aq-spec/summary/habitatmap-airbeam3---summary-report.pdf" class="link" target="_blank">SCAQMD AQ-SPEC program</a>, AirBeam3 is the most accurate when both the field and lab evaluations are considered.
   </p>
 
 {% include inputValidate.html %}
