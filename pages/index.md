@@ -23,7 +23,7 @@ image: /assets/img/pages/home/airbeam.jpg
 <img
   data-src="/assets/img/pages/home/airbeam.jpg"
   src="/assets/img/pages/home/airbeam.jpg?nf_resize=fit&w=20"
-  class="u--tablet-min-hidden lazyload"
+  class="u--tablet-min-hidden"
   alt="AirBeam sensor"
 />
 
