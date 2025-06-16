@@ -26,14 +26,16 @@ image: /assets/img/airbeam-buy-it-now.jpg
 
   <div class="panel shop-airbeam__products">
     <div class="panel shop-airbeam__product">
-      <img
+      <picture>
+        <source srcset="/assets/img/airbeam-buy-it-now.webp" type="image/webp">
+        <img
           alt="Airbeam"
-          class="img lazyload shop-airbeam-image"
-          data-src="/assets/img/airbeam-buy-it-now.jpg?nf_resize=fit&w=750"
-          src="/assets/img/airbeam-buy-it-now.jpg?nf_resize=fit&w=20"
-           width="750"
-           height="422"
-      />
+          class="img shop-airbeam-image"
+          src="/assets/img/airbeam-buy-it-now.jpg?nf_resize=fit&w=750"
+          width="750"
+          height="422"
+        />
+      </picture>
       <div class="product__content">
         <div>
           <h2 class="heading heading--small u--margin-bottom-tiny">AirBeam3</h2>
@@ -159,7 +161,7 @@ image: /assets/img/airbeam-buy-it-now.jpg
         Payment Methods
       </h2>
       <p class="p--body">
-        HabitatMap accepts credit card payments via PayPal. If you prefer to make payment via check or wire transfer, please email us at <a href="mailto:info@habitatmap.org">info@habitatmap.org</a> with your shipping address and the number of AirBeams you’d like to purchase. Note that we do not accept purchase orders.
+        HabitatMap accepts credit card payments via PayPal. If you prefer to make payment via check or wire transfer, please email us at <a href="mailto:info@habitatmap.org">info@habitatmap.org</a> with your shipping address and the number of AirBeams you'd like to purchase. Note that we do not accept purchase orders.
       </p>
        <h2 class="heading heading--medium u--gray-text">
         Warranty
