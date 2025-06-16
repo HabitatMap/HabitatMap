@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 'AirBeam2 Technical Specifications, Operation & Performance'
-date: '2018-03-23'
+title: "AirBeam2 Technical Specifications, Operation & Performance"
+date: "2018-03-23"
 featured: false
 author: Michael H and Chris Chaeha Lim
 image: /images/uploads/AB2Features+Dimensions.jpg
@@ -10,6 +10,7 @@ tag:
   - instruments
   - open-source
 ---
+
 <p><span style="text-decoration: underline;">Hardware Specifications</span><br />
 Weight: 5 ounces<br />
 Particle Sensor: Plantower PMS7003<br />
@@ -20,7 +21,7 @@ WiFi: Espressif ESP8266-ESP-12S, 2.4 GHz<br />
 Cellular: SIMCOM SIM808, 2G GSM<br />
 Microcontroller: Teensy++</p>
 <p><span style="text-decoration: underline;">About AirBeam2</span><br />
-<a href="http://www.takingspace.org/aircasting/airbeam/" target="_blank">AirBeam2</a> measures fine particulate matter (PM1, PM2.5 &amp; PM10), temperature, and relative humidity. AirBeam2 uses a light scattering method to measure particulate matter. Air is drawn through a sensing chamber wherein light from a laser scatters off particles in the airstream. This light scatter is registered by a detector and converted into a measurement that estimates the number of particles in the air. When recording a mobile session, these measurements are communicated once a second to the AirCasting Android app via Bluetooth. When recording a fixed session, these measurements are communicated once a minute to the <a href="http://aircasting.org/" target="_blank">AirCasting website</a> via WiFi or cellular. At the end of each mobile AirCasting session, the collected data is sent to the AirCasting website, where the data is crowdsourced with data from other AirCasters to generate heat maps indicating where PM concentrations are highest and lowest.</p>
+<a href="https://www.habitatmap.org/airbeam" target="_blank">AirBeam2</a> measures fine particulate matter (PM1, PM2.5 &amp; PM10), temperature, and relative humidity. AirBeam2 uses a light scattering method to measure particulate matter. Air is drawn through a sensing chamber wherein light from a laser scatters off particles in the airstream. This light scatter is registered by a detector and converted into a measurement that estimates the number of particles in the air. When recording a mobile session, these measurements are communicated once a second to the AirCasting Android app via Bluetooth. When recording a fixed session, these measurements are communicated once a minute to the <a href="http://aircasting.org/" target="_blank">AirCasting website</a> via WiFi or cellular. At the end of each mobile AirCasting session, the collected data is sent to the AirCasting website, where the data is crowdsourced with data from other AirCasters to generate heat maps indicating where PM concentrations are highest and lowest.</p>
 <p><span style="text-decoration: underline;">Charging<br />
 </span>Fully charge your AirBeam2 before powering it on and using it in WiFi or Cellular mode or the AirBeam2 may lose power (even it it’s plugged in).</p>
 <p><span style="text-decoration: underline;">Power</span><br />
@@ -76,12 +77,12 @@ The AirBeam2 <a href="https://github.com/HabitatMap/AirCastingAndroidClient/tree
 </span>This device complies with part 15 of the FCC Rules. Operating is subject to the following two conditions: (1) This device may not cause harmful interference, and (2) this device must accept any interference received, including interference that may cause undesired operation. Caution: Modifying or tampering with internal components can cause a malfunction and will void FCC authorization to use these products.</p>
 <p><span style="text-decoration: underline;">Performance Data</span><br />
 When presenting our AirBeam2 performance data below, we include R-squared (R2) values as a way of evaluating intercomparisons between instruments that measure particulate matter. R2 is a statistical measure that indicates how well data fit a statistical model. The R2 value is a number that ranges from 0 to 1 with higher values indicating the regression came more closely to the points. An R2 value of 1 means the predictive power of the model is perfect, that all the data points lie along the line or curve with no scatter.</p>
-<p>To begin, we analyzed data provided by <a href="http://www.aqmd.gov/aq-spec/evaluations" target="_blank">South Coast Air Quality Management District</a> (SCAQMD) comparing the performance of PurpleAir-I (PA-I) and PurpleAir-II (PA-II) air quality instruments to a <a href="http://wiki.grimm-aerosol.de/index.php?title=ENVIRO-EDM180" target="_blank">GRIMM EDM180</a>, a Federal Equivalent Method air quality instrument. PA-I integrates a Plantower PMS1003 sensor and PA-II integrates a Plantower PMS5003 sensor. Although these sensors are not identical to the Plantower PMS7003 sensor integrated into the AirBeam2, discussions with SCAQMD staff led us to believe that performance variations between <a href="http://www.plantower.com/en/list/?118_1.html" target="_blank">Plantower particulate sensor models</a> were small.</p>
+<p>To begin, we analyzed data provided by <a href="http://www.aqmd.gov/aq-spec/evaluations" target="_blank">South Coast Air Quality Management District</a> (SCAQMD) comparing the performance of PurpleAir-I (PA-I) and PurpleAir-II (PA-II) air quality instruments to a <a href="http://wiki.grimm-aerosol.de/index.php?title=ENVIRO-EDM180" target="_blank">GRIMM EDM180</a>, a Federal Equivalent Method air quality instrument. PA-I integrates a Plantower PMS1003 sensor and PA-II integrates a Plantower PMS5003 sensor. Although these sensors are not identical to the Plantower PMS7003 sensor integrated into the AirBeam2, discussions with SCAQMD staff led us to believe that performance variations between Plantower particulate sensor models were small.</p>
 <p dir="ltr">Using five-minute averages, we fit equations for PM1, PM2.5, and PM10 that converted the PurpleAir measurements to the GRIMM measurements, see below plots. After removing significant outliers, our dataset included 17,270 data points. The equations for PM1, R2=0.98, and PM2.5, R2=0.96, showed excellent fit, with a suggestion of an exponential response for the PM1 equation. For the PM10 equation, R<sup>2</sup>=0.41, the fit was average, with especially imprecise measurements in the lower concentration ranges.</p>
 
 ![PA Plots](/images/uploads/PA_Plots.jpg)
 
-<p>Next, we updated the AirBeam2 firmware to run the calibration equations we derived from fitting the PurpleAir measurements to the GRIMM measurements. Then we validated our calibration equations by comparing the AirBeam2 measurements to the measurements from a <a href="http://www.tsi.com/dusttrak-drx-aerosol-monitor-8533/" target="_blank">TSI DustTrak DRX Aerosol Monitor 8533</a>. Two AirBeam2s and one TSI were placed inside a concentrated air pollutants (CAPS) chamber located at the NYU School of Medicine Sterling Forest campus. The CAPS chamber is designed for animal exposure tests and concentrates outdoor particulate matter into a small sealed enclosure. Unfortunately, we were unable to obtain particle differentiation for PM10 because CAPS removes large particles before concentrating small particles in the exposure chamber.</p>
+<p>Next, we updated the AirBeam2 firmware to run the calibration equations we derived from fitting the PurpleAir measurements to the GRIMM measurements. Then we validated our calibration equations by comparing the AirBeam2 measurements to the measurements from a TSI DustTrak DRX Aerosol Monitor 8533. Two AirBeam2s and one TSI were placed inside a concentrated air pollutants (CAPS) chamber located at the NYU School of Medicine Sterling Forest campus. The CAPS chamber is designed for animal exposure tests and concentrates outdoor particulate matter into a small sealed enclosure. Unfortunately, we were unable to obtain particle differentiation for PM10 because CAPS removes large particles before concentrating small particles in the exposure chamber.</p>
 
 ![CAPS Chamber](/images/uploads/NYUSOM_CAPS.jpg)
 

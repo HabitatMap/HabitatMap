@@ -14,47 +14,47 @@ faq_items:
       will invoice you accordingly: 1) How many AirBeam2s would you like to
       order? 2) What is your shipping address? 3) Do you prefer to pay by check
       or wire transfer?  Note that foreign checks must be denominated in US
-      dollars. 
+      dollars.
     category: AIRBEAM2 PURCHASING & SHIPPING
     question: >-
       I prefer not to pay using a credit card; can I purchase AirBeams via wire
       transfer or check?
   - answer: >-
       We only accept credit card payments via PayPal. Note that you do not need
-      a PayPal account in order to purchase AirBeams via PayPal. 
+      a PayPal account in order to purchase AirBeams via PayPal.
     category: AIRBEAM2 PURCHASING & SHIPPING
     question: >-
       Can I purchase AirBeams using a credit card but have the payment processed
       by a vendor other than PayPal?
-  - answer: 'No, HabitatMap does not accept purchase orders.'
+  - answer: "No, HabitatMap does not accept purchase orders."
     category: AIRBEAM2 PURCHASING & SHIPPING
     question: Can I purchase AirBeams via purchase order?
-  - answer: 'No, HabitatMap only accepts payment in US dollars.'
+  - answer: "No, HabitatMap only accepts payment in US dollars."
     category: AIRBEAM2 PURCHASING & SHIPPING
     question: Can I Purchase AirBeams using foreign currency?
   - answer: >-
       AirBeam2 is “quite accurate” according to the <a
-      href="http://www.takingspace.org/airbeam2-quite-accurate-according-to-newly-released-performance-evaluation/"
+      href="https://www.habitatmap.org/blog/airbeam2-quite-accurate-according-to-newly-released-performance-evaluation"
       target="_blank">performance evaluation</a> conducted by South Coast Air
       Quality Management District’s AQ-SPEC lab. Another AirBeam2 <a
-      href="http://www.takingspace.org/airbeam2-technical-specifications-operation-performance/"
+      href="https://www.habitatmap.org/blog/airbeam2-technical-specifications-operation-performance"
       target="_blank">performance evaluation</a>, conducted by researchers at
       NYU School of Medicine, also found that the PM2.5 measurements from the
       AirBeam2 closely matched those from a collocated reference instrument.
     category: RECORDING MEASUREMENTS WITH AIRBEAM2
-    question: 'How accurate is the AirBeam2?  '
+    question: "How accurate is the AirBeam2?  "
   - answer: >-
       Yes, the AirBeam2 is designed to go wherever you go, unless you’re going
       underwater : ) When cycling or driving, face the AirBeam2 intake and
       exhaust ports (the perforations located between the wavy edges) away from
-      your direction of travel to minimize wind interference. 
+      your direction of travel to minimize wind interference.
     category: RECORDING MEASUREMENTS WITH AIRBEAM2
     question: Is the AirBeam2 suitable for outdoor installations?
   - answer: >-
       Yes, the AirBeam2 is designed to go wherever you go, unless you’re going
       underwater : ) When cycling or driving, face the AirBeam2 intake and
       exhaust ports (the perforations located between the wavy edges) away from
-      your direction of travel to minimize wind interference. 
+      your direction of travel to minimize wind interference.
     category: RECORDING MEASUREMENTS WITH AIRBEAM2
     question: >-
       Can I walk/bike/drive with the AirBeam2 and measure my personal exposure
@@ -77,7 +77,7 @@ faq_items:
       Agency establishes the <a
       href="https://www.epa.gov/criteria-air-pollutants/naaqs-table"
       target="_blank">National Ambient Air Quality Standards (NAAQS)</a> and <a
-      href="https://airnow.gov/index.cfm?action=aqibasics.aqi"
+      href="https://www.airnow.gov/aqi/aqi-basics/"
       target="_blank">Air Quality Index (AQI)</a> on the best science available,
       which typically uses averaging time periods of 24 hours or longer when
       examining PM2.5 data and relating it to health outcomes. The AirCasting
@@ -197,7 +197,7 @@ faq_items:
     category: GETTING STARTED WITH AIRBEAM2
     question: >-
       I want to record a fixed-cellular session; how can I figure out whether
-      the SIM card I inserted into the AirBeam2 has access to the 2G network. 
+      the SIM card I inserted into the AirBeam2 has access to the 2G network.
   - answer: >-
       If you haven’t reconfigured your AirBeam2 then simply turn it on and it
       will load the last selected configuration and continue streaming under the
@@ -237,7 +237,7 @@ faq_items:
       restore the WiFi signal and the data will continue streaming.
     category: GETTING STARTED WITH AIRBEAM2
     question: >-
-      The WiFi network that my AirBeam2 was connected to went down temporarily. 
+      The WiFi network that my AirBeam2 was connected to went down temporarily.
       Now that the WiFi network is up again, do I need to do anything to get my
       AirBeam2 streaming again?
   - answer: >-
@@ -256,7 +256,7 @@ faq_items:
       compatibility with the AirCasting app than the hardware and software
       specifications alone because more expensive Android devices are generally
       better built. If you plan to buy multiple Android devices, buy one device
-      and test thoroughly with the AirCasting app before buying multiples. 
+      and test thoroughly with the AirCasting app before buying multiples.
     category: GETTING STARTED WITH AIRBEAM2
     question: What Android devices work best with the AirCasting app?
   - answer: Approximately 450 megabytes per month.
@@ -438,7 +438,7 @@ faq_items:
       network when recording a fixed session.
     category: INTERFACING WITH THE AIRCASTING APP & WEBSITE
     question: >-
-      What is a mobile AirCasting session?  What is a fixed AirCasting session? 
+      What is a mobile AirCasting session?  What is a fixed AirCasting session?
       What is the difference between mobile and fixed AirCasting sessions?
   - answer: >-
       (o) Have you signed in or created a profile yet?  If not, do so by tapping
@@ -484,7 +484,7 @@ faq_items:
     question: What is the CrowdMap and how does it work?
   - answer: >-
       The heat legend is located at the bottom of the AirCasting maps page. It
-      displays the correspondence between colors and measurement values. 
+      displays the correspondence between colors and measurement values.
     category: INTERFACING WITH THE AIRCASTING APP & WEBSITE
     question: What is the heat legend?
   - answer: >-
@@ -494,7 +494,7 @@ faq_items:
       fit the scale to the session data measurements, click the connected
       up/down arrows at the bottom right hand corner of the screen. To switch to
       a monochrome blue color scheme, click the blue dots at the far end of the
-      heat legend. 
+      heat legend.
     category: INTERFACING WITH THE AIRCASTING APP & WEBSITE
     question: >-
       How do I change the relationship between colors and measurement values on
@@ -620,7 +620,7 @@ faq_items:
       Creating the AirBeam and AirCasting platform must have required a
       substantial and sustained effort; who helped HabitatMap Founder &
       Executive Director, Michael Heimbinder, bring these technologies to
-      reality? 
+      reality?
   - answer: >-
       Due to financial constraints, we have yet to develop a version of the
       AirCasting app for iOS, however, we would very much like to. If you’d like

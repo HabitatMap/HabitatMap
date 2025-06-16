@@ -11,6 +11,7 @@ tag:
   - instruments
   - community science
 ---
+
 <p dir="ltr"><span style="text-decoration: underline;">Hardware Specifications</span><br />
 Weight: 7 ounces<br />
 Particle Sensor: Shinyei PPD60PV<br />
@@ -35,7 +36,7 @@ The AirBeam board is based on the Arduino Leonardo, so you can reprogram your Ai
 <p dir="ltr"><span style="text-decoration: underline;">Add Another Sensor</span><br />
 You can add another sensor to the AirBeam using the <em>Add-on Sensor Port</em>. When the AirBeam is resting on it’s back the five pins, from left to right, are: Ground, 5V, 3.3V, Analog 2, Analog 1. Note that you must insert a tiny screwdriver into the slot above the pin to release the pin.</p>
 <p><span style="text-decoration: underline;">Open Source</span><br />
-The <a href="https://github.com/HabitatMap/AirCastingAndroidClient/tree/master/arduino/aircasting" target="_blank">AirBeam firmware</a> and <a href="https://github.com/cloudformdesign/Airbeam" target="_blank">electronic schematics</a> are available on GitHub. The STL files for 3D printing the <a href="http://www.shapeways.com/designer/mheimbinder" target="_blank">AirBeam enclosure</a> can be downloaded from Shapeways<em>. </em></p>
+The <a href="https://github.com/HabitatMap/AirCastingAndroidClient/tree/master/arduino/aircasting" target="_blank">AirBeam firmware</a> and <a href="https://github.com/cloudformdesign/Airbeam" target="_blank">electronic schematics</a> are available on GitHub. The STL files for 3D printing the AirBeam enclosure can be downloaded from Shapeways<em>. </em></p>
 <p><span style="text-decoration: underline;">FCC Compliance Statement<br />
 </span>This device complies with part 15 of the FCC Rules. Operating is subject to the following two conditions: (1) This device may not cause harmful interference, and (2) this device must accept any interference received, including interference that may cause undesired operation. Caution: Modifying or tampering with internal components can cause a malfunction and will void FCC authorization to use these products.<br clear="none" /><br />
 This equipment has been tested and found to comply with the limits for a Class B digital device, pursuant to Part 15 of the FCC Rules. These limits are designed to provide reasonable protection against harmful interference in a residential installation. This equipment generates, uses, and can radiate radio frequency energy and, if not installed and used in accordance with the manufacturer’s instructions, may cause interference harmful to radio communications. There is no guarantee, however, that interference will not occur in a particular installation. If this equipment does cause harmful interference to radio or television reception, which can be determined by turning the equipment off and on, the user is encouraged to try to correct the interference by one or more of the following measures: reorient or relocate the receiving antenna; increase the separation between the equipment and receiver; connect the equipment to an outlet on a circuit different from that to which the receiver is connected; and/or consult the dealer or an experienced radio or TV technician for help.</p>

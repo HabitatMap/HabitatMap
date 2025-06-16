@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Reprogram Your AirBeam
-date: '2016-02-04'
+date: "2016-02-04"
 featured: false
 image: /images/uploads/arduinowindow.png
 category: Open Source Software
@@ -10,7 +10,8 @@ tag:
   - open-source
   - community science
 ---
-<p><a href="http://www.takingspace.org/aircasting/airbeam/">The AirBeam</a> - HabitatMap’s low-cost, open-source air quality instrument for measuring PM2.5 - can be reprogrammed to meet the specific needs of your monitoring initiative. Don’t worry; it doesn’t require a PhD in computer engineering. Anyone can do it!  Just follow the step-by-step guide posted below.</p>
+
+<p><a href="https://www.habitatmap.org/airbeam">The AirBeam</a> - HabitatMap’s low-cost, open-source air quality instrument for measuring PM2.5 - can be reprogrammed to meet the specific needs of your monitoring initiative. Don’t worry; it doesn’t require a PhD in computer engineering. Anyone can do it!  Just follow the step-by-step guide posted below.</p>
 <p>There are several reasons why you may opt to reprogram your AirBeam. These include changing the averaging time interval, changing the temperature output to Celsius, outputting the PM2.5 measurement as a particle count, connecting multiple AirBeams to a single Android device, and improving the AirBeam’s accuracy. Directly after the step-by-step guide you'll find instructions for altering the code to achieve these specific outcomes.</p>
 <p style="padding-left: 30px;"><span style="text-decoration: underline;">Step-by-Step Guide for Reprogramming Your AirBeam</span></p>
 <p style="padding-left: 30px;">1. Download the <a href="http://www.arduino.cc/en/Main/Software" target="_blank">Arduino IDE</a> from the Arduino website and install it on your computer.</p>

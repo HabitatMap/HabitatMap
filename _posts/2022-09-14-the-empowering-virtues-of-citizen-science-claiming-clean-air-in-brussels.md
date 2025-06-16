@@ -12,7 +12,8 @@ tag:
   - health
   - education
 ---
-*The AirCasting platform is used by individuals, communities, and institutions around the world to measure air pollution. In a recently published article, [Nicola da Schio](https://www.cosmopolis.be/people/nicola-da-schio), a postdoctoral researcher at the Cosmopolis Centre for Urban Research of the Vrije Universiteit Brussel (VUB), reflects on the lessons from an AirCasting project that rolled out in Brussels between 2016 and 2019 as a collaboration between academics at VUB, staff from a local NGO, and community volunteers.*
+
+_The AirCasting platform is used by individuals, communities, and institutions around the world to measure air pollution. In a recently published article, [Nicola da Schio](https://www.cosmopolis.be/people/nicola-da-schio), a postdoctoral researcher at the Cosmopolis Centre for Urban Research of the Vrije Universiteit Brussel (VUB), reflects on the lessons from an AirCasting project that rolled out in Brussels between 2016 and 2019 as a collaboration between academics at VUB, staff from a local NGO, and community volunteers._
 
 Citizen science can be a tool to democratise societies by empowering citizens and opening up the governance of technical issues to lay persons. To analyze whether and how citizen science can empower communities I analyzed [AirCasting Brussels](https://www.cosmopolis.be/research/aircastingbxl), a citizen science project that was run in Brussels between 2016 and 2019 that utilized AirBeams and the AirCasting smartphone and web apps. The project was led by [VUB](https://www.vub.be/) in partnership with [BRAL Citizens Action Brussels](https://bral.brussels/)  - a community based organization working on issues of urban democracy, empowerment, and sustainable urban development - and various groups of citizens that were invited to join the project. As part of the project, participants were directed to form groups (e.g. of neighbours, colleagues, friends, parents) and participate in a series series of workshops for six-to-eight months. During the workshops, participants were encouraged to share their experiences and interests, ask questions, and try to respond jointly to them. In addition, they created maps and graphs to visualize their air quality data and teach others about their findings, organised public events to share experiences and raise raise awareness, and worked to engage with policymakers on the topic of clean air. The project contributed to a wider mobilization for cleaner air that involved numerous citizens groups, NGOs and researchers, and culminated in the organization of Brussels' first General Assembly on Air.
 
@@ -28,10 +29,10 @@ Citizen science should not be uncritically ascribed as the silver bullet that em
 
 # To read more about this story:
 
-***The Empowering Virtues of Citizen Science: Claiming Clean Air in Brussels** <https://estsjournal.org/index.php/ests/article/view/795>  >> this article expands and develops the reflections included in this blog post*
+**\*The Empowering Virtues of Citizen Science: Claiming Clean Air in Brussels** <https://estsjournal.org/index.php/ests/article/view/795>  >> this article expands and develops the reflections included in this blog post\*
 
-***Self-Portraits of Personal Exposure to Air Pollution: on where and when People Are Exposed, and on why it Is Difficult to Avoid** <https://link.springer.com/article/10.1007/s10745-020-00176-y> >> this is an article on personal exposure to air pollution that was published as part of the project*
+**\*Self-Portraits of Personal Exposure to Air Pollution: on where and when People Are Exposed, and on why it Is Difficult to Avoid** <https://link.springer.com/article/10.1007/s10745-020-00176-y> >> this is an article on personal exposure to air pollution that was published as part of the project\*
 
-***Citizen science. Collective knowledge empowers** <https://bral.brussels/nl/artikel/citizen-science-collective-knowledge-empowers> >> this is an illustrated booklet by BRAL & VUB that explains in detail the whole AirCasting Brussels project, and puts forward drawing and thinking about active citizenship and engaged research*
+**\*Citizen science. Collective knowledge empowers** <https://bral.brussels/nl/artikel/citizen-science-collective-knowledge-empowers> >> this is an illustrated booklet by BRAL & VUB that explains in detail the whole AirCasting Brussels project, and puts forward drawing and thinking about active citizenship and engaged research\*
 
-Image Credit: CC BY NC ND Eloïse Vanhouteghem [www.oisele.com](http://www.oisele.com)
+Image Credit: CC BY NC ND Eloïse Vanhouteghem www.oisele.com

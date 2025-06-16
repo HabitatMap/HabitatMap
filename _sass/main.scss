@@ -54,3 +54,33 @@
 @import "modules/404";
 
 @import "partials/forms";
+
+// PayPal Donate Button Hover Effect
+.paypal-button-container {
+  position: relative;
+  display: inline-block;
+}
+
+.paypal-button-default,
+.paypal-button-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.2s;
+}
+
+.paypal-button-hover {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.paypal-button-container:hover .paypal-button-hover {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.paypal-button-container:hover .paypal-button-default {
+  opacity: 0;
+}
