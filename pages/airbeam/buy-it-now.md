@@ -95,20 +95,18 @@ image: /assets/img/airbeam-buy-it-now.jpg
     </p>
   </div>
 
-  <h1 class="panel panel--buy-now heading heading--medium u--accent-cyan">Buy Now!</h1>
+  <div class="panel panel--buy-now heading heading--medium u--accent-cyan">Buy Now!</div>
 
   <div class="panel shop-airbeam__products">
     <div class="panel shop-airbeam__product">
-      <picture>
-        <source srcset="/assets/img/airbeam-buy-it-now.webp" type="image/webp">
-        <img
+      <img
           alt="Airbeam"
-          class="img shop-airbeam-image"
-          src="/assets/img/airbeam-buy-it-now.jpg?nf_resize=fit&w=750"
-          width="750"
-          height="422"
-        />
-      </picture>
+          class="img lazyload shop-airbeam-image"
+          data-src="/assets/img/airbeam-buy-it-now.jpg?nf_resize=fit&w=750"
+          src="/assets/img/airbeam-buy-it-now.jpg?nf_resize=fit&w=20"
+           width="750"
+           height="422"
+      />
       <div class="product__content">
         <div>
           <h2 class="heading heading--small u--margin-bottom-tiny">AirBeam3</h2>
