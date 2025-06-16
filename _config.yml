@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: HabitatMap is an environmental tech org and maker of AirBeam
+title: HabitatMap | Environmental Tech & AirBeam
 description: >- # this means to ignore newlines until "baseurl:"
   HabitatMap's AirBeam and AirCasting tools empower people to measure air pollution
   and advocate for equitable solutions to environmental health issues.

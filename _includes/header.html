@@ -1,13 +1,18 @@
 <header class="header js--header">
   <div class="header__menu">
     <div class="header__brand">
-      <button class="header__nav-toggle-button js--toggle-nav u--desktop-hidden">
+      <button
+        class="header__nav-toggle-button js--toggle-nav u--desktop-hidden"
+        aria-label="Toggle navigation menu"
+        aria-expanded="false"
+        aria-controls="main-navigation"
+      >
         {% include /svg/icon_nav.html %}
         {% include /svg/icon_close.html %}
       </button>
 
       <div class="logo header__logo">
-        <a href="{{ "/" | relative_url }}">
+        <a href="{{ "/" | relative_url }}" aria-label="HabitatMap Home">
           {% include /svg/logo_hm.html %}
           {% include /svg/logo-hm-vertical.html %}
         </a>
@@ -18,7 +23,12 @@
 
     <div class="u--tablet-max-hidden">
       <a href="/airbeam/buy-it-now" class="button button--small header__button">Get AirBeam</a>
-      <button class="header__nav-toggle-button js--toggle-nav">
+      <button
+        class="header__nav-toggle-button js--toggle-nav"
+        aria-label="Toggle navigation menu"
+        aria-expanded="false"
+        aria-controls="main-navigation"
+      >
         {% include /svg/icon_nav.html %}
         {% include /svg/icon_close.html %}
       </button>

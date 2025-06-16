@@ -51,10 +51,10 @@ image: /assets/img/about-airbeam-01.jpg
     {% for faq in all_faqs %}
     {
       "@type": "Question",
-      "name": "{{ faq.question | strip_html }}",
+      "name": {{ faq.question | jsonify }},
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "{{ faq.answer | strip_html }}"
+        "text": {{ faq.answer | markdownify | strip_html | jsonify }}
       }
     }{% unless forloop.last %},{% endunless %}
     {% endfor %}

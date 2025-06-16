@@ -6,6 +6,79 @@ section: airbeam buy-now
 image: /assets/img/airbeam-buy-it-now.jpg
 ---
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Product",
+      "@id": "https://www.habitatmap.org/airbeam/buy-it-now#airbeam3",
+      "name": "AirBeam3",
+      "image": "https://www.habitatmap.org/assets/img/airbeam-buy-it-now.jpg",
+      "description": "AirBeam3 is the most accurate and versatile portable air quality monitor. It's a low-cost, palm-sized air quality instrument that measures hyperlocal concentrations of harmful microscopic particles in the air, known as particulate matter.",
+      "sku": "AB3-001",
+      "brand": {
+        "@type": "Brand",
+        "name": "HabitatMap"
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.habitatmap.org/airbeam/buy-it-now",
+        "priceCurrency": "USD",
+        "price": "199.00",
+        "priceValidUntil": "2025-12-31",
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://www.habitatmap.org/airbeam/buy-it-now#airbeammini",
+      "name": "AirBeam Mini",
+      "image": "https://www.habitatmap.org/assets/AirBeamMiniBlur.png",
+      "description": "The AirBeam Mini is a smaller, lighter, and more affordable version of our air quality monitor, perfect for individuals and mobile monitoring.",
+      "sku": "ABM-001",
+      "brand": {
+        "@type": "Brand",
+        "name": "HabitatMap"
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.habitatmap.org/airbeam/buy-it-now",
+        "priceCurrency": "USD",
+        "price": "99.00",
+        "priceValidUntil": "2025-12-31",
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.habitatmap.org/airbeam/buy-it-now#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.habitatmap.org/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "AirBeam",
+          "item": "https://www.habitatmap.org/airbeam/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Buy It Now"
+        }
+      ]
+    }
+  ]
+}
+</script>
+
 <section class="shop-airbeam">
   <div class="notification-container">
     <div class="notification-text" id="notification"></div>
@@ -22,20 +95,18 @@ image: /assets/img/airbeam-buy-it-now.jpg
     </p>
   </div>
 
-  <h1 class="panel panel--buy-now heading heading--medium u--accent-cyan">Buy Now!</h1>
+  <div class="panel panel--buy-now heading heading--medium u--accent-cyan">Buy Now!</div>
 
   <div class="panel shop-airbeam__products">
     <div class="panel shop-airbeam__product">
-      <picture>
-        <source srcset="/assets/img/airbeam-buy-it-now.webp" type="image/webp">
-        <img
+      <img
           alt="Airbeam"
-          class="img shop-airbeam-image"
-          src="/assets/img/airbeam-buy-it-now.jpg?nf_resize=fit&w=750"
-          width="750"
-          height="422"
-        />
-      </picture>
+          class="img lazyload shop-airbeam-image"
+          data-src="/assets/img/airbeam-buy-it-now.jpg?nf_resize=fit&w=750"
+          src="/assets/img/airbeam-buy-it-now.jpg?nf_resize=fit&w=20"
+           width="750"
+           height="422"
+      />
       <div class="product__content">
         <div>
           <h2 class="heading heading--small u--margin-bottom-tiny">AirBeam3</h2>

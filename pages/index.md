@@ -21,10 +21,13 @@ image: /assets/img/pages/home/airbeam.jpg
 </section>
 
 <img
-  data-src="/assets/img/pages/home/airbeam.jpg"
-  src="/assets/img/pages/home/airbeam.jpg?nf_resize=fit&w=20"
+  data-src="/assets/img/pages/home/airbeam.jpg?nf_resize=fit&w=1200"
+  src="/assets/img/pages/home/airbeam.jpg?nf_resize=fit&w=100"
   class="u--tablet-min-hidden"
+  width="1200"
+  height="800"
   alt="AirBeam sensor"
+  loading="lazy"
 />
 
 <section class="panel highlights">
