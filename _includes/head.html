@@ -4,8 +4,10 @@
   {% endif %}
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="preload" as="image" href="/assets/img/pages/home/airbeam.jpg">
+  <link rel="preload" as="image" href="/assets/img/pages/home/airbeam.jpg?nf_resize=fit&w=1200" fetchpriority="high">
   <link rel="preload" as="image" href="/assets/img/airbeam-buy-it-now.jpg?nf_resize=fit&w=750">
+  <title>{% if page.section == "home" %}{{ site.title }}{% else %}{{ page.title | default: site.title }}{% endif %}</title>
+  <meta name="description" content="{% if page.section == 'home' %}{{ site.description }}{% else %}{{ page.description | default: site.description }}{% endif %}">
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.typekit.net/ulx6yfe.css">
@@ -19,5 +21,55 @@
   <script defer type="text/javascript" src="/assets/js/nav.js"></script>
   <script defer type="text/javascript" src="/assets/js/sticky-header.js"></script>
   <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-  {% seo %}
+  {% seo title=false %}
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "NGO",
+          "@id": "https://www.habitatmap.org/#organization",
+          "name": "HabitatMap",
+          "url": "https://www.habitatmap.org/",
+          "logo": "https://www.habitatmap.org/assets/images/logo.png",
+          "sameAs": [
+            "https://www.facebook.com/HabitatMap/",
+            "https://www.youtube.com/user/habitatmap",
+            "https://www.linkedin.com/company/habitatmap-incorporated/"
+          ],
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "34A St Marks Avenue",
+            "addressLocality": "Brooklyn",
+            "addressRegion": "NY",
+            "postalCode": "11217",
+            "addressCountry": "US"
+          },
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+1-347-410-9499",
+            "contactType": "customer service"
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://www.habitatmap.org/#website",
+          "url": "https://www.habitatmap.org/",
+          "name": "HabitatMap",
+          "description": "HabitatMap is an environmental technology organization and the maker of AirBeam, a portable air quality monitor.",
+          "publisher": {
+            "@id": "https://www.habitatmap.org/#organization"
+          },
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://www.habitatmap.org/search?q={search_term_string}"
+            },
+            "query-input": "required name=search_term_string"
+          }
+        }
+      ]
+    }
+  </script>
 </head>
