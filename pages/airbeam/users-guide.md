@@ -75,7 +75,7 @@ image: /assets/img/about-airbeam-01.jpg
   </h2>
 
   <p class="p--body">
-    <a href='https://www.habitatmap.org/airbeam/buy-it-now'>AirBeam3</a> is a palm-sized air quality instrument weighing six ounces that measures PM1, PM2.5, PM10, temperature, and relative humidity. Its weather resistant enclosure makes it suitable for indoor or outdoor use. It can communicate via BLE, WiFi, or cellular 4G and can be used as a stationary or mobile monitor. Users can map and graph the measurements from AirBeam3 in real-time using an <a href='https://play.google.com/store/apps/details?id=pl.llp.aircasting&%3Cli%3Ehl=en&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>Android</a> or <a href='https://apps.apple.com/us/app/aircasting/id1587685281#?platform=iphone'>iOS</a> device or the <a href='http://aircasting.org'>AirCasting website</a>. AirBeam3 includes an onboard GPS, real-time clock, SD card, and battery so after configuration it can operate in standalone mode, i.e. without the need for any additional hardware, such as a smartphone. AirBeam3 is the most accurate and versatile portable air quality monitor on the market. Of the 75 PM2.5 measuring instruments evaluated by the <a href='https://www.habitatmap.org/blog/evaluation-proves-airbeam3-most-accurate-airbeam-ever'>SCAQMD AQ-SPEC program</a>, AirBeam3 is the most accurate when both the field and lab evaluations are considered. AirBeam3 is open-source as is the AirCasting platform software.
+    <a href='https://www.habitatmap.org/airbeam/buy-it-now'>AirBeam3</a> is a palm-sized air quality instrument weighing six ounces that measures PM1, PM2.5, PM10, temperature, and relative humidity. Its weather resistant enclosure makes it suitable for indoor or outdoor use. It can communicate via BLE, WiFi, or cellular 4G and can be used as a stationary or mobile monitor. Users can map and graph the measurements from AirBeam3 in real-time using an <a href='https://play.google.com/store/apps/details?id=pl.llp.aircasting'>Android</a> or <a href='https://apps.apple.com/us/app/aircasting-air-quality/id1587685281?platform=iphone'>iOS</a> device or the <a href='http://aircasting.org'>AirCasting website</a>. AirBeam3 includes an onboard GPS, real-time clock, SD card, and battery so after configuration it can operate in standalone mode, i.e. without the need for any additional hardware, such as a smartphone. AirBeam3 is the most accurate and versatile portable air quality monitor on the market. Of the 75 PM2.5 measuring instruments evaluated by the <a href='https://www.habitatmap.org/blog/evaluation-proves-airbeam3-most-accurate-airbeam-ever'>SCAQMD AQ-SPEC program</a>, AirBeam3 is the most accurate when both the field and lab evaluations are considered. AirBeam3 is open-source as is the AirCasting platform software.
   </p>
 
   <a id="videos" class="anchor">
@@ -148,7 +148,7 @@ image: /assets/img/about-airbeam-01.jpg
   </h2>
 
   <ol class="list list--ordered p--body">
-    <li>Download the AirCasting app from the <a href='https://play.google.com/store/apps/details?id=pl.llp.aircasting&%3Cli%3Ehl=en&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>Google Play store</a> or <a href='https://apps.apple.com/us/app/aircasting/id1587685281#?platform=iphone'>Apple App Store.</a></li>
+    <li>Download the AirCasting app from the <a href='https://play.google.com/store/apps/details?id=pl.llp.aircasting'>Google Play store</a> or <a href='https://apps.apple.com/us/app/aircasting-air-quality/id1587685281?platform=iphone'>Apple App Store.</a></li>
     <li>Launch the app and sign in or create a profile.</li>
     <li>Tap the “+” button at the bottom of the screen then tap “Mobile session” and follow the on screen instructions.</li>
   </ol>
@@ -164,7 +164,7 @@ image: /assets/img/about-airbeam-01.jpg
   </h2>
 
   <ol class="list list--ordered p--body">
-    <li>Download the AirCasting app from the <a href='https://play.google.com/store/apps/details?id=pl.llp.aircasting&%3Cli%3Ehl=en&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>Google Play store</a> or <a href='https://apps.apple.com/us/app/aircasting/id1587685281#?platform=iphone'>Apple App Store.</a></li>
+    <li>Download the AirCasting app from the <a href='https://play.google.com/store/apps/details?id=pl.llp.aircasting'>Google Play store</a> or <a href='https://apps.apple.com/us/app/aircasting-air-quality/id1587685281?platform=iphone'>Apple App Store.</a></li>
     <li>Launch the app and sign in or create a profile.</li>
     <li>Tap the “+” button at the bottom of the screen then tap “Fixed session” and follow the on screen instructions.</li>
   </ol>
@@ -181,7 +181,7 @@ image: /assets/img/about-airbeam-01.jpg
 
   <ol class="list list--ordered p--body">
     <li>Unscrew AirBeam3 enclosure, slide your activated Nano SIM card into the SIM card slot located directly above the power switch (insert the SIM card so the chip side is against the board and the clipped corner is oriented towards the power button), then screw AirBeam3 together again. To maintain AirBeam3's weather resistance, screw the bottom two screws tight before tightening the top screw into the aluminum standoff; do not overtighten.</li>
-    <li>Download the AirCasting app from the <a href='https://play.google.com/store/apps/details?id=pl.llp.aircasting&%3Cli%3Ehl=en&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>Google Play store</a> or <a href='https://apps.apple.com/us/app/aircasting/id1587685281#?platform=iphone'>Apple App Store.</a></li>
+    <li>Download the AirCasting app from the <a href='https://play.google.com/store/apps/details?id=pl.llp.aircasting'>Google Play store</a> or <a href='https://apps.apple.com/us/app/aircasting-air-quality/id1587685281?platform=iphone'>Apple App Store.</a></li>
     <li>Launch the app and sign in or create a profile.</li>
     <li>Tap the “+” button at the bottom of the screen then tap “Fixed session” and follow the on screen instructions.</li>
   </ol>
