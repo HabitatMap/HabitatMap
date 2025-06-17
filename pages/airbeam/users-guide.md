@@ -75,7 +75,7 @@ image: /assets/img/about-airbeam-01.jpg
   </h2>
 
   <p class="p--body">
-    <a href="/airbeam">AirBeam3</a> is a palm-sized air quality instrument weighing six ounces that measures PM1, PM2.5, PM10, temperature, and relative humidity. Its weather resistant enclosure makes it suitable for indoor or outdoor use. It can communicate via BLE, WiFi, or cellular 4G and can be used as a stationary or mobile monitor. Users can map and graph the measurements from AirBeam3 in real-time using an <a href='https://play.google.com/store/apps/details?id=pl.llp.aircasting&%3Cli%3Ehl=en&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>Android</a> or <a href='https://apps.apple.com/us/app/aircasting/id1587685281#?platform=iphone'>iOS</a> device or the <a href='http://aircasting.habitatmap.org/fixed_map'>AirCasting website</a>. AirBeam3 includes an onboard GPS, real-time clock, SD card, and battery so after configuration it can operate in standalone mode, i.e. without the need for any additional hardware, such as a smartphone. AirBeam3 is the most accurate and versatile portable air quality monitor on the market. Of the 75 PM2.5 measuring instruments evaluated by the <a href="https://www.aqmd.gov/docs/default-source/aq-spec/summary/habitatmap-airbeam3---summary-report.pdf">SCAQMD AQ-SPEC program</a>, AirBeam3 is the most accurate when both the field and lab evaluations are considered. AirBeam3 is open-source as is the AirCasting platform software.
+    AirBeam3 is a palm-sized air quality instrument weighing six ounces that measures PM1, PM2.5, PM10, temperature, and relative humidity. Its weather resistant enclosure makes it suitable for indoor or outdoor use. It can communicate via BLE, WiFi, or cellular 4G and can be used as a stationary or mobile monitor. Users can map and graph the measurements from AirBeam3 in real-time using an <a href='https://play.google.com/store/apps/details?id=pl.llp.aircasting&%3Cli%3Ehl=en&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>Android</a> or <a href='https://apps.apple.com/us/app/aircasting/id1587685281#?platform=iphone'>iOS</a> device or the <a href='http://aircasting.org'>AirCasting website</a>. AirBeam3 includes an onboard GPS, real-time clock, SD card, and battery so after configuration it can operate in standalone mode, i.e. without the need for any additional hardware, such as a smartphone. AirBeam3 is the most accurate and versatile portable air quality monitor on the market. Of the 75 PM2.5 measuring instruments evaluated by the <a href='https://www.habitatmap.org/blog/evaluation-proves-airbeam3-most-accurate-airbeam-ever'>SCAQMD AQ-SPEC program</a>, AirBeam3 is the most accurate when both the field and lab evaluations are considered. AirBeam3 is open-source as is the AirCasting platform software.
   </p>
 
   <a id="videos" class="anchor">
@@ -170,7 +170,7 @@ image: /assets/img/about-airbeam-01.jpg
   </ol>
 
   <p class="p--body">
-    When recording a fixed WiFi session with AirBeam3, the measurements are communicated once a minute to the <a href="http://aircasting.habitatmap.org/fixed_map">AirCasting website</a> via WiFi. The Android or iOS device no longer needs to be in proximity to AirBeam3 as it’s retrieving the data from the web via the Android or iOS device’s WiFi or cellular connection. AirBeam3 must be connected to the 2.4 GHz band of your WiFi network; it cannot connect via the 5 GHz band.
+    When recording a fixed WiFi session with AirBeam3, the measurements are communicated once a minute to the <a href="http://aircasting.org">AirCasting website</a> via WiFi. The Android or iOS device no longer needs to be in proximity to AirBeam3 as it’s retrieving the data from the web via the Android or iOS device’s WiFi or cellular connection. AirBeam3 must be connected to the 2.4 GHz band of your WiFi network; it cannot connect via the 5 GHz band.
   </p>
 
   <a id="record-cellular" class="anchor">
@@ -187,7 +187,7 @@ image: /assets/img/about-airbeam-01.jpg
   </ol>
 
    <p class="p--body">
-    When recording a fixed cellular session, the measurements are communicated once a minute to the <a href="http://aircasting.habitatmap.org/fixed_map">AirCasting website</a> via the 4G cellular network. The Android or iOS device no longer needs to be in proximity to AirBeam3 as it’s retrieving the data from the web via the Android or iOS device’s WiFi or cellular connection. AirBeam3 data and messaging costs are approximately $25 per month when using a Ting SIM card.
+    When recording a fixed cellular session, the measurements are communicated once a minute to the <a href="http://aircasting.org">AirCasting website</a> via the 4G cellular network. The Android or iOS device no longer needs to be in proximity to AirBeam3 as it’s retrieving the data from the web via the Android or iOS device’s WiFi or cellular connection. AirBeam3 data and messaging costs are approximately $25 per month when using a Ting SIM card.
   </p>
 
   <a id="connection" class="anchor">
@@ -278,7 +278,7 @@ image: /assets/img/about-airbeam-01.jpg
   </h2>
 
   <p class="p--body">
-    AirBeam3 is the most accurate and versatile portable air quality monitor on the market. Of the 75 PM2.5 measuring instruments evaluated by the <a href="https://www.aqmd.gov/docs/default-source/aq-spec/summary/habitatmap-airbeam3---summary-report.pdf">SCAQMD AQ-SPEC program</a>, AirBeam3 is the most accurate when both the field and lab evaluations are considered.
+    AirBeam3 is the most accurate and versatile portable air quality monitor on the market. Of the 75 PM2.5 measuring instruments evaluated by the <a href="https://www.habitatmap.org/blog/evaluation-proves-airbeam3-most-accurate-airbeam-ever">SCAQMD AQ-SPEC program</a>, AirBeam3 is the most accurate when both the field and lab evaluations are considered.
   </p>
 
     <p class="p--body">
