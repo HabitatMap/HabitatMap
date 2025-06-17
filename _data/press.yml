@@ -1,4 +1,8 @@
 press_articles:
+  - date: 2022-04-01
+    title: Precision environmental health advanced by exposure research
+    link: https://factor.niehs.nih.gov/2022/4/feature/1-feature-precision-environmental-health
+    publication: Environmental Factor
   - date: 2021-08-18
     title: Clearing the Air in the Historic West End
     link: https://storymaps.arcgis.com/stories/5071792639ef47729fad54da835d37d3
@@ -45,6 +49,10 @@ press_articles:
       correction
     link: https://www.sciencedirect.com/science/article/abs/pii/S1352231020302168?dgcid=coauthor
     publication: Atmospheric Environment
+  - date: 2020-01-22
+    link: https://captotheque.fr/fr/blog/detail/mobicitair-les-resultats-de-lexperimentation-citoyenne
+    publication: Captotheque
+    title: "Mobicit'air : les résultats de l'expérimentation citoyenne!"
   - date: 2019-11-20
     link: https://www.mdpi.com/1660-4601/17/1/93
     publication: International Journal of Environmental Research and Public Health
@@ -62,10 +70,6 @@ press_articles:
     link: https://cen.acs.org/environment/pollution/Predicting-asthma-attacks-kids/97/i32
     publication: Chemical & Engineering News
     title: "Predicting asthma attacks in kids "
-  - date: 2019-07-08
-    link: https://www.iotplaybook.com/article/nonprofits-profit-internet-things
-    publication: IoT Playbook
-    title: Nonprofits Profit from the Internet of Things
   - date: 2019-06-06
     publication: Rue89 Strasbourg
     link: https://www.rue89strasbourg.com/enseignements-strasbourgeois-capteurs-pollution-154643
@@ -93,10 +97,6 @@ press_articles:
     link: https://vimeo.com/search?q=bral.brussels%2Fcleanair
     publication: ZIN TV
     title: BRAL Brussels Clean Air - AirCasters
-  - date: 2019-02-01
-    link: https://factor.niehs.nih.gov/2019/2/community-impact/air_monitoring/index.htm
-    publication: Environmental Factor
-    title: Los Angeles youths take on air monitoring
   - date: 2018-11-26
     link: https://biztechmagazine.com/article/2018/11/how-nonprofits-can-take-advantage-internet-things
     publication: BizTech
@@ -109,36 +109,29 @@ press_articles:
     link: https://www.youtube.com/watch?v=t1JW3HcU9bo&feature=youtu.be&t=9m59s
     publication: Open Source Stories
     title: The Science of Collective Discovery
+  - date: 2018-04-08
+    link: https://www.nydailynews.com/2016/09/27/advocates-say-poor-bronx-brooklyn-neighborhoods-choked-with-garbage-truck-pollution/
+    publication: Daily News
+    title: Advocates say poor Bronx, Brooklyn neighborhoods choked with garbage
+      truck pollution
   - date: 2018-01-12
     link: http://kalapie.org/2018/01/12/high-levels-of-smoke-in-the-center-of-donostia-san-sebastian-from-urumea-fireworks_16/
     publication: Kalapie
     title: High levels of smoke in the center of Donostia-San Sebastián from Urumea
       fireworks
-  - date: 2017-10-24
-    link: https://livestream.com/newyorkacademyofsciences/GoingfortheGoals/videos/164437711
-    publication: The New York Academy of Sciences
-    title: "Going for the Goals: New York Tech Innovates for Sustainability"
+  - date: 2017-11-01
+    link: https://www.youtube.com/watch?v=Pyaptx96eEA
+    publication: National Institute of Environmental Health Sciences
+    title: The NIEHS Exposure Science and the Exposome Webinar Series - Michael
+      Heimbinder
   - date: 2017-10-02
     link: https://www.youtube.com/watch?v=G6PEcwuVBEk&feature=youtu.be
     publication: Atlantic Re:think
     title: Can an app make our cities more breathable?
-  - date: 2017-10-01
-    link: https://www.atmo-auvergnerhonealpes.fr/actualite/mobicitair-les-resultats-de-lexperimentation-citoyenne
-    publication: Atmo
-    title: "Mobicit'air : les résultats de l'expérimentation citoyenne!"
   - date: 2017-09-27
     link: https://www.youtube.com/watch?v=iiWae9f6iJo&feature=youtu.be&t=10615
     publication: South Coast Air Quality Management District
     title: Making Sense of Sensors Conference
-  - date: 2017-09-11
-    link: https://cleanaircarolina.org/2017/09/talking-the-talk-by-walking-walk-intern/
-    publication: Clean Air Carolina
-    title: Talking the Talk, by Walking the Walk
-  - date: 2017-08-22
-    link: https://www.niehs.nih.gov/news/events/pastmtg/2017/exposome/index.cfm
-    publication: National Institute of Environmental Health Sciences
-    title: How Citizen Science Air Quality Monitoring is Being Used to Characterize
-      Exposures and Improve Public Health
   - date: 2017-06-28
     link: https://nexusmedianews.com/a-dress-that-measures-air-pollution-video-46ba17a30b51
     publication: Nexus Media
@@ -176,14 +169,15 @@ press_articles:
     link: https://blog.adafruit.com/2017/03/14/how-to-fight-for-good-air-quality-bring-in-the-diy-monitors-citizenscience/
     publication: Adafruit
     title: How to Fight for Good Air Quality? Bring in the DIY Monitors.
+  - date: 2017-03-01
+    title: "Measuring Personal Environmental Exposures: Proceedings of a Workshop—in
+      Brief"
+    link: https://nap.nationalacademies.org/read/24711/chapter/1
+    publication: National Academies Press
   - date: 2017-02-23
     link: https://www.youtube.com/watch?v=eyyyaKB17Oc&feature=youtu.be
     publication: KlanKosova
     title: Ora e Pasdites - Ndotja e ajrit në Prishtinë
-  - date: 2017-02-17
-    link: https://www.moustique.be/17841/video-voici-comment-tester-vous-meme-la-qualite-de-air?utm_campaign=seeding&utm_medium=Social&utm_source=Twitter
-    publication: Moustique
-    title: Voici comment tester vous-même la qualité de l'air
   - date: 2016-11-29
     link: https://www.youtube.com/watch?v=apIFa2UbM_g&feature=youtu.be&list=PLzsdEyVNFvgwy71FPR-NLtBeor2PFmBKD
     publication: The National Academies of Sciences, Engineering & Medicine
@@ -193,19 +187,10 @@ press_articles:
     publication: Valarm
     title: How do you use AirBeam AirCasting Air Quality Sensors with Valarm Tools
       Cloud / Tools.Valarm.net?
-  - date: 2016-11-15
-    link: https://www.charlottefive.com/citizens-measuring-air-quality/
-    publication: Charlotte Five
-    title: Why are citizens measuring air quality in Charlotte?
   - date: 2016-09-28
     link: https://gothamist.com/2016/09/28/garbage_truck_pollution_press_confe.php
     publication: The Gothamist
     title: "Garbage Trucks Are Choking South Bronx and North Brooklyn: Study"
-  - date: 2016-09-27
-    link: https://www.nydailynews.com/new-york/advocates-poor-nyc-neighborhoods-choked-trash-truck-pollution-article-1.2807543?cid=bitly
-    publication: Daily News
-    title: Advocates say poor Bronx, Brooklyn neighborhoods choked with garbage
-      truck pollution
   - date: 2016-09-01
     link: http://transformdonttrashnyc.org/resources/clearing-the-air-how-reforming-the-public-waste-sector-can-address-air-quality-issues-in-environmental-justice-communities/
     publication: Transform Don't Trash NYC
@@ -237,6 +222,11 @@ press_articles:
     link: https://www.newscientist.com/article/mg22830462-400-google-cars-used-to-sniff-city-air-and-make-pollution-maps/
     publication: New Scientist
     title: Google cars used to sniff city air and make pollution maps
+  - date: 2015-08-20
+    title: Evaluation Of New Smartphone Monitor 'Airbeam' In Measuring Air Pollution
+      Levels
+    link: https://ehp.niehs.nih.gov/doi/10.1289/isee.2015.2015-3533
+    publication: EHP Publishing
   - date: 2015-08-13
     link: https://www.citylab.com/environment/2015/08/how-portable-air-sensors-are-changing-pollution-detection/401147/
     publication: CityLab
@@ -262,10 +252,6 @@ press_articles:
     link: https://edmontonjournal.com/news/local-news/want-to-investigate-street-level-air-pollution
     publication: Edmonton Journal
     title: Want to investigate street-level air pollution?
-  - date: 2015-01-20
-    link: https://blog.nature.org/science/2015/01/20/citizen-science-aircasting-air-pollution-quality/
-    publication: Cool Green Science
-    title: "Citizen Science Tuesday: AirCasting"
   - date: 2014-11-18
     link: https://www.wired.com/2014/11/goofy-wearable-tracks-air-quality-around/
     publication: Wired
@@ -287,15 +273,6 @@ press_articles:
     link: https://technical.ly/brooklyn/2014/10/31/know-much-air-pollution-youre-breathing-airbeam/
     publication: Technically BK
     title: Know how much air pollution you’re breathing in with AirBeam
-  - date: 2014-10-30
-    link: https://gigaom.com/2014/10/30/see-how-a-brooklyn-nonprofit-is-using-the-internet-of-things-for-environmental-justice/?utm_content=buffer366b3&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer
-    publication: GigaOm
-    title: See how a Brooklyn nonprofit is using the internet of things for
-      environmental justice
-  - date: 2014-10-29
-    link: https://www.pastemagazine.com/articles/2014/10/airbeam-is-a-device-that-shows-how-much-pollution.html
-    publication: Paste
-    title: AirBeam is a Device That Shows How Much Pollution You Are Breathing
   - date: 2014-10-27
     link: https://makezine.com/2014/10/27/mobile-air-monitoring-with-aircasting/
     publication: Makezine
@@ -314,10 +291,6 @@ press_articles:
     publication: Technically BK
     title: HabitatMap plans air sampling Brooklyn this spring, including noise
       pollution
-  - date: 2013-07-03
-    link: https://www.treehugger.com/gadgets/aircasting-records-maps-and-shares-health-and-environmental-data-smartphone.html
-    publication: Treehugger
-    title: AirCasting crowdsources health and environmental data via smartphone
   - date: 2013-06-03
     link: https://well.blogs.nytimes.com/2013/06/03/microsampling-air-pollution/?_php=true&_type=blogs&_r=0
     publication: The New York Times
