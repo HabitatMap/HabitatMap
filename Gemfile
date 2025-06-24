@@ -12,11 +12,9 @@ gem "jekyll"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-  gem "hpricot" # jekyll-import dependency
   gem "jekyll-algolia"
   gem "jekyll-feed"
   gem "jekyll-import"
-  gem "octopress-debugger"
   gem "open_uri_redirections" # jekyll-import dependency
   gem "jekyll-seo-tag"
   gem "jekyll-sitemap"

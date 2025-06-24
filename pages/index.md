@@ -218,5 +218,4 @@ image: /assets/img/pages/home/airbeam.jpg
 
 {% include get-started-modal.html %}
 
-<script defer type="text/javascript" src="/assets/js/rotating-text.js"></script>
 <script defer type="text/javascript" src="/assets/js/citations.js"></script>
