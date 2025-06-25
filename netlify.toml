@@ -2,6 +2,14 @@
   command = "bundle install && bundle exec jekyll build"
   publish = "_site"
 
+[build.environment]
+  RUBY_VERSION = "3.3.6"
+  BUNDLER_VERSION = "2.2.32"
+
+# Add Ruby build configuration
+[context.production.environment]
+  JEKYLL_ENV = "production"
+
 [[redirects]]
 from = "/about_us"
 to = "/about"
