@@ -20,7 +20,6 @@ GEM
     ffi (1.17.2)
     filesize (0.2.0)
     forwardable-extended (2.6.0)
-    hpricot (0.8.6)
     http_parser.rb (0.8.0)
     httpclient (2.9.0)
       mutex_m
@@ -89,6 +88,7 @@ GEM
     progressbar (1.13.0)
     public_suffix (6.0.2)
     racc (1.8.1)
+    rake (13.3.0)
     rb-fsevent (0.11.2)
     rb-inotify (0.11.1)
       ffi (~> 1.0)
@@ -115,7 +115,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  hpricot
+  bundler (~> 2.2.32)
   jekyll
   jekyll-algolia
   jekyll-feed
@@ -124,10 +124,14 @@ DEPENDENCIES
   jekyll-seo-tag
   jekyll-sitemap
   open_uri_redirections
+  rake
   tzinfo (~> 1.2)
   tzinfo-data
   wdm (~> 0.1.1)
   webrick (~> 1.8)
+
+RUBY VERSION
+   ruby 3.3.6p108
 
 BUNDLED WITH
    2.2.32

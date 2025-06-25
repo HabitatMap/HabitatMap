@@ -3,11 +3,10 @@ source "https://rubygems.org"
 ruby "3.3.6"
 
 # Jekyll version
-gem "jekyll", "~> 4.3.0"
+gem "jekyll"
 
 # Jekyll plugins
 group :jekyll_plugins do
-  gem "hpricot" # jekyll-import dependency
   gem "jekyll-algolia"
   gem "jekyll-feed"
   gem "jekyll-import"
