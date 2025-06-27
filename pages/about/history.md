@@ -15,7 +15,7 @@ image: /assets/img/pages/about-habitatmap/MichaelHeimbinder.jpg
 
   <div class="split--50">
     <p class="heading heading--small">
-      What started as grassroots organizing by a group of dedicated activists in Brooklyn is now the non-profit behind one of the largest open-source of community-collected air quality measurements ever created.
+      What started as grassroots organizing by a group of dedicated activists in Brooklyn is now the non-profit behind the world's largest open-source, open access database of community-collected air quality measurements.
     </p>
   </div>
 </section>
@@ -30,7 +30,7 @@ image: /assets/img/pages/about-habitatmap/MichaelHeimbinder.jpg
   </p>
 
   <p class="p--body">
-    Today, with thousands of AirBeams in use worldwide, the AirCasting platform is the world's largest open-source, open-access databases of community-collected air quality measurements.
+    Today, with thousands of AirBeams in use worldwide, the AirCasting platform is the world's largest open-source, open-access database of community-collected air quality measurements.
   </p>
 
   <h2 class="heading heading--small heading--body">
