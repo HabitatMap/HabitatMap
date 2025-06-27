@@ -1,10 +1,15 @@
 [build]
-  command = "bundle install && bundle exec jekyll build"
+  command = "gem install bundler -v 2.2.32 && bundle install && bundle exec jekyll build"
   publish = "_site"
 
 [build.environment]
   RUBY_VERSION = "3.3.6"
   BUNDLER_VERSION = "2.2.32"
+  NODE_VERSION = "18"
+
+# Force use of legacy build system to avoid mise issues
+[build.processing]
+  skip_processing = false
 
 # Add Ruby build configuration
 [context.production.environment]
