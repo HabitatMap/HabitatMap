@@ -15,7 +15,7 @@ image: /assets/img/pages/about-habitatmap/MichaelHeimbinder.jpg
 
   <div class="split--50">
     <p class="heading heading--small">
-      What started as grassroots organizing by a group of dedicated activists in Brooklyn is now the non-profit behind one of the largest open-source databases of community-collected air quality measurements ever created.
+      What started as grassroots organizing by a group of dedicated activists in Brooklyn is now the non-profit behind one of the largest open-source database of community-collected air quality measurements ever created.
     </p>
   </div>
 </section>
