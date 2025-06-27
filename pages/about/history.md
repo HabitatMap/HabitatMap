@@ -30,7 +30,7 @@ image: /assets/img/pages/about-habitatmap/MichaelHeimbinder.jpg
   </p>
 
   <p class="p--body">
-    Today, with thousands of AirBeams in use worldwide, the AirCasting platform is one of the largest open-source databases of community-collected air quality measurements ever created.
+    Today, with thousands of AirBeams in use worldwide, the AirCasting platform is the world's largest open-source, open-access databases of community-collected air quality measurements.
   </p>
 
   <h2 class="heading heading--small heading--body">
