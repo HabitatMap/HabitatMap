@@ -1,29 +1,24 @@
 source "https://rubygems.org"
-# Hello! This is where you manage which Jekyll version is used to run.
-# When you want to use a different version, change it below, save the
-# file and run `bundle install`. Run Jekyll with `bundle exec`, like so:
-#
-#     bundle exec jekyll serve
-#
-# This will help ensure the proper Jekyll version is running.
-# Happy Jekylling!
-gem "jekyll"
-# This is the default theme for new Jekyll sites. You may change this to anything you like.
 
-# If you have any plugins, put them here!
+ruby "3.3.0"
+
+# Jekyll version
+gem "jekyll"
+
+# Jekyll plugins
 group :jekyll_plugins do
-  gem "hpricot" # jekyll-import dependency
   gem "jekyll-algolia"
   gem "jekyll-feed"
   gem "jekyll-import"
-  gem "octopress-debugger"
   gem "open_uri_redirections" # jekyll-import dependency
   gem "jekyll-seo-tag"
   gem "jekyll-sitemap"
 end
 
-# Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
-# and associated library.
+# Use compatible Sass converter
+gem "jekyll-sass-converter", "~> 2.0"
+
+# Windows and JRuby compatibility
 install_if -> { RUBY_PLATFORM =~ %r!mingw|mswin|java! } do
   gem "tzinfo", "~> 1.2"
   gem "tzinfo-data"
@@ -32,5 +27,8 @@ end
 # Performance-booster for watching directories on Windows
 gem "wdm", "~> 0.1.1", :install_if => Gem.win_platform?
 
+gem "webrick", "~> 1.8"
 
-gem "webrick", "~> 1.7"
+# Add these gems for better Netlify compatibility
+gem "bundler", "~> 2.2.32"
+gem "rake"

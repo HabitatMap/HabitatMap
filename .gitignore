@@ -4,5 +4,6 @@ _site
 .jekyll-metadata
 vendor
 .DS_Store
+.tool-versions
 # Local Netlify folder
 .netlify
