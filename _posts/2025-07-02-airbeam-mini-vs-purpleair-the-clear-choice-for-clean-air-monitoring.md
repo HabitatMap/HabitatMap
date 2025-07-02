@@ -21,11 +21,11 @@ Let’s break down how AirBeam Mini stacks up against PurpleAir—and why it’s
 
 **1. You Own Your Data (and It’s Always Free to Access)**
 
-With the AirBeam Mini, your data is truly yours. You can access it anytime through our free [iOS](https://apps.apple.com/us/app/aircasting-air-quality/id1587685281#?platform=iphone) and [Android](https://play.google.com/store/apps/details?id=pl.llp.aircasting&hl=en_US) apps, or our [web platform](https://aircasting.org) without paywalls or strings attached. We also offer a free and open [API](https://github.com/HabitatMap/AirCasting/blob/master/doc/api.md). PurpleAir, by contrast, charges users to access their own data and use their API. And worse? They technically own your data.
+With AirBeam Mini, your data is truly yours. You can access it anytime through our free [iOS](https://apps.apple.com/us/app/aircasting-air-quality/id1587685281#?platform=iphone) and [Android](https://play.google.com/store/apps/details?id=pl.llp.aircasting&hl=en_US) apps, or our [web platform](https://aircasting.org) without paywalls or strings attached. We also offer a free and open [API](https://github.com/HabitatMap/AirCasting/blob/master/doc/api.md). PurpleAir, by contrast, charges users to access their own data and use their API. And worse? They technically own your data.
 
 **2. Mobile-Ready and Versatile**
 
-Unlike PurpleAir, which is limited to fixed, plug-in-only monitoring, the AirBeam Mini is designed for both fixed and mobile use. With a built-in battery, Bluetooth, and WiFi capability, it can go wherever you do. Whether you’re walking through your neighborhood, commuting, or setting up monitoring at multiple locations, the AirBeam Mini has you covered.
+Unlike PurpleAir, which is limited to fixed, plug-in-only monitoring, AirBeam Mini is designed for both fixed and mobile use. With a built-in battery, Bluetooth, and WiFi capability, it can go wherever you do. Whether you’re walking through your neighborhood, commuting, or setting up monitoring at multiple locations, the AirBeam Mini has you covered.
 
 **3. Accurate and Trusted**
 
@@ -33,15 +33,15 @@ Accuracy is everything when it comes to environmental monitoring. AirBeam has be
 
 **4. Easy to Use, Easy to Share**
 
-Setting up an AirBeam Mini takes minutes with no technical support needed. The sleek, compact design makes it a breeze to deploy multiple units, and our free app makes it easy to visualize, understand, and share your air quality data in real time. PurpleAir’s setup is slower, often requires company support, and lacks mobile app accessibility.
+Setting up AirBeam Mini takes minutes with no technical support needed. The sleek, compact design makes it a breeze to deploy multiple units, and our free app makes it easy to visualize, understand, and share your air quality data in real-time. PurpleAir’s setup is slower, often requires company support, and lacks mobile app accessibility.
 
 **5. Internal Storage and Automatic Backups**
 
-Worried about losing your data? Don’t be. The AirBeam Mini includes internal storage and automatic data backup. PurpleAir only offers storage through additional accessories and has no built-in protections against data loss.
+Worried about losing your data? Don’t be. AirBeam Mini includes internal storage and automatic data backup. PurpleAir only offers storage through additional accessories and has no built-in protections against data loss.
 
 **6. Built for Education and Advocacy**
 
-We’re more than a tech company. We're a mission-driven nonprofit, founded by activists passionate about clean air and environmental justice. That’s why we offer free curriculum guides, campaign creation tools, and responsive technical support. Our technology is ideal for STEM learning, community projects, and advocacy campaigns, giving users real-time feedback that inspires action.
+We’re more than a tech company. We're a mission-driven nonprofit, founded by activists passionate about clean air and environmental justice. That’s why we offer [free curriculum guides, campaign creation tools](https://aircastingactions.org/), and responsive technical support. Our technology is ideal for STEM learning, community projects, and advocacy campaigns, giving users real-time feedback that inspires action.
 
 **7. Transparent, Open Source, and Community-Minded**
 
@@ -53,7 +53,7 @@ At $99, AirBeam Mini comes with all the features and accessories you need includ
 
 **The Bottom Line**
 
-The AirBeam Mini isn’t just another air quality monitor, it’s a trusted tool for people who care about clean air, science, and community power. Whether you’re tracking personal exposure, leading a classroom project, or organizing for environmental justice, the AirBeam Mini gives you everything you need. 
+The AirBeam Mini isn’t just another air quality monitor, it’s a trusted tool for people who care about clean air, science, and community power. Whether you’re tracking personal exposure, leading a classroom project, or organizing for environmental justice, AirBeam Mini gives you everything you need. 
 
 Ready to breathe easier? Choose the AirBeam Mini: accurate, open, and built for impact.
 
