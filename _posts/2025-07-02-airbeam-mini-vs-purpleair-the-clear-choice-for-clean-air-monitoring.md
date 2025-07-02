@@ -29,7 +29,7 @@ Unlike PurpleAir, which is limited to fixed, plug-in-only monitoring, the AirBea
 
 **3. Accurate and Trusted**
 
-Accuracy is everything when it comes to environmental monitoring. The AirBeam Mini has been recognized by independent studies for its precision and versatility, making it a trusted choice for researchers, advocates, and everyday users. Many competitors, including PurpleAir, have faced criticism for inconsistent or inaccurate readings.
+Accuracy is everything when it comes to environmental monitoring. AirBeam has been recognized by independent studies for its precision and versatility, making it a trusted choice for researchers, advocates, and everyday users. Many competitors, including PurpleAir, have faced criticism for inconsistent or inaccurate readings.
 
 **4. Easy to Use, Easy to Share**
 
