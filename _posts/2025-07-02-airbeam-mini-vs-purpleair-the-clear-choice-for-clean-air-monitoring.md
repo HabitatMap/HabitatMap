@@ -21,7 +21,7 @@ Let’s break down how AirBeam Mini stacks up against PurpleAir—and why it’s
 
 **1. You Own Your Data (and It’s Always Free to Access)**
 
-With AirBeam Mini, your data is truly yours. You can access it anytime through our free [iOS](https://apps.apple.com/us/app/aircasting-air-quality/id1587685281#?platform=iphone) and [Android](https://play.google.com/store/apps/details?id=pl.llp.aircasting&hl=en_US) apps, or our [web platform](https://aircasting.org) without paywalls or strings attached. We also offer a free and open [API](https://github.com/HabitatMap/AirCasting/blob/master/doc/api.md). PurpleAir, by contrast, charges users to access their own data and use their API. And worse? They technically own your data.
+With AirBeam Mini, your data is truly yours. You can access it anytime through our free [iOS](https://apps.apple.com/us/app/aircasting-air-quality/id1587685281#?platform=iphone) and [Android](https://play.google.com/store/apps/details?id=pl.llp.aircasting&hl=en_US) apps or our [web platform](https://aircasting.org) without paywalls or strings attached. We also offer a free and open [API](https://github.com/HabitatMap/AirCasting/blob/master/doc/api.md). PurpleAir, by contrast, charges users to access their own data and use their API. And worse? They technically own your data.
 
 **2. Mobile-Ready and Versatile**
 
