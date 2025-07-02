@@ -4,7 +4,7 @@ title: "AirBeam Mini vs. PurpleAir: The Clear Choice for Clean Air Monitoring"
 date: 2025-07-02
 featured: true
 author: Michael Heimbinder
-image: /images/uploads/airbeammini_inhand.jpg
+image: /images/uploads/airbeammini_inhand.png
 category: Sensors & Instruments
 tag:
   - health
