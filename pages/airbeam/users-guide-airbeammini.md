@@ -117,7 +117,7 @@ Operation of AirBeam Mini is nearly identical to operation of AirBeam3, so the b
   </h2>
 
   <p class="p--body">
-    AirBeam Mini has a 1800 mAh 3.7V rechargeable lithium battery that when fully charged can power the instrument for approximately 14 hours in Mobile mode and 24 hours in Fixed mode. The battery charges via the USB-C Port, which can also be used to power AirBeam Mini directly. The Battery Charging Indicator turns solid green when AirBeam Mini is charging and turns off when AirBeam Mini is either fully charged or unplugged. CAUTION: AirBeam Mini should never be charged in an environment where the temperature exceeds 110 degrees Fahrenheit. 
+    AirBeam Mini has a 1800 mAh 3.7V rechargeable lithium battery that when fully charged can power the instrument for approximately 14 hours in Mobile mode and 24 hours in Fixed mode. The battery charges via the USB-C Port, which can also be used to power AirBeam Mini directly. The Battery Charging Indicator turns solid green when AirBeam Mini is charging and turns off when AirBeam Mini is either fully charged or unplugged. CAUTION: AirBeam Mini should never be charged in an environment where the temperature exceeds 110 degrees Fahrenheit. AirBeam3 should only be charged with direct current power at a voltage of 5 volts (DC5V).
   </p>
 
   <a id="battery-warning" class="anchor">
