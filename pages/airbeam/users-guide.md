@@ -108,7 +108,7 @@ image: /assets/img/about-airbeam-01.jpg
   </h2>
 
   <p class="p--body">
-    AirBeam3 has a 3350 mAh 3.7V rechargeable lithium battery that when fully charged can power the instrument for approximately 17 hours in Mobile mode and 31 hours in Fixed-WiFi mode. The battery charges via the USB-C Port, which can also be used to power AirBeam3 directly. The Battery Charging Indicator turns solid green when AirBeam3 is charging and turns off when AirBeam3 is either fully charged or unplugged. CAUTION: AirBeam3 should never be charged in an environment where the temperature exceeds 110 degrees Fahrenheit.
+    AirBeam3 has a 3350 mAh 3.7V rechargeable lithium battery that when fully charged can power the instrument for approximately 17 hours in Mobile mode and 31 hours in Fixed-WiFi mode. The battery charges via the USB-C Port, which can also be used to power AirBeam3 directly. The Battery Charging Indicator turns solid green when AirBeam3 is charging and turns off when AirBeam3 is either fully charged or unplugged. CAUTION: AirBeam3 should never be charged in an environment where the temperature exceeds 110 degrees Fahrenheit. AirBeam3 should only be charged with direct current power at a voltage of 5 volts (DC5V).
   </p>
 
   <a id="battery-warning" class="anchor">
