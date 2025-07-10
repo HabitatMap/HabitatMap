@@ -316,7 +316,7 @@ hasMerchantReturnPolicy:
 
   <div class="panel shop-airbeam__description">
     <p>
-      The AirCasting app collects measurements from the AirBeam and relays it to the maps. With thousands of AirBeams measuring particulate matter worldwide and nearly 4 billion data points recorded, the AirCasting platform is the largest open-source database of community-collected air quality measurements ever created. By documenting and leveraging health and environmental data to inform personal decision-making and public policy, the AirCasting platform empowers people to map air pollution and organize for clean air.
+      The AirCasting app collects measurements from the AirBeam and relays it to the maps. With thousands of AirBeams measuring particulate matter worldwide and nearly 4 billion data points recorded, the AirCasting platform is the largest open-source database of community-collected air quality measurements ever created. By documenting and leveraging health and environmental data to inform personal decision-making and public policy, the AirCasting platform empowers people to map air pollution and organize for clean air. All proceeds from AirBeam sales go directly towards advancing HabitatMap's mission to empower organizations and community scientists to measure pollution and advocate for equitable solutions to environmental health issues.
     </p>
   </div>
 
