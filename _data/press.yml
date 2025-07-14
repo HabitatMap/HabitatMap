@@ -1,4 +1,49 @@
 press_articles:
+  - date: 2025-07-14
+    title: The Air We Breathe - Tech's new Frontier
+    link: https://medium.com/@hernanimax/the-air-we-breathe-techs-next-frontier-fe7ad7be3875
+    publication: Medium
+  - date: 2025-05-02
+    title: Introduction to AirBeam 3
+    link: https://www.collegesidekick.com/study-docs/27180371
+    publication: College SideKick
+  - date: 2025-04-14
+    title: Essential OSINT tools for journalists investigating air pollution
+    link: https://ijnet.org/en/story/essential-osint-tools-journalists-investigating-air-pollution
+    publication: International Journalists' Network
+  - date: 2025-03-27
+    title: 10+ Best Air Quality Monitors
+    link: https://breathesafeair.com/air-quality-monitors/
+    publication: Breathe Safe Air
+  - date: 2025-02-04
+    link: https://www.airgradient.com/blog/aqspec-afriset-and-airlab/
+    title: Should You Base Your Air Quality Monitor Purchasing Decision on AQ-SPEC
+      Results?
+    publication: Air Gradient
+  - date: 2024-12-06
+    title: Citizen Science Holiday Gifts
+    link: https://www.discovermagazine.com/the-sciences/citizen-science-holiday-gifts-and-projects
+    publication: https://www.discovermagazine.com/the-sciences/citizen-science-holiday-gifts-and-projects
+  - date: 2024-07-18
+    title: AirBeam 3 Review – Portable & Standalone Air Quality Monitor
+    link: https://breathesafeair.com/airbeam-3-review/
+    publication: Breathe Safe Air
+  - date: 2023-10-04
+    title: "Air Quality Citizen Science: Measuring Pollution with an AirBeam"
+    link: https://www.rootsimple.com/2023/10/air-quality-citizen-science-measuring-pollution-with-an-airbeam/
+    publication: Root Simple
+  - date: 2023-03-10
+    title: Fire and the crazy world of air around us
+    link: https://catalyst-magazine.org/articles/fire-and-the-crazy-world-of-air-around-us/
+    publication: Catalyst Magazine
+  - date: 2023-07-14
+    title: Wearable air sensors enable communities to advocate for clean air
+    link: https://www.cleanairfund.org/case-study/wearable-air-sensors/
+    publication: Clean Air Fund
+  - date: 2023-06-09
+    title: 5 Resources for Finding Fire and Smoke Air Quality Monitors Near You
+    link: https://www.discovermagazine.com/the-sciences/5-resources-for-finding-fire-smoke-and-air-quality-monitors-near-you
+    publication: Discover Magazine
   - date: 2022-04-01
     title: Precision environmental health advanced by exposure research
     link: https://factor.niehs.nih.gov/2022/4/feature/1-feature-precision-environmental-health
@@ -306,48 +351,3 @@ press_articles:
       Particulate Matter Concentrations in New York during the COVID-19 Lockdown
     link: https://www.mdpi.com/2813-4168/1/3/15
     publication: MDPI
-  - date: 2023-06-09
-    title: 5 Resources for Finding Fire and Smoke Air Quality Monitors Near You
-    link: https://www.discovermagazine.com/the-sciences/5-resources-for-finding-fire-smoke-and-air-quality-monitors-near-you
-    publication: Discover Magazine
-  - date: 2023-07-14
-    title: Wearable air sensors enable communities to advocate for clean air
-    link: https://www.cleanairfund.org/case-study/wearable-air-sensors/
-    publication: Clean Air Fund
-  - date: 2023-03-10
-    title: Fire and the crazy world of air around us
-    link: https://catalyst-magazine.org/articles/fire-and-the-crazy-world-of-air-around-us/
-    publication: Catalyst Magazine
-  - date: 2024-07-18
-    title: AirBeam 3 Review – Portable & Standalone Air Quality Monitor
-    link: https://breathesafeair.com/airbeam-3-review/
-    publication: Breathe Safe Air
-  - date: 2023-10-04
-    title: "Air Quality Citizen Science: Measuring Pollution with an AirBeam"
-    link: https://www.rootsimple.com/2023/10/air-quality-citizen-science-measuring-pollution-with-an-airbeam/
-    publication: Root Simple
-  - date: 2024-12-06
-    title: Citizen Science Holiday Gifts
-    link: https://www.discovermagazine.com/the-sciences/citizen-science-holiday-gifts-and-projects
-    publication: https://www.discovermagazine.com/the-sciences/citizen-science-holiday-gifts-and-projects
-  - date: 2025-02-04
-    link: https://www.airgradient.com/blog/aqspec-afriset-and-airlab/
-    title: Should You Base Your Air Quality Monitor Purchasing Decision on AQ-SPEC
-      Results?
-    publication: Air Gradient
-  - date: 2025-03-27
-    title: 10+ Best Air Quality Monitors
-    link: https://breathesafeair.com/air-quality-monitors/
-    publication: Breathe Safe Air
-  - date: 2025-04-14
-    title: Essential OSINT tools for journalists investigating air pollution
-    link: https://ijnet.org/en/story/essential-osint-tools-journalists-investigating-air-pollution
-    publication: International Journalists' Network
-  - date: 2025-05-02
-    title: Introduction to AirBeam 3
-    link: https://www.collegesidekick.com/study-docs/27180371
-    publication: College SideKick
-  - date: 2025-07-14
-    title: The Air We Breathe - Tech's new Frontier
-    link: https://medium.com/@hernanimax/the-air-we-breathe-techs-next-frontier-fe7ad7be3875
-    publication: Medium
