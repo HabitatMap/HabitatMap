@@ -286,11 +286,6 @@ press_articles:
     link: https://faircompanies.com/videos/monitor-your-air-quality-using-an-arduino-android-diy-sensor/
     publication: FairCompanies
     title: Monitor your air quality using an Arduino-Android DIY sensor
-  - date: 2014-02-07
-    link: https://technical.ly/brooklyn/2014/02/07/habitatmap-airbeam/
-    publication: Technically BK
-    title: HabitatMap plans air sampling Brooklyn this spring, including noise
-      pollution
   - date: 2013-06-03
     link: https://well.blogs.nytimes.com/2013/06/03/microsampling-air-pollution/?_php=true&_type=blogs&_r=0
     publication: The New York Times
@@ -311,3 +306,7 @@ press_articles:
       Particulate Matter Concentrations in New York during the COVID-19 Lockdown
     link: https://www.mdpi.com/2813-4168/1/3/15
     publication: MDPI
+  - date: 2023-06-09
+    title: 5 Resources for Finding Fire and Smoke Air Quality Monitors Near You
+    link: https://www.discovermagazine.com/the-sciences/5-resources-for-finding-fire-smoke-and-air-quality-monitors-near-you
+    publication: Discover Magazine
