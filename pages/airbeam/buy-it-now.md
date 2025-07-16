@@ -272,8 +272,8 @@ hasMerchantReturnPolicy:
     <img
           alt="Airbeam Mini"
           class="img lazyload shop-airbeam-image"
-          data-src="/assets/AirBeamMiniBlur.png?nf_resize=fit&w=750"
-          src="/assets/AirBeamMiniBlur.png?nf_resize=fit&w=20"
+          data-src="/assets/buy-it-now_ABMsidebyside.jpg?nf_resize=fit&w=750"
+          src="/assets/buy-it-now_ABMsidebyside.jpg?nf_resize=fit&w=20"
           width="750"
           height="422"
       />
