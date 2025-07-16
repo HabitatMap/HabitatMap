@@ -130,10 +130,10 @@
   padding-top: 4rem;
 
   &.lazyloaded {
-    background-image: url("/assets/img/pages/user-stories/airbeam-userstories-footer-banner.jpg");
+    background-image: url("/assets/img/pages/user-stories/userstories_ABM_app.jpg");
 
     @media screen and (max-width: $large-mobile-min) {
-      background-image: url("/assets/img/pages/user-stories/airbeam-userstories-footer-banner.jpg?nf_resize=fit&w=720");
+      background-image: url("/assets/img/pages/user-stories/userstories_ABM_app.jpg?nf_resize=fit&w=720");
     }
   }
 }
