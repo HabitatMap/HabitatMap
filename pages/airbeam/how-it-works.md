@@ -36,10 +36,10 @@ section: airbeam
       In mobile mode, the AirBeam can be worn to capture personal exposures.  In fixed mode, it can be installed indoors or outdoors - it’s weather resistant and doesn’t need a shelter - to keep tabs on pollution levels in your home, office, backyard, or neighborhood 24/7.
     </p>
     <img
-      alt="Airbeam attached to a wall at home"
+      alt="Airbeam on a desk"
       class="img lazyload"
-      data-src="/assets/img/pages/how-it-works/how-it-works-1.jpg?nf_resize=fit&w=750"
-      src="/assets/img/pages/how-it-works/how-it-works-1.jpg?nf_resize=fit&w=20"
+      data-src="/assets/img/pages/how-it-works/how-it-works_1_crop.jpg?nf_resize=fit&w=750"
+      src="/assets/img/pages/how-it-works/how-it-works_1_crop.jpg?nf_resize=fit&w=20"
     />
   </div>
 </section>
@@ -47,10 +47,10 @@ section: airbeam
 <section class="panel">
   <div class="split--50 split--padding-right">
     <img
-      alt="Airbeam attached to a backpack"
+      alt="Airbeam attached to a handbag"
       class="img lazyload"
-      data-src="/assets/img/pages/how-it-works/how-it-works-2.jpg?nf_resize=fit&w=750"
-      src="/assets/img/pages/how-it-works/how-it-works-2.jpg?nf_resize=fit&w=20"
+      data-src="/assets/img/pages/how-it-works/how-it-works_2.jpg?nf_resize=fit&w=750"
+      src="/assets/img/pages/how-it-works/how-it-works_2.jpg?nf_resize=fit&w=20"
     />
   </div>
 
@@ -102,10 +102,10 @@ section: airbeam
 <section class="panel">
   <div class="split--50 split--padding-right">
     <img
-      alt="Airbeam on a desk"
+      alt="Airbeam on a blanket "
       class="img lazyload"
-      data-src="/assets/img/pages/how-it-works/how-it-works-3.jpg?nf_resize=fit&w=750"
-      src="/assets/img/pages/how-it-works/how-it-works-3.jpg?nf_resize=fit&w=20"
+      data-src="/assets/img/pages/how-it-works/how-it-works_3_crop.jpg?nf_resize=fit&w=750"
+      src="/assets/img/pages/how-it-works/how-it-works_3_crop.jpg?nf_resize=fit&w=20"
     />
   </div>
   <div class="split--50">
