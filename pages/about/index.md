@@ -44,8 +44,8 @@ image: /assets/img/pages/about-habitatmap/airbeam.jpg
       <img
         alt="Airbeam"
         class="img img--alternate-small lazyload"
-        data-src="/assets/img/pages/about-habitatmap/airbeam.jpg?nf_resize=fit&w=570"
-        src="/assets/img/pages/about-habitatmap/airbeam.jpg?nf_resize=fit&w=20"
+        data-src="/assets/img/pages/about-habitatmap/about.jpg?nf_resize=fit&w=570"
+        src="/assets/img/pages/about-habitatmap/about.jpg?nf_resize=fit&w=20"
       />
     </div>
   </div>
@@ -55,8 +55,8 @@ image: /assets/img/pages/about-habitatmap/airbeam.jpg
       <img
         alt="Michael Heimbinder"
         class="img img--alternate-medium lazyload"
-        data-src="/assets/img/pages/about-habitatmap/MichaelHeimbinder.jpg?nf_resize=fit&w=750"
-        src="/assets/img/pages/about-habitatmap/MichaelHeimbinder.jpg?nf_resize=fit&w=20"
+        data-src="/assets/img/pages/about-habitatmap/about_michael.jpg?nf_resize=fit&w=750"
+        src="/assets/img/pages/about-habitatmap/about_michael.jpg?nf_resize=fit&w=20"
       />
     </div>
     <div class="split--40 split--padding-left">

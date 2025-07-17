@@ -4,7 +4,7 @@ title: AirCasting is an open-source environmental data visualization platform.
 desctiption: AirCasting is an open-source environmental data visualization platform that consists of a smartphone app and online mapping system.
 permalink: /aircasting
 section: aircasting
-image: /assets/img/aircasting-map-screenshot.png
+image: /assets/img/airbeam_map_screenshot.png
 ---
 
 <section>
@@ -41,8 +41,8 @@ image: /assets/img/aircasting-map-screenshot.png
       <img
         alt="Airbeam device on bicycle"
         class="img img--alternate-medium lazyload"
-        data-src="/assets/img/pages/aircasting/aircasting-bike.jpg?nf_resize=fit&w=750"
-        src="/assets/img/pages/aircasting/aircasting-bike.jpg?nf_resize=fit&w=20"
+        data-src="/assets/img/pages/aircasting/aircasting_1.jpg?nf_resize=fit&w=750"
+        src="/assets/img/pages/aircasting/aircasting_1.jpg?nf_resize=fit&w=20"
       />
     </div>
     <div class="split--50 split--padding-left">

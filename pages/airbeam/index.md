@@ -20,8 +20,8 @@ image: /assets/img/product-shot_crop.jpg
         <img
           alt="Airbeam device"
           class="img img--alternate-medium lazyload"
-          data-src="/assets/img/product-shot_crop.jpg?nf_resize=fit&w=750"
-          src="/assets/img/product-shot_crop.jpg?nf_resize=fit&w=20"
+          data-src="/assets/img/airbeam_crop.jpg?nf_resize=fit&w=750"
+          src="/assets/img/airbeam_crop.jpg?nf_resize=fit&w=20"
         />
       </div>
       <div class="split--50 split--padding-left">

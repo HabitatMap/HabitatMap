@@ -2,7 +2,7 @@
 layout: home
 permalink: /
 section: home
-image: /assets/img/pages/home/airbeam.jpg
+image: /assets/img/pages/home/home.jpg
 ---
 
 <section class="panel panel--hero u--bg-cyan lazyload">
@@ -21,8 +21,8 @@ image: /assets/img/pages/home/airbeam.jpg
 </section>
 
 <img
-  data-src="/assets/img/pages/home/airbeam.jpg?nf_resize=fit&w=1200"
-  src="/assets/img/pages/home/airbeam.jpg?nf_resize=fit&w=100"
+  data-src="/assets/img/pages/home/home.jpg?nf_resize=fit&w=1200"
+  src="/assets/img/pages/home/home.jpg?nf_resize=fit&w=100"
   class="u--tablet-min-hidden"
   width="1200"
   height="800"
