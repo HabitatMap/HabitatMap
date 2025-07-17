@@ -32,7 +32,7 @@ section: airbeam
     <h1 class="heading heading--large u--gray-text page-title u--tablet-min-hidden">
       The AirBeam measures harmful microscopic air particles (particulate matter), humidity, and temperature.
     </h1>
-    <p class="p--body u--tablet-hidden">
+    <p class="p--body u--tablet-min-hidden">
       In mobile mode, the AirBeam can be worn to capture personal exposures.  In fixed mode, it can be installed indoors or outdoors - it’s weather resistant and doesn’t need a shelter - to keep tabs on pollution levels in your home, office, backyard, or neighborhood 24/7.
     </p>
     <img
