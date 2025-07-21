@@ -62,10 +62,10 @@ image: /assets/img/pages/about-habitatmap/airbeam.jpg
     <div class="split--40 split--padding-left">
       <h2 class="heading heading--uppercase">Founder & Executive Director</h2>
       <p class="p--body heading heading--small">
-        Michael Heimbinder is an information designer, community organizer, and educator.
+        Michael Heimbinder is an inventor, information designer, community organizer, and educator.
       </p>
       <p class="p--body">
-        Since launching HabitatMap in 2006, he has worked with dozens of community-based organizations and schools to create planning and advocacy maps that publicize the issues they care about most.
+        Since launching HabitatMap in 2006, he has worked with hundreds of community-based organizations and schools to create planning and advocacy maps that publicize the issues they care about most.
       </p>
       <a href="/about/history" class="button button--ac">Learn More</a>
     </div>
