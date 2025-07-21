@@ -38,7 +38,7 @@ image: /assets/img/pages/about-habitatmap/MichaelHeimbinder.jpg
   </h2>
 
   <p class="p--body">
-    Michael Heimbinder is an information designer, community organizer, and educator. Since launching HabitatMap in 2006, he has worked with dozens of community-based organizations and schools to create planning and advocacy maps that publicize the issues they care about most. Michael is a graduate of Colorado College and received his M.A. in International Affairs from the New School.
+    Michael Heimbinder is an inventor, information designer, community organizer, and educator. Since launching HabitatMap in 2006, he has worked with hundreds of community-based organizations and schools to create planning and advocacy maps that publicize the issues they care about most. Michael is a graduate of Colorado College and received his M.A. in International Affairs from the New School.
   </p>
 
   <h2 class="heading heading--small heading--body">
