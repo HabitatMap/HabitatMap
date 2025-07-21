@@ -217,15 +217,15 @@ hasMerchantReturnPolicy:
   >
     <picture>
       <source
-        srcset="/assets/img/pages/how-it-works/how-it-works_1_crop.jpg?nf_resize=fit&w=1200 1200w,
-                /assets/img/pages/how-it-works/how-it-works_1_crop.jpg?nf_resize=fit&w=800 800w,
-                /assets/img/pages/how-it-works/how-it-works_1_crop.jpg?nf_resize=fit&w=400 400w"
+        srcset="/assets/img/pages/aircasting/aircasting_1.jpg?nf_resize=fit&w=1200 1200w,
+                /assets/img/pages/aircasting/aircasting_1.jpg?nf_resize=fit&w=800 800w,
+                /assets/img/pages/aircasting/aircasting_1.jpg?nf_resize=fit&w=400 400w"
         sizes="100vw"
         type="image/jpeg"
       />
       <img
-        src="/assets/img/pages/how-it-works/how-it-works_1_crop.jpg?nf_resize=fit&w=1200"
-        alt="AirBeam Mini in use"
+        src="/assets/img/pages/aircasting/aircasting_1.jpg?nf_resize=fit&w=1200"
+        alt="AirBeam Mini in action during outdoor activities"
         class="airbeam-action-banner__bg"
         loading="eager"
         width="1200"
@@ -236,14 +236,14 @@ hasMerchantReturnPolicy:
     <div class="airbeam-action-banner__overlay"></div>
     <div class="airbeam-action-banner__content">
       <img
-        src="/assets/img/airbeam-buy-it-now.jpg"
+        src="/assets/AirBeamMiniBlur.png"
         alt="AirBeam Mini device"
         class="airbeam-action-banner__device"
         width="120"
         height="120"
-        loading="lazy"
+        loading="eager"
       />
-      <span class="airbeam-action-banner__text heading heading--large u--accent-cyan">
+      <span class="airbeam-action-banner__text">
         Watch the AirBeam in Action
       </span>
     </div>
