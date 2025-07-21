@@ -1,3 +1,128 @@
+// AirBeam Action Banner
+.airbeam-action-banner {
+  display: block;
+  position: relative;
+  width: 100vw;
+  max-width: 100%;
+  min-height: 80px;
+  overflow: hidden;
+  text-decoration: none;
+  margin: 0;
+  z-index: 100;
+  transition: all 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  }
+}
+
+.airbeam-action-banner__bg {
+  width: 100vw;
+  min-height: 80px;
+  height: 15vw;
+  max-height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.airbeam-action-banner__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(0,32,48,0.85) 0%, rgba(0,32,48,0.5) 50%, rgba(0,0,0,0.2) 100%);
+  z-index: 1;
+}
+
+.airbeam-action-banner__content {
+  position: absolute;
+  left: 0; right: 0; top: 0; bottom: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+  padding: 1vw 4vw;
+  pointer-events: none;
+}
+
+.airbeam-action-banner__device {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  background: #fff;
+  object-fit: contain;
+  display: block;
+  transition: all 0.3s ease;
+
+  .airbeam-action-banner:hover & {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+  }
+}
+
+.airbeam-action-banner__text {
+  color: #fff;
+  font-family: "Moderat-Bold", sans-serif;
+  font-size: 1.4rem;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  letter-spacing: 0.03em;
+  line-height: 1.2;
+  background: rgba(255,255,255,0.15);
+  padding: 0.3em 0.7em;
+  border-radius: 8px;
+  pointer-events: auto;
+  backdrop-filter: blur(6px);
+  border: 2px solid rgba(255,255,255,0.3);
+  transition: all 0.3s ease;
+  position: relative;
+
+  &::after {
+    content: '▶';
+    margin-left: 0.5em;
+    font-size: 0.8em;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+  }
+
+  .airbeam-action-banner:hover & {
+    background: rgba(255,255,255,0.25);
+    transform: translateY(-2px) scale(1.02);
+    border-color: rgba(255,255,255,0.5);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+
+    &::after {
+      transform: translateX(3px);
+      opacity: 1;
+    }
+  }
+}
+
+@media screen and (max-width: $large-mobile-max) {
+  .airbeam-action-banner__content {
+    flex-direction: row;
+    gap: 0.8rem;
+    align-items: center;
+    padding: 3vw 4vw;
+  }
+
+  .airbeam-action-banner__device {
+    width: 40px;
+    height: 40px;
+  }
+
+  .airbeam-action-banner__text {
+    font-size: 1rem;
+    padding: 0.25em 0.5em;
+  }
+
+  .airbeam-action-banner__bg {
+    height: 18vw;
+    min-height: 60px;
+  }
+}
+
 .shop-airbeam {
   margin-bottom: $u-space-default;
 
