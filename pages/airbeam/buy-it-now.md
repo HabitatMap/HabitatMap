@@ -211,20 +211,24 @@ hasMerchantReturnPolicy:
 <section class="shop-airbeam">
   <!-- AirBeam Action Banner -->
   <div class="airbeam-action-banner-new">
-    <div class="airbeam-action-banner-new__background">
-      <div class="airbeam-action-banner-new__pattern"></div>
-    </div>
+    <div class="airbeam-action-banner-new__background-image"></div>
+
+    <!-- Overlay for better text readability -->
+    <div class="airbeam-action-banner-new__overlay"></div>
+    <div class="airbeam-action-banner-new__gradient-overlay"></div>
 
     <div class="airbeam-action-banner-new__container">
       <div class="airbeam-action-banner-new__content">
-        <!-- Left side - Text content -->
+        <!-- Banner content -->
         <div class="airbeam-action-banner-new__text">
-          <h2 class="airbeam-action-banner-new__title">
+          <h1 class="airbeam-action-banner-new__title">
             Watch the <a href="#buy-now" class="airbeam-action-banner-new__highlight">AirBeam</a> in Action
-          </h2>
+          </h1>
+
           <p class="airbeam-action-banner-new__description">
-            Discover how the AirBeam Mini transforms air quality monitoring with real-world demonstrations and user stories
+            See real-world air quality monitoring demonstrations
           </p>
+
           <a
             href="https://www.youtube.com/@HabitatMap/shorts"
             target="_blank"
@@ -236,29 +240,19 @@ hasMerchantReturnPolicy:
             <span class="airbeam-action-banner-new__button-external">↗</span>
           </a>
         </div>
-
-        <!-- Right side - Single AirBeam Mini image -->
-        <div class="airbeam-action-banner-new__image-container">
-          <img
-            src="/assets/img/pages/how-it-works/how-it-works_3.jpg"
-            alt="AirBeam Mini in action"
-            class="airbeam-action-banner-new__single-image"
-            loading="eager"
-          />
-
-                        <!-- Floating price badge -->
-              <a href="#buy-now" class="airbeam-action-banner-new__price-badge">
-                <div class="airbeam-action-banner-new__price-content">
-                  <div class="airbeam-action-banner-new__price-dot"></div>
-                  <span class="airbeam-action-banner-new__price-text">$99</span>
-                </div>
-              </a>
-        </div>
       </div>
     </div>
 
-    <!-- Bottom accent -->
-    <div class="airbeam-action-banner-new__accent"></div>
+    <!-- Price badge positioned relative to entire banner -->
+    <a href="#buy-now" class="airbeam-action-banner-new__price-badge-new">
+      <div class="airbeam-action-banner-new__price-content">
+        <div class="airbeam-action-banner-new__price-dot"></div>
+        <span class="airbeam-action-banner-new__price-text">AirBeam Mini - $99</span>
+      </div>
+    </a>
+
+    <!-- Bottom border accent -->
+    <div class="airbeam-action-banner-new__bottom-accent"></div>
 
   </div>
 
