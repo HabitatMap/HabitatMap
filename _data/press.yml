@@ -80,6 +80,12 @@ press_articles:
     title: Precision environmental health advanced by exposure research
     link: https://factor.niehs.nih.gov/2022/4/feature/1-feature-precision-environmental-health
     publication: Environmental Factor
+  - date: 2022-09-03
+    title: Estimation of On-Road PM2.5 Distributions by Combining Satellite
+      Top-of-Atmosphere With Microscale Geographic Predictors for Healthy Route
+      Planning
+    link: https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2022GH000669
+    publication: AGU Journals
   - date: 2021-08-18
     title: Clearing the Air in the Historic West End
     link: https://storymaps.arcgis.com/stories/5071792639ef47729fad54da835d37d3
@@ -367,9 +373,3 @@ press_articles:
     link: https://well.blogs.nytimes.com/2013/06/03/microsampling-air-pollution/?_php=true&_type=blogs&_r=0
     publication: The New York Times
     title: Microsampling Air Pollution
-  - date: 2022-09-03
-    title: Estimation of On-Road PM2.5 Distributions by Combining Satellite
-      Top-of-Atmosphere With Microscale Geographic Predictors for Healthy Route
-      Planning
-    link: https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2022GH000669
-    publication: AGU Journals
