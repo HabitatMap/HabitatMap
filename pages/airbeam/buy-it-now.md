@@ -210,44 +210,57 @@ hasMerchantReturnPolicy:
 
 <section class="shop-airbeam">
   <!-- AirBeam Action Banner -->
-  <a
-    href="https://www.youtube.com/@HabitatMap/shorts"
-    class="airbeam-action-banner"
-    aria-label="Watch the AirBeam in Action on YouTube"
-  >
-    <picture>
-      <source
-        srcset="/assets/img/pages/aircasting/aircasting_1.jpg?nf_resize=fit&w=1200 1200w,
-                /assets/img/pages/aircasting/aircasting_1.jpg?nf_resize=fit&w=800 800w,
-                /assets/img/pages/aircasting/aircasting_1.jpg?nf_resize=fit&w=400 400w"
-        sizes="100vw"
-        type="image/jpeg"
-      />
-      <img
-        src="/assets/img/pages/aircasting/aircasting_1.jpg?nf_resize=fit&w=1200"
-        alt="AirBeam Mini in action during outdoor activities"
-        class="airbeam-action-banner__bg"
-        loading="eager"
-        width="1200"
-        height="400"
-        style="width:100%;height:auto;object-fit:cover;"
-      />
-    </picture>
-    <div class="airbeam-action-banner__overlay"></div>
-    <div class="airbeam-action-banner__content">
-      <img
-        src="/assets/AirBeamMiniBlur.png"
-        alt="AirBeam Mini device"
-        class="airbeam-action-banner__device"
-        width="120"
-        height="120"
-        loading="eager"
-      />
-      <span class="airbeam-action-banner__text">
-        Watch the AirBeam in Action
-      </span>
+  <div class="airbeam-action-banner-new">
+    <div class="airbeam-action-banner-new__background">
+      <div class="airbeam-action-banner-new__pattern"></div>
     </div>
-  </a>
+
+    <div class="airbeam-action-banner-new__container">
+      <div class="airbeam-action-banner-new__content">
+        <!-- Left side - Text content -->
+        <div class="airbeam-action-banner-new__text">
+          <h2 class="airbeam-action-banner-new__title">
+            Watch the <a href="#buy-now" class="airbeam-action-banner-new__highlight">AirBeam</a> in Action
+          </h2>
+          <p class="airbeam-action-banner-new__description">
+            Discover how the AirBeam Mini transforms air quality monitoring with real-world demonstrations and user stories
+          </p>
+          <a
+            href="https://www.youtube.com/@HabitatMap/shorts"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="airbeam-action-banner-new__button"
+          >
+            <span class="airbeam-action-banner-new__button-icon">▶</span>
+            Watch Videos
+            <span class="airbeam-action-banner-new__button-external">↗</span>
+          </a>
+        </div>
+
+        <!-- Right side - Single AirBeam Mini image -->
+        <div class="airbeam-action-banner-new__image-container">
+          <img
+            src="/assets/img/pages/how-it-works/how-it-works_3.jpg"
+            alt="AirBeam Mini in action"
+            class="airbeam-action-banner-new__single-image"
+            loading="eager"
+          />
+
+                        <!-- Floating price badge -->
+              <a href="#buy-now" class="airbeam-action-banner-new__price-badge">
+                <div class="airbeam-action-banner-new__price-content">
+                  <div class="airbeam-action-banner-new__price-dot"></div>
+                  <span class="airbeam-action-banner-new__price-text">$99</span>
+                </div>
+              </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom accent -->
+    <div class="airbeam-action-banner-new__accent"></div>
+
+  </div>
 
   <div class="notification-container">
     <div class="notification-text" id="notification"></div>
