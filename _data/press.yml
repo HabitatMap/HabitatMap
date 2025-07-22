@@ -11,14 +11,14 @@ press_articles:
     title: High pollution levels causing chemical-like smell in Queens
     link: https://www.fox5ny.com/video/1655184
     publication: Fox 5
-  - date: 2025-04-14
-    title: Essential OSINT tools for journalists investigating air pollution
-    link: https://ijnet.org/en/story/essential-osint-tools-journalists-investigating-air-pollution
-    publication: International Journalists' Network
   - date: 2025-04-16
     title: Study finds dramatic boost in air quality from electrifying railways
     link: https://www.eurekalert.org/news-releases/1080641
     publication: Eurek Alert
+  - date: 2025-04-14
+    title: Essential OSINT tools for journalists investigating air pollution
+    link: https://ijnet.org/en/story/essential-osint-tools-journalists-investigating-air-pollution
+    publication: International Journalists' Network
   - date: 2025-03-27
     title: 10+ Best Air Quality Monitors
     link: https://breathesafeair.com/air-quality-monitors/
