@@ -225,10 +225,6 @@ hasMerchantReturnPolicy:
             Watch the <a href="#buy-now" class="airbeam-action-banner-new__highlight">AirBeam</a> in Action
           </h1>
 
-          <p class="airbeam-action-banner-new__description">
-            See real-world air quality monitoring demonstrations
-          </p>
-
           <a
             href="https://www.youtube.com/@HabitatMap/shorts"
             target="_blank"
@@ -237,19 +233,12 @@ hasMerchantReturnPolicy:
           >
             <span class="airbeam-action-banner-new__button-icon">▶</span>
             Watch Videos
-            <span class="airbeam-action-banner-new__button-external">↗</span>
           </a>
         </div>
       </div>
     </div>
 
-    <!-- Price badge positioned relative to entire banner -->
-    <a href="#buy-now" class="airbeam-action-banner-new__price-badge-new">
-      <div class="airbeam-action-banner-new__price-content">
-        <div class="airbeam-action-banner-new__price-dot"></div>
-        <span class="airbeam-action-banner-new__price-text">AirBeam Mini - $99</span>
-      </div>
-    </a>
+
 
     <!-- Bottom border accent -->
     <div class="airbeam-action-banner-new__bottom-accent"></div>
