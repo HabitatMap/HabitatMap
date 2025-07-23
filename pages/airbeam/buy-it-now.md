@@ -211,17 +211,12 @@ hasMerchantReturnPolicy:
 <section class="shop-airbeam">
   <!-- AirBeam Action Banner -->
   <div class="airbeam-action-banner-new">
-    <div class="airbeam-action-banner-new__background-image"></div>
-
-    <!-- Overlay for better text readability -->
-    <div class="airbeam-action-banner-new__overlay"></div>
-
     <div class="airbeam-action-banner-new__container">
       <div class="airbeam-action-banner-new__content">
-        <!-- Banner content -->
+        <!-- Content -->
         <div class="airbeam-action-banner-new__text">
           <h1 class="airbeam-action-banner-new__title">
-            Watch the <a href="#buy-now" class="airbeam-action-banner-new__highlight">AirBeam</a> in Action
+            Watch the <span class="airbeam-action-banner-new__highlight">AirBeam</span> in Action
           </h1>
 
           <a
@@ -234,13 +229,28 @@ hasMerchantReturnPolicy:
             Watch Videos
           </a>
         </div>
+
+
+        <div class="airbeam-action-banner-new__visual">
+          <div class="airbeam-action-banner-new__image-container">
+            <img
+              src="/assets/img/pages/aircasting/aircasting_1.jpg"
+              alt="AirBeam device monitoring air quality"
+              class="airbeam-action-banner-new__image"
+              loading="eager"
+            />
+
+            <div class="airbeam-action-banner-new__image-overlay"></div>
+
+            <div class="airbeam-action-banner-new__play-indicator">
+              <div class="airbeam-action-banner-new__play-button">
+                <span class="airbeam-action-banner-new__play-icon">▶</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-
-
-
-    <!-- Bottom border accent -->
-    <div class="airbeam-action-banner-new__bottom-accent"></div>
 
   </div>
 

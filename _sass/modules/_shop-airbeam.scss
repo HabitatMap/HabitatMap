@@ -2,50 +2,16 @@
 .airbeam-action-banner-new {
   position: relative;
   width: 100%;
-  height: 12rem;
-  overflow: hidden;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #374151 100%);
   margin: 0;
   z-index: 1;
-
-  @media screen and (min-width: 640px) {
-    height: 14rem;
-  }
-
-  @media screen and (min-width: 1024px) {
-    height: 16rem;
-  }
-}
-
-.airbeam-action-banner-new__background-image {
-  position: absolute;
-  inset: 0;
-  background-image: url('/assets/with_background-1.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
-}
-
-.airbeam-action-banner-new__overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.2);
-}
-
-.airbeam-action-banner-new__gradient-overlay {
-  position: absolute;
-  inset: 0;
-  // background: linear-gradient(to right, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.9) 30%, rgba(0, 32, 48, 0.1) 50%, transparent 70%);
+  padding: 1.5rem 0;
 }
 
 .airbeam-action-banner-new__container {
-  position: relative;
-  height: 100%;
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 1rem;
-  display: flex;
-  align-items: center;
 
   @media screen and (min-width: 640px) {
     padding: 0 1.5rem;
@@ -57,65 +23,62 @@
 }
 
 .airbeam-action-banner-new__content {
-  position: relative;
-  width: 100%;
-  max-width: 32rem;
+  display: grid;
+  gap: 3rem;
+  align-items: center;
+
+  @media screen and (min-width: 1024px) {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
 }
 
 .airbeam-action-banner-new__text {
-  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.airbeam-action-banner-new__badge {
+  display: inline-block;
+}
+
+.airbeam-action-banner-new__badge-text {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #0891b2;
+  background: #ecfeff;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
 }
 
 .airbeam-action-banner-new__title {
-  font-size: 1.25rem;
+  font-size: 2.25rem;
   font-weight: 700;
   color: white;
   line-height: 1.2;
-  margin-bottom: 0.75rem;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 
   @media screen and (min-width: 640px) {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
   }
 
   @media screen and (min-width: 1024px) {
-    font-size: 1.875rem;
+    font-size: 3rem;
   }
 }
 
 .airbeam-action-banner-new__highlight {
-  position: relative;
-  color: #16a34a;
-  text-decoration: none;
-  transition: color 0.3s ease;
-
-  &:hover {
-    color: #15803d;
-  }
-
-  &::after {
-    content: '';
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    right: 0;
-    height: 2px;
-    background: #16a34a;
-    opacity: 0.3;
-  }
+  background: linear-gradient(to right, #0891b2, #16a34a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .airbeam-action-banner-new__description {
-  font-size: 0.875rem;
-  color: #f3f4f6;
+  font-size: 1.25rem;
+  color: #d1d5db;
   line-height: 1.6;
-  max-width: 20rem;
-  margin-bottom: 1rem;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
-
-  @media screen and (min-width: 640px) {
-    font-size: 1rem;
-  }
+  max-width: 32rem;
 }
 
 .airbeam-action-banner-new__button {
@@ -123,7 +86,7 @@
   align-items: center;
   background: #16a34a;
   color: white;
-  padding: 0.625rem 2rem;
+  padding: 0.625rem 1.5rem;
   margin-top: 1rem;
   font-size: 0.875rem;
   font-weight: 600;
@@ -132,6 +95,7 @@
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
   border: 2px solid #22c55e;
+  width: fit-content;
 
   &:hover {
     background: #15803d;
@@ -152,9 +116,127 @@
 
 .airbeam-action-banner-new__button-external {
   margin-left: 0.5rem;
-  opacity: 1;
-  font-size: 1rem;
-  font-weight: bold;
+  opacity: 0.75;
+  font-size: 0.875rem;
+}
+
+.airbeam-action-banner-new__button-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.airbeam-action-banner-new__price-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.airbeam-action-banner-new__price-text {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+.airbeam-action-banner-new__shipping-text {
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+.airbeam-action-banner-new__visual {
+  position: relative;
+}
+
+.airbeam-action-banner-new__image-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.airbeam-action-banner-new__image {
+  width: 100%;
+  height: 15rem;
+  object-fit: cover;
+}
+
+.airbeam-action-banner-new__image-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.2), transparent);
+}
+
+.airbeam-action-banner-new__play-indicator {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.airbeam-action-banner-new__play-button {
+  width: 4rem;
+  height: 4rem;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(4px);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.airbeam-action-banner-new__play-icon {
+  font-size: 1.5rem;
+  color: #16a34a;
+  margin-left: 0.25rem;
+}
+
+.airbeam-action-banner-new__floating-badge {
+  position: absolute;
+  bottom: -1rem;
+  right: -1rem;
+  background: white;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  border: 1px solid #f3f4f6;
+}
+
+.airbeam-action-banner-new__floating-content {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.airbeam-action-banner-new__pulse-dot {
+  width: 0.75rem;
+  height: 0.75rem;
+  background: #16a34a;
+  border-radius: 50%;
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.airbeam-action-banner-new__floating-text {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
 }
 
 .airbeam-action-banner-new__price-badge-new {
