@@ -19,10 +19,11 @@
 .airbeam-action-banner-new__background-image {
   position: absolute;
   inset: 0;
-  background-image: url('/assets/img/pages/aircasting/aircasting_1.jpg');
-  background-size: 70% auto;
-  background-position: right center;
+  background-image: url('/assets/with_background-1.jpg');
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
+
 }
 
 .airbeam-action-banner-new__overlay {
@@ -34,7 +35,7 @@
 .airbeam-action-banner-new__gradient-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.9) 30%, rgba(0, 32, 48, 0.1) 50%, transparent 70%);
+  // background: linear-gradient(to right, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.9) 30%, rgba(0, 32, 48, 0.1) 50%, transparent 70%);
 }
 
 .airbeam-action-banner-new__container {

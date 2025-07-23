@@ -215,7 +215,6 @@ hasMerchantReturnPolicy:
 
     <!-- Overlay for better text readability -->
     <div class="airbeam-action-banner-new__overlay"></div>
-    <div class="airbeam-action-banner-new__gradient-overlay"></div>
 
     <div class="airbeam-action-banner-new__container">
       <div class="airbeam-action-banner-new__content">
