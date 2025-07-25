@@ -26,18 +26,6 @@
 
 }
 
-.airbeam-action-banner-new__overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.2);
-}
-
-.airbeam-action-banner-new__gradient-overlay {
-  position: absolute;
-  inset: 0;
-  // background: linear-gradient(to right, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.9) 30%, rgba(0, 32, 48, 0.1) 50%, transparent 70%);
-}
-
 .airbeam-action-banner-new__container {
   position: relative;
   height: 100%;
@@ -242,14 +230,7 @@
   animation-delay: 1s;
 }
 
-.airbeam-action-banner-new__bottom-accent {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 4px;
-  background: linear-gradient(to right, #16a34a, #22c55e, #16a34a);
-}
+
 
 @keyframes pulse {
   0%, 100% {
@@ -421,7 +402,7 @@
 .shop-airbeam {
   margin-bottom: $u-space-default;
 
-  .arc-background {
+  .arc-background:not(.arc-background--right-opacity-15) {
     @media screen and (max-width: $large-mobile-max) {
       background: none;
     }
@@ -495,6 +476,67 @@
 
   &__item {
     @include flex(0 0 45%);
+
+    @media screen and (max-width: $large-mobile-max) {
+      @include flex(0 0 100%);
+      margin-bottom: 20px;
+    }
+  }
+
+  @media screen and (max-width: $large-mobile-max) {
+    gap: 0;
+    flex-direction: column;
+  }
+}
+
+// Responsive improvements for headings and text
+.shop-airbeam__heading {
+  @media screen and (min-width: $tablet-min) {
+    font-size: 3rem;
+  }
+
+  @media screen and (max-width: $large-mobile-max) {
+    font-size: 1.8rem;
+    line-height: 1.3;
+  }
+}
+
+.shop-airbeam__caption {
+  font-size: 1.5rem;
+  margin: $u-space-small 0 0;
+
+  @media screen and (min-width: $tablet-min) {
+    font-size: 2.25rem;
+    margin: $u-space-small 0;
+  }
+
+  @media screen and (max-width: $large-mobile-max) {
+    font-size: 1.2rem;
+    line-height: 1.4;
+  }
+}
+
+// Responsive improvements for the AirBeam in box image
+.panel img[alt="AirBeam Mini in box"] {
+  @media screen and (max-width: $large-mobile-max) {
+    border-radius: 6px;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+// Responsive improvements for the badge links section
+.panel .split--50 {
+  @media screen and (max-width: $large-mobile-max) {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+// Responsive improvements for the testimonials section
+.panel--quote {
+  @media screen and (max-width: $large-mobile-max) {
+    padding: 20px 15px;
   }
 }
 
@@ -502,21 +544,58 @@
   display: flex;
   flex-direction: column;
   margin-right: 20px;
+
+  @media screen and (max-width: $large-mobile-max) {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
 }
 
 .quantity-input {
   margin: 10px 0;
   max-width: 50px;
+
+  @media screen and (max-width: $large-mobile-max) {
+    max-width: 60px;
+    padding: 8px;
+    font-size: 16px; // Prevents zoom on iOS
+  }
+}
+
+.shipping-options-container {
+  margin: 10px 0;
+
+  @media screen and (max-width: $large-mobile-max) {
+    margin: 8px 0;
+  }
+
+  select {
+    @media screen and (max-width: $large-mobile-max) {
+      padding: 8px;
+      font-size: 16px; // Prevents zoom on iOS
+      width: 100%;
+      max-width: 200px;
+    }
+  }
 }
 
 .cost-info {
   margin: 10px 0;
   width: 100%;
+
+  @media screen and (max-width: $large-mobile-max) {
+    margin: 8px 0;
+    font-size: 14px;
+  }
 }
 
 .cost-info--calculated {
   font-size: 18px;
   font-weight: 600;
+
+  @media screen and (max-width: $large-mobile-max) {
+    font-size: 16px;
+  }
 }
 
 .notification-container {
@@ -527,6 +606,11 @@
   position: fixed;
   margin-top: 10px;
   z-index: 1000;
+
+  @media screen and (max-width: $large-mobile-max) {
+    margin-top: 5px;
+    padding: 0 10px;
+  }
 }
 
 .notification-text {
@@ -535,6 +619,12 @@
   visibility: hidden;
   width: 70vw;
   position: relative;
+
+  @media screen and (max-width: $large-mobile-max) {
+    padding: 12px 20px;
+    width: 90vw;
+    font-size: 14px;
+  }
 }
 
 .notification-text--visible {
@@ -555,6 +645,11 @@
   font-size: 18px;
   font-weight: 600;
   padding-bottom: 10px;
+
+  @media screen and (max-width: $large-mobile-max) {
+    font-size: 16px;
+    padding-bottom: 8px;
+  }
 }
 
 .notification-close-button {
@@ -569,8 +664,31 @@
   top: -5px;
   background-color: none;
 
+  @media screen and (max-width: $large-mobile-max) {
+    font-size: 28px;
+    right: 8px;
+    top: -3px;
+  }
+
   &::after {
     content: "\00d7";
+  }
+}
+
+.quantity-notification-container {
+  margin: 5px 0;
+
+  @media screen and (max-width: $large-mobile-max) {
+    margin: 3px 0;
+  }
+}
+
+.quantity-notification-text {
+  font-size: 14px;
+  color: $red;
+
+  @media screen and (max-width: $large-mobile-max) {
+    font-size: 12px;
   }
 }
 
@@ -579,10 +697,21 @@
   line-height: 25px;
   margin-top: 10px;
   white-space: nowrap;
+
+  @media screen and (max-width: $large-mobile-max) {
+    font-size: 12px;
+    line-height: 20px;
+    margin-top: 8px;
+    padding: 8px 12px;
+  }
 }
 
 .shop-airbeam__buy-button {
   width: 100%;
+
+  @media screen and (max-width: $large-mobile-max) {
+    margin-bottom: 10px;
+  }
 }
 
 .shop-airbeam-image {
@@ -591,15 +720,25 @@
   height: auto;
   object-fit: cover;
   aspect-ratio: 16 / 9;
+
+  @media screen and (max-width: $large-mobile-max) {
+    max-width: 100%;
+    border-radius: 8px;
+  }
 }
 
 .shop-airbeam__products {
   padding-bottom: 0px;
+
   @media screen and (min-width: $tablet-min) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
     align-items: start;
+  }
+
+  @media screen and (max-width: $large-mobile-max) {
+    gap: 30px;
   }
 }
 
@@ -608,6 +747,10 @@
 
   &:first-of-type {
     padding-bottom: 40px;
+
+    @media screen and (max-width: $large-mobile-max) {
+      padding-bottom: 30px;
+    }
   }
 
   @media screen and (min-width: $tablet-min) {
@@ -624,6 +767,10 @@
     display: flex;
     padding: 20px 0;
   }
+
+  @media screen and (max-width: $large-mobile-max) {
+    padding-top: 15px;
+  }
 }
 
 .shop-airbeam__buttons-container {
@@ -634,6 +781,10 @@
 
   @media screen and (min-width: $tablet-min) {
     margin-bottom: 0;
+  }
+
+  @media screen and (max-width: $large-mobile-max) {
+    margin-bottom: 15px;
   }
 }
 
@@ -650,6 +801,10 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+
+  @media screen and (max-width: $large-mobile-max) {
+    padding: 0 10px;
+  }
 }
 
 .shop-airbeam__comparison {
@@ -659,6 +814,10 @@
   align-items: center;
   width: 100%;
   max-width: 900px;
+
+  @media screen and (max-width: $large-mobile-max) {
+    max-width: 100%;
+  }
 }
 
 .shop-airbeam__chart-image {
@@ -711,6 +870,11 @@ table {
     font-size: 16px;
   }
 
+  @media screen and (max-width: $large-mobile-max) {
+    font-size: 12px;
+    border-radius: 3px;
+  }
+
   th,
   td {
     padding: 5px;
@@ -719,6 +883,10 @@ table {
 
     @media screen and (min-width: $tablet-min) {
       padding: 15px;
+    }
+
+    @media screen and (max-width: $large-mobile-max) {
+      padding: 8px 4px;
     }
   }
 
@@ -730,6 +898,17 @@ table {
 
     &:first-child {
       width: 25%;
+    }
+
+    @media screen and (max-width: $large-mobile-max) {
+      &:second-child,
+      &:last-child {
+        width: 30%;
+      }
+
+      &:first-child {
+        width: 40%;
+      }
     }
   }
 
@@ -808,14 +987,72 @@ table {
     justify-content: space-between;
     gap: 20px;
   }
+
+  @media screen and (max-width: $large-mobile-max) {
+    margin-top: 15px;
+    gap: 15px;
+  }
 }
 
 .comparison-summary__list {
   margin-top: 10px;
+
+  @media screen and (max-width: $large-mobile-max) {
+    margin-top: 8px;
+  }
+
+  li {
+    @media screen and (max-width: $large-mobile-max) {
+      font-size: 14px;
+      line-height: 1.4;
+      margin-bottom: 5px;
+    }
+  }
 }
 
 .comparison-summary__list > li {
   list-style-type: disc;
   list-style-position: inside;
   padding-left: 5px;
+}
+
+.comparison-summary__item {
+  margin-bottom: 0.5rem;
+}
+
+// Instagram Videos Responsive Styles
+.instagram-videos-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 2rem;
+  flex-direction: row;
+
+  @media screen and (max-width: $large-mobile-max) {
+    gap: 10px;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+  }
+}
+
+.instagram-video {
+  flex: 1;
+  margin-bottom: 0;
+
+  @media screen and (max-width: $large-mobile-max) {
+    flex: 1 1 calc(50% - 5px);
+    min-width: 280px;
+  }
+
+  .instagram-media {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: auto !important;
+
+    @media screen and (max-width: $large-mobile-max) {
+      margin: 0 auto;
+      max-width: 100% !important;
+      min-width: 280px !important;
+    }
+  }
 }
