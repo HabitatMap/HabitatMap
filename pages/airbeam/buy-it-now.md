@@ -213,10 +213,11 @@ hasMerchantReturnPolicy:
     <div class="split--40">
       <h1 class="heading heading--large heading--hero">
         Most Accurate Portable Air Monitor
-          </h1>
+      </h1>
       <p class="p--hero">
         A portable and easy to use air quality monitor that lets you see the pollution around you in real time.
-        Empower your community, protect your health, and take action with data you can trust.</p>
+        Empower your community, protect your health, and take action with data you can trust.
+      </p>
       <br>
       <a href="#buy-now">
         <button class="button button--cta">Buy It</button>
@@ -275,7 +276,7 @@ hasMerchantReturnPolicy:
       </p>
     </div>
 
-      </section>
+  </section>
 
   <section class="panel panel--big-padding u--bg-blue-dark logos">
     <div class="logos__item">
@@ -449,153 +450,149 @@ hasMerchantReturnPolicy:
     </div>
   </div>
 
-  <section class="for-teams u--align-center">
+  <section class="for-teams u--align-center" style="padding-bottom: 4rem;">
     <h2 class="for-teams__heading heading">Breathe smarter with portable air quality insights</h2>
     <p class="for-teams__get-help">Get One-on-One Research Design and Implementation Help</p>
     <a href="/airbeam/get-consultation" class="button button--cta">Schedule a Free Consultation</a>
   </section>
 
-    <section class="panel u--bg-green">
-    <div style="text-align: center; margin-bottom: 2rem;">
-      <h2 class="heading heading--medium" style="color: white;">
+  <section class="u--bg-green" aria-labelledby="in-action-heading" style="padding: 0 20vw 2rem 20vw;">
+    <div style="text-align: center; width: 100%; padding-top: 2rem;">
+      <h2 id="in-action-heading" class="heading heading--medium" style="color: white;">
         In Action
       </h2>
     </div>
-    <div class="youtube-shorts-container" style="display: flex; justify-content: space-between; gap: 20px; margin-top: 2rem; flex-direction: row; flex-wrap: wrap;">
-      <div class="youtube-short" style="flex: 1;">
+    <div class="youtube-shorts-container" style="display: flex; justify-content: space-between; gap: 20px; flex-direction: row; flex-wrap: wrap;">
+      <figure class="youtube-short" style="flex: 1;">
         <iframe
           width="100%"
-          height="315"
+          height="400"
           src="https://www.youtube.com/embed/eTwvmZZA9pQ?si=oMXs0V3hb6paeG3p"
           title="YouTube Shorts Video 1"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen>
         </iframe>
-      </div>
-      <div class="youtube-short" style="flex: 1;">
+      </figure>
+      <figure class="youtube-short" style="flex: 1;">
         <iframe
           width="100%"
-          height="315"
+          height="400"
           src="https://www.youtube.com/embed/Nn7FT2gipqA?si=9Vy9pc43n6ICbqY9"
           title="YouTube Shorts Video 2"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen>
         </iframe>
-      </div>
-      <div class="youtube-short" style="flex: 1;">
+      </figure>
+      <figure class="youtube-short" style="flex: 1;">
         <iframe
           width="100%"
-          height="315"
+          height="400"
           src="https://www.youtube.com/embed/h_Om-M6AOu8?si=FBks5Ny-LVBHjocD"
           title="YouTube Shorts Video 3"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen>
         </iframe>
-      </div>
+      </figure>
     </div>
+  </section>
 
-  </div>
-</section>
+  <section class="panel" style="text-align: center;">
+    <h2 class="heading heading--medium u--gray-text">
+      Get your pocket-sized air quality lab
+    </h2>
 
-  <div class="panel shop-airbeam__products">
-    <div class="panel shop-airbeam__product">
-      <img
+    <div class="shop-airbeam__products" style="display: flex; flex-wrap: wrap; margin-top: 2rem;">
+      <div class="panel shop-airbeam__product" style="flex: 1; min-width: 300px;">
+        <img
           alt="Airbeam"
           class="img lazyload shop-airbeam-image"
           data-src="/assets/img/airbeam-buy-it-now.jpg?nf_resize=fit&w=750"
           src="/assets/img/airbeam-buy-it-now.jpg?nf_resize=fit&w=20"
-           width="750"
-           height="422"
-      />
-      <div class="product__content">
-        <div>
-          <h2 class="heading heading--small u--margin-bottom-tiny">AirBeam3</h2>
-          <div class="order-details-container">
-            <span>Price per unit: $199</span>
-            <div>
-              <label for="quantity">Quantity:</label>
-              <input class="quantity-input" id="quantity" type="number" min='1' value='1'>
+          width="750"
+          height="422"
+        />
+        <div class="product__content">
+          <div>
+            <h2 class="heading heading--small u--margin-bottom-tiny">AirBeam3</h2>
+            <div class="order-details-container">
+              <span>Price per unit: $199</span>
+              <div>
+                <label for="quantity">Quantity:</label>
+                <input class="quantity-input" id="quantity" type="number" min='1' value='1'>
+              </div>
+              <div class="shipping-options-container">
+                <label for="shipping-options">Shipping:</label>
+                <select name="shipping-options" id="shipping-options">
+                  <option value="domestic">Domestic US</option>
+                  <option value="international">Outside the US</option>
+                </select>
+              </div>
+              <div id="cost-info" class="cost-info">Shipping costs will be calculated at checkout.</div>
             </div>
-            <div class="shipping-options-container">
-              <label for="shipping-options">Shipping:</label>
-              <select name="shipping-options" id="shipping-options">
-                <option value="domestic">Domestic US</option>
-                <option value="international">Outside the US</option>
-              </select>
+          </div>
+          <div class="shop-airbeam__buttons-container">
+            <div class="shop-airbeam__buy-button">
+              {% include paypal-button.html %}
             </div>
-            <div id="cost-info" class="cost-info">Shipping costs will be calculated at checkout.</div>
+            <!-- <a href="/airbeam/get-consultation" class="get-consult-button button button--secondary">
+              HAVE QUESTIONS?
+            </a>
+            <a href="/airbeam/users-guide" class="get-consult-button button button--secondary">
+              AIRBEAM 3 USER GUIDE
+            </a> -->
           </div>
-        </div>
-        <div class="shop-airbeam__buttons-container">
-          <div class="shop-airbeam__buy-button">
-            {% include paypal-button.html %}
-          </div>
-          <a href="/airbeam/get-consultation" class="get-consult-button button button--secondary">
-            HAVE QUESTIONS?
-          </a>
-          <a href="/airbeam/users-guide" class="get-consult-button button button--secondary">
-            AIRBEAM 3 USER GUIDE
-          </a>
         </div>
       </div>
-    </div>
-    <div class="panel shop-airbeam__product">
-    <img
+      <div class="panel shop-airbeam__product" style="flex: 1; min-width: 300px;">
+        <img
           alt="Airbeam Mini"
           class="img lazyload shop-airbeam-image"
           data-src="/assets/buy-it-now_ABMsidebyside.jpg?nf_resize=fit&w=750"
           src="/assets/buy-it-now_ABMsidebyside.jpg?nf_resize=fit&w=20"
           width="750"
           height="422"
-      />
-      <div class="product__content">
-        <div>
-          <h2 class="heading heading--small u--margin-bottom-tiny">AirBeam Mini</h2>
-          <div class="order-details-container">
-            <span>Price per unit: $99</span>
-            <div>
-              <label for="quantity">Quantity:</label>
-              <input class="quantity-input" id="ab-mini-quantity" type="number" min='1' value='1' onchange="validateQuantityABMini(this)">
+        />
+        <div class="product__content">
+          <div>
+            <h2 class="heading heading--small u--margin-bottom-tiny">AirBeam Mini</h2>
+            <div class="order-details-container">
+              <span>Price per unit: $99</span>
+              <div>
+                <label for="quantity">Quantity:</label>
+                <input class="quantity-input" id="ab-mini-quantity" type="number" min='1' value='1' onchange="validateQuantityABMini(this)">
+              </div>
+              <div class="quantity-notification-container">
+                <div class="quantity-notification-text" id="ab-mini-quantity-notification"></div>
+              </div>
+              <div class="shipping-options-container">
+                <label for="shipping-options">Shipping:</label>
+                <select name="shipping-options" id="ab-mini-shipping-options">
+                  <option value="domestic">Domestic US</option>
+                  <option value="international">Outside the US</option>
+                </select>
+              </div>
+              <div id="ab-mini-cost-info" class="cost-info">Shipping costs will be calculated at checkout.</div>
             </div>
-            <div class="quantity-notification-container">
-              <div class="quantity-notification-text" id="ab-mini-quantity-notification"></div>
-            </div>
-            <div class="shipping-options-container">
-              <label for="shipping-options">Shipping:</label>
-              <select name="shipping-options" id="ab-mini-shipping-options">
-                <option value="domestic">Domestic US</option>
-                <option value="international">Outside the US</option>
-              </select>
-            </div>
-            <div id="ab-mini-cost-info" class="cost-info">Shipping costs will be calculated at checkout.</div>
           </div>
-        </div>
-        <div class="shop-airbeam__buttons-container" >
-          <div class="shop-airbeam__buy-button">
-            {% include paypal-button-ab-mini.html %}
+          <div class="shop-airbeam__buttons-container">
+            <div class="shop-airbeam__buy-button">
+              {% include paypal-button-ab-mini.html %}
+            </div>
+            <!-- <a href="/airbeam/get-consultation" class="get-consult-button button button--secondary">
+              HAVE QUESTIONS?
+            </a>
+            <a href="/airbeam/users-guide-airbeammini" class="get-consult-button button button--secondary">
+              AIRBEAM MINI USER GUIDE
+            </a> -->
           </div>
-          <a href="/airbeam/get-consultation" class="get-consult-button button button--secondary">
-            HAVE QUESTIONS?
-          </a>
-          <a href="/airbeam/users-guide-airbeammini" class="get-consult-button button button--secondary">
-            AIRBEAM MINI USER GUIDE
-          </a>
         </div>
       </div>
     </div>
-  </div>
-<hr class="panel-separator">
-  <div class="panel shop-airbeam__description" style="justify-content: center; padding-bottom: 0;">
-    <h2 class="heading heading--medium u--gray-text">
-      <strong>Know what you breathe. Take control of your air.</strong>
-    </h2>
-    <h2 class="heading heading--medium u--gray-text">
-      <strong>Affordable, accurate, and built for the people.</strong>
-    </h2>
-  </div>
+
+  </section>
 
   <div class="panel shop-airbeam__comparison-container">
     <div class="shop-airbeam__comparison">
@@ -630,56 +627,237 @@ hasMerchantReturnPolicy:
     </div>
   </div>
 
-  <div class="panel">
-    <div style="text-align: center">
-      <img
-        alt="AirBeam Mini in box"
-        class="img lazyload"
-        data-src="/assets/img/airbeam_in_a_box.jpg?nf_resize=fit&w=800"
-        src="/assets/img/airbeam_in_a_box.jpg?nf_resize=fit&w=20"
-        width="800"
-        height="600"
-        style="max-width: 100%; height: auto; border-radius: 8px;"
-      />
-    </div>
-  </div>
-
-  <hr class="panel-separator">
-
-  <div class="panel shop-airbeam-information">
-    <div class="shop-airbeam-information__item">
-      <h2 class="heading heading--medium u--gray-text">
-        Payment Methods
-      </h2>
-      <p class="p--body">
-        HabitatMap accepts credit card payments via PayPal. If you prefer to make payment via check or wire transfer, please email us at <a href="mailto:info@habitatmap.org">info@habitatmap.org</a> with your shipping address and the number of AirBeams you'd like to purchase. Note that we do not accept purchase orders.
-      </p>
-       <h2 class="heading heading--medium u--gray-text">
-        Warranty
-      </h2>
-      <p class="p--body">
-        AirBeam is guaranteed to be operating properly at time of receipt. AirBeams that are not operating properly at time of receipt can be sent back for replacement within 30 days. All sales are final.
-      </p>
-    </div>
-    <div class="shop-airbeam-information__item">
-      <h2 class="heading heading--medium u--gray-text">
-        Shipping
-      </h2>
-      <p class="p--body">
-        Domestic US shipping via USPS is $10 for the first unit and $5 for each additional unit. Shipping outside the United States via USPS is $35 for the first unit and $10 for each additional unit. If you need faster shipping, better tracking, or insurance please email info@habitatmap.org with your shipping address and the number of AirBeams you would like to order. We are not responsible for the loss or damage of AirBeams mailed internationally via USPS First Class mail. If your national
-        postal service is unreliable, please contact us to upgrade your shipping and insure your package. AirBeams are shipped the next business day after payment is received.
-      </p>
-            <h2 class="heading heading--medium u--gray-text">
-        FAQ
-      </h2>
-      <p class="p--body">
-        To learn more about the AirBeam and AirCasting apps have a look at the <a href="/airbeam/users-guide">AirBeam3 User's Guide</a>, <a href="/airbeam/users-guide-airbeammini">AirBeam Mini User's Guide</a> or visit our <a href="/airbeam/FAQ">FAQ page</a>.
-      </p>
-    </div>
-  </div>
-
 {% include inputValidate.html %}
 
-</section>
+    <section class="panel panel--faq-intro u--bg-green">
+    <div class="split--50 split--padding-right">
+      <h1 class="heading heading--large">
+        AirBeam
+        <br />
+        FAQ
+      </h1>
+    </div>
+
+    <div class="split--50">
+      <p class="heading heading--small">
+        Find answers to the most frequently asked questions about AirBeam devices, setup, and usage. If you don't see your answer here, please email us at <a href="mailto:info@habitatmap.org">info@habitatmap.org</a> or connect with the <a href="https://www.facebook.com/groups/667717482567030">Facebook AirCasting Community</a>.
+      </p>
+    </div>
+
+  </section>
+
+  <section class="panel faq">
+    <div class="faq__category js--faq-section">
+      <h2 class="heading heading--uppercase faq__category-name js--faq-heading">Quick Access</h2>
+      <div class="faq__content">
+        <ul class="p--body">
+          <li><a href="https://www.habitatmap.org/airbeam/users-guide" class="link--underlined">AirBeam 3 Detailed Specs & User Guide →</a></li>
+          <li><a href="https://www.habitatmap.org/airbeam/users-guide-airbeammini" class="link--underlined">AirBeam Mini Detailed Specs & User Guide →</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="faq__category js--faq-section">
+      <h2 class="heading heading--uppercase faq__category-name js--faq-heading">Getting Started</h2>
+      <div class="faq__content">
+        <h3 class="heading heading--small faq__question">What's the difference between AirBeam 3 and AirBeam Mini?</h3>
+        <p class="p--body"><strong>AirBeam Mini ($99)</strong> is perfect if you want a lightweight, affordable air quality monitor for personal use. It measures PM1 and PM2.5, weighs 4 ounces, and has 14-hour battery life.</p>
+        <p class="p--body"><strong>AirBeam 3 ($199)</strong> is ideal if you need comprehensive monitoring with cellular connectivity. It measures PM1, PM2.5, PM10, temperature, and humidity, weighs 6 ounces, has GPS, cellular connectivity, and 17-hour battery life.</p>
+
+        <h3 class="heading heading--small faq__question">How accurate are AirBeam devices?</h3>
+        <p class="p--body">AirBeam devices are "quite accurate" according to independent performance evaluations by South Coast Air Quality Management District's AQ-SPEC lab and researchers at NYU School of Medicine. AirBeam measurements closely match those from reference instruments.</p>
+
+        <h3 class="heading heading--small faq__question">What do I need to get started?</h3>
+        <ul class="p--body">
+          <li>Your AirBeam device (fully charged)</li>
+          <li>A smartphone (iPhone 8+ or Android 8+ with Bluetooth 5.0)</li>
+          <li>The free AirCasting app (available on iOS and Google Play)</li>
+          <li>WiFi or cellular connection for your phone</li>
+        </ul>
+
+        <h3 class="heading heading--small faq__question">How long does setup take?</h3>
+        <p class="p--body">Easy Setup in 5 Minutes or Less! App walks you through step by step + access to video tutorial library.</p>
+      </div>
+    </div>
+
+    <div class="faq__category js--faq-section">
+      <h2 class="heading heading--uppercase faq__category-name js--faq-heading">Purchasing & Shipping</h2>
+      <div class="faq__content">
+        <h3 class="heading heading--small faq__question">How much do AirBeam devices cost?</h3>
+        <ul class="p--body">
+          <li><strong>AirBeam Mini</strong>: $99</li>
+          <li><strong>AirBeam 3</strong>: $199</li>
+          <li><strong>No hidden fees or subscriptions ever</strong></li>
+        </ul>
+
+        <h3 class="heading heading--small faq__question">What payment methods do you accept?</h3>
+        <p class="p--body">We accept credit cards via PayPal (no PayPal account required). For wire transfer or check payments, email info@habitatmap.org with your shipping address and quantity needed.</p>
+
+        <h3 class="heading heading--small faq__question">What are the shipping costs?</h3>
+        <ul class="p--body">
+          <li><strong>US Domestic</strong>: $10 for first unit, $5 for each additional unit</li>
+          <li><strong>International</strong>: $35 for first unit, $10 for each additional unit</li>
+          <li>Expedited shipping available - email info@habitatmap.org</li>
+        </ul>
+
+        <h3 class="heading heading--small faq__question">What's your return policy?</h3>
+        <p class="p--body">AirBeam devices are guaranteed to work properly upon receipt. Non-functioning units can be returned for replacement within 30 days. All sales are final after 30 days.</p>
+
+        <h3 class="heading heading--small faq__question">Do you accept purchase orders?</h3>
+        <p class="p--body">No, we do not accept purchase orders. Payment must be made via credit card, check, or wire transfer.</p>
+      </div>
+    </div>
+
+    <div class="faq__category js--faq-section">
+      <h2 class="heading heading--uppercase faq__category-name js--faq-heading">Technical Specifications</h2>
+      <div class="faq__content">
+        <h3 class="heading heading--small faq__question">How long does the battery last?</h3>
+        <p class="p--body"><strong>AirBeam Mini</strong>: 14 hours mobile mode, 24 hours fixed mode<br>
+        <strong>AirBeam 3</strong>: 17 hours mobile mode, 31 hours fixed WiFi mode</p>
+
+        <h3 class="heading heading--small faq__question">What does each device measure?</h3>
+        <p class="p--body"><strong>AirBeam Mini</strong>: PM1, PM2.5 particulate matter<br>
+        <strong>AirBeam 3</strong>: PM1, PM2.5, PM10 particulate matter + temperature + relative humidity</p>
+
+        <h3 class="heading heading--small faq__question">Do they work outdoors?</h3>
+        <p class="p--body">Yes, both devices are weather resistant. AirBeam 3 has a weather resistant enclosure and AirBeam Mini includes a rain-proof rubber sleeve.</p>
+
+        <h3 class="heading heading--small faq__question">What's the range for Bluetooth connection?</h3>
+        <p class="p--body">Both devices maintain Bluetooth connection within 10-20 feet of your smartphone.</p>
+
+        <h3 class="heading heading--small faq__question">Can I use them without a smartphone nearby?</h3>
+        <p class="p--body">Yes! Both devices have standalone mode where they can record data independently and sync later when reconnected to your phone.</p>
+      </div>
+    </div>
+
+    <div class="faq__category js--faq-section">
+      <h2 class="heading heading--uppercase faq__category-name js--faq-heading">Data & Privacy</h2>
+      <div class="faq__content">
+        <h3 class="heading heading--small faq__question">Who owns my data?</h3>
+        <p class="p--body"><strong>You own all your data.</strong> Share it, CrowdSource it, export it, delete it, API it! It's all yours.</p>
+
+        <h3 class="heading heading--small faq__question">Is my location data private?</h3>
+        <p class="p--body">Yes, the AirCasting app has several privacy features:</p>
+        <ul class="p--body">
+          <li>You can disable GPS tracking in settings</li>
+          <li>You can save data locally without syncing to servers</li>
+          <li>You can contribute data without sharing location</li>
+          <li>Fixed indoor sessions never log GPS coordinates</li>
+        </ul>
+
+        <h3 class="heading heading--small faq__question">Can I export my data?</h3>
+        <p class="p--body">Absolutely. You can export individual sessions or bulk data via the AirCasting app or website. Data comes in CSV format for analysis in Excel or other tools.</p>
+
+        <h3 class="heading heading--small faq__question">Is the platform free to use?</h3>
+        <p class="p--body">The AirCasting platform (including app) are free to use. No subscriptions, no data access fees, ever.</p>
+      </div>
+    </div>
+
+    <div class="faq__category js--faq-section">
+      <h2 class="heading heading--uppercase faq__category-name js--faq-heading">Usage & Applications</h2>
+      <div class="faq__content">
+        <h3 class="heading heading--small faq__question">Can I walk/bike/drive with AirBeam?</h3>
+        <p class="p--body">Yes, AirBeam devices are designed for mobile monitoring. When cycling or driving, face the intake and exhaust ports away from your direction of travel to minimize wind interference.</p>
+
+        <h3 class="heading heading--small faq__question">How do I monitor indoor vs outdoor air quality?</h3>
+        <p class="p--body">Buy two devices, place one inside and one outside, both configured for fixed sessions. Monitor real-time measurements to decide when to open or close windows.</p>
+
+        <h3 class="heading heading--small faq__question">What's considered dangerous air pollution levels?</h3>
+        <p class="p--body">The AirCasting app uses EPA standards with color coding:</p>
+        <ul class="p--body">
+          <li><strong>Green (0-12 μg/m³)</strong>: Good air quality</li>
+          <li><strong>Yellow (13-35 μg/m³)</strong>: Moderate</li>
+          <li><strong>Orange (36-55 μg/m³)</strong>: Unhealthy for sensitive groups</li>
+          <li><strong>Red (55-150 μg/m³)</strong>: Unhealthy</li>
+        </ul>
+
+        <h3 class="heading heading--small faq__question">Can I use AirBeam for educational purposes?</h3>
+        <p class="p--body">Yes! AirCasting Actions has everything you need to get started with air monitoring, whether you're an individual, an educator, or part of an organized community effort. Free research design tools and curricula available.</p>
+      </div>
+    </div>
+
+    <div class="faq__category js--faq-section">
+      <h2 class="heading heading--uppercase faq__category-name js--faq-heading">Connectivity & Setup</h2>
+      <div class="faq__content">
+        <h3 class="heading heading--small faq__question">Which devices work with AirCasting app?</h3>
+        <p class="p--body"><strong>iPhone</strong>: iPhone 8 or newer with iOS (for standalone features)<br>
+        <strong>Android</strong>: Android 8 or newer with Bluetooth 5.0 and access to Google Play Store</p>
+
+        <h3 class="heading heading--small faq__question">Does AirBeam work without internet?</h3>
+        <p class="p--body">Yes, for mobile sessions you can record data offline and sync later over WiFi. Only map tiles won't load without internet connection.</p>
+
+        <h3 class="heading heading--small faq__question">Can AirBeam 3 work with cellular networks?</h3>
+        <p class="p--body">Yes, AirBeam 3 has a SIM card slot and supports 4G cellular networks for fixed sessions. You'll need a data plan (uses approximately 450MB per month).</p>
+
+        <h3 class="heading heading--small faq__question">What WiFi networks are supported?</h3>
+        <p class="p--body">AirBeam connects to standard 2.4 GHz WiFi networks. It cannot connect to 5GHz-only networks or networks with firewalls (like most public/enterprise WiFi).</p>
+      </div>
+    </div>
+
+    <div class="faq__category js--faq-section">
+      <h2 class="heading heading--uppercase faq__category-name js--faq-heading">Troubleshooting</h2>
+      <div class="faq__content">
+        <h3 class="heading heading--small faq__question">Why won't my AirBeam connect to my phone?</h3>
+        <p class="p--body">Check these common issues:</p>
+        <ul class="p--body">
+          <li>Is Bluetooth enabled on your phone?</li>
+          <li>Did you pair the AirBeam in your phone's Bluetooth settings first?</li>
+          <li>Is the AirBeam fully charged?</li>
+          <li>Are you pressing "Configure AirBeam" immediately after the LED turns from red to green?</li>
+        </ul>
+
+        <h3 class="heading heading--small faq__question">Why can't I record a fixed WiFi session?</h3>
+        <p class="p--body">Common causes:</p>
+        <ul class="p--body">
+          <li>Trying to connect to 5GHz or firewall-protected network</li>
+          <li>Incorrect WiFi password</li>
+          <li>AirBeam not fully charged</li>
+          <li>Not waiting for LED to turn green before configuration</li>
+        </ul>
+
+        <h3 class="heading heading--small faq__question">My AirBeam stopped streaming data, what happened?</h3>
+        <p class="p--body">If recording a fixed session and it gets unplugged, the internal battery will continue operation for 10+ hours. Simply plug it back in and it will resume streaming automatically.</p>
+
+        <h3 class="heading heading--small faq__question">The AirCasting app keeps crashing, what should I do?</h3>
+        <p class="p--body">Email us at info@habitatmap.org with details about what screen you were on and what you were doing when it crashed. Note: if your device can't smoothly run Google Maps, it may not be compatible with AirCasting.</p>
+      </div>
+    </div>
+
+    <div class="faq__category js--faq-section">
+      <h2 class="heading heading--uppercase faq__category-name js--faq-heading">Bulk Orders & Educational Use</h2>
+      <div class="faq__content">
+        <h3 class="heading heading--small faq__question">Do you offer discounts for bulk orders?</h3>
+        <p class="p--body">For orders of 6 or more AirBeam devices, we offer free consultation to help with your project. Email info@habitatmap.org or use our consultation booking form.</p>
+
+        <h3 class="heading heading--small faq__question">Can schools and researchers get support?</h3>
+        <p class="p--body">Yes! Trusted by Educators and Researchers at Top Educational Institutions and Backed by the Clean Air Fund. We provide one-on-one research design and implementation help.</p>
+
+        <h3 class="heading heading--small faq__question">Is there educational curriculum available?</h3>
+        <p class="p--body">Free Research Design Tools, Download Toolkits & Curriculums available through AirCasting Actions.</p>
+      </div>
+    </div>
+
+    <div class="faq__category js--faq-section">
+      <h2 class="heading heading--uppercase faq__category-name js--faq-heading">Community & Open Source</h2>
+      <div class="faq__content">
+        <h3 class="heading heading--small faq__question">How is this different from other air quality monitors?</h3>
+        <p class="p--body">AirBeam is the only fully open-source air quality monitoring platform. The hardware designs, firmware, and software are all open source. You're contributing to the world's largest database of community-collected air quality measurements.</p>
+
+        <h3 class="heading heading--small faq__question">What happens to my purchase?</h3>
+        <p class="p--body">All proceeds from AirBeam sales go directly towards advancing HabitatMap's mission to empower organizations and community scientists to measure pollution and advocate for equitable solutions to environmental health issues.</p>
+
+        <h3 class="heading heading--small faq__question">Can I modify or reprogram my AirBeam?</h3>
+        <p class="p--body">Yes! Full hardware schematics, firmware code, and 3D printing files are available on GitHub. AirBeam Mini can be reprogrammed using Arduino IDE.</p>
+
+        <h3 class="heading heading--small faq__question">Is there a community I can join?</h3>
+        <p class="p--body">Join the <a href="https://www.facebook.com/groups/667717482567030" target="_blank" class="link--underlined">Facebook AirCasting Community</a> to connect with other users worldwide.</p>
+      </div>
+    </div>
+
+  </section>
+
+  </section>
+
+<script defer type="text/javascript" src="/assets/js/faq.js"></script>
 
 {% include slider-init.html %}
