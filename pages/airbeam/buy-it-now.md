@@ -209,52 +209,296 @@ hasMerchantReturnPolicy:
 </script>
 
 <section class="shop-airbeam">
-  <div class="airbeam-action-banner-new">
-    <div class="airbeam-action-banner-new__background-image"></div>
-
-    <div class="airbeam-action-banner-new__container">
-      <div class="airbeam-action-banner-new__content">
-        <!-- Banner content -->
-        <div class="airbeam-action-banner-new__text">
-          <h1 class="airbeam-action-banner-new__title">
-            Watch the <a href="#buy-now" class="airbeam-action-banner-new__highlight">AirBeam</a> in Action
+  <section class="panel panel--hero u--bg-cyan lazyload buy-it-now-hero">
+    <div class="split--40">
+      <h1 class="heading heading--large heading--hero">
+        Most Accurate Portable Air Monitor
           </h1>
+      <p class="p--hero">
+        A portable and easy to use air quality monitor that lets you see the pollution around you in real time.
+        Empower your community, protect your health, and take action with data you can trust.</p>
+      <br>
+      <a href="#buy-now">
+        <button class="button button--cta">Buy It</button>
+      </a>
+    </div>
+  </section>
 
-          <a
-            href="https://www.youtube.com/@HabitatMap/shorts"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="airbeam-action-banner-new__button"
-          >
-            <span class="airbeam-action-banner-new__button-icon">▶</span>
-            Watch Videos
-          </a>
+  <section class="panel highlights">
+    <div class="highlights__item">
+      <h2 class="heading heading--small heading--body">
+        No Subscriptions or Hidden Fees
+      </h2>
+      <p>
+        Rest assured there won't ever be hidden fees or
+        subscriptions. We won't sell your data or charge you
+        to access yours.
+      </p>
+    </div>
+
+    <div class="highlights__item">
+      <h2 class="heading heading--small heading--body">
+        Easy Setup in 5 Minutes or Less!
+      </h2>
+      <p>
+        App walks you through step by step + access
+        to video tutorial library.
+      </p>
+    </div>
+
+    <div class="highlights__item">
+      <h2 class="heading heading--small heading--body">
+        Easy Data Access & Protection
+      </h2>
+      <p>
+        User-friendly dashboard makes seeing and
+        presenting trends and patterns easy.
+      </p>
+    </div>
+
+    <div class="highlights__item">
+      <h2 class="heading heading--small heading--body">
+        Automatic Data Back-ups
+      </h2>
+      <p>
+        On-board storage saves measurements so you'll never lose data.
+      </p>
+    </div>
+
+    <div class="highlights__item">
+      <h2 class="heading heading--small heading--body">
+        Designed for Mobile Monitoring
+      </h2>
+      <p>
+        Lightweight & Portable. Designed to withstand the elements
+        with weather resistant shell and Sturdy Design.
+      </p>
+    </div>
+
+      </section>
+
+  <section class="panel panel--big-padding u--bg-blue-dark logos">
+    <div class="logos__item">
+      <img
+        data-src="/assets/img/pages/home/logos/the-new-york-times.png"
+        src="/assets/img/pages/home/logos/the-new-york-times.png?nf_resize=fit&w=20"
+        alt="The New York Times logo"
+        class="lazyload"
+      />
+    </div>
+    <div class="logos__item">
+      <img
+        data-src="/assets/img/pages/home/logos/fast-company.png"
+        src="/assets/img/pages/home/logos/fast-company.png?nf_resize=fit&w=20"
+        alt="Fast Company logo"
+        class="lazyload"
+      />
+    </div>
+    <div class="logos__item">
+      <img
+        data-src="/assets/img/pages/home/logos/daily-news.png"
+        src="/assets/img/pages/home/logos/daily-news.png?nf_resize=fit&w=20"
+        alt="Daily News logo"
+        class="lazyload"
+      />
+    </div>
+    <div class="logos__item">
+      <img
+        data-src="/assets/img/pages/home/logos/popular-science.png"
+        src="/assets/img/pages/home/logos/popular-science.png?nf_resize=fit&w=20"
+        alt="Popular Science logo"
+        class="lazyload"
+      />
+    </div>
+    <div class="logos__item">
+      <img
+        data-src="/assets/img/pages/home/logos/wired.png"
+        src="/assets/img/pages/home/logos/wired.png?nf_resize=fit&w=20"
+        alt="Wired logo"
+        class="lazyload"
+      />
+    </div>
+  </section>
+
+  <section class="panel panel--big-padding u--bg-white">
+    <div class="download-section">
+      <h2 class="heading heading--medium text-center">
+        Use AirBeam with Free AirCasting Apps
+      </h2>
+      <div class="download-content">
+        <div class="download-text">
+          <p class="download-description">
+            <a href="https://aircasting.org/" target="_blank" class="link--underlined">
+              Check out desktop version
+            </a>
+          </p>
+          <p class="download-subtitle">
+            Download mobile apps for free
+          </p>
+          <div class="download-links">
+            <a
+              href="https://apps.apple.com/us/app/aircasting/id1587685281#?platform=iphone"
+              target="_blank"
+              class="download-links__item"
+            >
+              <img
+                data-src="/assets/img/pages/home/download-on-the-app-store-badge.png"
+                src="/assets/img/pages/home/download-on-the-app-store-badge.png?nf_resize=fit&w=20"
+                class="lazyload"
+                alt="Download on the App Store badge"
+              />
+            </a>
+            <a
+              href="https://play.google.com/store/apps/details?id=pl.llp.aircasting&hl=en_US"
+              target="_blank"
+              class="download-links__item"
+            >
+              <img
+                data-src="/assets/img/pages/home/google-play-badge.png"
+                src="/assets/img/pages/home/google-play-badge.png?nf_resize=fit&w=20"
+                class="lazyload"
+                alt="Google Play badge"
+              />
+            </a>
+          </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="panel panel--quote u--bg-green arc-background arc-background--right-opacity-15 arc-background--right-bottom-quote">
+    <div class="split--40">
+      <h2 class="heading heading--medium">
+        What Our Community
+        <br />
+        is Saying
+      </h2>
+    </div>
+    {% include testimonials-slider.html testimonials = site.testimonials %}
+  </section>
+
+  <div class="panel">
+    <div class="split--40" style="display: flex; justify-content: center; flex-direction: column">
+      <h2 class="heading heading--medium u--gray-text" style="margin-bottom: 1rem">
+        Join a global movement for environmental justice
+      </h2>
+      <h3 class="heading heading--small u--gray-text" style="margin-bottom: 1rem">
+        Contribute to the world's largest open-source, open-access database of community collected air quality measurements.
+      </h3>
+      <h3 class="heading heading--small u--gray-text">
+        All proceeds from AirBeam sales go directly towards advancing HabitatMap's mission to empower organizations and community scientists to measure pollution and advocate for equitable solutions to environmental health issues.
+      </h3>
+    </div>
+    <div class="split--50" style="display: flex; justify-content: center; align-items: center;">
+      <img
+        data-src="/assets/img/pages/aircasting/aircasting_1.jpg?nf_resize=fit&w=600"
+        src="/assets/img/pages/aircasting/aircasting_1.jpg?nf_resize=fit&w=20"
+        alt="AirCasting device in use"
+        class="lazyload"
+        width="600"
+        height="400"
+        style="max-width: 100%; height: auto; border-radius: 8px;"
+      />
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="split--50" style="display: flex; justify-content: center; align-items: center;">
+      <img
+        data-src="/assets/community.jpg?nf_resize=fit&w=600"
+        src="/assets/community.jpg?nf_resize=fit&w=20"
+        alt="Community mural and people"
+        class="lazyload"
+        width="600"
+        height="400"
+        style="max-width: 100%; height: auto; border-radius: 8px;"
+      />
+    </div>
+    <div class="split--40" style="display: flex; justify-content: center; flex-direction: column">
+      <h2 class="heading heading--medium u--gray-text" style="margin-bottom: 1rem">
+        Trusted tools for community action
+      </h2>
+      <div class="trusted-tools-content">
+        <div class="tool-item">
+          <h3 class="heading heading--small u--gray-text">
+            Recommended by Top Institutions
+          </h3>
+          <p class="p--body">
+            Trusted by Educators and Researchers at Top Educational Institutions and Backed by the Clean Air Fund.
+          </p>
+        </div>
+        <div class="tool-item">
+          <h3 class="heading heading--small u--gray-text">
+            Transparency & Our Non-Profit Ethos
+          </h3>
+          <p class="p--body">
+            Easy and Free Access to Data, no restrictions. Always Open Source Built!
+          </p>
+        </div>
+        <div class="tool-item">
+          <h3 class="heading heading--small u--gray-text">
+            Free Research Design Tools, Download Toolkits & Curriculums
+          </h3>
+          <p class="p--body">
+            AirCasting Actions has everything you need to get started with air monitoring, whether you're an individual, an educator, or part of an organized community effort.
+            <br>
+            <a href="https://aircastingactions.org" target="_blank" class="link--underlined">Explore Tools and Curriculum</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="for-teams u--align-center">
+    <h2 class="for-teams__heading heading">Breathe smarter with portable air quality insights</h2>
+    <p class="for-teams__get-help">Get One-on-One Research Design and Implementation Help</p>
+    <a href="/airbeam/get-consultation" class="button button--cta">Schedule a Free Consultation</a>
+  </section>
+
+    <section class="panel u--bg-green">
+    <div style="text-align: center; margin-bottom: 2rem;">
+      <h2 class="heading heading--medium" style="color: white;">
+        In Action
+      </h2>
+    </div>
+    <div class="youtube-shorts-container" style="display: flex; justify-content: space-between; gap: 20px; margin-top: 2rem; flex-direction: row; flex-wrap: wrap;">
+      <div class="youtube-short" style="flex: 1;">
+        <iframe
+          width="100%"
+          height="315"
+          src="https://www.youtube.com/embed/eTwvmZZA9pQ?si=oMXs0V3hb6paeG3p"
+          title="YouTube Shorts Video 1"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+      </div>
+      <div class="youtube-short" style="flex: 1;">
+        <iframe
+          width="100%"
+          height="315"
+          src="https://www.youtube.com/embed/Nn7FT2gipqA?si=9Vy9pc43n6ICbqY9"
+          title="YouTube Shorts Video 2"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+      </div>
+      <div class="youtube-short" style="flex: 1;">
+        <iframe
+          width="100%"
+          height="315"
+          src="https://www.youtube.com/embed/h_Om-M6AOu8?si=FBks5Ny-LVBHjocD"
+          title="YouTube Shorts Video 3"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
       </div>
     </div>
 
   </div>
-
-  <div class="notification-container">
-    <div class="notification-text" id="notification"></div>
-  </div>
-  <div class="notification-container">
-    <div class="notification-text" id="ab-mini-notification"></div>
-  </div>
-  <div class="panel panel--leading-text">
-    <h1 class="shop-airbeam__heading heading heading--large u--accent-cyan">
-      Buy the Best! Results are in: AirBeam3 Found to be the Most Accurate and Versatile Portable Air Quality Monitor*
-    </h1>
-        <p class="p--body" style="margin-top: 1rem; margin-bottom: 0;">
-      *Of the 75 PM2.5 measuring instruments evaluated by the <a href="https://www.aqmd.gov/docs/default-source/aq-spec/summary/habitatmap-airbeam3---summary-report.pdf" class="link" target="_blank">SCAQMD AQ-SPEC program</a>, AirBeam3 is the most accurate when both the field and lab evaluations are considered.
-    </p>
-    <p class="shop-airbeam__caption heading u--gray-text">
-      AirBeam is a low-cost, palm-sized air quality instrument that measures hyperlocal concentrations of harmful microscopic particles in the air, known as particulate matter.
-    </p>
-
-  </div>
-
-  <div class="panel panel--buy-now heading heading--medium u--accent-cyan" id="buy-now" style="padding-top: 0rem;">Buy Now!</div>
+</section>
 
   <div class="panel shop-airbeam__products">
     <div class="panel shop-airbeam__product">
@@ -385,72 +629,6 @@ hasMerchantReturnPolicy:
       </div>
     </div>
   </div>
-  <hr class="panel-separator">
-
-  <div class="panel">
-    <div class="split--50" style="display: flex; justify-content: center; align-items: center;">
-      <a href="#buy-now" class="badge-link badge-link--hm">
-        <span class="u--vertically-centered">Get AirBeam</span>
-      </a>
-    </div>
-    <div class="split--50" style="display: flex; justify-content: center; flex-direction: column">
-      <h3 class="heading heading--small u--gray-text" style="margin-bottom: 1rem">
-        Contribute to the world's largest open-source, open-access database of community collected air quality measurements.
-      </h3>
-      <h3 class="heading heading--small u--gray-text">
-        All proceeds from AirBeam sales go directly towards advancing HabitatMap's mission to empower organizations and community scientists to measure pollution and advocate for equitable solutions to environmental health issues.
-      </h3>
-    </div>
-  </div>
-<hr class="panel-separator">
-  <div class="panel" style="justify-content: center">
-    <div class="youtube-shorts-container" style="display: flex; justify-content: space-between; gap: 20px; margin-top: 2rem; flex-direction: row; flex-wrap: wrap;">
-      <div class="youtube-short" style="flex: 1;">
-        <iframe
-          width="100%"
-          height="315"
-          src="https://www.youtube.com/embed/eTwvmZZA9pQ?si=oMXs0V3hb6paeG3p"
-          title="YouTube Shorts Video 1"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen>
-        </iframe>
-      </div>
-      <div class="youtube-short" style="flex: 1;">
-        <iframe
-          width="100%"
-          height="315"
-          src="https://www.youtube.com/embed/Nn7FT2gipqA?si=9Vy9pc43n6ICbqY9"
-          title="YouTube Shorts Video 2"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen>
-        </iframe>
-      </div>
-      <div class="youtube-short" style="flex: 1;">
-        <iframe
-          width="100%"
-          height="315"
-          src="https://www.youtube.com/embed/h_Om-M6AOu8?si=FBks5Ny-LVBHjocD"
-          title="YouTube Shorts Video 3"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen>
-        </iframe>
-      </div>
-    </div>
-  </div>
-
-  <section class="panel panel--quote u--bg-green arc-background arc-background--right-opacity-15 arc-background--right-bottom-quote">
-    <div class="split--40">
-      <h2 class="heading heading--medium">
-        What Our Community
-        <br />
-        is Saying
-      </h2>
-    </div>
-    {% include testimonials-slider.html testimonials = site.testimonials %}
-  </section>
 
   <div class="panel">
     <div style="text-align: center">

@@ -139,10 +139,6 @@
   font-size: $base-font-size-2;
   margin-left: $u-space-small;
   text-transform: uppercase;
-
-  [data-current*="buy-now"] & {
-    display: none;
-  }
 }
 
 .header__nav-toggle-button {

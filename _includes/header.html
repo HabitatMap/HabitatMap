@@ -22,7 +22,11 @@
     {% include navigation.html navigation=site.data.navigation %}
 
     <div class="u--tablet-max-hidden">
-      <a href="/airbeam/buy-it-now" class="button button--small header__button">Get AirBeam</a>
+      {% if page.permalink == "/airbeam/buy-it-now" %}
+        <a href="#buy-now" class="button button--cta header__button">Get AirBeam</a>
+      {% else %}
+        <a href="/airbeam/buy-it-now" class="button button--cta header__button">Get AirBeam</a>
+      {% endif %}
       <button
         class="header__nav-toggle-button js--toggle-nav"
         aria-label="Toggle navigation menu"
