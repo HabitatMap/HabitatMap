@@ -405,7 +405,7 @@ hasMerchantReturnPolicy:
   </div>
 <hr class="panel-separator">
   <div class="panel" style="justify-content: center">
-    <div class="youtube-shorts-container" style="display: flex; justify-content: space-between; gap: 20px; margin-top: 2rem; flex-direction: row;">
+    <div class="youtube-shorts-container" style="display: flex; justify-content: space-between; gap: 20px; margin-top: 2rem; flex-direction: row; flex-wrap: wrap;">
       <div class="youtube-short" style="flex: 1;">
         <iframe
           width="100%"
