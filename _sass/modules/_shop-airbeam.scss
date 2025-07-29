@@ -536,14 +536,14 @@
 // Responsive improvements for the testimonials section
 .panel--quote {
   @media screen and (max-width: $large-mobile-max) {
-    padding: 20px 15px;
+    padding: 2rem 1.5rem;
   }
 }
 
 .order-details-container {
   display: flex;
   flex-direction: column;
-  margin-right: 20px;
+  margin-right: 2rem;
 
   @media screen and (max-width: $large-mobile-max) {
     margin-right: 0;

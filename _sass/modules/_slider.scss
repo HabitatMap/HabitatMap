@@ -88,6 +88,8 @@
 
   .slider--quote & {
     right: -5vw;
+    top: 50%;
+    transform: translateY(-50%);
   }
 
   .slider--user-stories & {
