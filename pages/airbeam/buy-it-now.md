@@ -1,138 +1,137 @@
----
+## <!-- HTML -->
+
 layout: page
 title: AirBeam - Buy It Now
 permalink: /airbeam/buy-it-now
 section: airbeam buy-now
 image: /assets/img/airbeam-buy-it-now.jpg
 offers:
-  - type: Offer
-    name: AirBeam3
-    price: 199.00
-    priceCurrency: USD
-    availability: https://schema.org/InStock
-    aggregateRating:
-      - type: AggregateRating
-        ratingValue: "5"
-        reviewCount: "1"
+
+- type: Offer
+  name: AirBeam3
+  price: 199.00
+  priceCurrency: USD
+  availability: https://schema.org/InStock
+  aggregateRating:
+  - type: AggregateRating
+    ratingValue: "5"
+    reviewCount: "1"
     review:
-      - type: Review
-        author:
-          type: Person
-          name: "John Doe"
-        datePublished: "2024-01-01"
-        reviewBody: "This is a placeholder review. Please replace it with a real one."
-        reviewRating:
-          type: Rating
-          ratingValue: "5"
+  - type: Review
+    author:
+    type: Person
+    name: "John Doe"
+    datePublished: "2024-01-01"
+    reviewBody: "This is a placeholder review. Please replace it with a real one."
+    reviewRating:
+    type: Rating
+    ratingValue: "5"
     shippingDetails:
-      - type: OfferShippingDetails
-        shippingRate:
-          type: MonetaryAmount
-          value: "10.00"
-          currency: "USD"
-        deliveryTime:
-          type: ShippingDeliveryTime
-          handlingTime:
-            type: QuantitativeValue
-            minValue: 1
-            maxValue: 1
-            unitCode: "DAY"
-          transitTime:
-            type: QuantitativeValue
-            minValue: 3
-            maxValue: 7
-            unitCode: "DAY"
-        shippingDestination:
-          type: DefinedRegion
-          addressCountry: "US"
-      - type: OfferShippingDetails
-        shippingRate:
-          type: MonetaryAmount
-          value: "35.00"
-          currency: "USD"
-        deliveryTime:
-          type: ShippingDeliveryTime
-          handlingTime:
-            type: QuantitativeValue
-            minValue: 1
-            maxValue: 1
-            unitCode: "DAY"
-          transitTime:
-            type: QuantitativeValue
-            minValue: 7
-            maxValue: 21
-            unitCode: "DAY"
-        shippingDestination:
-          type: DefinedRegion
-          addressCountry: "CA"
-  - type: Offer
-    name: AirBeam Mini
-    price: 99.00
-    priceCurrency: USD
-    availability: https://schema.org/InStock
-    aggregateRating:
-      - type: AggregateRating
-        ratingValue: "5"
-        reviewCount: "1"
-    review:
-      - type: Review
-        author:
-          type: Person
-          name: "Jane Doe"
-        datePublished: "2024-01-01"
-        reviewBody: "This is a placeholder review. Please replace it with a real one."
-        reviewRating:
-          type: Rating
-          ratingValue: "5"
-    shippingDetails:
-      - type: OfferShippingDetails
-        shippingRate:
-          type: MonetaryAmount
-          value: "10.00"
-          currency: "USD"
-        deliveryTime:
-          type: ShippingDeliveryTime
-          handlingTime:
-            type: QuantitativeValue
-            minValue: 1
-            maxValue: 1
-            unitCode: "DAY"
-          transitTime:
-            type: QuantitativeValue
-            minValue: 3
-            maxValue: 7
-            unitCode: "DAY"
-        shippingDestination:
-          type: DefinedRegion
-          addressCountry: "US"
-      - type: OfferShippingDetails
-        shippingRate:
-          type: MonetaryAmount
-          value: "35.00"
-          currency: "USD"
-        deliveryTime:
-          type: ShippingDeliveryTime
-          handlingTime:
-            type: QuantitativeValue
-            minValue: 1
-            maxValue: 1
-            unitCode: "DAY"
-          transitTime:
-            type: QuantitativeValue
-            minValue: 7
-            maxValue: 21
-            unitCode: "DAY"
-        shippingDestination:
-          type: DefinedRegion
-          addressCountry: "CA"
-hasMerchantReturnPolicy:
-  - type: MerchantReturnPolicy
-    name: 30-Day Return Policy
-    url: /airbeam/buy-it-now#warranty
-    returnPolicyCategory: https://schema.org/MerchantReturnFiniteReturnWindow
-    merchantReturnDays: 30
-    returnMethod: https://schema.org/ReturnByMail
-    returnFees: https://schema.org/ReturnShippingFees
+  - type: OfferShippingDetails
+    shippingRate:
+    type: MonetaryAmount
+    value: "10.00"
+    currency: "USD"
+    deliveryTime:
+    type: ShippingDeliveryTime
+    handlingTime:
+    type: QuantitativeValue
+    minValue: 1
+    maxValue: 1
+    unitCode: "DAY"
+    transitTime:
+    type: QuantitativeValue
+    minValue: 3
+    maxValue: 7
+    unitCode: "DAY"
+    shippingDestination:
+    type: DefinedRegion
+    addressCountry: "US"
+  - type: OfferShippingDetails
+    shippingRate:
+    type: MonetaryAmount
+    value: "35.00"
+    currency: "USD"
+    deliveryTime:
+    type: ShippingDeliveryTime
+    handlingTime:
+    type: QuantitativeValue
+    minValue: 1
+    maxValue: 1
+    unitCode: "DAY"
+    transitTime:
+    type: QuantitativeValue
+    minValue: 7
+    maxValue: 21
+    unitCode: "DAY"
+    shippingDestination:
+    type: DefinedRegion
+    addressCountry: "CA"
+- type: Offer
+  name: AirBeam Mini
+  price: 99.00
+  priceCurrency: USD
+  availability: https://schema.org/InStock
+  aggregateRating: - type: AggregateRating
+  ratingValue: "5"
+  reviewCount: "1"
+  review: - type: Review
+  author:
+  type: Person
+  name: "Jane Doe"
+  datePublished: "2024-01-01"
+  reviewBody: "This is a placeholder review. Please replace it with a real one."
+  reviewRating:
+  type: Rating
+  ratingValue: "5"
+  shippingDetails: - type: OfferShippingDetails
+  shippingRate:
+  type: MonetaryAmount
+  value: "10.00"
+  currency: "USD"
+  deliveryTime:
+  type: ShippingDeliveryTime
+  handlingTime:
+  type: QuantitativeValue
+  minValue: 1
+  maxValue: 1
+  unitCode: "DAY"
+  transitTime:
+  type: QuantitativeValue
+  minValue: 3
+  maxValue: 7
+  unitCode: "DAY"
+  shippingDestination:
+  type: DefinedRegion
+  addressCountry: "US" - type: OfferShippingDetails
+  shippingRate:
+  type: MonetaryAmount
+  value: "35.00"
+  currency: "USD"
+  deliveryTime:
+  type: ShippingDeliveryTime
+  handlingTime:
+  type: QuantitativeValue
+  minValue: 1
+  maxValue: 1
+  unitCode: "DAY"
+  transitTime:
+  type: QuantitativeValue
+  minValue: 7
+  maxValue: 21
+  unitCode: "DAY"
+  shippingDestination:
+  type: DefinedRegion
+  addressCountry: "CA"
+  hasMerchantReturnPolicy:
+- type: MerchantReturnPolicy
+  name: 30-Day Return Policy
+  url: /airbeam/buy-it-now#warranty
+  returnPolicyCategory: https://schema.org/MerchantReturnFiniteReturnWindow
+  merchantReturnDays: 30
+  returnMethod: https://schema.org/ReturnByMail
+  returnFees: https://schema.org/ReturnShippingFees
+
 ---
 
 <script type="application/ld+json">
@@ -378,7 +377,7 @@ hasMerchantReturnPolicy:
     {% include testimonials-slider.html testimonials = site.testimonials %}
   </section>
 
-  <div class="panel">
+  <section class="panel">
     <div class="split--40" style="display: flex; justify-content: center; flex-direction: column">
       <h2 class="heading heading--medium u--gray-text" style="margin-bottom: 1rem">
         Join a global movement for environmental justice
@@ -401,9 +400,9 @@ hasMerchantReturnPolicy:
         style="max-width: 100%; height: auto; border-radius: 8px;"
       />
     </div>
-  </div>
+  </section>
 
-  <div class="panel">
+  <section class="panel">
     <div class="split--50" style="display: flex; justify-content: center; align-items: center;">
       <img
         data-src="/assets/community.jpg?nf_resize=fit&w=600"
@@ -448,7 +447,7 @@ hasMerchantReturnPolicy:
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
   <section class="for-teams u--align-center" style="padding-bottom: 4rem;">
     <h2 class="for-teams__heading heading">Breathe smarter with portable air quality insights</h2>
@@ -504,7 +503,7 @@ hasMerchantReturnPolicy:
       Get your pocket-sized air quality lab
     </h2>
 
-    <div class="shop-airbeam__products" style="display: flex; flex-wrap: wrap; margin-top: 2rem;">
+   <div class="shop-airbeam__products" style="display: flex; flex-wrap: wrap; margin-top: 2rem;">
       <div class="panel shop-airbeam__product" style="flex: 1; min-width: 300px;">
         <img
           alt="Airbeam"
@@ -537,12 +536,6 @@ hasMerchantReturnPolicy:
             <div class="shop-airbeam__buy-button">
               {% include paypal-button.html %}
             </div>
-            <!-- <a href="/airbeam/get-consultation" class="get-consult-button button button--secondary">
-              HAVE QUESTIONS?
-            </a>
-            <a href="/airbeam/users-guide" class="get-consult-button button button--secondary">
-              AIRBEAM 3 USER GUIDE
-            </a> -->
           </div>
         </div>
       </div>
@@ -581,12 +574,6 @@ hasMerchantReturnPolicy:
             <div class="shop-airbeam__buy-button">
               {% include paypal-button-ab-mini.html %}
             </div>
-            <!-- <a href="/airbeam/get-consultation" class="get-consult-button button button--secondary">
-              HAVE QUESTIONS?
-            </a>
-            <a href="/airbeam/users-guide-airbeammini" class="get-consult-button button button--secondary">
-              AIRBEAM MINI USER GUIDE
-            </a> -->
           </div>
         </div>
       </div>
@@ -594,7 +581,7 @@ hasMerchantReturnPolicy:
 
   </section>
 
-  <div class="panel shop-airbeam__comparison-container">
+  <section class="panel shop-airbeam__comparison-container">
     <div class="shop-airbeam__comparison">
       {% include airbeam-comparison-table.html %}
       <div class="shop-airbeam__comparison-summary">
@@ -625,11 +612,11 @@ hasMerchantReturnPolicy:
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
 {% include inputValidate.html %}
 
-    <section class="panel panel--faq-intro u--bg-green">
+  <section class="panel panel--faq-intro u--bg-green">
     <div class="split--50 split--padding-right">
       <h1 class="heading heading--large">
         AirBeam
@@ -638,11 +625,11 @@ hasMerchantReturnPolicy:
       </h1>
     </div>
 
-    <div class="split--50">
-      <p class="heading heading--small">
-        Find answers to the most frequently asked questions about AirBeam devices, setup, and usage. If you don't see your answer here, please email us at <a href="mailto:info@habitatmap.org">info@habitatmap.org</a> or connect with the <a href="https://www.facebook.com/groups/667717482567030">Facebook AirCasting Community</a>.
-      </p>
-    </div>
+  <div class="split--50">
+    <p class="heading heading--small">
+      Find answers to the most frequently asked questions about AirBeam devices, setup, and usage. If you don't see your answer here, please email us at <a href="mailto:info@habitatmap.org">info@habitatmap.org</a> or connect with the <a href="https://www.facebook.com/groups/667717482567030">Facebook AirCasting Community</a>.
+    </p>
+  </div>
 
   </section>
 
@@ -855,8 +842,7 @@ hasMerchantReturnPolicy:
     </div>
 
   </section>
-
-  </section>
+</section>
 
 <script defer type="text/javascript" src="/assets/js/faq.js"></script>
 
