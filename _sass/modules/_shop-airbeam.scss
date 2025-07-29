@@ -1,7 +1,407 @@
+
+.airbeam-action-banner-new {
+  position: relative;
+  width: 100%;
+  height: 12rem;
+  overflow: hidden;
+  margin: 0;
+  z-index: 1;
+
+  @media screen and (min-width: 640px) {
+    height: 14rem;
+  }
+
+  @media screen and (min-width: 1024px) {
+    height: 16rem;
+  }
+}
+
+.airbeam-action-banner-new__background-image {
+  position: absolute;
+  inset: 0;
+  background-image: url('/assets/with_background-1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+.airbeam-action-banner-new__container {
+  position: relative;
+  height: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+
+  @media screen and (min-width: 640px) {
+    padding: 0 1.5rem;
+  }
+
+  @media screen and (min-width: 1024px) {
+    padding: 0 2rem;
+  }
+}
+
+.airbeam-action-banner-new__content {
+  position: relative;
+  width: 100%;
+  max-width: 32rem;
+}
+
+.airbeam-action-banner-new__text {
+  text-align: left;
+}
+
+.airbeam-action-banner-new__title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: white;
+  line-height: 1.2;
+  margin-bottom: 0.75rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+
+  @media screen and (min-width: 640px) {
+    font-size: 1.5rem;
+  }
+
+  @media screen and (min-width: 1024px) {
+    font-size: 1.875rem;
+  }
+}
+
+.airbeam-action-banner-new__highlight {
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: #15803d;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: #fff;
+    opacity: 0.3;
+  }
+}
+
+.airbeam-action-banner-new__description {
+  font-size: 0.875rem;
+  color: #f3f4f6;
+  line-height: 1.6;
+  max-width: 20rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+
+  @media screen and (min-width: 640px) {
+    font-size: 1rem;
+  }
+}
+
+.airbeam-action-banner-new__button {
+  display: inline-flex;
+  align-items: center;
+  background: #16a34a;
+  color: white;
+  padding: 0.625rem 2rem;
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 2px solid #22c55e;
+
+  &:hover {
+    background: #15803d;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    transform: scale(1.05);
+    border-color: #4ade80;
+  }
+}
+
+.airbeam-action-banner-new__button-icon {
+  margin-right: 0.75rem;
+  transition: transform 0.3s ease;
+
+  .airbeam-action-banner-new__button:hover & {
+    transform: scale(1.1);
+  }
+}
+
+.airbeam-action-banner-new__button-external {
+  margin-left: 0.5rem;
+  opacity: 1;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.airbeam-action-banner-new__price-badge-new {
+  position: absolute;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(4px);
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  text-decoration: none;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 25px -5px rgba(0, 0, 0, 0.15);
+    background: rgba(255, 255, 255, 1);
+  }
+}
+
+.airbeam-action-banner-new__price-badge {
+  position: absolute;
+  bottom: -0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  border: 1px solid #e5e7eb;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  text-decoration: none;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateX(-50%) scale(1.05);
+    box-shadow: 0 15px 25px -5px rgba(0, 0, 0, 0.15);
+    background: #f9fafb;
+  }
+}
+
+.airbeam-action-banner-new__price-content {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.airbeam-action-banner-new__price-dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  background: #10b981;
+  border-radius: 50%;
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.airbeam-action-banner-new__price-text {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.airbeam-action-banner-new__decoration {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.2;
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.airbeam-action-banner-new__decoration--1 {
+  top: 1rem;
+  right: 1rem;
+  width: 6rem;
+  height: 6rem;
+  background: #bbf7d0;
+}
+
+.airbeam-action-banner-new__decoration--2 {
+  bottom: 2rem;
+  left: 1rem;
+  width: 4rem;
+  height: 4rem;
+  background: #dcfce7;
+  animation-delay: 1s;
+}
+
+
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.4;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .airbeam-action-banner-new__price-badge-new {
+    bottom: 1rem;
+    right: 1rem;
+  }
+}
+
+.airbeam-action-banner {
+  display: block;
+  position: relative;
+  width: 100vw;
+  max-width: 100%;
+  min-height: 120px;
+  overflow: hidden;
+  text-decoration: none;
+  margin: 0;
+  z-index: 100;
+  transition: all 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+  }
+}
+
+.airbeam-action-banner__bg {
+  width: 100vw;
+  min-height: 120px;
+  height: 18vw;
+  max-height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.airbeam-action-banner__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(0,32,48,0.85) 0%, rgba(0,32,48,0.7) 50%, rgba(0,0,0,0.4) 100%);
+  z-index: 1;
+}
+
+.airbeam-action-banner__content {
+  position: absolute;
+  left: 0; right: 0; top: 0; bottom: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2vw 4vw;
+  pointer-events: none;
+}
+
+.airbeam-action-banner__device {
+  width: 80px;
+  height: 80px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+  background: #fff;
+  object-fit: contain;
+  display: block;
+  transition: all 0.3s ease;
+  padding: 8px;
+
+  .airbeam-action-banner:hover & {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.35);
+  }
+}
+
+.airbeam-action-banner__text {
+  color: #fff;
+  font-family: "Moderat-Bold", sans-serif;
+  font-size: 1.6rem;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+  background: rgba(255,255,255,0.2);
+  padding: 0.6em 1.2em;
+  border-radius: 12px;
+  pointer-events: auto;
+  backdrop-filter: blur(8px);
+  border: 2px solid rgba(255,255,255,0.3);
+  transition: all 0.3s ease;
+  position: relative;
+  font-weight: 600;
+
+  &::after {
+    content: '▶';
+    margin-left: 0.8em;
+    font-size: 0.7em;
+    opacity: 0.9;
+    transition: all 0.3s ease;
+  }
+
+  .airbeam-action-banner:hover & {
+    background: rgba(255,255,255,0.3);
+    transform: translateY(-1px) scale(1.02);
+    border-color: rgba(255,255,255,0.5);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+
+    &::after {
+      transform: translateX(2px);
+      opacity: 1;
+    }
+  }
+}
+
+@media screen and (max-width: $large-mobile-max) {
+  .airbeam-action-banner__content {
+    flex-direction: row;
+    gap: 1.5rem;
+    align-items: center;
+    padding: 4vw 4vw;
+  }
+
+  .airbeam-action-banner__device {
+    width: 60px;
+    height: 60px;
+    padding: 6px;
+  }
+
+  .airbeam-action-banner__text {
+    font-size: 1.2rem;
+    padding: 0.5em 1em;
+  }
+
+  .airbeam-action-banner__bg {
+    height: 25vw;
+    min-height: 100px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .airbeam-action-banner__bg {
+    height: 16vw;
+    max-height: 200px;
+  }
+
+  .airbeam-action-banner__content {
+    gap: 2.5rem;
+    padding: 1.5vw 6vw;
+  }
+
+  .airbeam-action-banner__device {
+    width: 90px;
+    height: 90px;
+    padding: 10px;
+  }
+
+  .airbeam-action-banner__text {
+    font-size: 1.8rem;
+    padding: 0.7em 1.4em;
+  }
+}
+
 .shop-airbeam {
   margin-bottom: $u-space-default;
 
-  .arc-background {
+  .arc-background:not(.arc-background--right-opacity-15) {
     @media screen and (max-width: $large-mobile-max) {
       background: none;
     }
@@ -75,28 +475,123 @@
 
   &__item {
     @include flex(0 0 45%);
+
+    @media screen and (max-width: $large-mobile-max) {
+      @include flex(0 0 100%);
+      margin-bottom: 20px;
+    }
+  }
+
+  @media screen and (max-width: $large-mobile-max) {
+    gap: 0;
+    flex-direction: column;
+  }
+}
+
+
+.shop-airbeam__heading {
+  @media screen and (min-width: $tablet-min) {
+    font-size: 3rem;
+  }
+
+  @media screen and (max-width: $large-mobile-max) {
+    font-size: 1.8rem;
+    line-height: 1.3;
+  }
+}
+
+.shop-airbeam__caption {
+  font-size: 1.5rem;
+  margin: $u-space-small 0 0;
+
+  @media screen and (min-width: $tablet-min) {
+    font-size: 2.25rem;
+    margin: $u-space-small 0;
+  }
+
+  @media screen and (max-width: $large-mobile-max) {
+    font-size: 1.2rem;
+    line-height: 1.4;
+  }
+}
+
+.panel img[alt="AirBeam Mini in box"] {
+  @media screen and (max-width: $large-mobile-max) {
+    border-radius: 6px;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+.panel .split--50 {
+  @media screen and (max-width: $large-mobile-max) {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+.panel--quote {
+  @media screen and (max-width: $large-mobile-max) {
+    padding: 2rem 1.5rem;
   }
 }
 
 .order-details-container {
   display: flex;
   flex-direction: column;
-  margin-right: 20px;
+  margin-right: 2rem;
+
+  @media screen and (max-width: $large-mobile-max) {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
 }
 
 .quantity-input {
   margin: 10px 0;
   max-width: 50px;
+
+  @media screen and (max-width: $large-mobile-max) {
+    max-width: 60px;
+    padding: 8px;
+    font-size: 16px;
+  }
+}
+
+.shipping-options-container {
+  margin: 10px 0;
+
+  @media screen and (max-width: $large-mobile-max) {
+    margin: 8px 0;
+  }
+
+  select {
+    @media screen and (max-width: $large-mobile-max) {
+      padding: 8px;
+      font-size: 16px; // Prevents zoom on iOS
+      width: 100%;
+      max-width: 200px;
+    }
+  }
 }
 
 .cost-info {
   margin: 10px 0;
   width: 100%;
+
+  @media screen and (max-width: $large-mobile-max) {
+    margin: 8px 0;
+    font-size: 14px;
+  }
 }
 
 .cost-info--calculated {
   font-size: 18px;
   font-weight: 600;
+
+  @media screen and (max-width: $large-mobile-max) {
+    font-size: 16px;
+  }
 }
 
 .notification-container {
@@ -107,6 +602,11 @@
   position: fixed;
   margin-top: 10px;
   z-index: 1000;
+
+  @media screen and (max-width: $large-mobile-max) {
+    margin-top: 5px;
+    padding: 0 10px;
+  }
 }
 
 .notification-text {
@@ -115,6 +615,12 @@
   visibility: hidden;
   width: 70vw;
   position: relative;
+
+  @media screen and (max-width: $large-mobile-max) {
+    padding: 12px 20px;
+    width: 90vw;
+    font-size: 14px;
+  }
 }
 
 .notification-text--visible {
@@ -135,6 +641,11 @@
   font-size: 18px;
   font-weight: 600;
   padding-bottom: 10px;
+
+  @media screen and (max-width: $large-mobile-max) {
+    font-size: 16px;
+    padding-bottom: 8px;
+  }
 }
 
 .notification-close-button {
@@ -149,8 +660,31 @@
   top: -5px;
   background-color: none;
 
+  @media screen and (max-width: $large-mobile-max) {
+    font-size: 28px;
+    right: 8px;
+    top: -3px;
+  }
+
   &::after {
     content: "\00d7";
+  }
+}
+
+.quantity-notification-container {
+  margin: 5px 0;
+
+  @media screen and (max-width: $large-mobile-max) {
+    margin: 3px 0;
+  }
+}
+
+.quantity-notification-text {
+  font-size: 14px;
+  color: $red;
+
+  @media screen and (max-width: $large-mobile-max) {
+    font-size: 12px;
   }
 }
 
@@ -159,10 +693,21 @@
   line-height: 25px;
   margin-top: 10px;
   white-space: nowrap;
+
+  @media screen and (max-width: $large-mobile-max) {
+    font-size: 12px;
+    line-height: 20px;
+    margin-top: 8px;
+    padding: 8px 12px;
+  }
 }
 
 .shop-airbeam__buy-button {
   width: 100%;
+
+  @media screen and (max-width: $large-mobile-max) {
+    margin-bottom: 10px;
+  }
 }
 
 .shop-airbeam-image {
@@ -171,15 +716,25 @@
   height: auto;
   object-fit: cover;
   aspect-ratio: 16 / 9;
+
+  @media screen and (max-width: $large-mobile-max) {
+    max-width: 100%;
+    border-radius: 8px;
+  }
 }
 
 .shop-airbeam__products {
   padding-bottom: 0px;
+
   @media screen and (min-width: $tablet-min) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
     align-items: start;
+  }
+
+  @media screen and (max-width: $large-mobile-max) {
+    gap: 30px;
   }
 }
 
@@ -188,6 +743,10 @@
 
   &:first-of-type {
     padding-bottom: 40px;
+
+    @media screen and (max-width: $large-mobile-max) {
+      padding-bottom: 30px;
+    }
   }
 
   @media screen and (min-width: $tablet-min) {
@@ -204,6 +763,10 @@
     display: flex;
     padding: 20px 0;
   }
+
+  @media screen and (max-width: $large-mobile-max) {
+    padding-top: 15px;
+  }
 }
 
 .shop-airbeam__buttons-container {
@@ -214,6 +777,10 @@
 
   @media screen and (min-width: $tablet-min) {
     margin-bottom: 0;
+  }
+
+  @media screen and (max-width: $large-mobile-max) {
+    margin-bottom: 15px;
   }
 }
 
@@ -230,6 +797,10 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+
+  @media screen and (max-width: $large-mobile-max) {
+    padding: 0 10px;
+  }
 }
 
 .shop-airbeam__comparison {
@@ -239,6 +810,10 @@
   align-items: center;
   width: 100%;
   max-width: 900px;
+
+  @media screen and (max-width: $large-mobile-max) {
+    max-width: 100%;
+  }
 }
 
 .shop-airbeam__chart-image {
@@ -291,6 +866,11 @@ table {
     font-size: 16px;
   }
 
+  @media screen and (max-width: $large-mobile-max) {
+    font-size: 12px;
+    border-radius: 3px;
+  }
+
   th,
   td {
     padding: 5px;
@@ -299,6 +879,10 @@ table {
 
     @media screen and (min-width: $tablet-min) {
       padding: 15px;
+    }
+
+    @media screen and (max-width: $large-mobile-max) {
+      padding: 8px 4px;
     }
   }
 
@@ -310,6 +894,17 @@ table {
 
     &:first-child {
       width: 25%;
+    }
+
+    @media screen and (max-width: $large-mobile-max) {
+      &:second-child,
+      &:last-child {
+        width: 30%;
+      }
+
+      &:first-child {
+        width: 40%;
+      }
     }
   }
 
@@ -388,14 +983,35 @@ table {
     justify-content: space-between;
     gap: 20px;
   }
+
+  @media screen and (max-width: $large-mobile-max) {
+    margin-top: 15px;
+    gap: 15px;
+  }
 }
 
 .comparison-summary__list {
   margin-top: 10px;
+
+  @media screen and (max-width: $large-mobile-max) {
+    margin-top: 8px;
+  }
+
+  li {
+    @media screen and (max-width: $large-mobile-max) {
+      font-size: 14px;
+      line-height: 1.4;
+      margin-bottom: 5px;
+    }
+  }
 }
 
 .comparison-summary__list > li {
   list-style-type: disc;
   list-style-position: inside;
   padding-left: 5px;
+}
+
+.comparison-summary__item {
+  margin-bottom: 0.5rem;
 }

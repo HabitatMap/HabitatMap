@@ -209,6 +209,32 @@ hasMerchantReturnPolicy:
 </script>
 
 <section class="shop-airbeam">
+  <div class="airbeam-action-banner-new">
+    <div class="airbeam-action-banner-new__background-image"></div>
+
+    <div class="airbeam-action-banner-new__container">
+      <div class="airbeam-action-banner-new__content">
+        <!-- Banner content -->
+        <div class="airbeam-action-banner-new__text">
+          <h1 class="airbeam-action-banner-new__title">
+            Watch the <a href="#buy-now" class="airbeam-action-banner-new__highlight">AirBeam</a> in Action
+          </h1>
+
+          <a
+            href="https://www.youtube.com/@HabitatMap/shorts"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="airbeam-action-banner-new__button"
+          >
+            <span class="airbeam-action-banner-new__button-icon">▶</span>
+            Watch Videos
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
   <div class="notification-container">
     <div class="notification-text" id="notification"></div>
   </div>
@@ -219,12 +245,16 @@ hasMerchantReturnPolicy:
     <h1 class="shop-airbeam__heading heading heading--large u--accent-cyan">
       Buy the Best! Results are in: AirBeam3 Found to be the Most Accurate and Versatile Portable Air Quality Monitor*
     </h1>
+        <p class="p--body" style="margin-top: 1rem; margin-bottom: 0;">
+      *Of the 75 PM2.5 measuring instruments evaluated by the <a href="https://www.aqmd.gov/docs/default-source/aq-spec/summary/habitatmap-airbeam3---summary-report.pdf" class="link" target="_blank">SCAQMD AQ-SPEC program</a>, AirBeam3 is the most accurate when both the field and lab evaluations are considered.
+    </p>
     <p class="shop-airbeam__caption heading u--gray-text">
       AirBeam is a low-cost, palm-sized air quality instrument that measures hyperlocal concentrations of harmful microscopic particles in the air, known as particulate matter.
     </p>
+
   </div>
 
-  <div class="panel panel--buy-now heading heading--medium u--accent-cyan">Buy Now!</div>
+  <div class="panel panel--buy-now heading heading--medium u--accent-cyan" id="buy-now" style="padding-top: 0rem;">Buy Now!</div>
 
   <div class="panel shop-airbeam__products">
     <div class="panel shop-airbeam__product">
@@ -313,11 +343,14 @@ hasMerchantReturnPolicy:
       </div>
     </div>
   </div>
-
-  <div class="panel shop-airbeam__description">
-    <p>
-      The AirCasting app collects measurements from the AirBeam and relays it to the maps. With thousands of AirBeams measuring particulate matter worldwide and nearly 4 billion data points recorded, the AirCasting platform is the largest open-source database of community-collected air quality measurements ever created. By documenting and leveraging health and environmental data to inform personal decision-making and public policy, the AirCasting platform empowers people to map air pollution and organize for clean air. All proceeds from AirBeam sales go directly towards advancing HabitatMap's mission to empower organizations and community scientists to measure pollution and advocate for equitable solutions to environmental health issues.
-    </p>
+<hr class="panel-separator">
+  <div class="panel shop-airbeam__description" style="justify-content: center; padding-bottom: 0;">
+    <h2 class="heading heading--medium u--gray-text">
+      <strong>Know what you breathe. Take control of your air.</strong>
+    </h2>
+    <h2 class="heading heading--medium u--gray-text">
+      <strong>Affordable, accurate, and built for the people.</strong>
+    </h2>
   </div>
 
   <div class="panel shop-airbeam__comparison-container">
@@ -352,6 +385,86 @@ hasMerchantReturnPolicy:
       </div>
     </div>
   </div>
+  <hr class="panel-separator">
+
+  <div class="panel">
+    <div class="split--50" style="display: flex; justify-content: center; align-items: center;">
+      <a href="#buy-now" class="badge-link badge-link--hm">
+        <span class="u--vertically-centered">Get AirBeam</span>
+      </a>
+    </div>
+    <div class="split--50" style="display: flex; justify-content: center; flex-direction: column">
+      <h3 class="heading heading--small u--gray-text" style="margin-bottom: 1rem">
+        Contribute to the world's largest open-source, open-access database of community collected air quality measurements.
+      </h3>
+      <h3 class="heading heading--small u--gray-text">
+        All proceeds from AirBeam sales go directly towards advancing HabitatMap's mission to empower organizations and community scientists to measure pollution and advocate for equitable solutions to environmental health issues.
+      </h3>
+    </div>
+  </div>
+<hr class="panel-separator">
+  <div class="panel" style="justify-content: center">
+    <div class="youtube-shorts-container" style="display: flex; justify-content: space-between; gap: 20px; margin-top: 2rem; flex-direction: row; flex-wrap: wrap;">
+      <div class="youtube-short" style="flex: 1;">
+        <iframe
+          width="100%"
+          height="315"
+          src="https://www.youtube.com/embed/eTwvmZZA9pQ?si=oMXs0V3hb6paeG3p"
+          title="YouTube Shorts Video 1"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+      </div>
+      <div class="youtube-short" style="flex: 1;">
+        <iframe
+          width="100%"
+          height="315"
+          src="https://www.youtube.com/embed/Nn7FT2gipqA?si=9Vy9pc43n6ICbqY9"
+          title="YouTube Shorts Video 2"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+      </div>
+      <div class="youtube-short" style="flex: 1;">
+        <iframe
+          width="100%"
+          height="315"
+          src="https://www.youtube.com/embed/h_Om-M6AOu8?si=FBks5Ny-LVBHjocD"
+          title="YouTube Shorts Video 3"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </div>
+
+  <section class="panel panel--quote u--bg-green arc-background arc-background--right-opacity-15 arc-background--right-bottom-quote">
+    <div class="split--40">
+      <h2 class="heading heading--medium">
+        What Our Community
+        <br />
+        is Saying
+      </h2>
+    </div>
+    {% include testimonials-slider.html testimonials = site.testimonials %}
+  </section>
+
+  <div class="panel">
+    <div style="text-align: center">
+      <img
+        alt="AirBeam Mini in box"
+        class="img lazyload"
+        data-src="/assets/img/airbeam_in_a_box.jpg?nf_resize=fit&w=800"
+        src="/assets/img/airbeam_in_a_box.jpg?nf_resize=fit&w=20"
+        width="800"
+        height="600"
+        style="max-width: 100%; height: auto; border-radius: 8px;"
+      />
+    </div>
+  </div>
 
   <hr class="panel-separator">
 
@@ -361,7 +474,7 @@ hasMerchantReturnPolicy:
         Payment Methods
       </h2>
       <p class="p--body">
-        HabitatMap accepts credit card payments via PayPal. If you prefer to make payment via check or wire transfer, please email us at <a href="mailto:info@habitatmap.org">info@habitatmap.org</a> with your shipping address and the number of AirBeams you'd like to purchase. Note that we do not accept purchase orders.
+        HabitatMap accepts credit card payments via PayPal. If you prefer to make payment via check or wire transfer, please email us at <a href="mailto:info@habitatmap.org">info@habitatmap.org</a> with your shipping address and the number of AirBeams you'd like to purchase. Note that we do not accept purchase orders.
       </p>
        <h2 class="heading heading--medium u--gray-text">
         Warranty
@@ -387,12 +500,8 @@ hasMerchantReturnPolicy:
     </div>
   </div>
 
-  <hr class="panel-separator">
-
-  <p class="shop-airbeam__sub p--body">
-    *Of the 75 PM2.5 measuring instruments evaluated by the <a href="https://www.aqmd.gov/docs/default-source/aq-spec/summary/habitatmap-airbeam3---summary-report.pdf" class="link" target="_blank">SCAQMD AQ-SPEC program</a>, AirBeam3 is the most accurate when both the field and lab evaluations are considered.
-  </p>
-
 {% include inputValidate.html %}
 
 </section>
+
+{% include slider-init.html %}

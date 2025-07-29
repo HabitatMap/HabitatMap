@@ -88,6 +88,8 @@
 
   .slider--quote & {
     right: -5vw;
+    top: 50%;
+    transform: translateY(-50%);
   }
 
   .slider--user-stories & {
@@ -180,5 +182,37 @@
   .tns-nav {
     left: 0;
     bottom: -3rem;
+  }
+}
+
+// YouTube Shorts Container
+
+.youtube-shorts-container {
+  @media screen and (max-width: $tablet-max) {
+    flex-direction: column !important;
+
+    .youtube-short {
+      flex: none !important;
+      width: 100% !important;
+      margin-bottom: 20px;
+
+      iframe {
+        height: 500px !important;
+        max-width: 400px !important;
+        margin: 0 auto !important;
+        display: block !important;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  @media screen and (max-width: $large-mobile-max) {
+    .youtube-short iframe {
+      height: 450px !important;
+      max-width: 350px !important;
+    }
   }
 }
