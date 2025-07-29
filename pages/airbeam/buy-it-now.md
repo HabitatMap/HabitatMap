@@ -209,7 +209,6 @@ hasMerchantReturnPolicy:
 </script>
 
 <section class="shop-airbeam">
-  <!-- AirBeam Action Banner -->
   <div class="airbeam-action-banner-new">
     <div class="airbeam-action-banner-new__background-image"></div>
 
