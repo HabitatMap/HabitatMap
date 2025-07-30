@@ -208,25 +208,75 @@ hasMerchantReturnPolicy:
 }
 </script>
 
-<section class="shop-airbeam">
-  <section class="panel panel--hero u--bg-cyan lazyload buy-it-now-hero">
-    <div class="split--40">
-      <h1 class="heading heading--large heading--hero">
-        Most Accurate Portable Air Monitor
-      </h1>
-      <p class="p--hero">
-        A portable and easy to use air quality monitor that lets you see the pollution around you in real time.
-        Empower your community, protect your health, and take action with data you can trust.
-      </p>
-      <br>
-      <a href="#buy-now">
-        <button class="button button--cta">Buy It</button>
-      </a>
+<!-- Hero Section -->
+<section class="hero-section" style="position: relative; min-height: 50vh; overflow: hidden;">
+  <!-- Background Image -->
+  <div style="position: absolute; inset: 0; background-image: url('/assets/aircasting-1.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;"></div>
+
+  <!-- Overlay -->
+  <div style="position: absolute; inset: 0; background-color: rgba(0, 0, 0, 0.2);"></div>
+
+  <!-- Content -->
+  <div style="position: relative; z-index: 10; min-height: 50vh; display: flex; align-items: center;">
+    <div style="max-width: 1280px; margin: 0 auto; padding: 0 1rem; width: 100%;">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
+        <!-- Left Column - Content -->
+        <div style="color: white; display: flex; flex-direction: column; gap: 2rem;">
+          <h1 style="font-size: 3.75rem; font-weight: bold; line-height: 1.1; margin: 0;">
+            Know Your Air Quality in <span style="color: #67e8f9;">Real-Time</span>
+          </h1>
+
+          <p style="font-size: 1.5rem; color: rgba(255, 255, 255, 0.9); line-height: 1.6; margin: 0;">
+            Professional-grade air monitoring that fits in your pocket. Protect your health with instant readings anywhere you go.
+          </p>
+
+          <!-- CTAs -->
+          <div style="display: flex; flex-direction: row; gap: 1rem; margin-top: 1rem;">
+            <button
+              style="background: #1ea73f; color: white; border: none; padding: 0.75rem 2rem; font-size: 1.125rem; font-weight: 600; border-radius: 8px; cursor: pointer; transition: background-color 0.3s; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);"
+              onclick="document.getElementById('product-selection')?.scrollIntoView({ behavior: 'smooth' })"
+            >
+              Choose Your AirBeam
+            </button>
+            <button
+              style="background: rgba(255, 255, 255, 0.1); color: white; border: 1px solid rgba(255, 255, 255, 0.3); padding: 0.75rem 2rem; font-size: 1.125rem; font-weight: 600; border-radius: 8px; cursor: pointer; transition: all 0.3s; backdrop-filter: blur(4px);"
+              onclick="document.getElementById('demo-video')?.scrollIntoView({ behavior: 'smooth' })"
+            >
+              See It In Action
+            </button>
+          </div>
+        </div>
+
+        <!-- Right Column - Empty for image -->
+        <div></div>
+      </div>
     </div>
-  </section>
+
+  </div>
+</section>
 
   <section class="panel highlights">
-    <div class="highlights__item">
+    <div class="highlights__item feature-card">
+      <div class="feature-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <h2 class="heading heading--small heading--body">
+        Easy Setup in 5 Minutes or Less!
+      </h2>
+      <p>
+        App walks you through step by step + access
+        to video tutorial library.
+      </p>
+    </div>
+
+    <div class="highlights__item feature-card">
+      <div class="feature-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
       <h2 class="heading heading--small heading--body">
         No Subscriptions or Hidden Fees
       </h2>
@@ -237,36 +287,30 @@ hasMerchantReturnPolicy:
       </p>
     </div>
 
-    <div class="highlights__item">
-      <h2 class="heading heading--small heading--body">
-        Easy Setup in 5 Minutes or Less!
-      </h2>
-      <p>
-        App walks you through step by step + access
-        to video tutorial library.
-      </p>
-    </div>
-
-    <div class="highlights__item">
+    <div class="highlights__item feature-card">
+      <div class="feature-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="5" y="2" width="14" height="20" rx="2" ry="2" stroke="currentColor" stroke-width="2"/>
+          <line x1="12" y1="18" x2="12.01" y2="18" stroke="currentColor" stroke-width="2"/>
+        </svg>
+      </div>
       <h2 class="heading heading--small heading--body">
         Easy Data Access & Protection
       </h2>
       <p>
-        User-friendly dashboard makes seeing and
-        presenting trends and patterns easy.
+        User-friendly dashboard makes seeing and presenting trends easy, with on-board storage so you'll never lose data.
       </p>
     </div>
 
-    <div class="highlights__item">
-      <h2 class="heading heading--small heading--body">
-        Automatic Data Back-ups
-      </h2>
-      <p>
-        On-board storage saves measurements so you'll never lose data.
-      </p>
-    </div>
-
-    <div class="highlights__item">
+    <div class="highlights__item feature-card">
+      <div class="feature-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3 3v18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M18 17V9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M13 17V5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M8 17v-3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
       <h2 class="heading heading--small heading--body">
         Designed for Mobile Monitoring
       </h2>
@@ -278,47 +322,558 @@ hasMerchantReturnPolicy:
 
   </section>
 
-  <section class="panel panel--big-padding u--bg-blue-dark logos">
-    <div class="logos__item">
-      <img
-        data-src="/assets/img/pages/home/logos/the-new-york-times.png"
-        src="/assets/img/pages/home/logos/the-new-york-times.png?nf_resize=fit&w=20"
-        alt="The New York Times logo"
-        class="lazyload"
+  <section class="panel panel--small-padding u--bg-blue-dark logos">
+    <div class="logos-header">
+      <h2 class="heading heading--large text-center">
+        Featured In
+      </h2>
+      <p class="heading heading--small text-center">
+        Trusted by leading media and institutions worldwide
+      </p>
+    </div>
+    <div class="logos-container">
+      <div class="logos__item">
+        <img
+          data-src="/assets/img/pages/home/logos/the-new-york-times.png"
+          src="/assets/img/pages/home/logos/the-new-york-times.png?nf_resize=fit&w=20"
+          alt="The New York Times logo"
+          class="lazyload"
+        />
+            </div>
+      <div class="logos__item">
+        <img
+          data-src="/assets/img/pages/home/logos/fast-company.png"
+          src="/assets/img/pages/home/logos/fast-company.png?nf_resize=fit&w=20"
+          alt="Fast Company logo"
+          class="lazyload"
+        />
+            </div>
+      <div class="logos__item">
+        <img
+          data-src="/assets/img/pages/home/logos/daily-news.png"
+          src="/assets/img/pages/home/logos/daily-news.png?nf_resize=fit&w=20"
+          alt="Daily News logo"
+          class="lazyload"
+        />
+          </div>
+      <div class="logos__item">
+        <img
+          data-src="/assets/img/pages/home/logos/popular-science.png"
+          src="/assets/img/pages/home/logos/popular-science.png?nf_resize=fit&w=20"
+          alt="Popular Science logo"
+          class="lazyload"
+        />
+        </div>
+      <div class="logos__item">
+        <img
+          data-src="/assets/img/pages/home/logos/wired.png"
+          src="/assets/img/pages/home/logos/wired.png?nf_resize=fit&w=20"
+          alt="Wired logo"
+          class="lazyload"
+        />
+          </div>
+        </div>
+  </section>
+
+  <section class="panel panel--small-padding u--bg-blue-dark stats-section" style="padding: 2rem 4vw;">
+    <div class="stats-container">
+      <div class="stat-item">
+        <div class="stat-number">10,000+</div>
+        <div class="stat-label">Active Users Worldwide</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">50+</div>
+        <div class="stat-label">Countries Using AirBeam</div>
+    </div>
+      <div class="stat-item">
+        <div class="stat-number">100+</div>
+        <div class="stat-label">Research Institutions</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="panel" style="background-color: #f9fafb; padding: 4rem 2rem;">
+    <div style="max-width: 1200px; margin: 0 auto;">
+      <div style="text-align: center; margin-bottom: 3rem;">
+        <h2 class="heading heading--large" style="color: #111827; margin-bottom: 1rem;">AirBeam In Action</h2>
+
+            </div>
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1.5rem;">
+        <!-- Video 1: AirBeam in the Field -->
+        <div style="background: white; border-radius: 12px; padding: 0.75rem; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: box-shadow 0.3s ease;">
+          <div style="position: relative;">
+            <div style="position: absolute; top: 0.5rem; left: 0.5rem; width: 20px; height: 20px; background: #111827; border-radius: 50%; display: flex; align-items: center; justify-content: center; z-index: 10;">
+              <span style="color: white; font-weight: bold; font-size: 0.625rem;">h</span>
+            </div>
+            <div style="position: relative; aspect-ratio: 2/3; border-radius: 8px; overflow: hidden;">
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/eTwvmZZA9pQ?si=oMXs0V3hb6paeG3p"
+                title="AirBeam in the Field"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+                style="border-radius: 8px;">
+              </iframe>
+            </div>
+            <div style="position: absolute; top: 0.5rem; right: 0.5rem; background: rgba(0, 0, 0, 0.7); color: white; padding: 0.25rem 0.5rem; border-radius: 4px; font-size: 0.625rem;">AirBeam Unboxing</div>
+          </div>
+        </div>
+
+        <!-- Video 2: Easy Setup Guide -->
+        <div style="background: white; border-radius: 12px; padding: 0.75rem; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: box-shadow 0.3s ease;">
+          <div style="position: relative;">
+            <div style="position: absolute; top: 0.5rem; left: 0.5rem; width: 20px; height: 20px; background: #111827; border-radius: 50%; display: flex; align-items: center; justify-content: center; z-index: 10;">
+              <span style="color: white; font-weight: bold; font-size: 0.625rem;">h</span>
+            </div>
+            <div style="position: relative; aspect-ratio: 2/3; border-radius: 8px; overflow: hidden;">
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/Nn7FT2gipqA?si=9Vy9pc43n6ICbqY9"
+                title="Easy Setup Guide"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+                style="border-radius: 8px;">
+              </iframe>
+            </div>
+            <div style="position: absolute; top: 0.5rem; right: 0.5rem; background: rgba(0, 0, 0, 0.7); color: white; padding: 0.25rem 0.5rem; border-radius: 4px; font-size: 0.625rem;">Mobile Air Quality Monitoring...</div>
+          </div>
+        </div>
+
+        <!-- Video 3: Monitoring Indoor Air -->
+        <div style="background: white; border-radius: 12px; padding: 0.75rem; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: box-shadow 0.3s ease;">
+          <div style="position: relative;">
+            <div style="position: absolute; top: 0.5rem; left: 0.5rem; width: 20px; height: 20px; background: #111827; border-radius: 50%; display: flex; align-items: center; justify-content: center; z-index: 10;">
+              <span style="color: white; font-weight: bold; font-size: 0.625rem;">h</span>
+            </div>
+            <div style="position: relative; aspect-ratio: 2/3; border-radius: 8px; overflow: hidden;">
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/h_Om-M6AOu8?si=FBks5Ny-LVBHjocD"
+                title="Monitoring Indoor Air"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+                style="border-radius: 8px;">
+              </iframe>
+            </div>
+            <div style="position: absolute; top: 0.5rem; right: 0.5rem; background: rgba(0, 0, 0, 0.7); color: white; padding: 0.25rem 0.5rem; border-radius: 4px; font-size: 0.625rem;">AirBeam Mini Fixed Monitoring</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="panel product-comparison-section" style="background-color: #f9fafb; padding: 4rem 2rem;">
+    <div class="product-comparison-container" style="max-width: 1200px; margin: 0 auto;">
+      <div class="product-comparison-header" style="text-align: center; margin-bottom: 3rem;">
+        <h2 class="heading heading--large" style="color: #111827; margin-bottom: 1rem;">Choose Your Perfect AirBeam</h2>
+        <p class="heading heading--medium" style="color: #6b7280;">
+          Both models offer the same core accuracy. Choose based on your specific needs.
+        </p>
+    </div>
+
+      <div class="product-cards-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 2rem; margin-bottom: 3rem;">
+
+                <!-- AirBeam Mini Card -->
+        <div class="product-card" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: box-shadow 0.3s ease; position: relative;">
+
+          <div class="product-card-header" style="text-align: center; padding: 2rem 2rem 1rem;">
+            <h3 class="heading heading--medium" style="font-weight: bold; margin-bottom: 0.5rem;">AirBeam Mini</h3>
+            <div class="product-price" style="font-size: 2.5rem; font-weight: bold; color: #059669; margin-bottom: 0.5rem;">$99</div>
+            <p style="color: #6b7280;">Perfect for personal monitoring and mobile use</p>
+
+  </div>
+
+          <div class="product-card-content" style="padding: 0 2rem 2rem;">
+            <div class="product-image" style="aspect-ratio: 1; background: #f9fafb; border-radius: 8px; overflow: hidden; margin-bottom: 1.5rem;">
+              <img
+                data-src="/assets/buy-it-now_ABMsidebyside.jpg?nf_resize=fit&w=400"
+                src="/assets/buy-it-now_ABMsidebyside.jpg?nf_resize=fit&w=20"
+                alt="AirBeam Mini"
+                class="lazyload"
+                style="width: 100%; height: 100%; object-fit: contain; padding: 1rem;"
+              />
+    </div>
+
+            <div class="product-use-cases" style="margin-bottom: 1.5rem;">
+              <h4 style="font-weight: 600; color: #111827; margin-bottom: 0.75rem;">Perfect for:</h4>
+              <ul style="list-style: none; padding: 0; margin: 0;">
+                <li style="display: flex; align-items: center; font-size: 0.875rem; color: #6b7280; margin-bottom: 0.5rem;">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #059669; margin-right: 0.5rem; flex-shrink: 0;">
+                    <polyline points="20,6 9,17 4,12"></polyline>
+                  </svg>
+                  Personal health tracking
+                </li>
+                <li style="display: flex; align-items: center; font-size: 0.875rem; color: #6b7280; margin-bottom: 0.5rem;">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #059669; margin-right: 0.5rem; flex-shrink: 0;">
+                    <polyline points="20,6 9,17 4,12"></polyline>
+                  </svg>
+                  Commuting & travel
+                </li>
+                <li style="display: flex; align-items: center; font-size: 0.875rem; color: #6b7280; margin-bottom: 0.5rem;">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #059669; margin-right: 0.5rem; flex-shrink: 0;">
+                    <polyline points="20,6 9,17 4,12"></polyline>
+                  </svg>
+                  Indoor air quality
+                </li>
+                <li style="display: flex; align-items: center; font-size: 0.875rem; color: #6b7280; margin-bottom: 0.5rem;">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #059669; margin-right: 0.5rem; flex-shrink: 0;">
+                    <polyline points="20,6 9,17 4,12"></polyline>
+                  </svg>
+                  Educational projects
+                </li>
+              </ul>
+            </div>
+
+            <div class="product-features" style="margin-bottom: 1.5rem;">
+              <h4 style="font-weight: 600; color: #111827; margin-bottom: 0.75rem;">Key Features:</h4>
+              <div style="display: grid; gap: 0.75rem;">
+                <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.875rem;">
+                  <span style="color: #6b7280;">PM1 & PM2.5 Monitoring</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #059669;">
+                    <polyline points="20,6 9,17 4,12"></polyline>
+                  </svg>
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.875rem;">
+                  <span style="color: #6b7280;">PM10 Monitoring</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #d1d5db;">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <polyline points="6,6 18,18"></polyline>
+                  </svg>
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.875rem;">
+                  <span style="color: #6b7280;">Temperature & Humidity</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #d1d5db;">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <polyline points="6,6 18,18"></polyline>
+                  </svg>
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.875rem;">
+                  <span style="color: #6b7280;">Cellular Connectivity</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #d1d5db;">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <polyline points="6,6 18,18"></polyline>
+                  </svg>
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.875rem;">
+                  <span style="color: #6b7280;">GPS Tracking</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #d1d5db;">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <polyline points="6,6 18,18"></polyline>
+                  </svg>
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.875rem;">
+                  <span style="color: #6b7280;">Battery Life</span>
+                  <span style="color: #111827; font-weight: 500;">14 hours mobile</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.875rem;">
+                  <span style="color: #6b7280;">Weather Resistance</span>
+                  <span style="color: #111827; font-weight: 500;">Fully resistant</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.875rem;">
+                  <span style="color: #6b7280;">Weight</span>
+                  <span style="color: #111827; font-weight: 500;">4 ounces</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.875rem;">
+                  <span style="color: #6b7280;">Data Storage</span>
+                  <span style="color: #111827; font-weight: 500;">55 days</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-cta" style="padding-top: 1rem;">
+              <div class="shop-airbeam__buy-button" style="margin-bottom: 0.75rem;">
+                {% include paypal-button-ab-mini.html %}
+              </div>
+              <div style="text-align: center; font-size: 0.875rem; color: #6b7280;">
+                ✓ 30-day money-back guarantee • ✓ Free shipping over $150
+              </div>
+            </div>
+          </div>
+        </div>
+
+                <!-- AirBeam3 Card -->
+        <div class="product-card" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: box-shadow 0.3s ease; position: relative;">
+
+          <div class="product-card-header" style="text-align: center; padding: 2rem 2rem 1rem;">
+            <h3 class="heading heading--medium" style="font-weight: bold; margin-bottom: 0.5rem;">AirBeam3</h3>
+            <div class="product-price" style="font-size: 2.5rem; font-weight: bold; color: #059669; margin-bottom: 0.5rem;">$199</div>
+            <p style="color: #6b7280;">Comprehensive monitoring for research and community mapping</p>
+          </div>
+
+          <div class="product-card-content" style="padding: 0 2rem 2rem;">
+            <div class="product-image" style="aspect-ratio: 1; background: #f9fafb; border-radius: 8px; overflow: hidden; margin-bottom: 1.5rem;">
+              <img
+                data-src="/assets/img/airbeam-buy-it-now.jpg?nf_resize=fit&w=400"
+                src="/assets/img/airbeam-buy-it-now.jpg?nf_resize=fit&w=20"
+                alt="AirBeam3"
+                class="lazyload"
+                style="width: 100%; height: 100%; object-fit: contain; padding: 1rem;"
       />
     </div>
-    <div class="logos__item">
-      <img
-        data-src="/assets/img/pages/home/logos/fast-company.png"
-        src="/assets/img/pages/home/logos/fast-company.png?nf_resize=fit&w=20"
-        alt="Fast Company logo"
-        class="lazyload"
-      />
+
+            <div class="product-use-cases" style="margin-bottom: 1.5rem;">
+              <h4 style="font-weight: 600; color: #111827; margin-bottom: 0.75rem;">Perfect for:</h4>
+              <ul style="list-style: none; padding: 0; margin: 0;">
+                <li style="display: flex; align-items: center; font-size: 0.875rem; color: #6b7280; margin-bottom: 0.5rem;">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #059669; margin-right: 0.5rem; flex-shrink: 0;">
+                    <polyline points="20,6 9,17 4,12"></polyline>
+                  </svg>
+                  Research projects
+                </li>
+                <li style="display: flex; align-items: center; font-size: 0.875rem; color: #6b7280; margin-bottom: 0.5rem;">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #059669; margin-right: 0.5rem; flex-shrink: 0;">
+                    <polyline points="20,6 9,17 4,12"></polyline>
+                  </svg>
+                  Community mapping
+                </li>
+                <li style="display: flex; align-items: center; font-size: 0.875rem; color: #6b7280; margin-bottom: 0.5rem;">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #059669; margin-right: 0.5rem; flex-shrink: 0;">
+                    <polyline points="20,6 9,17 4,12"></polyline>
+                  </svg>
+                  Environmental monitoring
+                </li>
+                <li style="display: flex; align-items: center; font-size: 0.875rem; color: #6b7280; margin-bottom: 0.5rem;">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #059669; margin-right: 0.5rem; flex-shrink: 0;">
+                    <polyline points="20,6 9,17 4,12"></polyline>
+                  </svg>
+                  Long-term studies
+                </li>
+              </ul>
+
+  </div>
+
+            <div class="product-features" style="margin-bottom: 1.5rem;">
+              <h4 style="font-weight: 600; color: #111827; margin-bottom: 0.75rem;">Key Features:</h4>
+              <div style="display: grid; gap: 0.75rem;">
+                <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.875rem;">
+                  <span style="color: #6b7280;">PM1 & PM2.5 Monitoring</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #059669;">
+                    <polyline points="20,6 9,17 4,12"></polyline>
+                  </svg>
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.875rem;">
+                  <span style="color: #6b7280;">PM10 Monitoring</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #059669;">
+                    <polyline points="20,6 9,17 4,12"></polyline>
+                  </svg>
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.875rem;">
+                  <span style="color: #6b7280;">Temperature & Humidity</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #059669;">
+                    <polyline points="20,6 9,17 4,12"></polyline>
+                  </svg>
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.875rem;">
+                  <span style="color: #6b7280;">Cellular Connectivity</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #059669;">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <polyline points="6,6 18,18"></polyline>
+                  </svg>
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.875rem;">
+                  <span style="color: #6b7280;">GPS Tracking</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #059669;">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <polyline points="6,6 18,18"></polyline>
+                  </svg>
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.875rem;">
+                  <span style="color: #6b7280;">Battery Life</span>
+                  <span style="color: #111827; font-weight: 500;">17 hours mobile</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.875rem;">
+                  <span style="color: #6b7280;">Weather Resistance</span>
+                  <span style="color: #111827; font-weight: 500;">Requires protection</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.875rem;">
+                  <span style="color: #6b7280;">Weight</span>
+                  <span style="color: #111827; font-weight: 500;">6 ounces</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.875rem;">
+                  <span style="color: #6b7280;">Data Storage</span>
+                  <span style="color: #111827; font-weight: 500;">256 days</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-cta" style="padding-top: 1rem;">
+              <div class="shop-airbeam__buy-button" style="margin-bottom: 0.75rem;">
+                {% include paypal-button.html %}
     </div>
-    <div class="logos__item">
-      <img
-        data-src="/assets/img/pages/home/logos/daily-news.png"
-        src="/assets/img/pages/home/logos/daily-news.png?nf_resize=fit&w=20"
-        alt="Daily News logo"
-        class="lazyload"
-      />
+              <div style="text-align: center; font-size: 0.875rem; color: #6b7280;">
+                ✓ 30-day money-back guarantee • ✓ Free shipping over $150
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Decision Helper -->
+      <div class="decision-helper" style="background: white; border-radius: 12px; padding: 2rem; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+        <h3 style="text-align: center; font-size: 1.25rem; font-weight: bold; color: #111827; margin-bottom: 1.5rem;">Still not sure which one to choose?</h3>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+          <div style="text-align: center; padding: 1.5rem; background: #eff6ff; border-radius: 8px;">
+            <h4 style="font-weight: 600; color: #1e40af; margin-bottom: 0.5rem;">Choose AirBeam Mini if:</h4>
+            <ul style="list-style: none; padding: 0; margin: 0; text-align: left; font-size: 0.875rem; color: #1e40af;">
+              <li style="margin-bottom: 0.25rem;">• You want personal air quality monitoring</li>
+              <li style="margin-bottom: 0.25rem;">• Budget is a primary concern</li>
+              <li style="margin-bottom: 0.25rem;">• You need maximum portability</li>
+              <li style="margin-bottom: 0.25rem;">• You're just getting started</li>
+            </ul>
+          </div>
+          <div style="text-align: center; padding: 1.5rem; background: #f0fdf4; border-radius: 8px;">
+            <h4 style="font-weight: 600; color: #166534; margin-bottom: 0.5rem;">Choose AirBeam3 if:</h4>
+            <ul style="list-style: none; padding: 0; margin: 0; text-align: left; font-size: 0.875rem; color: #166534;">
+              <li style="margin-bottom: 0.25rem;">• You need comprehensive environmental data</li>
+              <li style="margin-bottom: 0.25rem;">• You want cellular connectivity</li>
+              <li style="margin-bottom: 0.25rem;">• You're doing research or community mapping</li>
+              <li style="margin-bottom: 0.25rem;">• You need GPS tracking</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="logos__item">
-      <img
-        data-src="/assets/img/pages/home/logos/popular-science.png"
-        src="/assets/img/pages/home/logos/popular-science.png?nf_resize=fit&w=20"
-        alt="Popular Science logo"
-        class="lazyload"
-      />
+
+  </section>
+
+  <section class="panel" style="padding: 4rem 2rem; background-color: #f9fafb;">
+    <div style="max-width: 1200px; margin: 0 auto;">
+      <div style="background: white; border-radius: 12px; padding: 3rem; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); border: 1px solid #e5e7eb; text-align: center;">
+        <h3 style="font-size: 1.5rem; font-weight: bold; color: #059669; margin-bottom: 1rem;">Need AirBeams for Your Team or Classroom?</h3>
+        <p style="color: #6b7280; font-size: 1.125rem; line-height: 1.6; margin-bottom: 2rem;">Get one-on-one research design and implementation help with bulk orders</p>
+        <a href="/airbeam/get-consultation" style="display: inline-block; padding: 0.75rem 2rem; border: none; color: #111827; text-decoration: none; border-radius: 6px; font-size: 1rem; font-weight: 600; transition: all 0.2s; background: #fbbf24;">
+          Schedule Free Consultation
+        </a>
+      </div>
     </div>
-    <div class="logos__item">
-      <img
-        data-src="/assets/img/pages/home/logos/wired.png"
-        src="/assets/img/pages/home/logos/wired.png?nf_resize=fit&w=20"
-        alt="Wired logo"
-        class="lazyload"
-      />
+  </section>
+
+  <section class="panel" style="background-color: #f0fdf4; padding: 4rem 2rem;">
+    <div class="testimonials-container" style="max-width: 1200px; margin: 0 auto;">
+      <div class="testimonials-header" style="text-align: center; margin-bottom: 3rem;">
+        <h2 class="heading heading--large" style="color: #111827; margin-bottom: 1rem;">Trusted by Researchers & Communities</h2>
+        <p class="heading heading--medium" style="color: #6b7280;">See how AirBeam is making a real impact around the world</p>
+      </div>
+
+      <div class="testimonials-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem;">
+
+        <!-- Testimonial 1 - Data Visualization Power -->
+        <div class="testimonial-card" style="background: white; border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: box-shadow 0.3s ease; height: 100%; display: flex; flex-direction: column;">
+          <div class="testimonial-category" style="display: flex; align-items: center; margin-bottom: 1rem;">
+            <div style="width: 40px; height: 40px; background: #dcfce7; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-right: 0.75rem;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #059669;">
+                <path d="M3 3v18h18"></path>
+                <path d="M18 17V9"></path>
+                <path d="M13 17V5"></path>
+                <path d="M8 17v-3"></path>
+              </svg>
+            </div>
+            <div style="font-size: 0.875rem; font-weight: 600; color: #166534;">Data Visualization Power</div>
+          </div>
+
+          <blockquote style="color: #374151; margin-bottom: 1.5rem; font-style: italic; font-size: 1rem; line-height: 1.6; flex-grow: 1;">
+            "The AirBeam increases <strong>visibility</strong> of what's invisible."
+          </blockquote>
+
+          <div class="testimonial-author" style="display: flex; align-items: center; margin-top: auto;">
+            <div style="width: 48px; height: 48px; background: #f3f4f6; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 0.75rem;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #6b7280;">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+            </div>
+        <div>
+              <div style="font-weight: 600; color: #111827;">Dawn Roberts-Semple</div>
+              <div style="font-size: 0.875rem; color: #6b7280;">York College CUNY</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 - Educational Excellence -->
+        <div class="testimonial-card" style="background: white; border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: box-shadow 0.3s ease; height: 100%; display: flex; flex-direction: column;">
+          <div class="testimonial-category" style="display: flex; align-items: center; margin-bottom: 1rem;">
+            <div style="width: 40px; height: 40px; background: #dcfce7; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-right: 0.75rem;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #059669;">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+              </svg>
+            </div>
+            <div style="font-size: 0.875rem; font-weight: 600; color: #166534;">Educational Excellence</div>
+          </div>
+
+          <blockquote style="color: #374151; margin-bottom: 1.5rem; font-style: italic; font-size: 1rem; line-height: 1.6; flex-grow: 1;">
+            "AirBeam is <strong>affordable</strong>, <strong>accurate</strong>, and <strong>easy to transport</strong>. Students love that they get to use scientific technology and can make sense of what it's saying."
+          </blockquote>
+
+          <div class="testimonial-author" style="display: flex; align-items: center; margin-top: auto;">
+            <div style="width: 48px; height: 48px; background: #f3f4f6; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 0.75rem;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #6b7280;">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+            </div>
+            <div>
+              <div style="font-weight: 600; color: #111827;">East Bay Academy</div>
+              <div style="font-size: 0.875rem; color: #6b7280;">for Young Scientists</div>
+            </div>
+            </div>
+            </div>
+
+        <!-- Testimonial 3 - Community Empowerment -->
+        <div class="testimonial-card" style="background: white; border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: box-shadow 0.3s ease; height: 100%; display: flex; flex-direction: column;">
+          <div class="testimonial-category" style="display: flex; align-items: center; margin-bottom: 1rem;">
+            <div style="width: 40px; height: 40px; background: #dcfce7; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-right: 0.75rem;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #059669;">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+          </div>
+            <div style="font-size: 0.875rem; font-weight: 600; color: #166534;">Community Empowerment</div>
+        </div>
+
+          <blockquote style="color: #374151; margin-bottom: 1.5rem; font-style: italic; font-size: 1rem; line-height: 1.6; flex-grow: 1;">
+            "AirCasting puts air quality data collection <strong>in the hands of ordinary people and under-resourced organizations</strong>. It has been a powerful experience for people impacted by poor air quality to <strong>measure air quality first hand</strong>."
+          </blockquote>
+
+          <div class="testimonial-author" style="display: flex; align-items: center; margin-top: auto;">
+            <div style="width: 48px; height: 48px; background: #f3f4f6; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 0.75rem;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #6b7280;">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+          </div>
+            <div>
+              <div style="font-weight: 600; color: #111827;">Jen Chantrtanapichate</div>
+              <div style="font-size: 0.875rem; color: #6b7280;">Cleanup North Brooklyn</div>
+        </div>
+      </div>
     </div>
+
+  </div>
+
+      <div style="margin-top: 3rem; text-align: center;">
+        <p style="color: #6b7280; margin-bottom: 1.5rem;">Join <strong>educators</strong>, <strong>researchers</strong>, and <strong>community advocates</strong> worldwide</p>
+        <div style="display: flex; flex-direction: row; gap: 1rem; justify-content: center; align-items: center;">
+          <a href="https://www.habitatmap.org/airbeam/how-it-works" class="button button--cta" style="padding: 0.75rem 1.5rem; background: #1ea73f; color: white; border-radius: 8px; text-decoration: none; font-weight: 600; transition: background-color 0.3s ease;">
+            Start Your Project Today
+          </a>
+          <a href="https://www.habitatmap.org/airbeam/user-stories" class="button" style="padding: 0.75rem 1.5rem; border: 1px solid #d1d5db; color: #374151; border-radius: 8px; text-decoration: none; font-weight: 600; transition: background-color 0.3s ease;">
+            Read More Success Stories
+      </a>
+    </div>
+      </div>
+    </div>
+
   </section>
 
   <section class="panel panel--big-padding u--bg-white">
@@ -361,490 +916,191 @@ hasMerchantReturnPolicy:
                 alt="Google Play badge"
               />
             </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="panel panel--quote u--bg-green arc-background arc-background--right-opacity-15 arc-background--right-bottom-quote">
-    <div class="split--40">
-      <h2 class="heading heading--medium">
-        What Our Community
-        <br />
-        is Saying
-      </h2>
-    </div>
-    {% include testimonials-slider.html testimonials = site.testimonials %}
-  </section>
-
-  <section class="panel">
-    <div class="split--40" style="display: flex; justify-content: center; flex-direction: column">
-      <h2 class="heading heading--medium u--gray-text" style="margin-bottom: 1rem">
-        Join a global movement for environmental justice
-      </h2>
-      <h3 class="heading heading--small u--gray-text" style="margin-bottom: 1rem">
-        Contribute to the world's largest open-source, open-access database of community collected air quality measurements.
-      </h3>
-      <h3 class="heading heading--small u--gray-text">
-        All proceeds from AirBeam sales go directly towards advancing HabitatMap's mission to empower organizations and community scientists to measure pollution and advocate for equitable solutions to environmental health issues.
-      </h3>
-    </div>
-    <div class="split--50" style="display: flex; justify-content: center; align-items: center;">
-      <img
-        data-src="/assets/img/pages/aircasting/aircasting_1.jpg?nf_resize=fit&w=600"
-        src="/assets/img/pages/aircasting/aircasting_1.jpg?nf_resize=fit&w=20"
-        alt="AirCasting device in use"
-        class="lazyload"
-        width="600"
-        height="400"
-        style="max-width: 100%; height: auto; border-radius: 8px;"
-      />
-    </div>
-  </section>
-
-  <section class="panel">
-    <div class="split--50" style="display: flex; justify-content: center; align-items: center;">
-      <img
-        data-src="/assets/community.jpg?nf_resize=fit&w=600"
-        src="/assets/community.jpg?nf_resize=fit&w=20"
-        alt="Community mural and people"
-        class="lazyload"
-        width="600"
-        height="400"
-        style="max-width: 100%; height: auto; border-radius: 8px;"
-      />
-    </div>
-    <div class="split--40" style="display: flex; justify-content: center; flex-direction: column">
-      <h2 class="heading heading--medium u--gray-text" style="margin-bottom: 1rem">
-        Trusted tools for community action
-      </h2>
-      <div class="trusted-tools-content">
-        <div class="tool-item">
-          <h3 class="heading heading--small u--gray-text">
-            Recommended by Top Institutions
-          </h3>
-          <p class="p--body">
-            Trusted by Educators and Researchers at Top Educational Institutions and Backed by the Clean Air Fund.
-          </p>
-        </div>
-        <div class="tool-item">
-          <h3 class="heading heading--small u--gray-text">
-            Transparency & Our Non-Profit Ethos
-          </h3>
-          <p class="p--body">
-            Easy and Free Access to Data, no restrictions. Always Open Source Built!
-          </p>
-        </div>
-        <div class="tool-item">
-          <h3 class="heading heading--small u--gray-text">
-            Free Research Design Tools, Download Toolkits & Curriculums
-          </h3>
-          <p class="p--body">
-            AirCasting Actions has everything you need to get started with air monitoring, whether you're an individual, an educator, or part of an organized community effort.
-            <br>
-            <a href="https://aircastingactions.org" target="_blank" class="link--underlined">Explore Tools and Curriculum</a>
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="for-teams u--align-center" style="padding-bottom: 4rem;">
-    <h2 class="for-teams__heading heading">Breathe smarter with portable air quality insights</h2>
-    <p class="for-teams__get-help">Get One-on-One Research Design and Implementation Help</p>
-    <a href="/airbeam/get-consultation" class="button button--cta">Schedule a Free Consultation</a>
-  </section>
-
-  <section class="u--bg-green" aria-labelledby="in-action-heading" style="padding: 0 20vw 2rem 20vw;">
-    <div style="text-align: center; width: 100%; padding-top: 2rem;">
-      <h2 id="in-action-heading" class="heading heading--medium" style="color: white;">
-        In Action
-      </h2>
-    </div>
-    <div class="youtube-shorts-container" style="display: flex; justify-content: space-between; gap: 20px; flex-direction: row; flex-wrap: wrap;">
-      <figure class="youtube-short" style="flex: 1;">
-        <iframe
-          width="100%"
-          height="400"
-          src="https://www.youtube.com/embed/eTwvmZZA9pQ?si=oMXs0V3hb6paeG3p"
-          title="YouTube Shorts Video 1"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen>
-        </iframe>
-      </figure>
-      <figure class="youtube-short" style="flex: 1;">
-        <iframe
-          width="100%"
-          height="400"
-          src="https://www.youtube.com/embed/Nn7FT2gipqA?si=9Vy9pc43n6ICbqY9"
-          title="YouTube Shorts Video 2"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen>
-        </iframe>
-      </figure>
-      <figure class="youtube-short" style="flex: 1;">
-        <iframe
-          width="100%"
-          height="400"
-          src="https://www.youtube.com/embed/h_Om-M6AOu8?si=FBks5Ny-LVBHjocD"
-          title="YouTube Shorts Video 3"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen>
-        </iframe>
-      </figure>
-    </div>
-  </section>
-
-  <section class="panel" style="text-align: center;">
-    <h2 class="heading heading--medium u--gray-text">
-      Get your pocket-sized air quality lab
-    </h2>
-
-   <div class="shop-airbeam__products" style="display: flex; flex-wrap: wrap; margin-top: 2rem;">
-      <div class="panel shop-airbeam__product" style="flex: 1; min-width: 300px;">
-        <img
-          alt="Airbeam"
-          class="img lazyload shop-airbeam-image"
-          data-src="/assets/img/airbeam-buy-it-now.jpg?nf_resize=fit&w=750"
-          src="/assets/img/airbeam-buy-it-now.jpg?nf_resize=fit&w=20"
-          width="750"
-          height="422"
-        />
-        <div class="product__content">
-          <div>
-            <h2 class="heading heading--small u--margin-bottom-tiny">AirBeam3</h2>
-            <div class="order-details-container">
-              <span>Price per unit: $199</span>
-              <div>
-                <label for="quantity">Quantity:</label>
-                <input class="quantity-input" id="quantity" type="number" min='1' value='1'>
-              </div>
-              <div class="shipping-options-container">
-                <label for="shipping-options">Shipping:</label>
-                <select name="shipping-options" id="shipping-options">
-                  <option value="domestic">Domestic US</option>
-                  <option value="international">Outside the US</option>
-                </select>
-              </div>
-              <div id="cost-info" class="cost-info">Shipping costs will be calculated at checkout.</div>
+            </div>
+            </div>
             </div>
           </div>
-          <div class="shop-airbeam__buttons-container">
-            <div class="shop-airbeam__buy-button">
-              {% include paypal-button.html %}
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="panel shop-airbeam__product" style="flex: 1; min-width: 300px;">
-        <img
-          alt="Airbeam Mini"
-          class="img lazyload shop-airbeam-image"
-          data-src="/assets/buy-it-now_ABMsidebyside.jpg?nf_resize=fit&w=750"
-          src="/assets/buy-it-now_ABMsidebyside.jpg?nf_resize=fit&w=20"
-          width="750"
-          height="422"
-        />
-        <div class="product__content">
-          <div>
-            <h2 class="heading heading--small u--margin-bottom-tiny">AirBeam Mini</h2>
-            <div class="order-details-container">
-              <span>Price per unit: $99</span>
-              <div>
-                <label for="quantity">Quantity:</label>
-                <input class="quantity-input" id="ab-mini-quantity" type="number" min='1' value='1' onchange="validateQuantityABMini(this)">
-              </div>
-              <div class="quantity-notification-container">
-                <div class="quantity-notification-text" id="ab-mini-quantity-notification"></div>
-              </div>
-              <div class="shipping-options-container">
-                <label for="shipping-options">Shipping:</label>
-                <select name="shipping-options" id="ab-mini-shipping-options">
-                  <option value="domestic">Domestic US</option>
-                  <option value="international">Outside the US</option>
-                </select>
-              </div>
-              <div id="ab-mini-cost-info" class="cost-info">Shipping costs will be calculated at checkout.</div>
-            </div>
-          </div>
-          <div class="shop-airbeam__buttons-container">
-            <div class="shop-airbeam__buy-button">
-              {% include paypal-button-ab-mini.html %}
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
   </section>
 
-  <section class="panel shop-airbeam__comparison-container">
-    <div class="shop-airbeam__comparison">
-      {% include airbeam-comparison-table.html %}
-      <div class="shop-airbeam__comparison-summary">
+  <section class="panel" style="padding: 4rem 2rem; background-color: #ffffff;">
+    <div style="max-width: 1200px; margin: 0 auto; width: 100%;">
+      <div style="text-align: center; margin-bottom: 3rem;">
+        <h2 style="font-size: 2rem; font-weight: bold; color: #111827; margin-bottom: 1rem;">Frequently Asked Questions</h2>
+        <p style="font-size: 1.25rem; color: #6b7280;">Get answers to common questions about AirBeam devices</p>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 2rem;">
+        <!-- Getting Started Category -->
         <div>
-          <h3 class="heading heading--small u--gray-text">
-            Choose AirBeam Mini if you want:
-          </h3>
-          <ul class="comparison-summary__list">
-            <li>Lower cost</li>
-            <li>Smaller size</li>
-            <li>Lighter weight</li>
-            <li>Fully weather resistant</li>
-          </ul>
+          <h3 style="font-size: 1.25rem; font-weight: bold; color: #111827; margin-bottom: 1rem; border-bottom: 2px solid #e5e7eb; padding-bottom: 0.5rem;">Getting Started</h3>
+          <div style="display: flex; flex-direction: column; gap: 1rem;">
+
+            <!-- FAQ Item 1 -->
+            <div style="background: white; border: 1px solid #e5e7eb; border-radius: 8px; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);">
+              <button class="faq-toggle" style="width: 100%; padding: 1.5rem; text-align: left; display: flex; justify-content: space-between; align-items: center; background: none; border: none; cursor: pointer; font-weight: 600; color: #111827; transition: background-color 0.2s;" onclick="toggleFAQ(this)">
+                <span style="padding-right: 1rem;">What's the difference between AirBeam Mini and AirBeam3?</span>
+                <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #6b7280; flex-shrink: 0; transition: transform 0.2s;">
+                  <polyline points="6,9 12,15 18,9"></polyline>
+                </svg>
+              </button>
+              <div class="faq-content" style="display: none; padding: 0 1.5rem 1.5rem;">
+                <p style="color: #6b7280; line-height: 1.6;">AirBeam Mini ($99) is perfect for personal monitoring - lightweight, affordable, measures PM1 and PM2.5. AirBeam3 ($199) is ideal for research with cellular connectivity, GPS, and measures PM1, PM2.5, PM10, temperature, and humidity.</p>
+              </div>
+            </div>
+
+            <!-- FAQ Item 2 -->
+            <div style="background: white; border: 1px solid #e5e7eb; border-radius: 8px; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);">
+              <button class="faq-toggle" style="width: 100%; padding: 1.5rem; text-align: left; display: flex; justify-content: space-between; align-items: center; background: none; border: none; cursor: pointer; font-weight: 600; color: #111827; transition: background-color 0.2s;" onclick="toggleFAQ(this)">
+                <span style="padding-right: 1rem;">How accurate are AirBeam devices?</span>
+                <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #6b7280; flex-shrink: 0; transition: transform 0.2s;">
+                  <polyline points="6,9 12,15 18,9"></polyline>
+                </svg>
+              </button>
+              <div class="faq-content" style="display: none; padding: 0 1.5rem 1.5rem;">
+                <p style="color: #6b7280; line-height: 1.6;">AirBeam devices are 'quite accurate' according to independent evaluations by South Coast Air Quality Management District and NYU researchers. Measurements closely match reference instruments.</p>
+              </div>
+            </div>
+
+            <!-- FAQ Item 3 -->
+            <div style="background: white; border: 1px solid #e5e7eb; border-radius: 8px; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);">
+              <button class="faq-toggle" style="width: 100%; padding: 1.5rem; text-align: left; display: flex; justify-content: space-between; align-items: center; background: none; border: none; cursor: pointer; font-weight: 600; color: #111827; transition: background-color 0.2s;" onclick="toggleFAQ(this)">
+                <span style="padding-right: 1rem;">How long does setup take?</span>
+                <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #6b7280; flex-shrink: 0; transition: transform 0.2s;">
+                  <polyline points="6,9 12,15 18,9"></polyline>
+                </svg>
+              </button>
+              <div class="faq-content" style="display: none; padding: 0 1.5rem 1.5rem;">
+                <p style="color: #6b7280; line-height: 1.6;">Setup takes under 2 minutes! The app guides you step-by-step with video tutorials. No technical knowledge required.</p>
+              </div>
+            </div>
+          </div>
         </div>
+
+        <!-- Purchasing & Shipping Category -->
         <div>
-          <h3 class="heading heading--small u--gray-text">
-            Choose AirBeam3 if you want:
-          </h3>
-          <ul class="comparison-summary__list">
-            <li>Cellular data transmission</li>
-            <li>Temperature & humidity measurements</li>
-            <li>Standalone location tracking</li>
-            <li>Longer battery runtime</li>
-            <li>Removable data storage</li>
-            <li class="comparison-summary__item">Higher capacity data storage</li>
-            <li class="comparison-summary__item">Mobile data stored at 1-second intervals</li>
-          </ul>
+          <h3 style="font-size: 1.25rem; font-weight: bold; color: #111827; margin-bottom: 1rem; border-bottom: 2px solid #e5e7eb; padding-bottom: 0.5rem;">Purchasing & Shipping</h3>
+          <div style="display: flex; flex-direction: column; gap: 1rem;">
+
+            <!-- FAQ Item 1 -->
+            <div style="background: white; border: 1px solid #e5e7eb; border-radius: 8px; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);">
+              <button class="faq-toggle" style="width: 100%; padding: 1.5rem; text-align: left; display: flex; justify-content: space-between; align-items: center; background: none; border: none; cursor: pointer; font-weight: 600; color: #111827; transition: background-color 0.2s;" onclick="toggleFAQ(this)">
+                <span style="padding-right: 1rem;">What are the shipping costs?</span>
+                <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #6b7280; flex-shrink: 0; transition: transform 0.2s;">
+                  <polyline points="6,9 12,15 18,9"></polyline>
+                </svg>
+              </button>
+              <div class="faq-content" style="display: none; padding: 0 1.5rem 1.5rem;">
+                <p style="color: #6b7280; line-height: 1.6;">US Domestic: $10 for first unit, $5 each additional. International: $35 for first unit, $10 each additional. Expedited shipping available.</p>
+              </div>
+            </div>
+
+            <!-- FAQ Item 2 -->
+            <div style="background: white; border: 1px solid #e5e7eb; border-radius: 8px; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);">
+              <button class="faq-toggle" style="width: 100%; padding: 1.5rem; text-align: left; display: flex; justify-content: space-between; align-items: center; background: none; border: none; cursor: pointer; font-weight: 600; color: #111827; transition: background-color 0.2s;" onclick="toggleFAQ(this)">
+                <span style="padding-right: 1rem;">What's your return policy?</span>
+                <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #6b7280; flex-shrink: 0; transition: transform 0.2s;">
+                  <polyline points="6,9 12,15 18,9"></polyline>
+                </svg>
+              </button>
+              <div class="faq-content" style="display: none; padding: 0 1.5rem 1.5rem;">
+                <p style="color: #6b7280; line-height: 1.6;">30-day money-back guarantee. Non-functioning units can be returned for replacement within 30 days. All sales are final after 30 days.</p>
+              </div>
+            </div>
+
+            <!-- FAQ Item 3 -->
+            <div style="background: white; border: 1px solid #e5e7eb; border-radius: 8px; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);">
+              <button class="faq-toggle" style="width: 100%; padding: 1.5rem; text-align: left; display: flex; justify-content: space-between; align-items: center; background: none; border: none; cursor: pointer; font-weight: 600; color: #111827; transition: background-color 0.2s;" onclick="toggleFAQ(this)">
+                <span style="padding-right: 1rem;">What payment methods do you accept?</span>
+                <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #6b7280; flex-shrink: 0; transition: transform 0.2s;">
+                  <polyline points="6,9 12,15 18,9"></polyline>
+                </svg>
+              </button>
+              <div class="faq-content" style="display: none; padding: 0 1.5rem 1.5rem;">
+                <p style="color: #6b7280; line-height: 1.6;">We accept credit cards via PayPal (no PayPal account required). For wire transfer or check payments, email info@habitatmap.org.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Technical Specifications Category -->
+        <div>
+          <h3 style="font-size: 1.25rem; font-weight: bold; color: #111827; margin-bottom: 1rem; border-bottom: 2px solid #e5e7eb; padding-bottom: 0.5rem;">Technical Specifications</h3>
+          <div style="display: flex; flex-direction: column; gap: 1rem;">
+
+            <!-- FAQ Item 1 -->
+            <div style="background: white; border: 1px solid #e5e7eb; border-radius: 8px; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);">
+              <button class="faq-toggle" style="width: 100%; padding: 1.5rem; text-align: left; display: flex; justify-content: space-between; align-items: center; background: none; border: none; cursor: pointer; font-weight: 600; color: #111827; transition: background-color 0.2s;" onclick="toggleFAQ(this)">
+                <span style="padding-right: 1rem;">How long does the battery last?</span>
+                <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #6b7280; flex-shrink: 0; transition: transform 0.2s;">
+                  <polyline points="6,9 12,15 18,9"></polyline>
+                </svg>
+              </button>
+              <div class="faq-content" style="display: none; padding: 0 1.5rem 1.5rem;">
+                <p style="color: #6b7280; line-height: 1.6;">AirBeam Mini: 14 hours mobile, 24 hours fixed mode. AirBeam3: 17 hours mobile, 31 hours fixed WiFi mode.</p>
+              </div>
+            </div>
+
+            <!-- FAQ Item 2 -->
+            <div style="background: white; border: 1px solid #e5e7eb; border-radius: 8px; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);">
+              <button class="faq-toggle" style="width: 100%; padding: 1.5rem; text-align: left; display: flex; justify-content: space-between; align-items: center; background: none; border: none; cursor: pointer; font-weight: 600; color: #111827; transition: background-color 0.2s;" onclick="toggleFAQ(this)">
+                <span style="padding-right: 1rem;">What does each device measure?</span>
+                <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #6b7280; flex-shrink: 0; transition: transform 0.2s;">
+                  <polyline points="6,9 12,15 18,9"></polyline>
+                </svg>
+              </button>
+              <div class="faq-content" style="display: none; padding: 0 1.5rem 1.5rem;">
+                <p style="color: #6b7280; line-height: 1.6;">AirBeam Mini: PM1, PM2.5 particulate matter. AirBeam3: PM1, PM2.5, PM10 particulate matter + temperature + relative humidity.</p>
+              </div>
+            </div>
+
+            <!-- FAQ Item 3 -->
+            <div style="background: white; border: 1px solid #e5e7eb; border-radius: 8px; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);">
+              <button class="faq-toggle" style="width: 100%; padding: 1.5rem; text-align: left; display: flex; justify-content: space-between; align-items: center; background: none; border: none; cursor: pointer; font-weight: 600; color: #111827; transition: background-color 0.2s;" onclick="toggleFAQ(this)">
+                <span style="padding-right: 1rem;">Do they work outdoors?</span>
+                <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #6b7280; flex-shrink: 0; transition: transform 0.2s;">
+                  <polyline points="6,9 12,15 18,9"></polyline>
+                </svg>
+              </button>
+              <div class="faq-content" style="display: none; padding: 0 1.5rem 1.5rem;">
+                <p style="color: #6b7280; line-height: 1.6;">Yes! Both devices are weather resistant. AirBeam Mini includes a rain-proof rubber sleeve, AirBeam3 has weather resistant enclosure.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Section -->
+      <div style="margin-top: 2rem; text-align: center; background: #f9fafb; border-radius: 12px; padding: 1.5rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+        <h3 style="font-size: 1rem; font-weight: 600; color: #111827; margin-bottom: 0.5rem;">Still have questions?</h3>
+        <p style="color: #6b7280; margin-bottom: 1rem; font-size: 0.875rem;">Email us at info@habitatmap.org or connect with our community</p>
+        <div style="display: flex; flex-direction: row; gap: 1rem; justify-content: center;">
+          <a href="mailto:info@habitatmap.org" style="display: inline-block; padding: 0.5rem 1.5rem; background: rgb(30, 167, 63); color: white; text-decoration: none; border-radius: 6px; font-weight: 500; transition: background-color 0.2s;">
+            Email Support
+          </a>
+          <a href="https://www.facebook.com/groups/667717482567030" target="_blank" style="display: inline-block; padding: 0.5rem 1.5rem; border: 1px solid #d1d5db; color: #374151; text-decoration: none; border-radius: 6px; font-weight: 500; transition: background-color 0.2s;">
+            Join Community
+          </a>
         </div>
       </div>
     </div>
-  </section>
-
-{% include inputValidate.html %}
-
-  <section class="panel panel--faq-intro u--bg-green">
-    <div class="split--50 split--padding-right">
-      <h1 class="heading heading--large">
-        AirBeam
-        <br />
-        FAQ
-      </h1>
-    </div>
-
-  <div class="split--50">
-    <p class="heading heading--small">
-      Find answers to the most frequently asked questions about AirBeam devices, setup, and usage. If you don't see your answer here, please email us at <a href="mailto:info@habitatmap.org">info@habitatmap.org</a> or connect with the <a href="https://www.facebook.com/groups/667717482567030">Facebook AirCasting Community</a>.
-    </p>
-  </div>
 
   </section>
 
-  <section class="panel faq">
-    <div class="faq__category js--faq-section">
-      <h2 class="heading heading--uppercase faq__category-name js--faq-heading">Quick Access</h2>
-      <div class="faq__content">
-        <ul class="p--body">
-          <li><a href="https://www.habitatmap.org/airbeam/users-guide" class="link--underlined">AirBeam 3 Detailed Specs & User Guide →</a></li>
-          <li><a href="https://www.habitatmap.org/airbeam/users-guide-airbeammini" class="link--underlined">AirBeam Mini Detailed Specs & User Guide →</a></li>
-        </ul>
-      </div>
-    </div>
+  <script>
+    function toggleFAQ(button) {
+      const content = button.nextElementSibling;
+      const icon = button.querySelector('.faq-icon');
 
-    <div class="faq__category js--faq-section">
-      <h2 class="heading heading--uppercase faq__category-name js--faq-heading">Getting Started</h2>
-      <div class="faq__content">
-        <h3 class="heading heading--small faq__question">What's the difference between AirBeam 3 and AirBeam Mini?</h3>
-        <p class="p--body"><strong>AirBeam Mini ($99)</strong> is perfect if you want a lightweight, affordable air quality monitor for personal use. It measures PM1 and PM2.5, weighs 4 ounces, and has 14-hour battery life.</p>
-        <p class="p--body"><strong>AirBeam 3 ($199)</strong> is ideal if you need comprehensive monitoring with cellular connectivity. It measures PM1, PM2.5, PM10, temperature, and humidity, weighs 6 ounces, has GPS, cellular connectivity, and 17-hour battery life.</p>
-
-        <h3 class="heading heading--small faq__question">How accurate are AirBeam devices?</h3>
-        <p class="p--body">AirBeam devices are "quite accurate" according to independent performance evaluations by South Coast Air Quality Management District's AQ-SPEC lab and researchers at NYU School of Medicine. AirBeam measurements closely match those from reference instruments.</p>
-
-        <h3 class="heading heading--small faq__question">What do I need to get started?</h3>
-        <ul class="p--body">
-          <li>Your AirBeam device (fully charged)</li>
-          <li>A smartphone (iPhone 8+ or Android 8+ with Bluetooth 5.0)</li>
-          <li>The free AirCasting app (available on iOS and Google Play)</li>
-          <li>WiFi or cellular connection for your phone</li>
-        </ul>
-
-        <h3 class="heading heading--small faq__question">How long does setup take?</h3>
-        <p class="p--body">Easy Setup in 5 Minutes or Less! App walks you through step by step + access to video tutorial library.</p>
-      </div>
-    </div>
-
-    <div class="faq__category js--faq-section">
-      <h2 class="heading heading--uppercase faq__category-name js--faq-heading">Purchasing & Shipping</h2>
-      <div class="faq__content">
-        <h3 class="heading heading--small faq__question">How much do AirBeam devices cost?</h3>
-        <ul class="p--body">
-          <li><strong>AirBeam Mini</strong>: $99</li>
-          <li><strong>AirBeam 3</strong>: $199</li>
-          <li><strong>No hidden fees or subscriptions ever</strong></li>
-        </ul>
-
-        <h3 class="heading heading--small faq__question">What payment methods do you accept?</h3>
-        <p class="p--body">We accept credit cards via PayPal (no PayPal account required). For wire transfer or check payments, email info@habitatmap.org with your shipping address and quantity needed.</p>
-
-        <h3 class="heading heading--small faq__question">What are the shipping costs?</h3>
-        <ul class="p--body">
-          <li><strong>US Domestic</strong>: $10 for first unit, $5 for each additional unit</li>
-          <li><strong>International</strong>: $35 for first unit, $10 for each additional unit</li>
-          <li>Expedited shipping available - email info@habitatmap.org</li>
-        </ul>
-
-        <h3 class="heading heading--small faq__question">What's your return policy?</h3>
-        <p class="p--body">AirBeam devices are guaranteed to work properly upon receipt. Non-functioning units can be returned for replacement within 30 days. All sales are final after 30 days.</p>
-
-        <h3 class="heading heading--small faq__question">Do you accept purchase orders?</h3>
-        <p class="p--body">No, we do not accept purchase orders. Payment must be made via credit card, check, or wire transfer.</p>
-      </div>
-    </div>
-
-    <div class="faq__category js--faq-section">
-      <h2 class="heading heading--uppercase faq__category-name js--faq-heading">Technical Specifications</h2>
-      <div class="faq__content">
-        <h3 class="heading heading--small faq__question">How long does the battery last?</h3>
-        <p class="p--body"><strong>AirBeam Mini</strong>: 14 hours mobile mode, 24 hours fixed mode<br>
-        <strong>AirBeam 3</strong>: 17 hours mobile mode, 31 hours fixed WiFi mode</p>
-
-        <h3 class="heading heading--small faq__question">What does each device measure?</h3>
-        <p class="p--body"><strong>AirBeam Mini</strong>: PM1, PM2.5 particulate matter<br>
-        <strong>AirBeam 3</strong>: PM1, PM2.5, PM10 particulate matter + temperature + relative humidity</p>
-
-        <h3 class="heading heading--small faq__question">Do they work outdoors?</h3>
-        <p class="p--body">Yes, both devices are weather resistant. AirBeam 3 has a weather resistant enclosure and AirBeam Mini includes a rain-proof rubber sleeve.</p>
-
-        <h3 class="heading heading--small faq__question">What's the range for Bluetooth connection?</h3>
-        <p class="p--body">Both devices maintain Bluetooth connection within 10-20 feet of your smartphone.</p>
-
-        <h3 class="heading heading--small faq__question">Can I use them without a smartphone nearby?</h3>
-        <p class="p--body">Yes! Both devices have standalone mode where they can record data independently and sync later when reconnected to your phone.</p>
-      </div>
-    </div>
-
-    <div class="faq__category js--faq-section">
-      <h2 class="heading heading--uppercase faq__category-name js--faq-heading">Data & Privacy</h2>
-      <div class="faq__content">
-        <h3 class="heading heading--small faq__question">Who owns my data?</h3>
-        <p class="p--body"><strong>You own all your data.</strong> Share it, CrowdSource it, export it, delete it, API it! It's all yours.</p>
-
-        <h3 class="heading heading--small faq__question">Is my location data private?</h3>
-        <p class="p--body">Yes, the AirCasting app has several privacy features:</p>
-        <ul class="p--body">
-          <li>You can disable GPS tracking in settings</li>
-          <li>You can save data locally without syncing to servers</li>
-          <li>You can contribute data without sharing location</li>
-          <li>Fixed indoor sessions never log GPS coordinates</li>
-        </ul>
-
-        <h3 class="heading heading--small faq__question">Can I export my data?</h3>
-        <p class="p--body">Absolutely. You can export individual sessions or bulk data via the AirCasting app or website. Data comes in CSV format for analysis in Excel or other tools.</p>
-
-        <h3 class="heading heading--small faq__question">Is the platform free to use?</h3>
-        <p class="p--body">The AirCasting platform (including app) are free to use. No subscriptions, no data access fees, ever.</p>
-      </div>
-    </div>
-
-    <div class="faq__category js--faq-section">
-      <h2 class="heading heading--uppercase faq__category-name js--faq-heading">Usage & Applications</h2>
-      <div class="faq__content">
-        <h3 class="heading heading--small faq__question">Can I walk/bike/drive with AirBeam?</h3>
-        <p class="p--body">Yes, AirBeam devices are designed for mobile monitoring. When cycling or driving, face the intake and exhaust ports away from your direction of travel to minimize wind interference.</p>
-
-        <h3 class="heading heading--small faq__question">How do I monitor indoor vs outdoor air quality?</h3>
-        <p class="p--body">Buy two devices, place one inside and one outside, both configured for fixed sessions. Monitor real-time measurements to decide when to open or close windows.</p>
-
-        <h3 class="heading heading--small faq__question">What's considered dangerous air pollution levels?</h3>
-        <p class="p--body">The AirCasting app uses EPA standards with color coding:</p>
-        <ul class="p--body">
-          <li><strong>Green (0-12 μg/m³)</strong>: Good air quality</li>
-          <li><strong>Yellow (13-35 μg/m³)</strong>: Moderate</li>
-          <li><strong>Orange (36-55 μg/m³)</strong>: Unhealthy for sensitive groups</li>
-          <li><strong>Red (55-150 μg/m³)</strong>: Unhealthy</li>
-        </ul>
-
-        <h3 class="heading heading--small faq__question">Can I use AirBeam for educational purposes?</h3>
-        <p class="p--body">Yes! AirCasting Actions has everything you need to get started with air monitoring, whether you're an individual, an educator, or part of an organized community effort. Free research design tools and curricula available.</p>
-      </div>
-    </div>
-
-    <div class="faq__category js--faq-section">
-      <h2 class="heading heading--uppercase faq__category-name js--faq-heading">Connectivity & Setup</h2>
-      <div class="faq__content">
-        <h3 class="heading heading--small faq__question">Which devices work with AirCasting app?</h3>
-        <p class="p--body"><strong>iPhone</strong>: iPhone 8 or newer with iOS (for standalone features)<br>
-        <strong>Android</strong>: Android 8 or newer with Bluetooth 5.0 and access to Google Play Store</p>
-
-        <h3 class="heading heading--small faq__question">Does AirBeam work without internet?</h3>
-        <p class="p--body">Yes, for mobile sessions you can record data offline and sync later over WiFi. Only map tiles won't load without internet connection.</p>
-
-        <h3 class="heading heading--small faq__question">Can AirBeam 3 work with cellular networks?</h3>
-        <p class="p--body">Yes, AirBeam 3 has a SIM card slot and supports 4G cellular networks for fixed sessions. You'll need a data plan (uses approximately 450MB per month).</p>
-
-        <h3 class="heading heading--small faq__question">What WiFi networks are supported?</h3>
-        <p class="p--body">AirBeam connects to standard 2.4 GHz WiFi networks. It cannot connect to 5GHz-only networks or networks with firewalls (like most public/enterprise WiFi).</p>
-      </div>
-    </div>
-
-    <div class="faq__category js--faq-section">
-      <h2 class="heading heading--uppercase faq__category-name js--faq-heading">Troubleshooting</h2>
-      <div class="faq__content">
-        <h3 class="heading heading--small faq__question">Why won't my AirBeam connect to my phone?</h3>
-        <p class="p--body">Check these common issues:</p>
-        <ul class="p--body">
-          <li>Is Bluetooth enabled on your phone?</li>
-          <li>Did you pair the AirBeam in your phone's Bluetooth settings first?</li>
-          <li>Is the AirBeam fully charged?</li>
-          <li>Are you pressing "Configure AirBeam" immediately after the LED turns from red to green?</li>
-        </ul>
-
-        <h3 class="heading heading--small faq__question">Why can't I record a fixed WiFi session?</h3>
-        <p class="p--body">Common causes:</p>
-        <ul class="p--body">
-          <li>Trying to connect to 5GHz or firewall-protected network</li>
-          <li>Incorrect WiFi password</li>
-          <li>AirBeam not fully charged</li>
-          <li>Not waiting for LED to turn green before configuration</li>
-        </ul>
-
-        <h3 class="heading heading--small faq__question">My AirBeam stopped streaming data, what happened?</h3>
-        <p class="p--body">If recording a fixed session and it gets unplugged, the internal battery will continue operation for 10+ hours. Simply plug it back in and it will resume streaming automatically.</p>
-
-        <h3 class="heading heading--small faq__question">The AirCasting app keeps crashing, what should I do?</h3>
-        <p class="p--body">Email us at info@habitatmap.org with details about what screen you were on and what you were doing when it crashed. Note: if your device can't smoothly run Google Maps, it may not be compatible with AirCasting.</p>
-      </div>
-    </div>
-
-    <div class="faq__category js--faq-section">
-      <h2 class="heading heading--uppercase faq__category-name js--faq-heading">Bulk Orders & Educational Use</h2>
-      <div class="faq__content">
-        <h3 class="heading heading--small faq__question">Do you offer discounts for bulk orders?</h3>
-        <p class="p--body">For orders of 6 or more AirBeam devices, we offer free consultation to help with your project. Email info@habitatmap.org or use our consultation booking form.</p>
-
-        <h3 class="heading heading--small faq__question">Can schools and researchers get support?</h3>
-        <p class="p--body">Yes! Trusted by Educators and Researchers at Top Educational Institutions and Backed by the Clean Air Fund. We provide one-on-one research design and implementation help.</p>
-
-        <h3 class="heading heading--small faq__question">Is there educational curriculum available?</h3>
-        <p class="p--body">Free Research Design Tools, Download Toolkits & Curriculums available through AirCasting Actions.</p>
-      </div>
-    </div>
-
-    <div class="faq__category js--faq-section">
-      <h2 class="heading heading--uppercase faq__category-name js--faq-heading">Community & Open Source</h2>
-      <div class="faq__content">
-        <h3 class="heading heading--small faq__question">How is this different from other air quality monitors?</h3>
-        <p class="p--body">AirBeam is the only fully open-source air quality monitoring platform. The hardware designs, firmware, and software are all open source. You're contributing to the world's largest database of community-collected air quality measurements.</p>
-
-        <h3 class="heading heading--small faq__question">What happens to my purchase?</h3>
-        <p class="p--body">All proceeds from AirBeam sales go directly towards advancing HabitatMap's mission to empower organizations and community scientists to measure pollution and advocate for equitable solutions to environmental health issues.</p>
-
-        <h3 class="heading heading--small faq__question">Can I modify or reprogram my AirBeam?</h3>
-        <p class="p--body">Yes! Full hardware schematics, firmware code, and 3D printing files are available on GitHub. AirBeam Mini can be reprogrammed using Arduino IDE.</p>
-
-        <h3 class="heading heading--small faq__question">Is there a community I can join?</h3>
-        <p class="p--body">Join the <a href="https://www.facebook.com/groups/667717482567030" target="_blank" class="link--underlined">Facebook AirCasting Community</a> to connect with other users worldwide.</p>
-      </div>
-    </div>
-
-  </section>
-</section>
-
-<script defer type="text/javascript" src="/assets/js/faq.js"></script>
+      if (content.style.display === 'none' || content.style.display === '') {
+        content.style.display = 'block';
+        icon.style.transform = 'rotate(180deg)';
+        button.style.backgroundColor = '#f9fafb';
+      } else {
+        content.style.display = 'none';
+        icon.style.transform = 'rotate(0deg)';
+        button.style.backgroundColor = 'transparent';
+      }
+    }
+  </script>
 
 {% include slider-init.html %}

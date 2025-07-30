@@ -1,7 +1,82 @@
 .highlights {
-  gap: $u-space-small;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 0.5rem;
+  margin: 2rem 0;
+  justify-content: center;
+  overflow-x: auto;
 
-  &__item {
-    @include flex(0 0 45%);
+    .highlights__item {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: 1px solid #f0f0f0;
+    height: 280px;
+    width: 250px;
+    flex: 0 0 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    }
+
+    &.feature-card {
+      text-align: center;
+
+                  .feature-icon {
+        width: 50px;
+        height: 50px;
+        background: #e8f5e8;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 1rem;
+
+        svg {
+          width: 28px;
+          height: 28px;
+          color: #22c55e;
+        }
+      }
+
+      &:first-child .feature-icon svg {
+        width: 22px;
+        height: 22px;
+      }
+
+      h2 {
+        margin-bottom: 1rem;
+        color: #1f2937;
+        font-weight: 600;
+        flex-shrink: 0;
+      }
+
+      p {
+        color: #6b7280;
+        line-height: 1.6;
+        margin: 0;
+        flex: 1;
+      }
+    }
+  }
+
+    @media (max-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+
+    .highlights__item {
+      padding: 1.5rem;
+    }
   }
 }

@@ -1,0 +1,46 @@
+.stats-section {
+  justify-content: center !important;
+
+  .stats-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    gap: 1.5rem;
+  }
+
+  .stat-item {
+    text-align: center;
+    flex: 1;
+
+    .stat-number {
+      font-size: 2rem;
+      font-weight: bold;
+      color: white;
+      margin-bottom: 0.3rem;
+      line-height: 1;
+    }
+
+    .stat-label {
+      font-size: 0.8rem;
+      color: white;
+      opacity: 0.9;
+      line-height: 1.2;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .stats-container {
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .stat-item {
+      .stat-number {
+        font-size: 2rem;
+      }
+    }
+  }
+}
