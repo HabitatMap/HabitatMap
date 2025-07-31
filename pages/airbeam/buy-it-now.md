@@ -466,10 +466,133 @@ hasMerchantReturnPolicy:
           </div>
         </div>
       </div>
+
+      <!-- Video Action Button -->
+      <div style="text-align: center; margin-top: 1.5rem;">
+        <a href="/airbeam/how-it-works" style="display: inline-block; background: #1ea73f; color: white; padding: 0.75rem 2rem; font-size: 1.125rem; font-weight: 600; border-radius: 8px; text-decoration: none; transition: background-color 0.3s ease; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+          View All Device Videos & Guides
+        </a>
+      </div>
     </div>
 
   </section>
+  <section class="panel panel--big-padding u--bg-white" style="padding: 4rem 2rem;">
+    <div style="max-width: 1200px; margin: 0 auto;">
+      <div style="text-align: center; margin-bottom: 3rem;">
+        <h2 class="heading heading--large" style="color: #111827; margin-bottom: 1rem;">Use AirBeam with Free AirCasting Apps</h2>
+        <p style="font-size: 1.25rem; color: #6b7280;">Seamlessly connect your AirBeam to powerful data tools</p>
+      </div>
 
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+
+        <!-- Desktop App Card -->
+        <div style="background: #f9fafb; border-radius: 8px; padding: 1.5rem; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); display: flex; gap: 1rem;">
+          <div style="flex-shrink: 0; width: 120px; height: 160px; border-radius: 6px; overflow: hidden; background: #e5e7eb;">
+            <img
+              data-src="/assets/img/pages/how-it-works/tablet_aircasting.jpg?nf_resize=fit&w=120"
+              src="/assets/img/pages/how-it-works/tablet_aircasting.jpg?nf_resize=fit&w=20"
+              alt="AirCasting Desktop Dashboard"
+              class="lazyload"
+              style="width: 100%; height: 100%; object-fit: cover;"
+            />
+          </div>
+
+                              <div style="flex-grow: 1; display: flex; flex-direction: column; justify-content: flex-start; min-height: 160px;">
+            <div>
+              <div style="display: flex; align-items: center; margin-bottom: 0.5rem;">
+                <div style="width: 24px; height: 24px; background: #dcfce7; border-radius: 4px; display: flex; align-items: center; justify-content: center; margin-right: 0.5rem;">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #059669;">
+                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                    <line x1="8" y1="21" x2="16" y2="21"></line>
+                    <line x1="12" y1="17" x2="12" y2="21"></line>
+                  </svg>
+                </div>
+                <h3 style="font-size: 1rem; font-weight: 600; color: #111827;">AirCasting Desktop Dashboard</h3>
+              </div>
+
+              <p style="color: #6b7280; line-height: 1.4; font-size: 0.875rem; margin-bottom: 0.75rem;">
+                Analyze your data, visualize trends, and explore community maps on a larger screen.
+              </p>
+            </div>
+
+            <div style="margin-top: auto;">
+              <a href="https://aircasting.org/" target="_blank" style="display: inline-flex; align-items: center; background: white; color: #374151; padding: 0.5rem 1rem; border-radius: 6px; text-decoration: none; font-weight: 500; border: 1px solid #d1d5db; font-size: 0.875rem; width: fit-content;">
+                Explore Desktop App
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 0.25rem;">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15,3 21,3 21,9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile App Card -->
+        <div style="background: #f9fafb; border-radius: 8px; padding: 1.5rem; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); display: flex; gap: 1rem;">
+          <div style="flex-shrink: 0; width: 120px; height: 160px; border-radius: 6px; overflow: hidden; background: #e5e7eb;">
+            <img
+              data-src="/assets/img/pages/how-it-works/how-it-works_3_crop.jpg?nf_resize=fit&w=120"
+              src="/assets/img/pages/how-it-works/how-it-works_3_crop.jpg?nf_resize=fit&w=20"
+              alt="AirCasting Mobile App"
+              class="lazyload"
+              style="width: 100%; height: 100%; object-fit: cover;"
+            />
+          </div>
+
+                              <div style="flex-grow: 1; display: flex; flex-direction: column; justify-content: flex-start; min-height: 160px;">
+            <div>
+              <div style="display: flex; align-items: center; margin-bottom: 0.5rem;">
+                <div style="width: 24px; height: 24px; background: #dcfce7; border-radius: 4px; display: flex; align-items: center; justify-content: center; margin-right: 0.5rem;">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #059669;">
+                    <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                    <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                  </svg>
+                </div>
+                <h3 style="font-size: 1rem; font-weight: 600; color: #111827;">AirCasting Mobile App</h3>
+              </div>
+
+              <p style="color: #6b7280; line-height: 1.4; font-size: 0.875rem; margin-bottom: 0.75rem;">
+                Monitor in real-time, manage your device, and share data directly from your smartphone.
+              </p>
+            </div>
+
+            <div style="margin-top: auto;">
+              <div style="display: flex; flex-direction: row; gap: 0.5rem;">
+                <a
+                  href="https://apps.apple.com/us/app/aircasting/id1587685281#?platform=iphone"
+                  target="_blank"
+                  style="display: inline-block;"
+                >
+                  <img
+                    data-src="/assets/img/pages/home/download-on-the-app-store-badge.png"
+                    src="/assets/img/pages/home/download-on-the-app-store-badge.png?nf_resize=fit&w=20"
+                    class="lazyload"
+                    alt="Download on the App Store badge"
+                    style="height: 32px; width: auto;"
+                  />
+                </a>
+                <a
+                  href="https://play.google.com/store/apps/details?id=pl.llp.aircasting&hl=en_US"
+                  target="_blank"
+                  style="display: inline-block;"
+                >
+                  <img
+                    data-src="/assets/img/pages/home/google-play-badge.png"
+                    src="/assets/img/pages/home/google-play-badge.png?nf_resize=fit&w=20"
+                    class="lazyload"
+                    alt="Google Play badge"
+                    style="height: 32px; width: auto;"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
   <section class="panel product-comparison-section" style="background-color: #f9fafb; padding: 4rem 2rem;">
     <div class="product-comparison-container" style="max-width: 1200px; margin: 0 auto;">
       <div class="product-comparison-header" style="text-align: center; margin-bottom: 3rem;">
@@ -876,50 +999,133 @@ hasMerchantReturnPolicy:
 
   </section>
 
-  <section class="panel panel--big-padding u--bg-white">
-    <div class="download-section">
-      <h2 class="heading heading--medium text-center">
-        Use AirBeam with Free AirCasting Apps
-      </h2>
-      <div class="download-content">
-        <div class="download-text">
-          <p class="download-description">
-            <a href="https://aircasting.org/" target="_blank" class="link--underlined">
-              Check out desktop version
-            </a>
+  <section class="panel" style="padding: 4rem 2rem; background-color: #ffffff;">
+    <div style="max-width: 1200px; margin: 0 auto;">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; margin-bottom: 4rem;">
+        <div>
+          <h2 style="font-size: 2.5rem; font-weight: bold; color: #111827; margin-bottom: 1.5rem;">Join a Global Movement for Environmental Justice</h2>
+          <p style="font-size: 1.125rem; color: #6b7280; line-height: 1.6; margin-bottom: 1.5rem;">
+            Your AirBeam contributes to the world's largest open-source database of community-collected air quality
+            measurements. Every purchase directly supports HabitatMap's mission to empower communities with
+            environmental data.
           </p>
-          <p class="download-subtitle">
-            Download mobile apps for free
-          </p>
-          <div class="download-links">
-            <a
-              href="https://apps.apple.com/us/app/aircasting/id1587685281#?platform=iphone"
-              target="_blank"
-              class="download-links__item"
-            >
-              <img
-                data-src="/assets/img/pages/home/download-on-the-app-store-badge.png"
-                src="/assets/img/pages/home/download-on-the-app-store-badge.png?nf_resize=fit&w=20"
-                class="lazyload"
-                alt="Download on the App Store badge"
-              />
-            </a>
-            <a
-              href="https://play.google.com/store/apps/details?id=pl.llp.aircasting&hl=en_US"
-              target="_blank"
-              class="download-links__item"
-            >
-              <img
-                data-src="/assets/img/pages/home/google-play-badge.png"
-                src="/assets/img/pages/home/google-play-badge.png?nf_resize=fit&w=20"
-                class="lazyload"
-                alt="Google Play badge"
-              />
-            </a>
+          <div style="display: flex; flex-direction: column; gap: 1rem;">
+            <div style="display: flex; align-items: center; gap: 0.75rem;">
+              <div style="width: 24px; height: 24px; background: #dcfce7; border-radius: 6px; display: flex; align-items: center; justify-content: center;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #059669;">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="M2 12h20"></path>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                </svg>
+              </div>
+              <span style="color: #374151;">Global network of environmental advocates</span>
             </div>
+            <div style="display: flex; align-items: center; gap: 0.75rem;">
+              <div style="width: 24px; height: 24px; background: #dcfce7; border-radius: 6px; display: flex; align-items: center; justify-content: center;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #059669;">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+              </div>
+              <span style="color: #374151;">Community-driven data collection</span>
             </div>
+            <div style="display: flex; align-items: center; gap: 0.75rem;">
+              <div style="width: 24px; height: 24px; background: #dcfce7; border-radius: 6px; display: flex; align-items: center; justify-content: center;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #059669;">
+                  <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                  <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                </svg>
+              </div>
+              <span style="color: #374151;">Free educational resources & curriculum</span>
             </div>
           </div>
+        </div>
+
+        <div style="border-radius: 12px; overflow: hidden; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);">
+          <img
+            data-src="/assets/img/pages/aircasting/aircasting_1.jpg?nf_resize=fit&w=600"
+            src="/assets/img/pages/aircasting/aircasting_1.jpg?nf_resize=fit&w=20"
+            alt="Community environmental justice"
+            class="lazyload"
+            style="width: 100%; height: auto; display: block;"
+          />
+        </div>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+        <!-- Open Data Platform Card -->
+        <div style="background: white; border-radius: 12px; padding: 2rem; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); text-align: center; border: 1px solid #e5e7eb;">
+          <div style="width: 48px; height: 48px; background: #dbeafe; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #2563eb;">
+              <circle cx="12" cy="12" r="10"></circle>
+              <path d="M2 12h20"></path>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+            </svg>
+          </div>
+          <h3 style="font-size: 1.25rem; font-weight: 600; color: #111827; margin-bottom: 0.5rem;">Open Data Platform</h3>
+          <p style="color: #6b7280; font-size: 0.875rem; line-height: 1.5; margin-bottom: 1.5rem;">
+            Access and contribute to the world's largest community air quality database
+          </p>
+          <a href="https://aircasting.org/" target="_blank" style="display: inline-flex; align-items: center; background: transparent; color: #374151; padding: 0.5rem 1rem; border-radius: 6px; text-decoration: none; font-weight: 500; border: 1px solid #d1d5db; font-size: 0.875rem; width: 100%; justify-content: center;">
+            Explore Data
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 0.5rem;">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15,3 21,3 21,9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Educational Tools Card -->
+        <div style="background: white; border-radius: 12px; padding: 2rem; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); text-align: center; border: 1px solid #e5e7eb;">
+          <div style="width: 48px; height: 48px; background: #dcfce7; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #059669;">
+              <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+              <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+            </svg>
+          </div>
+          <h3 style="font-size: 1.25rem; font-weight: 600; color: #111827; margin-bottom: 0.5rem;">Educational Tools</h3>
+          <p style="color: #6b7280; font-size: 0.875rem; line-height: 1.5; margin-bottom: 1.5rem;">
+            Free curriculum, research guides, and classroom resources
+          </p>
+          <a href="/airbeam/how-it-works" style="display: inline-flex; align-items: center; background: transparent; color: #374151; padding: 0.5rem 1rem; border-radius: 6px; text-decoration: none; font-weight: 500; border: 1px solid #d1d5db; font-size: 0.875rem; width: 100%; justify-content: center;">
+            Get Resources
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 0.5rem;">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15,3 21,3 21,9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Community Support Card -->
+        <div style="background: white; border-radius: 12px; padding: 2rem; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); text-align: center; border: 1px solid #e5e7eb;">
+          <div style="width: 48px; height: 48px; background: #f3e8ff; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #9333ea;">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+          </div>
+          <h3 style="font-size: 1.25rem; font-weight: 600; color: #111827; margin-bottom: 0.5rem;">Community Support</h3>
+          <p style="color: #6b7280; font-size: 0.875rem; line-height: 1.5; margin-bottom: 1.5rem;">
+            Connect with researchers, educators, and advocates worldwide
+          </p>
+          <a href="https://www.facebook.com/groups/667717482567030" target="_blank" style="display: inline-flex; align-items: center; background: transparent; color: #374151; padding: 0.5rem 1rem; border-radius: 6px; text-decoration: none; font-weight: 500; border: 1px solid #d1d5db; font-size: 0.875rem; width: 100%; justify-content: center;">
+            Join Community
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 0.5rem;">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15,3 21,3 21,9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
   </section>
 
   <section class="panel" style="padding: 4rem 2rem; background-color: #ffffff;">
