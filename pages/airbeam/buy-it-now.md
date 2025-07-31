@@ -9,11 +9,17 @@ permalink: /airbeam/buy-it-now/
 
 {% include buy-it-now/features-section.html %}
 
+{% include buy-it-now/press-section.html %}
+
 {% include buy-it-now/videos-section.html %}
 
 {% include buy-it-now/aircasting-apps-section.html %}
 
 {% include buy-it-now/product-comparison-section.html %}
+
+{% include buy-it-now/testimonials-section.html %}
+
+{% include buy-it-now/global-movement-section.html %}
 
 {% include buy-it-now/consultation-section.html %}
 
