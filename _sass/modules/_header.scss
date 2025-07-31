@@ -5,6 +5,8 @@
   top: 0;
   width: 100%;
   z-index: 2;
+  background-color: $white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
   @media screen and (max-width: $tablet-max) {
     padding: 0.5rem 0;
@@ -132,6 +134,11 @@
 
   @media screen and (min-width: $large-desktop-min) {
     width: 21vw;
+  }
+
+  // Make logo green
+  svg {
+    fill: $green;
   }
 }
 
