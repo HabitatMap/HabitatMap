@@ -209,7 +209,7 @@ hasMerchantReturnPolicy:
 </script>
 
 <!-- Hero Section -->
-<section class="hero-section" style="position: relative; min-height: 50vh; overflow: hidden;">
+<section class="hero-section" style="position: relative; min-height: 50vh; overflow: hidden; padding: 6rem 0;">
   <!-- Background Image -->
   <div style="position: absolute; inset: 0; background-image: url('/assets/aircasting-1.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;"></div>
 
@@ -240,9 +240,9 @@ hasMerchantReturnPolicy:
             </button>
             <button
               style="background: rgba(255, 255, 255, 0.1); color: white; border: 1px solid rgba(255, 255, 255, 0.3); padding: 0.75rem 2rem; font-size: 1.125rem; font-weight: 600; border-radius: 8px; cursor: pointer; transition: all 0.3s; backdrop-filter: blur(4px);"
-              onclick="document.getElementById('demo-video')?.scrollIntoView({ behavior: 'smooth' })"
+              onclick="document.getElementById('videos-section')?.scrollIntoView({ behavior: 'smooth' })"
             >
-              See It In Action
+              Watch It In Action
             </button>
           </div>
         </div>
@@ -255,69 +255,72 @@ hasMerchantReturnPolicy:
   </div>
 </section>
 
-  <section class="panel highlights">
-    <div class="highlights__item feature-card">
-      <div class="feature-icon">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <section class="panel" style="padding: 4rem 2rem; background-color: #ffffff;">
+    <div style="max-width: 1280px; margin: 0 auto;">
+      <div style="text-align: center; margin-bottom: 3rem;">
+        <h2 style="font-size: 1.875rem; font-weight: bold; color: #111827; margin-bottom: 1rem;">Why Choose AirBeam?</h2>
+        <p style="font-size: 1.25rem; color: #6b7280; max-width: 768px; margin: 0 auto; line-height: 1.6;">
+          The only air quality monitor that combines professional accuracy with complete data ownership and zero ongoing costs.
+        </p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem;">
+        <!-- Setup Card -->
+        <div style="background: white; border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); text-align: center; border: 1px solid #f3f4f6; transition: box-shadow 0.3s ease;">
+          <div style="width: 48px; height: 48px; background: #dcfce7; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #1ea73f;">
+              <path d="M13 2L3 14H12L11 22L21 10H12L13 2Z"/>
         </svg>
       </div>
-      <h2 class="heading heading--small heading--body">
-        Easy Setup in 5 Minutes or Less!
-      </h2>
-      <p>
-        App walks you through step by step + access
-        to video tutorial library.
+          <h3 style="font-size: 1.125rem; font-weight: 600; color: #111827; margin-bottom: 0.5rem;">Setup in Under 2 Minutes</h3>
+          <p style="color: #6b7280; font-size: 0.875rem; line-height: 1.5;">
+            No technical knowledge required. App guides you step-by-step with video tutorials.
       </p>
     </div>
 
-    <div class="highlights__item feature-card">
-      <div class="feature-icon">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <!-- No Subscriptions Card -->
+        <div style="background: white; border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); text-align: center; border: 1px solid #f3f4f6; transition: box-shadow 0.3s ease;">
+          <div style="width: 48px; height: 48px; background: #dcfce7; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #1ea73f;">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
         </svg>
       </div>
-      <h2 class="heading heading--small heading--body">
-        No Subscriptions or Hidden Fees
-      </h2>
-      <p>
-        Rest assured there won't ever be hidden fees or
-        subscriptions. We won't sell your data or charge you
-        to access yours.
+          <h3 style="font-size: 1.125rem; font-weight: 600; color: #111827; margin-bottom: 0.5rem;">No Subscriptions Ever</h3>
+          <p style="color: #6b7280; font-size: 0.875rem; line-height: 1.5;">
+            One-time purchase. No hidden fees, no data selling, no monthly charges.
       </p>
     </div>
 
-    <div class="highlights__item feature-card">
-      <div class="feature-icon">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="5" y="2" width="14" height="20" rx="2" ry="2" stroke="currentColor" stroke-width="2"/>
-          <line x1="12" y1="18" x2="12.01" y2="18" stroke="currentColor" stroke-width="2"/>
+        <!-- Data Ownership Card -->
+        <div style="background: white; border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); text-align: center; border: 1px solid #f3f4f6; transition: box-shadow 0.3s ease;">
+          <div style="width: 48px; height: 48px; background: #dcfce7; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #1ea73f;">
+              <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+              <line x1="12" y1="18" x2="12.01" y2="18"/>
         </svg>
       </div>
-      <h2 class="heading heading--small heading--body">
-        Easy Data Access & Protection
-      </h2>
-      <p>
-        User-friendly dashboard makes seeing and presenting trends easy, with on-board storage so you'll never lose data.
+          <h3 style="font-size: 1.125rem; font-weight: 600; color: #111827; margin-bottom: 0.5rem;">Your Data Stays Yours</h3>
+          <p style="color: #6b7280; font-size: 0.875rem; line-height: 1.5;">
+            Complete data ownership with easy export. Open-source platform you can trust.
       </p>
     </div>
 
-    <div class="highlights__item feature-card">
-      <div class="feature-icon">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M3 3v18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M18 17V9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M13 17V5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M8 17v-3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <!-- Research Accuracy Card -->
+        <div style="background: white; border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); text-align: center; border: 1px solid #f3f4f6; transition: box-shadow 0.3s ease;">
+          <div style="width: 48px; height: 48px; background: #dcfce7; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #1ea73f;">
+              <path d="M3 3v18h18"/>
+              <path d="M18 17V9"/>
+              <path d="M13 17V5"/>
+              <path d="M8 17v-3"/>
         </svg>
       </div>
-      <h2 class="heading heading--small heading--body">
-        Designed for Mobile Monitoring
-      </h2>
-      <p>
-        Lightweight & Portable. Designed to withstand the elements
-        with weather resistant shell and Sturdy Design.
-      </p>
+          <h3 style="font-size: 1.125rem; font-weight: 600; color: #111827; margin-bottom: 0.5rem;">Research-Grade Accuracy</h3>
+          <p style="color: #6b7280; font-size: 0.875rem; line-height: 1.5;">
+            Used by universities worldwide. Validated by independent testing labs.
+          </p>
+        </div>
+      </div>
     </div>
 
   </section>
@@ -375,7 +378,7 @@ hasMerchantReturnPolicy:
         </div>
   </section>
 
-  <section class="panel panel--small-padding u--bg-blue-dark stats-section" style="padding: 2rem 4vw;">
+  <section class="panel u--bg-blue-dark stats-section" style="padding: 0rem 4vw 2rem 4vw;">
     <div class="stats-container">
       <div class="stat-item">
         <div class="stat-number">10,000+</div>
@@ -392,21 +395,17 @@ hasMerchantReturnPolicy:
     </div>
   </section>
 
-  <section class="panel" style="background-color: #f9fafb; padding: 4rem 2rem;">
-    <div style="max-width: 1200px; margin: 0 auto;">
+  <section id="videos-section" class="panel" style="padding: 4rem 2rem; background-color: #ffffff;">
+    <div style="max-width: 1280px; margin: 0 auto;">
       <div style="text-align: center; margin-bottom: 3rem;">
-        <h2 class="heading heading--large" style="color: #111827; margin-bottom: 1rem;">AirBeam In Action</h2>
-
+        <h2 style="font-size: 1.875rem; font-weight: bold; color: #111827; margin-bottom: 1rem;">Watch AirBeam In Action</h2>
+        <p style="font-size: 1.25rem; color: #6b7280;">See how easy it is to start monitoring air quality</p>
             </div>
 
-      <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1.5rem;">
+      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;">
         <!-- Video 1: AirBeam in the Field -->
-        <div style="background: white; border-radius: 12px; padding: 0.75rem; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: box-shadow 0.3s ease;">
-          <div style="position: relative;">
-            <div style="position: absolute; top: 0.5rem; left: 0.5rem; width: 20px; height: 20px; background: #111827; border-radius: 50%; display: flex; align-items: center; justify-content: center; z-index: 10;">
-              <span style="color: white; font-weight: bold; font-size: 0.625rem;">h</span>
-            </div>
-            <div style="position: relative; aspect-ratio: 2/3; border-radius: 8px; overflow: hidden;">
+        <div style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: box-shadow 0.3s ease; border: 1px solid #e5e7eb;">
+          <div style="position: relative; aspect-ratio: 16/9; background: #111827;">
               <iframe
                 width="100%"
                 height="100%"
@@ -415,81 +414,115 @@ hasMerchantReturnPolicy:
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen
-                style="border-radius: 8px;">
+              style="display: block;">
               </iframe>
             </div>
-            <div style="position: absolute; top: 0.5rem; right: 0.5rem; background: rgba(0, 0, 0, 0.7); color: white; padding: 0.25rem 0.5rem; border-radius: 4px; font-size: 0.625rem;">AirBeam Unboxing</div>
+          <div style="padding: 1.5rem;">
+            <h3 style="font-size: 1.125rem; font-weight: 600; color: #111827; margin-bottom: 0.5rem;">AirBeam in the Field</h3>
+            <p style="color: #6b7280; font-size: 0.875rem; line-height: 1.5; margin-bottom: 1rem;">See real-world outdoor monitoring in action</p>
+            <a href="https://www.youtube.com/embed/eTwvmZZA9pQ?si=oMXs0V3hb6paeG3p" target="_blank" style="display: inline-flex; align-items: center; color: #1ea73f; text-decoration: none; font-size: 0.875rem; font-weight: 500;">
+              Watch Full Video
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 0.25rem;">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15,3 21,3 21,9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
           </div>
         </div>
 
-        <!-- Video 2: Easy Setup Guide -->
-        <div style="background: white; border-radius: 12px; padding: 0.75rem; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: box-shadow 0.3s ease;">
-          <div style="position: relative;">
-            <div style="position: absolute; top: 0.5rem; left: 0.5rem; width: 20px; height: 20px; background: #111827; border-radius: 50%; display: flex; align-items: center; justify-content: center; z-index: 10;">
-              <span style="color: white; font-weight: bold; font-size: 0.625rem;">h</span>
-            </div>
-            <div style="position: relative; aspect-ratio: 2/3; border-radius: 8px; overflow: hidden;">
+        <!-- Video 2: 2-Minute Setup Guide -->
+        <div style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: box-shadow 0.3s ease; border: 1px solid #e5e7eb;">
+          <div style="position: relative; aspect-ratio: 16/9; background: #111827;">
               <iframe
                 width="100%"
                 height="100%"
                 src="https://www.youtube.com/embed/Nn7FT2gipqA?si=9Vy9pc43n6ICbqY9"
-                title="Easy Setup Guide"
+              title="2-Minute Setup Guide"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen
-                style="border-radius: 8px;">
+              style="display: block;">
               </iframe>
             </div>
-            <div style="position: absolute; top: 0.5rem; right: 0.5rem; background: rgba(0, 0, 0, 0.7); color: white; padding: 0.25rem 0.5rem; border-radius: 4px; font-size: 0.625rem;">Mobile Air Quality Monitoring...</div>
+          <div style="padding: 1.5rem;">
+            <h3 style="font-size: 1.125rem; font-weight: 600; color: #111827; margin-bottom: 0.5rem;">2-Minute Setup Guide</h3>
+            <p style="color: #6b7280; font-size: 0.875rem; line-height: 1.5; margin-bottom: 1rem;">From box to monitoring in under 2 minutes</p>
+            <a href="https://www.youtube.com/embed/Nn7FT2gipqA?si=9Vy9pc43n6ICbqY9" target="_blank" style="display: inline-flex; align-items: center; color: #1ea73f; text-decoration: none; font-size: 0.875rem; font-weight: 500;">
+              Watch Full Video
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 0.25rem;">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15,3 21,3 21,9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
           </div>
         </div>
 
-        <!-- Video 3: Monitoring Indoor Air -->
-        <div style="background: white; border-radius: 12px; padding: 0.75rem; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: box-shadow 0.3s ease;">
-          <div style="position: relative;">
-            <div style="position: absolute; top: 0.5rem; left: 0.5rem; width: 20px; height: 20px; background: #111827; border-radius: 50%; display: flex; align-items: center; justify-content: center; z-index: 10;">
-              <span style="color: white; font-weight: bold; font-size: 0.625rem;">h</span>
-            </div>
-            <div style="position: relative; aspect-ratio: 2/3; border-radius: 8px; overflow: hidden;">
+        <!-- Video 3: Indoor Air Quality Monitoring -->
+        <div style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: box-shadow 0.3s ease; border: 1px solid #e5e7eb;">
+          <div style="position: relative; aspect-ratio: 16/9; background: #111827;">
               <iframe
                 width="100%"
                 height="100%"
                 src="https://www.youtube.com/embed/h_Om-M6AOu8?si=FBks5Ny-LVBHjocD"
-                title="Monitoring Indoor Air"
+              title="Indoor Air Quality Monitoring"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen
-                style="border-radius: 8px;">
+              style="display: block;">
               </iframe>
             </div>
-            <div style="position: absolute; top: 0.5rem; right: 0.5rem; background: rgba(0, 0, 0, 0.7); color: white; padding: 0.25rem 0.5rem; border-radius: 4px; font-size: 0.625rem;">AirBeam Mini Fixed Monitoring</div>
+          <div style="padding: 1.5rem;">
+            <h3 style="font-size: 1.125rem; font-weight: 600; color: #111827; margin-bottom: 0.5rem;">Indoor Air Quality Monitoring</h3>
+            <p style="color: #6b7280; font-size: 0.875rem; line-height: 1.5; margin-bottom: 1rem;">Discover hidden air quality issues in your home</p>
+            <a href="https://www.youtube.com/embed/h_Om-M6AOu8?si=FBks5Ny-LVBHjocD" target="_blank" style="display: inline-flex; align-items: center; color: #1ea73f; text-decoration: none; font-size: 0.875rem; font-weight: 500;">
+              Watch Full Video
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 0.25rem;">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15,3 21,3 21,9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
           </div>
         </div>
       </div>
 
-      <!-- Video Action Button -->
-      <div style="text-align: center; margin-top: 1.5rem;">
-        <a href="/airbeam/how-it-works" style="display: inline-block; background: #1ea73f; color: white; padding: 0.75rem 2rem; font-size: 1.125rem; font-weight: 600; border-radius: 8px; text-decoration: none; transition: background-color 0.3s ease; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
-          View All Device Videos & Guides
+      <div style="text-align: center; margin-top: 3rem;">
+        <a href="https://www.youtube.com/@HabitatMap" target="_blank" style="display: inline-flex; align-items: center; background: #1ea73f; color: white; padding: 1rem 2rem; border-radius: 8px; text-decoration: none; font-size: 1.125rem; font-weight: 600; transition: background-color 0.3s ease; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+          View Complete Video Library
         </a>
       </div>
     </div>
 
   </section>
-  <section class="panel panel--big-padding u--bg-white" style="padding: 4rem 2rem;">
-    <div style="max-width: 1200px; margin: 0 auto;">
+  <section class="panel" style="padding: 4rem 2rem; background-color: #f9fafb;">
+    <div style="max-width: 1280px; margin: 0 auto;">
       <div style="text-align: center; margin-bottom: 3rem;">
-        <h2 class="heading heading--large" style="color: #111827; margin-bottom: 1rem;">Use AirBeam with Free AirCasting Apps</h2>
-        <p style="font-size: 1.25rem; color: #6b7280;">Seamlessly connect your AirBeam to powerful data tools</p>
+        <h2 style="font-size: 1.875rem; font-weight: bold; color: #111827; margin-bottom: 1rem;">Use AirBeam with Free AirCasting Apps</h2>
+        <p style="font-size: 1.25rem; color: #6b7280;">Seamlessly connect your device to powerful data visualization tools</p>
       </div>
 
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
-
+      <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 3rem; align-items: stretch;">
         <!-- Desktop App Card -->
-        <div style="background: #f9fafb; border-radius: 8px; padding: 1.5rem; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); display: flex; gap: 1rem;">
-          <div style="flex-shrink: 0; width: 120px; height: 160px; border-radius: 6px; overflow: hidden; background: #e5e7eb;">
+        <div style="background: white; border-radius: 12px; padding: 2rem; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); border: 1px solid #e5e7eb;">
+          <div style="display: flex; align-items: center; margin-bottom: 1.5rem;">
+            <div style="width: 48px; height: 48px; background: #dbeafe; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-right: 1rem;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #2563eb;">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <div>
+              <h3 style="font-size: 1.25rem; font-weight: 600; color: #111827;">Desktop Dashboard</h3>
+              <p style="color: #6b7280; font-size: 0.875rem;">Full-featured data analysis</p>
+            </div>
+          </div>
+
+          <div style="aspect-ratio: 16/10; background: #f3f4f6; border-radius: 8px; overflow: hidden; margin-bottom: 1.5rem;">
             <img
-              data-src="/assets/img/pages/how-it-works/tablet_aircasting.jpg?nf_resize=fit&w=120"
+              data-src="/assets/img/pages/how-it-works/tablet_aircasting.jpg?nf_resize=fit&w=500"
               src="/assets/img/pages/how-it-works/tablet_aircasting.jpg?nf_resize=fit&w=20"
               alt="AirCasting Desktop Dashboard"
               class="lazyload"
@@ -497,42 +530,53 @@ hasMerchantReturnPolicy:
             />
           </div>
 
-                              <div style="flex-grow: 1; display: flex; flex-direction: column; justify-content: flex-start; min-height: 160px;">
-            <div>
-              <div style="display: flex; align-items: center; margin-bottom: 0.5rem;">
-                <div style="width: 24px; height: 24px; background: #dcfce7; border-radius: 4px; display: flex; align-items: center; justify-content: center; margin-right: 0.5rem;">
-                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #059669;">
-                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                    <line x1="8" y1="21" x2="16" y2="21"></line>
-                    <line x1="12" y1="17" x2="12" y2="21"></line>
-                  </svg>
-                </div>
-                <h3 style="font-size: 1rem; font-weight: 600; color: #111827;">AirCasting Desktop Dashboard</h3>
-              </div>
+          <ul style="list-style: none; padding: 0; margin: 0 0 1.5rem 0;">
+            <li style="display: flex; align-items: center; font-size: 0.875rem; color: #6b7280; margin-bottom: 0.5rem;">
+              <span style="color: #1ea73f; margin-right: 0.5rem;">•</span>
+              Advanced data visualization and mapping
+            </li>
+            <li style="display: flex; align-items: center; font-size: 0.875rem; color: #6b7280; margin-bottom: 0.5rem;">
+              <span style="color: #1ea73f; margin-right: 0.5rem;">•</span>
+              Export data in multiple formats
+            </li>
+            <li style="display: flex; align-items: center; font-size: 0.875rem; color: #6b7280; margin-bottom: 0.5rem;">
+              <span style="color: #1ea73f; margin-right: 0.5rem;">•</span>
+              Compare multiple sessions
+            </li>
+            <li style="display: flex; align-items: center; font-size: 0.875rem; color: #6b7280; margin-bottom: 0.5rem;">
+              <span style="color: #1ea73f; margin-right: 0.5rem;">•</span>
+              Community data exploration
+            </li>
+          </ul>
 
-              <p style="color: #6b7280; line-height: 1.4; font-size: 0.875rem; margin-bottom: 0.75rem;">
-                Analyze your data, visualize trends, and explore community maps on a larger screen.
-              </p>
-            </div>
-
-            <div style="margin-top: auto;">
-              <a href="https://aircasting.org/" target="_blank" style="display: inline-flex; align-items: center; background: white; color: #374151; padding: 0.5rem 1rem; border-radius: 6px; text-decoration: none; font-weight: 500; border: 1px solid #d1d5db; font-size: 0.875rem; width: fit-content;">
-                Explore Desktop App
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 0.25rem;">
-                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                  <polyline points="15,3 21,3 21,9"></polyline>
-                  <line x1="10" y1="14" x2="21" y2="3"></line>
-                </svg>
-              </a>
-            </div>
-          </div>
+          <a href="https://aircasting.org/" target="_blank" style="display: inline-flex; align-items: center; background: #2563eb; color: white; padding: 0.75rem 1.5rem; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 0.875rem; width: 100%; justify-content: center; transition: background-color 0.3s ease; margin-top: 2rem;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 0.5rem;">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15,3 21,3 21,9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+            Explore Desktop App
+          </a>
         </div>
 
-        <!-- Mobile App Card -->
-        <div style="background: #f9fafb; border-radius: 8px; padding: 1.5rem; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); display: flex; gap: 1rem;">
-          <div style="flex-shrink: 0; width: 120px; height: 160px; border-radius: 6px; overflow: hidden; background: #e5e7eb;">
+        <!-- Mobile Apps Card -->
+        <div style="background: white; border-radius: 12px; padding: 2rem; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); border: 1px solid #e5e7eb;">
+          <div style="display: flex; align-items: center; margin-bottom: 1.5rem;">
+            <div style="width: 48px; height: 48px; background: #dcfce7; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-right: 1rem;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #1ea73f;">
+                <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                <line x1="12" y1="18" x2="12.01" y2="18"></line>
+              </svg>
+            </div>
+            <div>
+              <h3 style="font-size: 1.25rem; font-weight: 600; color: #111827;">Mobile Apps</h3>
+              <p style="color: #6b7280; font-size: 0.875rem;">Monitor on the go</p>
+            </div>
+          </div>
+
+          <div style="aspect-ratio: 16/10; background: #f3f4f6; border-radius: 8px; overflow: hidden; margin-bottom: 1.5rem;">
             <img
-              data-src="/assets/img/pages/how-it-works/how-it-works_3_crop.jpg?nf_resize=fit&w=120"
+              data-src="/assets/img/pages/how-it-works/how-it-works_3_crop.jpg?nf_resize=fit&w=500"
               src="/assets/img/pages/how-it-works/how-it-works_3_crop.jpg?nf_resize=fit&w=20"
               alt="AirCasting Mobile App"
               class="lazyload"
@@ -540,52 +584,54 @@ hasMerchantReturnPolicy:
             />
           </div>
 
-                              <div style="flex-grow: 1; display: flex; flex-direction: column; justify-content: flex-start; min-height: 160px;">
-            <div>
-              <div style="display: flex; align-items: center; margin-bottom: 0.5rem;">
-                <div style="width: 24px; height: 24px; background: #dcfce7; border-radius: 4px; display: flex; align-items: center; justify-content: center; margin-right: 0.5rem;">
-                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #059669;">
-                    <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
-                    <line x1="12" y1="18" x2="12.01" y2="18"></line>
-                  </svg>
-                </div>
-                <h3 style="font-size: 1rem; font-weight: 600; color: #111827;">AirCasting Mobile App</h3>
-              </div>
+          <ul style="list-style: none; padding: 0; margin: 0 0 1rem 0;">
+            <li style="display: flex; align-items: center; font-size: 0.875rem; color: #6b7280; margin-bottom: 0.5rem;">
+              <span style="color: #1ea73f; margin-right: 0.5rem;">•</span>
+              Real-time monitoring and alerts
+            </li>
+            <li style="display: flex; align-items: center; font-size: 0.875rem; color: #6b7280; margin-bottom: 0.5rem;">
+              <span style="color: #1ea73f; margin-right: 0.5rem;">•</span>
+              GPS tracking for mobile sessions
+            </li>
+            <li style="display: flex; align-items: center; font-size: 0.875rem; color: #6b7280; margin-bottom: 0.5rem;">
+              <span style="color: #1ea73f; margin-right: 0.5rem;">•</span>
+              Instant data sharing
+            </li>
+            <li style="display: flex; align-items: center; font-size: 0.875rem; color: #6b7280; margin-bottom: 0.5rem;">
+              <span style="color: #1ea73f; margin-right: 0.5rem;">•</span>
+              Device configuration and control
+            </li>
+          </ul>
 
-              <p style="color: #6b7280; line-height: 1.4; font-size: 0.875rem; margin-bottom: 0.75rem;">
-                Monitor in real-time, manage your device, and share data directly from your smartphone.
-              </p>
-            </div>
-
-            <div style="margin-top: auto;">
-              <div style="display: flex; flex-direction: row; gap: 0.5rem;">
-                <a
-                  href="https://apps.apple.com/us/app/aircasting/id1587685281#?platform=iphone"
-                  target="_blank"
-                  style="display: inline-block;"
-                >
-                  <img
-                    data-src="/assets/img/pages/home/download-on-the-app-store-badge.png"
-                    src="/assets/img/pages/home/download-on-the-app-store-badge.png?nf_resize=fit&w=20"
-                    class="lazyload"
-                    alt="Download on the App Store badge"
-                    style="height: 32px; width: auto;"
-                  />
-                </a>
-                <a
-                  href="https://play.google.com/store/apps/details?id=pl.llp.aircasting&hl=en_US"
-                  target="_blank"
-                  style="display: inline-block;"
-                >
-                  <img
-                    data-src="/assets/img/pages/home/google-play-badge.png"
-                    src="/assets/img/pages/home/google-play-badge.png?nf_resize=fit&w=20"
-                    class="lazyload"
-                    alt="Google Play badge"
-                    style="height: 32px; width: auto;"
-                  />
-                </a>
-              </div>
+          <div style="margin-bottom: 0.5rem;">
+            <p style="font-size: 0.875rem; font-weight: 500; color: #111827; margin-bottom: 0.75rem;">Download for free:</p>
+            <div style="display: flex; flex-direction: row; gap: 0.75rem;">
+              <a
+                href="https://apps.apple.com/us/app/aircasting/id1587685281"
+                target="_blank"
+                style="display: inline-block;"
+              >
+                <img
+                  data-src="/assets/img/pages/home/download-on-the-app-store-badge.png"
+                  src="/assets/img/pages/home/download-on-the-app-store-badge.png?nf_resize=fit&w=20"
+                  class="lazyload"
+                  alt="Download on the App Store badge"
+                  style="height: 50px; width: 180px;"
+                />
+              </a>
+              <a
+                href="https://play.google.com/store/apps/details?id=pl.llp.aircasting&hl=en_US"
+                target="_blank"
+                style="display: inline-block;"
+              >
+                <img
+                  data-src="/assets/img/pages/home/google-play-badge.png"
+                  src="/assets/img/pages/home/google-play-badge.png?nf_resize=fit&w=20"
+                  class="lazyload"
+                  alt="Google Play badge"
+                  style="height: 50px; width: 180px;"
+                />
+              </a>
             </div>
           </div>
         </div>
@@ -593,9 +639,23 @@ hasMerchantReturnPolicy:
     </div>
 
   </section>
-  <section class="panel product-comparison-section" style="background-color: #f9fafb; padding: 4rem 2rem;">
+  <section id="product-selection" class="panel product-comparison-section" style="background-color: #f9fafb; padding: 4rem 2rem;">
     <div class="product-comparison-container" style="max-width: 1200px; margin: 0 auto;">
       <div class="product-comparison-header" style="text-align: center; margin-bottom: 3rem;">
+        <div style="display: flex; align-items: center; justify-content: center; gap: 0.5rem; margin-bottom: 1rem;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #1ea73f;">
+            <circle cx="12" cy="8" r="6"></circle>
+            <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11A6 6 0 0 1 12 2a6 6 0 0 1 3.477 10.89z"></path>
+          </svg>
+          <a href="https://www.aqmd.gov/docs/default-source/aq-spec/summary/habitatmap-airbeam3---summary-report.pdf" target="_blank" style="font-size: 0.875rem; font-weight: 600; color: #1ea73f; text-transform: uppercase; letter-spacing: 0.05em; text-decoration: none; display: flex; align-items: center; gap: 0.25rem;">
+            SCAQMD Validated
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #1ea73f;">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15,3 21,3 21,9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+          </a>
+        </div>
         <h2 class="heading heading--large" style="color: #111827; margin-bottom: 1rem;">Choose Your Perfect AirBeam</h2>
         <p class="heading heading--medium" style="color: #6b7280;">
           Both models offer the same core accuracy. Choose based on your specific needs.
@@ -609,7 +669,7 @@ hasMerchantReturnPolicy:
 
           <div class="product-card-header" style="text-align: center; padding: 2rem 2rem 1rem;">
             <h3 class="heading heading--medium" style="font-weight: bold; margin-bottom: 0.5rem;">AirBeam Mini</h3>
-            <div class="product-price" style="font-size: 2.5rem; font-weight: bold; color: #059669; margin-bottom: 0.5rem;">$99</div>
+            <div class="product-price" style="font-size: 2.5rem; font-weight: bold; color: #1ea73f; margin-bottom: 0.5rem;">$99</div>
             <p style="color: #6b7280;">Perfect for personal monitoring and mobile use</p>
 
   </div>
@@ -629,25 +689,25 @@ hasMerchantReturnPolicy:
               <h4 style="font-weight: 600; color: #111827; margin-bottom: 0.75rem;">Perfect for:</h4>
               <ul style="list-style: none; padding: 0; margin: 0;">
                 <li style="display: flex; align-items: center; font-size: 0.875rem; color: #6b7280; margin-bottom: 0.5rem;">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #059669; margin-right: 0.5rem; flex-shrink: 0;">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #1ea73f; margin-right: 0.5rem; flex-shrink: 0;">
                     <polyline points="20,6 9,17 4,12"></polyline>
                   </svg>
                   Personal health tracking
                 </li>
                 <li style="display: flex; align-items: center; font-size: 0.875rem; color: #6b7280; margin-bottom: 0.5rem;">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #059669; margin-right: 0.5rem; flex-shrink: 0;">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #1ea73f; margin-right: 0.5rem; flex-shrink: 0;">
                     <polyline points="20,6 9,17 4,12"></polyline>
                   </svg>
                   Commuting & travel
                 </li>
                 <li style="display: flex; align-items: center; font-size: 0.875rem; color: #6b7280; margin-bottom: 0.5rem;">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #059669; margin-right: 0.5rem; flex-shrink: 0;">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #1ea73f; margin-right: 0.5rem; flex-shrink: 0;">
                     <polyline points="20,6 9,17 4,12"></polyline>
                   </svg>
                   Indoor air quality
                 </li>
                 <li style="display: flex; align-items: center; font-size: 0.875rem; color: #6b7280; margin-bottom: 0.5rem;">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #059669; margin-right: 0.5rem; flex-shrink: 0;">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #1ea73f; margin-right: 0.5rem; flex-shrink: 0;">
                     <polyline points="20,6 9,17 4,12"></polyline>
                   </svg>
                   Educational projects
@@ -660,7 +720,7 @@ hasMerchantReturnPolicy:
               <div style="display: grid; gap: 0.75rem;">
                 <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.875rem;">
                   <span style="color: #6b7280;">PM1 & PM2.5 Monitoring</span>
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #059669;">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #1ea73f;">
                     <polyline points="20,6 9,17 4,12"></polyline>
                   </svg>
                 </div>
@@ -727,7 +787,7 @@ hasMerchantReturnPolicy:
 
           <div class="product-card-header" style="text-align: center; padding: 2rem 2rem 1rem;">
             <h3 class="heading heading--medium" style="font-weight: bold; margin-bottom: 0.5rem;">AirBeam3</h3>
-            <div class="product-price" style="font-size: 2.5rem; font-weight: bold; color: #059669; margin-bottom: 0.5rem;">$199</div>
+            <div class="product-price" style="font-size: 2.5rem; font-weight: bold; color: #1ea73f; margin-bottom: 0.5rem;">$199</div>
             <p style="color: #6b7280;">Comprehensive monitoring for research and community mapping</p>
           </div>
 
@@ -746,25 +806,25 @@ hasMerchantReturnPolicy:
               <h4 style="font-weight: 600; color: #111827; margin-bottom: 0.75rem;">Perfect for:</h4>
               <ul style="list-style: none; padding: 0; margin: 0;">
                 <li style="display: flex; align-items: center; font-size: 0.875rem; color: #6b7280; margin-bottom: 0.5rem;">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #059669; margin-right: 0.5rem; flex-shrink: 0;">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #1ea73f; margin-right: 0.5rem; flex-shrink: 0;">
                     <polyline points="20,6 9,17 4,12"></polyline>
                   </svg>
                   Research projects
                 </li>
                 <li style="display: flex; align-items: center; font-size: 0.875rem; color: #6b7280; margin-bottom: 0.5rem;">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #059669; margin-right: 0.5rem; flex-shrink: 0;">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #1ea73f; margin-right: 0.5rem; flex-shrink: 0;">
                     <polyline points="20,6 9,17 4,12"></polyline>
                   </svg>
                   Community mapping
                 </li>
                 <li style="display: flex; align-items: center; font-size: 0.875rem; color: #6b7280; margin-bottom: 0.5rem;">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #059669; margin-right: 0.5rem; flex-shrink: 0;">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #1ea73f; margin-right: 0.5rem; flex-shrink: 0;">
                     <polyline points="20,6 9,17 4,12"></polyline>
                   </svg>
                   Environmental monitoring
                 </li>
                 <li style="display: flex; align-items: center; font-size: 0.875rem; color: #6b7280; margin-bottom: 0.5rem;">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #059669; margin-right: 0.5rem; flex-shrink: 0;">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #1ea73f; margin-right: 0.5rem; flex-shrink: 0;">
                     <polyline points="20,6 9,17 4,12"></polyline>
                   </svg>
                   Long-term studies
@@ -778,32 +838,32 @@ hasMerchantReturnPolicy:
               <div style="display: grid; gap: 0.75rem;">
                 <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.875rem;">
                   <span style="color: #6b7280;">PM1 & PM2.5 Monitoring</span>
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #059669;">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #1ea73f;">
                     <polyline points="20,6 9,17 4,12"></polyline>
                   </svg>
                 </div>
                 <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.875rem;">
                   <span style="color: #6b7280;">PM10 Monitoring</span>
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #059669;">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #1ea73f;">
                     <polyline points="20,6 9,17 4,12"></polyline>
                   </svg>
                 </div>
                 <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.875rem;">
                   <span style="color: #6b7280;">Temperature & Humidity</span>
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #059669;">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #1ea73f;">
                     <polyline points="20,6 9,17 4,12"></polyline>
                   </svg>
                 </div>
                 <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.875rem;">
                   <span style="color: #6b7280;">Cellular Connectivity</span>
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #059669;">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #1ea73f;">
                     <line x1="18" y1="6" x2="6" y2="18"></line>
                     <polyline points="6,6 18,18"></polyline>
                   </svg>
                 </div>
                 <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.875rem;">
                   <span style="color: #6b7280;">GPS Tracking</span>
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #059669;">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #1ea73f;">
                     <line x1="18" y1="6" x2="6" y2="18"></line>
                     <polyline points="6,6 18,18"></polyline>
                   </svg>
@@ -860,23 +920,18 @@ hasMerchantReturnPolicy:
               <li style="margin-bottom: 0.25rem;">• You're doing research or community mapping</li>
               <li style="margin-bottom: 0.25rem;">• You need GPS tracking</li>
             </ul>
-          </div>
-        </div>
       </div>
     </div>
 
-  </section>
-
-  <section class="panel" style="padding: 4rem 2rem; background-color: #f9fafb;">
-    <div style="max-width: 1200px; margin: 0 auto;">
-      <div style="background: white; border-radius: 12px; padding: 3rem; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); border: 1px solid #e5e7eb; text-align: center;">
-        <h3 style="font-size: 1.5rem; font-weight: bold; color: #059669; margin-bottom: 1rem;">Need AirBeams for Your Team or Classroom?</h3>
-        <p style="color: #6b7280; font-size: 1.125rem; line-height: 1.6; margin-bottom: 2rem;">Get one-on-one research design and implementation help with bulk orders</p>
-        <a href="/airbeam/get-consultation" style="display: inline-block; padding: 0.75rem 2rem; border: none; color: #111827; text-decoration: none; border-radius: 6px; font-size: 1rem; font-weight: 600; transition: all 0.2s; background: #fbbf24;">
+        <div style="text-align: center; margin-top: 2rem;">
+          <p style="color: #6b7280; margin-bottom: 1rem;">Need help deciding? Our team is here to help!</p>
+          <a href="/airbeam/get-consultation" style="display: inline-flex; align-items: center; background: transparent; color: #374151; padding: 0.75rem 2rem; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 1rem; border: 2px solid #d1d5db; transition: all 0.3s ease;">
           Schedule Free Consultation
         </a>
       </div>
     </div>
+    </div>
+
   </section>
 
   <section class="panel" style="background-color: #f0fdf4; padding: 4rem 2rem;">
@@ -892,7 +947,7 @@ hasMerchantReturnPolicy:
         <div class="testimonial-card" style="background: white; border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: box-shadow 0.3s ease; height: 100%; display: flex; flex-direction: column;">
           <div class="testimonial-category" style="display: flex; align-items: center; margin-bottom: 1rem;">
             <div style="width: 40px; height: 40px; background: #dcfce7; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-right: 0.75rem;">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #059669;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #1ea73f;">
                 <path d="M3 3v18h18"></path>
                 <path d="M18 17V9"></path>
                 <path d="M13 17V5"></path>
@@ -924,7 +979,7 @@ hasMerchantReturnPolicy:
         <div class="testimonial-card" style="background: white; border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: box-shadow 0.3s ease; height: 100%; display: flex; flex-direction: column;">
           <div class="testimonial-category" style="display: flex; align-items: center; margin-bottom: 1rem;">
             <div style="width: 40px; height: 40px; background: #dcfce7; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-right: 0.75rem;">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #059669;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #1ea73f;">
                 <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
                 <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
               </svg>
@@ -954,7 +1009,7 @@ hasMerchantReturnPolicy:
         <div class="testimonial-card" style="background: white; border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: box-shadow 0.3s ease; height: 100%; display: flex; flex-direction: column;">
           <div class="testimonial-category" style="display: flex; align-items: center; margin-bottom: 1rem;">
             <div style="width: 40px; height: 40px; background: #dcfce7; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-right: 0.75rem;">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #059669;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #1ea73f;">
                 <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
                 <circle cx="9" cy="7" r="4"></circle>
                 <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
@@ -1012,7 +1067,7 @@ hasMerchantReturnPolicy:
           <div style="display: flex; flex-direction: column; gap: 1rem;">
             <div style="display: flex; align-items: center; gap: 0.75rem;">
               <div style="width: 24px; height: 24px; background: #dcfce7; border-radius: 6px; display: flex; align-items: center; justify-content: center;">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #059669;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #1ea73f;">
                   <circle cx="12" cy="12" r="10"></circle>
                   <path d="M2 12h20"></path>
                   <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
@@ -1022,7 +1077,7 @@ hasMerchantReturnPolicy:
             </div>
             <div style="display: flex; align-items: center; gap: 0.75rem;">
               <div style="width: 24px; height: 24px; background: #dcfce7; border-radius: 6px; display: flex; align-items: center; justify-content: center;">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #059669;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #1ea73f;">
                   <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
                   <circle cx="9" cy="7" r="4"></circle>
                   <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
@@ -1033,7 +1088,7 @@ hasMerchantReturnPolicy:
             </div>
             <div style="display: flex; align-items: center; gap: 0.75rem;">
               <div style="width: 24px; height: 24px; background: #dcfce7; border-radius: 6px; display: flex; align-items: center; justify-content: center;">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #059669;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #1ea73f;">
                   <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
                   <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
                 </svg>
@@ -1048,7 +1103,7 @@ hasMerchantReturnPolicy:
             data-src="/assets/img/pages/aircasting/aircasting_1.jpg?nf_resize=fit&w=600"
             src="/assets/img/pages/aircasting/aircasting_1.jpg?nf_resize=fit&w=20"
             alt="Community environmental justice"
-            class="lazyload"
+                class="lazyload"
             style="width: 100%; height: auto; display: block;"
           />
         </div>
@@ -1081,7 +1136,7 @@ hasMerchantReturnPolicy:
         <!-- Educational Tools Card -->
         <div style="background: white; border-radius: 12px; padding: 2rem; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); text-align: center; border: 1px solid #e5e7eb;">
           <div style="width: 48px; height: 48px; background: #dcfce7; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #059669;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #1ea73f;">
               <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
               <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
             </svg>
@@ -1097,8 +1152,8 @@ hasMerchantReturnPolicy:
               <polyline points="15,3 21,3 21,9"></polyline>
               <line x1="10" y1="14" x2="21" y2="3"></line>
             </svg>
-          </a>
-        </div>
+            </a>
+            </div>
 
         <!-- Community Support Card -->
         <div style="background: white; border-radius: 12px; padding: 2rem; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); text-align: center; border: 1px solid #e5e7eb;">
@@ -1109,7 +1164,7 @@ hasMerchantReturnPolicy:
               <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
               <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
             </svg>
-          </div>
+            </div>
           <h3 style="font-size: 1.25rem; font-weight: 600; color: #111827; margin-bottom: 0.5rem;">Community Support</h3>
           <p style="color: #6b7280; font-size: 0.875rem; line-height: 1.5; margin-bottom: 1.5rem;">
             Connect with researchers, educators, and advocates worldwide
@@ -1122,14 +1177,30 @@ hasMerchantReturnPolicy:
               <line x1="10" y1="14" x2="21" y2="3"></line>
             </svg>
           </a>
-        </div>
-      </div>
+            </div>
+          </div>
     </div>
 
   </section>
 
+  <section class="panel" style="padding: 4rem 2rem; background-color: #f3f4f6;">
+    <div style="max-width: 896px; margin: 0 auto; text-align: center;">
+      <h2 style="font-size: 1.875rem; font-weight: bold; color: #111827; margin-bottom: 1rem;">Need AirBeams for Your Team or Classroom?</h2>
+      <p style="font-size: 1.25rem; color: #6b7280; margin-bottom: 2rem;">Get one-on-one research design and implementation help with bulk orders.</p>
+      <a href="/airbeam/get-consultation" target="_blank" style="display: inline-flex; align-items: center; background: #1ea73f; color: white; padding: 1rem 2.5rem; border-radius: 8px; text-decoration: none; font-size: 1.25rem; font-weight: 600; transition: background-color 0.3s ease; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 0.75rem;">
+          <path d="M8 2v4"></path>
+          <path d="M16 2v4"></path>
+          <rect x="3" y="4" width="18" height="18" rx="2"></rect>
+          <path d="M3 10h18"></path>
+        </svg>
+        Schedule a Free Consultation
+      </a>
+          </div>
+  </section>
+
   <section class="panel" style="padding: 4rem 2rem; background-color: #ffffff;">
-    <div style="max-width: 1200px; margin: 0 auto; width: 100%;">
+    <div style="max-width: 800px; margin: 0 auto; width: 100%;">
       <div style="text-align: center; margin-bottom: 3rem;">
         <h2 style="font-size: 2rem; font-weight: bold; color: #111827; margin-bottom: 1rem;">Frequently Asked Questions</h2>
         <p style="font-size: 1.25rem; color: #6b7280;">Get answers to common questions about AirBeam devices</p>
@@ -1276,7 +1347,7 @@ hasMerchantReturnPolicy:
       </div>
 
       <!-- Contact Section -->
-      <div style="margin-top: 2rem; text-align: center; background: #f9fafb; border-radius: 12px; padding: 1.5rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+      <div style="margin-top: 2rem; text-align: center; background: #f9fafb; border-radius: 12px; padding: 1.5rem; max-width: 800px; margin-left: auto; margin-right: auto;">
         <h3 style="font-size: 1rem; font-weight: 600; color: #111827; margin-bottom: 0.5rem;">Still have questions?</h3>
         <p style="color: #6b7280; margin-bottom: 1rem; font-size: 0.875rem;">Email us at info@habitatmap.org or connect with our community</p>
         <div style="display: flex; flex-direction: row; gap: 1rem; justify-content: center;">
