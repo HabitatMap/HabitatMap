@@ -158,10 +158,11 @@ $header-link-color-white: $white;
   [data-current^="airbeam"] &,
   [data-current^="donate"] & {
     @include button-color(
-      $text-color: $header-link-color-hm,
-      $border-color: $header-link-color-hm,
-      $bg-color: $white,
-      $bg-color-hover: $header-link-color-hm
+      $text-color: $gray-dark,
+      $border-color: $cta-color,
+      $bg-color: $cta-color,
+      $bg-color-hover: rgba($cta-color, 0.75),
+      $text-color-hover: $gray-dark
     );
   }
 

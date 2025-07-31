@@ -1015,3 +1015,12 @@ table {
 .comparison-summary__item {
   margin-bottom: 0.5rem;
 }
+
+// Custom styles for buy-it-now page hero section
+.buy-it-now-hero.lazyloaded::after {
+  background-image: url("/assets/aircasting-1.jpg") !important;
+}
+
+.buy-it-now-hero::after {
+  background-image: url("/assets/aircasting-1.jpg") !important;
+}
