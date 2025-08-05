@@ -1,0 +1,46 @@
+// Consultation Section Styles
+.consultation-section {
+  padding: 4rem 2rem;
+  background-color: #f3f4f6;
+
+  .consultation-container {
+    max-width: 896px;
+    margin: 0 auto;
+    text-align: center;
+
+    .consultation-title {
+      font-size: 1.875rem;
+      font-weight: bold;
+      color: #111827;
+      margin-bottom: 1rem;
+    }
+
+    .consultation-description {
+      font-size: 1.25rem;
+      color: #6b7280;
+      margin-bottom: 2rem;
+    }
+
+    .consultation-button {
+      display: inline-flex;
+      align-items: center;
+      background: #1ea73f;
+      color: white;
+      padding: 1rem 2.5rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 1.25rem;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+      &:hover {
+        background-color: #16a34a;
+      }
+
+      .button-icon {
+        margin-right: 0.75rem;
+      }
+    }
+  }
+}

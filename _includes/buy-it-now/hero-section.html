@@ -1,33 +1,32 @@
 <!-- Hero Section -->
-<section class="hero-section" style="position: relative; min-height: 50vh; overflow: hidden; padding: 6rem 0;">
+<section class="hero-section">
   <!-- Background Image -->
-  <div style="position: absolute; inset: 0; background-image: url('/assets/new_page_cover.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;"></div>
-
+  <div class="hero-background"></div>
 
   <!-- Content -->
-  <div style="position: relative; z-index: 10; min-height: 50vh; display: flex; align-items: center;">
-    <div style="max-width: 1280px; margin: 0 auto; padding: 0 1rem; width: 100%;">
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
+  <div class="hero-content">
+    <div class="hero-container">
+      <div class="hero-grid">
         <!-- Left Column - Content -->
-        <div style="color: white; display: flex; flex-direction: column; gap: 2rem;">
-          <h1 style="font-size: 3.75rem; font-weight: bold; line-height: 1.1; margin: 0;">
-            Know Your Air Quality in <span style="color: #67e8f9;">Real-Time</span>
+        <div class="hero-text">
+          <h1 class="hero-title">
+            Know Your Air Quality in <span class="highlight">Real-Time</span>
           </h1>
 
-          <p style="font-size: 1.5rem; color: rgba(255, 255, 255, 0.9); line-height: 1.6; margin: 0;">
+          <p class="hero-subtitle">
             Professional-grade air monitoring that fits in your pocket. Protect your health with instant readings anywhere you go.
           </p>
 
           <!-- CTAs -->
-          <div style="display: flex; flex-direction: row; gap: 1rem; margin-top: 1rem;">
+          <div class="hero-ctas">
             <button
-              style="background: #1ea73f; color: white; border: none; padding: 0.75rem 2rem; font-size: 1.125rem; font-weight: 600; border-radius: 8px; cursor: pointer; transition: background-color 0.3s; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);"
+              class="cta-button primary"
               onclick="document.getElementById('product-selection')?.scrollIntoView({ behavior: 'smooth' })"
             >
               Choose Your AirBeam
             </button>
             <button
-              style="background: rgba(255, 255, 255, 0.1); color: white; border: 1px solid rgba(255, 255, 255, 0.3); padding: 0.75rem 2rem; font-size: 1.125rem; font-weight: 600; border-radius: 8px; cursor: pointer; transition: all 0.3s; backdrop-filter: blur(4px);"
+              class="cta-button secondary"
               onclick="document.getElementById('videos-section')?.scrollIntoView({ behavior: 'smooth' })"
             >
               Watch It In Action
@@ -36,7 +35,7 @@
         </div>
 
         <!-- Right Column - Empty for image -->
-        <div></div>
+        <div class="hero-image"></div>
       </div>
     </div>
   </div>
