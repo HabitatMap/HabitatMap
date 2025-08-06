@@ -290,7 +290,7 @@ hasMerchantReturnPolicy:
             {% include paypal-button.html %}
           </div>
           <a href="/airbeam/get-consultation" class="get-consult-button button button--secondary">
-            HAVE QUESTIONS?
+            HAVE QUESTIONS? lalalalala
           </a>
           <a href="/airbeam/users-guide" class="get-consult-button button button--secondary">
             AIRBEAM 3 USER GUIDE
