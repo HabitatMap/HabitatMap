@@ -21,7 +21,15 @@
 
     {% include navigation.html navigation=site.data.navigation %}
 
-    <div class="u--tablet-max-hidden">
+    <div class="u--tablet-max-hidden header-actions">
+      <button id="cart-toggle" class="cart-toggle-btn" aria-label="Open shopping bag">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <path d="M16 10a4 4 0 0 1-8 0"></path>
+        </svg>
+        <span class="cart-count" id="header-cart-count">0</span>
+      </button>
       {% if page.permalink == "/airbeam/buy-it-now/" %}
         <a href="#product-selection" class="button button--cta header__button" style="padding: 1rem 1.5rem;">Get AirBeam</a>
       {% else %}

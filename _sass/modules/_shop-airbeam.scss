@@ -539,7 +539,7 @@
 .order-details-container {
   display: flex;
   flex-direction: column;
-  margin-right: 2rem;
+  margin-right: 0;
 
   @media screen and (max-width: $large-mobile-max) {
     margin-right: 0;
