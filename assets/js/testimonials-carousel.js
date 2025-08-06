@@ -157,17 +157,27 @@ class TestimonialsCarousel {
       this.mainContainer.appendChild(this.createTestimonialCard(currentTestimonial, true));
     }
 
-    // Add previous testimonial preview (always show something)
-    const prevIndex = this.currentIndex > 0 ? this.currentIndex - 1 : this.testimonials.length - 1;
-    const prevTestimonial = this.testimonials[prevIndex];
-    this.prevContainer.appendChild(this.createTestimonialCard(prevTestimonial, false));
-    this.prevContainer.style.display = 'block';
+    // Check if we're on mobile
+    const isMobile = window.innerWidth <= 767;
 
-    // Add next testimonial preview (always show something)
-    const nextIndex = this.currentIndex < this.testimonials.length - 1 ? this.currentIndex + 1 : 0;
-    const nextTestimonial = this.testimonials[nextIndex];
-    this.nextContainer.appendChild(this.createTestimonialCard(nextTestimonial, false));
-    this.nextContainer.style.display = 'block';
+    // Only add preview testimonials on desktop
+    if (!isMobile) {
+      // Add previous testimonial preview
+      const prevIndex = this.currentIndex > 0 ? this.currentIndex - 1 : this.testimonials.length - 1;
+      const prevTestimonial = this.testimonials[prevIndex];
+      this.prevContainer.appendChild(this.createTestimonialCard(prevTestimonial, false));
+      this.prevContainer.style.display = 'block';
+
+      // Add next testimonial preview
+      const nextIndex = this.currentIndex < this.testimonials.length - 1 ? this.currentIndex + 1 : 0;
+      const nextTestimonial = this.testimonials[nextIndex];
+      this.nextContainer.appendChild(this.createTestimonialCard(nextTestimonial, false));
+      this.nextContainer.style.display = 'block';
+    } else {
+      // Hide preview containers on mobile
+      this.prevContainer.style.display = 'none';
+      this.nextContainer.style.display = 'none';
+    }
 
     // Update dots
     this.updateDots();
@@ -247,7 +257,12 @@ class TestimonialsCarousel {
       }
     });
 
-        // Button hover effects are handled by CSS
+    // Handle window resize for responsive behavior
+    window.addEventListener('resize', () => {
+      this.updateCarousel();
+    });
+
+    // Button hover effects are handled by CSS
   }
 }
 

@@ -6,7 +6,14 @@
       <p style="font-size: 1.25rem; color: #6b7280;">Seamlessly connect your device to powerful data visualization tools</p>
     </div>
 
-    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 3rem; align-items: stretch;">
+    <div class="aircasting-apps-grid" style="display: grid; grid-template-columns: 1fr; gap: 3rem; align-items: stretch; max-width: 100%;">
+      <style>
+        @media (min-width: 768px) {
+          .aircasting-apps-grid {
+            grid-template-columns: repeat(2, 1fr) !important;
+          }
+        }
+      </style>
       <!-- Web App Card -->
       <div style="background: white; border-radius: 12px; padding: 2rem; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); border: 1px solid #e5e7eb;">
         <div style="display: flex; align-items: center; margin-bottom: 1.5rem;">

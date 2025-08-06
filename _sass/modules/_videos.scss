@@ -104,8 +104,27 @@
     }
 
     @media (max-width: 768px) {
+      .videos-section {
+        padding: 2rem 1rem;
+      }
+
       .videos-grid {
         grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+
+      .video-card {
+        padding: 1rem;
+      }
+
+      .videos-header {
+        .videos-title {
+          font-size: 1.5rem;
+        }
+
+        .videos-subtitle {
+          font-size: 1rem;
+        }
       }
     }
   }

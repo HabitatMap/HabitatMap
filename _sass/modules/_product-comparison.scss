@@ -59,9 +59,13 @@
 
     .product-cards-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      grid-template-columns: 1fr;
       gap: 2rem;
       margin-bottom: 3rem;
+
+      @media (min-width: 768px) {
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      }
 
       .product-card {
         background: white;
@@ -221,8 +225,12 @@
 
       .helper-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-columns: 1fr;
         gap: 1.5rem;
+
+        @media (min-width: 768px) {
+          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        }
 
         .helper-card {
           text-align: center;
@@ -303,13 +311,79 @@
     }
 
     // Mobile responsive
-    @media (max-width: 768px) {
-      .product-cards-grid {
-        grid-template-columns: 1fr;
+    @media (max-width: 1024px) {
+      .product-comparison-section {
+        padding: 3rem 1rem;
       }
 
-      .helper-grid {
+      .product-cards-grid {
         grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      .product-card {
+        max-width: 600px;
+        margin: 0 auto;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .product-comparison-section {
+        padding: 2rem 1rem;
+      }
+
+      .product-comparison-container {
+        padding: 0 0.5rem;
+      }
+
+      .product-comparison-header {
+        .comparison-title {
+          font-size: 1.5rem;
+        }
+
+        .comparison-subtitle {
+          font-size: 1rem;
+        }
+      }
+
+      .product-card {
+        padding: 1.5rem 1rem;
+        margin: 0 0.5rem;
+      }
+
+      .product-card-header {
+        .product-name {
+          font-size: 1.25rem;
+        }
+
+        .product-price {
+          font-size: 1.5rem;
+        }
+      }
+
+      .product-use-cases-list,
+      .features-grid {
+        gap: 0.5rem;
+      }
+
+      .use-case-item,
+      .feature-item {
+        font-size: 0.875rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .product-card {
+        padding: 1rem 0.75rem;
+      }
+
+      .product-image {
+        margin: 1rem 0;
+      }
+
+      .product-use-cases,
+      .product-features {
+        margin-bottom: 1rem;
       }
     }
   }

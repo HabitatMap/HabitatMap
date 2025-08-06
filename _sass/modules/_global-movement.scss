@@ -163,9 +163,43 @@
 
     // Mobile responsive
     @media (max-width: 768px) {
-      .movement-hero {
+      .global-movement-section {
+        padding: 2rem 1rem;
+      }
+
+      .movement-grid {
         grid-template-columns: 1fr;
         gap: 2rem;
+      }
+
+      .movement-hero {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+
+      .movement-content {
+        .movement-title {
+          font-size: 1.5rem;
+        }
+
+        .movement-subtitle {
+          font-size: 1rem;
+        }
+      }
+
+      .movement-stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+      }
+
+      .stat-item {
+        padding: 1rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .movement-stats {
+        grid-template-columns: 1fr;
       }
     }
   }

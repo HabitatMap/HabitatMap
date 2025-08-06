@@ -79,12 +79,32 @@
     @media (max-width: 1024px) {
       .features-grid {
         grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
       }
     }
 
     @media (max-width: 768px) {
+      .features-section {
+        padding: 3rem 1rem;
+      }
+
       .features-grid {
         grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+
+      .feature-card {
+        padding: 1.5rem 1rem;
+      }
+
+      .features-header {
+        .features-title {
+          font-size: 1.5rem;
+        }
+
+        .features-subtitle {
+          font-size: 1rem;
+        }
       }
     }
   }

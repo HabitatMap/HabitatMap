@@ -16,4 +16,15 @@
       }
     }
   }
+
+  // Mobile responsive
+  @media (max-width: 768px) {
+    &.panel--big-padding {
+      padding: 2rem 1rem;
+
+      .press-title {
+        font-size: 1.5rem;
+      }
+    }
+  }
 }
