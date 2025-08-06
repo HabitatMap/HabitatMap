@@ -129,9 +129,21 @@ class ShoppingCart {
       cartEmpty.style.display = 'block';
       cartSummary.style.display = 'none';
       cartItems.innerHTML = '';
+
+      // Hide the cart header when empty
+      const cartHeader = document.querySelector('.cart-header');
+      if (cartHeader) {
+        cartHeader.style.display = 'none';
+      }
     } else {
       cartEmpty.style.display = 'none';
       cartSummary.style.display = 'block';
+
+      // Show the cart header when there are items
+      const cartHeader = document.querySelector('.cart-header');
+      if (cartHeader) {
+        cartHeader.style.display = 'flex';
+      }
 
       // Render cart items
       cartItems.innerHTML = this.items.map(item => `

@@ -6,7 +6,7 @@
   <!-- Sidebar -->
   <div id="cart-sidebar" class="cart-sidebar">
     <div class="cart-header">
-      <h2 class="cart-title">Your Bag (<span id="cart-item-count">0</span>)</h2>
+      <h2 class="cart-title">Your Cart (<span id="cart-item-count">0</span>)</h2>
       <button id="close-cart" class="close-cart-btn" aria-label="Close shopping cart">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <line x1="18" y1="6" x2="6" y2="18"></line>
@@ -16,12 +16,22 @@
     </div>
 
     <div class="cart-content">
-      <div id="cart-items" class="cart-items">
-        <!-- Cart items will be dynamically added here -->
+      <div id="cart-empty" class="cart-empty">
+        <div class="empty-cart-icon">
+          <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+        </div>
+        <p class="empty-cart-text">Your cart is empty.</p>
+        <button class="choose-airbeam-btn" onclick="document.getElementById('product-selection')?.scrollIntoView({ behavior: 'smooth' }); window.shoppingCart.closeCart();">
+          Choose Your AirBeam
+        </button>
       </div>
 
-      <div id="cart-empty" class="cart-empty">
-        Your basket is empty.
+      <div id="cart-items" class="cart-items">
+        <!-- Cart items will be dynamically added here -->
       </div>
 
               <div id="cart-summary" class="cart-summary" style="display: none;">
@@ -40,7 +50,6 @@
             <span class="total-label">Total:</span>
             <span id="cart-total" class="total-amount">$0.00</span>
           </div>
-          <p class="shipping-note">Shipping costs will be calculated at checkout.</p>
           <div class="payment-buttons">
             <div id="cart-paypal-button" class="cart-paypal-button">
               <!-- PayPal button will be added here -->

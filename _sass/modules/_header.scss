@@ -196,13 +196,13 @@
   border: none;
   padding: 0.5rem;
   cursor: pointer;
-  color: #374151;
+  color: #6b7280;
   border-radius: 6px;
   transition: all 0.2s ease;
 
   &:hover {
     background: #f3f4f6;
-    color: #111827;
+    color: #374151;
   }
 
   svg {
@@ -214,7 +214,7 @@
     position: absolute;
     top: -4px;
     right: -4px;
-    background: #ef4444;
+    background: #6b7280;
     color: white;
     font-size: 0.75rem;
     font-weight: 600;
@@ -225,5 +225,7 @@
     align-items: center;
     justify-content: center;
     min-width: 20px;
+    line-height: 1;
+    text-align: center;
   }
 }
