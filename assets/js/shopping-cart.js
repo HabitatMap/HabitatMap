@@ -27,8 +27,14 @@ class ShoppingCart {
 
     // Open cart event
     const cartToggle = document.getElementById('cart-toggle');
+    const cartToggleMobile = document.getElementById('cart-toggle-mobile');
+
     if (cartToggle) {
       cartToggle.addEventListener('click', () => this.openCart());
+    }
+
+    if (cartToggleMobile) {
+      cartToggleMobile.addEventListener('click', () => this.openCart());
     }
 
     // Shipping options change
@@ -121,8 +127,14 @@ class ShoppingCart {
 
     // Update header cart count
     const headerCartCount = document.getElementById('header-cart-count');
+    const headerCartCountMobile = document.getElementById('header-cart-count-mobile');
+
     if (headerCartCount) {
       headerCartCount.textContent = totalItems;
+    }
+
+    if (headerCartCountMobile) {
+      headerCartCountMobile.textContent = totalItems;
     }
 
     if (this.items.length === 0) {

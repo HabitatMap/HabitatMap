@@ -186,7 +186,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
 }
 
 /* Shopping Cart Header Button */
@@ -214,7 +213,7 @@
     position: absolute;
     top: -4px;
     right: -4px;
-    background: #6b7280;
+    background: #818181;
     color: white;
     font-size: 0.75rem;
     font-weight: 600;
@@ -227,5 +226,37 @@
     min-width: 20px;
     line-height: 1;
     text-align: center;
+  }
+}
+
+/* Mobile cart button positioning */
+.cart-toggle-btn {
+  color: #818181;
+  margin-left: 1rem;
+}
+
+/* Center logo on mobile */
+@media screen and (max-width: $tablet-max) {
+  .header__menu {
+    display: flex;
+    align-items: center;
+  }
+
+  .header__brand {
+    position: relative;
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .header__logo {
+      position: absolute;
+      left: calc(40% + 0.5rem);
+      transform: translateX(-50%);
+    }
+
+    .header__nav-toggle-button {
+      margin-left: auto;
+    }
   }
 }
