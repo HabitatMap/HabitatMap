@@ -4,6 +4,10 @@ press_articles:
       free speech
     link: https://thelensnola.org/2025/07/23/louisianas-ban-on-community-air-monitoring-is-an-attack-on-science-and-free-speech/
     publication: The Lens New Orleans
+  - date: 2025-07-30
+    link: https://www.aqmd.gov/docs/default-source/aq-spec/field-evaluations/habitatmap---airbeam-mini---field-evaluation.pdf?sfvrsn=32266e7e_3
+    title: Field Evaluation Report for AirBeam Mini
+    publication: AQMD
   - date: 2025-07-14
     title: The Air We Breathe - Tech's new Frontier
     link: https://medium.com/@hernanimax/the-air-we-breathe-techs-next-frontier-fe7ad7be3875
@@ -378,7 +382,3 @@ press_articles:
     link: https://well.blogs.nytimes.com/2013/06/03/microsampling-air-pollution/?_php=true&_type=blogs&_r=0
     publication: The New York Times
     title: Microsampling Air Pollution
-  - date: 2025-07-30
-    link: https://www.aqmd.gov/docs/default-source/aq-spec/field-evaluations/habitatmap---airbeam-mini---field-evaluation.pdf?sfvrsn=32266e7e_3
-    title: Field Evaluation Report for AirBeam Mini
-    publication: AQMD
