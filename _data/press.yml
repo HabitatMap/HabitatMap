@@ -1,13 +1,13 @@
 press_articles:
+  - date: 2025-07-30
+    link: https://www.aqmd.gov/docs/default-source/aq-spec/field-evaluations/habitatmap---airbeam-mini---field-evaluation.pdf?sfvrsn=32266e7e_3
+    title: Field Evaluation Report for AirBeam Mini
+    publication: AQMD
   - date: 2025-07-23
     title: Louisiana’s ban on community air monitoring is an attack on science and
       free speech
     link: https://thelensnola.org/2025/07/23/louisianas-ban-on-community-air-monitoring-is-an-attack-on-science-and-free-speech/
     publication: The Lens New Orleans
-  - date: 2025-07-30
-    link: https://www.aqmd.gov/docs/default-source/aq-spec/field-evaluations/habitatmap---airbeam-mini---field-evaluation.pdf?sfvrsn=32266e7e_3
-    title: Field Evaluation Report for AirBeam Mini
-    publication: AQMD
   - date: 2025-07-14
     title: The Air We Breathe - Tech's new Frontier
     link: https://medium.com/@hernanimax/the-air-we-breathe-techs-next-frontier-fe7ad7be3875
