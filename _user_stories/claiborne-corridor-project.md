@@ -2,7 +2,7 @@
 layout: user_story
 title: Claiborne Corridor project
 featured: true
-image: /images/uploads/claibornecorridor.png
+image: /images/uploads/claibornecorridoractivists.png
 intro: LSU Health New Orleans, with support from the U.S. Environmental
   Protection Agency, is using the AirBeam to conduct research to better
   understand environmental hazards, exposures, and related health outcomes in
