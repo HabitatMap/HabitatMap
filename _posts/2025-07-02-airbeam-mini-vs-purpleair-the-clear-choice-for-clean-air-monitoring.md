@@ -62,4 +62,4 @@ Ready to breathe easier? Choose the AirBeam Mini: accurate, open, and built for 
     </a>
 
 <br><br />
-  <iframe width="700" height="394" src="https://www.youtube.com/embed/JG5fP3_2h-0?si=oObfBGgq4i-75A9k?&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe width="752" height="424" src="https://www.youtube.com/embed/JG5fP3_2h-0?si=oObfBGgq4i-75A9k?&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
