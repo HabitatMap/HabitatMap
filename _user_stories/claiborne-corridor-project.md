@@ -26,4 +26,4 @@ What began as a grassroots response to a public health crisis has grown into a n
 
 T﻿o learn more about the Claiborne Corridor Project, check out the [Nightline coverage](https://www.youtube.com/watch?v=Ecx9lQGajgo) of their work. 
 
-<iframe width="700" height="394" src="https://www.youtube.com/embed/Ecx9lQGajgo?si=meUkfRy4r824EMW4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="752" height="424" src="https://www.youtube.com/embed/Ecx9lQGajgo?si=meUkfRy4r824EMW4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
