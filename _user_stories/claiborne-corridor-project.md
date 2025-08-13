@@ -9,7 +9,7 @@ intro: LSU Health New Orleans, with support from the U.S. Environmental
   the Claiborne Corridor. Their findings have been captured in the <a
   href="https://sph.lsuhsc.edu/research/researchers-and-studies/claiborne-corridor-study//">Claiborne
   Corridor Study</a>.
-type: Citizen Scientists
+type: Researchers
 order: 7
 ---
 In the heart of New Orleans’ historic Tremé neighborhood, a coalition of community leaders, researchers, and students are working to reclaim environmental justice under the shadow of the Claiborne Expressway. Opening in 1968 through a thriving Black economic and cultural district, the elevated highway has long been a source of harmful air and noise pollution—and a symbol of environmental racism. As described by urban planner and community advocate Amy Stelly, “The Claiborne Expressway is the poster child for urban highways that need to be removed…the highway just destroyed a key artery in the neighborhood.”
@@ -25,3 +25,7 @@ Thanks to this support, the Claiborne Corridor Project now uses HabitatMap’s A
 Preliminary data collected with AirBeam sensors revealed that fine particulate matter (PM 2.5 levels) at homes within 100 meters of the highway consistently exceed health-based standards. Communities living adjacent to the highway also experience higher rates of emergency room visits for respiratory illnesses and chest pain, coughing, dizziness, and chest pain, highlighting the public health consequences of long-term exposure. AirBeam monitoring has played a pivotal role in raising awareness among residents, policymakers, and stakeholders about the dangerous air quality conditions surrounding the expressway. Beyond local impact, the data has catalyzed a national dialogue, inspiring other communities to reexamine aging highway infrastructure and advocate for cleaner, healthier alternatives. 
 
 What began as a grassroots response to a public health crisis has grown into a nationally recognized project featured by [NPR](https://www.npr.org/2023/12/15/1219755917/how-do-you-address-highways-that-have-cut-through-communities), [ABC News](https://www.youtube.com/watch?v=Ecx9lQGajgo), [Nightline](https://abcnews.go.com/US/highway-traffic-pollution-puts-communities-color-greater-health/story?id=103340992), the [New York Times](https://www.nytimes.com/interactive/2021/05/27/climate/us-cities-highway-removal.html?searchResultPosition=1)—and even [acknowledged by President Biden](https://www.wwno.org/news/2023-03-01/federal-funding-to-reconnect-claiborne-approved-but-a-fraction-of-what-city-state-sought). Yet for the community, the question remains: Should the expressway stay or go? Thanks to data collected with the AirBeam and the leadership of local residents, that decision can now be shaped by the lived experiences, health outcomes, and voices of the people most impacted.
+
+T﻿o learn more about the Claiborne Corridor Project, check out the [Nightline coverage](https://www.youtube.com/watch?v=Ecx9lQGajgo) of their work. 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Ecx9lQGajgo?si=meUkfRy4r824EMW4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
