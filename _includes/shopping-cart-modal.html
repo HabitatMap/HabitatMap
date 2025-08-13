@@ -25,7 +25,14 @@
           </svg>
         </div>
         <p class="empty-cart-text">Your cart is empty.</p>
-        <button class="choose-airbeam-btn" onclick="document.getElementById('product-selection')?.scrollIntoView({ behavior: 'smooth' }); window.shoppingCart.closeCart();">
+        <button class="choose-airbeam-btn" onclick="
+          window.shoppingCart.closeCart();
+          if (window.location.pathname.includes('/airbeam/buy-it-now')) {
+            document.getElementById('product-selection')?.scrollIntoView({ behavior: 'smooth' });
+          } else {
+            window.location.href='/airbeam/buy-it-now/#product-selection';
+          }
+        ">
           Choose Your AirBeam
         </button>
       </div>
