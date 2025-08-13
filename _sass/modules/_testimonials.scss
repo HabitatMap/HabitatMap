@@ -23,171 +23,31 @@
 
     .carousel-container {
       position: relative;
-      max-width: 1000px;
+      max-width: 1200px; /* Increased max-width for better quote expansion */
       margin: 0 auto;
       display: flex;
       justify-content: center;
 
-      .slider--quote {
+      .js-slider {
         width: 100%;
-        color: #111827 !important;
         display: flex;
         justify-content: center;
         align-items: center;
-
-        .js-slider {
-          display: flex;
-          justify-content: center;
-
-          .slide {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 0 1rem;
-            text-align: center;
-            width: 100%;
-
-            .testimonial-card {
-              max-width: 500px;
-              width: 100%;
-              background: white;
-              border-radius: 12px;
-              padding: 1.5rem;
-              box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-              height: 100%;
-              display: flex;
-              flex-direction: column;
-              margin: 0 auto;
-
-              .testimonial-category {
-                display: flex;
-                align-items: center;
-                margin-bottom: 1rem;
-
-                .category-icon {
-                  width: 40px;
-                  height: 40px;
-                  background: #dcfce7;
-                  border-radius: 8px;
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                  margin-right: 0.75rem;
-
-                  svg {
-                    color: #16a34a;
-                  }
-                }
-
-                .category-text {
-                  font-size: 0.875rem;
-                  font-weight: 600;
-                  color: #166534;
-                }
-              }
-
-              .quote__body {
-                color: #374151 !important;
-                font-style: italic;
-                font-size: 1.125rem;
-                line-height: 1.6;
-                margin-bottom: 1.5rem;
-                flex-grow: 1;
-              }
-
-              .testimonial-author {
-                display: flex;
-                align-items: center;
-
-                .author-avatar {
-                  width: 48px;
-                  height: 48px;
-                  background: #f3f4f6;
-                  border-radius: 50%;
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                  margin-right: 0.75rem;
-
-                  svg {
-                    color: #6b7280;
-                  }
-                }
-
-                .author-info {
-                  .quote__name {
-                    color: #111827 !important;
-                    font-weight: 600;
-                    margin: 0;
-                  }
-
-                  .quote__heading {
-                    color: #6b7280 !important;
-                    font-size: 0.875rem;
-                    margin: 0;
-                  }
-                }
-              }
-            }
-          }
-        }
-
-        // Tiny Slider navigation styles
-        .tns-nav {
-          bottom: -3rem;
-          left: 50%;
-          transform: translateX(-50%);
-          display: flex;
-          justify-content: center;
-          gap: 0.5rem;
-
-          button {
-            width: 8px;
-            height: 8px;
-            border-radius: 50%;
-            border: none;
-            background: #d1d5db;
-            cursor: pointer;
-            transition: all 0.3s ease;
-
-            &.tns-nav-active {
-              background: #16a34a;
-            }
-          }
-        }
-
-        .tns-controls {
-          right: -5vw;
-          top: 50%;
-          transform: translateY(-50%);
-        }
-
-        // Tiny Slider configuration for faded previews
-        .tns-item {
-          opacity: 0.3;
-          transform: scale(0.9);
-          transition: all 0.3s ease;
-
-          &.tns-slide-active {
-            opacity: 1;
-            transform: scale(1);
-          }
-
-          &.tns-slide-active + .tns-item,
-          &.tns-slide-active + .tns-item + .tns-item {
-            opacity: 0.3;
-            transform: scale(0.9);
-          }
-        }
       }
     }
   }
 
   // Mobile responsive styles
   @media (max-width: 768px) {
-    .slider--quote {
-      .tns-controls {
-        right: 1rem;
+    padding: 3rem 1rem;
+
+    .testimonials-container {
+      .testimonials-header {
+        margin-bottom: 2rem;
+      }
+
+      .carousel-container {
+        max-width: 100%;
       }
     }
   }

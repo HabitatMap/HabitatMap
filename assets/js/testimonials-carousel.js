@@ -6,6 +6,8 @@ class TestimonialsCarousel {
     this.autoplay = options.autoplay || true;
     this.autoplayTimeout = options.autoplayTimeout || 8000;
     this.autoplayInterval = null;
+    this.isTransitioning = false;
+    this.previousIndex = null; // Added for slide direction tracking
 
     this.init();
   }
@@ -99,27 +101,26 @@ class TestimonialsCarousel {
     categoryText.className = 'category-text';
     categoryText.textContent = testimonial.category;
 
-        iconContainer.appendChild(icon);
+    iconContainer.appendChild(icon);
     categorySection.appendChild(iconContainer);
     categorySection.appendChild(categoryText);
 
-    // Quote content
+    // Quote content - truncate preview quotes to first sentence
     const quote = document.createElement('blockquote');
     quote.className = 'testimonial-quote';
-    quote.textContent = `"${testimonial.content}"`;
+
+    if (isMain) {
+      // Full quote for main testimonial
+      quote.textContent = `"${testimonial.content}"`;
+    } else {
+      // Truncate to first sentence for preview cards
+      const firstSentence = testimonial.content.split(/[.!?]/)[0];
+      quote.textContent = `"${firstSentence}..."`;
+    }
 
     // Author section
     const authorSection = document.createElement('div');
     authorSection.className = 'testimonial-author';
-
-    const avatar = document.createElement('div');
-    avatar.className = 'testimonial-avatar';
-    avatar.innerHTML = `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-      <circle cx="9" cy="7" r="4"></circle>
-      <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-      <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-    </svg>`;
 
     const authorInfo = document.createElement('div');
     authorInfo.className = 'testimonial-author-info';
@@ -134,7 +135,6 @@ class TestimonialsCarousel {
 
     authorInfo.appendChild(authorName);
     authorInfo.appendChild(authorRole);
-    authorSection.appendChild(avatar);
     authorSection.appendChild(authorInfo);
 
     // Assemble card
@@ -145,7 +145,34 @@ class TestimonialsCarousel {
     return card;
   }
 
-  updateCarousel() {
+  async updateCarousel() {
+    if (this.isTransitioning) return;
+    this.isTransitioning = true;
+
+    // Determine slide direction based on previous index
+    const direction = this.getSlideDirection();
+
+    // Fade out current content with slide effect
+    const currentCards = [
+      this.mainContainer.querySelector('.testimonial-card'),
+      this.prevContainer.querySelector('.testimonial-card'),
+      this.nextContainer.querySelector('.testimonial-card')
+    ].filter(card => card);
+
+    // Slide out current cards
+    currentCards.forEach(card => {
+      card.style.transition = 'all 0.3s ease-out';
+      card.style.opacity = '0';
+      if (direction === 'next') {
+        card.style.transform = 'translateX(-100px)';
+      } else {
+        card.style.transform = 'translateX(100px)';
+      }
+    });
+
+    // Wait for slide out to complete
+    await new Promise(resolve => setTimeout(resolve, 300));
+
     // Clear containers
     this.mainContainer.innerHTML = '';
     this.prevContainer.innerHTML = '';
@@ -154,7 +181,17 @@ class TestimonialsCarousel {
     // Add main testimonial
     const currentTestimonial = this.testimonials[this.currentIndex];
     if (currentTestimonial) {
-      this.mainContainer.appendChild(this.createTestimonialCard(currentTestimonial, true));
+      const mainCard = this.createTestimonialCard(currentTestimonial, true);
+      mainCard.style.opacity = '0';
+      mainCard.style.transform = direction === 'next' ? 'translateX(40px)' : 'translateX(-40px)';
+      this.mainContainer.appendChild(mainCard);
+
+      // Slide in main card with subtle, slower animation
+      requestAnimationFrame(() => {
+        mainCard.style.transition = 'all 0.8s ease-out';
+        mainCard.style.opacity = '1';
+        mainCard.style.transform = 'translateX(0)';
+      });
     }
 
     // Check if we're on mobile
@@ -165,14 +202,33 @@ class TestimonialsCarousel {
       // Add previous testimonial preview
       const prevIndex = this.currentIndex > 0 ? this.currentIndex - 1 : this.testimonials.length - 1;
       const prevTestimonial = this.testimonials[prevIndex];
-      this.prevContainer.appendChild(this.createTestimonialCard(prevTestimonial, false));
+      const prevCard = this.createTestimonialCard(prevTestimonial, false);
+      prevCard.style.opacity = '0';
+      prevCard.style.transform = direction === 'next' ? 'translateX(-50px)' : 'translateX(50px)';
+      this.prevContainer.appendChild(prevCard);
       this.prevContainer.style.display = 'block';
 
       // Add next testimonial preview
       const nextIndex = this.currentIndex < this.testimonials.length - 1 ? this.currentIndex + 1 : 0;
       const nextTestimonial = this.testimonials[nextIndex];
-      this.nextContainer.appendChild(this.createTestimonialCard(nextTestimonial, false));
+      const nextCard = this.createTestimonialCard(nextTestimonial, false);
+      nextCard.style.opacity = '0';
+      nextCard.style.transform = direction === 'next' ? 'translateX(50px)' : 'translateX(-50px)';
+      this.nextContainer.appendChild(nextCard);
       this.nextContainer.style.display = 'block';
+
+      // Slide in preview cards with slight delay
+      setTimeout(() => {
+        prevCard.style.transition = 'all 0.4s ease-out';
+        prevCard.style.opacity = '1';
+        prevCard.style.transform = 'translateX(0)';
+      }, 100);
+
+      setTimeout(() => {
+        nextCard.style.transition = 'all 0.4s ease-out';
+        nextCard.style.opacity = '1';
+        nextCard.style.transform = 'translateX(0)';
+      }, 200);
     } else {
       // Hide preview containers on mobile
       this.prevContainer.style.display = 'none';
@@ -181,9 +237,26 @@ class TestimonialsCarousel {
 
     // Update dots
     this.updateDots();
+
+    // Reset transition state
+    setTimeout(() => {
+      this.isTransitioning = false;
+    }, 500);
   }
 
-    updateDots() {
+  getSlideDirection() {
+    // Store previous index to determine direction
+    if (!this.previousIndex) {
+      this.previousIndex = this.currentIndex;
+      return 'next'; // Default direction for first load
+    }
+
+    const direction = this.currentIndex > this.previousIndex ? 'next' : 'prev';
+    this.previousIndex = this.currentIndex;
+    return direction;
+  }
+
+  updateDots() {
     this.dotsContainer.innerHTML = '';
 
     this.testimonials.forEach((_, index) => {
@@ -199,16 +272,19 @@ class TestimonialsCarousel {
   }
 
   goToNext() {
+    if (this.isTransitioning) return;
     this.currentIndex = (this.currentIndex + 1) % this.testimonials.length;
     this.updateCarousel();
   }
 
   goToPrevious() {
+    if (this.isTransitioning) return;
     this.currentIndex = (this.currentIndex - 1 + this.testimonials.length) % this.testimonials.length;
     this.updateCarousel();
   }
 
   goToIndex(index) {
+    if (this.isTransitioning || index === this.currentIndex) return;
     this.currentIndex = index;
     this.updateCarousel();
   }
