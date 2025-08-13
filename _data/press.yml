@@ -148,6 +148,11 @@ press_articles:
       correction
     link: https://www.sciencedirect.com/science/article/abs/pii/S1352231020302168?dgcid=coauthor
     publication: Atmospheric Environment
+  - date: 2020-05-07
+    link: https://pmc.ncbi.nlm.nih.gov/articles/PMC7382637/
+    title: "Biomedical REAl-Time Health Evaluation (BREATHE): toward an mHealth
+      informatics platform"
+    publication: PubMed Central
   - date: 2020-01-22
     link: https://captotheque.fr/fr/blog/detail/mobicitair-les-resultats-de-lexperimentation-citoyenne
     publication: Captotheque
