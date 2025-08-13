@@ -194,13 +194,13 @@
   margin-top: auto;
   padding-top: 16px; /* Add some top padding */
   border-top: 1px solid #e5e7eb; /* Subtle separator line */
-  justify-content: center; /* Center the author info since no avatar */
+  justify-content: flex-start; /* Changed from center to left alignment */
 }
 
 .testimonial-author-info {
   flex: 1;
   min-width: 0; /* Allow text to wrap properly */
-  text-align: center; /* Center the text */
+  text-align: left; /* Changed from center to left alignment */
 }
 
 .testimonial-author-name {
