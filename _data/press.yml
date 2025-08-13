@@ -28,6 +28,12 @@ press_articles:
     title: 10+ Best Air Quality Monitors
     link: https://breathesafeair.com/air-quality-monitors/
     publication: Breathe Safe Air
+  - date: 2025-03-25
+    title: "Low-Cost PM2.5 Sensor Performance Characteristics against Meteorological
+      Influence in Sub-Saharan Africa: Evidence from the Air Sensor Evaluation
+      and Training Facility for the West Africa Projec"
+    link: https://pubs.acs.org/doi/abs/10.1021/acs.est.4c09752
+    publication: ACS Publications
   - date: 2025-02-15
     link: https://nhsjs.com/2025/the-effect-of-sensor-type-and-location-on-reported-air-quality-index-reliability-in-new-york/
     title: The Effect of Sensor Type and Location on Reported Air Quality Index
@@ -121,6 +127,11 @@ press_articles:
       Studies"
     link: https://www.researchgate.net/publication/344575711_Air_Quality_Citizen_Science_Research_Project_in_NYC_Toolkit_Case_Studies
     publication: Research Gate
+  - date: 2020-09-22
+    link: https://www.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2020.575946/full
+    title: "The Urban Built Environment, Walking and Mental Health Outcomes Among
+      Older Adults: A Pilot Study"
+    publication: Frontiers
   - date: 2020-08-19
     title: "Self-Portraits of Personal Exposure to Air Pollution: on where and when
       People Are Exposed, and on why it Is Difficult to Avoid"
@@ -378,9 +389,3 @@ press_articles:
     link: https://well.blogs.nytimes.com/2013/06/03/microsampling-air-pollution/?_php=true&_type=blogs&_r=0
     publication: The New York Times
     title: Microsampling Air Pollution
-  - date: 2025-03-25
-    title: "Low-Cost PM2.5 Sensor Performance Characteristics against Meteorological
-      Influence in Sub-Saharan Africa: Evidence from the Air Sensor Evaluation
-      and Training Facility for the West Africa Projec"
-    link: https://pubs.acs.org/doi/abs/10.1021/acs.est.4c09752
-    publication: ACS Publications
