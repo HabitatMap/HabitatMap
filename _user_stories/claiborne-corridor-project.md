@@ -8,7 +8,7 @@ intro: LSU Health New Orleans, with support from the U.S. Environmental
   understand environmental hazards, exposures, and related health outcomes in
   the Claiborne Corridor. Their findings have been captured in the <a
   href="https://sph.lsuhsc.edu/research/researchers-and-studies/claiborne-corridor-study//">Claiborne
-  Corridor Study</a>,
+  Corridor Study</a>.
 type: Citizen Scientists
 order: 7
 ---
