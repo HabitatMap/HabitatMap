@@ -183,15 +183,15 @@ class TestimonialsCarousel {
     if (currentTestimonial) {
       const mainCard = this.createTestimonialCard(currentTestimonial, true);
       mainCard.style.opacity = '0';
-      mainCard.style.transform = direction === 'next' ? 'translateX(40px)' : 'translateX(-40px)';
+      mainCard.style.transform = direction === 'next' ? 'translateX(60px) scale(0.95)' : 'translateX(-60px) scale(0.95)';
       this.mainContainer.appendChild(mainCard);
 
-      // Slide in main card with subtle, slower animation
-      requestAnimationFrame(() => {
-        mainCard.style.transition = 'all 0.8s ease-out';
+      // Ensure initial state is applied before starting transition
+      setTimeout(() => {
+        mainCard.style.transition = 'all 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94)';
         mainCard.style.opacity = '1';
-        mainCard.style.transform = 'translateX(0)';
-      });
+        mainCard.style.transform = 'translateX(0) scale(1)';
+      }, 50); // Small delay to ensure initial state is rendered
     }
 
     // Check if we're on mobile

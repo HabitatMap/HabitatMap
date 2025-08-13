@@ -61,8 +61,10 @@
   display: flex;
   flex-direction: column;
   opacity: 1; /* Ensure cards start visible */
-  transform: translateX(0); /* Ensure cards start in correct position */
+  transform: translateX(0) scale(1); /* Ensure cards start in correct position and scale */
   will-change: transform, opacity; /* Optimize for animations */
+  backface-visibility: hidden; /* Improve performance */
+  transform-style: preserve-3d; /* Better 3D rendering */
 }
 
 .testimonial-card:hover {
