@@ -3,14 +3,13 @@ layout: user_story
 title: Airparif
 featured: true
 image: /images/uploads/airparif_cropped.jpg
-intro: >-
-  Founded in 1979, <a href="http://www.airparif.fr">Airparif</a> is a French
-  non-profit organization vested by the Ministry of Environment to monitor air
-  quality, forecast pollution episodes, educate the public on the environment,
-  and assess the effectiveness of air pollution mitigation measures in the Paris
-  metropolitan region.
+intro: Founded in 1979, <a href="http://www.airparif.fr">Airparif</a> is a
+  French non-profit organization vested by the Ministry of Environment to
+  monitor air quality, forecast pollution episodes, educate the public on the
+  environment, and assess the effectiveness of air pollution mitigation measures
+  in the Paris metropolitan region.
 type: Citizen Scientists
-order: 3
+order: 4
 ---
 
 Integral to Airparif’s mission is reducing Parisians’ exposure to air pollution and raising awareness of the impact air pollution has on human health and quality of life. Airparif’s public programs are designed to educate Parisians about what air pollution is and how it can be measured. Select programs use the AirBeam and the AirCasting platform to empower participants to investigate where and when they are exposed to relatively higher concentrations of air pollutants and consider how they might alter their daily routines to reduce air pollution exposures.
