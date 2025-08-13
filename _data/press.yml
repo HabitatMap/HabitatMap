@@ -119,10 +119,6 @@ press_articles:
       spots
     link: https://www.brooklynpaper.com/south-williamsburg-air-quality-up-to-20-times-worse-than-previously-known-study/
     publication: Brooklyn Paper
-  - date: 2020-01-21
-    title: "Citizen Science: A New Approach to Smoke-Free Policy Advocacy"
-    link: https://pubmed.ncbi.nlm.nih.gov/31908201/
-    publication: PubMed
   - date: 2020-12-24
     title: How We Reported on Pollution in New Delhi Through Two Children
     link: https://www.nytimes.com/2020/12/24/insider/india-measuring-pollution.html?smid=tw-share
@@ -166,6 +162,10 @@ press_articles:
     link: https://captotheque.fr/fr/blog/detail/mobicitair-les-resultats-de-lexperimentation-citoyenne
     publication: Captotheque
     title: "Mobicit'air : les résultats de l'expérimentation citoyenne!"
+  - date: 2020-01-21
+    title: "Citizen Science: A New Approach to Smoke-Free Policy Advocacy"
+    link: https://pubmed.ncbi.nlm.nih.gov/31908201/
+    publication: PubMed
   - date: 2019-11-20
     link: https://www.mdpi.com/1660-4601/17/1/93
     publication: International Journal of Environmental Research and Public Health
