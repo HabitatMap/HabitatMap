@@ -16,8 +16,6 @@ In the heart of New Orleans’ historic Tremé neighborhood, a coalition of comm
 
 ![](/images/uploads/unnamed.jpg "Photo of current state of the expressway")
 
-*Photo of current state of the expressway*
-
 Prompted by long-standing community concerns, the Claiborne Avenue Alliance Design Studio (CAADS) joined forces with the LSU School of Public Health in 2016. Together, they launched a collaborative initiative that trains students from elementary school to graduate-level in traffic-associated air quality monitoring and environmental health. With boots-on-the-ground data collection, their efforts laid the groundwork for a successful EPA Community Air Monitoring Grant.
 
 Thanks to this support, the Claiborne Corridor Project now uses HabitatMap’s AirBeam PM2.5 sensors to monitor levels of fine particulate pollution along the expressway. The switch to AirBeam allowed the team to scale up monitoring with a device that is accurate, affordable, and easy to use in all weather conditions. The AirBeam’s real-time data visualization has made it easy for students and community members to see how pollution levels shift with traffic patterns, weather, and other environmental factors. The use of AirBeams in the Claiborne Corridor project shows that the AirBeam is more than just a sensor, it's a powerful advocacy tool that can help spark conversations around science, health, and urban planning. 
