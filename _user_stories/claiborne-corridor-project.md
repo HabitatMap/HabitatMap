@@ -1,7 +1,7 @@
 ---
 layout: user_story
 title: Claiborne Corridor project
-featured: false
+featured: true
 image: /images/uploads/claibornecorridor.png
 intro: LSU Health New Orleans, with support from the U.S. Environmental
   Protection Agency, is using the AirBeam to conduct research to better
@@ -10,7 +10,7 @@ intro: LSU Health New Orleans, with support from the U.S. Environmental
   href="https://sph.lsuhsc.edu/research/researchers-and-studies/claiborne-corridor-study//">Claiborne
   Corridor Study</a>.
 type: Researchers
-order: 7
+order: 1
 ---
 In the heart of New Orleans’ historic Tremé neighborhood, a coalition of community leaders, researchers, and students are working to reclaim environmental justice under the shadow of the Claiborne Expressway. Opening in 1968 through a thriving Black economic and cultural district, the elevated highway has long been a source of harmful air and noise pollution—and a symbol of environmental racism. As described by urban planner and community advocate Amy Stelly, “The Claiborne Expressway is the poster child for urban highways that need to be removed…the highway just destroyed a key artery in the neighborhood.”
 
