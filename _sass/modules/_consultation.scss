@@ -1,6 +1,6 @@
 // Consultation Section Styles
 .consultation-section {
-  padding: 4rem 2rem;
+  padding: 7rem 2rem;
   background-color: #f3f4f6;
 
   .consultation-container {
@@ -46,7 +46,7 @@
     // Mobile responsive
     @media (max-width: 768px) {
       .consultation-section {
-        padding: 2rem 1rem;
+        padding: 3rem 1rem; /* Increased from 2rem to 3rem for mobile */
       }
 
       .consultation-container {
