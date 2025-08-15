@@ -29,7 +29,6 @@ Passed at the behest of Louisiana’s politically powerful petrochemical industr
 In May, several groups of Louisiana environmental advocates sued the Louisiana Department of Environmental Quality (LDEQ) about CAMRA, because they could no longer post the toxin and particulate levels measured by their monitors on their social-media pages or even—as one group did in Sulphur, La.—through colored flags that signaled that day’s air quality to the surrounding community. 
 
 “In enacting CAMRA, the Louisiana legislature targeted community air monitoring for unique and onerous restrictions,” the [lawsuit](https://environmentalintegrity.org/wp-content/uploads/2025/05/Lawsuit-over-LA-air-monitoring-5.22.25.pdf) reads. “Under CAMRA, community groups cannot choose for themselves how they will collect, use, or disseminate information or analyses about air quality to the public.” \
-                                                                    \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\__\
 \
 **Louisiana law demands high-end air monitors that can run $60k or more**Louisiana’s new law also creates a false narrative about the best available science for measuring air pollution. 
 
@@ -41,9 +40,7 @@ A decade ago, before the advent of low-cost air quality monitors and the develop
 
 This is no longer the case. Increasingly, air-quality research is not about picking one tool for the job, it’s about using every tool available—including low-cost sensors, hand-held and car-mounted mobile sensors, cameras, land-use maps, satellites, traffic trackers, weather instruments, and more. Each available tool generates its own data set. The integration of the disparate data sets using AI is commonly known as data fusion. When compared with an approach that only uses expensive fixed-site monitors, applying an all-available-tools and data fusion approach to air-quality monitoring and analysis yields a more complete picture of pollution levels in time and place, and their impact on communities living cheek to jowl with industry.
 
-In Louisiana, some 200 petrochemical operations have set up shop in Cancer Alley, a polluted stretch running alongside the Mississippi River between Baton Rouge and New Orleans that’s home to many predominately Black, working-class communities. The EPA awarded grants for air monitors to grassroots groups in some of these communities – and those grants include requirements for release of that data. For instance, the Claiborne Avenue Alliance Design Studio has since 2023 monitored air around the I-10 expressway that rises above North Claiborne Avenue in New Orleans. As an EPA grantee, the organization also agreed to publish that data and share it with community members. Because of CAMRA, that sharing has stopped.
-
-\    \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\__\
+In Louisiana, some 200 petrochemical operations have set up shop in Cancer Alley, a polluted stretch running alongside the Mississippi River between Baton Rouge and New Orleans that’s home to many predominately Black, working-class communities. The EPA awarded grants for air monitors to grassroots groups in some of these communities – and those grants include requirements for release of that data. For instance, the Claiborne Avenue Alliance Design Studio has since 2023 monitored air around the I-10 expressway that rises above North Claiborne Avenue in New Orleans. As an EPA grantee, the organization also agreed to publish that data and share it with community members. Because of CAMRA, that sharing has stopped.\
 \
 **Air quality often goes unmeasured in communities most impacted by pollution**In other states, community air-quality reporting is still ongoing—and used to show the locations and times when air pollution is high.
 
