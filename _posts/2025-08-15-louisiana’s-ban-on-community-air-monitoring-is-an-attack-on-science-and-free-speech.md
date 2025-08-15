@@ -6,10 +6,9 @@ date: 2025-08-15
 featured: false
 author: Michael Heimbinder
 image: /images/uploads/claibornecorridoractivists.png
-intro: "Last year, Louisiana legislators passed a “million-dollar muzzle,” which
-  barred the use of community-gathered air-quality data to advocate for
-  pollution control and enforcement, with fines as high as $1 million per
-  violation. "
+intro: "Louisiana legislators passed a “million-dollar muzzle,” which barred the
+  use of community-gathered air-quality data to advocate for pollution control
+  and enforcement, with fines as high as $1 million per violation. "
 category: Health
 tag:
   - community science
