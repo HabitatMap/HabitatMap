@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Louisiana’s ban on community air monitoring is an attack on science and
-  free speech "
+title: "Louisiana’s Ban on Community Air Monitoring is an Attack on Science &
+  Free Speech "
 date: 2025-08-15
 featured: false
 author: Michael Heimbinder
