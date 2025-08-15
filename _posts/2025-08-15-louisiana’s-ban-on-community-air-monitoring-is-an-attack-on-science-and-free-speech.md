@@ -6,7 +6,10 @@ date: 2025-08-15
 featured: false
 author: Michael Heimbinder
 image: /images/uploads/claibornecorridoractivists.png
-intro: ""
+intro: "Last year, Louisiana legislators passed a “million-dollar muzzle,” which
+  barred the use of community-gathered air-quality data to advocate for
+  pollution control and enforcement, with fines as high as $1 million per
+  violation. "
 category: Health
 tag:
   - community science
@@ -53,6 +56,4 @@ In Louisiana, CAMRA stymies these types of efforts and contradicts the best avai
 
 It’s clear the Louisiana Legislature’s million-dollar muzzle isn’t about science, it’s about [money and politics](https://thelensnola.org/2022/05/06/louisiana-legislator-pushes-bills-benefiting-the-oil-and-gas-industry-and-her-husband/). It’s about the power of oil and chemical companies to silence communities living in [Cancer Alley](https://www.hrw.org/report/2024/01/25/were-dying-here/fight-life-louisiana-fossil-fuel-sacrifice-zone) and other polluted areas of the state. [Evidence](https://www.pnas.org/doi/full/10.1073/pnas.2201092119) from the EPA and U.S. State Department’s embassy monitoring program has shown that simply publishing air-quality information can force polluters to clean up their act. That’s exactly what the oil and chemical giants who operate multi-billion dollar plants in Louisiana [are afraid of](https://lailluminator.com/2023/05/04/petrochemical-industry-in-louisiana-plans-a-defense-amid-growing-opposition/). 
 
-Environmental and community groups are suing to overturn CAMRA because it’s an unconstitutional ban on free speech, inconsistent with the Clean Air Act, and undermines the best available science. Rather than muzzling community science in Louisiana, the legislature should be uplifting it and listening to what it tells us: the air in Cancer Alley and many other communities across the state isn’t safe to breathe.\
-\
-*This op-ed was originally published in [The Lens](https://thelensnola.org/2025/07/23/louisianas-ban-on-community-air-monitoring-is-an-attack-on-science-and-free-speech/).*
+Environmental and community groups are suing to overturn CAMRA because it’s an unconstitutional ban on free speech, inconsistent with the Clean Air Act, and undermines the best available science. Rather than muzzling community science in Louisiana, the legislature should be uplifting it and listening to what it tells us: the air in Cancer Alley and many other communities across the state isn’t safe to breathe.
