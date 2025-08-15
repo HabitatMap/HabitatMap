@@ -30,7 +30,9 @@ In May, several groups of Louisiana environmental advocates sued the Louisiana D
 
 “In enacting CAMRA, the Louisiana legislature targeted community air monitoring for unique and onerous restrictions,” the [lawsuit](https://environmentalintegrity.org/wp-content/uploads/2025/05/Lawsuit-over-LA-air-monitoring-5.22.25.pdf) reads. “Under CAMRA, community groups cannot choose for themselves how they will collect, use, or disseminate information or analyses about air quality to the public.” \
 \
-**Louisiana law demands high-end air monitors that can run $60k or more**Louisiana’s new law also creates a false narrative about the best available science for measuring air pollution. 
+**Louisiana law demands high-end air monitors that can run $60k or more**\
+\
+Louisiana’s new law also creates a false narrative about the best available science for measuring air pollution. 
 
 In many cases, low-cost air monitors are the best tools for this job. But CAMRA falsely claims that low-cost air-quality monitors are unreliable and inaccurate. Under the new law, communities may still conduct air-quality monitoring to advocate for pollution control and enforcement—but only with monitors that cost $60,000 or more and require tens of thousands of dollars per year to maintain. 
 
@@ -42,7 +44,9 @@ This is no longer the case. Increasingly, air-quality research is not about pick
 
 In Louisiana, some 200 petrochemical operations have set up shop in Cancer Alley, a polluted stretch running alongside the Mississippi River between Baton Rouge and New Orleans that’s home to many predominately Black, working-class communities. The EPA awarded grants for air monitors to grassroots groups in some of these communities – and those grants include requirements for release of that data. For instance, the Claiborne Avenue Alliance Design Studio has since 2023 monitored air around the I-10 expressway that rises above North Claiborne Avenue in New Orleans. As an EPA grantee, the organization also agreed to publish that data and share it with community members. Because of CAMRA, that sharing has stopped.\
 \
-**Air quality often goes unmeasured in communities most impacted by pollution**In other states, community air-quality reporting is still ongoing—and used to show the locations and times when air pollution is high.
+**Air quality often goes unmeasured in communities most impacted by pollution**\
+\
+In other states, community air-quality reporting is still ongoing—and used to show the locations and times when air pollution is high.
 
 Take for example the [Community Air Monitoring Project for Environmental Justice](https://nyc-eja.org/wp-content/uploads/2021/02/CAMP-EJ-2020-Report-Final-021821-Reduced.pdf), or CAMP-EJ, a multi-neighborhood, multi-year air pollution study led by grassroots groups in New York City in partnership with the City’s Department of Health and researchers from Queens College. CAMP-EJ deployed dozens of small, lightweight, low-cost monitors, fixing them to lampposts at key intersections and recruiting volunteers to carry them as they walked designated routes. 
 
