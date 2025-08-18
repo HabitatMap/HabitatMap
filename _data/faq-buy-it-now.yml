@@ -2,13 +2,13 @@ categories:
   - category: "Getting Started"
     questions:
       - q: "What's the difference between AirBeam 3 and AirBeam Mini?"
-        a: "AirBeam Mini ($99) is perfect if you want a lightweight, affordable air quality monitor for personal use. It measures PM1 and PM2.5, weighs 4 ounces, and has 14-hour battery life. AirBeam 3 ($199) is ideal if you need comprehensive monitoring with cellular connectivity. It measures PM1, PM2.5, PM10, temperature, and humidity, weighs 6 ounces, has GPS, cellular connectivity, and 17-hour battery life."
+        a: "AirBeam Mini ($99) is perfect if you want a lightweight, affordable air quality monitor for personal use. It measures PM1 and PM2.5, weighs 4 ounces, and has a 14-hour battery life. AirBeam3 ($199) is ideal if you need comprehensive monitoring with on-board cellular and GPS and removable storage. It measures PM1, PM2.5, PM10, temperature, and humidity, weighs 6 ounces, and has a 17-hour battery life."
       - q: "How accurate are AirBeam devices?"
         a: "AirBeam devices are 'quite accurate' according to independent performance evaluations by South Coast Air Quality Management District's AQ-SPEC lab and researchers at NYU School of Medicine. AirBeam measurements closely match those from reference instruments."
       - q: "What do I need to get started?"
         a: "Your AirBeam device (fully charged), a smartphone (iPhone 8+ or Android 8+ with Bluetooth 5.0), the free AirCasting app (available on iOS and Google Play), and WiFi or cellular connection for your phone."
       - q: "How long does setup take?"
-        a: "Easy Setup in 5 Minutes or Less! The app walks you through step by step + access to a video tutorial library."
+        a: "Easy Setup in 2 Minutes or Less! The app walks you through step by step + access to a video tutorial library."
 
   - category: "Purchasing & Shipping"
     questions:
@@ -43,7 +43,7 @@ categories:
       - q: "Is my location data private?"
         a: "Yes, the AirCasting app has several privacy features: You can disable GPS tracking in settings; You can save data locally without syncing to servers; You can contribute data without sharing location; Fixed indoor sessions never log GPS coordinates."
       - q: "Can I export my data?"
-        a: "Absolutely. You can export individual sessions or bulk data via the AirCasting app or website. Data comes in CSV format for analysis in Excel or other tools."
+        a: "Absolutely. You can export individual sessions or bulk data via the AirCasting app or website. Data comes in CSV format for analysis in Excel or other tools. Or use the free <a href='https://github.com/HabitatMap/AirCasting/blob/master/doc/api.md' target='_blank'>AirCasting API</a>."
       - q: "Is the platform free to use?"
         a: "The AirCasting platform (including app) are free to use. No subscriptions, no data access fees, ever."
 
@@ -56,7 +56,7 @@ categories:
       - q: "What's considered dangerous air pollution levels?"
         a: "The AirCasting app uses EPA standards with color coding: Green (0-12 μg/m³): Good air quality; Yellow (13-35 μg/m³): Moderate; Orange (36-55 μg/m³): Unhealthy for sensitive groups; Red (55-150 μg/m³): Unhealthy."
       - q: "Can I use AirBeam for educational purposes?"
-        a: "Yes! AirCasting Actions has everything you need to get started with air monitoring, whether you're an individual, an educator, or part of an organized community effort. Free research design tools and curricula available."
+        a: "Yes! <a href='https://aircastingactions.org/' target='_blank'>AirCasting Actions</a> has everything you need to get started with air monitoring, whether you're an individual, an educator, or part of an organized community effort. Free research design tools and curricula available."
 
   - category: "Connectivity & Setup"
     questions:
@@ -65,37 +65,37 @@ categories:
       - q: "Does AirBeam work without internet?"
         a: "Yes, for mobile sessions you can record data offline and sync later over WiFi. Only map tiles won't load without internet connection."
       - q: "Can AirBeam 3 work with cellular networks?"
-        a: "Yes, AirBeam 3 has a SIM card slot and supports 4G cellular networks for fixed sessions. You'll need a data plan (uses approximately 450MB per month)."
+        a: "AirBeam3 includes Bluetooth, WiFi, and cellular communications capability. To use AirBeam3 in cellular mode activate a 4G sim card and insert it into the AirBeam3’s sim card slot.  You'll need a data plan (uses approximately 450MB per month)."
       - q: "What WiFi networks are supported?"
         a: "AirBeam connects to standard 2.4 GHz WiFi networks. It cannot connect to 5GHz-only networks or networks with firewalls (like most public/enterprise WiFi)."
 
   - category: "Troubleshooting"
     questions:
       - q: "Why won't my AirBeam connect to my phone?"
-        a: "Check these common issues: Is Bluetooth enabled on your phone? Did you pair the AirBeam in your phone's Bluetooth settings first? Is the AirBeam fully charged? Are you pressing 'Configure AirBeam' immediately after the LED turns from red to green?"
+        a: "Check these common issues: Are Bluetooth and Location Services turned on?  Did you agree to all Bluetooth and Location Services requests when prompted.  If not, uninstall/reinstall and agree to all permission requests.  Is the AirBeam fully charged?"
       - q: "Why can't I record a fixed WiFi session?"
-        a: "Common causes: Trying to connect to 5GHz or firewall-protected network; Incorrect WiFi password; AirBeam not fully charged; Not waiting for LED to turn green before configuration."
+        a: "Common causes: Trying to connect to a 5GHz WiFi network or a WiFi network that requires authentication through a web browser; Incorrect WiFi password; AirBeam not fully charged."
       - q: "My AirBeam stopped streaming data, what happened?"
-        a: "If recording a fixed session and it gets unplugged, the internal battery will continue operation for 10+ hours. Simply plug it back in and it will resume streaming automatically."
+        a: "If your AirBeam loses power the internal battery will continue operation for 24+ hours.  If the battery has run down, simply plug your AirBeam back in and it will resume streaming automatically after 3 minutes.  If you lose cellular or WiFi connectivity, simply restore connectivity and your AirBeam will resume streaming."
       - q: "The AirCasting app keeps crashing, what should I do?"
         a: "Email us at info@habitatmap.org with details about what screen you were on and what you were doing when it crashed. Note: if your device can't smoothly run Google Maps, it may not be compatible with AirCasting."
 
   - category: "Bulk Orders & Educational Use"
     questions:
       - q: "Do you offer discounts for bulk orders?"
-        a: "For orders of 6 or more AirBeam devices, we offer free consultation to help with your project. Email info@habitatmap.org or use our consultation booking form."
+        a: "As a non-profit, HabitatMap works to make the AirBeam as affordable as possible. We sell AirBeams at our cost of production so no further discounts are offered."
       - q: "Can schools and researchers get support?"
         a: "Yes! Trusted by Educators and Researchers at Top Educational Institutions and Backed by the Clean Air Fund. We provide one-on-one research design and implementation help."
       - q: "Is there educational curriculum available?"
-        a: "Free Research Design Tools, Download Toolkits & Curriculums available through AirCasting Actions."
+        a: "Free Research Design Tools, Download Toolkits & Curriculums available through <a href='https://aircastingactions.org/' target='_blank'>AirCasting Actions</a>."
 
   - category: "Community & Open Source"
     questions:
       - q: "How is this different from other air quality monitors?"
-        a: "AirBeam is the only fully open-source air quality monitoring platform. The hardware designs, firmware, and software are all open source. You're contributing to the world's largest database of community-collected air quality measurements."
+        a: "AirBeam is accurate and trusted by researchers, community organizers, and educators the world over. The AirCasting platform (Android app, iOS app, website) provide advanced data visualization tools, interactive maps, and detailed analytics that transform air quality data into powerful insights. You own your data, we will never charge you for access or monetize your data. AirBeam+AirCasting is the only fully open-source, open-access air quality monitoring platform. The hardware designs, firmware, and software are all open source. You're contributing to the world's largest database of open-access community-collected air quality measurements."
       - q: "What happens to my purchase?"
         a: "All proceeds from AirBeam sales go directly towards advancing HabitatMap's mission to empower organizations and community scientists to measure pollution and advocate for equitable solutions to environmental health issues."
       - q: "Can I modify or reprogram my AirBeam?"
         a: "Yes! Full hardware schematics, firmware code, and 3D printing files are available on GitHub. AirBeam Mini can be reprogrammed using Arduino IDE."
       - q: "Is there a community I can join?"
-        a: "Join the Facebook AirCasting Community to connect with other users worldwide."
+        a: "Join the <a href='https://www.facebook.com/groups/667717482567030' target='_blank'>Facebook AirCasting Community</a> to connect with other users worldwide."
