@@ -6,73 +6,261 @@ image: /assets/img/pages/home/home.jpg
 ---
 
 <!-- Hero Section -->
-<section class="relative min-h-screen flex items-center hero-section">
-  <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/assets/img/pages/home/home.jpg');"></div>
-  <div class="absolute inset-0 bg-black/40"></div>
-  <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-    <div class="max-w-4xl">
-      <div class="mb-6 bg-white/20 text-white hover:bg-white/20 font-medium text-sm border-white/30 px-3 py-1 rounded-full inline-block">
-        Environmental Justice • 501(c)(3) Non-Profit
-      </div>
-      <h1 class="font-sans font-black text-5xl md:text-7xl lg:text-8xl text-white mb-8 leading-tight">
-        CLEAN AIR
-        <br />
-        IS A RIGHT
-      </h1>
-      <p class="text-xl md:text-2xl text-white/90 mb-12 leading-relaxed max-w-2xl">
-        We put air quality monitoring tools directly into community hands. Because environmental data shouldn't
-        depend on your zip code.
-      </p>
-      <div class="flex flex-col sm:flex-row gap-4">
-        <a href="/donate" class="bg-yellow-400 hover:opacity-90 text-gray-900 font-bold px-8 py-4 text-lg rounded inline-flex items-center justify-center">
-          <svg class="mr-2 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
-          </svg>
-          Join Our Mission
-        </a>
-        <a href="/airbeam" class="border-white text-white hover:bg-white hover:text-teal-700 bg-transparent font-medium px-8 py-4 text-lg rounded inline-flex items-center justify-center border">
-          Get Community Tools
-          <svg class="ml-2 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
-          </svg>
-        </a>
-      </div>
+<section class="hero-section">
+  <div class="hero-background-image" style="background-image: url('/assets/img/pages/home/home.jpg');"></div>
+  <div class="hero-dark-overlay"></div>
+  <div class="hero-text-container">
+    <h1 class="hero-main-title">
+      CLEAN AIR
+      <br />
+      IS A RIGHT
+    </h1>
+    <p class="hero-subtitle-text">
+      We put air quality monitoring tools directly into community hands. Because environmental data shouldn't
+      depend on your zip code.
+    </p>
+    <div class="hero-cta-buttons">
+      <a href="/donate" class="cta-button-primary">
+        <svg class="button-icon button-icon-left" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+        </svg>
+        Join Our Mission
+      </a>
+      <a href="/airbeam" class="cta-button-secondary">
+        Get Community Tools
+        <svg class="button-icon button-icon-right" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+        </svg>
+      </a>
     </div>
   </div>
 
-  <!-- Stats Bar -->
-  <div class="absolute bottom-8 left-4 right-4 z-10">
-    <div class="max-w-7xl mx-auto">
-      <div class="bg-white/20 backdrop-blur-md rounded-2xl p-6 shadow-xl border border-white/30">
-        <div class="grid grid-cols-3 gap-6 text-center">
-          <div>
-            <div class="text-3xl font-black text-white">200+</div>
-            <div class="text-sm text-white/80 font-medium">Communities Served</div>
-          </div>
-          <div>
-            <div class="text-3xl font-black text-white">2.8M</div>
-            <div class="text-sm text-white/80 font-medium">Air Quality Readings</div>
-          </div>
-          <div>
-            <div class="text-3xl font-black text-white">15+</div>
-            <div class="text-sm text-white/80 font-medium">Years Fighting for Justice</div>
-          </div>
+  <!-- Media Logos Banner -->
+  <div class="media-logos-banner">
+    <div class="media-logos-container">
+      <div class="media-logos-content">
+        <div class="media-logos-row">
+          <img src="/assets/img/pages/home/logos/the-new-york-times.png" alt="The New York Times" class="media-logo-item">
+          <img src="/assets/img/pages/home/logos/fast-company.png" alt="Fast Company" class="media-logo-item">
+          <img src="/assets/img/pages/home/logos/daily-news.png" alt="Daily News" class="media-logo-item">
+          <img src="/assets/img/pages/home/logos/popular-science.png" alt="Popular Science" class="media-logo-popular-science">
+          <img src="/assets/img/pages/home/logos/wired.png" alt="Wired" class="media-logo-wired">
         </div>
       </div>
     </div>
   </div>
 </section>
 
+<!-- Problem/Solution Section -->
+<section class="section section-gray">
+  <div class="section-container">
+    <div class="grid-2 lg:grid-2 gap-16 mb-20 h-full">
+      <!-- Problem - Changed from orange to greyish gradient -->
+      <div class="relative h-full">
+        <div class="card problem-card">
+          <div class="icon-container icon-container-gray">
+            <span class="icon">!</span>
+          </div>
+          <h2 class="section-title">Problem</h2>
+          <div class="space-y-6 flex-grow">
+            <div class="problem-item">
+              <p class="problem-text">
+                Air quality can vary <strong class="text-gray-700">block-to-block and minute-to-minute</strong>, and most people
+                have no idea what they're breathing during their commute or at their kids' school.
+              </p>
+            </div>
+            <div class="problem-item">
+              <p class="problem-text">
+                Government monitoring instruments cost <strong class="text-gray-700">$15,000+</strong> and
+                miss those hyperlocal variations that affect your daily life.
+              </p>
+            </div>
+            <div class="problem-stats">
+              <div class="stat-item">
+                <div class="stat-number">$15K+</div>
+                <div class="stat-label">Gov't monitors</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">75%</div>
+                <div class="stat-label">Areas uncovered</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Solution - Bright card with positive elements -->
+      <div class="relative h-full">
+        <div class="card solution-card">
+          <div class="icon-container icon-container-teal">
+            <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+          </div>
+          <h2 class="section-title">Solution</h2>
+          <div class="space-y-6 flex-grow">
+            <div class="solution-item">
+              <p class="solution-text">
+                As a non-profit, we make research-grade air quality monitoring <strong class="text-teal-600">affordable and accessible to everyone</strong>—starting at $99.
+              </p>
+            </div>
+            <div class="solution-item">
+              <p class="solution-text">
+                Our AirBeam sensors and AirCasting platform give you real-time, hyperlocal data for informed daily
+                decisions about exercise outdoors, or which route to take with your kids.
+              </p>
+            </div>
+            <div class="solution-stats">
+              <div class="stat-item">
+                <div class="stat-number">$99</div>
+                <div class="stat-label">Starting price</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">200+</div>
+                <div class="stat-label">Communities</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Connecting arrow -->
+        <div class="connecting-arrow">
+          <svg class="arrow-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+</section>
+
+<!-- Three Feature Cards -->
+<section class="section section-white">
+  <div class="section-container">
+    <div class="grid md:grid-cols-3 gap-8 mb-20">
+      <div class="text-center p-8 border-0 shadow-sm hover:shadow-md transition-all duration-300 bg-white rounded-lg">
+        <div class="w-20 h-20 bg-teal-50 rounded-full flex items-center justify-center mx-auto mb-6">
+          <div class="w-12 h-12 bg-teal-600 rounded-full flex items-center justify-center">
+            <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+          </div>
+        </div>
+        <h3 class="font-sans font-bold text-xl text-gray-900 mb-4">No Subscriptions Ever</h3>
+        <p class="text-gray-600 leading-relaxed">
+          One-time purchase. No hidden fees, no data selling, no monthly charges.
+        </p>
+      </div>
+
+      <div class="text-center p-8 border-0 shadow-sm hover:shadow-md transition-all duration-300 bg-white rounded-lg">
+        <div class="w-20 h-20 bg-teal-50 rounded-full flex items-center justify-center mx-auto mb-6">
+          <div class="w-12 h-12 bg-teal-600 rounded-full flex items-center justify-center">
+            <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+            </svg>
+          </div>
+        </div>
+        <h3 class="font-sans font-bold text-xl text-gray-900 mb-4">Your Data Stays Yours</h3>
+        <p class="text-gray-600 leading-relaxed">
+          Complete data ownership with easy export. Open source means you can trust.
+        </p>
+      </div>
+
+      <div class="text-center p-8 border-0 shadow-sm hover:shadow-md transition-all duration-300 bg-white rounded-lg">
+        <div class="w-20 h-20 bg-teal-50 rounded-full flex items-center justify-center mx-auto mb-6">
+          <div class="w-12 h-12 bg-teal-600 rounded-full flex items-center justify-center">
+            <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+            </svg>
+          </div>
+        </div>
+        <h3 class="font-sans font-bold text-xl text-gray-900 mb-4">Research-Grade Accuracy</h3>
+        <p class="text-gray-600 leading-relaxed">
+          Used by universities worldwide. Validated by independent testing labs.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Ecosystem Section -->
+<section class="section section-gray">
+  <div class="section-container">
+    <div class="text-center mb-20">
+      <h2 class="font-sans font-black text-4xl md:text-5xl text-gray-900 mb-4">
+        Ecosystem to Keep You Aware
+      </h2>
+    </div>
+
+    <div class="space-y-20">
+      <!-- AirBeams -->
+      <div class="overflow-hidden border-0 shadow-lg hover:shadow-xl transition-all duration-300 bg-white rounded-lg">
+        <div class="grid lg:grid-cols-2 gap-0">
+          <div class="h-96 overflow-hidden">
+            <img
+              src="/assets/img/pages/home/home.jpg"
+              alt="AirBeam device"
+              class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+          <div class="p-12 flex flex-col justify-center">
+            <h3 class="font-sans font-black text-4xl text-gray-900 mb-6">AirBeams</h3>
+            <p class="text-gray-700 mb-8 leading-relaxed text-xl">
+              Portable monitors that deliver quality air quality readings wherever you go. See pollution levels
+              that change street by street, hour by hour.
+            </p>
+            <a href="/airbeam" class="bg-teal-600 hover:bg-teal-700 text-white font-bold px-8 py-4 text-lg rounded inline-block text-center">
+              Get AirBeam
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- AirCasting -->
+      <div class="overflow-hidden border-0 shadow-lg hover:shadow-xl transition-all duration-300 bg-white rounded-lg">
+        <div class="grid lg:grid-cols-2 gap-0">
+          <div class="lg:order-2 h-96 overflow-hidden">
+            <img
+              src="/assets/img/pages/home/home.jpg"
+              alt="AirCasting platform"
+              class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+          <div class="lg:order-1 p-12 flex flex-col justify-center">
+            <h3 class="font-sans font-black text-4xl text-gray-900 mb-6">AirCasting</h3>
+            <p class="text-gray-700 mb-8 leading-relaxed text-xl">
+              Free platform that transforms sensor data into actionable insights. Know when air quality is safe
+              for outdoor activities or family time.
+            </p>
+            <div class="flex gap-4">
+              <a href="#" class="border-teal-600 text-teal-600 hover:bg-teal-50 bg-transparent flex-1 py-3 text-lg rounded border text-center">
+                Web
+              </a>
+              <a href="#" class="border-teal-600 text-teal-600 hover:bg-teal-50 bg-transparent flex-1 py-3 text-lg rounded border text-center">
+                iOS
+              </a>
+              <a href="#" class="border-teal-600 text-teal-600 hover:bg-teal-50 bg-transparent flex-1 py-3 text-lg rounded border text-center">
+                Android
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
 <!-- Mission Section -->
-<section id="mission" class="py-24 bg-white">
-  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+<section id="mission" class="section section-white">
+  <div class="section-container">
     <div class="text-center mb-16">
       <h2 class="font-sans font-black text-4xl md:text-5xl text-gray-900 mb-8 leading-tight">
         Our mission is to <span class="text-teal-600">democratize</span> environmental data
       </h2>
       <p class="text-xl text-gray-700 leading-relaxed mb-12 max-w-3xl mx-auto">
-        Every community—regardless of income, race, or location—deserves to know what they're breathing and have
-        the tools to fight for cleaner air.
+        Every community—regardless of income, race, or location—deserves to know what they're breathing and
+        have the tools to fight for cleaner air.
       </p>
     </div>
 
@@ -136,8 +324,8 @@ image: /assets/img/pages/home/home.jpg
 </section>
 
 <!-- The Problem Section -->
-<section class="py-24 bg-gray-50">
-  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+<section class="section section-gray">
+  <div class="section-container">
     <div class="text-center mb-16">
       <h2 class="font-sans font-black text-4xl md:text-5xl mb-6 text-gray-900">
         The Problem is <span class="text-teal-600">Urgent</span>
@@ -184,8 +372,8 @@ image: /assets/img/pages/home/home.jpg
 </section>
 
 <!-- Tools Section -->
-<section id="tools" class="py-24 bg-white">
-  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+<section id="tools" class="section section-white">
+  <div class="section-container">
     <div class="text-center mb-16">
       <h2 class="font-sans font-black text-4xl md:text-5xl text-gray-900 mb-6">
         Tools Built for <span class="text-teal-600">Communities</span>
@@ -260,8 +448,8 @@ image: /assets/img/pages/home/home.jpg
 </section>
 
 <!-- Impact Section -->
-<section id="impact" class="py-24 bg-teal-50">
-  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+<section id="impact" class="section section-teal">
+  <div class="section-container">
     <div class="text-center mb-16">
       <h2 class="font-sans font-black text-4xl md:text-5xl text-gray-900 mb-6">
         Real Communities, <span class="text-teal-600">Real Change</span>
@@ -313,8 +501,8 @@ image: /assets/img/pages/home/home.jpg
 </section>
 
 <!-- Educator Resources Section -->
-<section class="py-24 bg-white">
-  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+<section class="section section-white">
+  <div class="section-container">
     <div class="text-center mb-16">
       <div class="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-6">
         <svg class="h-8 w-8 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -338,34 +526,37 @@ image: /assets/img/pages/home/home.jpg
 </section>
 
 <!-- Strong CTA Section -->
-<section class="py-24 bg-gradient-to-r from-teal-600 to-green-600 text-white">
-  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-    <h2 class="font-sans font-black text-4xl md:text-5xl mb-8">
-      Help Us Fight for <span class="text-yellow-300">Environmental Justice</span>
-    </h2>
-    <p class="text-xl mb-12 text-teal-100 leading-relaxed">
-      Every donation helps us put air quality monitoring tools in the hands of communities that need them most.
-      Join the movement for cleaner air and environmental justice.
-    </p>
+<section class="section section-teal-gradient">
+  <div class="section-container">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="font-sans font-black text-4xl md:text-5xl mb-8">
+        Help Us Fight for <span class="text-yellow-300">Environmental Justice</span>
+      </h2>
+      <p class="text-xl mb-12 text-teal-100 leading-relaxed">
+        Every donation helps us put air quality monitoring tools in the hands of communities that need them most.
+        Join the movement for cleaner air and environmental justice.
+      </p>
 
-    <div class="flex flex-col sm:flex-row gap-6 justify-center mb-8">
-      <a href="/donate" class="bg-yellow-400 text-gray-900 hover:opacity-90 font-bold px-8 py-4 text-lg rounded inline-flex items-center">
-        <svg class="mr-2 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
-        </svg>
-        Donate Now
-      </a>
-      <a href="/airbeam" class="border-white text-white hover:bg-white hover:text-teal-600 bg-transparent font-medium px-8 py-4 text-lg rounded inline-flex items-center border">
-        Get Community Tools
-        <svg class="ml-2 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
-        </svg>
-      </a>
+      <div class="flex flex-col sm:flex-row gap-6 justify-center mb-8">
+        <a href="/donate" class="bg-yellow-400 text-gray-900 hover:opacity-90 font-bold px-8 py-4 text-lg rounded inline-flex items-center">
+          <svg class="mr-2 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+          </svg>
+          Donate Now
+        </a>
+        <a href="/airbeam" class="border-white text-white hover:bg-white hover:text-teal-600 bg-transparent font-medium px-8 py-4 text-lg rounded inline-flex items-center border">
+          Get Community Tools
+          <svg class="ml-2 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+          </svg>
+        </a>
+      </div>
+
+      <p class="text-sm text-teal-100">
+        HabitatMap is a 501(c)(3) non-profit. Your donation is tax-deductible.
+      </p>
+
     </div>
-
-    <p class="text-sm text-teal-100">
-      HabitatMap is a 501(c)(3) non-profit. Your donation is tax-deductible.
-    </p>
 
   </div>
 </section>
