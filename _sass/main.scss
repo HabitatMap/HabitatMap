@@ -1,60 +1,74 @@
 @charset "utf-8";
 
-@import "config/_variables";
-@import "config/_fonts";
-@import "config/_mixins";
-@import "config/_normalize";
-@import "config/_defaults";
-@import "config/_utilities";
-@import "config/_header-theme";
-@import "config/_typography";
-@import "config/_lazy";
+// Main SCSS file - imports all modules
+@import "config/defaults";
+@import "config/fonts";
+@import "config/header-theme";
+@import "config/layout";
+@import "config/colors";
+@import "config/typography";
+@import "config/breakpoints";
+@import "config/animations";
 
-@import "modules/_anchor";
-@import "modules/_ac-intro";
-@import "modules/_animations";
-@import "modules/_arc-background";
-@import "modules/_badge-link";
-@import "modules/blog/_categories";
-@import "modules/blog/_featured-post";
-@import "modules/blog/_post-content";
-@import "modules/blog/_post-footer";
-@import "modules/blog/_post-header";
-@import "modules/blog/_post-list";
-@import "modules/blog/_post-nav";
-@import "modules/blog/_post-view-toggle";
-@import "modules/_button";
-@import "modules/_conversion-form";
-@import "modules/_discount-code";
-@import "modules/_download-links";
-@import "modules/_faq";
-@import "modules/_flipping-text";
-@import "modules/_footer";
-@import "modules/_for-teams";
-@import "modules/_get-consultation";
-@import "modules/_get-started-modal";
-@import "modules/_grid";
-@import "modules/_header";
-@import "modules/_highlights";
-@import "modules/_images";
-@import "modules/_logo";
-@import "modules/_logos";
-@import "modules/_list";
-@import "modules/_nav";
-@import "modules/_panel";
-@import "modules/_panel-separator";
-@import "modules/_press-article";
-@import "modules/_quote";
-@import "modules/_read-more-button";
-@import "modules/_save-now";
-@import "modules/_search";
-@import "modules/_shop-airbeam";
-@import "modules/_slider";
-@import "modules/_split";
-@import "modules/_404";
-@import "modules/_modern-home";
+// Base modules
+@import "modules/base";
 
-@import "partials/_forms";
+// Section-specific modules
+@import "modules/hero-section";
+@import "modules/problem-solution";
+@import "modules/feature-cards";
+@import "modules/ecosystem";
+@import "modules/impact";
+@import "modules/educator-resources";
+@import "modules/cta-section";
+
+// Component modules
+@import "modules/404";
+@import "modules/ac-intro";
+@import "modules/anchor";
+@import "modules/blog/categories";
+@import "modules/blog/featured-post";
+@import "modules/blog/post-content";
+@import "modules/blog/post-list";
+@import "modules/blog/post-meta";
+@import "modules/blog/post-navigation";
+@import "modules/blog/post-pagination";
+@import "modules/blog/post-snippet";
+@import "modules/blog/post-tags";
+@import "modules/blog/post-title";
+@import "modules/blog/search";
+@import "modules/blog/sidebar";
+@import "modules/blog/social-share";
+@import "modules/blog/tags";
+@import "modules/blog/toc";
+@import "modules/blog/topics";
+@import "modules/blog/trending";
+@import "modules/blog/views";
+@import "modules/blog/writer";
+@import "modules/buttons";
+@import "modules/cards";
+@import "modules/forms";
+@import "modules/header";
+@import "modules/icons";
+@import "modules/images";
+@import "modules/layout";
+@import "modules/links";
+@import "modules/lists";
+@import "modules/maps";
+@import "modules/modals";
+@import "modules/navigation";
+@import "modules/pagination";
+@import "modules/search";
+@import "modules/sidebar";
+@import "modules/tables";
+@import "modules/tabs";
+@import "modules/testimonials";
+@import "modules/tooltips";
+@import "modules/typography";
+@import "modules/utilities";
+
+// Partials
+@import "partials/forms";
 
 // PayPal Donate Button Hover Effect
 .paypal-button-container {
