@@ -1,0 +1,300 @@
+// Impact Section Styles
+.impact-section {
+  .section-container {
+    max-width: 72rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    @media (min-width: 640px) {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+
+    @media (min-width: 1024px) {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+
+  .section-header {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  .section-title {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    font-weight: 900;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    color: #111827;
+    margin-bottom: 1.5rem;
+
+    @media (min-width: 768px) {
+      font-size: 3rem;
+      line-height: 1;
+    }
+  }
+
+  .section-subtitle {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    color: #374151;
+    line-height: 1.625;
+    max-width: 42rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (min-width: 768px) {
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+  }
+
+  .impact-content {
+    max-width: 56rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .impact-card {
+    padding: 3rem;
+    background-color: #ffffff;
+    border: none;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    border-radius: 0.5rem;
+    text-align: center;
+  }
+
+  .impact-stars {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.25rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .impact-text {
+    color: #374151;
+    margin-bottom: 2rem;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-style: italic;
+    line-height: 1.625;
+  }
+
+  .impact-author {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .author-avatar {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 9999px;
+    object-fit: cover;
+  }
+
+  .author-info {
+    text-align: left;
+  }
+
+  .author-name {
+    font-weight: 700;
+    color: #111827;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .author-title {
+    color: #4b5563;
+  }
+}
+
+// Utility classes
+.text-center {
+  text-align: center;
+}
+
+.mb-16 {
+  margin-bottom: 4rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+.max-w-4xl {
+  max-width: 56rem;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.p-12 {
+  padding: 3rem;
+}
+
+.border-0 {
+  border-width: 0;
+}
+
+.shadow-lg {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.gap-1 {
+  gap: 0.25rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+.fill-yellow-400 {
+  fill: #fbbf24;
+}
+
+.text-yellow-400 {
+  color: #fbbf24;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.w-16 {
+  width: 4rem;
+}
+
+.h-16 {
+  height: 4rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.object-cover {
+  object-fit: cover;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-gray-600 {
+  color: #4b5563;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.md\:text-5xl {
+  @media (min-width: 768px) {
+    font-size: 3rem;
+    line-height: 1;
+  }
+}
+
+.text-gray-900 {
+  color: #111827;
+}
+
+.text-green-600 {
+  color: #1ea73f;
+}
+
+.max-w-2xl {
+  max-width: 42rem;
+}
+
+.font-sans {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+}
+
+.font-black {
+  font-weight: 900;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.leading-relaxed {
+  line-height: 1.625;
+}
+
+.h-6 {
+  height: 1.5rem;
+}
+
+.w-6 {
+  width: 1.5rem;
+}
+
+// Responsive adjustments
+@media (max-width: 767px) {
+  .section-title {
+    font-size: 2rem;
+    line-height: 1.3;
+  }
+
+  .mb-16 {
+    margin-bottom: 2rem;
+  }
+
+  .p-12 {
+    padding: 2rem;
+  }
+
+  .impact-author {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .author-info {
+    text-align: center;
+  }
+}
