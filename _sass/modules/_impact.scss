@@ -1,4 +1,95 @@
-// Impact Section Styles
+// Impact Section Styles (descriptive classes used in 05-community-impact-testimonial.html)
+.impact-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.impact-title {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  font-weight: 900;
+  font-size: 2.25rem;
+  line-height: 1.2;
+  color: #111827;
+
+  @media (min-width: 768px) {
+    font-size: 3rem;
+  }
+}
+
+.impact-subtitle {
+  font-size: 1.25rem;
+  color: #374151;
+  line-height: 1.625;
+  max-width: 42rem;
+  margin: 0 auto;
+}
+
+.impact-testimonial-container {
+  max-width: 56rem;
+  margin: 0 auto;
+}
+
+.impact-testimonial-card {
+  padding: 3rem;
+  background-color: #ffffff;
+  border: none;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.impact-stars {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.impact-star {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #fbbf24;
+}
+
+.impact-quote {
+  color: #374151;
+  margin-bottom: 2rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-style: italic;
+}
+
+.impact-author {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.impact-author-avatar {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 9999px;
+  object-fit: cover;
+}
+
+.impact-author-info {
+  text-align: left;
+}
+
+.impact-author-name {
+  font-weight: 700;
+  color: #111827;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.impact-author-title {
+  color: #4b5563;
+}
+
+// Legacy section styles for backward compatibility
 .impact-section {
   .section-container {
     max-width: 72rem;
@@ -45,11 +136,6 @@
     max-width: 42rem;
     margin-left: auto;
     margin-right: auto;
-
-    @media (min-width: 768px) {
-      font-size: 1.5rem;
-      line-height: 2rem;
-    }
   }
 
   .impact-content {

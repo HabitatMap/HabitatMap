@@ -39,6 +39,11 @@
   background-color: #f0fdfd;
 }
 
+.section-teal-gradient {
+  background: linear-gradient(to right, #0d9488, #1ea73f);
+  color: #ffffff;
+}
+
 .section-container {
   max-width: 72rem;
   margin-left: auto;
@@ -108,6 +113,66 @@
     font-size: 3rem;
     line-height: 1;
   }
+}
+
+// Brand utility
+.text-brand-green {
+  color: #1ea73f;
+}
+
+// Problem/Solution specific styles
+.problem-solution-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 4rem;
+  margin-bottom: 5rem;
+  height: 100%;
+
+  @media (max-width: 1023px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.problem-solution-column {
+  position: relative;
+  height: 100%;
+}
+
+.problem-content,
+.solution-content {
+  > * + * {
+    margin-top: 1.5rem;
+  }
+}
+
+.problem-item,
+.solution-item {
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  border: 1px solid #e5e7eb;
+}
+
+.solution-item {
+  border-color: #ccfbf1;
+}
+
+.problem-text,
+.solution-text {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  color: #1f2937;
+  line-height: 1.625;
+}
+
+.text-emphasis {
+  color: #374151;
+}
+
+.text-emphasis-green {
+  color: #1ea73f;
 }
 
 // Responsive spacing

@@ -1,4 +1,71 @@
-// Educator Resources Section Styles
+// Educator Resources Section Styles (descriptive classes used in 06-educator-resources-cta.html)
+.educator-resources-content {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.educator-resources-icon-container {
+  width: 4rem;
+  height: 4rem;
+  background-color: #dcfce7;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+}
+
+.educator-resources-icon {
+  width: 2rem;
+  height: 2rem;
+  color: #1ea73f;
+}
+
+.educator-resources-title {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  font-weight: 900;
+  font-size: 2.25rem;
+  line-height: 1.2;
+  color: #111827;
+
+  @media (min-width: 768px) {
+    font-size: 3rem;
+  }
+}
+
+.educator-resources-subtitle {
+  font-size: 1.25rem;
+  color: #374151;
+  line-height: 1.625;
+  max-width: 42rem;
+  margin: 0 auto 2rem auto;
+}
+
+.educator-resources-button {
+  background-color: #1ea73f;
+  color: #ffffff;
+  font-weight: 700;
+  padding: 1rem 2rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  border-radius: 0.25rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+
+  &:hover {
+    background-color: #15803d;
+  }
+}
+
+.educator-resources-button-icon {
+  margin-left: 0.5rem;
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+// Legacy section styles for backward compatibility
 .educator-resources-section {
   .section-container {
     max-width: 72rem;
@@ -57,11 +124,6 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 2rem;
-
-    @media (min-width: 768px) {
-      font-size: 1.5rem;
-      line-height: 2rem;
-    }
   }
 
   .cta-button {
