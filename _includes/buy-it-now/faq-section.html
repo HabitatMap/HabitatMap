@@ -78,13 +78,14 @@
   function toggleFAQ(button) {
     const content = button.nextElementSibling;
     const icon = button.querySelector('.faq-icon');
+    const isOpen = content.classList.contains('show');
 
-    if (content.style.display === 'none' || content.style.display === '') {
-      content.style.display = 'block';
+    if (!isOpen) {
+      content.classList.add('show');
       icon.style.transform = 'rotate(180deg)';
       button.style.backgroundColor = '#f9fafb';
     } else {
-      content.style.display = 'none';
+      content.classList.remove('show');
       icon.style.transform = 'rotate(0deg)';
       button.style.backgroundColor = 'transparent';
     }
