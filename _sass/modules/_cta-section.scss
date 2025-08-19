@@ -38,7 +38,7 @@
 }
 
 .final-cta-button-primary {
-  background-color: #fbbf24;
+  background: linear-gradient(135deg, #ffe651 0%, #ffd700 100%);
   color: #111827;
   font-weight: 700;
   padding: 1rem 2rem;
@@ -48,10 +48,13 @@
   display: inline-flex;
   align-items: center;
   text-decoration: none;
-  transition: opacity 0.2s ease;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 14px rgba(255, 230, 81, 0.3);
 
   &:hover {
-    opacity: 0.9;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(255, 230, 81, 0.4);
+    background: linear-gradient(135deg, #ffd700 0%, #ffb347 100%);
   }
 }
 
