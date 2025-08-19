@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Buy AirBeam - Professional Air Quality Monitor | HabitatMap"
-description: "Get your AirBeam air quality monitor. Choose between AirBeam Mini ($99) for personal use or AirBeam 3 ($199) for research. No subscriptions, complete data ownership."
+description: "Get your AirBeam air quality monitor. Choose between AirBeam Mini ($99) for personal use or AirBeam3 ($199) for research. No subscriptions, complete data ownership."
 permalink: /airbeam/buy-it-now/
 ---
 
