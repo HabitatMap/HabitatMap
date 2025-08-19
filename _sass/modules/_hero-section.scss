@@ -224,6 +224,209 @@
   }
 }
 
+// Modern Problem/Solution Section
+.modern-problem-solution {
+  padding: 6rem 0;
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    opacity: 0.3;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 4rem;
+
+  .section-title {
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 800;
+    color: #1e293b;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+  }
+
+  .section-subtitle {
+    font-size: 1.125rem;
+    color: #64748b;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+}
+
+.problem-solution-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+
+  @media (min-width: 1024px) {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+}
+
+.problem-section,
+.solution-section {
+  background: #ffffff;
+  border-radius: 1.5rem;
+  padding: 2.5rem;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  position: relative;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.problem-header,
+.solution-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid #f1f5f9;
+}
+
+.problem-icon,
+.solution-icon {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+
+  svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    stroke-width: 2;
+  }
+}
+
+.problem-icon {
+  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+  color: #111827;
+}
+
+.solution-icon {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: #ffffff;
+}
+
+.problem-title,
+.solution-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0;
+}
+
+.problem-body,
+.solution-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  flex-grow: 1;
+}
+
+.problem-text-block,
+.solution-text-block {
+  p {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: #475569;
+    margin: 0;
+  }
+}
+
+.text-emphasis {
+  color: #d97706;
+  font-weight: 600;
+}
+
+.text-emphasis-green {
+  color: #059669;
+  font-weight: 600;
+}
+
+.problem-stats,
+.solution-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: auto;
+  padding-top: 2rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+.stat-card {
+  background: #f8fafc;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  text-align: center;
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: #f1f5f9;
+    transform: translateY(-2px);
+  }
+
+  .stat-number {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #1e293b;
+    margin-bottom: 0.5rem;
+    line-height: 1;
+  }
+
+  .stat-label {
+    font-size: 0.875rem;
+    color: #64748b;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+}
+
+.stat-card-solution {
+  background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+  border-color: #bbf7d0;
+
+  &:hover {
+    background: linear-gradient(135deg, #dcfce7 0%, #bbf7d0 100%);
+  }
+
+  .stat-number {
+    color: #059669;
+  }
+}
+
 // Responsive adjustments
 @media (max-width: 639px) {
   .hero-section {
@@ -275,5 +478,41 @@
   .media-logo-popular-science,
   .media-logo-wired {
     height: 1.25rem;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+
+  .problem-section,
+  .solution-section {
+    padding: 1.5rem;
+  }
+
+  .problem-header,
+  .solution-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.75rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .modern-problem-solution {
+    padding: 4rem 0;
+  }
+
+  .problem-section,
+  .solution-section {
+    padding: 2rem;
+  }
+
+  .problem-stats,
+  .solution-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-card {
+    padding: 1.25rem;
   }
 }
