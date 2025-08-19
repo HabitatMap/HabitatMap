@@ -14,6 +14,62 @@
 // Base modules
 @import "modules/base";
 
+// Individual module imports
+@import "modules/_anchor";
+@import "modules/_ac-intro";
+@import "modules/_animations";
+@import "modules/_arc-background";
+@import "modules/_badge-link";
+@import "modules/blog/_categories";
+@import "modules/blog/_featured-post";
+@import "modules/blog/_post-content";
+@import "modules/blog/_post-footer";
+@import "modules/blog/_post-header";
+@import "modules/blog/_post-list";
+@import "modules/blog/_post-nav";
+@import "modules/blog/_post-view-toggle";
+@import "modules/_button";
+@import "modules/_conversion-form";
+@import "modules/_discount-code";
+@import "modules/_download-links";
+@import "modules/_flipping-text";
+@import "modules/_footer";
+@import "modules/_for-teams";
+@import "modules/_get-consultation";
+@import "modules/_get-started-modal";
+@import "modules/_grid";
+@import "modules/_header";
+@import "modules/_highlights";
+@import "modules/_images";
+@import "modules/_logo";
+@import "modules/_logos";
+@import "modules/_list";
+@import "modules/_nav";
+@import "modules/_panel";
+@import "modules/_panel-separator";
+@import "modules/_press-article";
+@import "modules/_quote";
+@import "modules/_read-more-button";
+@import "modules/_save-now";
+@import "modules/_search";
+@import "modules/_shop-airbeam";
+@import "modules/_slider";
+@import "modules/_split";
+@import "modules/_stats";
+@import "modules/_testimonials";
+@import "modules/_testimonials-carousel";
+@import "modules/_shopping-cart";
+@import "modules/_consultation";
+@import "modules/_faq";
+@import "modules/_new-faq";
+@import "modules/_features";
+@import "modules/_global-movement";
+@import "modules/_hero";
+@import "modules/_press";
+@import "modules/_product-comparison";
+@import "modules/_videos";
+@import "modules/_404";
+
 // Section-specific modules
 @import "modules/hero-section";
 @import "modules/problem-solution";

@@ -2,6 +2,10 @@ const process = require("process");
 const fetch = require("node-fetch");
 
 const { PAYPAL_CLIENT_ID, PAYPAL_APP_SECRET, PAYPAL_API_URL } = process.env;
+
+// Check if we're in preview mode (no environment variables)
+const isPreviewMode = !PAYPAL_CLIENT_ID || !PAYPAL_APP_SECRET || !PAYPAL_API_URL;
+
 const getUnitPrice = (name) => {
   if (name === "AirBeam Mini") {
     return 99;
@@ -33,13 +37,41 @@ const generateAccessToken = async () => {
   }
 };
 
-const createOrder = async (quantity, shippingOption, name) => {
+const createOrder = async (cart, shippingOption) => {
+  // If in preview mode, return a mock order ID
+  if (isPreviewMode) {
+    console.log("Preview mode: Creating mock order for cart:", cart);
+    return {
+      statusCode: 200,
+      body: JSON.stringify({
+        id: "mock-order-id-" + Date.now(),
+        status: "CREATED",
+        preview_mode: true
+      })
+    };
+  }
+
   const url = `${PAYPAL_API_URL}/v2/checkout/orders`;
   const accessToken = await generateAccessToken();
 
-  const UNIT_PRICE = getUnitPrice(name);
-  const itemTotalValue = quantity * UNIT_PRICE;
-  const shippingCosts = calculateShippingCosts(quantity, shippingOption);
+  // Calculate totals from cart items
+  let itemTotalValue = 0;
+  const items = cart.map(item => {
+    const unitPrice = getUnitPrice(item.name);
+    const itemTotal = unitPrice * item.quantity;
+    itemTotalValue += itemTotal;
+
+    return {
+      name: item.name,
+      quantity: item.quantity,
+      unit_amount: {
+        currency_code: "USD",
+        value: unitPrice.toString(),
+      },
+    };
+  });
+
+  const shippingCosts = calculateShippingCosts(cart, shippingOption);
   const totalValue = itemTotalValue + shippingCosts;
 
   const body = JSON.stringify({
@@ -49,32 +81,23 @@ const createOrder = async (quantity, shippingOption, name) => {
         reference_id: "d9f80740-38f0-11e8-b467-0ed5f89f718b",
         amount: {
           currency_code: "USD",
-          value: totalValue,
+          value: totalValue.toString(),
           breakdown: {
             item_total: {
               currency_code: "USD",
-              value: itemTotalValue,
+              value: itemTotalValue.toString(),
             },
             shipping: {
               currency_code: "USD",
-              value: shippingCosts,
+              value: shippingCosts.toString(),
             },
             discount: {
               currency_code: "USD",
-              value: 0,
+              value: "0",
             },
           },
         },
-        items: [
-          {
-            name: name,
-            quantity: quantity,
-            unit_amount: {
-              currency_code: "USD",
-              value: UNIT_PRICE,
-            },
-          },
-        ],
+        items: items,
       },
     ],
     payment_source: {
@@ -104,6 +127,27 @@ const createOrder = async (quantity, shippingOption, name) => {
 };
 
 const capturePayment = async (orderID) => {
+  // If in preview mode, return a mock capture response
+  if (isPreviewMode) {
+    console.log("Preview mode: Capturing mock order:", orderID);
+    return {
+      statusCode: 200,
+      body: JSON.stringify({
+        id: "mock-capture-id-" + Date.now(),
+        status: "COMPLETED",
+        purchase_units: [{
+          payments: {
+            captures: [{
+              id: "mock-capture-" + Date.now(),
+              status: "COMPLETED"
+            }]
+          }
+        }],
+        preview_mode: true
+      })
+    };
+  }
+
   const accessToken = await generateAccessToken();
   const url = `${PAYPAL_API_URL}/v2/checkout/orders/${orderID}/capture`;
 
@@ -121,23 +165,33 @@ const capturePayment = async (orderID) => {
 };
 
 const handler = async (req) => {
-  const { action } = JSON.parse(req.body);
+  try {
+    const { action } = JSON.parse(req.body);
 
-  if (action === "create") {
-    const { cart } = JSON.parse(req.body);
-    const { quantity, shippingOption, name } = cart[0];
-    return await createOrder(quantity, shippingOption, name);
-  } else if (action === "capture") {
-    const { orderID } = JSON.parse(req.body);
-    return await capturePayment(orderID);
-  } else {
-    return { statusCode: 400 };
+    if (action === "create") {
+      const { cart, shippingOption } = JSON.parse(req.body);
+      return await createOrder(cart, shippingOption);
+    } else if (action === "capture") {
+      const { orderID } = JSON.parse(req.body);
+      return await capturePayment(orderID);
+    } else {
+      return {
+        statusCode: 400,
+        body: JSON.stringify({ error: "Invalid action" })
+      };
+    }
+  } catch (error) {
+    console.error("Handler error:", error);
+    return {
+      statusCode: 500,
+      body: JSON.stringify({ error: "Internal server error" })
+    };
   }
 };
 
-const calculateShippingCosts = (quantity, shippingOption) => {
-  var firstUnitPrice;
-  var additionalUnitPrice;
+const calculateShippingCosts = (cart, shippingOption) => {
+  let firstUnitPrice;
+  let additionalUnitPrice;
 
   if (shippingOption === "domestic") {
     firstUnitPrice = 10;
@@ -145,13 +199,19 @@ const calculateShippingCosts = (quantity, shippingOption) => {
   } else if (shippingOption === "international") {
     firstUnitPrice = 35;
     additionalUnitPrice = 10;
+  } else {
+    return 0;
   }
 
-  if (quantity == 1) {
+  const totalQuantity = cart.reduce((sum, item) => sum + item.quantity, 0);
+
+  if (totalQuantity === 1) {
     return firstUnitPrice;
-  } else if (quantity >= 2) {
-    return firstUnitPrice + (quantity - 1) * additionalUnitPrice;
+  } else if (totalQuantity >= 2) {
+    return firstUnitPrice + (totalQuantity - 1) * additionalUnitPrice;
   }
+
+  return 0;
 };
 
 module.exports = { handler };

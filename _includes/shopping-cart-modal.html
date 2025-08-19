@@ -1,0 +1,68 @@
+<!-- Shopping Cart Modal -->
+<div id="shopping-cart-modal" class="shopping-cart-modal">
+  <!-- Overlay -->
+  <div id="cart-overlay" class="cart-overlay"></div>
+
+  <!-- Sidebar -->
+  <div id="cart-sidebar" class="cart-sidebar">
+    <div class="cart-header">
+      <h2 class="cart-title">Your Cart (<span id="cart-item-count">0</span>)</h2>
+      <button id="close-cart" class="close-cart-btn" aria-label="Close shopping cart">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <div class="cart-content">
+      <div id="cart-empty" class="cart-empty">
+        <div class="empty-cart-icon">
+          <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+        </div>
+        <p class="empty-cart-text">Your cart is empty.</p>
+        <button class="choose-airbeam-btn" onclick="
+          window.shoppingCart.closeCart();
+          if (window.location.pathname.includes('/airbeam/buy-it-now')) {
+            document.getElementById('product-selection')?.scrollIntoView({ behavior: 'smooth' });
+          } else {
+            window.location.href='/airbeam/buy-it-now/#product-selection';
+          }
+        ">
+          Choose Your AirBeam
+        </button>
+      </div>
+
+      <div id="cart-items" class="cart-items">
+        <!-- Cart items will be dynamically added here -->
+      </div>
+
+              <div id="cart-summary" class="cart-summary" style="display: none;">
+          <div class="shipping-options">
+            <label for="cart-shipping-options">Shipping:</label>
+            <select id="cart-shipping-options" class="cart-shipping-select">
+              <option value="domestic">Domestic US</option>
+              <option value="international">Outside the US</option>
+            </select>
+          </div>
+          <div class="subtotal-row">
+            <span class="subtotal-label">Subtotal:</span>
+            <span id="cart-subtotal" class="subtotal-amount">$0.00</span>
+          </div>
+          <div class="total-row">
+            <span class="total-label">Total:</span>
+            <span id="cart-total" class="total-amount">$0.00</span>
+          </div>
+          <div class="payment-buttons">
+            <div id="cart-paypal-button" class="cart-paypal-button">
+              <!-- PayPal button will be added here -->
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
