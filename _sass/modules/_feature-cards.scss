@@ -1,4 +1,7 @@
 // Feature Cards Section Styles (descriptive classes used in 03-community-feature-cards.html)
+.section-white {
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+}
 .feature-cards-title {
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
   font-weight: 900;
@@ -29,48 +32,82 @@
 .feature-cards-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 2rem;
+  gap: 2.5rem;
   margin-bottom: 5rem;
 
   @media (max-width: 767px) {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    gap: 2rem;
   }
 }
 
 .feature-card {
   text-align: center;
-  padding: 2rem;
-  border: none;
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  padding: 2.5rem 2rem;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   transition: all 0.3s ease;
-  background-color: #ffffff;
-  border-radius: 0.5rem;
+  background: linear-gradient(135deg, #ffffff 0%, #fafafa 100%);
+  border-radius: 1rem;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #1ea73f, #16a34a);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 20% 80%, rgba(30, 167, 63, 0.03) 0%, transparent 50%);
+    pointer-events: none;
+  }
 
   &:hover {
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transform: translateY(-4px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    border-color: #d1d5db;
+
+    &::before {
+      opacity: 1;
+    }
   }
 }
 
 .feature-card-icon-container {
   width: 5rem;
   height: 5rem;
-  background-color: #f0fdf4;
+  background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
   border-radius: 9999px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto 1.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  border: 2px solid #e5e7eb;
 }
 
 .feature-card-icon {
   width: 3rem;
   height: 3rem;
-  background-color: #1ea73f;
+  background: linear-gradient(135deg, #1ea73f 0%, #16a34a 100%);
   border-radius: 9999px;
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .feature-card-title {
