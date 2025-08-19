@@ -1,203 +1,295 @@
-<script src="https://www.paypal.com/sdk/js?client-id=AQBRlDAwZfh2-QGZEb1kkD53-LjqhIl_qFJqhx989b6lgRTjQwKPaxH_GD4V1c88yersfGVRvCkGsWKr&currency=USD&commit=false"></script>
+<script src="https://www.paypal.com/sdk/js?client-id=AU7621qddj4yLzUySUUbk0XDBNZH04GScHgtABUPnY-C1eVyl9mZu3CSoMY8FgNIf8G68qjCAFrp6Fu3&currency=USD&commit=false"></script>
 <!-- Set up a container element for the button -->
 <div id="paypal-button-container"></div>
 <script>
   paypal
     .Buttons({
       createOrder: async (data, actions) => {
-        const UNIT_PRICE = 199;
+        try {
+          const UNIT_PRICE = 199;
 
-        const quantityValue = document.querySelector("#quantity")?.value;
-        const shippingOptionValue =
-          document.querySelector("#shipping-options")?.value;
+          const quantityValue = document.querySelector("#quantity")?.value;
+          const shippingOptionValue =
+            document.querySelector("#shipping-options")?.value;
 
-        const calculateShippingCosts = (quantity, shippingOption) => {
-          var firstUnitPrice;
-          var additionalUnitPrice;
+          const calculateShippingCosts = (quantity, shippingOption) => {
+            var firstUnitPrice;
+            var additionalUnitPrice;
 
-          if (shippingOption === "domestic") {
-            firstUnitPrice = 10;
-            additionalUnitPrice = 5;
-          } else if (shippingOption === "international") {
-            firstUnitPrice = 35;
-            additionalUnitPrice = 10;
+            if (shippingOption === "domestic") {
+              firstUnitPrice = 10;
+              additionalUnitPrice = 5;
+            } else if (shippingOption === "international") {
+              firstUnitPrice = 35;
+              additionalUnitPrice = 10;
+            }
+
+            if (quantity == 1) {
+              return firstUnitPrice;
+            } else if (quantity >= 2) {
+              return firstUnitPrice + (quantity - 1) * additionalUnitPrice;
+            }
+            return 0;
+          };
+
+          const itemTotalValue = quantityValue * UNIT_PRICE;
+
+          const shippingCosts = calculateShippingCosts(
+            quantityValue,
+            shippingOptionValue
+          );
+          const totalValue = itemTotalValue + shippingCosts;
+
+          const formatter = new Intl.NumberFormat("en-US", {
+            style: "currency",
+            currency: "USD",
+          });
+          const formattedTotalValue = formatter.format(totalValue);
+
+          const costInfoContainer = document.getElementById("cost-info");
+          costInfoContainer.textContent = `Order summary: ${formattedTotalValue}`;
+          costInfoContainer.classList.add("cost-info--calculated");
+
+          const response = await fetch("/.netlify/functions/paypal", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              action: "create",
+              cart: [
+                {
+                  name: "AirBeam3",
+                  sku: "psc",
+                  quantity: quantityValue,
+                  unit_amount: {
+                    currency_code: "USD",
+                    value: UNIT_PRICE.toString(),
+                  },
+                },
+              ],
+              shippingOption: shippingOptionValue,
+            }),
+          });
+
+          if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
           }
 
-          if (quantity == 1) {
-            return firstUnitPrice;
-          } else if (quantity >= 2) {
-            return firstUnitPrice + (quantity - 1) * additionalUnitPrice;
-          }
-        };
-
-        const itemTotalValue = quantityValue * UNIT_PRICE;
-
-        const shippingCosts = calculateShippingCosts(
-          quantityValue,
-          shippingOptionValue
-        );
-        const totalValue = itemTotalValue + shippingCosts;
-
-        const formatter = new Intl.NumberFormat("en-US", {
-          style: "currency",
-          currency: "USD",
-        });
-        const formattedTotalValue = formatter.format(totalValue);
-
-        const costInfoContainer = document.getElementById("cost-info");
-        costInfoContainer.textContent = `Order summary: ${formattedTotalValue}`;
-        costInfoContainer.classList.add("cost-info--calculated");
-
-        const response = await fetch("/.netlify/functions/paypal", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            action: "create",
-            cart: [
-              {
-                name: "AirBeam3",
-                sku: "psc",
-                quantity: quantityValue,
-                shippingOption: shippingOptionValue,
-              },
-            ],
-          }),
-        });
-
-        const details = await response.json();
-
-        return details.id;
+          const details = await response.json();
+          return details.id;
+        } catch (error) {
+          console.error('Create order error:', error);
+          throw error;
+        }
       },
 
       onApprove: async (data, actions) => {
-        const response = await fetch("/.netlify/functions/paypal", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            action: "capture",
-            orderID: data.orderID,
-          }),
-        });
+        try {
+          const response = await fetch("/.netlify/functions/paypal", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              action: "capture",
+              orderID: data.orderID,
+            }),
+          });
 
-        const orderData = await response.json();
-        const error = Array.isArray(orderData.details) && orderData.details[0];
+          if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+          }
 
-        const notificationContainer = document.getElementById("notification");
+          const orderData = await response.json();
 
-        if (error) {
-          const msg = `Sorry, your transaction could not be processed. ${error?.description} (${orderData?.debug_id})`;
+          // Check if this is a preview mode response
+          if (orderData.preview_mode) {
+            const notificationContainer = document.getElementById("notification");
+            if (notificationContainer) {
+              notificationContainer.classList.add("notification-text--success");
+              let title = document.createElement("div");
+              title.className = "notification-title";
+              title.textContent = "Preview Mode Success!";
+
+              let content = document.createElement("div");
+              content.className = "notification-content";
+              content.textContent = "Preview mode: Payment simulation completed successfully!";
+
+              let closeIcon = document.createElement("div");
+              closeIcon.className = "notification-close-button";
+
+              closeIcon.addEventListener("click", () => {
+                notificationContainer.classList.remove(
+                  "notification-text--visible"
+                );
+                notificationContainer.classList.remove(
+                  "notification-text--success"
+                );
+
+                while (notificationContainer.firstChild) {
+                  notificationContainer.removeChild(
+                    notificationContainer.firstChild
+                  );
+                }
+              });
+
+              notificationContainer.append(title, content, closeIcon);
+              notificationContainer.classList.add("notification-text--visible");
+
+              setTimeout(() => {
+                notificationContainer.classList.remove(
+                  "notification-text--visible"
+                );
+                notificationContainer.classList.remove(
+                  "notification-text--success"
+                );
+
+                while (notificationContainer.firstChild) {
+                  notificationContainer.removeChild(
+                    notificationContainer.firstChild
+                  );
+                }
+              }, 10000);
+            }
+
+            // Reset form
+            const costInfoContainer = document.getElementById("cost-info");
+            costInfoContainer.textContent =
+              "Shipping costs will be calculated at checkout";
+            costInfoContainer.classList.remove("cost-info--calculated");
+
+            const quantityInput = document.querySelector("#quantity");
+            quantityInput.value = 1;
+
+            const shippingOptionInput = document.querySelector("#shipping-options");
+            shippingOptionInput.value = "domestic";
+            return;
+          }
+
+          const error = Array.isArray(orderData.details) && orderData.details[0];
+
+          const notificationContainer = document.getElementById("notification");
+
+          if (error) {
+            const msg = `Sorry, your transaction could not be processed. ${error?.description} (${orderData?.debug_id})`;
+            if (notificationContainer) {
+              notificationContainer.classList.add("notification-text--error");
+
+              let title = document.createElement("div");
+              title.className = "notification-title";
+              title.textContent = "Something went wrong!";
+
+              let content = document.createElement("div");
+              content.className = "notification-content";
+              content.textContent = msg;
+
+              let closeIcon = document.createElement("div");
+              closeIcon.className = "notification-close-button";
+
+              closeIcon.addEventListener("click", () => {
+                notificationContainer.classList.remove(
+                  "notification-text--visible"
+                );
+                notificationContainer.classList.remove(
+                  "notification-text--error"
+                );
+
+                while (notificationContainer.firstChild) {
+                  notificationContainer.removeChild(
+                    notificationContainer.firstChild
+                  );
+                }
+              });
+
+              notificationContainer.append(title, content, closeIcon);
+              notificationContainer.classList.add("notification-text--visible");
+
+              setTimeout(() => {
+                notificationContainer.classList.remove(
+                  "notification-text--visible"
+                );
+                notificationContainer.classList.remove(
+                  "notification-text--error"
+                );
+
+                while (notificationContainer.firstChild) {
+                  notificationContainer.removeChild(
+                    notificationContainer.firstChild
+                  );
+                }
+              }, 10000);
+            }
+          } else {
+            const transaction = orderData.purchase_units[0].payments.captures[0];
+
+            if (notificationContainer) {
+              notificationContainer.classList.add("notification-text--success");
+              let title = document.createElement("div");
+              title.className = "notification-title";
+              title.textContent = "Success!";
+
+              let content = document.createElement("div");
+              content.className = "notification-content";
+              content.textContent = `Your transaction #${transaction.id} was completed. Thank you for your purchase!`;
+
+              let closeIcon = document.createElement("div");
+              closeIcon.className = "notification-close-button";
+
+              closeIcon.addEventListener("click", () => {
+                notificationContainer.classList.remove(
+                  "notification-text--visible"
+                );
+                notificationContainer.classList.remove(
+                  "notification-text--success"
+                );
+
+                while (notificationContainer.firstChild) {
+                  notificationContainer.removeChild(
+                    notificationContainer.firstChild
+                  );
+                }
+              });
+
+              notificationContainer.append(title, content, closeIcon);
+              notificationContainer.classList.add("notification-text--visible");
+
+              setTimeout(() => {
+                notificationContainer.classList.remove(
+                  "notification-text--visible"
+                );
+                notificationContainer.classList.remove(
+                  "notification-text--success"
+                );
+
+                while (notificationContainer.firstChild) {
+                  notificationContainer.removeChild(
+                    notificationContainer.firstChild
+                  );
+                }
+              }, 10000);
+            }
+          }
+
+          const costInfoContainer = document.getElementById("cost-info");
+          costInfoContainer.textContent =
+            "Shipping costs will be calculated at checkout";
+          costInfoContainer.classList.remove("cost-info--calculated");
+
+          const quantityInput = document.querySelector("#quantity");
+          quantityInput.value = 1;
+
+          const shippingOptionInput = document.querySelector("#shipping-options");
+          shippingOptionInput.value = "domestic";
+        } catch (error) {
+          console.error('Payment capture error:', error);
+          const notificationContainer = document.getElementById("notification");
           if (notificationContainer) {
             notificationContainer.classList.add("notification-text--error");
-
-            let title = document.createElement("div");
-            title.className = "notification-title";
-            title.textContent = "Something went wrong!";
-
-            let content = document.createElement("div");
-            content.className = "notification-content";
-            content.textContent = msg;
-
-            let closeIcon = document.createElement("div");
-            closeIcon.className = "notification-close-button";
-
-            closeIcon.addEventListener("click", () => {
-              notificationContainer.classList.remove(
-                "notification-text--visible"
-              );
-              notificationContainer.classList.remove(
-                "notification-text--error"
-              );
-
-              while (notificationContainer.firstChild) {
-                notificationContainer.removeChild(
-                  notificationContainer.firstChild
-                );
-              }
-            });
-
-            notificationContainer.append(title, content, closeIcon);
+            notificationContainer.textContent = "Payment error occurred. Please try again.";
             notificationContainer.classList.add("notification-text--visible");
-
-            setTimeout(() => {
-              notificationContainer.classList.remove(
-                "notification-text--visible"
-              );
-              notificationContainer.classList.remove(
-                "notification-text--error"
-              );
-
-              while (notificationContainer.firstChild) {
-                notificationContainer.removeChild(
-                  notificationContainer.firstChild
-                );
-              }
-            }, 10000);
-          }
-        } else {
-          const transaction = orderData.purchase_units[0].payments.captures[0];
-
-          if (notificationContainer) {
-            notificationContainer.classList.add("notification-text--success");
-            let title = document.createElement("div");
-            title.className = "notification-title";
-            title.textContent = "Success!";
-
-            let content = document.createElement("div");
-            content.className = "notification-content";
-            content.textContent = `Your transaction #${transaction.id} was completed. Thank you for your purchase!`;
-
-            let closeIcon = document.createElement("div");
-            closeIcon.className = "notification-close-button";
-
-            closeIcon.addEventListener("click", () => {
-              notificationContainer.classList.remove(
-                "notification-text--visible"
-              );
-              notificationContainer.classList.remove(
-                "notification-text--success"
-              );
-
-              while (notificationContainer.firstChild) {
-                notificationContainer.removeChild(
-                  notificationContainer.firstChild
-                );
-              }
-            });
-
-            notificationContainer.append(title, content, closeIcon);
-            notificationContainer.classList.add("notification-text--visible");
-
-            setTimeout(() => {
-              notificationContainer.classList.remove(
-                "notification-text--visible"
-              );
-              notificationContainer.classList.remove(
-                "notification-text--success"
-              );
-
-              while (notificationContainer.firstChild) {
-                notificationContainer.removeChild(
-                  notificationContainer.firstChild
-                );
-              }
-            }, 10000);
           }
         }
-
-        const costInfoContainer = document.getElementById("cost-info");
-        costInfoContainer.textContent =
-          "Shipping costs will be calculated at checkout";
-        costInfoContainer.classList.remove("cost-info--calculated");
-
-        const quantityInput = document.querySelector("#quantity");
-        quantityInput.value = 1;
-
-        const shippingOptionInput = document.querySelector("#shipping-options");
-        shippingOptionInput.value = "domestic";
       },
       onCancel: async (data) => {
         const costInfoContainer = document.getElementById("cost-info");
@@ -211,6 +303,15 @@
         const shippingOptionInput = document.querySelector("#shipping-options");
         shippingOptionInput.value = "domestic";
       },
+      onError: (err) => {
+        console.error('PayPal error:', err);
+        const notificationContainer = document.getElementById("notification");
+        if (notificationContainer) {
+          notificationContainer.classList.add("notification-text--error");
+          notificationContainer.textContent = "Payment error occurred. Please try again.";
+          notificationContainer.classList.add("notification-text--visible");
+        }
+      }
     })
     .render("#paypal-button-container");
 </script>

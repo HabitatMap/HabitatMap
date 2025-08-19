@@ -228,7 +228,6 @@ class ShoppingCart {
           name: item.name,
           sku: item.id === 'mini' ? 'ab-mini' : 'ab3',
           quantity: item.quantity,
-          shippingOption: shippingOption,
           unit_amount: {
             currency_code: 'USD',
             value: item.price.toString()
@@ -243,37 +242,60 @@ class ShoppingCart {
           body: JSON.stringify({
             action: "create",
             cart: cartItems,
+            shippingOption: shippingOption,
           }),
         });
+
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
 
         const details = await response.json();
         return details.id;
       },
 
       onApprove: async (data, actions) => {
-        const response = await fetch("/.netlify/functions/paypal", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            action: "capture",
-            orderID: data.orderID,
-          }),
-        });
+        try {
+          const response = await fetch("/.netlify/functions/paypal", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              action: "capture",
+              orderID: data.orderID,
+            }),
+          });
 
-        const orderData = await response.json();
-        const error = Array.isArray(orderData.details) && orderData.details[0];
+          if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+          }
 
-        if (error) {
-          this.showNotification(`Transaction failed: ${error?.description}`, 'error');
-        } else {
-          this.showNotification('Payment successful! Thank you for your order.', 'success');
-          this.clearCart();
+          const orderData = await response.json();
+
+          // Check if this is a preview mode response
+          if (orderData.preview_mode) {
+            this.showNotification('Preview mode: Payment simulation successful!', 'success');
+            this.clearCart();
+            return;
+          }
+
+          const error = Array.isArray(orderData.details) && orderData.details[0];
+
+          if (error) {
+            this.showNotification(`Transaction failed: ${error?.description}`, 'error');
+          } else {
+            this.showNotification('Payment successful! Thank you for your order.', 'success');
+            this.clearCart();
+          }
+        } catch (error) {
+          console.error('Payment capture error:', error);
+          this.showNotification('Payment error occurred. Please try again.', 'error');
         }
       },
 
       onError: (err) => {
+        console.error('PayPal error:', err);
         this.showNotification('Payment error occurred. Please try again.', 'error');
       }
     }).render(paypalContainer);
