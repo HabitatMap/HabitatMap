@@ -1,7 +1,9 @@
-// Feature Cards Section Styles (descriptive classes used in 03-community-feature-cards.html)
-.section-white {
-  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+// Feature Cards Section Styles - NO CARDS, CLEAN DESIGN
+.section.section-white {
+  background: #f3f4f6 !important;
+  padding: 6rem 0 1rem !important;
 }
+
 .feature-cards-title {
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
   font-weight: 900;
@@ -43,92 +45,66 @@
 
 .feature-card {
   text-align: center;
-  padding: 2.5rem 2rem;
-  border: 1px solid #e5e7eb;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  transition: all 0.3s ease;
-  background: linear-gradient(135deg, #ffffff 0%, #fafafa 100%);
-  border-radius: 1rem;
-  position: relative;
-  overflow: hidden;
+  padding: 2rem;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  transition: none !important;
+  animation: none !important;
 
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 4px;
-    background: linear-gradient(90deg, #1ea73f, #16a34a);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-  }
-
-  &::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: radial-gradient(circle at 20% 80%, rgba(30, 167, 63, 0.03) 0%, transparent 50%);
-    pointer-events: none;
-  }
-
+  // Disable ALL hover effects
   &:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-    border-color: #d1d5db;
-
-    &::before {
-      opacity: 1;
-    }
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    transform: none !important;
+    transition: none !important;
+    animation: none !important;
   }
 }
 
 .feature-card-icon-container {
   width: 5rem;
   height: 5rem;
-  background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+  background: rgba(34, 197, 94, 0.1);
   border-radius: 9999px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto 1.5rem;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-  border: 2px solid #e5e7eb;
+  border: none !important;
+  box-shadow: none !important;
 }
 
 .feature-card-icon {
-  width: 3rem;
-  height: 3rem;
-  background: linear-gradient(135deg, #1ea73f 0%, #16a34a 100%);
-  border-radius: 9999px;
+  width: 2.5rem;
+  height: 2.5rem;
+  color: #16a34a;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card-icon-svg {
+  width: 100%;
+  height: 100%;
+  stroke-width: 2;
 }
 
 .feature-card-title {
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  font-size: 1.5rem;
   font-weight: 700;
-  font-size: 1.25rem;
-  line-height: 1.75rem;
   color: #111827;
   margin-bottom: 1rem;
+  line-height: 1.3;
 }
 
 .feature-card-description {
-  color: #4b5563;
-  line-height: 1.625;
-}
-
-// Inline icon svg size
-.feature-card-icon-svg {
-  width: 1.5rem;
-  height: 1.5rem;
-  color: #fff;
+  font-size: 1.125rem;
+  color: #6b7280;
+  line-height: 1.6;
+  margin: 0;
 }
 
 // Legacy section styles for backward compatibility
