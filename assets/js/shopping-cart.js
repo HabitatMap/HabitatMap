@@ -275,6 +275,7 @@ class ShoppingCart {
 
           // Check if this is a preview mode response
           if (orderData.preview_mode) {
+            this.closeCart();
             this.showNotification('Preview mode: Payment simulation successful!', 'success');
             this.clearCart();
             return;
@@ -285,6 +286,7 @@ class ShoppingCart {
           if (error) {
             this.showNotification(`Transaction failed: ${error?.description}`, 'error');
           } else {
+            this.closeCart();
             this.showNotification('Payment successful! Thank you for your order.', 'success');
             this.clearCart();
           }
@@ -333,7 +335,6 @@ class ShoppingCart {
     this.items = [];
     this.saveToStorage();
     this.updateCartDisplay();
-    this.closeCart();
   }
 
   saveToStorage() {
