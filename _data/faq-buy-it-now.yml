@@ -12,8 +12,6 @@ categories:
 
   - category: "Purchasing & Shipping"
     questions:
-      - q: "How much do AirBeam devices cost?"
-        a: "AirBeam Mini: $99. AirBeam3: $199. No hidden fees or subscriptions ever."
       - q: "What payment methods do you accept?"
         a: "We accept credit cards via PayPal (no PayPal account required). For wire transfer or check payments, email info@habitatmap.org with your shipping address and quantity needed."
       - q: "What are the shipping costs?"
