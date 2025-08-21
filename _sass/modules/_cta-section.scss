@@ -14,6 +14,11 @@
 .final-cta-content {
   max-width: 56rem;
   text-align: left;
+  order: 2;
+
+  @media (min-width: 1024px) {
+    order: 1;
+  }
 }
 
 .final-cta-title {
@@ -38,13 +43,15 @@
 
 .final-cta-buttons {
   display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
+  flex-direction: row;
+  gap: 1rem;
   justify-content: center;
   margin-bottom: 2rem;
+  flex-wrap: wrap;
 
   @media (min-width: 640px) {
-    flex-direction: row;
+    gap: 1.5rem;
+    flex-wrap: nowrap;
   }
 }
 
@@ -117,6 +124,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  order: 1;
+
+  @media (min-width: 1024px) {
+    order: 2;
+  }
 
   img {
     width: 100%;
