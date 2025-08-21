@@ -51,11 +51,20 @@
   bottom: 0;
   background: linear-gradient(
     135deg,
-    rgba(0, 0, 0, 0.6) 0%,
-    rgba(0, 0, 0, 0.4) 50%,
-    rgba(0, 0, 0, 0.5) 100%
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0.7) 50%,
+    rgba(0, 0, 0, 0.75) 100%
   );
   z-index: 1;
+
+  @media (min-width: 768px) {
+    background: linear-gradient(
+      135deg,
+      rgba(0, 0, 0, 0.6) 0%,
+      rgba(0, 0, 0, 0.4) 50%,
+      rgba(0, 0, 0, 0.5) 100%
+    );
+  }
 }
 
 .home-hero-section .hero-text-container {
@@ -85,7 +94,7 @@
 
 // Additional spacing for hero text container
 .home-hero-section .hero-text-spacing {
-  margin-bottom: 4rem;
+  margin-bottom: 6rem;
 
   @media (min-width: 640px) {
     margin-bottom: 5rem;
