@@ -36,6 +36,15 @@
   }
 }
 
+// Make the third column (Stay Current) take full width on mobile
+.footer-column:nth-child(3) {
+  grid-column: 1 / -1; /* Span full width on mobile */
+
+  @media (min-width: 768px) {
+    grid-column: auto; /* Reset to normal on desktop */
+  }
+}
+
 .footer-column-heading {
   font-weight: 500;
   color: #1e293b;
