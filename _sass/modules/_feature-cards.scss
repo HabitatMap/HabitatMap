@@ -98,6 +98,11 @@
   color: #111827;
   margin-bottom: 1rem;
   line-height: 1.3;
+  white-space: normal;
+
+  @media (min-width: 768px) {
+    white-space: nowrap;
+  }
 }
 
 .feature-card-description {

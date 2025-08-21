@@ -67,6 +67,19 @@
   }
 }
 
+// Additional spacing for hero text container
+.home-hero-section .hero-text-spacing {
+  margin-bottom: 1rem;
+
+  @media (min-width: 640px) {
+    margin-bottom: 3rem;
+  }
+
+  @media (min-width: 1024px) {
+    margin-bottom: 3rem;
+  }
+}
+
 .home-hero-section .hero-main-title {
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
   font-weight: 900;
@@ -148,14 +161,16 @@
   min-width: 200px;
 
   &:hover {
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: #ffffff;
     color: #1ea73f;
     border-color: #ffffff;
     transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 25px rgba(255, 255, 255, 0.3);
   }
 
   &:active {
+    background-color: #f8fafc;
+    border-color: #ffffff;
     transform: translateY(0);
   }
 }

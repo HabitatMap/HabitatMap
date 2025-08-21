@@ -208,12 +208,15 @@
   transition: all 0.3s ease;
 
   &:hover {
-    background-color: #f0fdf4;
+    background-color: #1ea73f;
+    color: #ffffff;
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(30, 167, 63, 0.2);
+    box-shadow: 0 4px 12px rgba(30, 167, 63, 0.3);
   }
 
   &:active {
+    background-color: #16a34a;
+    border-color: #16a34a;
     transform: translateY(0);
   }
 }
