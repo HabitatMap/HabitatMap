@@ -100,6 +100,23 @@
   }
 }
 
+// Mobile-first: Disable complex animations on mobile devices
+@media (max-width: 767px) {
+  .scroll-animate,
+  .scroll-animate-left,
+  .scroll-animate-right,
+  .scroll-animate-up,
+  .scroll-animate-down,
+  .scroll-animate-scale,
+  .scroll-animate-fade,
+  .scroll-animate-stagger {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
 // Responsive adjustments
 @media (prefers-reduced-motion: reduce) {
   .scroll-animate,

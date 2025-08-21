@@ -26,8 +26,8 @@
 
 .footer-columns {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 3rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
   margin-bottom: 3rem;
 
   @media (min-width: 768px) {
