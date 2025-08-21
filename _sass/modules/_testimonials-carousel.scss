@@ -263,10 +263,12 @@
 @media (max-width: 767px) {
   .testimonials-carousel-wrapper {
     min-height: 300px;
+    touch-action: pan-y pinch-zoom; /* Enable touch gestures */
   }
 
   .testimonial-card {
     padding: 24px; /* Adjusted for mobile */
+    touch-action: pan-y pinch-zoom; /* Enable touch gestures */
   }
 
   /* Hide navigation arrows on mobile */
@@ -278,17 +280,31 @@
   .testimonial-main {
     width: 100% !important;
     margin: 0 !important;
+    touch-action: pan-y pinch-zoom; /* Enable touch gestures */
   }
 
   /* Adjust carousel container padding for mobile */
   .testimonials-carousel-container {
     padding: 0 20px;
+    touch-action: pan-y pinch-zoom; /* Enable touch gestures */
+    -webkit-user-select: none; /* Prevent text selection on swipe */
+    user-select: none;
   }
 
   /* Mobile quote adjustments */
   .testimonial-quote {
     font-size: 16px; /* Slightly smaller on mobile */
     line-height: 1.5;
+  }
+
+  /* Ensure touch events work properly on mobile */
+  .testimonials-carousel-container * {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
   }
 }
 
