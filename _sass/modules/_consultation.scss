@@ -65,7 +65,7 @@
 .consultation-button {
   display: inline-flex;
   align-items: center;
-  background: linear-gradient(to right, white, #f0fdf4);
+  background: white;
   color: #059669;
   padding: 0.75rem 1.5rem;
   border-radius: 0.5rem;
@@ -81,7 +81,7 @@
   }
 
   &:hover {
-    background: linear-gradient(to right, #f0fdf4, white);
+    background: #f0fdf4;
     box-shadow: 0 8px 25px rgba(255, 255, 255, 0.4);
     transform: translateY(-2px);
   }

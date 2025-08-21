@@ -109,7 +109,7 @@
 }
 
 .newsletter-button {
-  background: #10b981;
+  background: #1ea73f;
   color: white;
   border: none;
   padding: 0.75rem;
@@ -120,7 +120,7 @@
   transition: background-color 0.3s ease;
 
   &:hover {
-    background: #059669;
+    background: #16a34a;
   }
 }
 
@@ -149,7 +149,7 @@
 
 // Right section - Elegant green background
 .footer-right {
-  background: #10b981;
+  background: linear-gradient(135deg, #1ea73f 0%, #16a34a 50%, #15803d 100%);
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
@@ -200,7 +200,7 @@
 .footer-logo {
   width: 6rem;
   height: 6rem;
-  background: #10b981;
+  background: #1ea73f;
   border-radius: 1rem;
   display: flex;
   align-items: center;
