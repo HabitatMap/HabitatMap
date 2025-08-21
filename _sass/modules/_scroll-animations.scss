@@ -1,0 +1,92 @@
+// Scroll Animations for Main Page Sections
+// No external libraries needed - pure CSS solution
+
+// Base animation properties
+.scroll-animate {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+// Animation states
+.scroll-animate.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+// Different animation delays for staggered effects
+.scroll-animate-delay-1 {
+  transition-delay: 0.1s;
+}
+
+.scroll-animate-delay-2 {
+  transition-delay: 0.2s;
+}
+
+.scroll-animate-delay-3 {
+  transition-delay: 0.3s;
+}
+
+// Different animation directions
+.scroll-animate-left {
+  transform: translateX(-60px);
+}
+
+.scroll-animate-right {
+  transform: translateX(60px);
+}
+
+.scroll-animate-up {
+  transform: translateY(60px);
+}
+
+.scroll-animate-down {
+  transform: translateY(-60px);
+}
+
+// Scale animations
+.scroll-animate-scale {
+  transform: scale(0.9);
+}
+
+.scroll-animate-scale.animate-in {
+  transform: scale(1);
+}
+
+// Fade animations
+.scroll-animate-fade {
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+
+.scroll-animate-fade.animate-in {
+  opacity: 1;
+}
+
+// Staggered animations for grid items
+.scroll-animate-stagger {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.5s ease;
+}
+
+.scroll-animate-stagger.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+// Responsive adjustments
+@media (prefers-reduced-motion: reduce) {
+  .scroll-animate,
+  .scroll-animate-left,
+  .scroll-animate-right,
+  .scroll-animate-up,
+  .scroll-animate-down,
+  .scroll-animate-scale,
+  .scroll-animate-fade,
+  .scroll-animate-stagger {
+    transition: none;
+    opacity: 1;
+    transform: none;
+  }
+}

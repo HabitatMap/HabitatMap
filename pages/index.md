@@ -9,8 +9,9 @@ image: /assets/img/pages/home/home.jpg
 {% include home-sections/02-problem-solution-comparison.html %}
 {% include home-sections/04-airbeam-aircasting-ecosystem.html %}
 {% include home-sections/03-community-feature-cards.html %}
-{% include home-sections/05-community-impact-testimonial.html %}
+{% include home-sections/07-final-donation-cta.html %}
 {% include buy-it-now/consultation-section.html %}
+{% include home-sections/05-community-impact-testimonial.html %}
 
 <!-- Include existing modal and scripts -->
 
@@ -18,3 +19,4 @@ image: /assets/img/pages/home/home.jpg
 
 <script defer type="text/javascript" src="/assets/js/citations.js"></script>
 <script defer type="text/javascript" src="/assets/js/modern-home.js"></script>
+<script defer type="text/javascript" src="/assets/js/scroll-animations.js"></script>

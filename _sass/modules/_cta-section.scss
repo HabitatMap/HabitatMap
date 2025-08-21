@@ -1,27 +1,38 @@
 // CTA Section Styles (descriptive classes used in 07-final-donation-cta.html)
+.final-cta-hero {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  align-items: center;
+
+  @media (min-width: 1024px) {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+}
+
 .final-cta-content {
   max-width: 56rem;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
+  text-align: left;
 }
 
 .final-cta-title {
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
-  font-weight: 900;
-  font-size: 2.25rem;
+  font-family: "Moderat-Bold", sans-serif;
+  font-weight: 700;
+  font-size: 1.75rem;
   line-height: 1.2;
   margin-bottom: 2rem;
+  color: #111827;
 
   @media (min-width: 768px) {
-    font-size: 3rem;
+    font-size: 2.75rem;
   }
 }
 
 .final-cta-description {
   font-size: 1.25rem;
   margin-bottom: 3rem;
-  color: #ccfbf1;
+  color: #374151;
   line-height: 1.625;
 }
 
@@ -44,7 +55,7 @@
   padding: 1rem 2rem;
   font-size: 1.125rem;
   line-height: 1.75rem;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   display: inline-flex;
   align-items: center;
   text-decoration: none;
@@ -56,25 +67,36 @@
     box-shadow: 0 8px 25px rgba(255, 230, 81, 0.4);
     background: linear-gradient(135deg, #ffd700 0%, #ffb347 100%);
   }
+
+  &:active {
+    transform: translateY(0);
+  }
 }
 
 .final-cta-button-secondary {
-  border: 1px solid #ffffff;
-  color: #ffffff;
-  background-color: transparent;
+  border: 1px solid #1ea73f;
+  color: #1ea73f;
+  background-color: #ffffff;
   font-weight: 500;
   padding: 1rem 2rem;
   font-size: 1.125rem;
   line-height: 1.75rem;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   display: inline-flex;
   align-items: center;
   text-decoration: none;
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
 
   &:hover {
-    background-color: #ffffff;
-    color: #1ea73f;
+    background-color: #f0fdf4;
+    border-color: #16a34a;
+    color: #16a34a;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(30, 167, 63, 0.2);
+  }
+
+  &:active {
+    transform: translateY(0);
   }
 }
 
@@ -86,7 +108,21 @@
 
 .final-cta-disclaimer {
   font-size: 0.875rem;
-  color: #ccfbf1;
+  color: #6b7280;
+}
+
+.final-cta-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+    border-radius: 0.75rem;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
 }
 
 // Legacy section styles for backward compatibility
@@ -213,6 +249,14 @@
 .section-teal-gradient {
   background: linear-gradient(to right, #0d9488, #1ea73f);
   color: #ffffff;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+// Final donation CTA section specific styling
+.section-final-donation-cta {
+  background: #ffffff;
+  color: #111827;
   padding-top: 6rem;
   padding-bottom: 6rem;
 }

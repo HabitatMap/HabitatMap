@@ -50,16 +50,15 @@
   margin-bottom: 5rem;
 
   .section-title {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
+    font-family: "Moderat-Bold", sans-serif;
     font-weight: 700;
-    color: #374151;
-    max-width: 48rem;
-    margin: 0 auto;
+    font-size: 1.75rem;
+    line-height: 1.2;
+    color: #111827;
+    margin-bottom: 1rem;
 
-    @media (min-width: 1024px) {
-      font-size: 2.5rem;
-      line-height: 1;
+    @media (min-width: 768px) {
+      font-size: 2.75rem;
     }
   }
 }
@@ -102,13 +101,21 @@
 .problem-solution-grid {
   display: grid;
   gap: 4rem;
-  align-items: start;
+  align-items: stretch;
   transition: all 0.3s ease;
   position: relative;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
 
-  @media (min-width: 1024px) {
-    grid-template-columns: 1fr 1fr;
-    gap: 6rem;
+  @media (max-width: 1023px) {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+
+  // Ensure grid items stretch to fill available height
+  > * {
+    min-height: 0;
+    height: 100%;
   }
 }
 
@@ -123,6 +130,10 @@
   padding: 0 !important;
   margin: 0 !important;
   transition: all 0.3s ease !important;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
 
   // Disable ALL hover effects
   &:hover {
@@ -146,6 +157,8 @@
   box-shadow: none !important;
   border-radius: 0 !important;
   transition: all 0.3s ease !important;
+  flex: 1;
+  justify-content: flex-start;
 
   // Disable ALL hover effects
   &:hover {
@@ -192,8 +205,8 @@
   margin: 0;
 
   .problem-section & {
-    color: #6b7280;
-  }
+  color: #6b7280;
+}
 
   .solution-section & {
     color: #16a34a;
@@ -226,7 +239,7 @@
           svg {
         width: 2rem;
         height: 2rem;
-        color: #6b7280;
+  color: #6b7280;
       }
   }
 
@@ -327,17 +340,16 @@
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    background: rgba(255, 255, 255, 0.5) !important;
+    background: transparent !important;
     border: none !important;
-    border-radius: 0.75rem !important;
+    border-radius: 0 !important;
     padding: 1.5rem !important;
     margin: 0 !important;
     transition: all 0.3s ease !important;
-    backdrop-filter: blur(8px);
 
   // Disable ALL hover effects
   &:hover {
-    background: rgba(255, 255, 255, 0.5) !important;
+    background: transparent !important;
     border: none !important;
     box-shadow: none !important;
     transform: none !important;
