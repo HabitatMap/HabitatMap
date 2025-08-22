@@ -1,106 +1,56 @@
 // Scroll Animations for Main Page Sections
 // No external libraries needed - pure CSS solution
 
-// Base animation properties
+// Base animation properties - DISABLED
 .scroll-animate {
-  opacity: 0;
-  transform: translateY(60px);
-  transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  opacity: 1 !important;
+  transform: none !important;
+  transition: none !important;
+  animation: none !important;
 }
 
-// Animation states
+// Animation states - DISABLED
 .scroll-animate.animate-in {
-  opacity: 1;
-  transform: translateY(0);
+  opacity: 1 !important;
+  transform: none !important;
 }
 
-// Fallback: Ensure main sections are visible even if JavaScript fails
-.scroll-animate {
-  animation: fallback-section-fade-in 0.8s ease 0.5s forwards;
-}
-
-@keyframes fallback-section-fade-in {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-// Different animation delays for staggered effects
-.scroll-animate-delay-1 {
-  transition-delay: 0.1s;
-}
-
-.scroll-animate-delay-2 {
-  transition-delay: 0.2s;
-}
-
-.scroll-animate-delay-3 {
-  transition-delay: 0.3s;
-}
-
-// Different animation directions
-.scroll-animate-left {
-  transform: translateX(-60px);
-}
-
-.scroll-animate-right {
-  transform: translateX(60px);
-}
-
-.scroll-animate-up {
-  transform: translateY(60px);
-}
-
-.scroll-animate-down {
-  transform: translateY(-60px);
-}
-
-// Scale animations
-.scroll-animate-scale {
-  transform: scale(0.9);
-}
-
-.scroll-animate-scale.animate-in {
-  transform: scale(1);
-}
-
-// Fade animations
+// All animations DISABLED - elements are immediately visible
+.scroll-animate-delay-1,
+.scroll-animate-delay-2,
+.scroll-animate-delay-3,
+.scroll-animate-left,
+.scroll-animate-right,
+.scroll-animate-up,
+.scroll-animate-down,
+.scroll-animate-scale,
 .scroll-animate-fade {
-  opacity: 0;
-  transition: opacity 0.8s ease;
+  opacity: 1 !important;
+  transform: none !important;
+  transition: none !important;
+  animation: none !important;
 }
 
+.scroll-animate-scale.animate-in,
 .scroll-animate-fade.animate-in {
-  opacity: 1;
+  opacity: 1 !important;
+  transform: none !important;
 }
 
-// Staggered animations for grid items
+// Staggered animations for grid items - DISABLED
 .scroll-animate-stagger {
-  opacity: 0;
-  transform: translateY(40px);
-  transition: all 0.5s ease;
+  opacity: 1 !important;
+  transform: none !important;
+  transition: none !important;
+  animation: none !important;
 }
 
 .scroll-animate-stagger.animate-in {
-  opacity: 1;
-  transform: translateY(0);
+  opacity: 1 !important;
+  transform: none !important;
 }
 
-// Fallback: Ensure staggered elements are visible even if JavaScript fails
-// This provides a safety net for when scroll animations don't work
-.scroll-animate-stagger {
-  animation: fallback-fade-in 0.5s ease 1s forwards;
-}
-
-@keyframes fallback-fade-in {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-// Mobile-first: Disable complex animations on mobile devices
+// Mobile-first: Ensure elements are visible with fallback animations
 @media (max-width: 767px) {
   .scroll-animate,
   .scroll-animate-left,
@@ -108,12 +58,19 @@
   .scroll-animate-up,
   .scroll-animate-down,
   .scroll-animate-scale,
-  .scroll-animate-fade,
-  .scroll-animate-stagger {
+  .scroll-animate-fade {
     opacity: 1 !important;
     transform: none !important;
     transition: none !important;
     animation: none !important;
+  }
+
+  // Keep fallback animations for staggered elements on mobile
+  .scroll-animate-stagger {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+    animation: fallback-fade-in 0.5s ease 0.5s forwards !important;
   }
 }
 

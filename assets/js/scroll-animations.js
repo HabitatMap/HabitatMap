@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // Get all elements with scroll-animate class
   const animatedElements = document.querySelectorAll('.scroll-animate');
 
-    // Create intersection observer for smooth animations
+  // Create intersection observer for smooth animations
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       // When element comes into view
@@ -18,25 +18,16 @@ document.addEventListener('DOMContentLoaded', function() {
           staggeredElements.forEach((el, index) => {
             setTimeout(() => {
               el.classList.add('animate-in');
-            }, index * 100); // 100ms delay between each element
-          });
-        }
-      } else {
-        // When element goes out of view, remove animation class to reset it
-        entry.target.classList.remove('animate-in');
-
-        // Also reset staggered elements
-        const staggeredElements = entry.target.querySelectorAll('.scroll-animate-stagger');
-        if (staggeredElements.length > 0) {
-          staggeredElements.forEach((el) => {
-            el.classList.remove('animate-in');
+            }, index * 150); // Increased delay for smoother stagger effect
           });
         }
       }
+      // Note: Removed the else clause that was resetting animations
+      // This prevents elements from disappearing when they go out of view
     });
   }, {
-    threshold: 0.1, // Trigger when 10% of element is visible
-    rootMargin: '0px 0px -50px 0px' // Start animation slightly before element is fully in view
+    threshold: 0.15, // Trigger when 15% of element is visible
+    rootMargin: '0px 0px -100px 0px' // Start animation when element is well into view
   });
 
   // Observe all animated elements
@@ -44,43 +35,31 @@ document.addEventListener('DOMContentLoaded', function() {
     observer.observe(element);
   });
 
-  // Optional: Re-trigger animations on scroll for better performance
-  let ticking = false;
+  // Initial check for elements already in view on page load
+  const checkInitialVisibility = () => {
+    animatedElements.forEach(element => {
+      const rect = element.getBoundingClientRect();
+      const windowHeight = window.innerHeight;
 
-    function updateAnimations() {
-    if (!ticking) {
-      requestAnimationFrame(() => {
-        animatedElements.forEach(element => {
-          const rect = element.getBoundingClientRect();
-          const windowHeight = window.innerHeight;
+      // If element is already in viewport on page load, animate it
+      if (rect.top < windowHeight * 0.8 && rect.bottom > 0) {
+        element.classList.add('animate-in');
 
-          // If element is in viewport, add animation class
-          if (rect.top < windowHeight * 0.8 && rect.bottom > 0) {
-            element.classList.add('animate-in');
-          } else {
-            // If element is out of viewport, remove animation class to reset it
-            element.classList.remove('animate-in');
+        // Handle staggered elements
+        const staggeredElements = element.querySelectorAll('.scroll-animate-stagger');
+        if (staggeredElements.length > 0) {
+          staggeredElements.forEach((el, index) => {
+            setTimeout(() => {
+              el.classList.add('animate-in');
+            }, index * 150);
+          });
+        }
+      }
+    });
+  };
 
-            // Also reset staggered elements
-            const staggeredElements = element.querySelectorAll('.scroll-animate-stagger');
-            if (staggeredElements.length > 0) {
-              staggeredElements.forEach((el) => {
-                el.classList.remove('animate-in');
-              });
-            }
-          }
-        });
-        ticking = false;
-      });
-      ticking = true;
-    }
-  }
-
-  // Listen for scroll events
-  window.addEventListener('scroll', updateAnimations, { passive: true });
-
-  // Initial check for elements already in view
-  updateAnimations();
+  // Run initial check after a brief delay
+  setTimeout(checkInitialVisibility, 100);
 });
 
 // Optional: Add smooth scroll behavior for anchor links
