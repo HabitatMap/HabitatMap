@@ -19,4 +19,3 @@ image: /assets/img/pages/home/home.jpg
 
 <script defer type="text/javascript" src="/assets/js/citations.js"></script>
 <script defer type="text/javascript" src="/assets/js/modern-home.js"></script>
-<script defer type="text/javascript" src="/assets/js/scroll-animations.js"></script>

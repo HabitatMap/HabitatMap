@@ -17,46 +17,13 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  // Add intersection observer for animations
-  const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
-  };
 
-  const observer = new IntersectionObserver(function(entries) {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('animate-in');
-      }
-    });
-  }, observerOptions);
-
-  // Observe elements for animation
-  const animateElements = document.querySelectorAll('.py-24');
-  animateElements.forEach(el => {
-    observer.observe(el);
-  });
 });
 
-// Add CSS for animations
+// Add CSS for basic styling
 const style = document.createElement('style');
 style.textContent = `
-  .animate-in {
-    animation: fadeInUp 0.6s ease-out forwards;
-  }
-
-  @keyframes fadeInUp {
-    from {
-      opacity: 0;
-      transform: translateY(30px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-    /* Ensure proper stacking context for hero section */
+  /* Ensure proper stacking context for hero section */
   .relative {
     position: relative;
   }
