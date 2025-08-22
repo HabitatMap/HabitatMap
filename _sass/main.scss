@@ -1,15 +1,20 @@
 @charset "utf-8";
 
-@import "config/_variables";
-@import "config/_fonts";
-@import "config/_mixins";
-@import "config/_normalize";
-@import "config/_defaults";
-@import "config/_utilities";
-@import "config/_header-theme";
-@import "config/_typography";
-@import "config/_lazy";
+// Main SCSS file - imports all modules
+@import "config/defaults";
+@import "config/fonts";
+@import "config/variables";
+@import "config/mixins";
+@import "config/header-theme";
+@import "config/utilities";
+@import "config/typography";
+@import "config/lazy";
+@import "config/normalize";
 
+// Base modules
+@import "modules/base";
+
+// Individual module imports
 @import "modules/_anchor";
 @import "modules/_ac-intro";
 @import "modules/_animations";
@@ -27,7 +32,6 @@
 @import "modules/_conversion-form";
 @import "modules/_discount-code";
 @import "modules/_download-links";
-@import "modules/_faq";
 @import "modules/_flipping-text";
 @import "modules/_footer";
 @import "modules/_for-teams";
@@ -51,9 +55,70 @@
 @import "modules/_shop-airbeam";
 @import "modules/_slider";
 @import "modules/_split";
+@import "modules/_stats";
+@import "modules/_testimonials";
+@import "modules/_testimonials-carousel";
+@import "modules/_shopping-cart";
+@import "modules/_consultation";
+@import "modules/_faq";
+@import "modules/_new-faq";
+@import "modules/_features";
+@import "modules/_global-movement";
+@import "modules/_hero";
+@import "modules/_press";
+@import "modules/_product-comparison";
+@import "modules/_videos";
 @import "modules/_404";
 
-@import "partials/_forms";
+// Section-specific modules
+@import "modules/hero-section";
+@import "modules/problem-solution";
+@import "modules/feature-cards";
+@import "modules/ecosystem";
+@import "modules/impact";
+@import "modules/educator-resources";
+@import "modules/cta-section";
+
+
+// Component modules (only the ones that exist)
+@import "modules/404";
+@import "modules/ac-intro";
+@import "modules/anchor";
+@import "modules/animations";
+@import "modules/arc-background";
+@import "modules/badge-link";
+@import "modules/blog";
+@import "modules/button";
+@import "modules/conversion-form";
+@import "modules/discount-code";
+@import "modules/download-links";
+@import "modules/faq";
+@import "modules/flipping-text";
+@import "modules/footer";
+@import "modules/for-teams";
+@import "modules/get-consultation";
+@import "modules/get-started-modal";
+@import "modules/grid";
+@import "modules/header";
+@import "modules/highlights";
+@import "modules/images";
+@import "modules/list";
+@import "modules/logos";
+@import "modules/logo";
+@import "modules/nav";
+@import "modules/panel";
+@import "modules/panel-separator";
+@import "modules/press-article";
+@import "modules/quote";
+@import "modules/read-more-button";
+@import "modules/save-now";
+@import "modules/search";
+@import "modules/shop-airbeam";
+@import "modules/slider";
+@import "modules/split";
+
+// Partials
+@import "partials/forms";
 
 // PayPal Donate Button Hover Effect
 .paypal-button-container {
