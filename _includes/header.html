@@ -1,6 +1,23 @@
 <header class="header js--header">
   <div class="header__menu">
+    <!-- Mobile Cart Button - Total Left -->
+    <button id="cart-toggle-mobile" class="cart-toggle-btn u--desktop-hidden" aria-label="Open shopping bag">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <path d="M16 10a4 4 0 0 1-8 0"></path>
+      </svg>
+      <span class="cart-count" id="header-cart-count-mobile">0</span>
+    </button>
+
     <div class="header__brand">
+      <div class="logo header__logo">
+        <a href="{{ "/" | relative_url }}" aria-label="HabitatMap Home">
+          {% include /svg/logo_hm.html %}
+          {% include /svg/logo-hm-vertical.html %}
+        </a>
+      </div>
+
       <button
         class="header__nav-toggle-button js--toggle-nav u--desktop-hidden"
         aria-label="Toggle navigation menu"
@@ -10,19 +27,24 @@
         {% include /svg/icon_nav.html %}
         {% include /svg/icon_close.html %}
       </button>
-
-      <div class="logo header__logo">
-        <a href="{{ "/" | relative_url }}" aria-label="HabitatMap Home">
-          {% include /svg/logo_hm.html %}
-          {% include /svg/logo-hm-vertical.html %}
-        </a>
-      </div>
     </div>
 
     {% include navigation.html navigation=site.data.navigation %}
 
-    <div class="u--tablet-max-hidden">
-      <a href="/airbeam/buy-it-now" class="button button--small header__button">Get AirBeam</a>
+    <div class="u--tablet-max-hidden header-actions">
+      <button id="cart-toggle" class="cart-toggle-btn" aria-label="Open shopping bag">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <path d="M16 10a4 4 0 0 1-8 0"></path>
+        </svg>
+        <span class="cart-count" id="header-cart-count">0</span>
+      </button>
+      {% if page.permalink == "/airbeam/buy-it-now/" %}
+        <a href="#product-selection" class="button button--cta header__button" style="padding: 1rem 1.5rem;">Get AirBeam</a>
+      {% else %}
+        <a href="/airbeam/buy-it-now" class="button button--cta header__button" style="padding: 1rem 1.5rem;">Get AirBeam</a>
+      {% endif %}
       <button
         class="header__nav-toggle-button js--toggle-nav"
         aria-label="Toggle navigation menu"

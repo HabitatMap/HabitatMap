@@ -5,6 +5,8 @@
   top: 0;
   width: 100%;
   z-index: 2;
+  background-color: $white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
   @media screen and (max-width: $tablet-max) {
     padding: 0.5rem 0;
@@ -133,16 +135,16 @@
   @media screen and (min-width: $large-desktop-min) {
     width: 21vw;
   }
+
+  svg {
+    fill: $green;
+  }
 }
 
 .header__button {
   font-size: $base-font-size-2;
   margin-left: $u-space-small;
   text-transform: uppercase;
-
-  [data-current*="buy-now"] & {
-    display: none;
-  }
 }
 
 .header__nav-toggle-button {
@@ -175,5 +177,90 @@
     fill: $white;
     position: relative;
     left: -8px;
+  }
+}
+
+/* Header Actions Container */
+.header-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  .header--nav-expanded & {
+    display: none;
+  }
+}
+
+/* Shopping Cart Header Button */
+.cart-toggle-btn {
+  position: relative;
+  background: none;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  color: #6b7280;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  z-index: 1;
+
+  &:hover {
+    background: #f3f4f6;
+    color: #374151;
+  }
+
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .cart-count {
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    background: #818181;
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 600;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 20px;
+    line-height: 1;
+    text-align: center;
+    z-index: 1;
+  }
+}
+
+.cart-toggle-btn {
+  color: #818181;
+  margin-left: 1rem;
+}
+
+@media screen and (max-width: $tablet-max) {
+  .header__menu {
+    display: flex;
+    align-items: center;
+  }
+
+  .header__brand {
+    position: relative;
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .header__logo {
+      position: absolute;
+      left: calc(40% + 0.5rem);
+      transform: translateX(-50%);
+    }
+
+    .header__nav-toggle-button {
+      margin-left: auto;
+    }
   }
 }
