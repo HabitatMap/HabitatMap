@@ -202,7 +202,7 @@ class ShoppingCart {
     // Load PayPal SDK if not already loaded
     if (typeof paypal === 'undefined') {
       const script = document.createElement('script');
-      script.src = 'https://www.paypal.com/sdk/js?client-id=AQBRlDAwZfh2-QGZEb1kkD53-LjqhIl_qFJqhx989b6lgRTjQwKPaxH_GD4V1c88yersfGVRvCkGsWKr&currency=USD&commit=false';
+      script.src = 'https://www.paypal.com/sdk/js?client-id=AU7621qddj4yLzUySUUbk0XDBNZH04GScHgtABUPnY-C1eVyl9mZu3CSoMY8FgNIf8G68qjCAFrp6Fu3&currency=USD&commit=false';
       script.onload = () => this.createPayPalButtons();
       document.head.appendChild(script);
     } else {
