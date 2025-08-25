@@ -136,7 +136,6 @@
     width: 21vw;
   }
 
-  // Make logo green
   svg {
     fill: $green;
   }
@@ -232,17 +231,15 @@
     min-width: 20px;
     line-height: 1;
     text-align: center;
-    z-index: 1; /* Lower than navigation menu */
+    z-index: 1;
   }
 }
 
-/* Mobile cart button positioning */
 .cart-toggle-btn {
   color: #818181;
   margin-left: 1rem;
 }
 
-/* Center logo on mobile */
 @media screen and (max-width: $tablet-max) {
   .header__menu {
     display: flex;
