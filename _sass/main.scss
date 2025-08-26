@@ -105,6 +105,22 @@ body .panel .split--50 .paypal-donate-form {
   display: block !important;
 }
 
+// Override global button center alignment for PayPal donate button
+.donate-button-section .paypal-button-container,
+.donate-button-section .paypal-button-default,
+.donate-button-section .paypal-button-hover,
+.donate-button-section input[type="image"] {
+  text-align: left !important;
+}
+
+// Most specific override for the entire donate section
+body .shop-airbeam .panel .split--50 .donate-button-section,
+body .shop-airbeam .panel .split--50 .paypal-donate-form,
+body .shop-airbeam .panel .split--50 .donate-button-section * {
+  text-align: left !important;
+  display: inline-block !important;
+}
+
 .paypal-button-container {
   position: relative;
   display: inline-block;
