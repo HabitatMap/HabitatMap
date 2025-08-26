@@ -69,9 +69,20 @@
 @import "partials/_forms";
 
 // PayPal Donate Button Hover Effect
+.paypal-donate-form {
+  margin: 1.5rem 0;
+  display: block;
+
+  @media screen and (max-width: 768px) {
+    margin: 1rem 0;
+  }
+}
+
 .paypal-button-container {
   position: relative;
   display: inline-block;
+  width: fit-content;
+  height: fit-content;
 }
 
 .paypal-button-default,
@@ -82,6 +93,10 @@
   width: 100%;
   height: 100%;
   transition: opacity 0.2s;
+}
+
+.paypal-button-default {
+  position: relative;
 }
 
 .paypal-button-hover {
