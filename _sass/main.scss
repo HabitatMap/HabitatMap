@@ -70,7 +70,7 @@
 
 // PayPal Donate Button Hover Effect
 .donate-button-section {
-  text-align: left;
+  text-align: left !important;
   margin: 2.5rem 0;
   padding: 1.5rem 0;
 
@@ -81,8 +81,17 @@
 }
 
 .paypal-donate-form {
-  text-align: left;
+  text-align: left !important;
   margin: 0;
+}
+
+// More specific selector to override panel/split layout styles
+.panel .split--50 .donate-button-section {
+  text-align: left !important;
+}
+
+.panel .split--50 .paypal-donate-form {
+  text-align: left !important;
 }
 
 .paypal-button-container {
