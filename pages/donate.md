@@ -21,7 +21,7 @@ image: /assets/img/pages/donate/airbeam.jpg
         HabitatMap is a 501(c)(3) not-for-profit charitable organization. All contributions from US donors are tax-deductible in accordance with IRS regulations. Donations and grants are welcome from anywhere in the world.
       </p>
 
-      <div class="donate-button-section">
+      <div class="donate-button-section" style="text-align: left !important;">
         {% include donate-button.html %}
       </div>
 
