@@ -81,6 +81,8 @@
 .paypal-button-container {
   position: relative;
   display: inline-block;
+  width: fit-content;
+  height: fit-content;
 }
 
 .paypal-button-default,
@@ -91,6 +93,10 @@
   width: 100%;
   height: 100%;
   transition: opacity 0.2s;
+}
+
+.paypal-button-default {
+  position: relative;
 }
 
 .paypal-button-hover {
