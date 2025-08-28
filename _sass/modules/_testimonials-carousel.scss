@@ -1,4 +1,3 @@
-/* Testimonials Carousel Styles */
 .testimonials-carousel-container {
   position: relative;
   max-width: 1600px;
@@ -54,22 +53,22 @@
 .testimonial-card {
   background: white;
   border-radius: 12px;
-  padding: 32px; /* Increased padding for more breathing room */
+  padding: 32px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); /* Smoother transitions */
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   height: 100%;
   display: flex;
   flex-direction: column;
-  opacity: 1; /* Ensure cards start visible */
-  transform: translateX(0) scale(1); /* Ensure cards start in correct position and scale */
-  will-change: transform, opacity; /* Optimize for animations */
-  backface-visibility: hidden; /* Improve performance */
-  transform-style: preserve-3d; /* Better 3D rendering */
+  opacity: 1;
+  transform: translateX(0) scale(1);
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
 }
 
 .testimonial-card:hover {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
-  transform: translateX(0) translateY(-2px); /* Maintain X position while adding Y hover effect */
+  transform: translateX(0) translateY(-2px);
 }
 
 .carousel-nav-btn {
@@ -87,7 +86,7 @@
   cursor: pointer;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   z-index: 20;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); /* Smoother transitions */
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   color: #374151;
 }
 
@@ -121,9 +120,9 @@
   align-items: center;
   margin-top: 32px;
   gap: 8px;
-  height: 16px; /* Ensure proper height for dots */
-  padding: 4px 0; /* Add vertical padding to prevent clipping */
-  overflow: visible; /* Ensure dots aren't clipped */
+  height: 16px;
+  padding: 4px 0;
+  overflow: visible;
 }
 
 .carousel-dot {
@@ -132,15 +131,15 @@
   border-radius: 50%;
   border: none;
   cursor: pointer;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); /* Smoother transitions */
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #d1d5db;
-  flex-shrink: 0; /* Prevent dots from shrinking */
-  display: block; /* Ensure proper display */
+  flex-shrink: 0;
+  display: block;
 }
 
 .carousel-dot.active {
   background-color: #16a34a;
-  transform: scale(1.2); /* Slightly larger active dot */
+  transform: scale(1.2);
 }
 
 .carousel-dot:hover {
@@ -148,11 +147,11 @@
   transform: scale(1.1);
 }
 
-/* Category section styles */
+
 .testimonial-category {
   display: flex;
   align-items: center;
-  margin-bottom: 20px; /* Increased spacing */
+  margin-bottom: 20px;
 }
 
 .category-icon {
@@ -174,40 +173,40 @@
   color: #166534;
 }
 
-/* Quote content styles - Expanded width and better spacing */
+
 .testimonial-quote {
   color: #374151;
   font-style: italic;
-  margin-bottom: 28px; /* Increased bottom margin */
-  font-size: 18px; /* Slightly larger font */
-  line-height: 1.6; /* Better line height for readability */
+  margin-bottom: 28px;
+  font-size: 18px;
+  line-height: 1.6;
   flex-grow: 1;
-  max-width: 100%; /* Ensure quote uses full available width */
+  max-width: 100%;
   word-wrap: break-word;
-  hyphens: auto; /* Enable automatic hyphenation */
+  hyphens: auto;
 }
 
-/* Author section styles */
+
 .testimonial-author {
   display: flex;
   align-items: center;
   margin-top: auto;
-  padding-top: 16px; /* Add some top padding */
-  border-top: 1px solid #e5e7eb; /* Subtle separator line */
-  justify-content: flex-start; /* Changed from center to left alignment */
+  padding-top: 16px;
+  border-top: 1px solid #e5e7eb;
+  justify-content: flex-start;
 }
 
 .testimonial-author-info {
   flex: 1;
-  min-width: 0; /* Allow text to wrap properly */
-  text-align: left; /* Changed from center to left alignment */
+  min-width: 0;
+  text-align: left;
 }
 
 .testimonial-author-name {
   font-weight: 600;
   color: #111827;
   font-size: 16px;
-  margin-bottom: 4px; /* Increased spacing */
+  margin-bottom: 4px;
   word-wrap: break-word;
   line-height: 1.3;
 }
@@ -219,9 +218,9 @@
   line-height: 1.3;
 }
 
-/* Preview card styles (smaller version) */
+
 .testimonial-preview .testimonial-card {
-  padding: 20px; /* Adjusted padding for preview cards */
+  padding: 20px;
 }
 
 .testimonial-preview .category-icon {
@@ -259,61 +258,40 @@
   line-height: 1.2;
 }
 
-/* Responsive adjustments */
+
 @media (max-width: 767px) {
   .testimonials-carousel-wrapper {
     min-height: 300px;
-    touch-action: pan-y pinch-zoom; /* Enable touch gestures */
   }
 
   .testimonial-card {
-    padding: 24px; /* Adjusted for mobile */
-    touch-action: pan-y pinch-zoom; /* Enable touch gestures */
+    padding: 24px;
   }
 
-  /* Hide navigation arrows on mobile */
+
   .carousel-nav-btn {
     display: none;
   }
 
-  /* Make main testimonial wider on mobile */
   .testimonial-main {
     width: 100% !important;
     margin: 0 !important;
-    touch-action: pan-y pinch-zoom; /* Enable touch gestures */
   }
 
-  /* Adjust carousel container padding for mobile */
   .testimonials-carousel-container {
     padding: 0 20px;
-    touch-action: pan-y pinch-zoom; /* Enable touch gestures */
-    -webkit-user-select: none; /* Prevent text selection on swipe */
-    user-select: none;
   }
 
-  /* Mobile quote adjustments */
+
   .testimonial-quote {
-    font-size: 16px; /* Slightly smaller on mobile */
+    font-size: 16px;
     line-height: 1.5;
   }
-
-  /* Ensure touch events work properly on mobile */
-  .testimonials-carousel-container * {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
 }
 
-/* Enhanced transition effects for sliding */
 .testimonial-card {
-  animation: none; /* Remove the fadeInUp animation as we're using sliding now */
+  animation: none;
 }
-
-/* Smooth sliding transitions for carousel updates */
 .testimonial-card[style*="opacity: 0"] {
   transition: all 0.3s ease-out;
 }
@@ -322,9 +300,9 @@
   transition: all 0.4s ease-out;
 }
 
-/* Ensure preview cards maintain their scaled appearance during transitions */
+
 .testimonial-preview .testimonial-card {
-  transform: scale(0.9) translateX(0); /* Reset transform to prevent conflicts */
+  transform: scale(0.9) translateX(0);
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
