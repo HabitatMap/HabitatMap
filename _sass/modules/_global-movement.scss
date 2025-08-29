@@ -16,6 +16,7 @@
 
       .movement-content {
         .movement-title {
+<<<<<<< HEAD
           font-family: "Moderat-Bold", sans-serif;
           font-weight: 700;
           font-size: 1.75rem;
@@ -26,6 +27,12 @@
           @media (min-width: 768px) {
             font-size: 2.75rem;
           }
+=======
+          font-size: 2.5rem;
+          font-weight: bold;
+          color: #111827;
+          margin-bottom: 1.5rem;
+>>>>>>> master
         }
 
         .movement-description {
@@ -156,9 +163,14 @@
           transition: all 0.3s ease;
 
           &:hover {
+<<<<<<< HEAD
             background-color: #1ea73f;
             color: #ffffff;
             border-color: #1ea73f;
+=======
+            background-color: #f3f4f6;
+            border-color: #9ca3af;
+>>>>>>> master
           }
 
           .link-icon {

@@ -1,4 +1,13 @@
 press_articles:
+  - date: 2025-07-30
+    link: https://www.aqmd.gov/docs/default-source/aq-spec/field-evaluations/habitatmap---airbeam-mini---field-evaluation.pdf?sfvrsn=32266e7e_3
+    title: Field Evaluation Report for AirBeam Mini
+    publication: AQMD
+  - date: 2025-07-23
+    title: Louisiana’s ban on community air monitoring is an attack on science and
+      free speech
+    link: https://thelensnola.org/2025/07/23/louisianas-ban-on-community-air-monitoring-is-an-attack-on-science-and-free-speech/
+    publication: The Lens New Orleans
   - date: 2025-07-14
     title: The Air We Breathe - Tech's new Frontier
     link: https://medium.com/@hernanimax/the-air-we-breathe-techs-next-frontier-fe7ad7be3875
@@ -11,10 +20,6 @@ press_articles:
     title: High pollution levels causing chemical-like smell in Queens
     link: https://www.fox5ny.com/video/1655184
     publication: Fox 5
-  - date: 2025-04-16
-    title: Study finds dramatic boost in air quality from electrifying railways
-    link: https://www.eurekalert.org/news-releases/1080641
-    publication: Eurek Alert
   - date: 2025-04-14
     title: Essential OSINT tools for journalists investigating air pollution
     link: https://ijnet.org/en/story/essential-osint-tools-journalists-investigating-air-pollution
@@ -23,6 +28,12 @@ press_articles:
     title: 10+ Best Air Quality Monitors
     link: https://breathesafeair.com/air-quality-monitors/
     publication: Breathe Safe Air
+  - date: 2025-03-25
+    title: "Low-Cost PM2.5 Sensor Performance Characteristics against Meteorological
+      Influence in Sub-Saharan Africa: Evidence from the Air Sensor Evaluation
+      and Training Facility for the West Africa Projec"
+    link: https://pubs.acs.org/doi/abs/10.1021/acs.est.4c09752
+    publication: ACS Publications
   - date: 2025-02-15
     link: https://nhsjs.com/2025/the-effect-of-sensor-type-and-location-on-reported-air-quality-index-reliability-in-new-york/
     title: The Effect of Sensor Type and Location on Reported Air Quality Index
@@ -58,6 +69,10 @@ press_articles:
     title: "Air Quality Citizen Science: Measuring Pollution with an AirBeam"
     link: https://www.rootsimple.com/2023/10/air-quality-citizen-science-measuring-pollution-with-an-airbeam/
     publication: Root Simple
+  - date: 2023-08-09
+    title: "AI and wearables: innovative tech for fighting air pollution"
+    link: https://www.cleanairfund.org/news-item/ai-wearables-innovative-tech/
+    publication: Clean Air Fund
   - date: 2023-08-16
     title: Using Low-Cost Sensing Technology to Assess Ambient and Indoor Fine
       Particulate Matter Concentrations in New York during the COVID-19 Lockdown
@@ -86,6 +101,11 @@ press_articles:
       Planning
     link: https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2022GH000669
     publication: AGU Journals
+  - date: 2021-09-05
+    link: https://pubmed.ncbi.nlm.nih.gov/34482835/
+    title: Feasibility and acceptability of monitoring personal air pollution
+      exposure with sensors for asthma self-management
+    publication: "PubMed "
   - date: 2021-08-18
     title: Clearing the Air in the Historic West End
     link: https://storymaps.arcgis.com/stories/5071792639ef47729fad54da835d37d3
@@ -116,6 +136,11 @@ press_articles:
       Studies"
     link: https://www.researchgate.net/publication/344575711_Air_Quality_Citizen_Science_Research_Project_in_NYC_Toolkit_Case_Studies
     publication: Research Gate
+  - date: 2020-09-22
+    link: https://www.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2020.575946/full
+    title: "The Urban Built Environment, Walking and Mental Health Outcomes Among
+      Older Adults: A Pilot Study"
+    publication: Frontiers
   - date: 2020-08-19
     title: "Self-Portraits of Personal Exposure to Air Pollution: on where and when
       People Are Exposed, and on why it Is Difficult to Avoid"
@@ -132,10 +157,19 @@ press_articles:
       correction
     link: https://www.sciencedirect.com/science/article/abs/pii/S1352231020302168?dgcid=coauthor
     publication: Atmospheric Environment
+  - date: 2020-05-07
+    link: https://pmc.ncbi.nlm.nih.gov/articles/PMC7382637/
+    title: "Biomedical REAl-Time Health Evaluation (BREATHE): toward an mHealth
+      informatics platform"
+    publication: PubMed Central
   - date: 2020-01-22
     link: https://captotheque.fr/fr/blog/detail/mobicitair-les-resultats-de-lexperimentation-citoyenne
     publication: Captotheque
     title: "Mobicit'air : les résultats de l'expérimentation citoyenne!"
+  - date: 2020-01-21
+    title: "Citizen Science: A New Approach to Smoke-Free Policy Advocacy"
+    link: https://pubmed.ncbi.nlm.nih.gov/31908201/
+    publication: PubMed
   - date: 2019-11-20
     link: https://www.mdpi.com/1660-4601/17/1/93
     publication: International Journal of Environmental Research and Public Health

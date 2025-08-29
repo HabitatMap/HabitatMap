@@ -7,7 +7,7 @@ class TestimonialsCarousel {
     this.autoplayTimeout = options.autoplayTimeout || 8000;
     this.autoplayInterval = null;
     this.isTransitioning = false;
-    this.previousIndex = null; // Added for slide direction tracking
+    this.previousIndex = null;
 
     this.init();
   }

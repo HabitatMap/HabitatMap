@@ -136,7 +136,10 @@
     width: 21vw;
   }
 
+<<<<<<< HEAD
   // Make logo green
+=======
+>>>>>>> master
   svg {
     fill: $green;
   }
@@ -232,6 +235,7 @@
     min-width: 20px;
     line-height: 1;
     text-align: center;
+<<<<<<< HEAD
     z-index: 1; /* Lower than navigation menu */
   }
 }
@@ -264,6 +268,44 @@
 
     .header__nav-toggle-button {
       margin-left: auto;
+=======
+    z-index: 1;
+  }
+}
+
+.cart-toggle-btn {
+  color: #818181;
+  margin-left: 1rem;
+
+  .header--nav-expanded & {
+    display: none;
+  }
+}
+
+@media screen and (max-width: $tablet-max) {
+  .header:not(.header--nav-expanded) {
+    .header__menu {
+      display: flex;
+      align-items: center;
+    }
+
+    .header__brand {
+      position: relative;
+      flex: 1;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .header__logo {
+        position: absolute;
+        left: calc(40% + 0.5rem);
+        transform: translateX(-50%);
+      }
+
+      .header__nav-toggle-button {
+        margin-left: auto;
+      }
+>>>>>>> master
     }
   }
 }

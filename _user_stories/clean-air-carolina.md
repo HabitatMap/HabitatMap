@@ -12,7 +12,7 @@ intro: <a href="https://cleanairenc.org/">CleanAIRE NC</a>, a Charlotte-based
   href="https://cleanairenc.org/blog/2020/04/09/clearing-the-air-in-the-historic-west-end/">AirKeepers
   program</a>.
 type: Activists & Non-profits
-order: 4
+order: 5
 ---
 The AirKeepers program is designed to empower Historic West End residents and community leaders to build a community-level monitoring network that gathers real-time air quality data using free and low-cost community science tools, like the AirCasting platform and the AirBeam.
 
