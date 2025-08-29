@@ -16,6 +16,14 @@ document.addEventListener('DOMContentLoaded', function() {
   const dotsContainer = document.getElementById('story-dots');
   const prevButton = document.getElementById('prev-story');
   const nextButton = document.getElementById('next-story');
+  const carouselWrapper = document.getElementById('carousel-wrapper');
+
+  // Touch/swipe variables
+  let touchStartX = 0;
+  let touchStartY = 0;
+  let touchEndX = 0;
+  let touchEndY = 0;
+  const minSwipeDistance = 50; // Minimum distance for a swipe to be registered
 
   // Debug DOM elements
   console.log('DOM elements:', {
@@ -85,6 +93,13 @@ document.addEventListener('DOMContentLoaded', function() {
     // Add event listeners
     if (prevButton) prevButton.addEventListener('click', goToPrevious);
     if (nextButton) nextButton.addEventListener('click', goToNext);
+
+    // Add touch/swipe event listeners for mobile
+    if (carouselWrapper) {
+      carouselWrapper.addEventListener('touchstart', handleTouchStart, { passive: true });
+      carouselWrapper.addEventListener('touchmove', handleTouchMove, { passive: true });
+      carouselWrapper.addEventListener('touchend', handleTouchEnd, { passive: true });
+    }
   }
 
   function createDots() {
@@ -193,6 +208,39 @@ document.addEventListener('DOMContentLoaded', function() {
       isAutoPlaying = true;
       startAutoPlay();
     });
+  }
+
+  // Touch/swipe handlers for mobile
+  function handleTouchStart(event) {
+    touchStartX = event.touches[0].clientX;
+    touchStartY = event.touches[0].clientY;
+  }
+
+  function handleTouchMove(event) {
+    touchEndX = event.touches[0].clientX;
+    touchEndY = event.touches[0].clientY;
+  }
+
+  function handleTouchEnd() {
+    const deltaX = touchStartX - touchEndX;
+    const deltaY = touchStartY - touchEndY;
+
+    // Check if it's a horizontal swipe (more horizontal than vertical)
+    if (Math.abs(deltaX) > Math.abs(deltaY) && Math.abs(deltaX) > minSwipeDistance) {
+      if (deltaX > 0) {
+        // Swipe left - go to next story
+        goToNext();
+      } else {
+        // Swipe right - go to previous story
+        goToPrevious();
+      }
+    }
+
+    // Reset touch coordinates
+    touchStartX = 0;
+    touchStartY = 0;
+    touchEndX = 0;
+    touchEndY = 0;
   }
 
   // Initialize
