@@ -106,15 +106,14 @@
   }
 }
 
-// Mobile responsive padding adjustments for the main features section
 @media (max-width: 768px) {
   .features-section {
-    padding: 3rem 1rem; // Reduce top/bottom padding from 8rem to 3rem on mobile
+    padding: 3rem 1rem;
   }
 }
 
 @media (max-width: 480px) {
   .features-section {
-    padding: 2rem 1rem; // Further reduce top/bottom padding to 2rem on small mobile
+    padding: 2rem 1rem;
   }
 }

@@ -266,7 +266,7 @@
 }
 
 .mobile-swipe-hint {
-  display: none; // Hidden by default on desktop
+  display: none;
   align-items: center;
   justify-content: center;
   gap: 8px;
@@ -311,12 +311,12 @@
 @media (max-width: 767px) {
   .testimonials-carousel-wrapper {
     min-height: 300px;
-    touch-action: pan-y; // Allow vertical scrolling on mobile
+    touch-action: pan-y;
   }
 
   .testimonial-card {
     padding: 24px;
-    touch-action: pan-y; // Allow vertical scrolling within cards
+    touch-action: pan-y;
   }
 
   .carousel-nav-btn {
@@ -324,27 +324,25 @@
   }
 
   .testimonial-main {
-    width: 100% !important;
-    margin: 0 !important;
+    width: 100%;
+    margin: 0;
   }
 
   .testimonials-carousel-container {
     padding: 0 20px;
-    touch-action: pan-y pinch-zoom; // Ensure touch actions work properly on mobile
-  }
+    touch-action: pan-y pinch-zoom;
 
   .testimonial-quote {
     font-size: 16px;
     line-height: 1.5;
   }
 
-  // Add visual feedback for touch interactions
+
   .testimonial-card {
-    -webkit-tap-highlight-color: transparent; // Remove tap highlight on iOS
-    user-select: none; // Prevent text selection during swipes
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
   }
 
-  // Show mobile swipe hint on mobile devices
   .mobile-swipe-hint {
     display: flex;
   }

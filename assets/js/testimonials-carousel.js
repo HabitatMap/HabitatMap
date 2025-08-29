@@ -7,14 +7,13 @@ class TestimonialsCarousel {
     this.autoplayTimeout = options.autoplayTimeout || 8000;
     this.autoplayInterval = null;
     this.isTransitioning = false;
-    this.previousIndex = null; // Added for slide direction tracking
+    this.previousIndex = null;
 
-    // Touch/swipe properties
     this.touchStartX = 0;
     this.touchStartY = 0;
     this.touchEndX = 0;
     this.touchEndY = 0;
-    this.minSwipeDistance = 50; // Minimum distance for swipe to be registered
+    this.minSwipeDistance = 50;
     this.isTouchDevice = false;
 
     this.init();
@@ -349,11 +348,9 @@ class TestimonialsCarousel {
     // Touch/swipe events for mobile
     this.bindTouchEvents();
 
-    // Button hover effects are handled by CSS
   }
 
   bindTouchEvents() {
-    // Check if device supports touch
     this.isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
 
     if (!this.isTouchDevice) return;
@@ -394,11 +391,9 @@ class TestimonialsCarousel {
     this.touchEndX = touch.clientX;
     this.touchEndY = touch.clientY;
 
-    // Calculate the distance moved
     const deltaX = this.touchStartX - this.touchEndX;
     const deltaY = this.touchStartY - this.touchEndY;
 
-    // If horizontal movement is greater than vertical, prevent default to avoid page scrolling
     if (Math.abs(deltaX) > Math.abs(deltaY)) {
       e.preventDefault();
     }
@@ -410,17 +405,14 @@ class TestimonialsCarousel {
     const deltaX = this.touchStartX - this.touchEndX;
     const deltaY = this.touchStartY - this.touchEndY;
 
-    // Check if the swipe distance is sufficient and more horizontal than vertical
     if (Math.abs(deltaX) > this.minSwipeDistance && Math.abs(deltaX) > Math.abs(deltaY)) {
       if (deltaX > 0) {
-        // Swipe left - go to next
         this.goToNext();
         if (this.autoplay) {
           this.stopAutoplay();
           this.startAutoplay();
         }
       } else {
-        // Swipe right - go to previous
         this.goToPrevious();
         if (this.autoplay) {
           this.stopAutoplay();
@@ -429,7 +421,6 @@ class TestimonialsCarousel {
       }
     }
 
-    // Reset touch values
     this.touchStartX = 0;
     this.touchStartY = 0;
     this.touchEndX = 0;
@@ -437,7 +428,6 @@ class TestimonialsCarousel {
   }
 }
 
-// Initialize carousel when DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
   const testimonialsData = [
     {
