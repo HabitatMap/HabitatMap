@@ -275,10 +275,7 @@ class ShoppingCart {
 
           // Check if this is a preview mode response
           if (orderData.preview_mode) {
-<<<<<<< HEAD
-=======
             this.closeCart();
->>>>>>> master
             this.showNotification('Preview mode: Payment simulation successful!', 'success');
             this.clearCart();
             return;
