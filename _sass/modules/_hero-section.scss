@@ -873,14 +873,18 @@
   }
 
   .media-logos-row {
-    gap: 1rem;
+    gap: 0.75rem;
   }
 
-  // Make logos smaller on mobile
   .media-logo-item,
   .media-logo-popular-science,
   .media-logo-wired {
-    height: 0.25rem;
+    height: 1rem;
+  }
+
+  // Move logos banner higher on small mobile screens
+  .home-hero-section .media-logos-banner {
+    bottom: 0;
   }
 }
 
@@ -928,7 +932,7 @@
     margin: 0;
     padding: 0;
     position: absolute;
-    bottom: 2rem;
+    bottom: 0;
     z-index: 10;
   }
 
@@ -937,7 +941,7 @@
     max-width: 100%;
     margin: 0;
     border-radius: 0;
-    padding: 2rem;
+    padding: 1rem;
     background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
@@ -947,7 +951,7 @@
   // Position photo container to be relative so absolute positioning works
   .mobile-hero-photo {
     position: relative;
-    padding-bottom: 4rem;
+    padding-bottom: 0;
   }
 
   // Improve mobile button layout
