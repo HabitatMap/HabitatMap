@@ -9,6 +9,14 @@ class TestimonialsCarousel {
     this.isTransitioning = false;
     this.previousIndex = null; // Added for slide direction tracking
 
+    // Touch/swipe properties
+    this.touchStartX = 0;
+    this.touchStartY = 0;
+    this.touchEndX = 0;
+    this.touchEndY = 0;
+    this.minSwipeDistance = 50; // Minimum distance for swipe to be registered
+    this.isTouchDevice = false;
+
     this.init();
   }
 
@@ -338,7 +346,94 @@ class TestimonialsCarousel {
       this.updateCarousel();
     });
 
+    // Touch/swipe events for mobile
+    this.bindTouchEvents();
+
     // Button hover effects are handled by CSS
+  }
+
+  bindTouchEvents() {
+    // Check if device supports touch
+    this.isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+
+    if (!this.isTouchDevice) return;
+
+    // Touch start event
+    this.carouselContainer.addEventListener('touchstart', (e) => {
+      this.handleTouchStart(e);
+    }, { passive: true });
+
+    // Touch move event
+    this.carouselContainer.addEventListener('touchmove', (e) => {
+      this.handleTouchMove(e);
+    }, { passive: false });
+
+    // Touch end event
+    this.carouselContainer.addEventListener('touchend', (e) => {
+      this.handleTouchEnd(e);
+    }, { passive: true });
+
+    // Prevent default touch behavior to avoid conflicts
+    this.carouselContainer.addEventListener('touchstart', (e) => {
+      e.preventDefault();
+    }, { passive: false });
+  }
+
+  handleTouchStart(e) {
+    const touch = e.touches[0];
+    this.touchStartX = touch.clientX;
+    this.touchStartY = touch.clientY;
+    this.touchEndX = touch.clientX;
+    this.touchEndY = touch.clientY;
+  }
+
+  handleTouchMove(e) {
+    if (!this.touchStartX || !this.touchStartY) return;
+
+    const touch = e.touches[0];
+    this.touchEndX = touch.clientX;
+    this.touchEndY = touch.clientY;
+
+    // Calculate the distance moved
+    const deltaX = this.touchStartX - this.touchEndX;
+    const deltaY = this.touchStartY - this.touchEndY;
+
+    // If horizontal movement is greater than vertical, prevent default to avoid page scrolling
+    if (Math.abs(deltaX) > Math.abs(deltaY)) {
+      e.preventDefault();
+    }
+  }
+
+  handleTouchEnd(e) {
+    if (!this.touchStartX || !this.touchStartY) return;
+
+    const deltaX = this.touchStartX - this.touchEndX;
+    const deltaY = this.touchStartY - this.touchEndY;
+
+    // Check if the swipe distance is sufficient and more horizontal than vertical
+    if (Math.abs(deltaX) > this.minSwipeDistance && Math.abs(deltaX) > Math.abs(deltaY)) {
+      if (deltaX > 0) {
+        // Swipe left - go to next
+        this.goToNext();
+        if (this.autoplay) {
+          this.stopAutoplay();
+          this.startAutoplay();
+        }
+      } else {
+        // Swipe right - go to previous
+        this.goToPrevious();
+        if (this.autoplay) {
+          this.stopAutoplay();
+          this.startAutoplay();
+        }
+      }
+    }
+
+    // Reset touch values
+    this.touchStartX = 0;
+    this.touchStartY = 0;
+    this.touchEndX = 0;
+    this.touchEndY = 0;
   }
 }
 
