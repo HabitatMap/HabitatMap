@@ -84,10 +84,6 @@
     }
 
     @media (max-width: 768px) {
-      .features-section {
-        padding: 3rem 1rem;
-      }
-
       .features-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
@@ -107,5 +103,17 @@
         }
       }
     }
+  }
+}
+
+@media (max-width: 768px) {
+  .features-section {
+    padding: 3rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .features-section {
+    padding: 2rem 1rem;
   }
 }

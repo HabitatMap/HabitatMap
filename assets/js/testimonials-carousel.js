@@ -7,7 +7,14 @@ class TestimonialsCarousel {
     this.autoplayTimeout = options.autoplayTimeout || 8000;
     this.autoplayInterval = null;
     this.isTransitioning = false;
-    this.previousIndex = null; // Added for slide direction tracking
+    this.previousIndex = null;
+
+    this.touchStartX = 0;
+    this.touchStartY = 0;
+    this.touchEndX = 0;
+    this.touchEndY = 0;
+    this.minSwipeDistance = 50;
+    this.isTouchDevice = false;
 
     this.init();
   }
@@ -338,11 +345,89 @@ class TestimonialsCarousel {
       this.updateCarousel();
     });
 
-    // Button hover effects are handled by CSS
+    // Touch/swipe events for mobile
+    this.bindTouchEvents();
+
+  }
+
+  bindTouchEvents() {
+    this.isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+
+    if (!this.isTouchDevice) return;
+
+    // Touch start event
+    this.carouselContainer.addEventListener('touchstart', (e) => {
+      this.handleTouchStart(e);
+    }, { passive: true });
+
+    // Touch move event
+    this.carouselContainer.addEventListener('touchmove', (e) => {
+      this.handleTouchMove(e);
+    }, { passive: false });
+
+    // Touch end event
+    this.carouselContainer.addEventListener('touchend', (e) => {
+      this.handleTouchEnd(e);
+    }, { passive: true });
+
+    // Prevent default touch behavior to avoid conflicts
+    this.carouselContainer.addEventListener('touchstart', (e) => {
+      e.preventDefault();
+    }, { passive: false });
+  }
+
+  handleTouchStart(e) {
+    const touch = e.touches[0];
+    this.touchStartX = touch.clientX;
+    this.touchStartY = touch.clientY;
+    this.touchEndX = touch.clientX;
+    this.touchEndY = touch.clientY;
+  }
+
+  handleTouchMove(e) {
+    if (!this.touchStartX || !this.touchStartY) return;
+
+    const touch = e.touches[0];
+    this.touchEndX = touch.clientX;
+    this.touchEndY = touch.clientY;
+
+    const deltaX = this.touchStartX - this.touchEndX;
+    const deltaY = this.touchStartY - this.touchEndY;
+
+    if (Math.abs(deltaX) > Math.abs(deltaY)) {
+      e.preventDefault();
+    }
+  }
+
+  handleTouchEnd(e) {
+    if (!this.touchStartX || !this.touchStartY) return;
+
+    const deltaX = this.touchStartX - this.touchEndX;
+    const deltaY = this.touchStartY - this.touchEndY;
+
+    if (Math.abs(deltaX) > this.minSwipeDistance && Math.abs(deltaX) > Math.abs(deltaY)) {
+      if (deltaX > 0) {
+        this.goToNext();
+        if (this.autoplay) {
+          this.stopAutoplay();
+          this.startAutoplay();
+        }
+      } else {
+        this.goToPrevious();
+        if (this.autoplay) {
+          this.stopAutoplay();
+          this.startAutoplay();
+        }
+      }
+    }
+
+    this.touchStartX = 0;
+    this.touchStartY = 0;
+    this.touchEndX = 0;
+    this.touchEndY = 0;
   }
 }
 
-// Initialize carousel when DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
   const testimonialsData = [
     {
