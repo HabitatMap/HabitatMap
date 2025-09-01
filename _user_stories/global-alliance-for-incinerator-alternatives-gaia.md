@@ -29,3 +29,5 @@ In Nigeria, communities are actively using the data to engage government officia
 Beyond these three countries, the ripple effect has already begun. GAIA has shared its methods across its global network, and interest is growing in replicating the project elsewhere. 
 
 By combining clear data with community voices and visual evidence, Clearing the Air is proving that science doesn’t belong only in labs, it belongs in the hands of the people. If you’re ready to start monitoring your air quality to demand change or are personally impacted by air pollution from incinerators, fill out [GAIA’s interest form](https://docs.google.com/forms/d/e/1FAIpQLSdpYM_FIuKhYcOHJgnkgAliG0yRoENtiJ6KuZll22oSpdhacA/viewform) for more information and guidance.
+
+<iframe width="752" height="424" src="https://www.youtube.com/embed/yGt0v3TDEAk?si=HH-PmZIcjPM5GooA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
