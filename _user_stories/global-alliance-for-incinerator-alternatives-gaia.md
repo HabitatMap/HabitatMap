@@ -5,7 +5,7 @@ featured: true
 image: /images/uploads/screenshot-2025-07-01-at-2.39.11 pm-1437x1080.png.webp
 intro: >
   Community members were tired of breathing in toxic air while their governments
-  failed to act… so GAIA members took matters into their own hands. The
+  failed to act...so GAIA members took matters into their own hands. The
   organization distributed AirBeams to volunteers near active incinerators,
   translating the data into local languages and pairing it with powerful visuals
   of pollution to tell a story that couldn’t be ignored.
