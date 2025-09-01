@@ -81,29 +81,54 @@
 .user-stories-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 3rem;
+  gap: 4rem;
   align-items: center;
-  min-height: 400px;
+  min-height: 450px;
   flex: 1;
+    background: rgba(255, 255, 255, 0.4);
+  border-radius: 1.5rem;
+  padding: 3rem;
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow:
+    0 30px 60px rgba(0, 0, 0, 0.06),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8),
+    0 0 0 1px rgba(255, 255, 255, 0.2);
+  transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), filter 0.4s ease;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    box-shadow:
+      0 40px 80px rgba(0, 0, 0, 0.08),
+      inset 0 1px 0 rgba(255, 255, 255, 0.9),
+      0 0 0 1px rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+  }
 
   @media (max-width: 1023px) {
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 2.5rem;
     min-height: auto;
+    padding: 2.5rem;
   }
 
   @media (max-width: 767px) {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    gap: 2rem;
     min-height: auto;
     text-align: center;
+    padding: 2rem;
+    border-radius: 1rem;
   }
 
   @media (max-width: 480px) {
     grid-template-columns: 1fr;
-    gap: 1rem;
+    gap: 1.5rem;
     min-height: auto;
     text-align: center;
+    padding: 1.5rem;
   }
 }
 
@@ -202,26 +227,37 @@
 
 .user-stories-image-wrapper {
   aspect-ratio: 4/3;
-  border-radius: 1rem;
+  border-radius: 1.5rem;
   overflow: hidden;
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-  transition: transform 0.7s ease;
+  box-shadow:
+    0 25px 50px rgba(0, 0, 0, 0.08),
+    0 0 0 1px rgba(255, 255, 255, 0.5);
+  position: relative;
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
 
-  &:hover {
-    transform: scale(1.02);
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(34, 197, 94, 0.05) 0%, transparent 60%);
+    z-index: 1;
+    pointer-events: none;
   }
 
   @media (max-width: 767px) {
     aspect-ratio: 16/10;
-    border-radius: 0.75rem;
-    max-height: 200px;
+    border-radius: 1rem;
+    max-height: 220px;
     max-width: 100%;
   }
 
   @media (max-width: 480px) {
     aspect-ratio: 3/2;
-    border-radius: 0.5rem;
-    max-height: 150px;
+    border-radius: 0.75rem;
+    max-height: 180px;
     max-width: 100%;
   }
 }
@@ -230,13 +266,8 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: all 0.7s ease;
   opacity: 1;
   transform: scale(1);
-
-  &:hover {
-    transform: scale(1.05);
-  }
 }
 
 .user-stories-nav-btn {
@@ -330,7 +361,8 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin-top: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .user-stories-dots {
@@ -378,10 +410,9 @@
   }
 }
 
-// Animation for content transitions
+// No individual element animations - only card animations
 .user-stories-title,
 .user-stories-description {
-  transition: opacity 0.5s ease, transform 0.5s ease;
   opacity: 1;
   transform: translateY(0);
 }

@@ -1,0 +1,117 @@
+// Features Section
+.panel.features-section {
+  padding: 8rem 2rem !important;
+  background-color: #ffffff;
+
+  .features-container {
+    max-width: 1280px;
+    margin: 0 auto;
+
+    .features-header {
+      text-align: center;
+      margin-bottom: 3rem;
+
+      .features-title {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: #111827;
+        margin-bottom: 1rem;
+      }
+
+      .features-subtitle {
+        font-size: 1.25rem;
+        color: #6b7280;
+        max-width: 768px;
+        margin: 0 auto;
+        line-height: 1.6;
+      }
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+    }
+  }
+
+  .features-container .features-grid .feature-card {
+    background: white;
+    border-radius: 12px;
+    padding: 2.5rem 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 1px solid #f3f4f6;
+    transition: all 0.3s ease;
+    transform: translateY(0);
+
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .feature-icon {
+      width: 48px;
+      height: 48px;
+      background: #dcfce7;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1rem;
+
+      svg {
+        color: #1ea73f;
+      }
+    }
+
+    h3 {
+      font-size: 1.125rem;
+      font-weight: 600;
+      color: #111827;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      color: #6b7280;
+      font-size: 0.875rem;
+      line-height: 1.5;
+    }
+  }
+}
+
+// Mobile responsive
+@media (max-width: 1024px) {
+  .features-section .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .features-section {
+    padding: 3rem 1rem;
+  }
+
+  .features-section .features-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .features-section .feature-card {
+    padding: 1.5rem 1.5rem;
+  }
+
+  .features-section .features-header .features-title {
+    font-size: 1.5rem;
+  }
+
+  .features-section .features-header .features-subtitle {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .features-section {
+    padding: 2rem 1rem;
+  }
+}

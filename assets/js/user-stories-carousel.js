@@ -153,7 +153,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-  function updateStory() {
+    function updateStory() {
     if (isTransitioning) return; // Prevent rapid transitions
 
     console.log('updateStory called with currentIndex:', currentIndex);
@@ -170,32 +170,25 @@ document.addEventListener('DOMContentLoaded', function() {
     // Start transition
     isTransitioning = true;
 
-    // Fade out current content
-    if (titleElement) {
-      titleElement.style.opacity = '0';
-      titleElement.style.transform = 'translateY(10px)';
-    }
-    if (descriptionElement) {
-      descriptionElement.style.opacity = '0';
-      descriptionElement.style.transform = 'translateY(10px)';
-    }
-    if (imageElement) {
-      imageElement.style.opacity = '0';
-      imageElement.style.transform = 'scale(0.95)';
+        // Ultra-smooth glass card transition
+    const gridElement = document.querySelector('.user-stories-grid');
+
+    // Gentle glass card animation
+    if (gridElement) {
+      gridElement.style.opacity = '0.8';
+      gridElement.style.transform = 'scale(0.99) translateY(5px)';
+      gridElement.style.filter = 'blur(1px)';
     }
 
-    // Wait for fade out, then update content and fade in
+    // Smooth content update timing
     setTimeout(() => {
+      // Update content while slightly blurred
       if (titleElement) {
         titleElement.textContent = story.title || 'Untitled Story';
-      } else {
-        console.error('titleElement not found');
       }
 
       if (descriptionElement) {
         descriptionElement.textContent = story.intro || 'No description available';
-      } else {
-        console.error('descriptionElement not found');
       }
 
       if (imageElement && story.image) {
@@ -203,14 +196,11 @@ document.addEventListener('DOMContentLoaded', function() {
         imageElement.alt = story.title || 'User Story Image';
         imageElement.style.display = 'block';
         console.log('Image set to:', story.image);
-      } else {
-        if (imageElement) {
-          imageElement.style.display = 'none';
-        }
-        console.log('No image element or no image for story:', story.title);
+      } else if (imageElement) {
+        imageElement.style.display = 'none';
       }
 
-      // Update dots
+      // Update dots with smooth transition
       if (dotsContainer) {
         const dots = dotsContainer.querySelectorAll('.user-stories-dot');
         dots.forEach((dot, index) => {
@@ -218,26 +208,22 @@ document.addEventListener('DOMContentLoaded', function() {
         });
       }
 
-      // Fade in new content
+      // Elegant restoration to full clarity
       setTimeout(() => {
-        if (titleElement) {
-          titleElement.style.opacity = '1';
-          titleElement.style.transform = 'translateY(0)';
-        }
-        if (descriptionElement) {
-          descriptionElement.style.opacity = '1';
-          descriptionElement.style.transform = 'translateY(0)';
-        }
-        if (imageElement) {
-          imageElement.style.opacity = '1';
-          imageElement.style.transform = 'scale(1)';
+        if (gridElement) {
+          gridElement.style.opacity = '1';
+          gridElement.style.transform = 'scale(1) translateY(0)';
+          gridElement.style.filter = 'blur(0px)';
         }
 
-        // End transition
-        isTransitioning = false;
-      }, 50);
+        // End transition smoothly
+        setTimeout(() => {
+          isTransitioning = false;
+        }, 150);
 
-    }, 300); // Wait 300ms for fade out
+      }, 120);
+
+    }, 250); // Perfectly timed for smooth experience
   }
 
   function goToSlide(index) {
@@ -286,7 +272,7 @@ document.addEventListener('DOMContentLoaded', function() {
       if (!isTransitioning) { // Only advance if not currently transitioning
         goToNext();
       }
-    }, 8000); // Increased from 5000ms to 8000ms for slower transitions
+    }, 7000); // Optimal timing for content appreciation and smooth transitions
   }
 
   function stopAutoPlay() {

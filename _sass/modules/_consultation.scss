@@ -23,9 +23,29 @@
 }
 
 .consultation-card {
-  background: linear-gradient(to right, #10b981, #059669);
-  border-radius: 1rem;
+  background: linear-gradient(135deg, #16a34a 0%, #15803d 100%);
+  border-radius: 0.75rem;
+  border: 1px solid #16a34a;
   padding: 2rem;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+    pointer-events: none;
+  }
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(22, 163, 74, 0.2), 0 4px 6px -2px rgba(22, 163, 74, 0.1);
+  }
 
   @media (min-width: 1024px) {
     padding: 3rem;
@@ -78,9 +98,9 @@
 .consultation-button {
   display: inline-flex;
   align-items: center;
-  border: 2px solid rgba(255, 255, 255, 0.8);
+  border: 2px solid rgba(255, 255, 255, 0.2);
   color: #ffffff;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(10px);
   font-weight: 600;
   padding: 1rem 2rem;
@@ -90,6 +110,8 @@
   text-decoration: none;
   transition: all 0.3s ease;
   min-width: 200px;
+  position: relative;
+  z-index: 1;
 
   @media (min-width: 1024px) {
     padding: 1rem 2rem;
@@ -97,16 +119,15 @@
   }
 
   &:hover {
-    background-color: #ffffff;
-    color: #1ea73f;
-    border-color: #ffffff;
-    transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.3);
+    border-color: rgba(255, 255, 255, 0.4);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   }
 
   &:active {
-    background-color: #f8fafc;
-    border-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0.3);
     transform: translateY(0);
   }
 
@@ -114,6 +135,11 @@
     height: 1rem;
     width: 1rem;
     margin-left: 0.5rem;
+    transition: transform 0.3s ease;
+  }
+
+  &:hover .button-icon {
+    transform: translate(2px, -2px);
   }
 }
 
