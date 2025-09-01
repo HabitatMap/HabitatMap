@@ -230,7 +230,9 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.7s ease;
+  transition: all 0.7s ease;
+  opacity: 1;
+  transform: scale(1);
 
   &:hover {
     transform: scale(1.05);
@@ -375,6 +377,8 @@
 .user-stories-title,
 .user-stories-description {
   transition: opacity 0.5s ease, transform 0.5s ease;
+  opacity: 1;
+  transform: translateY(0);
 }
 
 // Loading state
@@ -386,8 +390,13 @@
 // Accessibility improvements
 .user-stories-nav-btn:focus,
 .user-stories-dot:focus {
-  outline: 2px solid #16a34a;
-  outline-offset: 2px;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(22, 163, 74, 0.3);
+}
+
+.user-stories-nav-btn:active {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(22, 163, 74, 0.3);
 }
 
 .user-stories-cta-button:focus {

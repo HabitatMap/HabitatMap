@@ -119,7 +119,7 @@
   }
 }
 
-// Section Styles - PURE CONTENT ON WHITE BACKGROUND
+// Section Styles
 .problem-section,
 .solution-section {
   position: relative;
@@ -379,6 +379,23 @@
     animation: none !important;
     color: inherit !important;
   }
+}
+
+// Photo credit styling
+.photo-credit {
+  position: absolute;
+  bottom: 0.75rem;
+  right: 0.75rem;
+  font-size: 0.65rem;
+  color: #ffffff;
+  font-style: italic;
+  text-align: right;
+  line-height: 1.2;
+  z-index: 1;
+  // background: rgba(0, 0, 0, 0.6);
+  // padding: 0.25rem 0.5rem;
+  // border-radius: 0.25rem;
+  backdrop-filter: blur(4px);
 }
 
 // Highlight classes

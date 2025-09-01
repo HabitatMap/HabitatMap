@@ -8,6 +8,8 @@ document.addEventListener('DOMContentLoaded', function() {
   let currentIndex = 0;
   let isAutoPlaying = true;
   let autoPlayInterval;
+  let isTransitioning = false; // Prevent rapid transitions
+  let debounceTimeout; // For debouncing user interactions
 
   // DOM elements
   const titleElement = document.getElementById('current-story-title');
@@ -102,114 +104,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   }
 
-  function createDots() {
-    if (!dotsContainer) return;
-
-    dotsContainer.innerHTML = '';
-    userStories.forEach((_, index) => {
-      const dot = document.createElement('button');
-      dot.className = 'user-stories-dot';
-      dot.addEventListener('click', () => goToSlide(index));
-      dotsContainer.appendChild(dot);
-    });
-  }
-
-  function updateStory() {
-    console.log('updateStory called with currentIndex:', currentIndex);
-    console.log('userStories array:', userStories);
-
-    if (!userStories[currentIndex]) {
-      console.log('No story at index:', currentIndex);
-      return;
-    }
-
-    const story = userStories[currentIndex];
-    console.log('Updating to story:', story);
-
-    if (titleElement) {
-      titleElement.textContent = story.title || 'Untitled Story';
-    } else {
-      console.error('titleElement not found');
-    }
-
-    if (descriptionElement) {
-      descriptionElement.textContent = story.intro || 'No description available';
-    } else {
-      console.error('descriptionElement not found');
-    }
-
-    if (imageElement && story.image) {
-      imageElement.src = story.image;
-      imageElement.alt = story.title || 'User Story Image';
-      imageElement.style.display = 'block';
-      console.log('Image set to:', story.image);
-    } else {
-      if (imageElement) {
-        imageElement.style.display = 'none';
-      }
-      console.log('No image element or no image for story:', story.title);
-    }
-
-    // Update dots
-    if (dotsContainer) {
-      const dots = dotsContainer.querySelectorAll('.user-stories-dot');
-      dots.forEach((dot, index) => {
-        dot.classList.toggle('active', index === currentIndex);
-      });
-    }
-  }
-
-  function goToSlide(index) {
-    currentIndex = index;
-    updateStory();
-    resetAutoPlay();
-  }
-
-  function goToPrevious() {
-    currentIndex = (currentIndex - 1 + userStories.length) % userStories.length;
-    updateStory();
-    resetAutoPlay();
-  }
-
-  function goToNext() {
-    currentIndex = (currentIndex + 1) % userStories.length;
-    updateStory();
-    resetAutoPlay();
-  }
-
-  function startAutoPlay() {
-    if (!isAutoPlaying) return;
-    autoPlayInterval = setInterval(() => {
-      goToNext();
-    }, 5000);
-  }
-
-  function stopAutoPlay() {
-    clearInterval(autoPlayInterval);
-  }
-
-  function resetAutoPlay() {
-    stopAutoPlay();
-    setTimeout(() => {
-      isAutoPlaying = true;
-      startAutoPlay();
-    }, 10000);
-  }
-
-  // Pause autoplay on hover
-  const section = document.querySelector('.user-stories-carousel-section');
-  if (section) {
-    section.addEventListener('mouseenter', () => {
-      isAutoPlaying = false;
-      stopAutoPlay();
-    });
-
-    section.addEventListener('mouseleave', () => {
-      isAutoPlaying = true;
-      startAutoPlay();
-    });
-  }
-
   // Touch/swipe handlers for mobile
   function handleTouchStart(event) {
     touchStartX = event.touches[0].clientX;
@@ -227,13 +121,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Check if it's a horizontal swipe (more horizontal than vertical)
     if (Math.abs(deltaX) > Math.abs(deltaY) && Math.abs(deltaX) > minSwipeDistance) {
-      if (deltaX > 0) {
-        // Swipe left - go to next story
-        goToNext();
-      } else {
-        // Swipe right - go to previous story
-        goToPrevious();
-      }
+      // Debounce swipe actions
+      clearTimeout(debounceTimeout);
+      debounceTimeout = setTimeout(() => {
+        if (deltaX > 0) {
+          // Swipe left - go to next story
+          goToNext();
+        } else {
+          // Swipe right - go to previous story
+          goToPrevious();
+        }
+      }, 100);
     }
 
     // Reset touch coordinates
@@ -241,6 +139,188 @@ document.addEventListener('DOMContentLoaded', function() {
     touchStartY = 0;
     touchEndX = 0;
     touchEndY = 0;
+  }
+
+  function createDots() {
+    if (!dotsContainer) return;
+
+    dotsContainer.innerHTML = '';
+    userStories.forEach((_, index) => {
+      const dot = document.createElement('button');
+      dot.className = 'user-stories-dot';
+      dot.addEventListener('click', () => goToSlide(index));
+      dotsContainer.appendChild(dot);
+    });
+  }
+
+  function updateStory() {
+    if (isTransitioning) return; // Prevent rapid transitions
+
+    console.log('updateStory called with currentIndex:', currentIndex);
+    console.log('userStories array:', userStories);
+
+    if (!userStories[currentIndex]) {
+      console.log('No story at index:', currentIndex);
+      return;
+    }
+
+    const story = userStories[currentIndex];
+    console.log('Updating to story:', story);
+
+    // Start transition
+    isTransitioning = true;
+
+    // Fade out current content
+    if (titleElement) {
+      titleElement.style.opacity = '0';
+      titleElement.style.transform = 'translateY(10px)';
+    }
+    if (descriptionElement) {
+      descriptionElement.style.opacity = '0';
+      descriptionElement.style.transform = 'translateY(10px)';
+    }
+    if (imageElement) {
+      imageElement.style.opacity = '0';
+      imageElement.style.transform = 'scale(0.95)';
+    }
+
+    // Wait for fade out, then update content and fade in
+    setTimeout(() => {
+      if (titleElement) {
+        titleElement.textContent = story.title || 'Untitled Story';
+      } else {
+        console.error('titleElement not found');
+      }
+
+      if (descriptionElement) {
+        descriptionElement.textContent = story.intro || 'No description available';
+      } else {
+        console.error('descriptionElement not found');
+      }
+
+      if (imageElement && story.image) {
+        imageElement.src = story.image;
+        imageElement.alt = story.title || 'User Story Image';
+        imageElement.style.display = 'block';
+        console.log('Image set to:', story.image);
+      } else {
+        if (imageElement) {
+          imageElement.style.display = 'none';
+        }
+        console.log('No image element or no image for story:', story.title);
+      }
+
+      // Update dots
+      if (dotsContainer) {
+        const dots = dotsContainer.querySelectorAll('.user-stories-dot');
+        dots.forEach((dot, index) => {
+          dot.classList.toggle('active', index === currentIndex);
+        });
+      }
+
+      // Fade in new content
+      setTimeout(() => {
+        if (titleElement) {
+          titleElement.style.opacity = '1';
+          titleElement.style.transform = 'translateY(0)';
+        }
+        if (descriptionElement) {
+          descriptionElement.style.opacity = '1';
+          descriptionElement.style.transform = 'translateY(0)';
+        }
+        if (imageElement) {
+          imageElement.style.opacity = '1';
+          imageElement.style.transform = 'scale(1)';
+        }
+
+        // End transition
+        isTransitioning = false;
+      }, 50);
+
+    }, 300); // Wait 300ms for fade out
+  }
+
+  function goToSlide(index) {
+    if (isTransitioning || index === currentIndex) return; // Prevent unnecessary transitions
+
+    // Debounce rapid clicks
+    clearTimeout(debounceTimeout);
+    debounceTimeout = setTimeout(() => {
+      currentIndex = index;
+      updateStory();
+      resetAutoPlay();
+    }, 100);
+  }
+
+  function goToPrevious() {
+    if (isTransitioning) return; // Prevent rapid transitions
+
+    // Debounce rapid clicks
+    clearTimeout(debounceTimeout);
+    debounceTimeout = setTimeout(() => {
+      currentIndex = (currentIndex - 1 + userStories.length) % userStories.length;
+      updateStory();
+      resetAutoPlay();
+    }, 100);
+  }
+
+  function goToNext() {
+    if (isTransitioning) return; // Prevent rapid transitions
+
+    // Debounce rapid clicks
+    clearTimeout(debounceTimeout);
+    debounceTimeout = setTimeout(() => {
+      currentIndex = (currentIndex + 1) % userStories.length;
+      updateStory();
+      resetAutoPlay();
+    }, 100);
+  }
+
+  function startAutoPlay() {
+    if (!isAutoPlaying) return;
+
+    // Clear any existing interval first
+    stopAutoPlay();
+
+    autoPlayInterval = setInterval(() => {
+      if (!isTransitioning) { // Only advance if not currently transitioning
+        goToNext();
+      }
+    }, 8000); // Increased from 5000ms to 8000ms for slower transitions
+  }
+
+  function stopAutoPlay() {
+    if (autoPlayInterval) {
+      clearInterval(autoPlayInterval);
+      autoPlayInterval = null;
+    }
+  }
+
+  function resetAutoPlay() {
+    stopAutoPlay();
+
+    clearTimeout(debounceTimeout);
+
+    setTimeout(() => {
+      if (isAutoPlaying) {
+        startAutoPlay();
+      }
+    }, 10000);
+  }
+
+  // Pause autoplay on hover
+  const section = document.querySelector('.user-stories-carousel-section');
+  if (section) {
+    section.addEventListener('mouseenter', () => {
+      isAutoPlaying = false;
+      stopAutoPlay();
+      clearTimeout(debounceTimeout);
+    });
+
+    section.addEventListener('mouseleave', () => {
+      isAutoPlaying = true;
+      startAutoPlay();
+    });
   }
 
   // Initialize
