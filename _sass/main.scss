@@ -62,7 +62,7 @@
 @import "modules/_consultation";
 @import "modules/_faq";
 @import "modules/_new-faq";
-@import "modules/_features";
+
 @import "modules/_global-movement";
 @import "modules/_hero";
 @import "modules/_press";
@@ -74,7 +74,8 @@
 // Section-specific modules
 @import "modules/hero-section";
 @import "modules/problem-solution";
-@import "modules/feature-cards";
+
+@import "modules/features-section";
 @import "modules/ecosystem";
 @import "modules/impact";
 @import "modules/educator-resources";
