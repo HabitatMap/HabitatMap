@@ -8,8 +8,8 @@ document.addEventListener('DOMContentLoaded', function() {
   let currentIndex = 0;
   let isAutoPlaying = true;
   let autoPlayInterval;
-  let isTransitioning = false; // Prevent rapid transitions
-  let debounceTimeout; // For debouncing user interactions
+  let isTransitioning = false;
+  let debounceTimeout;
 
   // DOM elements
   const titleElement = document.getElementById('current-story-title');
@@ -99,36 +99,51 @@ document.addEventListener('DOMContentLoaded', function() {
     // Add touch/swipe event listeners for mobile
     if (carouselWrapper) {
       carouselWrapper.addEventListener('touchstart', handleTouchStart, { passive: true });
-      carouselWrapper.addEventListener('touchmove', handleTouchMove, { passive: true });
+      carouselWrapper.addEventListener('touchmove', handleTouchMove, { passive: false });
       carouselWrapper.addEventListener('touchend', handleTouchEnd, { passive: true });
     }
   }
 
-  // Touch/swipe handlers for mobile
+  // Enhanced touch/swipe handlers for mobile
   function handleTouchStart(event) {
     touchStartX = event.touches[0].clientX;
     touchStartY = event.touches[0].clientY;
+    console.log('Touch start:', touchStartX, touchStartY);
   }
 
   function handleTouchMove(event) {
     touchEndX = event.touches[0].clientX;
     touchEndY = event.touches[0].clientY;
+
+    // Prevent default scrolling if this is a horizontal swipe
+    const deltaX = Math.abs(touchEndX - touchStartX);
+    const deltaY = Math.abs(touchEndY - touchStartY);
+
+    if (deltaX > deltaY && deltaX > 10) {
+      event.preventDefault();
+    }
   }
 
   function handleTouchEnd() {
     const deltaX = touchStartX - touchEndX;
     const deltaY = touchStartY - touchEndY;
 
+    console.log('Touch end - deltaX:', deltaX, 'deltaY:', deltaY);
+
     // Check if it's a horizontal swipe (more horizontal than vertical)
     if (Math.abs(deltaX) > Math.abs(deltaY) && Math.abs(deltaX) > minSwipeDistance) {
+      console.log('Valid swipe detected, direction:', deltaX > 0 ? 'left' : 'right');
+
       // Debounce swipe actions
       clearTimeout(debounceTimeout);
       debounceTimeout = setTimeout(() => {
         if (deltaX > 0) {
           // Swipe left - go to next story
+          console.log('Going to next story');
           goToNext();
         } else {
           // Swipe right - go to previous story
+          console.log('Going to previous story');
           goToPrevious();
         }
       }, 100);
@@ -154,7 +169,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
     function updateStory() {
-    if (isTransitioning) return; // Prevent rapid transitions
+    if (isTransitioning) return;
 
     console.log('updateStory called with currentIndex:', currentIndex);
     console.log('userStories array:', userStories);
@@ -167,22 +182,31 @@ document.addEventListener('DOMContentLoaded', function() {
     const story = userStories[currentIndex];
     console.log('Updating to story:', story);
 
-    // Start transition
+
     isTransitioning = true;
 
-        // Ultra-smooth glass card transition
-    const gridElement = document.querySelector('.user-stories-grid');
 
-    // Gentle glass card animation
-    if (gridElement) {
-      gridElement.style.opacity = '0.8';
-      gridElement.style.transform = 'scale(0.99) translateY(5px)';
-      gridElement.style.filter = 'blur(1px)';
-    }
+    // Smooth slide animation like testimonials carousel
+    const contentElements = [titleElement, descriptionElement, imageElement].filter(Boolean);
 
-    // Smooth content update timing
+    // Determine slide direction
+    const direction = currentIndex > (window.lastUserStoryIndex || 0) ? 'next' : 'prev';
+    window.lastUserStoryIndex = currentIndex;
+
+    // Slide out current content
+    contentElements.forEach(element => {
+      element.style.transition = 'all 0.3s ease-out';
+      element.style.opacity = '0';
+      if (direction === 'next') {
+        element.style.transform = 'translateX(-60px)';
+      } else {
+        element.style.transform = 'translateX(60px)';
+      }
+    });
+
+    // Wait for slide out, then update content and slide in
     setTimeout(() => {
-      // Update content while slightly blurred
+      // Update content while invisible
       if (titleElement) {
         titleElement.textContent = story.title || 'Untitled Story';
       }
@@ -200,7 +224,7 @@ document.addEventListener('DOMContentLoaded', function() {
         imageElement.style.display = 'none';
       }
 
-      // Update dots with smooth transition
+      // Update dots
       if (dotsContainer) {
         const dots = dotsContainer.querySelectorAll('.user-stories-dot');
         dots.forEach((dot, index) => {
@@ -208,28 +232,35 @@ document.addEventListener('DOMContentLoaded', function() {
         });
       }
 
-      // Elegant restoration to full clarity
-      setTimeout(() => {
-        if (gridElement) {
-          gridElement.style.opacity = '1';
-          gridElement.style.transform = 'scale(1) translateY(0)';
-          gridElement.style.filter = 'blur(0px)';
+      // Set initial position for slide in
+      contentElements.forEach(element => {
+        if (direction === 'next') {
+          element.style.transform = 'translateX(60px)';
+        } else {
+          element.style.transform = 'translateX(-60px)';
         }
+      });
 
-        // End transition smoothly
+      // Slide in new content
+      setTimeout(() => {
+        contentElements.forEach(element => {
+          element.style.transition = 'all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)';
+          element.style.opacity = '1';
+          element.style.transform = 'translateX(0)';
+        });
+
+        // End transition
         setTimeout(() => {
           isTransitioning = false;
-        }, 150);
+        }, 500);
+      }, 50);
 
-      }, 120);
-
-    }, 250); // Perfectly timed for smooth experience
+    }, 300); // Wait for slide out to complete
   }
 
   function goToSlide(index) {
-    if (isTransitioning || index === currentIndex) return; // Prevent unnecessary transitions
+    if (isTransitioning || index === currentIndex) return;
 
-    // Debounce rapid clicks
     clearTimeout(debounceTimeout);
     debounceTimeout = setTimeout(() => {
       currentIndex = index;
@@ -239,9 +270,8 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   function goToPrevious() {
-    if (isTransitioning) return; // Prevent rapid transitions
+    if (isTransitioning) return;
 
-    // Debounce rapid clicks
     clearTimeout(debounceTimeout);
     debounceTimeout = setTimeout(() => {
       currentIndex = (currentIndex - 1 + userStories.length) % userStories.length;
@@ -251,9 +281,8 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   function goToNext() {
-    if (isTransitioning) return; // Prevent rapid transitions
+    if (isTransitioning) return;
 
-    // Debounce rapid clicks
     clearTimeout(debounceTimeout);
     debounceTimeout = setTimeout(() => {
       currentIndex = (currentIndex + 1) % userStories.length;
@@ -265,14 +294,13 @@ document.addEventListener('DOMContentLoaded', function() {
   function startAutoPlay() {
     if (!isAutoPlaying) return;
 
-    // Clear any existing interval first
     stopAutoPlay();
 
     autoPlayInterval = setInterval(() => {
-      if (!isTransitioning) { // Only advance if not currently transitioning
+      if (!isTransitioning) {
         goToNext();
       }
-    }, 7000); // Optimal timing for content appreciation and smooth transitions
+    }, 7000);
   }
 
   function stopAutoPlay() {
@@ -294,7 +322,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }, 10000);
   }
 
-  // Pause autoplay on hover
   const section = document.querySelector('.user-stories-carousel-section');
   if (section) {
     section.addEventListener('mouseenter', () => {
@@ -309,6 +336,5 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-  // Initialize
   initCarousel();
 });
