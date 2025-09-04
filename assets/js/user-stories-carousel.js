@@ -166,57 +166,58 @@ document.addEventListener('DOMContentLoaded', function() {
 
     isTransitioning = true;
 
-    // Get all content elements
-    const contentElements = [titleElement, descriptionElement, imageElement].filter(Boolean);
+    // Get the main grid container to animate the whole card
+    const gridElement = document.querySelector('.user-stories-grid');
 
-    // Fade out current content first
-    contentElements.forEach(element => {
-      element.style.transition = 'opacity 0.25s ease-out';
-      element.style.opacity = '0';
-    });
+    if (gridElement) {
+      // Fade out the entire card
+      gridElement.style.transition = 'opacity 0.25s ease-out';
+      gridElement.style.opacity = '0';
 
-    // Wait for fade out, then update content and fade in
-    setTimeout(() => {
-      // Update content while invisible
-      if (titleElement) {
-        titleElement.textContent = story.title || 'Untitled Story';
-      }
-
-      if (descriptionElement) {
-        descriptionElement.textContent = story.intro || 'No description available';
-      }
-
-      // Update image immediately to prevent old image flash
-      if (imageElement && story.image) {
-        imageElement.src = story.image;
-        imageElement.alt = story.title || 'User Story Image';
-        imageElement.style.display = 'block';
-      } else if (imageElement) {
-        imageElement.style.display = 'none';
-      }
-
-      // Update dots
-      if (dotsContainer) {
-        const dots = dotsContainer.querySelectorAll('.user-stories-dot');
-        dots.forEach((dot, index) => {
-          dot.classList.toggle('active', index === currentIndex);
-        });
-      }
-
-      // Fade in new content
+      // Wait for fade out, then update content and fade in
       setTimeout(() => {
-        contentElements.forEach(element => {
-          element.style.transition = 'opacity 0.35s ease-in';
-          element.style.opacity = '1';
-        });
+        // Update content while invisible
+        if (titleElement) {
+          titleElement.textContent = story.title || 'Untitled Story';
+        }
 
-        // End transition
+        if (descriptionElement) {
+          descriptionElement.textContent = story.intro || 'No description available';
+        }
+
+        // Update image immediately to prevent old image flash
+        if (imageElement && story.image) {
+          imageElement.src = story.image;
+          imageElement.alt = story.title || 'User Story Image';
+          imageElement.style.display = 'block';
+        } else if (imageElement) {
+          imageElement.style.display = 'none';
+        }
+
+        // Update dots
+        if (dotsContainer) {
+          const dots = dotsContainer.querySelectorAll('.user-stories-dot');
+          dots.forEach((dot, index) => {
+            dot.classList.toggle('active', index === currentIndex);
+          });
+        }
+
+        // Fade in the entire card with new content
         setTimeout(() => {
-          isTransitioning = false;
-        }, 350);
-      }, 50); // Small delay to ensure content is updated
+          gridElement.style.transition = 'opacity 0.35s ease-in';
+          gridElement.style.opacity = '1';
 
-    }, 250); // Wait for fade out to complete
+          // End transition
+          setTimeout(() => {
+            isTransitioning = false;
+          }, 350);
+        }, 50); // Small delay to ensure content is updated
+
+      }, 250); // Wait for fade out to complete
+    } else {
+      // Fallback if grid element not found
+      isTransitioning = false;
+    }
   }
 
   function goToSlide(index) {
@@ -269,7 +270,7 @@ document.addEventListener('DOMContentLoaded', function() {
       if (!isTransitioning) {
         goToNext();
       }
-    }, 6000);
+    }, 5350); // 5.35s interval + 650ms animation = exactly 6s total
   }
 
   function stopAutoPlay() {
