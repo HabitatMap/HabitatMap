@@ -21,8 +21,7 @@ That’s the question a team of researchers at [Yarmouk University](https://www.
 
 In Jordan’s semi-arid climate, green spaces aren’t just places for recreation. They play a critical role in protecting public health by reducing pollution in fast-growing cities like Amman, the capital, and Irbid, the country’s third largest city.
 
-**\
-Why This Study Matters**
+**W﻿hy This Study Matters**
 
 Air pollution is one of the most pressing challenges for urban areas worldwide. Tiny particles can slip deep into the lungs and enter the bloodstream, creating serious health risks.
 
@@ -30,8 +29,7 @@ The researchers wanted to use the AirBeam to answer a key question:
 
 Do neighborhoods with more green space experience cleaner air?
 
-**\
-How They Measured It**
+**H﻿ow They Measured It**
 
 To explore this relationship, the team deployed 20 AirBeam3 sensors across Amman and Irbid.
 
