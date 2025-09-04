@@ -14,7 +14,6 @@
   }
 }
 
-// Left section - Refined gray background
 .footer-left {
   background: #f8fafc;
   padding: 1.5rem;
@@ -36,12 +35,11 @@
   }
 }
 
-// Make the third column (Stay Current) take full width on mobile
 .footer-column:nth-child(3) {
-  grid-column: 1 / -1; /* Span full width on mobile */
+  grid-column: 1 / -1;
 
   @media (min-width: 768px) {
-    grid-column: auto; /* Reset to normal on desktop */
+    grid-column: auto;
   }
 }
 

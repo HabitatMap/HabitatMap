@@ -1,4 +1,4 @@
-// Modern Problem/Solution Section Styles - Enhanced React-like Design
+// Problem/Solution Section Styles
 .modern-problem-solution {
   padding: 6rem 0 0;
   position: relative;
@@ -18,7 +18,7 @@
     #f0fdf4 100%
   );
 
-  // Ultra-smooth overlay gradient
+
   &::before {
     content: '';
     position: absolute;
@@ -123,52 +123,19 @@
 .problem-section,
 .solution-section {
   position: relative;
-  background: transparent !important;
-  border: none !important;
-  box-shadow: none !important;
-  border-radius: 0 !important;
-  padding: 0 !important;
-  margin: 0 !important;
-  transition: all 0.3s ease !important;
   height: 100%;
   display: flex;
   flex-direction: column;
   min-height: 0;
-
-  // Disable ALL hover effects
-  &:hover {
-    background: transparent !important;
-    border: none !important;
-    box-shadow: none !important;
-    transform: none !important;
-    transition: all 0.3s ease !important;
-    animation: none !important;
-  }
 }
 
-// Section Content - PURE CONTENT FLOW
 .section-content {
   padding-left: 0;
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  background: transparent !important;
-  border: none !important;
-  box-shadow: none !important;
-  border-radius: 0 !important;
-  transition: all 0.3s ease !important;
   flex: 1;
   justify-content: flex-start;
-
-  // Disable ALL hover effects
-  &:hover {
-    background: transparent !important;
-    border: none !important;
-    box-shadow: none !important;
-    transform: none !important;
-    transition: all 0.3s ease !important;
-    animation: none !important;
-  }
 }
 
 // Header Content
@@ -176,20 +143,7 @@
   display: flex;
   align-items: center;
   gap: 1rem;
-  background: transparent !important;
-  border: none !important;
-  box-shadow: none !important;
-  transition: all 0.3s ease !important;
 
-  // Disable ALL hover effects
-  &:hover {
-    background: transparent !important;
-    border: none !important;
-    box-shadow: none !important;
-    transform: none !important;
-    transition: all 0.3s ease !important;
-    animation: none !important;
-  }
 }
 
 // Title Group
@@ -213,7 +167,6 @@
   }
 }
 
-// Icon Container - enhanced icons
 .icon-container {
   width: 4rem;
   height: 4rem;
@@ -221,16 +174,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.3s ease !important;
-  animation: none !important;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 
-  // Disable ALL hover effects
-  &:hover {
-    background: inherit !important;
-    transform: none !important;
-    transition: all 0.3s ease !important;
-    animation: none !important;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
   }
 
       &.problem-icon {
@@ -252,7 +197,7 @@
       color: #16a34a;
     }
   }
-}
+
 
 // Section Title Inline
 .section-title-inline {
@@ -260,16 +205,6 @@
   line-height: 2.25rem;
   font-weight: 700;
   margin: 0;
-  transition: all 0.3s ease !important;
-  animation: none !important;
-
-  // Disable ALL hover effects
-  &:hover {
-    color: inherit !important;
-    transform: none !important;
-    transition: all 0.3s ease !important;
-    animation: none !important;
-  }
 
   .problem-section & {
     color: #1e293b;
@@ -280,51 +215,24 @@
   }
 }
 
-// Image Container - NO STYLING
 .image-container {
   position: relative;
   border-radius: 0.75rem;
   overflow: hidden;
   height: 20rem;
-  background: transparent !important;
-  border: none !important;
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25) !important;
-  transition: all 0.3s ease !important;
-  animation: none !important;
-
-  // Disable ALL hover effects
-  &:hover {
-    background: transparent !important;
-    border: none !important;
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25) !important;
-    transform: none !important;
-    transition: all 0.3s ease !important;
-    animation: none !important;
   }
 
   img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: all 0.3s ease !important;
-    animation: none !important;
-
-    // Disable ALL hover effects on images
-    &:hover {
-      transform: none !important;
-      transition: all 0.3s ease !important;
-      animation: none !important;
-    }
-  }
 }
 
-// Image Overlay - enhanced
+// Image Overlay
 .image-overlay {
   position: absolute;
   inset: 0;
   border-radius: 0.75rem;
-  transition: all 0.3s ease !important;
-  animation: none !important;
 
   &.problem-overlay {
     background: linear-gradient(to top, rgba(71, 85, 105, 0.4), rgba(100, 116, 139, 0.2), transparent);
@@ -335,27 +243,10 @@
   }
 }
 
-// Content Text - Enhanced with backdrop
   .content-text {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    background: transparent !important;
-    border: none !important;
-    border-radius: 0 !important;
-    padding: 1.5rem !important;
-    margin: 0 !important;
-    transition: all 0.3s ease !important;
-
-  // Disable ALL hover effects
-  &:hover {
-    background: transparent !important;
-    border: none !important;
-    box-shadow: none !important;
-    transform: none !important;
-    transition: all 0.3s ease !important;
-    animation: none !important;
-  }
 }
 
 .text-block {
@@ -363,25 +254,9 @@
   line-height: 1.75;
   color: #374151;
   font-weight: 400;
-  background: transparent !important;
-  border: none !important;
-  box-shadow: none !important;
-  transition: all 0.3s ease !important;
-  animation: none !important;
-
-  // Disable ALL hover effects
-  &:hover {
-    background: transparent !important;
-    border: none !important;
-    box-shadow: none !important;
-    transform: none !important;
-    transition: all 0.3s ease !important;
-    animation: none !important;
-    color: inherit !important;
-  }
 }
 
-// Photo credit styling
+
 .photo-credit {
   position: absolute;
   bottom: 0.75rem;
@@ -392,9 +267,6 @@
   text-align: right;
   line-height: 1.2;
   z-index: 1;
-  // background: rgba(0, 0, 0, 0.6);
-  // padding: 0.25rem 0.5rem;
-  // border-radius: 0.25rem;
   backdrop-filter: blur(4px);
 }
 

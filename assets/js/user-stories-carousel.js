@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
   let touchStartY = 0;
   let touchEndX = 0;
   let touchEndY = 0;
-  const minSwipeDistance = 50; // Minimum distance for a swipe to be registered
+  const minSwipeDistance = 50;
 
 
 
@@ -57,7 +57,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   ];
 
-  // Initialize carousel
   function initCarousel() {
 
 
@@ -74,20 +73,15 @@ document.addEventListener('DOMContentLoaded', function() {
       return;
     }
 
-    // Create dots
     createDots();
 
-    // Show first story
     updateStory();
 
-    // Start autoplay
     startAutoPlay();
 
-    // Add event listeners
     if (prevButton) prevButton.addEventListener('click', goToPrevious);
     if (nextButton) nextButton.addEventListener('click', goToNextManual);
 
-    // Add touch/swipe event listeners for mobile
     if (carouselWrapper) {
       carouselWrapper.addEventListener('touchstart', handleTouchStart, { passive: true });
       carouselWrapper.addEventListener('touchmove', handleTouchMove, { passive: false });
@@ -95,7 +89,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   }
 
-  // Enhanced touch/swipe handlers for mobile
   function handleTouchStart(event) {
     touchStartX = event.touches[0].clientX;
     touchStartY = event.touches[0].clientY;
@@ -106,7 +99,6 @@ document.addEventListener('DOMContentLoaded', function() {
     touchEndX = event.touches[0].clientX;
     touchEndY = event.touches[0].clientY;
 
-    // Prevent default scrolling if this is a horizontal swipe
     const deltaX = Math.abs(touchEndX - touchStartX);
     const deltaY = Math.abs(touchEndY - touchStartY);
 
@@ -121,7 +113,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-    // Check if it's a horizontal swipe (more horizontal than vertical)
     if (Math.abs(deltaX) > Math.abs(deltaY) && Math.abs(deltaX) > minSwipeDistance) {
       // Debounce swipe actions
       clearTimeout(debounceTimeout);
@@ -136,7 +127,6 @@ document.addEventListener('DOMContentLoaded', function() {
       }, 100);
     }
 
-    // Reset touch coordinates
     touchStartX = 0;
     touchStartY = 0;
     touchEndX = 0;
@@ -166,7 +156,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     isTransitioning = true;
 
-    // Get the main grid container to animate the whole card
     const gridElement = document.querySelector('.user-stories-grid');
 
     if (gridElement) {
@@ -188,13 +177,10 @@ document.addEventListener('DOMContentLoaded', function() {
       }
 
       function performTransition() {
-        // Fade out the entire card
         gridElement.style.transition = 'opacity 0.25s ease-out';
         gridElement.style.opacity = '0';
 
-        // Wait for fade out, then update content and fade in
         setTimeout(() => {
-          // Update content while invisible
           if (titleElement) {
             titleElement.textContent = story.title || 'Untitled Story';
           }
@@ -212,7 +198,6 @@ document.addEventListener('DOMContentLoaded', function() {
             imageElement.style.display = 'none';
           }
 
-          // Update dots
           if (dotsContainer) {
             const dots = dotsContainer.querySelectorAll('.user-stories-dot');
             dots.forEach((dot, index) => {
@@ -220,21 +205,17 @@ document.addEventListener('DOMContentLoaded', function() {
             });
           }
 
-          // Fade in the entire card with new content
           setTimeout(() => {
             gridElement.style.transition = 'opacity 0.35s ease-in';
             gridElement.style.opacity = '1';
 
-            // End transition
             setTimeout(() => {
               isTransitioning = false;
             }, 350);
-          }, 50); // Small delay to ensure content is updated
-
-        }, 250); // Wait for fade out to complete
+          }, 50);
+        }, 250);
       }
     } else {
-      // Fallback if grid element not found
       isTransitioning = false;
     }
   }
@@ -266,7 +247,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     currentIndex = (currentIndex + 1) % userStories.length;
     updateStory();
-    // Don't reset autoplay for automatic advances
   }
 
   function goToNextManual() {
@@ -302,16 +282,12 @@ document.addEventListener('DOMContentLoaded', function() {
     function resetAutoPlay() {
     stopAutoPlay();
 
-    // Clear any existing debounce timeouts
     clearTimeout(debounceTimeout);
 
-    // Restart autoplay immediately to maintain consistent 4s intervals
     if (isAutoPlaying && !isTransitioning) {
       startAutoPlay();
     }
   }
-
-  // Remove hover pause behavior to ensure consistent autoplay across all browsers
 
   initCarousel();
 });
