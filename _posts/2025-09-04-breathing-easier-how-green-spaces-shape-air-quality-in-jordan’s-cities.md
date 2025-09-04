@@ -4,13 +4,11 @@ title: "Breathing Easier: How Green Spaces Shape Air Quality in Jordan’s Citie
 date: 2025-09-04
 featured: false
 image: /images/uploads/1000013028.jpg
-intro: >+
-  In Jordan’s semi-arid climate, green spaces aren’t just places for recreation.
-  They play a critical role in protecting public health by reducing pollution in
-  fast-growing cities like Amman, the capital, and Irbid, the country’s third
-  largest city. The researchers wanted to use the AirBeam to answer a key
-  question: do neighborhoods with more green space experience cleaner air?
-
+intro: >
+  In Jordan’s semi-arid cities like Amman and Irbid, green spaces do more than
+  offer recreation—they help improve public health by reducing pollution.
+  Researchers used the AirBeam to ask: do greener neighborhoods have cleaner
+  air?
 category: Sensors & Instruments
 tag:
   - community-based-organization
