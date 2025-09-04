@@ -291,19 +291,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   }
 
-  const section = document.querySelector('.user-stories-carousel-section');
-  if (section) {
-    section.addEventListener('mouseenter', () => {
-      isAutoPlaying = false;
-      stopAutoPlay();
-      clearTimeout(debounceTimeout);
-    });
-
-    section.addEventListener('mouseleave', () => {
-      isAutoPlaying = true;
-      startAutoPlay();
-    });
-  }
+  // Remove hover pause behavior to ensure consistent autoplay across all browsers
 
   initCarousel();
 });
