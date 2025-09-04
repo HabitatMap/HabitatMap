@@ -269,7 +269,7 @@ document.addEventListener('DOMContentLoaded', function() {
       if (!isTransitioning) {
         goToNext();
       }
-    }, 4000);
+    }, 6000);
   }
 
   function stopAutoPlay() {
