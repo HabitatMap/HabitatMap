@@ -1,7 +1,7 @@
 ---
 layout: user_story
 title: "Barry Commoner Center for Health & the Environment "
-featured: true
+featured: false
 image: /images/uploads/bcche.jpg
 intro: '<a
   href="https://www.qc.cuny.edu/Academics/Centers/Biology/Pages/default.aspx">The
@@ -10,7 +10,7 @@ intro: '<a
   City University of New York. The mission of the Center is to identify and
   rectify environmental and occupational threats to human health. '
 type: Researchers
-order: 6
+order: 7
 ---
 <p>Via a community science project, BCCHE, in partnership with the New York City Dept. of Health & Mental Hygiene, sought to understand how academic institutions, city government, and community groups can work together to improve air quality monitoring within communities and enable communities to better understand air pollution and its sources.</p>
 

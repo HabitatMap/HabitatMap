@@ -3,13 +3,12 @@ layout: user_story
 title: Environmental Law & Policy Center
 featured: true
 image: /images/uploads/elpc_cropped.jpg
-intro: >-
-  Chicago residents are hospitalized for asthma at twice the national average. 
-  Making matters worse, the rate of asthma hospitalizations is even higher in
-  many of Chicago’s predominately working-class African-American and Latinx
-  neighborhoods. 
+intro: "Chicago residents are hospitalized for asthma at twice the national
+  average.  Making matters worse, the rate of asthma hospitalizations is even
+  higher in many of Chicago’s predominately working-class African-American and
+  Latinx neighborhoods. "
 type: Activists & Non-profits
-order: 2
+order: 3
 ---
 To address the disparate exposure to air pollution faced by Chicago’s working-class communities of color, the <a href="http://elpc.org/">Environmental Law &amp; Policy Center</a> (ELPC) created a monitoring program called <a href="https://airqualitychicago.org/"><em>Air Quality Chicago</em></a> that trains residents to collect air pollution data using the AirBeam + AirCasting platform.  <em>Air Quality Chicago</em> connects the dots between air pollution, local emissions sources, and community health thereby enhancing participants’ understanding of how air pollution impacts their communities and helping them make better-informed decisions that protect their health.
 
