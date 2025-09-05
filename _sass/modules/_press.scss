@@ -1,7 +1,7 @@
 // Press Section Styles
 .press-section {
   &.panel--big-padding {
-    .press-title {
+    .buy-now-press-title {
       width: 100%;
       text-align: center;
       color: white;
@@ -10,11 +10,6 @@
       font-weight: 500;
     }
 
-    .logos__item {
-      img {
-        // Inherit existing logo styles from _logos.scss
-      }
-    }
   }
 
   // Mobile responsive
@@ -22,7 +17,7 @@
     &.panel--big-padding {
       padding: 2rem 1rem;
 
-      .press-title {
+      .buy-now-press-title {
         font-size: 1.5rem;
       }
     }

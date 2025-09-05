@@ -9,13 +9,6 @@ class TestimonialsCarousel {
     this.isTransitioning = false;
     this.previousIndex = null;
 
-    this.touchStartX = 0;
-    this.touchStartY = 0;
-    this.touchEndX = 0;
-    this.touchEndY = 0;
-    this.minSwipeDistance = 50;
-    this.isTouchDevice = false;
-
     this.init();
   }
 
@@ -310,24 +303,57 @@ class TestimonialsCarousel {
   }
 
   bindEvents() {
-    // Navigation buttons
-    this.prevButton.addEventListener('click', () => {
-      this.goToPrevious();
-      if (this.autoplay) {
-        this.stopAutoplay();
-        this.startAutoplay();
-      }
-    });
+    this.prevButton.addEventListener('click', () => this.goToPrevious());
+    this.nextButton.addEventListener('click', () => this.goToNext());
 
-    this.nextButton.addEventListener('click', () => {
-      this.goToNext();
-      if (this.autoplay) {
-        this.stopAutoplay();
-        this.startAutoplay();
-      }
-    });
+    // Touch/swipe support for mobile devices
+    let startX = 0;
+    let startY = 0;
+    let endX = 0;
+    let endY = 0;
+    let isSwiping = false;
 
-    // Hover events for autoplay
+    this.carouselContainer.addEventListener('touchstart', (e) => {
+      startX = e.touches[0].clientX;
+      startY = e.touches[0].clientY;
+      isSwiping = true;
+    }, { passive: true });
+
+    this.carouselContainer.addEventListener('touchmove', (e) => {
+      if (!isSwiping) return;
+
+      endX = e.touches[0].clientX;
+      endY = e.touches[0].clientY;
+
+      // Prevent default scrolling if this is a horizontal swipe
+      const deltaX = Math.abs(endX - startX);
+      const deltaY = Math.abs(endY - startY);
+
+      if (deltaX > deltaY && deltaX > 10) {
+        e.preventDefault();
+      }
+    }, { passive: false });
+
+    this.carouselContainer.addEventListener('touchend', (e) => {
+      if (!isSwiping) return;
+
+      const deltaX = endX - startX;
+      const deltaY = endY - startY;
+      const minSwipeDistance = 50;
+
+      // Only trigger swipe if it's more horizontal than vertical and meets minimum distance
+      if (Math.abs(deltaX) > Math.abs(deltaY) && Math.abs(deltaX) > minSwipeDistance) {
+        if (deltaX > 0) {
+          this.goToPrevious(); // Swipe right = previous
+        } else {
+          this.goToNext(); // Swipe left = next
+        }
+      }
+
+      isSwiping = false;
+    }, { passive: true });
+
+    // Pause autoplay on hover
     this.carouselContainer.addEventListener('mouseenter', () => {
       if (this.autoplay) {
         this.stopAutoplay();

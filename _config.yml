@@ -40,6 +40,7 @@ google_tag_manager: GTM-T948MNX
 plugins:
   - jekyll-feed
   - jekyll-import
+  - jekyll-include-cache
   - jekyll-seo-tag
   - jekyll-sitemap
 

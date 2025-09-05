@@ -1,15 +1,20 @@
 @charset "utf-8";
 
-@import "config/_variables";
-@import "config/_fonts";
-@import "config/_mixins";
-@import "config/_normalize";
-@import "config/_defaults";
-@import "config/_utilities";
-@import "config/_header-theme";
-@import "config/_typography";
-@import "config/_lazy";
+// Main SCSS file - imports all modules
+@import "config/defaults";
+@import "config/fonts";
+@import "config/variables";
+@import "config/mixins";
+@import "config/header-theme";
+@import "config/utilities";
+@import "config/typography";
+@import "config/lazy";
+@import "config/normalize";
 
+// Base modules
+@import "modules/base";
+
+// Individual module imports
 @import "modules/_anchor";
 @import "modules/_ac-intro";
 @import "modules/_animations";
@@ -57,7 +62,7 @@
 @import "modules/_consultation";
 @import "modules/_faq";
 @import "modules/_new-faq";
-@import "modules/_features";
+
 @import "modules/_global-movement";
 @import "modules/_hero";
 @import "modules/_press";
@@ -66,7 +71,21 @@
 @import "modules/_aircasting-apps-section";
 @import "modules/_404";
 
-@import "partials/_forms";
+// Section-specific modules
+@import "modules/_hero-section";
+@import "modules/_problem-solution";
+@import "modules/_features-section";
+@import "modules/_community-feature-cards";
+@import "modules/_ecosystem";
+@import "modules/_impact";
+@import "modules/_educator-resources";
+@import "modules/_cta-section";
+@import "modules/_press-section";
+@import "modules/_testimonials-carousel";
+@import "modules/_user-stories-carousel";
+
+// Partials
+@import "partials/forms";
 
 // PayPal Donate Button Hover Effect
 .paypal-donate-form {

@@ -12,10 +12,16 @@
       margin-bottom: 3rem;
 
       .features-title {
-        font-size: 1.875rem;
-        font-weight: bold;
+        font-family: "Moderat-Bold", sans-serif;
+        font-weight: 700;
+        font-size: 1.75rem;
+        line-height: 1.2;
         color: #111827;
         margin-bottom: 1rem;
+
+        @media (min-width: 768px) {
+          font-size: 2.75rem;
+        }
       }
 
       .features-subtitle {
@@ -95,7 +101,7 @@
 
       .features-header {
         .features-title {
-          font-size: 1.5rem;
+          font-size: 1.75rem;
         }
 
         .features-subtitle {

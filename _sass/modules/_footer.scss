@@ -1,110 +1,224 @@
+// Modern Footer Styles - Full Width, No Card Styling
 .footer {
-  background-color: $green;
-  background-image: url("/assets/img/svg/HabitatMap-Monogram-Footer-White.svg");
-  background-position: bottom $u-space-default right $u-space-default,
-    bottom right;
-  background-repeat: no-repeat;
-  color: white;
+  background: #ffffff;
+  padding: 0;
+}
 
-  @media screen and (min-width: $tablet-min) {
-    background-image: url("/assets/img/svg/HabitatMap-Monogram-Footer-White.svg"),
-      linear-gradient(to right, $gray-medium, $gray-medium 50%, $green 50%);
+.footer-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+
+  @media (min-width: 1024px) {
+    grid-template-columns: 3fr 2fr;
   }
 }
 
-.footer__nav {
-  @include flexbox;
-  @include justify-content(space-between);
-  @include flex-direction(column);
-  background: $gray-medium;
+.footer-left {
+  background: #f8fafc;
+  padding: 1.5rem;
 
-  @media screen and (min-width: $tablet-min) {
-    padding-right: $u-space-default;
-  }
-
-  @media screen and (max-width: $large-mobile-max) {
-    padding: $u-space-default 4vw;
-  }
-
-  @media screen and (min-width: $small-desktop-min) {
-    @include flex-direction(row);
+  @media (min-width: 1024px) {
+    padding: 2rem;
   }
 }
 
-.footer-column {
-  @include flex(1);
-  border-top: 1px solid $white;
-  font-size: $base-font-size-2;
-  margin-bottom: $u-space-default;
-  vertical-align: top;
+.footer-columns {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-bottom: 3rem;
 
-  @media screen and (min-width: $small-desktop-min) {
-    margin-right: 1.3rem;
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
   }
 }
 
-.footer-column--newsletter {
-  margin: 0;
+.footer-column:nth-child(3) {
+  grid-column: 1 / -1;
 
-  @media screen and (min-width: $small-desktop-min) {
-    @include flex(0 0 35%);
+  @media (min-width: 768px) {
+    grid-column: auto;
   }
 }
 
-.footer-column__heading {
-  margin: 1rem 0 2rem;
+.footer-column-heading {
+  font-weight: 500;
+  color: #1e293b;
+  margin-bottom: 1.5rem;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
-.footer-links {
-  font-family: $bold-font;
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
-.footer a {
+.footer-link {
+  display: block;
+  color: #64748b;
+  font-size: 0.875rem;
+  font-weight: 300;
+  text-decoration: none;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: #1e293b;
+  }
+}
+
+.footer-icon {
+  height: 1rem;
+  width: 1rem;
+  margin-right: 0.75rem;
   display: inline-block;
-  color: $white;
+  vertical-align: middle;
+}
 
-  &:hover,
+.footer-description {
+  color: #64748b;
+  font-size: 0.875rem;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.newsletter-form {
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+.newsletter-input {
+  background: white;
+  border: 1px solid #cbd5e1;
+  color: #1e293b;
+  padding: 0.75rem;
+  font-size: 0.875rem;
+  border-radius: 0.5rem;
+  width: 100%;
+
+  &::placeholder {
+    color: #94a3b8;
+  }
+
   &:focus {
-    color: inherit;
-    opacity: 0.7;
+    outline: none;
+    border-color: #10b981;
+    box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
   }
 }
 
-.footer-links__element {
-  padding: 0.35rem 0;
-}
+.newsletter-button {
+  background: #1ea73f;
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  font-size: 0.875rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 
-.footer__address {
-  background: $gray-medium;
-
-  @media screen and (max-width: $large-mobile-max) {
-    padding: 0 4vw $u-space-default;
-  }
-
-  @media screen and (min-width: $tablet-min) {
-    margin-top: $u-space-small;
-  }
-}
-
-.footer__brand {
-  @include flexbox;
-  @include flex-direction(column);
-  @include justify-content(space-between);
-
-  @media screen and (min-width: $tablet-min) {
-    padding-left: $u-space-default;
-  }
-
-  @media screen and (max-width: $large-mobile-max) {
-    padding: $u-space-default 4vw 12rem;
-  }
-
-  @media screen and (min-width: $small-desktop-min) {
-    padding-bottom: 0;
+  &:hover {
+    background: #16a34a;
   }
 }
 
-.footer__brand-tagline {
-  font-size: $base-font-size2;
-  margin: 0 0 $u-space-default;
+.footer-contact {
+  padding-top: 2rem;
+  border-top: 1px solid #e2e8f0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.contact-item {
+  color: #64748b;
+  font-size: 0.875rem;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.contact-icon {
+  height: 1rem;
+  width: 1rem;
+  color: #94a3b8;
+}
+
+// Right section - Elegant green background
+.footer-right {
+  background: linear-gradient(135deg, #1ea73f 0%, #16a34a 50%, #15803d 100%);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media (min-width: 1024px) {
+    padding: 2rem;
+  }
+}
+
+.footer-tagline {
+  font-size: 1.875rem;
+  font-weight: 300;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+  color: white;
+  text-align: right;
+
+  @media (min-width: 1024px) {
+    font-size: 2.25rem;
+  }
+}
+
+.tagline-emphasis {
+  font-weight: 500;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.footer-copyright {
+  font-size: 0.875rem;
+  color: #d1fae5;
+  font-weight: 300;
+}
+
+.privacy-link {
+  color: #d1fae5;
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.footer-logo {
+  width: 6rem;
+  height: 6rem;
+  background: #1ea73f;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.logo-image {
+  width: 4rem;
+  height: 4rem;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
 }
