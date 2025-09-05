@@ -4,7 +4,10 @@
   background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
   position: relative;
   overflow: hidden;
-  contain: layout;
+  contain: layout style;
+  // Prevent scroll jumping
+  will-change: auto;
+  transform: translateZ(0);
 
   // Background pattern overlay
   &::before {
@@ -104,16 +107,13 @@
     0 30px 60px rgba(0, 0, 0, 0.06),
     inset 0 1px 0 rgba(255, 255, 255, 0.8),
     0 0 0 1px rgba(255, 255, 255, 0.2);
-    // Remove all transitions to prevent scroll interference
 
-  &:hover {
-    background: rgba(255, 255, 255, 0.5);
-    box-shadow:
-      0 40px 80px rgba(0, 0, 0, 0.08),
-      inset 0 1px 0 rgba(255, 255, 255, 0.9),
-      0 0 0 1px rgba(255, 255, 255, 0.3);
-    // Remove transform to prevent scroll jumping
-  }
+  // Prevent layout shifts and scroll jumping
+  will-change: auto;
+  transform: translateZ(0);
+  contain: layout style;
+
+  // Removed hover effects to prevent scroll jumping
 
   @media (max-width: 1023px) {
     grid-template-columns: 1fr;
@@ -299,7 +299,8 @@
   &:hover {
     background: rgba(255, 255, 255, 0.25);
     color: #16a34a;
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+    // Reduced box-shadow change to prevent layout shifts
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
   }
 
   &:active {
