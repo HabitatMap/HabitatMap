@@ -99,15 +99,28 @@
 .home-hero-section .hero-main-title {
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
   font-weight: 900;
+  /* Fallback for browsers without clamp() support */
+  font-size: 3rem;
   font-size: clamp(2.5rem, 8vw, 5rem);
   line-height: 1.1;
   color: #ffffff;
   margin-bottom: 1.5rem;
   text-shadow: none;
   letter-spacing: -0.02em;
+
+  /* Media query fallbacks for older browsers */
+  @media (max-width: 640px) {
+    font-size: 2.5rem;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 4.5rem;
+  }
 }
 
 .home-hero-section .hero-subtitle-text {
+  /* Fallback for browsers without clamp() support */
+  font-size: 1.5rem;
   font-size: clamp(1.25rem, 4vw, 2rem);
   line-height: 1.6;
   color: rgba(255, 255, 255, 0.95);
@@ -127,10 +140,18 @@
     right: -0.5rem;
     bottom: -0.5rem;
     background: rgba(255, 255, 255, 0.1);
+    /* Fallback for browsers without backdrop-filter support */
+    background: rgba(255, 255, 255, 0.25);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border-radius: 1rem;
     z-index: -1;
+
+    /* Fallback for older browsers */
+    @supports not (backdrop-filter: blur(12px)) {
+      background: rgba(255, 255, 255, 0.35);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
   }
 
   @media (min-width: 768px) {

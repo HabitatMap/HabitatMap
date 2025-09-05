@@ -86,11 +86,19 @@
   align-items: center;
   min-height: 450px;
   flex: 1;
-    background: rgba(255, 255, 255, 0.4);
+  /* Fallback for browsers without backdrop-filter support */
+  background: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.4);
   border-radius: 1.5rem;
   padding: 3rem;
   backdrop-filter: blur(40px);
   -webkit-backdrop-filter: blur(40px);
+
+  /* Fallback for older browsers */
+  @supports not (backdrop-filter: blur(40px)) {
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
 
   box-shadow:
     0 30px 60px rgba(0, 0, 0, 0.06),
@@ -271,10 +279,18 @@
   width: 48px;
   height: 48px;
   border-radius: 50%;
+  /* Fallback for browsers without backdrop-filter support */
+  background: rgba(255, 255, 255, 0.25);
   background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.2);
+
+  /* Fallback for older browsers */
+  @supports not (backdrop-filter: blur(20px)) {
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
   color: #374151;
   cursor: pointer;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
