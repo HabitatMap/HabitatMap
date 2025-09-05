@@ -9,14 +9,14 @@ keywords: "air quality monitor, air pollution, environmental monitoring, AirBeam
 og_type: website
 ---
 
-{% include home-sections/01-hero-main-banner.html %}
-{% include home-sections/02-problem-solution-comparison.html %}
-{% include home-sections/04-airbeam-aircasting-ecosystem.html %}
-{% include home-sections/03-community-feature-cards.html %}
-{% include home-sections/08-final-donation-cta.html %}
+{% include home-sections/hero-main-banner.html %}
+{% include home-sections/problem-solution-comparison.html %}
+{% include home-sections/airbeam-aircasting-ecosystem.html %}
+{% include home-sections/community-feature-cards.html %}
+{% include home-sections/final-donation-cta.html %}
 {% include buy-it-now/consultation-section.html %}
-{% include home-sections/09-user-stories-carousel.html %}
-{% include home-sections/08-press-section.html %}
+{% include home-sections/user-stories-carousel.html %}
+{% include home-sections/press-section.html %}
 
 <!-- Include existing modal and scripts -->
 
