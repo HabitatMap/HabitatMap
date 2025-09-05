@@ -1,0 +1,144 @@
+// Donate Trust Section Styles
+.donate-trust-section {
+  padding: 4rem 1rem;
+  background: #ffffff;
+
+  @media (min-width: 768px) {
+    padding: 6rem 2rem;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 8rem 2rem;
+  }
+}
+
+.donate-trust-container {
+  max-width: 96rem;
+  margin: 0 auto;
+}
+
+.donate-trust-title {
+  font-family: "Moderat-Bold", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  font-weight: 700;
+  font-size: clamp(1.75rem, 4vw, 3rem);
+  line-height: 1.2;
+  color: #111827;
+  text-align: center;
+  margin-bottom: 3rem;
+
+  @media (min-width: 768px) {
+    margin-bottom: 4rem;
+  }
+}
+
+.donate-trust-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+
+  @media (min-width: 640px) {
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+  }
+
+  @media (min-width: 1024px) {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+  }
+}
+
+.donate-trust-indicator {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: #ffffff;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border: 1px solid #f3f4f6;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    border-color: rgba(34, 197, 94, 0.2);
+  }
+
+  @media (min-width: 768px) {
+    padding: 2rem;
+    gap: 1.5rem;
+  }
+
+  @media (max-width: 640px) {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem 1rem;
+  }
+}
+
+.donate-trust-icon {
+  width: 2rem;
+  height: 2rem;
+  color: #22c55e;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (min-width: 768px) {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  @media (max-width: 640px) {
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.donate-trust-icon-svg {
+  width: 100%;
+  height: 100%;
+  stroke-width: 2;
+}
+
+.donate-trust-text {
+  font-family: "Moderat-Medium", system-ui, sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #111827;
+  flex-grow: 1;
+
+  @media (min-width: 768px) {
+    font-size: 1.125rem;
+  }
+
+  @media (max-width: 640px) {
+    text-align: center;
+  }
+}
+
+// Responsive adjustments
+@media (max-width: 640px) {
+  .donate-trust-section {
+    padding: 3rem 1rem;
+  }
+
+  .donate-trust-title {
+    margin-bottom: 2.5rem;
+  }
+
+  .donate-trust-grid {
+    gap: 1.5rem;
+  }
+
+  .donate-trust-indicator {
+    padding: 1.25rem 1rem;
+  }
+
+  .donate-trust-text {
+    font-size: 0.875rem;
+  }
+}
