@@ -187,7 +187,6 @@ hasMerchantReturnPolicy:
       "description": "AirBeam3 is the most accurate and versatile portable air quality monitor. It's a low-cost, palm-sized air quality instrument that measures hyperlocal concentrations of harmful microscopic particles in the air, known as particulate matter (PM1, PM2.5, PM10).",
       "category": "Environmental Monitoring Equipment",
       "sku": "AB3-001",
-      "gtin": "AB3001HM2024",
       "mpn": "AIRBEAM3-2024",
       "image": [
         "{{ site.url }}/assets/img/airbeam-buy-it-now.jpg",
@@ -195,8 +194,7 @@ hasMerchantReturnPolicy:
         "{{ site.url }}/assets/img/airbeam(new).jpg"
       ],
       "brand": {
-        "@type": "Organization",
-        "@id": "{{ site.url }}/#organization",
+        "@type": "Brand",
         "name": "HabitatMap"
       },
       "manufacturer": {
@@ -285,7 +283,13 @@ hasMerchantReturnPolicy:
           "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
           "merchantReturnDays": 30,
           "returnMethod": "https://schema.org/ReturnByMail",
-          "returnFees": "https://schema.org/ReturnShippingFees"
+          "returnFees": "https://schema.org/ReturnShippingFees",
+          "applicableCountry": "US",
+          "returnShippingFeesAmount": {
+            "@type": "MonetaryAmount",
+            "value": "15.00",
+            "currency": "USD"
+          }
         },
         "shippingDetails": [
           {
@@ -401,15 +405,13 @@ hasMerchantReturnPolicy:
       "description": "The AirBeam Mini is a smaller, lighter, and more affordable version of our air quality monitor, perfect for personal use and mobile monitoring. Measures PM2.5 particulate matter with the same accuracy as professional equipment.",
       "category": "Personal Environmental Monitor",
       "sku": "ABM-001",
-      "gtin": "ABM001HM2024",
       "mpn": "AIRBEAMMINI-2024",
       "image": [
         "{{ site.url }}/assets/AirBeamMiniBlur.png",
         "{{ site.url }}/assets/img/pages/user-stories/userstories_ABM.jpg"
       ],
       "brand": {
-        "@type": "Organization",
-        "@id": "{{ site.url }}/#organization",
+        "@type": "Brand",
         "name": "HabitatMap"
       },
       "manufacturer": {
@@ -493,7 +495,13 @@ hasMerchantReturnPolicy:
           "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
           "merchantReturnDays": 30,
           "returnMethod": "https://schema.org/ReturnByMail",
-          "returnFees": "https://schema.org/ReturnShippingFees"
+          "returnFees": "https://schema.org/ReturnShippingFees",
+          "applicableCountry": "US",
+          "returnShippingFeesAmount": {
+            "@type": "MonetaryAmount",
+            "value": "15.00",
+            "currency": "USD"
+          }
         },
         "shippingDetails": [
           {
