@@ -134,6 +134,11 @@ hasMerchantReturnPolicy:
     merchantReturnDays: 30
     returnMethod: https://schema.org/ReturnByMail
     returnFees: https://schema.org/ReturnShippingFees
+    applicableCountry: US
+    returnShippingFeesAmount:
+      type: MonetaryAmount
+      value: "15.00"
+      currency: "USD"
 ---
 
 {% include buy-it-now/hero-section.html %}
