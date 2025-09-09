@@ -19,7 +19,6 @@
             </button>
             <button class="donate-form-frequency-button" data-frequency="monthly">
               Monthly
-              <span class="donate-form-frequency-badge">More Impact</span>
             </button>
           </div>
         </div>
@@ -95,50 +94,9 @@
           </div>
         </div>
 
-        <!-- Payment Method Selection -->
-        <div class="donate-form-payment-section">
-          <h3 class="donate-form-payment-title">Choose Payment Method</h3>
-          <div class="donate-form-payment-methods">
-            <button class="donate-form-payment-button donate-form-payment-active" data-payment="card">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <rect width="20" height="14" x="2" y="5" rx="2"/>
-                <line x1="2" x2="22" y1="10" y2="10"/>
-              </svg>
-              <span>Credit Card</span>
-            </button>
-            <button class="donate-form-payment-button" data-payment="paypal">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M7.076 21.337H2.47a.641.641 0 0 1-.633-.74L4.944.901C5.026.382 5.474 0 5.998 0h7.46c2.57 0 4.578.543 5.69 1.81 1.01 1.15 1.304 2.42 1.012 4.287-.023.143-.047.288-.077.437-.983 5.05-4.349 6.797-8.647 6.797h-2.19c-.524 0-.968.382-1.05.9l-1.12 7.106zm14.146-14.42a3.35 3.35 0 0 0-.607-.541c-.013.076-.026.175-.041.26-.983 5.05-4.349 6.797-8.647 6.797h-2.19c-.524 0-.968.382-1.05.9l-1.12 7.106H2.47a.641.641 0 0 1-.633-.74L4.944.901C5.026.382 5.474 0 5.998 0h7.46c2.57 0 4.578.543 5.69 1.81.85.97 1.213 2.115 1.074 3.507z"/>
-              </svg>
-              <span>PayPal</span>
-            </button>
-          </div>
-        </div>
-
-        <!-- Payment Form -->
-        <div class="donate-form-payment-form" id="payment-form">
-          <div class="donate-form-payment-fields">
-            <div class="donate-form-field-row">
-              <input type="text" placeholder="First Name" class="donate-form-field" />
-              <input type="text" placeholder="Last Name" class="donate-form-field" />
-            </div>
-            <input type="email" placeholder="Email Address" class="donate-form-field" />
-            <input type="text" placeholder="Card Number" class="donate-form-field" />
-            <div class="donate-form-field-row">
-              <input type="text" placeholder="MM/YY" class="donate-form-field" />
-              <input type="text" placeholder="CVC" class="donate-form-field" />
-            </div>
-          </div>
-        </div>
-
         <!-- PayPal Notice -->
-        <div class="donate-form-paypal-notice" id="paypal-notice" style="display: none;">
+        <div class="donate-form-paypal-notice">
           <div class="donate-form-paypal-content">
-            <div class="donate-form-field-row">
-              <input type="text" placeholder="First Name" class="donate-form-field" />
-              <input type="text" placeholder="Last Name" class="donate-form-field" />
-            </div>
-            <input type="email" placeholder="Email Address" class="donate-form-field" />
             <div class="donate-form-paypal-info">
               <p>You'll be redirected to PayPal to complete your secure donation.</p>
             </div>
@@ -178,128 +136,3 @@
     </div>
   </div>
 </section>
-
-<script>
-// Donation Form JavaScript
-document.addEventListener('DOMContentLoaded', function() {
-  const amountButtons = document.querySelectorAll('.donate-form-amount-button');
-  const customAmountInput = document.getElementById('custom-amount');
-  const frequencyButtons = document.querySelectorAll('.donate-form-frequency-button');
-  const paymentButtons = document.querySelectorAll('.donate-form-payment-button');
-  const donateButton = document.getElementById('donate-button');
-  const impactMessage = document.getElementById('impact-message');
-  const monthlyBenefits = document.getElementById('monthly-benefits');
-  const paymentForm = document.getElementById('payment-form');
-  const paypalNotice = document.getElementById('paypal-notice');
-  const impactDescription = document.getElementById('impact-description');
-
-  let selectedAmount = 50;
-  let selectedFrequency = 'one-time';
-  let selectedPayment = 'card';
-
-  const impactMessages = {
-    25: "Provides air quality monitoring data for 1 household for 3 months",
-    50: "Supports community training workshop for 10 environmental justice advocates",
-    100: "Funds mobile app development features for better community data access",
-    250: "Sponsors complete AirBeam device setup for community organization"
-  };
-
-  // Set initial state
-  amountButtons[1].classList.add('donate-form-amount-active'); // $50 button
-  updateImpactMessage();
-  updateMonthlyDisplay();
-
-  // Amount button handlers
-  amountButtons.forEach(button => {
-    button.addEventListener('click', function() {
-      amountButtons.forEach(btn => btn.classList.remove('donate-form-amount-active'));
-      this.classList.add('donate-form-amount-active');
-      selectedAmount = parseInt(this.dataset.amount);
-      customAmountInput.value = '';
-      updateDonateButton();
-      updateImpactMessage();
-    });
-  });
-
-  // Custom amount input handler
-  customAmountInput.addEventListener('input', function() {
-    const value = parseInt(this.value) || 0;
-    if (value > 0) {
-      amountButtons.forEach(btn => btn.classList.remove('donate-form-amount-active'));
-      selectedAmount = value;
-    }
-    updateDonateButton();
-    updateImpactMessage();
-  });
-
-  // Frequency button handlers
-  frequencyButtons.forEach(button => {
-    button.addEventListener('click', function() {
-      frequencyButtons.forEach(btn => btn.classList.remove('donate-form-frequency-active'));
-      this.classList.add('donate-form-frequency-active');
-      selectedFrequency = this.dataset.frequency;
-      updateDonateButton();
-      updateMonthlyDisplay();
-    });
-  });
-
-  // Payment method handlers
-  paymentButtons.forEach(button => {
-    button.addEventListener('click', function() {
-      paymentButtons.forEach(btn => btn.classList.remove('donate-form-payment-active'));
-      this.classList.add('donate-form-payment-active');
-      selectedPayment = this.dataset.payment;
-      updatePaymentDisplay();
-    });
-  });
-
-  function updateDonateButton() {
-    const frequency = selectedFrequency === 'monthly' ? '/month' : '';
-    const amount = customAmountInput.value || selectedAmount;
-    donateButton.textContent = `Donate $${amount}${frequency} Now`;
-  }
-
-  function updateImpactMessage() {
-    const amount = customAmountInput.value || selectedAmount;
-    if (amount > 0) {
-      impactMessage.style.display = 'block';
-      const message = impactMessages[amount] || "Supports our mission to empower communities with cutting-edge environmental monitoring technology and data-driven advocacy";
-      impactDescription.textContent = message;
-    } else {
-      impactMessage.style.display = 'none';
-    }
-  }
-
-  function updateMonthlyDisplay() {
-    if (selectedFrequency === 'monthly') {
-      monthlyBenefits.style.display = 'block';
-      // Show /month on amount buttons
-      amountButtons.forEach(btn => {
-        const monthlySpan = btn.querySelector('.donate-form-amount-monthly');
-        if (monthlySpan) monthlySpan.style.display = 'inline';
-      });
-    } else {
-      monthlyBenefits.style.display = 'none';
-      // Hide /month on amount buttons
-      amountButtons.forEach(btn => {
-        const monthlySpan = btn.querySelector('.donate-form-amount-monthly');
-        if (monthlySpan) monthlySpan.style.display = 'none';
-      });
-    }
-  }
-
-  function updatePaymentDisplay() {
-    if (selectedPayment === 'card') {
-      paymentForm.style.display = 'block';
-      paypalNotice.style.display = 'none';
-    } else {
-      paymentForm.style.display = 'none';
-      paypalNotice.style.display = 'block';
-    }
-  }
-
-  // Initialize
-  updateDonateButton();
-  updatePaymentDisplay();
-});
-</script>
