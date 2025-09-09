@@ -2,103 +2,176 @@
 <section class="donate-form-section" id="donation-form">
   <div class="donate-form-container">
     <div class="donate-form-header">
-      <h2 class="donate-form-title">Your Impact Starts Here</h2>
+      <h2 class="donate-form-title">Power Environmental Justice</h2>
       <p class="donate-form-subtitle">
-        Every donation directly funds community-driven environmental monitoring and empowers grassroots
-        organizations to fight for cleaner air.
+        Your donation directly supports communities fighting for clean air and environmental justice. Every
+        contribution creates measurable change in real neighborhoods.
       </p>
     </div>
 
     <div class="donate-form-card">
-      <div class="donate-form-card-header">
-        <h3 class="donate-form-card-title">Make Your Donation</h3>
-      </div>
-
       <div class="donate-form-card-content">
+        <!-- Frequency Selection -->
+        <div class="donate-form-frequency-section">
+          <div class="donate-form-frequency-buttons">
+            <button class="donate-form-frequency-button donate-form-frequency-active" data-frequency="one-time">
+              One-time
+            </button>
+            <button class="donate-form-frequency-button" data-frequency="monthly">
+              Monthly
+              <span class="donate-form-frequency-badge">More Impact</span>
+            </button>
+          </div>
+        </div>
+
         <!-- Amount Selection -->
-        <div class="donate-form-section-group">
-          <label class="donate-form-label">Choose Your Impact Level</label>
+        <div class="donate-form-amount-section">
           <div class="donate-form-amount-grid">
             <button class="donate-form-amount-button" data-amount="25">
               <span class="donate-form-amount-value">$25</span>
-              <span class="donate-form-amount-impact">Supports 1 community sensor for a month</span>
+              <span class="donate-form-amount-monthly">/month</span>
             </button>
-            <button class="donate-form-amount-button" data-amount="50">
+            <button class="donate-form-amount-button donate-form-amount-active" data-amount="50">
               <span class="donate-form-amount-value">$50</span>
-              <span class="donate-form-amount-impact">Funds air quality data for 2 communities</span>
+              <span class="donate-form-amount-monthly">/month</span>
             </button>
             <button class="donate-form-amount-button" data-amount="100">
               <span class="donate-form-amount-value">$100</span>
-              <span class="donate-form-amount-impact">Powers environmental justice research</span>
+              <span class="donate-form-amount-monthly">/month</span>
             </button>
             <button class="donate-form-amount-button" data-amount="250">
               <span class="donate-form-amount-value">$250</span>
-              <span class="donate-form-amount-impact">Sponsors a complete monitoring station</span>
+              <span class="donate-form-amount-monthly">/month</span>
             </button>
           </div>
 
           <div class="donate-form-custom-amount">
-            <label class="donate-form-custom-label">Or enter a custom amount</label>
-            <div class="donate-form-custom-input-container">
-              <span class="donate-form-currency-symbol">$</span>
-              <input
-                type="number"
-                id="custom-amount"
-                class="donate-form-custom-input"
-                placeholder="Enter amount"
-                min="1"
-              />
+            <input
+              type="number"
+              id="custom-amount"
+              class="donate-form-custom-input"
+              placeholder="Enter custom amount ($)"
+              min="1"
+            />
+          </div>
+        </div>
+
+        <!-- Impact Message -->
+        <div class="donate-form-impact-message" id="impact-message" style="display: none;">
+          <div class="donate-form-impact-content">
+            <div class="donate-form-impact-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="13,2 3,14 12,14 11,22 21,10 12,10"/>
+              </svg>
+            </div>
+            <div class="donate-form-impact-text">
+              <h4 class="donate-form-impact-title">Your Impact:</h4>
+              <p class="donate-form-impact-description" id="impact-description">
+                Supports our mission to empower communities with cutting-edge environmental monitoring technology and data-driven advocacy
+              </p>
             </div>
           </div>
         </div>
 
-        <!-- Frequency Selection -->
-        <div class="donate-form-section-group">
-          <label class="donate-form-label">Donation Frequency</label>
-          <div class="donate-form-frequency-grid">
-            <button class="donate-form-frequency-button donate-form-frequency-active" data-frequency="one-time">
-              <span class="donate-form-frequency-main">One-time</span>
-              <span class="donate-form-frequency-sub">Immediate impact</span>
+        <!-- Monthly Benefits -->
+        <div class="donate-form-monthly-benefits" id="monthly-benefits" style="display: none;">
+          <div class="donate-form-monthly-content">
+            <div class="donate-form-monthly-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="m22 21v-2a4 4 0 0 0-3-3.87"/>
+                <path d="m16 3.13a4 4 0 0 1 0 7.75"/>
+              </svg>
+            </div>
+            <div class="donate-form-monthly-text">
+              <h4 class="donate-form-monthly-title">Monthly Giving Benefits:</h4>
+              <ul class="donate-form-monthly-list">
+                <li>Provides sustained support for ongoing community programs</li>
+                <li>Exclusive quarterly impact reports and community updates</li>
+                <li>Cancel or modify your donation anytime</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Payment Method Selection -->
+        <div class="donate-form-payment-section">
+          <h3 class="donate-form-payment-title">Choose Payment Method</h3>
+          <div class="donate-form-payment-methods">
+            <button class="donate-form-payment-button donate-form-payment-active" data-payment="card">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect width="20" height="14" x="2" y="5" rx="2"/>
+                <line x1="2" x2="22" y1="10" y2="10"/>
+              </svg>
+              <span>Credit Card</span>
             </button>
-            <button class="donate-form-frequency-button" data-frequency="monthly">
-              <span class="donate-form-frequency-main">Monthly</span>
-              <span class="donate-form-frequency-sub">Sustained change</span>
+            <button class="donate-form-payment-button" data-payment="paypal">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M7.076 21.337H2.47a.641.641 0 0 1-.633-.74L4.944.901C5.026.382 5.474 0 5.998 0h7.46c2.57 0 4.578.543 5.69 1.81 1.01 1.15 1.304 2.42 1.012 4.287-.023.143-.047.288-.077.437-.983 5.05-4.349 6.797-8.647 6.797h-2.19c-.524 0-.968.382-1.05.9l-1.12 7.106zm14.146-14.42a3.35 3.35 0 0 0-.607-.541c-.013.076-.026.175-.041.26-.983 5.05-4.349 6.797-8.647 6.797h-2.19c-.524 0-.968.382-1.05.9l-1.12 7.106H2.47a.641.641 0 0 1-.633-.74L4.944.901C5.026.382 5.474 0 5.998 0h7.46c2.57 0 4.578.543 5.69 1.81.85.97 1.213 2.115 1.074 3.507z"/>
+              </svg>
+              <span>PayPal</span>
             </button>
+          </div>
+        </div>
+
+        <!-- Payment Form -->
+        <div class="donate-form-payment-form" id="payment-form">
+          <div class="donate-form-payment-fields">
+            <div class="donate-form-field-row">
+              <input type="text" placeholder="First Name" class="donate-form-field" />
+              <input type="text" placeholder="Last Name" class="donate-form-field" />
+            </div>
+            <input type="email" placeholder="Email Address" class="donate-form-field" />
+            <input type="text" placeholder="Card Number" class="donate-form-field" />
+            <div class="donate-form-field-row">
+              <input type="text" placeholder="MM/YY" class="donate-form-field" />
+              <input type="text" placeholder="CVC" class="donate-form-field" />
+            </div>
+          </div>
+        </div>
+
+        <!-- PayPal Notice -->
+        <div class="donate-form-paypal-notice" id="paypal-notice" style="display: none;">
+          <div class="donate-form-paypal-content">
+            <div class="donate-form-field-row">
+              <input type="text" placeholder="First Name" class="donate-form-field" />
+              <input type="text" placeholder="Last Name" class="donate-form-field" />
+            </div>
+            <input type="email" placeholder="Email Address" class="donate-form-field" />
+            <div class="donate-form-paypal-info">
+              <p>You'll be redirected to PayPal to complete your secure donation.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Trust Indicators -->
+        <div class="donate-form-trust-indicators">
+          <div class="donate-form-trust-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+            <span>256-bit SSL Encryption</span>
+          </div>
+          <div class="donate-form-trust-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect width="20" height="14" x="2" y="5" rx="2"/>
+              <line x1="2" x2="22" y1="10" y2="10"/>
+            </svg>
+            <span>100% Tax Deductible</span>
           </div>
         </div>
 
         <!-- Donate Button -->
-        <div class="donate-form-submit-section">
-          <button class="donate-form-submit-button" id="donate-button">
-            Donate $50 Now
-          </button>
-
-          <div class="donate-form-trust-indicators">
-            <div class="donate-form-trust-item">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-              </svg>
-              <span>Secure Payment</span>
-            </div>
-            <div class="donate-form-trust-item">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
-                <circle cx="9" cy="7" r="4"/>
-                <path d="22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
-              </svg>
-              <span>Tax Deductible</span>
-            </div>
-          </div>
-        </div>
+        <button class="donate-form-submit-button" id="donate-button">
+          Donate $50 Now
+        </button>
 
         <!-- Mission Statement -->
         <div class="donate-form-mission-statement">
           <p>
-            <strong>100% of your donation</strong> goes directly to advancing
-            HabitatMap's mission to empower communities with environmental data and tools for justice.
-          </p>
-          <p class="donate-form-mission-note">
-            HabitatMap is a 501(c)(3) nonprofit organization. Your donation is tax-deductible.
+            HabitatMap is a 501(c)(3) nonprofit organization (EIN: 20-8905006). Your donation is tax-deductible to the
+            full extent allowed by law. You will receive a receipt via email for your records.
           </p>
         </div>
       </div>
@@ -112,14 +185,29 @@ document.addEventListener('DOMContentLoaded', function() {
   const amountButtons = document.querySelectorAll('.donate-form-amount-button');
   const customAmountInput = document.getElementById('custom-amount');
   const frequencyButtons = document.querySelectorAll('.donate-form-frequency-button');
+  const paymentButtons = document.querySelectorAll('.donate-form-payment-button');
   const donateButton = document.getElementById('donate-button');
-  const monthlyBadge = document.getElementById('monthly-badge');
+  const impactMessage = document.getElementById('impact-message');
+  const monthlyBenefits = document.getElementById('monthly-benefits');
+  const paymentForm = document.getElementById('payment-form');
+  const paypalNotice = document.getElementById('paypal-notice');
+  const impactDescription = document.getElementById('impact-description');
 
   let selectedAmount = 50;
   let selectedFrequency = 'one-time';
+  let selectedPayment = 'card';
+
+  const impactMessages = {
+    25: "Provides air quality monitoring data for 1 household for 3 months",
+    50: "Supports community training workshop for 10 environmental justice advocates",
+    100: "Funds mobile app development features for better community data access",
+    250: "Sponsors complete AirBeam device setup for community organization"
+  };
 
   // Set initial state
   amountButtons[1].classList.add('donate-form-amount-active'); // $50 button
+  updateImpactMessage();
+  updateMonthlyDisplay();
 
   // Amount button handlers
   amountButtons.forEach(button => {
@@ -129,6 +217,7 @@ document.addEventListener('DOMContentLoaded', function() {
       selectedAmount = parseInt(this.dataset.amount);
       customAmountInput.value = '';
       updateDonateButton();
+      updateImpactMessage();
     });
   });
 
@@ -140,6 +229,7 @@ document.addEventListener('DOMContentLoaded', function() {
       selectedAmount = value;
     }
     updateDonateButton();
+    updateImpactMessage();
   });
 
   // Frequency button handlers
@@ -148,23 +238,68 @@ document.addEventListener('DOMContentLoaded', function() {
       frequencyButtons.forEach(btn => btn.classList.remove('donate-form-frequency-active'));
       this.classList.add('donate-form-frequency-active');
       selectedFrequency = this.dataset.frequency;
-
-      if (selectedFrequency === 'monthly') {
-        monthlyBadge.style.display = 'flex';
-      } else {
-        monthlyBadge.style.display = 'none';
-      }
-
       updateDonateButton();
+      updateMonthlyDisplay();
+    });
+  });
+
+  // Payment method handlers
+  paymentButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      paymentButtons.forEach(btn => btn.classList.remove('donate-form-payment-active'));
+      this.classList.add('donate-form-payment-active');
+      selectedPayment = this.dataset.payment;
+      updatePaymentDisplay();
     });
   });
 
   function updateDonateButton() {
-    const frequency = selectedFrequency === 'monthly' ? 'Monthly' : 'Now';
-    donateButton.textContent = `Donate $${selectedAmount > 0 ? selectedAmount : '___'} ${frequency}`;
+    const frequency = selectedFrequency === 'monthly' ? '/month' : '';
+    const amount = customAmountInput.value || selectedAmount;
+    donateButton.textContent = `Donate $${amount}${frequency} Now`;
   }
 
-  // Initialize button text
+  function updateImpactMessage() {
+    const amount = customAmountInput.value || selectedAmount;
+    if (amount > 0) {
+      impactMessage.style.display = 'block';
+      const message = impactMessages[amount] || "Supports our mission to empower communities with cutting-edge environmental monitoring technology and data-driven advocacy";
+      impactDescription.textContent = message;
+    } else {
+      impactMessage.style.display = 'none';
+    }
+  }
+
+  function updateMonthlyDisplay() {
+    if (selectedFrequency === 'monthly') {
+      monthlyBenefits.style.display = 'block';
+      // Show /month on amount buttons
+      amountButtons.forEach(btn => {
+        const monthlySpan = btn.querySelector('.donate-form-amount-monthly');
+        if (monthlySpan) monthlySpan.style.display = 'inline';
+      });
+    } else {
+      monthlyBenefits.style.display = 'none';
+      // Hide /month on amount buttons
+      amountButtons.forEach(btn => {
+        const monthlySpan = btn.querySelector('.donate-form-amount-monthly');
+        if (monthlySpan) monthlySpan.style.display = 'none';
+      });
+    }
+  }
+
+  function updatePaymentDisplay() {
+    if (selectedPayment === 'card') {
+      paymentForm.style.display = 'block';
+      paypalNotice.style.display = 'none';
+    } else {
+      paymentForm.style.display = 'none';
+      paypalNotice.style.display = 'block';
+    }
+  }
+
+  // Initialize
   updateDonateButton();
+  updatePaymentDisplay();
 });
 </script>
