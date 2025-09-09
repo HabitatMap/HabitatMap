@@ -1,144 +1,250 @@
 // Donate Trust Section Styles
 .donate-trust-section {
-  padding: 4rem 1rem;
-  background: #ffffff;
+  padding: 3rem 0;
+  background: linear-gradient(135deg, #16a34a 0%, #15803d 100%);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  margin: 0;
+  width: 100vw;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+
+  &.scrolled {
+    padding: 2rem 1rem;
+    width: 100%;
+    left: auto;
+    right: auto;
+    margin-left: 0;
+    margin-right: 0;
+    border-radius: 1rem;
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    transform: translateY(-10px);
+  }
 
   @media (min-width: 768px) {
-    padding: 6rem 2rem;
+    padding: 4rem 0;
+
+    &.scrolled {
+      padding: 3rem 2rem;
+    }
   }
 
   @media (min-width: 1024px) {
-    padding: 8rem 2rem;
+    padding: 5rem 0;
+
+    &.scrolled {
+      padding: 4rem 2rem;
+    }
+  }
+}
+
+.donate-trust-background-overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 30% 20%, rgba(255, 255, 255, 0.1), transparent 50%);
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 70% 80%, rgba(255, 255, 255, 0.05), transparent 50%);
   }
 }
 
 .donate-trust-container {
-  max-width: 96rem;
+  max-width: 80rem;
   margin: 0 auto;
+  position: relative;
+  z-index: 10;
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+
+  .scrolled & {
+    max-width: 100%;
+  }
+}
+
+.donate-trust-header {
+  text-align: center;
+  margin-bottom: 4rem;
+
+  @media (min-width: 768px) {
+    margin-bottom: 5rem;
+  }
 }
 
 .donate-trust-title {
   font-family: "Moderat-Bold", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
   font-weight: 700;
-  font-size: clamp(1.75rem, 4vw, 3rem);
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
   line-height: 1.2;
-  color: #111827;
-  text-align: center;
-  margin-bottom: 3rem;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
   @media (min-width: 768px) {
-    margin-bottom: 4rem;
+    font-size: clamp(2rem, 4vw, 3rem);
   }
+}
+
+.donate-trust-subtitle {
+  font-family: "Moderat-Regular", system-ui, sans-serif;
+  font-size: clamp(1rem, 2vw, 1.125rem);
+  line-height: 1.6;
+  color: #d1fae5;
+  max-width: 48rem;
+  margin: 0 auto;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .donate-trust-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2rem;
+  gap: 1.5rem;
+  margin-bottom: 4rem;
 
-  @media (min-width: 640px) {
-    grid-template-columns: 1fr 1fr;
-    gap: 2.5rem;
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
   }
 
   @media (min-width: 1024px) {
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 3rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
   }
 }
 
-.donate-trust-indicator {
+.donate-trust-card {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 1rem;
   padding: 1.5rem;
-  background: #ffffff;
-  border-radius: 0.75rem;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  border: 1px solid #f3f4f6;
   transition: all 0.3s ease;
+  animation: fadeInUp 0.6s ease-out;
 
   &:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-    border-color: rgba(34, 197, 94, 0.2);
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
   }
 
   @media (min-width: 768px) {
     padding: 2rem;
-    gap: 1.5rem;
-  }
-
-  @media (max-width: 640px) {
-    flex-direction: column;
-    text-align: center;
-    padding: 1.5rem 1rem;
   }
 }
 
-.donate-trust-icon {
-  width: 2rem;
-  height: 2rem;
-  color: #22c55e;
+.donate-trust-card-icon {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 0.75rem;
+  padding: 0.75rem;
   flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  transition: background-color 0.3s ease;
 
-  @media (min-width: 768px) {
-    width: 2.5rem;
-    height: 2.5rem;
-  }
-
-  @media (max-width: 640px) {
-    width: 3rem;
-    height: 3rem;
-    margin-bottom: 0.5rem;
+  .donate-trust-card:hover & {
+    background: rgba(255, 255, 255, 0.3);
   }
 }
 
 .donate-trust-icon-svg {
-  width: 100%;
-  height: 100%;
-  stroke-width: 2;
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #ffffff;
+  display: block;
 }
 
 .donate-trust-text {
   font-family: "Moderat-Medium", system-ui, sans-serif;
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 0.875rem;
   line-height: 1.5;
-  color: #111827;
-  flex-grow: 1;
+  color: #ffffff;
+  flex: 1;
 
   @media (min-width: 768px) {
-    font-size: 1.125rem;
+    font-size: 1rem;
   }
+}
 
-  @media (max-width: 640px) {
-    text-align: center;
+.donate-trust-footer {
+  text-align: center;
+}
+
+.donate-trust-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 9999px;
+  padding: 0.75rem 1.5rem;
+}
+
+.donate-trust-badge-dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  background: #4ade80;
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+.donate-trust-badge-text {
+  font-family: "Moderat-Medium", system-ui, sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+// Animations
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
   }
 }
 
 // Responsive adjustments
 @media (max-width: 640px) {
   .donate-trust-section {
-    padding: 3rem 1rem;
+    padding: 4rem 1rem;
   }
 
-  .donate-trust-title {
-    margin-bottom: 2.5rem;
+  .donate-trust-header {
+    margin-bottom: 3rem;
   }
 
   .donate-trust-grid {
-    gap: 1.5rem;
+    gap: 1rem;
+    margin-bottom: 3rem;
   }
 
-  .donate-trust-indicator {
-    padding: 1.25rem 1rem;
+  .donate-trust-card {
+    padding: 1.25rem;
   }
 
   .donate-trust-text {
-    font-size: 0.875rem;
+    font-size: 0.8125rem;
   }
 }
