@@ -3,23 +3,14 @@ document.addEventListener('DOMContentLoaded', function() {
   const amountButtons = document.querySelectorAll('.donate-form-amount-button');
   const customAmountInput = document.getElementById('custom-amount');
   const donateButton = document.getElementById('donate-button');
-  const impactMessage = document.getElementById('impact-message');
-  const impactDescription = document.getElementById('impact-description');
 
   let selectedAmount = 50;
 
-  const impactMessages = {
-    25: "Provides air quality monitoring data for 1 household for 3 months",
-    50: "Supports community training workshop for 10 environmental justice advocates",
-    100: "Funds mobile app development features for better community data access",
-    250: "Sponsors complete AirBeam device setup for a community organization"
-  };
 
   // Set initial state
   if (amountButtons[1]) {
     amountButtons[1].classList.add('donate-form-amount-active'); // $50 button
   }
-  updateImpactMessage();
   updateDonateButton();
 
   // Amount button handlers
@@ -34,7 +25,6 @@ document.addEventListener('DOMContentLoaded', function() {
       customAmountInput?.classList.remove('error');
       hideValidationError();
       updateDonateButton();
-      updateImpactMessage();
     });
   });
 
@@ -49,7 +39,6 @@ document.addEventListener('DOMContentLoaded', function() {
         hideValidationError();
       }
       updateDonateButton();
-      updateImpactMessage();
     });
 
     customAmountInput.addEventListener('blur', function() {
@@ -93,18 +82,6 @@ document.addEventListener('DOMContentLoaded', function() {
     donateButton.textContent = `Donate $${labelAmount} Now`;
   }
 
-  function updateImpactMessage() {
-    if (!impactMessage || !impactDescription) return;
-    const amount = currentAmount();
-    if (amount > 0) {
-      impactMessage.style.display = 'block';
-      impactDescription.textContent =
-        impactMessages[amount] ||
-        "Supports our mission to empower communities with cutting-edge environmental monitoring and data-driven advocacy.";
-    } else {
-      impactMessage.style.display = 'none';
-    }
-  }
 
 
   function validateForm() {
