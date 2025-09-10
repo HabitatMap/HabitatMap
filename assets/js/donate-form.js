@@ -2,14 +2,11 @@
 document.addEventListener('DOMContentLoaded', function() {
   const amountButtons = document.querySelectorAll('.donate-form-amount-button');
   const customAmountInput = document.getElementById('custom-amount');
-  const frequencyButtons = document.querySelectorAll('.donate-form-frequency-button');
   const donateButton = document.getElementById('donate-button');
   const impactMessage = document.getElementById('impact-message');
-  const monthlyBenefits = document.getElementById('monthly-benefits');
   const impactDescription = document.getElementById('impact-description');
 
   let selectedAmount = 50;
-  let selectedFrequency = 'one-time';
 
   const impactMessages = {
     25: "Provides air quality monitoring data for 1 household for 3 months",
@@ -23,7 +20,6 @@ document.addEventListener('DOMContentLoaded', function() {
     amountButtons[1].classList.add('donate-form-amount-active'); // $50 button
   }
   updateImpactMessage();
-  updateMonthlyDisplay();
   updateDonateButton();
 
   // Amount button handlers
@@ -68,16 +64,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-  // Frequency button handlers
-  frequencyButtons.forEach(button => {
-    button.addEventListener('click', function() {
-      frequencyButtons.forEach(btn => btn.classList.remove('donate-form-frequency-active'));
-      this.classList.add('donate-form-frequency-active');
-      selectedFrequency = this.dataset.frequency;
-      updateDonateButton();
-      updateMonthlyDisplay();
-    });
-  });
 
   // Donate button click handler
   if (donateButton) {
@@ -103,9 +89,8 @@ document.addEventListener('DOMContentLoaded', function() {
   function updateDonateButton() {
     if (!donateButton) return;
     const amount = currentAmount();
-    const suffix = selectedFrequency === 'monthly' ? '/month' : '';
     const labelAmount = amount >= 1 ? amount.toFixed(2).replace(/\.00$/, '') : selectedAmount;
-    donateButton.textContent = `Donate $${labelAmount}${suffix} Now`;
+    donateButton.textContent = `Donate $${labelAmount} Now`;
   }
 
   function updateImpactMessage() {
@@ -121,17 +106,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   }
 
-  function updateMonthlyDisplay() {
-    if (!monthlyBenefits) return;
-    const monthly = selectedFrequency === 'monthly';
-    monthlyBenefits.style.display = monthly ? 'block' : 'none';
-
-    // show/hide "/mo" badges on preset buttons
-    amountButtons.forEach(btn => {
-      const tag = btn.querySelector('.donate-form-amount-monthly');
-      if (tag) tag.style.display = monthly ? 'inline' : 'none';
-    });
-  }
 
   function validateForm() {
     const amount = currentAmount();

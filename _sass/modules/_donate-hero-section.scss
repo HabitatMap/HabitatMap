@@ -70,25 +70,25 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
-  color: #ffffff;
+  background: linear-gradient(135deg, #ffe651 0%, #ffd700 100%);
+  color: #111827;
   font-family: "Moderat-Bold", system-ui, sans-serif;
   font-weight: 700;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   line-height: 1.75rem;
-  padding: 1.25rem 2.5rem;
+  padding: 1rem 2rem;
   border-radius: 0.5rem;
   text-decoration: none;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 14px rgba(34, 197, 94, 0.3);
+  box-shadow: 0 4px 14px rgba(255, 230, 81, 0.3);
   border: none;
   cursor: pointer;
 
   &:hover {
     transform: translateY(-2px) scale(1.05);
-    box-shadow: 0 8px 25px rgba(34, 197, 94, 0.4);
-    background: linear-gradient(135deg, #16a34a 0%, #15803d 100%);
-    color: #ffffff;
+    box-shadow: 0 8px 25px rgba(255, 230, 81, 0.4);
+    background: linear-gradient(135deg, #ffd700 0%, #ffcc02 100%);
+    color: #111827;
     text-decoration: none;
   }
 
@@ -97,8 +97,8 @@
   }
 
   @media (min-width: 768px) {
-    font-size: 1.5rem;
-    padding: 1.5rem 3rem;
+    font-size: 1.25rem;
+    padding: 1.25rem 2.5rem;
   }
 }
 
