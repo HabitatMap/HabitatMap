@@ -11,6 +11,7 @@
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
+  transform: scale(1);
 
   &.scrolled {
     padding: 2rem 1rem;
@@ -20,11 +21,16 @@
     margin-left: 0;
     margin-right: 0;
     border-radius: 1rem;
-    max-width: 80rem;
+    max-width: 100rem;
     margin-left: auto;
     margin-right: auto;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-    transform: translateY(-10px);
+    transform: translateY(-10px) scale(0.95);
+  }
+
+  &.scroll-start {
+    transform: scale(1.05);
+    width: 100vw;
   }
 
   @media (min-width: 768px) {
@@ -63,9 +69,15 @@
   position: relative;
   z-index: 10;
   transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(0);
 
   .scrolled & {
-    max-width: 100%;
+    max-width: 120rem;
+    transform: translateY(-5px);
+  }
+
+  .scroll-start & {
+    transform: translateY(10px);
   }
 }
 
@@ -222,6 +234,32 @@
   }
   50% {
     opacity: 0.5;
+  }
+}
+
+@keyframes scrollExpand {
+  0% {
+    transform: scale(1.05) translateY(0);
+    width: 100vw;
+  }
+  50% {
+    transform: scale(1.02) translateY(-5px);
+    width: 90vw;
+  }
+  100% {
+    transform: scale(0.95) translateY(-10px);
+    width: 100%;
+  }
+}
+
+@keyframes cardStagger {
+  0% {
+    transform: translateY(20px) scale(0.95);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(-5px) scale(1.02);
+    opacity: 1;
   }
 }
 
