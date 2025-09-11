@@ -107,7 +107,20 @@ og_type: website
     "itemListElement": [
       {
         "@type": "Product",
-        "name": "AirBeam3"
+        "name": "AirBeam3",
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "USD",
+          "price": "199.00",
+          "availability": "https://schema.org/InStock"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "bestRating": "5",
+          "worstRating": "1",
+          "ratingCount": "127"
+        }
       }
     ]
   },
