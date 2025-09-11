@@ -98,55 +98,7 @@
   }
 }
 
-// Features Section
-.features-section {
-  padding: 4rem 2rem;
-  background-color: #ffffff;
-
-  .features-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1.5rem;
-  }
-
-  .feature-card {
-    background: white;
-    border-radius: 12px;
-    padding: 1.5rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    border: 1px solid #f3f4f6;
-    transition: box-shadow 0.3s ease;
-
-    .feature-icon {
-      width: 48px;
-      height: 48px;
-      background: #dcfce7;
-      border-radius: 8px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0 auto 1rem;
-
-      svg {
-        color: #1ea73f;
-      }
-    }
-
-    h3 {
-      font-size: 1.125rem;
-      font-weight: 600;
-      color: #111827;
-      margin-bottom: 0.5rem;
-    }
-
-    p {
-      color: #6b7280;
-      font-size: 0.875rem;
-      line-height: 1.5;
-    }
-  }
-}
+// Features Section styles moved to _features-section.scss for better organization
 
 // Videos Section
 .videos-section {
