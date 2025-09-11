@@ -195,7 +195,9 @@ og_type: website
   "category": "Environmental Monitoring Equipment",
   "productID": "airbeam-3",
   "brand": {
-    "@id": "{{ site.url }}/#organization"
+    "@type": "Organization",
+    "@id": "{{ site.url }}/#organization",
+    "name": "HabitatMap"
   },
   "manufacturer": {
     "@id": "{{ site.url }}/#organization"
@@ -223,8 +225,67 @@ og_type: website
     "hasMerchantReturnPolicy": {
       "@type": "MerchantReturnPolicy",
       "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
-      "merchantReturnDays": 30
-    }
+      "merchantReturnDays": 30,
+      "returnMethod": "https://schema.org/ReturnByMail",
+      "returnFees": "https://schema.org/ReturnShippingFees",
+      "applicableCountry": "US"
+    },
+    "shippingDetails": [
+      {
+        "@type": "OfferShippingDetails",
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": "10.00",
+          "currency": "USD"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 1,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 3,
+            "maxValue": 7,
+            "unitCode": "DAY"
+          }
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "US"
+        }
+      },
+      {
+        "@type": "OfferShippingDetails",
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": "35.00",
+          "currency": "USD"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 1,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 7,
+            "maxValue": 21,
+            "unitCode": "DAY"
+          }
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": ["CA", "EU", "AU"]
+        }
+      }
+    ]
   },
   "aggregateRating": {
     "@type": "AggregateRating",
@@ -309,12 +370,6 @@ og_type: website
     }{% unless forloop.last %},{% endunless %}
     {% endfor %}
   ],
-  "hasEnergyConsumptionDetails": {
-    "@type": "EnergyConsumptionDetails",
-    "energyEfficiencyScaleMin": "A",
-    "energyEfficiencyScaleMax": "G",
-    "hasEnergyEfficiencyCategory": "A"
-  },
   "keywords": [
     "air quality monitor",
     "air pollution sensor",

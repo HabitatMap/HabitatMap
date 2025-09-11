@@ -280,7 +280,8 @@ hasMerchantReturnPolicy:
           "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
           "merchantReturnDays": 30,
           "returnMethod": "https://schema.org/ReturnByMail",
-          "returnFees": "https://schema.org/ReturnShippingFees"
+          "returnFees": "https://schema.org/ReturnShippingFees",
+          "applicableCountry": "US"
         },
         "shippingDetails": [
           {
@@ -488,7 +489,8 @@ hasMerchantReturnPolicy:
           "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
           "merchantReturnDays": 30,
           "returnMethod": "https://schema.org/ReturnByMail",
-          "returnFees": "https://schema.org/ReturnShippingFees"
+          "returnFees": "https://schema.org/ReturnShippingFees",
+          "applicableCountry": "US"
         },
         "shippingDetails": [
           {
