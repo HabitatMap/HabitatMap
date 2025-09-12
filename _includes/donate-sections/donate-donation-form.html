@@ -11,46 +11,6 @@
 
     <div class="donate-form-card">
       <div class="donate-form-card-content">
-
-        <!-- Amount Selection -->
-        <div class="donate-form-amount-section">
-          <div class="donate-form-amount-grid">
-            <button class="donate-form-amount-button" data-amount="25">
-              <span class="donate-form-amount-value">$25</span>
-            </button>
-            <button class="donate-form-amount-button donate-form-amount-active" data-amount="50">
-              <span class="donate-form-amount-value">$50</span>
-            </button>
-            <button class="donate-form-amount-button" data-amount="100">
-              <span class="donate-form-amount-value">$100</span>
-            </button>
-            <button class="donate-form-amount-button" data-amount="250">
-              <span class="donate-form-amount-value">$250</span>
-            </button>
-          </div>
-
-          <div class="donate-form-custom-amount">
-            <input
-              type="number"
-              id="custom-amount"
-              class="donate-form-custom-input"
-              placeholder="Enter custom amount ($)"
-              min="1"
-            />
-          </div>
-        </div>
-
-
-
-        <!-- PayPal Notice -->
-        <div class="donate-form-paypal-notice">
-          <div class="donate-form-paypal-content">
-            <div class="donate-form-paypal-info">
-              <p>You'll be redirected to PayPal to complete your secure donation.</p>
-            </div>
-          </div>
-        </div>
-
         <!-- Trust Indicators -->
         <div class="donate-form-trust-indicators">
           <div class="donate-form-trust-item">
@@ -70,8 +30,20 @@
 
         <!-- Donate Button -->
         <button class="donate-form-submit-button" id="donate-button">
-          Donate $50 Now
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+          </svg>
+          Donate Now
         </button>
+
+        <!-- PayPal Notice -->
+        <div class="donate-form-paypal-notice">
+          <div class="donate-form-paypal-content">
+            <div class="donate-form-paypal-info">
+              <p>You'll be redirected to PayPal to complete your secure donation.</p>
+            </div>
+          </div>
+        </div>
 
         <!-- Mission Statement -->
         <div class="donate-form-mission-statement">
@@ -84,6 +56,3 @@
     </div>
   </div>
 </section>
-
-<!-- PayPal Donate SDK -->
-<script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
