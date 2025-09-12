@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const donateButton = document.getElementById('donate-button');
 
   let selectedAmount = 50;
-
+  let paypalButton = null;
 
   // Set initial state
   if (amountButtons[1]) {
@@ -58,8 +58,11 @@ document.addEventListener('DOMContentLoaded', function() {
   if (donateButton) {
     donateButton.addEventListener('click', function(e) {
       e.preventDefault();
+      console.log('Donate button clicked');
       handlePayPalDonation();
     });
+  } else {
+    console.error('Donate button not found!');
   }
 
   // ------ Helpers ------
@@ -130,24 +133,82 @@ document.addEventListener('DOMContentLoaded', function() {
     setTimeout(() => successDiv.remove(), 5000);
   }
 
-  // ------ PayPal integration ------
+  // ------ PayPal Donate SDK with Custom Button ------
   function handlePayPalDonation() {
-    if (!validateForm()) return;
+    console.log('PayPal donation called with custom button');
 
-    const amount = currentAmount();
-    const isMonthly = selectedFrequency === 'monthly';
-
-    console.log('PayPal donation attempt:', { amount, isMonthly });
-
-    // Use direct URL method (more reliable)
-    let paypalUrl = `https://www.paypal.com/donate/?hosted_button_id=FSZYMS5UZS3KS&currency_code=USD`;
-
-    // Add amount for one-time donations
-    if (!isMonthly) {
-      paypalUrl += `&amount=${amount}`;
+    if (!validateForm()) {
+      console.log('Form validation failed');
+      return;
     }
 
-    console.log('Opening PayPal URL:', paypalUrl);
-    window.open(paypalUrl, '_blank');
+    const amount = currentAmount();
+    console.log('Current amount:', amount);
+
+    // Check if PayPal Donate SDK is loaded
+    if (typeof PayPal === 'undefined') {
+      console.error('PayPal Donate SDK not loaded, using fallback method');
+      // Fallback to hosted button without amount pre-fill
+      const paypalUrl = `https://www.paypal.com/donate/?hosted_button_id=FSZYMS5UZS3KS&currency_code=USD`;
+      window.open(paypalUrl, '_blank');
+      return;
+    }
+
+    // Create a hidden container for PayPal button
+    let hiddenContainer = document.getElementById('hidden-paypal-container');
+    if (!hiddenContainer) {
+      hiddenContainer = document.createElement('div');
+      hiddenContainer.id = 'hidden-paypal-container';
+      hiddenContainer.style.display = 'none';
+      document.body.appendChild(hiddenContainer);
+    }
+
+    // Clear any existing PayPal button
+    hiddenContainer.innerHTML = '';
+
+    try {
+      // Create PayPal Donate button with amount pre-filled (hidden)
+      paypalButton = PayPal.Donation.Button({
+        env: 'production', // Using production environment
+        hosted_button_id: 'FSZYMS5UZS3KS', // Your existing hosted button ID
+        amount: amount.toFixed(2), // This pre-fills the amount!
+        currency_code: 'USD',
+        item_name: 'HabitatMap Environmental Justice Donation',
+        image: {
+          src: 'https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif',
+          title: 'PayPal - The safer, easier way to pay online!',
+          alt: 'Donate with PayPal button'
+        },
+        onComplete: function (params) {
+          console.log('Donation completed:', params);
+          showSuccessMessage('Thank you for your donation! Your contribution helps support environmental justice.');
+        },
+        onError: function (err) {
+          console.error('PayPal donation error:', err);
+          alert('There was an error processing your donation. Please try again.');
+        }
+      }).render('#hidden-paypal-container');
+
+      // Simulate click on the hidden PayPal button
+      setTimeout(() => {
+        const paypalButtonElement = hiddenContainer.querySelector('input[type="image"]');
+        if (paypalButtonElement) {
+          console.log('Triggering PayPal donation with amount:', amount);
+          paypalButtonElement.click();
+        } else {
+          console.error('PayPal button not found, using fallback');
+          const paypalUrl = `https://www.paypal.com/donate/?hosted_button_id=FSZYMS5UZS3KS&currency_code=USD`;
+          window.open(paypalUrl, '_blank');
+        }
+      }, 100);
+
+      console.log('PayPal Donate button created successfully with amount:', amount);
+
+    } catch (error) {
+      console.error('Error creating PayPal Donate button:', error);
+      // Fallback to URL method
+      const paypalUrl = `https://www.paypal.com/donate/?hosted_button_id=FSZYMS5UZS3KS&currency_code=USD`;
+      window.open(paypalUrl, '_blank');
+    }
   }
 });

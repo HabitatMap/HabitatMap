@@ -227,3 +227,20 @@
     }
   }
 }
+
+// Buy It Now specific responsive styles
+@media (max-width: 768px) {
+  .features-section {
+    .features-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .features-section {
+    .features-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+}
