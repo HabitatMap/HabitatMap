@@ -1,7 +1,8 @@
 // Donation Form Section Styles
 .donate-form-section {
   padding: 4rem 1rem;
-  background: linear-gradient(to bottom, #ffffff 0%, rgba(249, 250, 251, 0.2) 100%);
+  background: #ffffff;
+  position: relative;
 
   @media (min-width: 768px) {
     padding: 6rem 2rem;
@@ -23,6 +24,28 @@
 
   @media (min-width: 768px) {
     margin-bottom: 4rem;
+  }
+}
+
+// Badge
+.donate-form-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #16a34a;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  font-family: "Moderat-Medium", system-ui, sans-serif;
+  font-weight: 600;
+  font-size: 0.875rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 4px rgba(34, 197, 94, 0.2);
+  animation: fadeInUp 0.6s ease;
+
+  svg {
+    width: 1rem;
+    height: 1rem;
   }
 }
 
@@ -50,21 +73,99 @@
 }
 
 .donate-form-card {
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(229, 231, 235, 0.8);
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
   border-radius: 1rem;
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   overflow: hidden;
-  padding: 2rem;
+  padding: 2.5rem;
 
   @media (min-width: 768px) {
-    padding: 2rem;
+    padding: 3rem;
   }
 }
 
 .donate-form-card-content {
   // Remove padding since it's now on the card itself
+}
+
+// Impact Statement
+.donate-form-impact {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.75rem;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  animation: fadeInUp 0.6s ease 0.2s both;
+
+  @media (min-width: 768px) {
+    padding: 2.5rem;
+  }
+}
+
+.donate-form-impact-icon {
+  width: 3rem;
+  height: 3rem;
+  background: #16a34a;
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 2px 4px rgba(34, 197, 94, 0.2);
+
+  svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    color: white;
+  }
+}
+
+.donate-form-impact-text {
+  flex: 1;
+
+  h3 {
+    font-family: "Moderat-Bold", system-ui, sans-serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: #111827;
+    margin: 0 0 0.5rem 0;
+    line-height: 1.3;
+
+    @media (min-width: 768px) {
+      font-size: 1.5rem;
+    }
+  }
+
+  p {
+    font-family: "Moderat-Regular", system-ui, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #6b7280;
+    margin: 0;
+
+    @media (min-width: 768px) {
+      font-size: 1.125rem;
+    }
+  }
+}
+
+// Button Container
+.donate-form-button-container {
+  text-align: center;
+  margin-bottom: 2rem;
+  animation: fadeInUp 0.6s ease 0.4s both;
+}
+
+.donate-form-button-note {
+  font-family: "Moderat-Regular", system-ui, sans-serif;
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin: 1rem 0 0 0;
+  font-style: italic;
 }
 
 // Frequency Selection
@@ -430,37 +531,77 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
+  gap: 1.5rem;
   margin-bottom: 2rem;
+  animation: fadeInUp 0.6s ease 0.6s both;
 
   @media (min-width: 768px) {
-    gap: 3rem;
+    gap: 2.5rem;
   }
 }
 
 .donate-form-trust-item {
   display: flex;
+  flex-direction: column;
   align-items: center;
   gap: 0.5rem;
   font-family: "Moderat-Medium", system-ui, sans-serif;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   color: #6b7280;
+  text-align: center;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
 
-  svg {
-    width: 1.25rem;
-    height: 1.25rem;
+  &:hover {
+    background: rgba(34, 197, 94, 0.05);
     color: #16a34a;
   }
 
+  .trust-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    background: #16a34a;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(34, 197, 94, 0.2);
+
+    svg {
+      width: 1rem;
+      height: 1rem;
+      color: white;
+    }
+  }
+
+  span {
+    font-weight: 600;
+    line-height: 1.2;
+  }
+
   @media (min-width: 768px) {
-    font-size: 1rem;
+    font-size: 0.875rem;
+    flex-direction: row;
+    gap: 0.75rem;
+    padding: 1rem;
+
+    .trust-icon {
+      width: 2rem;
+      height: 2rem;
+
+      svg {
+        width: 0.875rem;
+        height: 0.875rem;
+      }
+    }
   }
 }
 
 // Submit Button
 .donate-form-submit-button {
   width: 100%;
-  background: linear-gradient(135deg, #16a34a 0%, #16a34a 100%);
+  background: #16a34a;
   color: #ffffff;
   font-family: "Moderat-Bold", system-ui, sans-serif;
   font-weight: 700;
@@ -470,42 +611,47 @@
   border-radius: 0.75rem;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 8px 25px rgba(34, 197, 94, 0.3);
-  margin-bottom: 2rem;
+  box-shadow: 0 4px 6px rgba(34, 197, 94, 0.2);
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.75rem;
 
-  svg {
-    width: 24px;
-    height: 24px;
-    transition: transform 0.3s ease;
-  }
-
   &:hover {
-    transform: translateY(-2px) scale(1.02);
-    box-shadow: 0 12px 35px rgba(34, 197, 94, 0.4);
-    background: linear-gradient(135deg, #16a34a 0%, #15803d 100%);
-
-    svg {
-      transform: rotate(15deg) scale(1.1);
-    }
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(34, 197, 94, 0.3);
+    background: #15803d;
   }
 
   &:active {
-    transform: translateY(0) scale(1);
+    transform: translateY(0);
   }
 
   @media (min-width: 768px) {
     font-size: 1.25rem;
-    padding: 1.75rem 2rem;
+    padding: 1.75rem 2.5rem;
+  }
+}
+
+.donate-button-text {
+  position: relative;
+  z-index: 1;
+}
+
+.donate-button-icon {
+  position: relative;
+  z-index: 1;
+  transition: transform 0.3s ease;
+
+  .donate-form-submit-button:hover & {
+    transform: translateX(2px);
   }
 }
 
 // Mission Statement
 .donate-form-mission-statement {
   text-align: center;
+  animation: fadeInUp 0.6s ease 0.8s both;
 
   p {
     font-family: "Moderat-Regular", system-ui, sans-serif;
@@ -513,9 +659,19 @@
     line-height: 1.6;
     color: #6b7280;
     margin: 0;
+    padding: 1.5rem;
+    background: rgba(248, 250, 252, 0.8);
+    border-radius: 0.75rem;
+    border: 1px solid rgba(226, 232, 240, 0.5);
+
+    strong {
+      color: #16a34a;
+      font-weight: 700;
+    }
 
     @media (min-width: 768px) {
       font-size: 1rem;
+      padding: 2rem;
     }
   }
 }
