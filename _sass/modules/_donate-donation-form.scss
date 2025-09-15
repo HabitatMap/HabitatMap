@@ -96,9 +96,7 @@
   border-radius: 0.75rem;
   padding: 2rem;
   margin-bottom: 2rem;
-  display: flex;
-  align-items: flex-start;
-  gap: 1rem;
+  text-align: center;
   animation: fadeInUp 0.6s ease 0.2s both;
 
   @media (min-width: 768px) {
@@ -106,27 +104,8 @@
   }
 }
 
-.donate-form-impact-icon {
-  width: 3rem;
-  height: 3rem;
-  background: #16a34a;
-  border-radius: 0.75rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  box-shadow: 0 2px 4px rgba(34, 197, 94, 0.2);
-
-  svg {
-    width: 1.5rem;
-    height: 1.5rem;
-    color: white;
-  }
-}
 
 .donate-form-impact-text {
-  flex: 1;
-
   h3 {
     font-family: "Moderat-Bold", system-ui, sans-serif;
     font-weight: 700;
