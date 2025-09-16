@@ -1,0 +1,190 @@
+// Donate Additional Giving Section Styles
+.donate-additional-section {
+  padding: 4rem 1rem;
+  background: #ffffff;
+
+  @media (min-width: 768px) {
+    padding: 6rem 2rem;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 8rem 2rem;
+  }
+}
+
+.donate-additional-container {
+  max-width: 96rem;
+  margin: 0 auto;
+}
+
+.donate-additional-title {
+  font-family: "Moderat-Bold", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  font-weight: 700;
+  font-size: clamp(1.75rem, 4vw, 3rem);
+  line-height: 1.2;
+  color: #111827;
+  text-align: center;
+  margin-bottom: 3rem;
+
+  @media (min-width: 768px) {
+    margin-bottom: 4rem;
+  }
+}
+
+.donate-additional-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2.5rem;
+  }
+
+  @media (min-width: 1024px) {
+    gap: 3rem;
+  }
+}
+
+.donate-additional-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    border-color: rgba(34, 197, 94, 0.3);
+  }
+}
+
+.donate-additional-card-header {
+  text-align: center;
+  padding: 2rem 1.5rem 1rem;
+  border-bottom: 1px solid #f3f4f6;
+
+  @media (min-width: 768px) {
+    padding: 2.5rem 2rem 1.5rem;
+  }
+}
+
+.donate-additional-icon {
+  width: 3rem;
+  height: 3rem;
+  color: #22c55e;
+  margin: 0 auto 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (min-width: 768px) {
+    width: 4rem;
+    height: 4rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.donate-additional-icon-svg {
+  width: 100%;
+  height: 100%;
+  stroke-width: 2;
+}
+
+.donate-additional-card-title {
+  font-family: "Moderat-Bold", system-ui, sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #111827;
+  margin: 0;
+
+  @media (min-width: 768px) {
+    font-size: 1.5rem;
+  }
+}
+
+.donate-additional-card-content {
+  padding: 1.5rem;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    padding: 2rem;
+  }
+}
+
+.donate-additional-card-description {
+  font-family: "Moderat-Regular", system-ui, sans-serif;
+  font-size: 1rem;
+  color: #6b7280;
+  margin: 0 0 1rem 0;
+  line-height: 1.6;
+
+  @media (min-width: 768px) {
+    font-size: 1.125rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.donate-additional-card-details {
+  font-family: "Moderat-Regular", system-ui, sans-serif;
+  font-size: 0.875rem;
+  color: #111827;
+  line-height: 1.6;
+  white-space: pre-line;
+
+  @media (min-width: 768px) {
+    font-size: 1rem;
+  }
+}
+
+.donate-additional-link {
+  color: #22c55e;
+  text-decoration: underline;
+  font-weight: 500;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: #16a34a;
+    text-decoration: none;
+  }
+
+  &:focus {
+    outline: 2px solid #22c55e;
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .donate-additional-section {
+    padding: 3rem 1rem;
+  }
+
+  .donate-additional-title {
+    margin-bottom: 2.5rem;
+  }
+
+  .donate-additional-grid {
+    gap: 1.5rem;
+  }
+
+  .donate-additional-card-header {
+    padding: 1.5rem 1rem 1rem;
+  }
+
+  .donate-additional-card-content {
+    padding: 1rem;
+  }
+
+  .donate-additional-card-description {
+    font-size: 0.875rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .donate-additional-card-details {
+    font-size: 0.75rem;
+  }
+}

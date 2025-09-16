@@ -1,6 +1,48 @@
 // Consultation Section
 .consultation-section {
   padding: 6rem 0;
+
+  &.buy-it-now-consultation {
+    padding: 4rem 2rem;
+    background-color: #f3f4f6;
+
+    .consultation-container {
+      max-width: 896px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 1.875rem;
+      font-weight: bold;
+      color: #111827;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.25rem;
+      color: #6b7280;
+      margin-bottom: 2rem;
+    }
+
+    .consultation-btn {
+      display: inline-flex;
+      align-items: center;
+      background: #059669;
+      color: white;
+      padding: 1rem 2.5rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 1.25rem;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+      svg {
+        margin-right: 0.75rem;
+      }
+    }
+  }
 }
 
 

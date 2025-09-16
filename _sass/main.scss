@@ -62,9 +62,12 @@
 @import "modules/_consultation";
 @import "modules/_faq";
 @import "modules/_new-faq";
+@import "modules/_faq-buy-it-now";
+@import "modules/_features-section";
 
 @import "modules/_global-movement";
 @import "modules/_hero";
+@import "modules/_hero-buy-it-now";
 @import "modules/_press";
 @import "modules/_product-comparison";
 @import "modules/_videos";
@@ -83,6 +86,15 @@
 @import "modules/_press-section";
 @import "modules/_testimonials-carousel";
 @import "modules/_user-stories-carousel";
+
+// Donate page sections
+@import "modules/_donate-hero-section";
+@import "modules/_donate-story-section";
+@import "modules/_donate-mission-section";
+@import "modules/_donate-donation-form";
+@import "modules/_donate-trust-section";
+@import "modules/_donate-social-proof-section";
+@import "modules/_donate-additional-giving-section";
 
 // Partials
 @import "partials/forms";

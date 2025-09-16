@@ -1,0 +1,125 @@
+// Hero Section - Buy It Now
+.hero-section {
+  position: relative;
+  min-height: 50vh;
+  overflow: hidden;
+  padding: 6rem 0;
+
+  .hero-background {
+    position: absolute;
+    inset: 0;
+    background-image: url('/assets/aircasting-1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @media (max-width: 768px) {
+      background-position: 30% center;
+    }
+  }
+
+  .hero-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+    }
+
+    .hero-text {
+      color: white;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      h1 {
+        font-size: 3.75rem;
+        font-weight: bold;
+        line-height: 1.1;
+        margin: 0;
+
+        .highlight {
+          color: #67e8f9;
+        }
+      }
+
+      p {
+        font-size: 1.5rem;
+        color: rgba(255, 255, 255, 0.9);
+        line-height: 1.6;
+        margin: 0;
+      }
+
+      .hero-ctas {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin-top: 1rem;
+
+        .btn-primary {
+          background: #1ea73f;
+          color: white;
+          border: none;
+          padding: 0.75rem 2rem;
+          font-size: 1.125rem;
+          font-weight: 600;
+          border-radius: 8px;
+          cursor: pointer;
+          transition: background-color 0.3s;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-secondary {
+          background: rgba(255, 255, 255, 0.1);
+          color: white;
+          border: 1px solid rgba(255, 255, 255, 0.3);
+          padding: 0.75rem 2rem;
+          font-size: 1.125rem;
+          font-weight: 600;
+          border-radius: 8px;
+          cursor: pointer;
+          transition: all 0.3s;
+          backdrop-filter: blur(4px);
+        }
+      }
+    }
+  }
+}
+
+// Responsive Design
+@media (max-width: 768px) {
+  .hero-section {
+    .hero-content {
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      .hero-text {
+        h1 {
+          font-size: 2.5rem;
+        }
+
+        p {
+          font-size: 1.25rem;
+        }
+
+        .hero-ctas {
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}

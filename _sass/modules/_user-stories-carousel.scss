@@ -329,30 +329,8 @@
     }
   }
 
-  @media (max-width: 767px) {
+  @media (max-width: 1024px) {
     display: none;
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
-    position: absolute;
-    left: -9999px;
-    top: -9999px;
-    width: 0;
-    height: 0;
-    overflow: hidden;
-  }
-
-  @media (max-width: 480px) {
-    display: none;
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
-    position: absolute;
-    left: -9999px;
-    top: -9999px;
-    width: 0;
-    height: 0;
-    overflow: hidden;
   }
 }
 
@@ -406,7 +384,7 @@
   }
 }
 
-// Responsive adjustments
+
 @media (max-width: 1023px) {
   .user-stories-grid {
     text-align: center;
