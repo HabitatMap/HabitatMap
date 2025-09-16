@@ -1,22 +1,49 @@
-// color
+// Base color palette
 $white: #ffffff;
+$black: #000000;
+
+// Gray scale (lightest to darkest)
+$gray-50: #f9fafb;
+$gray-100: #f3f4f6;
+$gray-200: #e5e7eb;
+$gray-300: #d1d5db;
+$gray-400: #9ca3af;
+$gray-500: #6b7280;
+$gray-600: #4b5563;
+$gray-700: #374151;
+$gray-800: #1f2937;
+$gray-900: #111827;
+
+// Legacy gray variables (for backward compatibility)
 $light: #f5f5f5;
+$gray: #818181;
+$gray-medium: #727272;
+$gray-dark: #474c55;
+
+// Brand colors
 $teal-very-light: #eff4f4;
 $teal-light: #e4eced;
 $teal: #33c4b2;
 $green: #1ea73f;
 $green-light: #bcf3c9;
-$red: #843c3c;
-$red-light: #f5b1b1;
 $cyan: #6abad2;
 $blue-light: #7fd8f7;
 $blue: #00b2ef;
 $blue-dark: #3c70b3;
 $blue-very-dark: #1a2679;
-$gray: #818181;
-$gray-medium: #727272;
-$gray-dark: #474c55;
 $yellow: #ffe651;
+
+// State colors
+$red: #843c3c;
+$red-light: #f5b1b1;
+$success-color: #16a34a;
+$success-light: #dcfce7;
+$error-color: #dc2626;
+$error-light: #fef2f2;
+$warning-color: #f59e0b;
+$warning-light: #fef3c7;
+$info-color: #0ea5e9;
+$info-light: #e0f2fe;
 
 $ac-brand: $blue;
 $hm-brand: $green;
@@ -26,24 +53,29 @@ $link-color: $blue;
 $link-hover-color: $blue-light;
 $cta-color: $yellow;
 
-// viewport breakpoints
+// Viewport breakpoints
 $large-desktop-min: 1920px;
-
 $desktop-min: 1366px;
-
 $desktop-mdpi-max: $desktop-min - 1px;
 $desktop-mdpi-min: 1280px;
-
 $small-desktop-max: $desktop-min - 1px;
 $small-desktop-min: 1025px;
-
 $tablet-max: $small-desktop-min - 1px;
 $tablet-min: 768px;
-
 $large-mobile-max: $tablet-min - 1px;
 $large-mobile-min: 480px;
-
 $small-mobile-max: $large-mobile-min - 1px;
+
+// Breakpoint map for easier access
+$breakpoints: (
+  'small-mobile': $large-mobile-min,
+  'large-mobile': $large-mobile-min,
+  'tablet': $tablet-min,
+  'small-desktop': $small-desktop-min,
+  'desktop': $desktop-min,
+  'desktop-mdpi': $desktop-mdpi-min,
+  'large-desktop': $large-desktop-min
+);
 
 // spacing
 $u-space-tiny: 0.5rem;
@@ -79,3 +111,41 @@ $button-padding: 0.8rem 1.2rem;
 
 $nav-font-size-desktop: $base-font-size1;
 $subnav-font-size-desktop: $base-font-size;
+
+// Z-index scale
+$z-dropdown: 1000;
+$z-sticky: 1020;
+$z-fixed: 1030;
+$z-modal-backdrop: 1040;
+$z-modal: 1050;
+$z-popover: 1060;
+$z-tooltip: 1070;
+
+// Border radius scale
+$border-radius-xs: 0.125rem;
+$border-radius-sm: 0.25rem;
+$border-radius: 0.375rem;
+$border-radius-md: 0.5rem;
+$border-radius-lg: 0.75rem;
+$border-radius-xl: 1rem;
+$border-radius-2xl: 1.5rem;
+$border-radius-full: 9999px;
+
+// Box shadow scale
+$shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+$shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+$shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+$shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+$shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+$shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+$shadow-inner: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+
+// Transition durations
+$transition-fast: 150ms;
+$transition-normal: 300ms;
+$transition-slow: 500ms;
+
+// Common transition timing functions
+$ease-out: cubic-bezier(0, 0, 0.2, 1);
+$ease-in: cubic-bezier(0.4, 0, 1, 1);
+$ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);

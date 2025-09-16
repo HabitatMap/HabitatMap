@@ -161,3 +161,146 @@
   margin-top: 50%;
   transform: translateY(-50%);
 }
+
+// Additional text color utilities
+.u--text-white {
+  color: $white;
+}
+
+.u--text-dark {
+  color: $gray-900;
+}
+
+.u--text-medium {
+  color: $gray-500;
+}
+
+.u--text-success {
+  color: $success-color;
+}
+
+.u--text-error {
+  color: $error-color;
+}
+
+.u--text-warning {
+  color: $warning-color;
+}
+
+// Background utilities for new colors
+.u--bg-gray-50 {
+  background-color: $gray-50;
+}
+
+.u--bg-gray-100 {
+  background-color: $gray-100;
+}
+
+.u--bg-success {
+  background-color: $success-color;
+}
+
+.u--bg-success-light {
+  background-color: $success-light;
+}
+
+.u--bg-error {
+  background-color: $error-color;
+}
+
+.u--bg-error-light {
+  background-color: $error-light;
+}
+
+// Border radius utilities
+.u--rounded-none {
+  border-radius: 0;
+}
+
+.u--rounded-sm {
+  border-radius: $border-radius-sm;
+}
+
+.u--rounded {
+  border-radius: $border-radius;
+}
+
+.u--rounded-md {
+  border-radius: $border-radius-md;
+}
+
+.u--rounded-lg {
+  border-radius: $border-radius-lg;
+}
+
+.u--rounded-xl {
+  border-radius: $border-radius-xl;
+}
+
+.u--rounded-full {
+  border-radius: $border-radius-full;
+}
+
+// Shadow utilities
+.u--shadow-sm {
+  box-shadow: $shadow-sm;
+}
+
+.u--shadow {
+  box-shadow: $shadow;
+}
+
+.u--shadow-md {
+  box-shadow: $shadow-md;
+}
+
+.u--shadow-lg {
+  box-shadow: $shadow-lg;
+}
+
+.u--shadow-xl {
+  box-shadow: $shadow-xl;
+}
+
+.u--shadow-none {
+  box-shadow: none;
+}
+
+// Transition utilities
+.u--transition {
+  transition: all $transition-normal $ease-in-out;
+}
+
+.u--transition-fast {
+  transition: all $transition-fast $ease-in-out;
+}
+
+.u--transition-slow {
+  transition: all $transition-slow $ease-in-out;
+}
+
+// Text utilities
+.u--text-truncate {
+  @include text-truncate;
+}
+
+.u--visually-hidden {
+  @include visually-hidden;
+}
+
+// Z-index utilities
+.u--z-dropdown {
+  z-index: $z-dropdown;
+}
+
+.u--z-sticky {
+  z-index: $z-sticky;
+}
+
+.u--z-fixed {
+  z-index: $z-fixed;
+}
+
+.u--z-modal {
+  z-index: $z-modal;
+}

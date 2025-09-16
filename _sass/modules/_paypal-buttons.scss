@@ -1,0 +1,44 @@
+// PayPal Donate Button Hover Effect
+.paypal-donate-form {
+  margin: $u-space-small 0;
+  display: block;
+
+  @include respond-to('tablet') {
+    margin: 1rem 0;
+  }
+}
+
+.paypal-button-container {
+  position: relative;
+  display: inline-block;
+  width: fit-content;
+  height: fit-content;
+}
+
+.paypal-button-default,
+.paypal-button-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity $transition-fast $ease-in-out;
+}
+
+.paypal-button-default {
+  position: relative;
+}
+
+.paypal-button-hover {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.paypal-button-container:hover .paypal-button-hover {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.paypal-button-container:hover .paypal-button-default {
+  opacity: 0;
+}
