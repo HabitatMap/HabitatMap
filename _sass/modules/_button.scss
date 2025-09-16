@@ -9,21 +9,6 @@ $ac-brand-transparent: transparentize($ac-brand, 0.4);
   height: $button-base-height;
   padding: $button-padding;
   text-align: center;
-  border-radius: $border-radius;
-  transition: all $transition-normal $ease-in-out;
-  cursor: pointer;
-  text-decoration: none;
-
-  @include focus-outline();
-
-  &:hover {
-    transform: translateY(-1px);
-    box-shadow: $shadow-sm;
-  }
-
-  &:active {
-    transform: translateY(0);
-  }
 }
 
 .button--hm {
@@ -44,7 +29,7 @@ $ac-brand-transparent: transparentize($ac-brand, 0.4);
 }
 
 .button--ac-about {
-  @include respond-to('tablet') {
+  @media screen and (min-width: $tablet-min) {
     margin-top: 1.6rem;
   }
 }

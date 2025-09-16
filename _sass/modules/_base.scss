@@ -15,23 +15,24 @@
   line-height: 1.6;
 
   // Ensure proper color contrast
-  color: $gray-900;
+  color: #111827;
 
   // Ensure proper background
-  background-color: $white;
+  background-color: #ffffff;
 }
 
 // Section styles
 .section {
-  @include section-spacing($u-space-big, $u-space-big);
+  padding-top: 6rem;
+  padding-bottom: 6rem;
 }
 
 .section-gray {
-  background-color: $gray-50;
+  background-color: #f9fafb;
 }
 
 .section-white {
-  background-color: $white;
+  background-color: #ffffff;
 }
 
 .section-teal {
@@ -39,19 +40,23 @@
 }
 
 .section-teal-gradient {
-  background: linear-gradient(to right, #0d9488, $green);
-  color: $white;
+  background: linear-gradient(to right, #0d9488, #1ea73f);
+  color: #ffffff;
 }
 
 .section-container {
-  @include container(72rem);
+  max-width: 72rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
 
   @media (min-width: 640px) {
-    padding-left: $u-space-small;
-    padding-right: $u-space-small;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 
-  @include respond-to('small-desktop') {
+  @media (min-width: 1024px) {
     padding-left: 2rem;
     padding-right: 2rem;
   }
@@ -61,13 +66,13 @@
 .card {
   overflow: hidden;
   border: none;
-  box-shadow: $shadow-sm;
-  transition: all $transition-normal $ease-in-out;
-  background-color: $white;
-  border-radius: $border-radius-md;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
 
   &:hover {
-    box-shadow: $shadow-md;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   }
 }
 
@@ -75,7 +80,7 @@
 .icon-container {
   width: 3rem;
   height: 3rem;
-  border-radius: $border-radius-full;
+  border-radius: 9999px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -86,25 +91,25 @@
 }
 
 .icon-container-gray {
-  background-color: $gray-500;
+  background-color: #6b7280;
 }
 
 .icon {
   height: 1.5rem;
   width: 1.5rem;
-  color: $white;
+  color: #ffffff;
 }
 
 // Section title styles
 .section-title {
-  font-family: $bold-font;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
   font-weight: 900;
   font-size: 2.25rem;
   line-height: 2.5rem;
-  color: $gray-900;
-  margin-bottom: $u-space-small;
+  color: #111827;
+  margin-bottom: 1.5rem;
 
-  @include respond-to('tablet') {
+  @media (min-width: 768px) {
     font-size: 3rem;
     line-height: 1;
   }
@@ -112,7 +117,7 @@
 
 // Brand utility
 .text-brand-green {
-  color: $green;
+  color: #1ea73f;
 }
 
 // Problem/Solution specific styles
@@ -145,9 +150,9 @@
   background-color: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-  border-radius: $border-radius-md;
+  border-radius: 0.5rem;
   padding: 1rem;
-  border: 1px solid $gray-200;
+  border: 1px solid #e5e7eb;
 }
 
 .solution-item {
@@ -156,25 +161,25 @@
 
 .problem-text,
 .solution-text {
-  font-size: $base-font-size1;
+  font-size: 1.125rem;
   line-height: 1.75rem;
-  color: $gray-800;
+  color: #1f2937;
   line-height: 1.625;
 }
 
 .text-emphasis {
-  color: $gray-700;
+  color: #374151;
 }
 
 .text-emphasis-green {
-  color: $green;
+  color: #1ea73f;
 }
 
 // Responsive spacing
 @media (max-width: 639px) {
   .section {
-    padding-top: $u-space-default;
-    padding-bottom: $u-space-default;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 }
 
@@ -190,10 +195,10 @@
 // High contrast mode support
 @media (prefers-contrast: high) {
   .text-gray-700 {
-    color: $black !important;
+    color: #000000 !important;
   }
 
   .text-gray-600 {
-    color: $black !important;
+    color: #000000 !important;
   }
 }

@@ -1,56 +1,25 @@
 @charset "utf-8";
 
-// 1. CONFIGURATION (order matters)
-@import "config/variables";    // Must come first
-@import "config/mixins";       // Must come after variables
+// Main SCSS file - imports all modules
 @import "config/defaults";
 @import "config/fonts";
-@import "config/normalize";
-@import "config/typography";
+@import "config/variables";
+@import "config/mixins";
 @import "config/header-theme";
 @import "config/utilities";
+@import "config/typography";
 @import "config/lazy";
+@import "config/normalize";
 
-// 2. BASE STYLES
+// Base modules
 @import "modules/base";
 
-// 3. LAYOUT COMPONENTS
-@import "modules/_header";
-@import "modules/_nav";
-@import "modules/_footer";
-
-// 4. UI COMPONENTS (alphabetical)
+// Individual module imports
 @import "modules/_anchor";
+@import "modules/_ac-intro";
 @import "modules/_animations";
+@import "modules/_arc-background";
 @import "modules/_badge-link";
-@import "modules/_button";
-@import "modules/_conversion-form";
-@import "modules/_discount-code";
-@import "modules/_download-links";
-@import "modules/_flipping-text";
-@import "modules/_get-started-modal";
-@import "modules/_grid";
-@import "modules/_highlights";
-@import "modules/_images";
-@import "modules/_list";
-@import "modules/_logo";
-@import "modules/_logos";
-@import "modules/_panel";
-@import "modules/_panel-separator";
-@import "modules/_quote";
-@import "modules/_read-more-button";
-@import "modules/_save-now";
-@import "modules/_search";
-@import "modules/_slider";
-@import "modules/_split";
-@import "modules/_stats";
-
-// 5. FORMS & INTERACTIVE
-@import "modules/_faq";
-@import "modules/_new-faq";
-@import "modules/_shopping-cart";
-
-// 6. BLOG COMPONENTS
 @import "modules/blog/_categories";
 @import "modules/blog/_featured-post";
 @import "modules/blog/_post-content";
@@ -59,19 +28,54 @@
 @import "modules/blog/_post-list";
 @import "modules/blog/_post-nav";
 @import "modules/blog/_post-view-toggle";
-
-// 7. PRODUCT & COMMERCE
-@import "modules/_shop-airbeam";
-@import "modules/_product-comparison";
-@import "modules/_faq-buy-it-now";
-@import "modules/_hero-buy-it-now";
+@import "modules/_button";
+@import "modules/_conversion-form";
+@import "modules/_discount-code";
+@import "modules/_download-links";
+@import "modules/_flipping-text";
+@import "modules/_footer";
 @import "modules/_for-teams";
 @import "modules/_get-consultation";
+@import "modules/_get-started-modal";
+@import "modules/_grid";
+@import "modules/_header";
+@import "modules/_highlights";
+@import "modules/_images";
+@import "modules/_logo";
+@import "modules/_logos";
+@import "modules/_list";
+@import "modules/_nav";
+@import "modules/_panel";
+@import "modules/_panel-separator";
+@import "modules/_press-article";
+@import "modules/_quote";
+@import "modules/_read-more-button";
+@import "modules/_save-now";
+@import "modules/_search";
+@import "modules/_shop-airbeam";
+@import "modules/_slider";
+@import "modules/_split";
+@import "modules/_stats";
+@import "modules/_testimonials";
+@import "modules/_testimonials-carousel";
+@import "modules/_shopping-cart";
 @import "modules/_consultation";
+@import "modules/_faq";
+@import "modules/_new-faq";
+@import "modules/_faq-buy-it-now";
+@import "modules/_features-section";
 
-// 8. GENERAL PAGE SECTIONS
-@import "modules/_hero-section";
+@import "modules/_global-movement";
 @import "modules/_hero";
+@import "modules/_hero-buy-it-now";
+@import "modules/_press";
+@import "modules/_product-comparison";
+@import "modules/_videos";
+@import "modules/_aircasting-apps-section";
+@import "modules/_404";
+
+// Section-specific modules
+@import "modules/_hero-section";
 @import "modules/_problem-solution";
 @import "modules/_features-section";
 @import "modules/_community-feature-cards";
@@ -80,15 +84,10 @@
 @import "modules/_educator-resources";
 @import "modules/_cta-section";
 @import "modules/_press-section";
-@import "modules/_press";
-@import "modules/_testimonials";
 @import "modules/_testimonials-carousel";
 @import "modules/_user-stories-carousel";
-@import "modules/_global-movement";
-@import "modules/_videos";
-@import "modules/_aircasting-apps-section";
 
-// 9. DONATE PAGE SECTIONS
+// Donate page sections
 @import "modules/_donate-hero-section";
 @import "modules/_donate-story-section";
 @import "modules/_donate-mission-section";
@@ -97,14 +96,50 @@
 @import "modules/_donate-social-proof-section";
 @import "modules/_donate-additional-giving-section";
 
-// 10. SPECIAL PAGES
-@import "modules/_404";
-@import "modules/_ac-intro";
-@import "modules/_press-article";
-@import "modules/_arc-background";
-
-// 11. PARTIALS & FORMS
+// Partials
 @import "partials/forms";
 
-// 12. PAYMENT & INTEGRATIONS
-@import "modules/_paypal-buttons";
+// PayPal Donate Button Hover Effect
+.paypal-donate-form {
+  margin: 1.5rem 0;
+  display: block;
+
+  @media screen and (max-width: 768px) {
+    margin: 1rem 0;
+  }
+}
+
+.paypal-button-container {
+  position: relative;
+  display: inline-block;
+  width: fit-content;
+  height: fit-content;
+}
+
+.paypal-button-default,
+.paypal-button-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.2s;
+}
+
+.paypal-button-default {
+  position: relative;
+}
+
+.paypal-button-hover {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.paypal-button-container:hover .paypal-button-hover {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.paypal-button-container:hover .paypal-button-default {
+  opacity: 0;
+}

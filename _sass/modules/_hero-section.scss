@@ -3,7 +3,7 @@
   position: relative;
   min-height: 50vh;
   overflow: hidden;
-  @include section-spacing($u-space-big, $u-space-big);
+  padding: 6rem 0;
 }
 
 // Hero Section Styles - Home Page Specific
@@ -34,11 +34,11 @@
   margin: 0;
   padding: 0;
 
-  @include respond-to('large-desktop') {
+  @media (min-width: 1400px) {
     left: 0;
   }
 
-  @media (max-width: $large-mobile-max) {
+  @media (max-width: 767px) {
     background-position: center center;
   }
 }
@@ -55,13 +55,13 @@
     rgba(0, 0, 0, 0.2) 50%,
     rgba(0, 0, 0, 0.05) 100%
   );
-  z-index: $z-dropdown;
+  z-index: 1;
 }
 
 .home-hero-section .hero-text-container {
   text-align: center;
   position: relative;
-  z-index: $z-dropdown;
+  z-index: 1;
   max-width: 36rem;
   padding: 2rem 1rem;
   width: 100%;
@@ -70,14 +70,14 @@
 
   @media (min-width: 640px) {
     text-align: left;
-    padding: $u-space-default 1rem;
+    padding: 3rem 1rem;
     margin-left: 2rem;
     margin-right: auto;
   }
 
-  @include respond-to('small-desktop') {
+  @media (min-width: 1024px) {
     text-align: left;
-    padding: $u-space-big 1rem;
+    padding: 4rem 1rem;
     margin-left: 12rem;
     margin-right: auto;
   }
