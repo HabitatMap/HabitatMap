@@ -1,4 +1,8 @@
 press_articles:
+  - date: 2025-09-11
+    link: https://www.nj.com/politics/2025/09/smoke-alarm.html
+    title: Smoke alarm
+    publication: Nj.com
   - date: 2025-07-30
     link: https://www.aqmd.gov/docs/default-source/aq-spec/field-evaluations/habitatmap---airbeam-mini---field-evaluation.pdf?sfvrsn=32266e7e_3
     title: Field Evaluation Report for AirBeam Mini
