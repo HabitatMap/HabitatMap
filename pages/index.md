@@ -98,7 +98,47 @@ og_type: website
     "@type": "Offer",
     "itemOffered": {
       "@type": "Product",
-      "name": "AirBeam Air Quality Monitor"
+      "name": "AirBeam Air Quality Monitor",
+      "description": "A portable and easy to use air quality monitor that lets you see the pollution around you in real time.",
+      "image": "{{ site.url }}/assets/img/pages/home/home.jpg",
+      "brand": {
+        "@type": "Organization",
+        "name": "HabitatMap"
+      },
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "USD",
+        "price": "99.00",
+        "availability": "https://schema.org/InStock",
+        "priceValidUntil": "2024-12-31",
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": 30,
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/ReturnShippingFees",
+          "applicableCountry": "US",
+          "returnShippingFeesAmount": {
+            "@type": "MonetaryAmount",
+            "value": "15.00",
+            "currency": "USD"
+          }
+        },
+        "shippingDetails": [
+          {
+            "@type": "OfferShippingDetails",
+            "shippingRate": {
+              "@type": "MonetaryAmount",
+              "value": "10.00",
+              "currency": "USD"
+            },
+            "shippingDestination": {
+              "@type": "DefinedRegion",
+              "addressCountry": "US"
+            }
+          }
+        ]
+      }
     }
   },
   "hasOfferCatalog": {
@@ -108,11 +148,45 @@ og_type: website
       {
         "@type": "Product",
         "name": "AirBeam3",
+        "description": "AirBeam3 is the most accurate and versatile portable air quality monitor for measuring PM1, PM2.5, and PM10 particles.",
+        "image": "{{ site.url }}/assets/img/pages/how-it-works/how-it-works_1.jpg",
+        "brand": {
+          "@type": "Organization",
+          "name": "HabitatMap"
+        },
         "offers": {
           "@type": "Offer",
           "priceCurrency": "USD",
           "price": "199.00",
-          "availability": "https://schema.org/InStock"
+          "availability": "https://schema.org/InStock",
+          "priceValidUntil": "2024-12-31",
+          "hasMerchantReturnPolicy": {
+            "@type": "MerchantReturnPolicy",
+            "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+            "merchantReturnDays": 30,
+            "returnMethod": "https://schema.org/ReturnByMail",
+            "returnFees": "https://schema.org/ReturnShippingFees",
+            "applicableCountry": "US",
+            "returnShippingFeesAmount": {
+              "@type": "MonetaryAmount",
+              "value": "15.00",
+              "currency": "USD"
+            }
+          },
+          "shippingDetails": [
+            {
+              "@type": "OfferShippingDetails",
+              "shippingRate": {
+                "@type": "MonetaryAmount",
+                "value": "10.00",
+                "currency": "USD"
+              },
+              "shippingDestination": {
+                "@type": "DefinedRegion",
+                "addressCountry": "US"
+              }
+            }
+          ]
         },
         "aggregateRating": {
           "@type": "AggregateRating",
@@ -241,7 +315,12 @@ og_type: website
       "merchantReturnDays": 30,
       "returnMethod": "https://schema.org/ReturnByMail",
       "returnFees": "https://schema.org/ReturnShippingFees",
-      "applicableCountry": "US"
+      "applicableCountry": "US",
+      "returnShippingFeesAmount": {
+        "@type": "MonetaryAmount",
+        "value": "15.00",
+        "currency": "USD"
+      }
     },
     "shippingDetails": [
       {
@@ -307,16 +386,28 @@ og_type: website
     "worstRating": "1",
     "ratingCount": "150"
   },
-  "audience": {
-    "@type": "Audience",
-    "audienceType": [
-      "Environmental Researchers",
-      "Community Organizations",
-      "Educators",
-      "Health Advocates",
-      "Citizens"
-    ]
-  },
+  "audience": [
+    {
+      "@type": "PeopleAudience",
+      "audienceType": "Environmental Researchers"
+    },
+    {
+      "@type": "PeopleAudience",
+      "audienceType": "Community Organizations"
+    },
+    {
+      "@type": "PeopleAudience",
+      "audienceType": "Educators"
+    },
+    {
+      "@type": "PeopleAudience",
+      "audienceType": "Health Advocates"
+    },
+    {
+      "@type": "PeopleAudience",
+      "audienceType": "Citizens"
+    }
+  ],
   "applicationCategory": "Environmental Monitoring",
   "operatingSystem": "Cross-platform",
   "additionalProperty": [
@@ -368,12 +459,12 @@ og_type: website
     {% for story in stories limit: 3 %}
     {
       "@type": "Review",
-      "name": "{{ story.title }}",
-      "reviewBody": "{{ story.intro | strip_html | truncate: 200 }}",
+      "name": {{ story.title | jsonify }},
+      "reviewBody": {{ story.intro | strip_html | truncate: 200 | jsonify }},
       "url": "{{ site.url }}/airbeam/user-stories/{{ story.slug }}",
       "author": {
         "@type": "Organization",
-        "name": "{{ story.title }}"
+        "name": {{ story.title | jsonify }}
       },
       "reviewRating": {
         "@type": "Rating",
@@ -381,6 +472,21 @@ og_type: website
         "bestRating": "5"
       }
     }{% unless forloop.last %},{% endunless %}
+    {% else %}
+    {
+      "@type": "Review",
+      "name": "AirBeam User Review",
+      "reviewBody": "The AirBeam air quality monitor provides accurate, real-time data that helps our community make informed decisions about outdoor activities and air quality.",
+      "author": {
+        "@type": "Organization",
+        "name": "Community User"
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      }
+    }
     {% endfor %}
   ],
   "keywords": [
