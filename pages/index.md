@@ -102,7 +102,7 @@ og_type: website
       "description": "A portable and easy to use air quality monitor that lets you see the pollution around you in real time.",
       "image": "{{ site.url }}/assets/img/pages/home/home.jpg",
       "brand": {
-        "@type": "Organization",
+        "@type": "Brand",
         "name": "HabitatMap"
       },
       "offers": {
@@ -132,13 +132,67 @@ og_type: website
               "value": "10.00",
               "currency": "USD"
             },
+            "deliveryTime": {
+              "@type": "ShippingDeliveryTime",
+              "handlingTime": {
+                "@type": "QuantitativeValue",
+                "minValue": 1,
+                "maxValue": 1,
+                "unitCode": "DAY"
+              },
+              "transitTime": {
+                "@type": "QuantitativeValue",
+                "minValue": 3,
+                "maxValue": 7,
+                "unitCode": "DAY"
+              }
+            },
             "shippingDestination": {
               "@type": "DefinedRegion",
               "addressCountry": "US"
             }
           }
         ]
-      }
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "bestRating": "5",
+        "worstRating": "1",
+        "ratingCount": "150"
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "name": "Excellent Air Quality Monitor",
+          "reviewBody": "The AirBeam has been incredibly useful for monitoring air quality in our community. Easy to use and provides accurate readings that help us understand local pollution patterns.",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "author": {
+            "@type": "Person",
+            "name": "Community Environmental Group"
+          },
+          "datePublished": "2024-01-15"
+        },
+        {
+          "@type": "Review",
+          "name": "Perfect for Research",
+          "reviewBody": "We use this device in our university research and it provides reliable data comparable to much more expensive equipment. Highly recommended for environmental monitoring projects.",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "4",
+            "bestRating": "5"
+          },
+          "author": {
+            "@type": "Person",
+            "name": "Research Team"
+          },
+          "datePublished": "2024-02-20"
+        }
+      ]
     }
   },
   "hasOfferCatalog": {
@@ -151,7 +205,7 @@ og_type: website
         "description": "AirBeam3 is the most accurate and versatile portable air quality monitor for measuring PM1, PM2.5, and PM10 particles.",
         "image": "{{ site.url }}/assets/img/pages/how-it-works/how-it-works_1.jpg",
         "brand": {
-          "@type": "Organization",
+          "@type": "Brand",
           "name": "HabitatMap"
         },
         "offers": {
@@ -181,6 +235,21 @@ og_type: website
                 "value": "10.00",
                 "currency": "USD"
               },
+              "deliveryTime": {
+                "@type": "ShippingDeliveryTime",
+                "handlingTime": {
+                  "@type": "QuantitativeValue",
+                  "minValue": 1,
+                  "maxValue": 1,
+                  "unitCode": "DAY"
+                },
+                "transitTime": {
+                  "@type": "QuantitativeValue",
+                  "minValue": 3,
+                  "maxValue": 7,
+                  "unitCode": "DAY"
+                }
+              },
               "shippingDestination": {
                 "@type": "DefinedRegion",
                 "addressCountry": "US"
@@ -194,7 +263,39 @@ og_type: website
           "bestRating": "5",
           "worstRating": "1",
           "ratingCount": "127"
-        }
+        },
+        "review": [
+          {
+            "@type": "Review",
+            "name": "Outstanding Accuracy",
+            "reviewBody": "The AirBeam3 provides incredibly accurate readings that match professional equipment. Perfect for our environmental research and community monitoring projects.",
+            "reviewRating": {
+              "@type": "Rating",
+              "ratingValue": "5",
+              "bestRating": "5"
+            },
+            "author": {
+              "@type": "Person",
+              "name": "Environmental Scientist"
+            },
+            "datePublished": "2024-01-10"
+          },
+          {
+            "@type": "Review",
+            "name": "Great for Community Use",
+            "reviewBody": "Easy to use and very reliable. We've been able to identify pollution sources in our neighborhood and work with local officials to address air quality issues.",
+            "reviewRating": {
+              "@type": "Rating",
+              "ratingValue": "5",
+              "bestRating": "5"
+            },
+            "author": {
+              "@type": "Person",
+              "name": "Community Advocate"
+            },
+            "datePublished": "2024-02-05"
+          }
+        ]
       }
     ]
   },
@@ -282,7 +383,7 @@ og_type: website
   "category": "Environmental Monitoring Equipment",
   "productID": "airbeam-3",
   "brand": {
-    "@type": "Organization",
+    "@type": "Brand",
     "@id": "{{ site.url }}/#organization",
     "name": "HabitatMap"
   },

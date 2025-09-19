@@ -194,7 +194,7 @@ hasMerchantReturnPolicy:
         "{{ site.url }}/assets/img/airbeam(new).jpg"
       ],
       "brand": {
-        "@type": "Organization",
+        "@type": "Brand",
         "name": "HabitatMap"
       },
       "manufacturer": {
@@ -411,7 +411,7 @@ hasMerchantReturnPolicy:
         "{{ site.url }}/assets/img/pages/user-stories/userstories_ABM.jpg"
       ],
       "brand": {
-        "@type": "Organization",
+        "@type": "Brand",
         "name": "HabitatMap"
       },
       "manufacturer": {
