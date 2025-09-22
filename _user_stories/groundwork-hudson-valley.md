@@ -2,7 +2,7 @@
 layout: user_story
 title: Groundwork Hudson Valley
 featured: true
-image: /images/uploads/img_5488.jpeg
+image: /images/uploads/groundworkhudsonvalley.png
 intro: >
   Through workshops, educational materials, and grassroots campaigns, Groundwork
   Hudson Valley is breaking down a complex issue and demonstrating the power of
