@@ -31,7 +31,7 @@ Let’s break it down:
 
 AirBeam uses unit-based measurements - micrograms per cubic meter abbreviated as ug/m3 - rather than AQI numbers to measure particle pollution because [providing actual concentrations](https://www.envirotech-online.com/news/air-monitoring/6/ilm-publications/communicating-air-pollution-information-public/65192) offers precise data on the levels of particulate matter and allows for a more nuanced understanding of air quality and associated health risks.
 
-![](/images/uploads/aircasting.png)
+![](/images/uploads/aircasting_graph.png)
 
 The [AirCasting](https://www.habitatmap.org/aircasting) app and website use the [National Ambient Air Quality Standards](https://www.epa.gov/criteria-air-pollutants/naaqs-table) for PM2.5 exposure and the AQI to relate colors to measurements: 0-12 ug/m3 is green, 13-35 ug/m3 is yellow, 36-55 ug/m3 is orange, and 55-150 ug/m3 is red. (The relationship between colors and measurements can be changed inside the AirCasting app and website.) These ranges/colors roughly correspond to increased health risks as the concentration of PM2.5 in the environment rises.
 
