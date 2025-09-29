@@ -8,7 +8,7 @@ intro: >
   Hudson Valley is breaking down a complex issue and demonstrating the power of
   community science to drive change.
 type: Citizen Scientists
-order: 1
+order: 2
 ---
 [Groundwork Hudson Valley](https://www.groundworkhv.org/programs/community-adaptation/air-quality/) is using the AirBeam not just to measure air pollution but to turn data into action. In Southwest Yonkers—an area burdened by limited green space, excessive paved surfaces, and high levels of traffic and industrial activity—residents face significant air quality challenges. These environmental stressors contribute to elevated temperatures and increased pollution, affecting both public health and the local ecosystem. In response, Groundwork is equipping the community with the tools and knowledge to understand what's in the air they breathe. Through workshops, educational materials, and grassroots campaigns they’re breaking down a complex issue and demonstrating the power of community science to drive change.
 
