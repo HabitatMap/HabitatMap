@@ -6,21 +6,17 @@ date: 2025-09-29
 featured: false
 author: Kayla Pasacreta & Michael Heimbinder
 image: /images/uploads/aqi_mini-1200x675.png
-intro: ""
+intro: Have you ever opened the AirCasting map, seen those bright colored
+  circles scattered across the screen, and wondered what they really mean?
+  You're not alone. Those colors aren't just for show, they tell a powerful
+  story about the air you're breathing. Once you understand them, they can help
+  you make smarter decisions to protect your health.
 category: Education
 tag:
   - community science
   - instruments
   - health
 ---
-![]()
-
-Have you ever opened the AirCasting map, seen those bright colored circles scattered across the screen, and wondered what they really mean?
-
-You're not alone.
-
-Those colors aren't just for show, they tell a powerful story about the air you're breathing. Once you understand them, they can help you make smarter decisions to protect your health.
-
 ## The Air Quality Index (AQI): A Quick Guide
 
 Those colorful dots are based on the [Air Quality Index (AQI)](https://www.airnow.gov/aqi/aqi-basics/). The AQI has been around since the 1970s and was pioneered by the U.S. Environmental Protection Agency (USEPA). It was designed to represent health risks from common pollutants people encounter, like car exhaust or smog. [AQIs vary from country to country](https://aqihub.info/), using different indexes and color schemes. In the United States, the AQI runs from 0 to 500 and is divided into six color-coded categories that represent different levels of air quality. Higher AQI values correspond to higher air pollution measurements and more serious threats to human health. The USEPA AQI also offers guidance for sensitive groups, such as individuals with asthma and the elderly, recommending they adjust their daily activities based on how severe the air pollution is.\
