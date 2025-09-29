@@ -1,6 +1,6 @@
 ---
 layout: user_story
-title: Claiborne Corridor project
+title: Claiborne Corridor Project
 featured: true
 image: /images/uploads/claibornecorridoractivists.png
 intro: LSU Health New Orleans, with support from the US Environmental Protection
