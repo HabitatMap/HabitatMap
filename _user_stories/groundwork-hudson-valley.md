@@ -8,7 +8,7 @@ intro: >
   Hudson Valley is breaking down a complex issue and demonstrating the power of
   community science to drive change.
 type: Citizen Scientists
-order: 2
+order: 1
 ---
 [Groundwork Hudson Valley](https://www.groundworkhv.org/programs/community-adaptation/air-quality/) is using the AirBeam not just to measure air pollution but to turn data into action. In Southwest Yonkers—an area burdened by limited green space, excessive paved surfaces, and high levels of traffic and industrial activity—residents face significant air quality challenges. These environmental stressors contribute to elevated temperatures and increased pollution, affecting both public health and the local ecosystem. In response, Groundwork is equipping the community with the tools and knowledge to understand what's in the air they breathe. Through workshops, educational materials, and grassroots campaigns they’re breaking down a complex issue and demonstrating the power of community science to drive change.
 
@@ -22,7 +22,6 @@ Their work is making an impact. Now, community members are more vigilant about t
 
 Groundwork Hudson Valley’s program proves that with access to the right tools, anyone can advocate for their community. The AirBeam makes it possible for residents to measure air pollution, collect scientific data, and advocate for healthier neighborhoods.
 
-**\
-If you live in Yonkers and are interested in participating in Groundwork Hudson Valley’s air quality monitoring program, visit [this link](https://www.groundworkhv.org/programs/community-adaptation/air-quality/).**
+If you live in Yonkers and are interested in participating in Groundwork Hudson Valley’s air quality monitoring program, visit [this link](https://www.groundworkhv.org/programs/community-adaptation/air-quality/).
 
 <iframe width="752" height="424" src="https://www.youtube.com/embed/21T7NHm0d9Q?si=kyFsJ2C0mC08-OE_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
