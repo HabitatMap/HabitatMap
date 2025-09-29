@@ -15,8 +15,9 @@ tag:
   - community science
   - instruments
   - health
+  - education
 ---
-## The Air Quality Index (AQI): A Quick Guide
+## The Air Quality Index: A Quick Guide
 
 Those colorful dots are based on the [Air Quality Index (AQI)](https://www.airnow.gov/aqi/aqi-basics/). The AQI has been around since the 1970s and was pioneered by the U.S. Environmental Protection Agency (USEPA). It was designed to represent health risks from common pollutants people encounter, like car exhaust or smog. [AQIs vary from country to country](https://aqihub.info/), using different indexes and color schemes. In the United States, the AQI runs from 0 to 500 and is divided into six color-coded categories that represent different levels of air quality. Higher AQI values correspond to higher air pollution measurements and more serious threats to human health. The USEPA AQI also offers guidance for sensitive groups, such as individuals with asthma and the elderly, recommending they adjust their daily activities based on how severe the air pollution is.\
 \
@@ -26,7 +27,7 @@ Let’s break it down:
 
 ## What is the AirBeam Measuring?
 
-[AirBeam](https://www.habitatmap.org/airbeam/buy-it-now/) is a portable air quality monitor that tracks particle pollution, tiny airborne particles from sources such as fossil fuel power plants, wildfire smoke, truck exhaust, and cooking. These particles are small enough to reach deep into your lungs and even enter your bloodstream. Exposure to particle pollution can cause short-term health problems like headaches, pneumonia, and bronchitis. Long-term effects can include strokes, heart attacks, asthma, lung cancer, and infertility.
+[AirBeam](https://www.habitatmap.org/airbeam/buy-it-now/) is a portable air quality monitor that tracks particle pollution, tiny airborne particles from sources such as fossil fuel power plants, wildfire smoke, truck exhaust, and cooking. These particles are small enough to reach deep into your lungs and even enter your bloodstream. Exposure to particle pollution can cause short-term health problems like headaches, pneumonia, and bronchitis. Long-term effects include strokes, heart attacks, asthma, lung cancer, and infertility.
 
 AirBeam uses unit-based measurements - micrograms per cubic meter abbreviated as ug/m3 - rather than AQI numbers to measure particle pollution because [providing actual concentrations](https://www.envirotech-online.com/news/air-monitoring/6/ilm-publications/communicating-air-pollution-information-public/65192) offers precise data on the levels of particulate matter and allows for a more nuanced understanding of air quality and associated health risks.
 
@@ -69,7 +70,7 @@ With a quick glance at the air quality data, you can decide:
 
 * W﻿hether it's safe to go for a run
 * I﻿f your child should wear a mask today
-* W﻿here in your city in the air is the cleanest
+* W﻿here in your city the air is cleanest
 
 ## Empowering People, Not Just Scientists
 
