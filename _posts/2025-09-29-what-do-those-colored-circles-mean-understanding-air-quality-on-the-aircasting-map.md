@@ -2,7 +2,7 @@
 layout: post
 title: What Do Those Colored Dots Mean? Understanding The Air Quality Index.
 date: 2025-09-29
-featured: false
+featured: true
 author: Kayla Pasacreta & Michael Heimbinder
 image: /images/uploads/aircastingmapdots.png
 intro: Have you ever opened the AirCasting map, seen those brightly colored dots
