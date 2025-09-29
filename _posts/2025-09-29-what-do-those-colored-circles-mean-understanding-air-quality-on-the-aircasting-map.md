@@ -1,6 +1,6 @@
 ---
 layout: post
-title: What Do Those Colored Dots Mean? Understanding The Air Quality Index.
+title: What Do Those Colored Dots Mean? Understanding the Air Quality Index (AQI)
 date: 2025-09-29
 featured: true
 author: Kayla Pasacreta & Michael Heimbinder
