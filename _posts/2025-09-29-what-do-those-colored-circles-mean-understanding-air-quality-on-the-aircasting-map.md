@@ -5,7 +5,7 @@ title: What Do Those Colored Circles Mean? Understanding Air Quality on the
 date: 2025-09-29
 featured: false
 author: Kayla Pasacreta & Michael Heimbinder
-image: /images/uploads/aqi-guide.png
+image: /images/uploads/aqi_mini-1200x675.png
 intro: Have you ever opened the AirCasting map, seen those bright colored
   circles scattered across the screen, and wondered what they really mean? This
   article will break it down for you.
@@ -15,9 +15,7 @@ tag:
   - instruments
   - health
 ---
-![]()
-
-![]()
+![](/images/uploads/aqi_mini-1200x675.png)
 
 Have you ever opened the AirCasting map, seen those bright colored circles scattered across the screen, and wondered what they really mean?
 
