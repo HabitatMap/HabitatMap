@@ -6,7 +6,7 @@ date: 2025-09-29
 featured: false
 author: Kayla Pasacreta & Michael Heimbinder
 image: /images/uploads/aqi_mini-1200x675.png
-intro: Have you ever opened the AirCasting map, seen those bright colored
+intro: Have you ever opened the AirCasting map, seen those brightly colored
   circles scattered across the screen, and wondered what they really mean?
   You're not alone. Those colors aren't just for show, they tell a powerful
   story about the air you're breathing. Once you understand them, they can help
