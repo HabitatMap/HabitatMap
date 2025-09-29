@@ -6,9 +6,7 @@ date: 2025-09-29
 featured: false
 author: Kayla Pasacreta & Michael Heimbinder
 image: /images/uploads/aqi_mini-1200x675.png
-intro: Have you ever opened the AirCasting map, seen those bright colored
-  circles scattered across the screen, and wondered what they really mean? This
-  article will break it down for you.
+intro: ""
 category: Education
 tag:
   - community science
