@@ -3,9 +3,9 @@ layout: user_story
 title: UrbanBetter
 featured: true
 image: /images/uploads/urbanbetter.jpg
-intro: Through the Cityzens for Clean Air Campaign, UrbanBetter organized youth
+intro: "Through the Cityzens for Clean Air Campaign, UrbanBetter organized youth
   voices to build awareness and advocacy about the issue of air pollution in
-  African cities. I
+  African cities. "
 type: Citizen Scientists
 order: 1
 ---
