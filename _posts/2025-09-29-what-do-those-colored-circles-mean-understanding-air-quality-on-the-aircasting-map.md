@@ -1,16 +1,16 @@
 ---
 layout: post
-title: What Do Those Colored Circles Mean? Understanding Air Quality on the
+title: What Do Those Colored Dots Mean? Understanding Air Quality on the
   AirCasting Map
 date: 2025-09-29
 featured: false
 author: Kayla Pasacreta & Michael Heimbinder
-image: /images/uploads/aqi_mini-1200x675.png
-intro: Have you ever opened the AirCasting map, seen those brightly colored
-  circles scattered across the screen, and wondered what they really mean?
-  You're not alone. Those colors aren't just for show, they tell a powerful
-  story about the air you're breathing. Once you understand them, they can help
-  you make smarter decisions to protect your health.
+image: /images/uploads/aircastingmapdots.png
+intro: Have you ever opened the AirCasting map, seen those brightly colored dots
+  scattered across the screen, and wondered what they really mean? You're not
+  alone. Those colors aren't just for show, they tell a powerful story about the
+  air you're breathing. Once you understand them, they can help you make smarter
+  decisions to protect your health.
 category: Education
 tag:
   - community science
