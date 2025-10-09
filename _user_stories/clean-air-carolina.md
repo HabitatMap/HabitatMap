@@ -1,7 +1,7 @@
 ---
 layout: user_story
 title: CleanAIRE NC
-featured: true
+featured: false
 image: /images/uploads/cac_cropped.jpg
 intro: <a href="https://cleanairenc.org/">CleanAIRE NC</a>, a Charlotte-based
   non-profit, works to ensure cleaner air quality for all North Carolinians
