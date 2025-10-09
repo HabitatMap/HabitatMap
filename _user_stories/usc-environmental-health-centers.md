@@ -1,7 +1,7 @@
 ---
 layout: user_story
 title: USC Environmental Health Centers
-featured: true
+featured: false
 image: /images/uploads/uscehc_cropped.jpg
 intro: The Community Engagement Program on Health and the Environment (CEPHE) at
   <a href="https://www.instagram.com/uscehc">USC Environmental Health
