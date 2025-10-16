@@ -77,3 +77,17 @@ With a quick glance at the air quality data, you can decide:
 Understanding air quality isn't just for researchers or policymakers - it's for everyone. Clean air is a universal human right. Knowing what's in the air you’re breathing is the first step toward protecting yourself and advocating for healthier environments.
 
 [Get started with the AirBeam today.](https://www.habitatmap.org/airbeam/buy-it-now/)
+
+
+
+```
+<iframe width="315" height="560"
+src=https://www.youtube.com/embed/amjNUaoFYjk"
+title="YouTube video player"
+frameborder="0"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+allowfullscreen></iframe>
+
+HTMLCopy
+
+```
