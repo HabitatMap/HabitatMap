@@ -3,9 +3,9 @@ layout: user_story
 title: CAPA Strategies
 featured: true
 image: /images/uploads/img_2495-1-.jpeg
-intro: "CAPA and the City of Bloomingtons used AirBeams and temperature sensors
-  to capture neighborhood-level pollution and heat data while also analyzing how
-  climate change could affect future heat risks. "
+intro: "CAPA Strategies and the City of Bloomington, Indiana, used AirBeams and
+  temperature sensors to capture neighborhood-level pollution and heat data
+  while also analyzing how climate change could affect future heat risks. "
 type: Citizen Scientists
 order: 1
 ---
