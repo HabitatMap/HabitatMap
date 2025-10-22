@@ -10,7 +10,7 @@ intro: >
   translating the data into local languages and pairing it with powerful visuals
   of pollution to tell a story that couldn’t be ignored.
 type: Citizen Scientists
-order: 4
+order: 5
 ---
 Across communities in Nigeria, the Philippines, and Indonesia, residents living near incinerators often described the same grim reality: thick smoke in the air, a sharp chemical smell, and a constant feeling of being ignored. But without concrete data, their complaints were too often dismissed.
 
