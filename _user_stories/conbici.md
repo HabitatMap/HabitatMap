@@ -7,7 +7,7 @@ intro: "ConBici, the National Coordinating Body for the Defense of Bicycles, and
   Clean Cities launched the Cycling with Clean Air initiative to answer a
   critical question: “What’s in the air that cyclists breathe”?"
 type: Citizen Scientists
-order: 1
+order: 2
 ---
 [ConBici](https://conbici.org/), the National Coordinating Body for the Defense of Bicycles, and [Clean Cities](https://cleancitiescampaign.org/) launched the [Cycling with Clean Air](https://cyclingwithcleanair.conbici.org/) initiative to answer a critical question: “What’s in the air that cyclists breathe”? Designed as a community science campaign, the project trained volunteer cyclists to monitor air quality and understand its health impacts. Over more than three years, ConBici deployed AirBeam sensors in 18 Spanish cities, collecting over 14 million georeferenced measurements across 8,400 bicycle trips. The data revealed dangerously high levels of particulate matter pollution, especially during rush hour and near sensitive areas like schools. By documenting real-time exposure, the initiative aimed to pressure local authorities to take climate change seriously, adopt sustainable mobility plans, implement Low Emission Zones, and put public health at the center of urban policy.
 
