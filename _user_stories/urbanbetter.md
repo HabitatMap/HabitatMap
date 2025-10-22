@@ -7,7 +7,7 @@ intro: "Through the Cityzens for Clean Air Campaign, UrbanBetter organized youth
   voices to build awareness and advocacy about the issue of air pollution in
   African cities. "
 type: Citizen Scientists
-order: 2
+order: 3
 ---
 Through the [Cityzens for Clean Air Campaign](https://urbanbetter.science/archive/cityzens-for-clean-air/), [UrbanBetter](https://urbanbetter.science/) organised youth voices to build awareness and advocacy about the issue of air pollution in African cities. In Cape Town, Accra, and Lagos, young people trained as citizen scientists known as Run Leaders, who each designed a 5-10 km running route through areas with diverse socioeconomic conditions. Between July and September 2022, these runs brought together more than 200 community members and doubled as data collection efforts; with Run Leaders and co-runners gathering air quality data and using the evidence to advocate for healthier urban spaces.
 
