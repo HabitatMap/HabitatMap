@@ -7,7 +7,7 @@ intro: "CAPA Strategies and the City of Bloomington, Indiana used AirBeams and
   temperature sensors to capture neighborhood-level pollution and heat data
   while also analyzing how climate change could affect future heat risks. "
 type: Citizen Scientists
-order: 1
+order: 2
 ---
 In August 2024, [CAPA Strategies](https://www.capastrategies.com/) – an organization of researchers, planners, and data scientists that helps communities assess local hazards and identify adaptation strategies - partnered with volunteers in [Bloomington](https://www.capastrategies.com/bloomington-heat-projections), Indiana to better understand the city’s air. Using AirBeams and heat sensors, volunteers gathered data on fine particulate matter (PM2.5), which poses health risks, especially during hot summer days. The size and portability of [AirBeams](https://www.habitatmap.org/airbeam/buy-it-now/) made it possible to uncover pollution patterns that traditional government monitoring stations often miss. The project sought to capture neighborhood-level pollution and heat data while also analyzing how climate change could affect future heat risks. Using NASA’s downscaled climate projections, CAPA and the City of Bloomington modeled moderate extreme carbon scenarios to assess changes in extreme heat days, heat wave duration, and seasonal heat patterns. 
 
