@@ -155,6 +155,11 @@ press_articles:
     title: Who Gets to Breathe Clean Air in New Delhi?
     publication: New York Times
     link: https://www.nytimes.com/interactive/2020/12/17/world/asia/india-pollution-inequality.html
+  - date: 2020-11-05
+    link: https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2772536
+    title: Evaluation of Secondhand Smoke Exposure in New York City Public Housing
+      After Implementation of the 2018 Federal Smoke-Free Housing Policy
+    publication: JAMA Network
   - date: 2020-11-18
     title: Exploring Evaluation Variables for Low-Cost Particulate Matter Monitors
       to Assess Occupational Exposure
@@ -461,8 +466,3 @@ press_articles:
     link: https://well.blogs.nytimes.com/2013/06/03/microsampling-air-pollution/?_php=true&_type=blogs&_r=0
     publication: The New York Times
     title: Microsampling Air Pollution
-  - date: 2020-11-05
-    link: https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2772536
-    title: Evaluation of Secondhand Smoke Exposure in New York City Public Housing
-      After Implementation of the 2018 Federal Smoke-Free Housing Policy
-    publication: JAMA Network
