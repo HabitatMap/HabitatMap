@@ -421,3 +421,8 @@ press_articles:
     link: https://well.blogs.nytimes.com/2013/06/03/microsampling-air-pollution/?_php=true&_type=blogs&_r=0
     publication: The New York Times
     title: Microsampling Air Pollution
+  - date: 2019-10-28
+    title: Measuring Spatial and Temporal PM2.5 Variations in Sacramento,
+      California, Communities Using a Network of Low-Cost Sensors
+    link: https://www.mdpi.com/1424-8220/19/21/4701
+    publication: MDPI
