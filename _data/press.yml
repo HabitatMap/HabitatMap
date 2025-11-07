@@ -166,6 +166,11 @@ press_articles:
       correction
     link: https://www.sciencedirect.com/science/article/abs/pii/S1352231020302168?dgcid=coauthor
     publication: Atmospheric Environment
+  - date: 2020-05-11
+    title: Commuters’ Personal Exposure Assessment and Evaluation of Inhaled Dose to
+      Different Atmospheric Pollutants
+    link: https://www.mdpi.com/1660-4601/17/10/3357
+    publication: MDPI
   - date: 2020-05-07
     link: https://pmc.ncbi.nlm.nih.gov/articles/PMC7382637/
     title: "Biomedical REAl-Time Health Evaluation (BREATHE): toward an mHealth
@@ -436,8 +441,3 @@ press_articles:
     link: https://well.blogs.nytimes.com/2013/06/03/microsampling-air-pollution/?_php=true&_type=blogs&_r=0
     publication: The New York Times
     title: Microsampling Air Pollution
-  - date: 2020-05-11
-    title: Commuters’ Personal Exposure Assessment and Evaluation of Inhaled Dose to
-      Different Atmospheric Pollutants
-    link: https://www.mdpi.com/1660-4601/17/10/3357
-    publication: MDPI
