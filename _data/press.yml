@@ -128,6 +128,11 @@ press_articles:
     title: Measuring PM2.5 with Low-Cost Sensors
     publication: WRI Brasil
     link: https://wribrasil.org.br/pt/publicacoes/medindo-mp25-com-sensores-da-baixo-custo
+  - date: 2021-06-16
+    title: Laboratory Evaluation of Low-Cost Optical Particle Counters for
+      Environmental and Occupational Exposures
+    link: https://www.mdpi.com/1424-8220/21/12/4146
+    publication: MDPI
   - date: 2021-06-10
     link: https://www.mdpi.com/1424-8220/21/12/4039
     title: An Integrated Individual Environmental Exposure Assessment System for
@@ -456,8 +461,3 @@ press_articles:
     link: https://well.blogs.nytimes.com/2013/06/03/microsampling-air-pollution/?_php=true&_type=blogs&_r=0
     publication: The New York Times
     title: Microsampling Air Pollution
-  - date: 2021-06-16
-    title: Laboratory Evaluation of Low-Cost Optical Particle Counters for
-      Environmental and Occupational Exposures
-    link: https://www.mdpi.com/1424-8220/21/12/4146
-    publication: MDPI
