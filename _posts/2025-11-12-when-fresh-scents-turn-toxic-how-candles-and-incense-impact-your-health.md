@@ -18,7 +18,7 @@ That cozy candle glow or calming lavender scent might make your home feel cleane
 
 Not all candles are created equal. Most fall into two categories: paraffin, which is petroleum-based and prone to releasing volatile organic compounds (VOCs) like benzene and toluene, and natural alternatives made from soy, beeswax, or coconut, which generally burn cleaner but can still produce fine particulate matter (PM2.5). Fragrances and dyes in scented candles often contain synthetic chemicals, including allergens and potential hormone disruptors such as phthalates. When burned, these compounds can trigger headaches, asthma irritation, and even hormone disruption, with children, pets, and those with respiratory issues particularly vulnerable.
 
-When you think of air pollution, you probably imagine exhaust from traffic or hazy air from wildfires. But some of the most harmful air you breath[e might actually be inside your own home](https://www.epa.gov/indoor-air-quality-iaq/indoor-pollutants-and-sources).
+When you think of air pollution, you probably imagine exhaust from traffic or hazy air from wildfires. But some of the most harmful air you breathe [might actually be inside your own home](https://www.epa.gov/indoor-air-quality-iaq/indoor-pollutants-and-sources).
 
 According to the Environmental Protection Agency (EPA), indoor air can be two to five times more polluted than outdoor air. That’s because everyday household items—like gas stoves, candles, fireplaces, furniture, and paints—release gases and fine particles that accumulate in enclosed spaces. Over time, these pollutants can have[ lasting effects on your health.](https://www.niehs.nih.gov/health/topics/agents/indoor-air)
 
