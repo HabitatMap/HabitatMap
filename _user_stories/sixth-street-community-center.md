@@ -3,10 +3,11 @@ layout: user_story
 title: Sixth Street Community Center
 featured: true
 image: /images/uploads/unnamed-1.png
-intro: " As one Sixth Street Community Center member reflected, “The AirBeam
-  made it possible for residents to see what was in their air—and once they saw
-  it, they couldn’t ignore it. It turned invisible problems into visible
-  change.”"
+intro: "When the opportunity arose to apply for an EPA Environmental Justice
+  Problem Solving grant, Sixth Street Community Center saw a chance to tackle
+  one of the neighborhood’s most pressing issues—air quality—in an area pocked
+  with pollution sources, like the fossil fuel powered East River Power Station
+  and the FDR Drive. "
 type: Citizen Scientists
 order: 1
 ---
