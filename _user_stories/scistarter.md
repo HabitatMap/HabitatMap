@@ -9,7 +9,7 @@ intro: "Libraries have always been community hubs—accessible, trusted, and
   books, it could remove one of the biggest obstacles to community participation
   in science. "
 type: Citizen Scientists
-order: 1
+order: 2
 ---
 When [SciStarter](https://scistarter.org/)—a non-profit that brings together science, community, and researchers—first began exploring why people were interested in citizen science but not actually joining projects, they uncovered a common theme: access. People were browsing citizen science opportunities online but not participating. Guided by its mission to expand public participation in science, SciStarter analyzed website data and conducted over a hundred interviews with project leaders, volunteers, and researchers and discovered that a major barrier to involvement was the lack of access to necessary tools at home. Given their finding that even small barriers were enough to stop potential volunteers from participating in citizen science projects, the question became how to make participation easier so more people could easily engage in science. 
 
