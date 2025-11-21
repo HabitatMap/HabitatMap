@@ -10,7 +10,7 @@ offers:
     name: AirBeam3
     price: 199.00
     priceCurrency: USD
-    availability: https://schema.org/InStock
+    availability: https://schema.org/OutOfStock
     aggregateRating:
       - type: AggregateRating
         ratingValue: "5"
@@ -265,7 +265,7 @@ hasMerchantReturnPolicy:
         "price": "199.00",
         "priceValidUntil": "2025-12-31",
         "itemCondition": "https://schema.org/NewCondition",
-        "availability": "https://schema.org/InStock",
+        "availability": "https://schema.org/OutOfStock",
         "seller": {
           "@id": "{{ site.url }}/#organization"
         },
