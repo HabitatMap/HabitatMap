@@ -98,7 +98,6 @@
 
           <div class="product-cta">
             <div class="order-details-container">
-              <!-- Quantity will be managed in the cart -->
             </div>
 
             <div class="shop-airbeam__buttons-container">
@@ -128,7 +127,7 @@
         </div>
 
         <div class="product-card-content">
-          <div class="product-image">
+          <div class="product-image product-image--sold-out">
             <img
               data-src="/assets/img/airbeam-buy-it-now.jpg?nf_resize=fit&w=400"
               src="/assets/img/airbeam-buy-it-now.jpg?nf_resize=fit&w=100"
@@ -137,6 +136,9 @@
               loading="eager"
               fetchpriority="high"
             />
+            <div class="sold-out-overlay">
+              <span class="sold-out-text">Sold Out</span>
+            </div>
           </div>
 
           <div class="product-features">
@@ -193,17 +195,16 @@
 
           <div class="product-cta">
             <div class="order-details-container">
-              <!-- Quantity will be managed in the cart -->
             </div>
 
             <div class="shop-airbeam__buttons-container">
-              <button class="add-to-cart-btn" onclick="addToCart('airbeam3', 'AirBeam3', 199, '/assets/img/airbeam-buy-it-now.jpg')">
+              <button class="add-to-cart-btn add-to-cart-btn--disabled" disabled onclick="return false;">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 8px;">
                   <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
                   <line x1="3" y1="6" x2="21" y2="6"></line>
                   <path d="M16 10a4 4 0 0 1-8 0"></path>
                 </svg>
-                Add to Cart
+                Sold Out
               </button>
             </div>
 

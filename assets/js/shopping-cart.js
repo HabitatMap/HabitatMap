@@ -52,6 +52,11 @@ class ShoppingCart {
   }
 
   addItem(product, quantity) {
+    if (product.id === 'airbeam3') {
+      this.showNotification('AirBeam3 is currently sold out', 'error');
+      return;
+    }
+
     const existingItem = this.items.find(item =>
       item.id === product.id
     );
@@ -224,7 +229,13 @@ class ShoppingCart {
         const shippingSelect = document.getElementById('cart-shipping-options');
         const shippingOption = shippingSelect ? shippingSelect.value : 'domestic';
 
-        const cartItems = this.items.map(item => ({
+        const validItems = this.items.filter(item => item.id !== 'airbeam3');
+
+        if (validItems.length === 0) {
+          throw new Error('No items available for purchase');
+        }
+
+        const cartItems = validItems.map(item => ({
           name: item.name,
           sku: item.id === 'mini' ? 'ab-mini' : 'ab3',
           quantity: item.quantity,
@@ -345,6 +356,12 @@ class ShoppingCart {
     const saved = localStorage.getItem('shoppingCart');
     if (saved) {
       this.items = JSON.parse(saved);
+      const originalLength = this.items.length;
+      this.items = this.items.filter(item => item.id !== 'airbeam3');
+      if (this.items.length !== originalLength) {
+        this.saveToStorage();
+        this.updateCartDisplay();
+      }
     }
   }
 
@@ -368,7 +385,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Function to add items to cart from product cards
 function addToCart(productId, productName, productPrice, productImage) {
-  const quantity = 1; // Default quantity since we removed quantity inputs from cards
+  if (productId === 'airbeam3') {
+    if (window.shoppingCart) {
+      window.shoppingCart.showNotification('AirBeam3 is currently sold out', 'error');
+    }
+    return false;
+  }
+
+  const quantity = 1;
 
   const product = {
     id: productId,
@@ -381,4 +405,6 @@ function addToCart(productId, productName, productPrice, productImage) {
     window.shoppingCart.addItem(product, quantity);
     window.shoppingCart.openCart();
   }
+
+  return true;
 }
