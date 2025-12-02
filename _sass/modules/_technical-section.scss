@@ -1,0 +1,367 @@
+// Technical Specifications Section
+.technical-section {
+  width: 100%;
+  background: #ffffff;
+  padding: 5rem 0;
+
+  @media (min-width: 768px) {
+    padding: 7rem 0;
+  }
+}
+
+.technical-container {
+  max-width: 72rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  @media (min-width: 640px) {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  @media (min-width: 1024px) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+// Header
+.technical-header {
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3rem;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    margin-bottom: 4rem;
+  }
+}
+
+.technical-badge {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #33c4b2;
+  background-color: transparent;
+  border: 1px solid rgba(51, 196, 178, 0.3);
+  border-radius: 9999px;
+  margin-bottom: 1rem;
+}
+
+.technical-title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 1rem 0;
+  line-height: 1.2;
+
+  @media (min-width: 768px) {
+    font-size: 2.25rem;
+  }
+}
+
+.technical-description {
+  color: #64748b;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+
+  @media (min-width: 768px) {
+    font-size: 1.125rem;
+  }
+}
+
+.technical-description-highlight {
+  font-weight: 600;
+  color: #0f172a;
+}
+
+// Bento Grid
+.technical-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+.technical-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1.5rem;
+  border: 1px solid #e2e8f0;
+  background: #ffffff;
+  padding: 2rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+
+  &:hover {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    transform: translateY(-2px);
+  }
+
+  @media (min-width: 768px) {
+    padding: 2rem;
+  }
+}
+
+.technical-card-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  min-height: 220px;
+}
+
+.technical-card-top {
+  flex: 1;
+}
+
+.technical-card-label {
+  color: #64748b;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.technical-card-title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+
+  @media (min-width: 768px) {
+    font-size: 3rem;
+  }
+}
+
+.technical-card-title-large {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+
+  @media (min-width: 768px) {
+    font-size: 3.75rem;
+  }
+}
+
+.technical-card-title-unit {
+  font-size: 1.5rem;
+  margin-left: 0.25rem;
+
+  @media (min-width: 768px) {
+    font-size: 1.875rem;
+  }
+}
+
+.technical-card-title-medium {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+
+  @media (min-width: 768px) {
+    font-size: 2.25rem;
+  }
+}
+
+.technical-card-title-connectivity {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+
+  @media (min-width: 768px) {
+    font-size: 1.875rem;
+  }
+}
+
+.technical-card-description {
+  color: #64748b;
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+.technical-card-icon {
+  margin-top: 1.5rem;
+  color: #14b8a6;
+
+  &.technical-card-icon-weather {
+    color: #3b82f6;
+  }
+}
+
+.technical-card-icon-battery {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #22c55e;
+}
+
+.battery-indicator {
+  height: 1.5rem;
+  width: 4rem;
+  background-color: #dcfce7;
+  border-radius: 9999px;
+  overflow: hidden;
+}
+
+.battery-fill {
+  height: 100%;
+  width: 85%;
+  background-color: #22c55e;
+  border-radius: 9999px;
+}
+
+.technical-card-icon-wifi {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #06b6d4;
+}
+
+.wifi-signal {
+  display: flex;
+  gap: 0.25rem;
+  align-items: flex-end;
+}
+
+.wifi-bar {
+  width: 0.125rem;
+  background-color: #06b6d4;
+  border-radius: 9999px;
+}
+
+.wifi-bar-1 {
+  height: 0.5rem;
+}
+
+.wifi-bar-2 {
+  height: 0.75rem;
+}
+
+.wifi-bar-3 {
+  height: 1rem;
+}
+
+.wifi-bar-4 {
+  height: 1.25rem;
+}
+
+// Validation Badge
+.technical-validation {
+  margin-top: 3rem;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    margin-top: 4rem;
+  }
+}
+
+.technical-validation-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 1.5rem;
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 1rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: #f1f5f9;
+    border-color: #cbd5e1;
+  }
+}
+
+.technical-validation-icon {
+  width: 3rem;
+  height: 3rem;
+  background-color: #f0fdfa;
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #14b8a6;
+  flex-shrink: 0;
+}
+
+.technical-validation-text {
+  text-align: left;
+}
+
+.technical-validation-title {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #0f172a;
+  margin: 0;
+}
+
+.technical-validation-subtitle {
+  font-size: 0.75rem;
+  color: #64748b;
+  margin: 0;
+}
+
+.technical-validation-arrow {
+  width: 1rem;
+  height: 1rem;
+  color: #64748b;
+  margin-left: 0.5rem;
+  transition: color 0.3s ease;
+  flex-shrink: 0;
+}
+
+.technical-validation-link:hover .technical-validation-arrow {
+  color: #14b8a6;
+}
+
+// Features List
+.technical-features {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-top: 4rem;
+  }
+}
+
+.technical-feature-item {
+  text-align: center;
+}
+
+.technical-feature-label {
+  font-weight: 600;
+  color: #0f172a;
+  margin: 0 0 0.25rem 0;
+}
+
+.technical-feature-sublabel {
+  font-size: 0.875rem;
+  color: #64748b;
+  margin: 0;
+}
