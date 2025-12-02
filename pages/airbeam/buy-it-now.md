@@ -95,8 +95,6 @@ hasMerchantReturnPolicy:
 
 {% include buy-it-now/global-movement-section.html %}
 
-{% include buy-it-now/consultation-section.html %}
-
 {% include buy-it-now/product-showcase-section.html %}
 
 {% include buy-it-now/faq-section.html %}

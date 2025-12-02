@@ -12,7 +12,6 @@
       grid-template-columns: 1fr 1fr;
       gap: 3rem;
       align-items: center;
-      margin-bottom: 4rem;
 
       .movement-content {
         .movement-title {
@@ -35,32 +34,86 @@
           margin-bottom: 1.5rem;
         }
 
-        .movement-benefits {
+        .movement-links {
           display: flex;
           flex-direction: column;
           gap: 1rem;
+          margin-top: 2.5rem;
 
-          .benefit-item {
+          .movement-link {
             display: flex;
             align-items: center;
-            gap: 0.75rem;
+            gap: 1rem;
+            padding: 1rem 1.25rem;
+            background-color: #f9fafb;
+            border: 1px solid #f3f4f6;
+            border-radius: 0.75rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
 
-            .benefit-icon {
-              width: 24px;
-              height: 24px;
-              background: #dcfce7;
-              border-radius: 6px;
+            &:hover {
+              background-color: rgba(30, 167, 63, 0.05);
+              border-color: rgba(30, 167, 63, 0.2);
+              transform: translateX(0.25rem);
+            }
+
+            .link-icon-wrapper {
               display: flex;
               align-items: center;
               justify-content: center;
+              width: 2.5rem;
+              height: 2.5rem;
+              flex-shrink: 0;
+              background-color: $green;
+              border-radius: 0.5rem;
+              color: white;
 
               svg {
-                color: #1ea73f;
+                width: 1.25rem;
+                height: 1.25rem;
               }
             }
 
-            .benefit-text {
-              color: #374151;
+            .link-content {
+              flex: 1;
+              min-width: 0;
+
+              .link-label {
+                display: block;
+                font-weight: 600;
+                color: #111827;
+                margin-bottom: 0.25rem;
+              }
+
+              .link-description {
+                font-size: 0.875rem;
+                color: #6b7280;
+                margin: 0;
+
+                @media (max-width: 768px) {
+                  white-space: normal;
+                }
+
+                @media (min-width: 769px) {
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  white-space: nowrap;
+                }
+              }
+            }
+
+            .link-arrow {
+              width: 1.25rem;
+              height: 1.25rem;
+              color: #9ca3af;
+              flex-shrink: 0;
+              transition: all 0.3s ease;
+            }
+
+            &:hover .link-arrow {
+              transform: translateX(0.25rem);
+              color: $green;
             }
           }
         }
@@ -75,94 +128,6 @@
           width: 100%;
           height: auto;
           display: block;
-        }
-      }
-    }
-
-    .movement-cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 2rem;
-
-      .movement-card {
-        background: white;
-        border-radius: 12px;
-        padding: 2rem;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        text-align: center;
-        border: 1px solid #e5e7eb;
-
-        .card-icon {
-          width: 48px;
-          height: 48px;
-          border-radius: 12px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          margin: 0 auto 1rem;
-
-          &.blue {
-            background: #dbeafe;
-
-            svg {
-              color: #2563eb;
-            }
-          }
-
-          &.green {
-            background: #dcfce7;
-
-            svg {
-              color: #1ea73f;
-            }
-          }
-
-          &.purple {
-            background: #f3e8ff;
-
-            svg {
-              color: #9333ea;
-            }
-          }
-        }
-
-        .card-title {
-          font-size: 1.25rem;
-          font-weight: 600;
-          color: #111827;
-          margin-bottom: 0.5rem;
-        }
-
-        .card-description {
-          color: #6b7280;
-          font-size: 0.875rem;
-          line-height: 1.5;
-          margin-bottom: 1.5rem;
-        }
-
-        .card-link {
-          display: inline-flex;
-          align-items: center;
-          background: transparent;
-          color: #374151;
-          padding: 0.5rem 1rem;
-          border-radius: 6px;
-          text-decoration: none;
-          font-weight: 500;
-          border: 1px solid #d1d5db;
-          font-size: 0.875rem;
-          width: 100%;
-          justify-content: center;
-          transition: all 0.3s ease;
-
-          &:hover {
-            background-color: #f3f4f6;
-            border-color: #9ca3af;
-          }
-
-          .link-icon {
-            margin-left: 0.5rem;
-          }
         }
       }
     }

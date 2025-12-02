@@ -76,68 +76,7 @@
         </div>
       </div>
     </div>
-
-    <div class="videos-cta">
-      <a href="https://www.youtube.com/@HabitatMap" target="_blank" class="library-link">
-        View Complete Video Library
-      </a>
-    </div>
   </div>
 </section>
-
-<style>
-.video-placeholder {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
-  overflow: hidden;
-  border-radius: 8px;
-}
-
-.video-thumbnail {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.3s ease;
-}
-
-.video-placeholder:hover .video-thumbnail {
-  transform: scale(1.05);
-}
-
-.play-button {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: rgba(0, 0, 0, 0.8);
-  border-radius: 50%;
-  width: 80px;
-  height: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  transition: all 0.3s ease;
-}
-
-.video-placeholder:hover .play-button {
-  background: rgba(0, 0, 0, 0.9);
-  transform: translate(-50%, -50%) scale(1.1);
-}
-
-.video-container iframe {
-  display: none;
-}
-
-.video-container.loaded iframe {
-  display: block;
-}
-
-.video-container.loaded .video-placeholder {
-  display: none;
-}
-</style>
 
 <script src="/assets/js/buy-it-now-videos.js"></script>
