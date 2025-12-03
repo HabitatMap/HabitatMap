@@ -79,19 +79,19 @@
       </div>
 
       <!-- Card 3 - Weather Resistant -->
-      <div class="technical-card">
+      <div class="technical-card technical-card-weather">
         <div class="technical-card-content">
           <div class="technical-card-top">
             <p class="technical-card-label">Fully</p>
             <h3 class="technical-card-title-medium">Weather Resistant</h3>
             <p class="technical-card-description">Rain-proof rubber sleeve included</p>
           </div>
-          <div class="technical-card-icon technical-card-icon-weather">
-            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/>
-              <path d="M12 12v8"/>
-              <path d="M8 16l4-4 4 4"/>
-            </svg>
+          <div class="technical-card-image-wrapper">
+            <img
+              src="/assets/img/pages/buy-it-now/airbeam-sleave.png"
+              alt="AirBeam Mini with weather-resistant sleeve"
+              class="technical-card-img"
+            />
           </div>
         </div>
       </div>
@@ -103,19 +103,8 @@
             <h3 class="technical-card-title-connectivity">Bluetooth & WiFi</h3>
             <p class="technical-card-description">Seamless connectivity with AirCasting app</p>
           </div>
-          <div class="technical-card-icon-wifi">
-            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M5 12.55a11 11 0 0 1 14.08 0"/>
-              <path d="M1.42 9a16 16 0 0 1 21.16 0"/>
-              <path d="M8.53 16.11a6 6 0 0 1 6.95 0"/>
-              <line x1="12" y1="20" x2="12.01" y2="20"/>
-            </svg>
-            <div class="wifi-signal">
-              <div class="wifi-bar wifi-bar-1"></div>
-              <div class="wifi-bar wifi-bar-2"></div>
-              <div class="wifi-bar wifi-bar-3"></div>
-              <div class="wifi-bar wifi-bar-4"></div>
-            </div>
+          <div class="technical-card-logo">
+            {% include svg/aircasting_logo.svg %}
           </div>
         </div>
       </div>

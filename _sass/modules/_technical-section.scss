@@ -115,6 +115,12 @@
   @media (min-width: 768px) {
     padding: 2rem;
   }
+
+  &.technical-card-weather {
+ align-items: center;
+ justify-content: center;
+
+  }
 }
 
 .technical-card-content {
@@ -123,6 +129,11 @@
   height: 100%;
   justify-content: space-between;
   min-height: 220px;
+}
+
+.technical-card-weather .technical-card-content {
+  flex-direction: row;
+  gap: 1rem;
 }
 
 .technical-card-top {
@@ -134,6 +145,10 @@
   font-size: 0.875rem;
   font-weight: 500;
   margin-bottom: 0.5rem;
+
+  .technical-card-weather & {
+    font-size: 1rem;
+  }
 }
 
 .technical-card-title {
@@ -179,6 +194,14 @@
   @media (min-width: 768px) {
     font-size: 2.25rem;
   }
+
+  .technical-card-weather & {
+    font-size: 2rem;
+
+    @media (min-width: 768px) {
+      font-size: 1.75rem;
+    }
+  }
 }
 
 .technical-card-title-connectivity {
@@ -197,6 +220,10 @@
   color: #64748b;
   font-size: 0.875rem;
   margin: 0;
+
+  .technical-card-weather & {
+    font-size: 0.75rem;
+  }
 }
 
 .technical-card-icon {
@@ -231,40 +258,38 @@
   border-radius: 9999px;
 }
 
-.technical-card-icon-wifi {
+.technical-card-logo {
   margin-top: 1.5rem;
   display: flex;
   align-items: center;
-  gap: 1rem;
-  color: #06b6d4;
+  justify-content: center;
+  width: 100%;
+
+  svg {
+    width: 80px;
+    height: auto;
+  }
 }
 
-.wifi-signal {
+// Weather Card Image
+.technical-card-image-wrapper {
+  width: auto;
   display: flex;
-  gap: 0.25rem;
-  align-items: flex-end;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: auto;
+  overflow: visible;
 }
 
-.wifi-bar {
-  width: 0.125rem;
-  background-color: #06b6d4;
-  border-radius: 9999px;
-}
+.technical-card-img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+  transition: transform 0.5s ease;
+  padding-top: 4rem;
 
-.wifi-bar-1 {
-  height: 0.5rem;
-}
-
-.wifi-bar-2 {
-  height: 0.75rem;
-}
-
-.wifi-bar-3 {
-  height: 1rem;
-}
-
-.wifi-bar-4 {
-  height: 1.25rem;
 }
 
 // Validation Badge
