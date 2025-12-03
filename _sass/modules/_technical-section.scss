@@ -239,23 +239,13 @@
   margin-top: 1.5rem;
   display: flex;
   align-items: center;
-  gap: 0.75rem;
-  color: #22c55e;
-}
+  justify-content: center;
 
-.battery-indicator {
-  height: 1.5rem;
-  width: 4rem;
-  background-color: #dcfce7;
-  border-radius: 9999px;
-  overflow: hidden;
-}
-
-.battery-fill {
-  height: 100%;
-  width: 85%;
-  background-color: #22c55e;
-  border-radius: 9999px;
+  svg {
+    width: 88px;
+    height: 88px;
+    flex-shrink: 0;
+  }
 }
 
 .technical-card-logo {
