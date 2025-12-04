@@ -83,6 +83,8 @@ hasMerchantReturnPolicy:
 
 {% include buy-it-now/hero-section.html %}
 
+<script src="/assets/js/scroll-reveal.js"></script>
+
 {% include buy-it-now/features-section.html %}
 
 {% include buy-it-now/press-section.html %}
