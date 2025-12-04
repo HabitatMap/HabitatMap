@@ -1,382 +1,613 @@
-// Technical Specifications Section
-.technical-section {
-  width: 100%;
-  background: #ffffff;
-  padding: 5rem 0;
+// Technical Specifications Section - Bento grid with project colors
+// ============================================================
 
-  @media (min-width: 768px) {
+// Main Section
+.technical-section {
+  position: relative;
+  width: 100%;
+  background: $white;
+  padding: 5rem 0;
+  overflow: hidden;
+
+  @media (min-width: $tablet-min) {
     padding: 7rem 0;
+  }
+
+  @media (min-width: $small-desktop-min) {
+    padding: 9rem 0;
   }
 }
 
+// Decorative gradients for smooth section transitions
+.technical-gradient-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background: linear-gradient(180deg, $teal-very-light 0%, transparent 100%);
+  pointer-events: none;
+}
+
+.technical-gradient-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background: linear-gradient(0deg, $teal-very-light 0%, transparent 100%);
+  pointer-events: none;
+}
+
+// Container
 .technical-container {
+  position: relative;
   max-width: 72rem;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 
-  @media (min-width: 640px) {
+  @media (min-width: $tablet-min) {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: $small-desktop-min) {
     padding-left: 2rem;
     padding-right: 2rem;
   }
 }
 
-// Header
+// ============================================================
+// HEADER
+// ============================================================
 .technical-header {
-  max-width: 42rem;
+  max-width: 48rem;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 3rem;
   text-align: center;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-min) {
     margin-bottom: 4rem;
   }
 }
 
-.technical-badge {
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  font-size: 0.875rem;
-  font-weight: 500;
-  color: #33c4b2;
-  background-color: transparent;
-  border: 1px solid rgba(51, 196, 178, 0.3);
-  border-radius: 9999px;
-  margin-bottom: 1rem;
+// Product Badge - Shows which product specs are for
+.technical-product-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 1rem 0.5rem 0.5rem;
+  background: $white;
+  border: 1px solid $teal-light;
+  border-radius: 3rem;
+  margin-bottom: 1.25rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+
+  @media (min-width: $tablet-min) {
+    gap: 0.875rem;
+    padding: 0.5rem 1.25rem 0.5rem 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.product-badge-image {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid $teal-very-light;
+
+  @media (min-width: $tablet-min) {
+    width: 42px;
+    height: 42px;
+  }
+}
+
+.product-badge-name {
+  font-family: $bold-font;
+  font-size: $base-font-size;
+  font-weight: 700;
+  color: $gray-dark;
+  letter-spacing: -0.01em;
+
+  @media (min-width: $tablet-min) {
+    font-size: $base-font-size1;
+  }
 }
 
 .technical-title {
-  font-size: 1.875rem;
+  font-family: $bold-font;
+  font-size: $base-font-size3;
   font-weight: 700;
-  color: #0f172a;
+  color: $gray-dark;
   margin: 0 0 1rem 0;
   line-height: 1.2;
 
-  @media (min-width: 768px) {
-    font-size: 2.25rem;
-  }
-}
-
-.technical-description {
-  color: #64748b;
-  font-size: 1rem;
-  line-height: 1.6;
-  margin: 0;
-
-  @media (min-width: 768px) {
-    font-size: 1.125rem;
-  }
-}
-
-.technical-description-highlight {
-  font-weight: 600;
-  color: #0f172a;
-}
-
-// Bento Grid
-.technical-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
-
-  @media (min-width: 768px) {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
+  @media (min-width: $tablet-min) {
+    font-size: $base-font-size4;
   }
 
-  @media (min-width: 1024px) {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-  }
-}
-
-.technical-card {
-  position: relative;
-  overflow: hidden;
-  border-radius: 1.5rem;
-  border: 1px solid #e2e8f0;
-  background: #ffffff;
-  padding: 2rem;
-  transition: all 0.3s ease;
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-
-  &:hover {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-    transform: translateY(-2px);
-  }
-
-  @media (min-width: 768px) {
-    padding: 2rem;
-  }
-
-  &.technical-card-weather {
- align-items: center;
- justify-content: center;
-
-  }
-}
-
-.technical-card-content {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  justify-content: space-between;
-  min-height: 220px;
-}
-
-.technical-card-weather .technical-card-content {
-  flex-direction: row;
-  gap: 1rem;
-}
-
-.technical-card-top {
-  flex: 1;
-}
-
-.technical-card-label {
-  color: #64748b;
-  font-size: 0.875rem;
-  font-weight: 500;
-  margin-bottom: 0.5rem;
-
-  .technical-card-weather & {
-    font-size: 1rem;
-  }
-}
-
-.technical-card-title {
-  font-size: 2.25rem;
-  font-weight: 700;
-  color: #0f172a;
-  margin-bottom: 0.5rem;
-  line-height: 1.2;
-
-  @media (min-width: 768px) {
+  @media (min-width: $small-desktop-min) {
     font-size: 3rem;
   }
 }
 
-.technical-card-title-large {
-  font-size: 3rem;
-  font-weight: 700;
-  color: #0f172a;
-  margin-bottom: 0.5rem;
-  line-height: 1.2;
+.technical-description {
+  color: $gray-medium;
+  font-size: $base-font-size;
+  line-height: 1.6;
+  margin: 0;
+  max-width: 36rem;
+  margin-left: auto;
+  margin-right: auto;
 
-  @media (min-width: 768px) {
-    font-size: 3.75rem;
+  @media (min-width: $tablet-min) {
+    font-size: $base-font-size1;
   }
 }
 
-.technical-card-title-unit {
-  font-size: 1.5rem;
-  margin-left: 0.25rem;
+// ============================================================
+// BENTO GRID
+// ============================================================
+.technical-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-bottom: 3rem;
 
-  @media (min-width: 768px) {
-    font-size: 1.875rem;
+  @media (min-width: $large-mobile-min) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $small-desktop-min) {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+    margin-bottom: 3.5rem;
   }
 }
 
-.technical-card-title-medium {
-  font-size: 1.875rem;
-  font-weight: 700;
-  color: #0f172a;
-  margin-bottom: 0.5rem;
-  line-height: 1.2;
+// Base Card - SQUARE cards using aspect-ratio
+.technical-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1.25rem;
+  background: $white;
+  border: 1px solid $teal-light;
+  padding: 1.75rem;
+  transition: all 0.35s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  // Square aspect ratio
+  aspect-ratio: 1 / 1;
 
-  @media (min-width: 768px) {
+  &:hover {
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.04);
+    transform: translateY(-4px);
+  }
+
+  @media (min-width: $tablet-min) {
+    border-radius: 1.5rem;
+    padding: 2rem;
+  }
+}
+
+// Card Content Container
+.technical-card-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+// Card Top Section
+.technical-card-top {
+  flex: 0 0 auto;
+}
+
+// ===========================================
+// TEXT-ONLY CARDS (PM, Weight, Storage)
+// ===========================================
+.technical-card--text {
+  background: linear-gradient(135deg, $white 0%, $teal-very-light 100%);
+
+  .technical-card-content {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .technical-card-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: $teal;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.75rem;
+
+    @media (min-width: $tablet-min) {
+      font-size: 0.8125rem;
+    }
+  }
+
+  .technical-card-value {
+    font-family: $bold-font;
     font-size: 2.25rem;
+    font-weight: 700;
+    color: $gray-dark;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+
+    @media (min-width: $tablet-min) {
+      font-size: 2.5rem;
+    }
+
+    @media (min-width: $small-desktop-min) {
+      font-size: 2.75rem;
+    }
   }
 
-  .technical-card-weather & {
-    font-size: 2rem;
+  .technical-card-description {
+    font-size: $base-font-size-1;
+    color: $gray;
+    line-height: 1.5;
+    margin: 0;
 
-    @media (min-width: 768px) {
-      font-size: 1.75rem;
+    @media (min-width: $tablet-min) {
+      font-size: $base-font-size;
     }
   }
 }
 
-.technical-card-title-connectivity {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #0f172a;
-  margin-bottom: 1rem;
-  line-height: 1.2;
-
-  @media (min-width: 768px) {
-    font-size: 1.875rem;
+// ===========================================
+// VISUAL CARDS (Battery, Connectivity, Weather)
+// ===========================================
+.technical-card--visual {
+  .technical-card-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
   }
-}
 
-.technical-card-description {
-  color: #64748b;
-  font-size: 0.875rem;
-  margin: 0;
+  .technical-card-visual {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 0;
+  }
 
-  .technical-card-weather & {
+  .technical-card-bottom {
+    margin-top: auto;
+    text-align: center;
+    padding-top: 0.75rem;
+  }
+
+  .technical-card-label {
     font-size: 0.75rem;
+    font-weight: 600;
+    color: $teal;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.375rem;
+
+    @media (min-width: $tablet-min) {
+      font-size: 0.8125rem;
+    }
+  }
+
+  .technical-card-value {
+    font-family: $bold-font;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: $gray-dark;
+    line-height: 1.1;
+
+    @media (min-width: $tablet-min) {
+      font-size: 2rem;
+    }
+
+    @media (min-width: $small-desktop-min) {
+      font-size: 2.25rem;
+    }
   }
 }
 
-.technical-card-icon {
-  margin-top: 1.5rem;
-  color: #14b8a6;
-
-  &.technical-card-icon-weather {
-    color: #3b82f6;
-  }
+// All Visual Cards - Same neutral background
+.technical-card--battery,
+.technical-card--connectivity,
+.technical-card--weather {
+  background: linear-gradient(145deg, #f5f5f5 0%, $white 50%, #fafafa 100%);
 }
 
-.technical-card-icon-battery {
-  margin-top: 1.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  svg {
-    width: 88px;
-    height: 88px;
-    flex-shrink: 0;
-  }
-}
-
-.technical-card-logo {
-  margin-top: 1.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-
-  svg {
-    width: 80px;
+// Battery Card - Icon only
+.technical-card--battery {
+  .battery-icon {
+    width: 100px;
     height: auto;
+    color: #22c55e;
+
+    @media (min-width: $tablet-min) {
+      width: 120px;
+    }
+
+    @media (min-width: $small-desktop-min) {
+      width: 140px;
+    }
   }
 }
 
-// Weather Card Image
-.technical-card-image-wrapper {
-  width: auto;
+// Connectivity Card - Logo only
+.technical-card--connectivity {
+  .connectivity-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      width: 80px;
+      height: auto;
+
+      @media (min-width: $tablet-min) {
+        width: 90px;
+      }
+
+      @media (min-width: $small-desktop-min) {
+        width: 100px;
+      }
+    }
+  }
+}
+
+// Weather Card - Image only (BIGGER)
+.technical-card--weather {
+  .technical-card-img {
+    width: auto;
+    height: auto;
+    max-width: 160px;
+    max-height: 120px;
+    object-fit: contain;
+    filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.1));
+    transition: transform 0.4s ease;
+
+    @media (min-width: $tablet-min) {
+      max-width: 190px;
+      max-height: 140px;
+    }
+
+    @media (min-width: $small-desktop-min) {
+      max-width: 220px;
+      max-height: 160px;
+    }
+  }
+
+  &:hover .technical-card-img {
+    transform: scale(1.05);
+  }
+}
+
+
+// ============================================================
+// ACCURACY TRUST BANNER - Modern CTA for lab verification
+// ============================================================
+.accuracy-banner {
+  margin-top: 0;
   display: flex;
-  align-items: center;
   justify-content: center;
-  position: relative;
-  height: auto;
-  overflow: visible;
 }
 
-.technical-card-img {
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-  object-position: center;
-  transition: transform 0.5s ease;
-  padding-top: 4rem;
-
-}
-
-// Validation Badge
-.technical-validation {
-  margin-top: 3rem;
-  text-align: center;
-
-  @media (min-width: 768px) {
-    margin-top: 4rem;
-  }
-}
-
-.technical-validation-link {
+.accuracy-banner-inner {
   display: inline-flex;
+  flex-direction: column;
   align-items: center;
-  gap: 0.75rem;
+  gap: 1rem;
   padding: 1rem 1.5rem;
-  background-color: #f8fafc;
-  border: 1px solid #e2e8f0;
-  border-radius: 1rem;
-  text-decoration: none;
+  background: $white;
+  border-radius: 100px;
+  text-align: center;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
   transition: all 0.3s ease;
 
   &:hover {
-    background-color: #f1f5f9;
-    border-color: #cbd5e1;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transform: translateY(-2px);
+  }
+
+  @media (min-width: $tablet-min) {
+    flex-direction: row;
+    gap: 1.25rem;
+    padding: 0.875rem 1.25rem 0.875rem 0.875rem;
+    text-align: left;
   }
 }
 
-.technical-validation-icon {
-  width: 3rem;
-  height: 3rem;
-  background-color: #f0fdfa;
-  border-radius: 0.75rem;
+.accuracy-icon {
+  width: 44px;
+  height: 44px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #14b8a6;
   flex-shrink: 0;
-}
+  background: linear-gradient(135deg, $green 0%, darken($green, 8%) 100%);
+  border-radius: 50%;
+  color: $white;
 
-.technical-validation-text {
-  text-align: left;
-}
+  svg {
+    width: 22px;
+    height: 22px;
+  }
 
-.technical-validation-title {
-  font-size: 0.875rem;
-  font-weight: 600;
-  color: #0f172a;
-  margin: 0;
-}
+  @media (min-width: $tablet-min) {
+    width: 48px;
+    height: 48px;
 
-.technical-validation-subtitle {
-  font-size: 0.75rem;
-  color: #64748b;
-  margin: 0;
-}
-
-.technical-validation-arrow {
-  width: 1rem;
-  height: 1rem;
-  color: #64748b;
-  margin-left: 0.5rem;
-  transition: color 0.3s ease;
-  flex-shrink: 0;
-}
-
-.technical-validation-link:hover .technical-validation-arrow {
-  color: #14b8a6;
-}
-
-// Features List
-.technical-features {
-  margin-top: 3rem;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.5rem;
-
-  @media (min-width: 768px) {
-    grid-template-columns: repeat(4, 1fr);
-    gap: 2rem;
-    margin-top: 4rem;
+    svg {
+      width: 24px;
+      height: 24px;
+    }
   }
 }
 
-.technical-feature-item {
-  text-align: center;
+.accuracy-content {
+  flex: 1;
+  min-width: 0;
 }
 
-.technical-feature-label {
-  font-weight: 600;
-  color: #0f172a;
-  margin: 0 0 0.25rem 0;
+.accuracy-tag {
+  display: inline-block;
+  font-size: 0.625rem;
+  font-weight: 700;
+  color: $green;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.125rem;
+
+  @media (min-width: $tablet-min) {
+    font-size: 0.6875rem;
+  }
 }
 
-.technical-feature-sublabel {
-  font-size: 0.875rem;
-  color: #64748b;
+.accuracy-title {
+  font-family: $bold-font;
+  font-size: $base-font-size;
+  font-weight: 700;
+  color: $gray-dark;
   margin: 0;
+  line-height: 1.3;
+
+  @media (min-width: $tablet-min) {
+    font-size: $base-font-size1;
+  }
+}
+
+.accuracy-description {
+  display: none;
+
+  @media (min-width: $tablet-min) {
+    font-size: $base-font-size;
+  }
+}
+
+.accuracy-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.5rem 1rem;
+  background: rgba($green, 0.08);
+  border: none;
+  border-radius: 100px;
+  color: $green;
+  font-size: $base-font-size-2;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+  white-space: nowrap;
+
+  svg {
+    width: 14px;
+    height: 14px;
+    transition: transform 0.3s ease;
+  }
+
+  &:hover {
+    background: rgba($green, 0.15);
+    color: darken($green, 5%);
+
+    svg {
+      transform: translate(2px, -2px);
+    }
+  }
+
+  @media (min-width: $tablet-min) {
+    padding: 0.875rem 1.5rem;
+    font-size: $base-font-size;
+    border-radius: 0.75rem;
+
+    svg {
+      width: 18px;
+      height: 18px;
+    }
+  }
+}
+
+// ============================================================
+// RESPONSIVE ADJUSTMENTS
+// ============================================================
+@media (max-width: $large-mobile-max) {
+  .technical-section {
+    padding: 3.5rem 0;
+  }
+
+  .technical-gradient-top,
+  .technical-gradient-bottom {
+    height: 60px;
+  }
+
+  .technical-header {
+    margin-bottom: 2rem;
+  }
+
+  .technical-grid {
+    gap: 0.875rem;
+    margin-bottom: 2rem;
+  }
+
+  .technical-card {
+    padding: 1.5rem;
+    border-radius: 1rem;
+    // Still square on mobile
+    aspect-ratio: 1 / 1;
+  }
+
+  .technical-card--text .technical-card-value {
+    font-size: 2rem;
+  }
+
+  .technical-card--visual {
+    .technical-card-value {
+      font-size: 1.5rem;
+    }
+  }
+
+  .technical-card--battery .battery-icon {
+    width: 90px;
+  }
+
+  .technical-card--connectivity .connectivity-logo svg {
+    width: 70px;
+  }
+
+  .technical-card--weather .technical-card-img {
+    max-width: 140px;
+    max-height: 105px;
+  }
+
+  .accuracy-banner-inner {
+    padding: 0.75rem 1rem;
+    gap: 0.75rem;
+  }
+
+  .accuracy-icon {
+    width: 40px;
+    height: 40px;
+
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  .accuracy-title {
+    font-size: $base-font-size-1;
+  }
+
+  .accuracy-button {
+    padding: 0.375rem 0.75rem;
+    font-size: 0.6875rem;
+
+    svg {
+      width: 12px;
+      height: 12px;
+    }
+  }
 }

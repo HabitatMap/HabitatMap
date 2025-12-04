@@ -1,25 +1,263 @@
-// Press Section Styles
-.press-section {
-  &.panel--big-padding {
-    .buy-now-press-title {
-      width: 100%;
-      text-align: center;
-      color: white;
-      margin-bottom: 2rem;
-      font-size: 1.6rem;
-      font-weight: 500;
-    }
+// Press Logos Section - Full-width impactful design
+// ============================================================
 
+.press-logos {
+  padding: 6rem 0;
+  background: $teal-very-light;
+  position: relative;
+
+  @media (min-width: $tablet-min) {
+    padding: 8rem 0;
   }
 
-  // Mobile responsive
-  @media (max-width: 768px) {
-    &.panel--big-padding {
-      padding: 2rem 1rem;
+  @media (min-width: $small-desktop-min) {
+    padding: 10rem 0;
+  }
+}
 
-      .buy-now-press-title {
-        font-size: 1.5rem;
-      }
+.press-logos__container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+
+  @media (min-width: $tablet-min) {
+    padding: 0 2rem;
+  }
+}
+
+// ============================================================
+// HEADER
+// ============================================================
+.press-logos__header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 4rem;
+
+  @media (min-width: $tablet-min) {
+    margin-bottom: 5rem;
+  }
+
+  @media (min-width: $small-desktop-min) {
+    margin-bottom: 6rem;
+  }
+}
+
+.press-logos__eyebrow {
+  display: inline-block;
+  font-size: $base-font-size-2;
+  font-weight: 600;
+  color: $green;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin-bottom: 1rem;
+
+  @media (min-width: $tablet-min) {
+    font-size: $base-font-size-1;
+    margin-bottom: 1.25rem;
+  }
+}
+
+.press-logos__title {
+  font-family: $bold-font;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: $gray-dark;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  margin: 0;
+
+  @media (min-width: $tablet-min) {
+    font-size: 3.5rem;
+  }
+
+  @media (min-width: $small-desktop-min) {
+    font-size: 4rem;
+  }
+}
+
+// ============================================================
+// LOGO GRID - Full-width card
+// ============================================================
+.press-logos__grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  background: $white;
+  border-radius: 2rem;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+
+  @media (min-width: $tablet-min) {
+    border-radius: 2.5rem;
+  }
+
+  @media (min-width: $small-desktop-min) {
+    flex-wrap: nowrap;
+    border-radius: 3rem;
+  }
+}
+
+.press-logos__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2.5rem 2rem;
+  flex: 1;
+  min-width: 0;
+  position: relative;
+  transition: all 0.4s ease;
+
+  // Vertical divider
+  &:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.08);
+  }
+
+  @media (max-width: $tablet-max) {
+    &::after {
+      display: none;
     }
+  }
+
+  @media (min-width: $tablet-min) {
+    padding: 3rem 2.5rem;
+
+    &:not(:last-child)::after {
+      height: 60px;
+    }
+  }
+
+  @media (min-width: $small-desktop-min) {
+    padding: 3.5rem 3rem;
+
+    &:not(:last-child)::after {
+      height: 70px;
+    }
+  }
+
+  &:hover {
+    background: rgba($teal-very-light, 0.5);
+
+    .press-logos__image {
+      filter: invert(1) brightness(0);
+      opacity: 1;
+      transform: scale(1.1);
+    }
+  }
+
+  // Rounded corners for first and last items
+  &:first-child {
+    border-radius: 2rem 0 0 2rem;
+
+    @media (min-width: $tablet-min) {
+      border-radius: 2.5rem 0 0 2.5rem;
+    }
+
+    @media (min-width: $small-desktop-min) {
+      border-radius: 3rem 0 0 3rem;
+    }
+
+    @media (max-width: $tablet-max) {
+      border-radius: 2rem 2rem 0 0;
+    }
+  }
+
+  &:last-child {
+    border-radius: 0 2rem 2rem 0;
+
+    @media (min-width: $tablet-min) {
+      border-radius: 0 2.5rem 2.5rem 0;
+    }
+
+    @media (min-width: $small-desktop-min) {
+      border-radius: 0 3rem 3rem 0;
+    }
+
+    @media (max-width: $tablet-max) {
+      border-radius: 0 0 2rem 2rem;
+    }
+  }
+}
+
+.press-logos__image {
+  height: 32px;
+  width: auto;
+  max-width: 140px;
+  object-fit: contain;
+  filter: invert(1) brightness(0.25);
+  opacity: 0.8;
+  transition: all 0.4s ease;
+
+  @media (min-width: $tablet-min) {
+    height: 40px;
+    max-width: 170px;
+  }
+
+  @media (min-width: $small-desktop-min) {
+    height: 48px;
+    max-width: 200px;
+  }
+}
+
+// ============================================================
+// MOBILE
+// ============================================================
+@media (max-width: $large-mobile-max) {
+  .press-logos {
+    padding: 4rem 0;
+  }
+
+  .press-logos__container {
+    padding: 0 1rem;
+  }
+
+  .press-logos__header {
+    margin-bottom: 2.5rem;
+  }
+
+  .press-logos__title {
+    font-size: 2rem;
+  }
+
+  .press-logos__grid {
+    flex-direction: column;
+    border-radius: 1.5rem;
+  }
+
+  .press-logos__item {
+    padding: 2rem 1.5rem;
+    width: 100%;
+
+    // Horizontal divider on mobile
+    &:not(:last-child)::after {
+      display: block;
+      top: auto;
+      bottom: 0;
+      left: 50%;
+      right: auto;
+      transform: translateX(-50%);
+      width: 70%;
+      height: 1px;
+    }
+
+    &:first-child {
+      border-radius: 1.5rem 1.5rem 0 0;
+    }
+
+    &:last-child {
+      border-radius: 0 0 1.5rem 1.5rem;
+    }
+  }
+
+  .press-logos__image {
+    height: 28px;
+    max-width: 130px;
   }
 }

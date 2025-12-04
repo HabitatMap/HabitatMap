@@ -1,119 +1,46 @@
 <!-- Technical Specifications Section -->
 <section class="technical-section reveal-section">
+  <!-- Decorative gradient top -->
+  <div class="technical-gradient-top"></div>
+
   <div class="technical-container">
     <!-- Section Header -->
     <div class="technical-header reveal-content">
-      <span class="technical-badge reveal-header">Technical Specifications</span>
-      <h2 class="technical-title reveal-header">Built for Accurate Air Quality Monitoring</h2>
+      <div class="technical-product-badge reveal-header">
+        <img
+          src="/assets/img/airbeam_crop.jpg?nf_resize=fit&w=80"
+          alt="AirBeam Mini"
+          class="product-badge-image"
+        />
+        <span class="product-badge-name">AirBeam Mini</span>
+      </div>
+      <h2 class="technical-title reveal-header">Technical Specifications</h2>
       <p class="technical-description reveal-body">
-        Everything you need to know about the <span class="technical-description-highlight">AirBeam Mini</span> at a glance.
+        Everything you need to know about the AirBeam Mini — compact, accurate, and built for real-world air quality monitoring.
       </p>
     </div>
 
-       <!-- Validation Badge -->
-       <div class="technical-validation reveal-fade reveal-delay-2">
-        <a
-          href="https://www.aqmd.gov/docs/default-source/aq-spec/field-evaluations/habitatmap---airbeam-mini---field-evaluation.pdf?sfvrsn=32266e7e_3"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="technical-validation-link"
-        >
-          <div class="technical-validation-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
-            </svg>
-          </div>
-          <div class="technical-validation-text">
-            <p class="technical-validation-title">Independent Field Evaluation</p>
-            <p class="technical-validation-subtitle">South Coast AQMD AQ-SPEC Lab Report</p>
-          </div>
-          <svg class="technical-validation-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-            <polyline points="15 3 21 3 21 9"/>
-            <line x1="10" y1="14" x2="21" y2="3"/>
-          </svg>
-        </a>
-      </div>
-
-    <!-- Bento Grid -->
+    <!-- Bento Grid - Apple-inspired dark cards -->
     <div class="technical-grid reveal-stagger">
-      <!-- Card 1 - PM Monitoring -->
-      <div class="technical-card reveal-child">
+      <!-- Card 1 - PM Monitoring (text-only) -->
+      <div class="technical-card technical-card--text reveal-child">
         <div class="technical-card-content">
           <div class="technical-card-top">
             <p class="technical-card-label">Measures</p>
-            <h3 class="technical-card-title">PM1 & PM2.5</h3>
+            <h3 class="technical-card-value">PM1 & PM2.5</h3>
             <p class="technical-card-description">Fine particulate matter detection</p>
           </div>
         </div>
       </div>
 
-      <!-- Card 2 - Battery Life -->
-      <div class="technical-card reveal-child">
+      <!-- Card 2 - Weather Resistant (with image) -->
+      <div class="technical-card technical-card--visual technical-card--weather reveal-child">
         <div class="technical-card-content">
-          <div class="technical-card-top">
-            <p class="technical-card-label">Up to</p>
-            <h3 class="technical-card-title-large">
-              14<span class="technical-card-title-unit">hrs</span>
-            </h3>
-            <p class="technical-card-description">battery life in mobile mode</p>
+          <div class="technical-card-bottom">
+            <p class="technical-card-label">Included</p>
+            <h3 class="technical-card-value">Weather Sleeve</h3>
           </div>
-          <div class="technical-card-icon-battery">
-            <svg width="56" height="56" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="2" y="7" width="16" height="10" rx="2" ry="2" fill="#ffffff" stroke="#22c55e" stroke-width="1"/>
-              <rect x="18" y="10" width="2" height="4" rx="0.5" fill="#22c55e"/>
-              <rect x="4" y="9" width="2.5" height="6" rx="0.5" fill="#22c55e"/>
-              <rect x="7.5" y="9" width="2.5" height="6" rx="0.5" fill="#22c55e"/>
-              <rect x="11" y="9" width="2.5" height="6" rx="0.5" fill="#22c55e"/>
-            </svg>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 3 - Ultra-light -->
-      <div class="technical-card reveal-child">
-        <div class="technical-card-content">
-          <div class="technical-card-top">
-            <p class="technical-card-label">Ultra-light</p>
-            <h3 class="technical-card-title">4 oz</h3>
-            <p class="technical-card-description">compact & portable</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 4 - Connectivity -->
-      <div class="technical-card reveal-child">
-        <div class="technical-card-content">
-          <div class="technical-card-top">
-            <h3 class="technical-card-title-connectivity">Bluetooth & WiFi</h3>
-            <p class="technical-card-description">Seamless connectivity with AirCasting app</p>
-          </div>
-          <div class="technical-card-logo">
-            {% include svg/aircasting_logo.svg %}
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 5 - Data Storage -->
-      <div class="technical-card reveal-child">
-        <div class="technical-card-content">
-          <div class="technical-card-top">
-            <p class="technical-card-label">Onboard storage</p>
-            <h3 class="technical-card-title">55 Days</h3>
-            <p class="technical-card-description">of continuous data recording</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 6 - Weather Resistant -->
-      <div class="technical-card technical-card-weather reveal-child">
-        <div class="technical-card-content">
-          <div class="technical-card-top">
-            <p class="technical-card-label">Fully</p>
-            <h3 class="technical-card-title-medium">Weather Resistant</h3>
-            <p class="technical-card-description">Rain-proof rubber sleeve included</p>
-          </div>
-          <div class="technical-card-image-wrapper">
+          <div class="technical-card-visual">
             <img
               src="/assets/img/pages/buy-it-now/airbeam-sleave.png"
               alt="AirBeam Mini with weather-resistant sleeve"
@@ -122,6 +49,96 @@
           </div>
         </div>
       </div>
+
+      <!-- Card 3 - Ultra-light (text-only) -->
+      <div class="technical-card technical-card--text reveal-child">
+        <div class="technical-card-content">
+          <div class="technical-card-top">
+            <p class="technical-card-label">Ultra-light</p>
+            <h3 class="technical-card-value">4 oz</h3>
+            <p class="technical-card-description">Compact & portable design</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 - Connectivity (with icon) -->
+      <div class="technical-card technical-card--visual technical-card--connectivity reveal-child">
+        <div class="technical-card-backdrop"></div>
+        <div class="technical-card-content">
+          <div class="technical-card-bottom">
+            <p class="technical-card-label">Connectivity</p>
+            <h3 class="technical-card-value">BT + WiFi</h3>
+          </div>
+          <div class="technical-card-visual">
+            <div class="connectivity-logo">
+              {% include svg/aircasting_logo.svg %}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 5 - Data Storage (text-only) -->
+      <div class="technical-card technical-card--text reveal-child">
+        <div class="technical-card-content">
+          <div class="technical-card-top">
+            <p class="technical-card-label">Onboard storage</p>
+            <h3 class="technical-card-value">55 Days</h3>
+            <p class="technical-card-description">Continuous data recording</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 6 - Battery Life (with icon) -->
+      <div class="technical-card technical-card--visual technical-card--battery reveal-child">
+        <div class="technical-card-content">
+          <div class="technical-card-bottom">
+            <p class="technical-card-label">Battery Life</p>
+            <h3 class="technical-card-value">14 hrs</h3>
+          </div>
+          <div class="technical-card-visual">
+            <svg class="battery-icon" viewBox="0 0 100 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="3" y="10" width="75" height="30" rx="5" stroke="currentColor" stroke-width="3"/>
+              <rect x="78" y="18" width="8" height="14" rx="2" fill="currentColor"/>
+              <rect x="8" y="15" width="15" height="20" rx="3" fill="currentColor"/>
+              <rect x="26" y="15" width="15" height="20" rx="3" fill="currentColor"/>
+              <rect x="44" y="15" width="15" height="20" rx="3" fill="currentColor"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Accuracy Trust Banner -->
+    <div class="accuracy-banner">
+      <div class="accuracy-banner-inner">
+        <div class="accuracy-icon">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 12L11 14L15 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12 3L4 7V11C4 15.4183 7.58172 19 12 19C16.4183 19 20 15.4183 20 11V7L12 3Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="accuracy-content">
+          <span class="accuracy-tag">Lab Verified Accuracy</span>
+          <h4 class="accuracy-title">Independently tested by South Coast AQMD</h4>
+          <p class="accuracy-description">Field evaluation confirms AirBeam Mini meets professional air quality monitoring standards</p>
+        </div>
+        <a
+          href="https://www.aqmd.gov/docs/default-source/aq-spec/field-evaluations/habitatmap---airbeam-mini---field-evaluation.pdf?sfvrsn=32266e7e_3"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="accuracy-button"
+        >
+          <span>View Full Report</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+            <polyline points="15 3 21 3 21 9"/>
+            <line x1="10" y1="14" x2="21" y2="3"/>
+          </svg>
+        </a>
+      </div>
     </div>
   </div>
+
+  <!-- Decorative gradient bottom -->
+  <div class="technical-gradient-bottom"></div>
 </section>

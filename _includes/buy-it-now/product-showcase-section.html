@@ -1,99 +1,113 @@
-<!-- Product Showcase Section -->
+<!-- Product Showcase Section - Premium Purchase Experience -->
 <section id="product-selection" class="panel product-showcase-section reveal-section">
+  <!-- Section transition gradient -->
+  <div class="showcase-gradient-overlay"></div>
+
   <div class="product-showcase-container">
-    <!-- Hero Area with Image and Info -->
-    <div class="product-hero-grid">
-      <!-- Product Image -->
-      <div class="product-image-wrapper reveal-left">
-        <div class="product-image-background">
-          <img
-            data-src="/assets/buy-it-now_ABMsidebyside.jpg?nf_resize=fit&w=800"
-            src="/assets/buy-it-now_ABMsidebyside.jpg?nf_resize=fit&w=200"
-            alt="AirBeam Mini air quality monitor"
-            class="lazyload product-hero-image"
-            loading="eager"
-            fetchpriority="high"
-          />
-        </div>
-      </div>
+    <!-- Section Header -->
+    <div class="showcase-header reveal-content">
+      <span class="showcase-overline reveal-header">Ready to Monitor</span>
+      <h2 class="showcase-title reveal-header">Get Your AirBeam Mini</h2>
+    </div>
 
-      <!-- Product Info -->
-      <div class="product-info-wrapper reveal-right">
-        <h1 class="product-hero-title">AirBeam Mini</h1>
-        <p class="product-tagline">Professional air quality monitoring in your pocket</p>
-        <p class="product-description-text">Compact for carrying; weatherproof for outdoor use. Perfect for personal air quality tracking with proven accuracy.</p>
-
-        <!-- Price and CTA -->
-        <div class="product-pricing-section">
-          <div class="product-price-wrapper">
-            <span class="product-price-large">$99</span>
+    <!-- Product Card - Cowboy-inspired centered layout -->
+    <div class="product-card reveal-fade">
+      <div class="product-card-inner">
+        <!-- Product Visual -->
+        <div class="product-visual-area">
+          <div class="product-image-container">
+            <div class="product-image-glow"></div>
+            <img
+              data-src="/assets/buy-it-now_ABMsidebyside.jpg?nf_resize=fit&w=800"
+              src="/assets/buy-it-now_ABMsidebyside.jpg?nf_resize=fit&w=200"
+              alt="AirBeam Mini air quality monitor"
+              class="lazyload product-main-image"
+              loading="eager"
+              fetchpriority="high"
+            />
           </div>
-          <button class="product-buy-button" onclick="addToCart('mini', 'AirBeam Mini', 99, '/assets/buy-it-now_ABMsidebyside.jpg')">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="button-icon">
-              <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
-              <line x1="3" y1="6" x2="21" y2="6"></line>
-              <path d="M16 10a4 4 0 0 1-8 0"></path>
+        </div>
+
+        <!-- Product Details -->
+        <div class="product-details-area">
+          <!-- Product Name & Tagline -->
+          <div class="product-identity">
+            <h3 class="product-name">AirBeam Mini</h3>
+            <p class="product-tagline">Professional air quality monitoring<br />in your pocket</p>
+          </div>
+
+          <!-- Key Benefits -->
+          <div class="product-benefits">
+            <div class="benefit-item">
+              <svg class="benefit-check" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+              <span>Weatherproof for outdoor use</span>
+            </div>
+            <div class="benefit-item">
+              <svg class="benefit-check" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+              <span>Lab-validated accuracy</span>
+            </div>
+            <div class="benefit-item">
+              <svg class="benefit-check" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+              <span>Own your data — no subscriptions</span>
+            </div>
+          </div>
+
+          <!-- Pricing -->
+          <div class="product-pricing">
+            <div class="price-display">
+              <span class="price-currency">$</span>
+              <span class="price-amount">99</span>
+            </div>
+            <span class="price-note">One-time purchase</span>
+          </div>
+
+          <!-- CTA Button -->
+          <button class="product-cta-button" onclick="addToCart('mini', 'AirBeam Mini', 99, '/assets/buy-it-now_ABMsidebyside.jpg')">
+            <span class="cta-text">Add to Cart</span>
+            <svg class="cta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14"/>
+              <path d="M12 5l7 7-7 7"/>
             </svg>
-            Add to Cart
           </button>
-          <p class="product-shipping-info">Free shipping • 30-day replacement for defective units</p>
-        </div>
 
-        <!-- Quick Specs -->
-        <div class="product-quick-specs">
-          <div class="spec-item">
-            <div class="spec-icon-wrapper">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="spec-icon">
-                <rect x="1" y="6" width="22" height="12" rx="2" ry="2"></rect>
-                <line x1="1" y1="10" x2="23" y2="10"></line>
+          <!-- Trust Signals -->
+          <div class="trust-signals">
+            <div class="trust-item">
+              <svg viewBox="0 0 20 20" fill="currentColor">
+                <path d="M8 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM15 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/>
+                <path d="M3 4a1 1 0 00-1 1v10a1 1 0 001 1h1.05a2.5 2.5 0 014.9 0H10a1 1 0 001-1V5a1 1 0 00-1-1H3zM14 7a1 1 0 00-1 1v6.05A2.5 2.5 0 0115.95 16H17a1 1 0 001-1v-5a1 1 0 00-.293-.707l-2-2A1 1 0 0015 7h-1z"/>
               </svg>
+              <span>Free US Shipping</span>
             </div>
-            <div class="spec-content">
-              <div class="spec-value">14 hours</div>
-              <div class="spec-label">Battery</div>
-            </div>
-          </div>
-          <div class="spec-item">
-            <div class="spec-icon-wrapper">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="spec-icon">
-                <circle cx="12" cy="12" r="10"></circle>
-                <polyline points="12 6 12 12 16 14"></polyline>
+            <div class="trust-item">
+              <svg viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10 2a4 4 0 00-4 4v1H5a1 1 0 00-.994.89l-1 9A1 1 0 004 18h12a1 1 0 00.994-1.11l-1-9A1 1 0 0015 7h-1V6a4 4 0 00-4-4zm2 5V6a2 2 0 10-4 0v1h4zm-6 3a1 1 0 112 0 1 1 0 01-2 0zm7-1a1 1 0 100 2 1 1 0 000-2z" clip-rule="evenodd"/>
               </svg>
+              <span>30-Day Returns</span>
             </div>
-            <div class="spec-content">
-              <div class="spec-value">4 oz</div>
-              <div class="spec-label">Weight</div>
-            </div>
-          </div>
-          <div class="spec-item">
-            <div class="spec-icon-wrapper">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="spec-icon">
-                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
-                <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
-                <line x1="12" y1="22.08" x2="12" y2="12"></line>
+            <div class="trust-item">
+              <svg viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
               </svg>
-            </div>
-            <div class="spec-content">
-              <div class="spec-value">55 days</div>
-              <div class="spec-label">Storage</div>
-            </div>
-          </div>
-          <div class="spec-item">
-            <div class="spec-icon-wrapper">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="spec-icon">
-                <path d="M5 12.55a11 11 0 0 1 14.08 0"></path>
-                <path d="M1.42 9a16 16 0 0 1 21.16 0"></path>
-                <path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path>
-                <line x1="12" y1="20" x2="12.01" y2="20"></line>
-              </svg>
-            </div>
-            <div class="spec-content">
-              <div class="spec-value">BT + WiFi</div>
-              <div class="spec-label">Connection</div>
+              <span>1-Year Warranty</span>
             </div>
           </div>
         </div>
       </div>
+    </div>
+
+    <!-- Consultation CTA -->
+    <div class="showcase-consultation reveal-fade">
+      <p class="showcase-consultation-text">Want to discuss your specific needs or get expert advice? Let's talk!</p>
+      <a href="/airbeam/get-consultation" target="_blank" class="showcase-consultation-button">
+        Schedule Free Consultation
+      </a>
     </div>
   </div>
 </section>

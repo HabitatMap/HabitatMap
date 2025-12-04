@@ -1,7 +1,15 @@
 // FAQ Section Styles
 .faq-section {
-  padding: 4rem 2rem;
-  background-color: #ffffff;
+  padding: 5rem 2rem;
+  background: linear-gradient(180deg, $white 0%, $teal-very-light 50%, $white 100%);
+
+  @media (min-width: 768px) {
+    padding: 7rem 2rem;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 8rem 2rem;
+  }
 
   // When used as a panel, ensure proper spacing
   &.panel {
@@ -18,22 +26,48 @@
       text-align: center;
       margin-bottom: 3rem;
 
+      .faq-eyebrow {
+        display: inline-block;
+        font-size: 0.75rem;
+        font-weight: 600;
+        color: $green;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+        margin-bottom: 1rem;
+
+        @media (min-width: 768px) {
+          font-size: 0.875rem;
+          margin-bottom: 1.25rem;
+        }
+      }
+
       .faq-title {
         font-family: "Moderat-Bold", sans-serif;
         font-weight: 700;
-        font-size: 1.75rem;
-        line-height: 1.2;
+        font-size: 2rem;
+        line-height: 1.15;
+        letter-spacing: -0.03em;
         color: #111827;
         margin-bottom: 1rem;
 
         @media (min-width: 768px) {
           font-size: 2.75rem;
         }
+
+        @media (min-width: 1024px) {
+          font-size: 3.25rem;
+          margin-bottom: 1.25rem;
+        }
       }
 
       .faq-subtitle {
-        font-size: 1.25rem;
+        font-size: 1rem;
         color: #6b7280;
+        line-height: 1.7;
+
+        @media (min-width: 768px) {
+          font-size: 1.125rem;
+        }
       }
     }
 
@@ -222,12 +256,18 @@
     padding: 2rem 1rem;
 
     .faq-header {
+      .faq-eyebrow {
+        font-size: 0.6875rem;
+        margin-bottom: 0.75rem;
+      }
+
       .faq-title {
-        font-size: 1.5rem;
+        font-size: 1.75rem;
+        margin-bottom: 0.75rem;
       }
 
       .faq-subtitle {
-        font-size: 1rem;
+        font-size: 0.9375rem;
       }
     }
 
