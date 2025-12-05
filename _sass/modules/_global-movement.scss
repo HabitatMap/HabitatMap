@@ -98,17 +98,17 @@
 
 .movement-image-wrapper {
   position: relative;
-  border-radius: 1.5rem;
+  border-radius: 1.25rem;
   overflow: hidden;
   aspect-ratio: 16 / 9;
 
   @media (min-width: $tablet-min) {
-    border-radius: 2rem;
+    border-radius: 1.75rem;
     aspect-ratio: 21 / 9;
   }
 
   @media (min-width: $small-desktop-min) {
-    border-radius: 2.5rem;
+    border-radius: 2rem;
   }
 }
 
@@ -165,7 +165,7 @@
   padding: 1.25rem 1.5rem;
   background: $white;
   border: 1px solid $teal-light;
-  border-radius: 1rem;
+  border-radius: 0.875rem;
   min-width: 100px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08), 0 2px 8px rgba(0, 0, 0, 0.04);
   transition: all 0.3s ease;
@@ -178,13 +178,13 @@
   @media (min-width: $tablet-min) {
     padding: 1.5rem 2rem;
     min-width: 140px;
-    border-radius: 1.25rem;
+    border-radius: 1rem;
   }
 
   @media (min-width: $small-desktop-min) {
     padding: 2rem 2.5rem;
     min-width: 160px;
-    border-radius: 1.5rem;
+    border-radius: 1rem;
   }
 }
 
@@ -288,7 +288,7 @@
 
   @media (min-width: $tablet-min) {
     padding: 2.25rem;
-    border-radius: 1.5rem;
+    border-radius: 1rem;
   }
 
   @media (min-width: $small-desktop-min) {
@@ -305,7 +305,7 @@
   width: 56px;
   height: 56px;
   background: $teal-very-light;
-  border-radius: 1rem;
+  border-radius: 0.875rem;
   color: $green;
   margin-bottom: 1.5rem;
   transition: all 0.4s ease;
@@ -318,7 +318,7 @@
   @media (min-width: $tablet-min) {
     width: 64px;
     height: 64px;
-    border-radius: 1.125rem;
+    border-radius: 1rem;
     margin-bottom: 1.75rem;
 
       svg {
@@ -410,7 +410,7 @@
   }
 
   .movement-image-wrapper {
-    border-radius: 1.25rem;
+    border-radius: 1rem;
     aspect-ratio: 4 / 3;
   }
 
@@ -424,7 +424,7 @@
     padding: 1rem 0.875rem;
     min-width: auto;
     flex: 1;
-      border-radius: 0.875rem;
+      border-radius: 0.75rem;
   }
 
   .stat-number {
@@ -444,7 +444,7 @@
     align-items: flex-start;
     gap: 1rem;
     padding: 1.25rem 1.5rem;
-    border-radius: 1rem;
+    border-radius: 0.875rem;
   }
 
   .feature-icon {

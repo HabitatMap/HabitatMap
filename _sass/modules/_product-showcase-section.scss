@@ -80,13 +80,13 @@
 .product-card {
   background: $white;
   border: 1px solid $teal-light;
-  border-radius: 2rem;
+  border-radius: 1.75rem;
   overflow: hidden;
   box-shadow: 0 8px 40px rgba(0, 0, 0, 0.06), 0 2px 8px rgba(0, 0, 0, 0.04);
   margin-bottom: 2.5rem;
 
   @media (min-width: $tablet-min) {
-    border-radius: 2.5rem;
+    border-radius: 2rem;
     margin-bottom: 3rem;
   }
 }
@@ -319,7 +319,7 @@
   background: $green;
   color: $white;
   border: none;
-  border-radius: 62.5rem;
+  border-radius: 2rem;
   font-family: $bold-font;
   font-size: $base-font-size;
   font-weight: 600;
@@ -474,7 +474,7 @@
   }
 
   .product-card {
-    border-radius: 1.5rem;
+    border-radius: 1.25rem;
     margin-bottom: 1.5rem;
   }
 
@@ -537,7 +537,7 @@
   color: $gray-dark;
   background: transparent;
   border: 2px solid $teal-light;
-  border-radius: 3rem;
+  border-radius: 2rem;
   text-decoration: none;
   transition: all 0.3s ease;
 

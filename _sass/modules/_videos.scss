@@ -81,7 +81,7 @@
 
       .video-card {
         background: $white;
-        border-radius: 1.25rem;
+        border-radius: 1rem;
         overflow: hidden;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         transition: box-shadow 0.3s ease;
@@ -116,7 +116,7 @@
             height: 100%;
             cursor: pointer;
             overflow: hidden;
-            border-radius: 8px;
+            border-radius: 0.5rem;
           }
 
           .video-thumbnail {

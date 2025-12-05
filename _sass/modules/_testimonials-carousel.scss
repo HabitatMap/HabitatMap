@@ -53,7 +53,7 @@
 
 .testimonial-card {
   background: $white;
-  border-radius: 1.25rem;
+  border-radius: 1rem;
   padding: 32px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -160,7 +160,7 @@
   width: 40px;
   height: 40px;
   background: $green-light;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -329,7 +329,7 @@
   padding: 12px 20px;
   background: rgba($green, 0.1);
   border: 1px solid rgba($green, 0.2);
-  border-radius: 20px;
+  border-radius: 1.25rem;
   color: darken($green, 8%);
   font-size: 14px;
   font-weight: 500;

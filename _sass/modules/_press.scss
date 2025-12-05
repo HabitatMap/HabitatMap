@@ -84,17 +84,17 @@
   justify-content: center;
   align-items: stretch;
   background: $white;
-  border-radius: 2rem;
+  border-radius: 1.75rem;
   box-shadow: 0 8px 40px rgba(0, 0, 0, 0.06);
   overflow: hidden;
 
   @media (min-width: $tablet-min) {
-    border-radius: 2.5rem;
+    border-radius: 2rem;
   }
 
   @media (min-width: $small-desktop-min) {
     flex-wrap: nowrap;
-    border-radius: 3rem;
+    border-radius: 2.5rem;
   }
 }
 
@@ -228,7 +228,7 @@
 
   .press-logos__grid {
     flex-direction: column;
-    border-radius: 1.5rem;
+    border-radius: 1.25rem;
   }
 
   .press-logos__item {

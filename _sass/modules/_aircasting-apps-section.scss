@@ -90,7 +90,7 @@
 
   .app-card {
     background: $white;
-    border-radius: 1.5rem;
+    border-radius: 1.25rem;
     padding: 2rem;
     border: 1px solid $teal-light;
     display: flex;
@@ -127,7 +127,7 @@
 
     @media (min-width: $tablet-min) {
       padding: 2.5rem;
-      border-radius: 1.75rem;
+      border-radius: 1.5rem;
     }
 
     .app-card-header {
@@ -140,7 +140,7 @@
       .app-icon {
         width: 56px;
         height: 56px;
-        border-radius: 1rem;
+        border-radius: 0.75rem;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -150,14 +150,14 @@
         @media (min-width: $tablet-min) {
           width: 64px;
           height: 64px;
-          border-radius: 1.125rem;
+          border-radius: 1rem;
         }
 
         &.web-app {
           background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
 
           svg {
-            color: #2563eb;
+            color: rgb(0, 179, 239);
             width: 26px;
             height: 26px;
           }
@@ -205,7 +205,7 @@
       z-index: 1;
 
       @media (min-width: $tablet-min) {
-        border-radius: 1.25rem;
+        border-radius: 1rem;
       }
 
       img {
@@ -248,10 +248,10 @@
           align-items: center;
           justify-content: center;
           gap: 0.5rem;
-          background: #2563eb;
+          background: rgb(0, 179, 239);
           color: $white;
           padding: 1rem 1.5rem;
-          border-radius: 0.75rem;
+          border-radius: 0.5rem;
           text-decoration: none;
           font-family: $bold-font;
           font-weight: 600;
@@ -260,9 +260,9 @@
           transition: all 0.3s ease;
 
           &:hover {
-            background: #1d4ed8;
+            background: rgb(0, 159, 213);
             transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(37, 99, 235, 0.3);
+            box-shadow: 0 6px 20px rgba(0, 179, 239, 0.3);
           }
         }
       }
@@ -328,7 +328,7 @@
 
     .app-card {
       padding: 1.5rem;
-      border-radius: 1.25rem;
+      border-radius: 1rem;
 
       .app-card-header {
         margin-bottom: 1.25rem;
@@ -336,7 +336,7 @@
         .app-icon {
           width: 48px;
           height: 48px;
-          border-radius: 0.875rem;
+          border-radius: 0.75rem;
 
           svg {
             width: 22px;
@@ -354,7 +354,7 @@
       .app-image {
         aspect-ratio: 16/9;
         margin-bottom: 1.25rem;
-        border-radius: 0.875rem;
+        border-radius: 0.75rem;
       }
 
       .app-description {
