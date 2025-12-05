@@ -15,8 +15,9 @@ image: /assets/img/about-airbeam-01.jpg
 
   <div class="split--50">
     <p class="heading heading--small">
-      
+
     </p>
+
   </div>
 </section>
 
@@ -77,7 +78,7 @@ image: /assets/img/about-airbeam-01.jpg
   <h2 class="heading heading--small heading--body">
     AirBeam Mini Sleeve
   </h2>
-  
+
   <p class="p--body">
 Outfitted with its sleeve, AirBeam Mini becomes drop-proof and rain-proof. The sleeve includes a carbiner attachment point to simplify outdoor installation. Remove the sleeve for a more streamlined profile or to attach the belt clip. The fit between the AirBeam Mini and its sleeve is intentionally tight to keep the AirBeam from falling out of the sleeve. The below video shows how to remove AirBeam Mini from its sleeve.
 <br><br />
@@ -129,7 +130,6 @@ Operation of AirBeam Mini is nearly identical to operation of AirBeam3, so the b
   <p class="p--body">
     AirBeam Mini contains a lithium battery. Exposing AirBeam Mini to extreme heat will degrade the batteries performance and could lead to overheating and fire. If the battery gives off an odor, generates heat, becomes discolored or deformed, or in any way appears abnormal immediately unplug and power off AirBeam Mini and place it in a contained vessel, such as a metal box.
   </p>
-
 
   <a id="power-on-off" class="anchor">
   </a>
@@ -254,4 +254,3 @@ Operation of AirBeam Mini is nearly identical to operation of AirBeam3, so the b
   </p>
 
 </section>
-

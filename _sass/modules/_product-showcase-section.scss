@@ -319,7 +319,8 @@
   background: $green;
   color: $white;
   border: none;
-  border-radius: 0.75rem;
+  border-radius: 62.5rem;
+  font-family: $bold-font;
   font-size: $base-font-size;
   font-weight: 600;
   cursor: pointer;
@@ -500,7 +501,6 @@
 
   .product-cta-button {
     padding: 0.875rem 1.5rem;
-    border-radius: 0.625rem;
   }
 }
 

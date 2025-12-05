@@ -80,12 +80,12 @@
       gap: 1.5rem;
 
       .video-card {
-        background: white;
-        border-radius: 12px;
+        background: $white;
+        border-radius: 1.25rem;
         overflow: hidden;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         transition: box-shadow 0.3s ease;
-        border: 1px solid #e5e7eb;
+        border: 1px solid $teal-light;
 
         &:hover {
           box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
@@ -94,7 +94,7 @@
         .video-container {
           position: relative;
           aspect-ratio: 16/18;
-          background: #111827;
+          background: $gray-dark;
 
           iframe {
             width: 100%;
@@ -142,7 +142,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            color: white;
+            color: $white;
             transition: all 0.3s ease;
           }
 
@@ -158,12 +158,12 @@
           .video-title {
             font-size: 1rem;
             font-weight: 600;
-            color: #111827;
+            color: $gray-dark;
             margin-bottom: 0.5rem;
           }
 
           .video-description {
-            color: #6b7280;
+            color: $gray;
             font-size: 0.875rem;
             line-height: 1.4;
             margin-bottom: 0.5rem;
@@ -179,8 +179,8 @@
       .library-link {
         display: inline-flex;
         align-items: center;
-        background: #1ea73f;
-        color: white;
+        background: $green;
+        color: $white;
         padding: 1rem 2rem;
         border-radius: 8px;
         text-decoration: none;
@@ -190,7 +190,7 @@
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
         &:hover {
-          background-color: #16a34a;
+          background-color: darken($green, 5%);
         }
       }
     }
@@ -236,17 +236,17 @@
   }
 
   .video-card {
-    background: white;
-    border-radius: 12px;
+    background: $white;
+    border-radius: 1.25rem;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s ease;
-    border: 1px solid #e5e7eb;
+    border: 1px solid $teal-light;
 
     .video-container {
       position: relative;
       aspect-ratio: 16/12;
-      background: #111827;
+      background: $gray-dark;
 
       iframe {
         width: 100%;
@@ -261,12 +261,12 @@
       h3 {
         font-size: 1.125rem;
         font-weight: 600;
-        color: #111827;
+        color: $gray-dark;
         margin-bottom: 0.5rem;
       }
 
       p {
-        color: #6b7280;
+        color: $gray;
         font-size: 0.875rem;
         line-height: 1.5;
         margin-bottom: 1rem;
@@ -275,7 +275,7 @@
       .video-link {
         display: inline-flex;
         align-items: center;
-        color: #1ea73f;
+        color: $green;
         text-decoration: none;
         font-size: 0.875rem;
         font-weight: 500;
@@ -290,8 +290,8 @@
   .video-library-btn {
     display: inline-flex;
     align-items: center;
-    background: #1ea73f;
-    color: white;
+    background: $green;
+    color: $white;
     padding: 1rem 2rem;
     border-radius: 8px;
     text-decoration: none;

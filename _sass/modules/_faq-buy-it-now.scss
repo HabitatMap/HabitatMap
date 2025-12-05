@@ -1,7 +1,7 @@
 // FAQ Section - Buy It Now
 .faq-section {
   padding: 4rem 2rem;
-  background-color: #ffffff;
+  background-color: $white;
 
   .faq-container {
     max-width: 800px;
@@ -9,18 +9,73 @@
     width: 100%;
   }
 
+  .faq-header {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 3rem;
+
+    @media (min-width: $tablet-min) {
+      margin-bottom: 4rem;
+    }
+  }
+
+  .faq-eyebrow {
+    display: inline-block;
+    font-size: $base-font-size-2;
+    font-weight: 600;
+    color: $green;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    margin-bottom: 1rem;
+
+    @media (min-width: $tablet-min) {
+      font-size: $base-font-size-1;
+      margin-bottom: 1.25rem;
+    }
+  }
+
+  .faq-title {
+    font-family: $bold-font;
+    font-size: 2rem;
+    font-weight: 700;
+    color: $gray-dark;
+    line-height: 1.15;
+    letter-spacing: -0.03em;
+    margin: 0 0 1rem;
+
+    @media (min-width: $tablet-min) {
+      font-size: 2.75rem;
+    }
+
+    @media (min-width: $small-desktop-min) {
+      font-size: 3.25rem;
+      margin-bottom: 1.25rem;
+    }
+  }
+
+  .faq-subtitle {
+    font-size: $base-font-size;
+    color: $gray;
+    line-height: 1.7;
+    margin: 0;
+
+    @media (min-width: $tablet-min) {
+      font-size: $base-font-size1;
+    }
+  }
+
   .quick-access {
     margin-bottom: 3rem;
     padding: 1.5rem;
-    background: #f9fafb;
-    border-radius: 12px;
+    background: $teal-very-light;
+    border-radius: 1.25rem;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-    border: 1px solid #e5e7eb;
+    border: 1px solid $teal-light;
 
     h3 {
       font-size: 1.125rem;
       font-weight: 600;
-      color: #111827;
+      color: $gray-dark;
       margin-bottom: 1rem;
     }
 
@@ -34,12 +89,12 @@
       display: inline-flex;
       align-items: center;
       background: transparent;
-      color: #374151;
+      color: $gray-medium;
       padding: 0.75rem 1rem;
       border-radius: 8px;
       text-decoration: none;
       font-weight: 500;
-      border: 1px solid #d1d5db;
+      border: 1px solid $teal-light;
       transition: all 0.3s ease;
 
       svg {
@@ -58,9 +113,9 @@
     h3 {
       font-size: 1.25rem;
       font-weight: bold;
-      color: #111827;
+      color: $gray-dark;
       margin-bottom: 1rem;
-      border-bottom: 2px solid #e5e7eb;
+      border-bottom: 2px solid $teal-light;
       padding-bottom: 0.5rem;
     }
 
@@ -72,9 +127,9 @@
   }
 
   .faq-item {
-    background: white;
-    border: 1px solid #e5e7eb;
-    border-radius: 8px;
+    background: $white;
+    border: 1px solid $teal-light;
+    border-radius: 1.25rem;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 
     .faq-toggle {
@@ -88,7 +143,7 @@
       border: none;
       cursor: pointer;
       font-weight: 600;
-      color: #111827;
+      color: $gray-dark;
       transition: background-color 0.2s;
 
       span {
@@ -96,7 +151,7 @@
       }
 
       .faq-icon {
-        color: #6b7280;
+        color: $gray;
         flex-shrink: 0;
         transition: transform 0.2s;
       }
@@ -107,7 +162,7 @@
       padding: 0 1.5rem 1.5rem;
 
       p {
-        color: #6b7280;
+        color: $gray;
         line-height: 1.6;
       }
     }
@@ -116,8 +171,8 @@
   .faq-contact {
     margin-top: 2rem;
     text-align: center;
-    background: #f9fafb;
-    border-radius: 12px;
+    background: $teal-very-light;
+    border-radius: 1.25rem;
     padding: 1.5rem;
     max-width: 800px;
     margin-left: auto;
@@ -126,12 +181,12 @@
     h3 {
       font-size: 1rem;
       font-weight: 600;
-      color: #111827;
+      color: $gray-dark;
       margin-bottom: 0.5rem;
     }
 
     p {
-      color: #6b7280;
+      color: $gray;
       margin-bottom: 1rem;
       font-size: 0.875rem;
     }
@@ -152,13 +207,79 @@
       transition: background-color 0.2s;
 
       &.primary {
-        background: rgb(30, 167, 63);
-        color: white;
+        background: $green;
+        color: $white;
       }
 
       &.secondary {
-        border: 1px solid #d1d5db;
-        color: #374151;
+        border: 1px solid $teal-light;
+        color: $gray-medium;
+      }
+    }
+  }
+
+  .contact-section {
+    margin-top: 3rem;
+    text-align: center;
+    background: $teal-very-light;
+    border-radius: 1.25rem;
+    padding: 2rem;
+    border: 1px solid $teal-light;
+
+    .contact-title {
+      font-family: $bold-font;
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: $gray-dark;
+      margin: 0 0 0.5rem;
+    }
+
+    .contact-description {
+      color: $gray;
+      margin-bottom: 1.5rem;
+      font-size: $base-font-size;
+    }
+
+    .contact-buttons {
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .contact-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.875rem 1.75rem;
+      text-decoration: none;
+      border-radius: 62.5rem;
+      font-weight: 600;
+      font-size: $base-font-size;
+      transition: all 0.3s ease;
+
+      &.email-support {
+        background: $green;
+        color: $white;
+
+        &:hover {
+          background: darken($green, 8%);
+          transform: translateY(-2px);
+          box-shadow: 0 6px 20px rgba($green, 0.25);
+        }
+      }
+
+      &.join-community {
+        background: transparent;
+        color: $gray-dark;
+        border: 2px solid $teal-light;
+
+        &:hover {
+          border-color: $green;
+          color: $green;
+          transform: translateY(-2px);
+        }
       }
     }
   }
