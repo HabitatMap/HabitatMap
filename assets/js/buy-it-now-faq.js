@@ -8,10 +8,10 @@ function toggleFAQ(button) {
     content.classList.add('show');
     icon.style.transform = 'rotate(180deg)';
     button.style.backgroundColor = '#f9fafb';
-    button.style.borderRadius = 'inherit';
   } else {
     content.classList.remove('show');
     icon.style.transform = 'rotate(0deg)';
     button.style.backgroundColor = 'transparent';
+    button.style.borderRadius = '';
   }
 }
