@@ -85,21 +85,21 @@ hasMerchantReturnPolicy:
 
 <script src="/assets/js/scroll-reveal.js"></script>
 
-{% include buy-it-now/features-section.html %}
-
 {% include buy-it-now/press-section.html %}
+
+{% include buy-it-now/testimonials-section.html %}
 
 {% include buy-it-now/videos-section.html %}
 
+{% include buy-it-now/features-section.html %}
+
 {% include buy-it-now/aircasting-apps-section.html %}
 
-{% include buy-it-now/testimonials-section.html %}
+{% include buy-it-now/global-movement-section.html %}
 
 {% include buy-it-now/technical-section.html %}
 
 {% include buy-it-now/product-showcase-section.html %}
-
-{% include buy-it-now/global-movement-section.html %}
 
 {% include buy-it-now/faq-section.html %}
 
