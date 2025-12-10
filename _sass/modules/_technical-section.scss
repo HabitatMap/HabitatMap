@@ -322,16 +322,16 @@
 // Battery Card - Icon only
 .technical-card--battery {
   .battery-icon {
-    width: 100px;
+    width: 60px;
     height: auto;
     color: $green;
 
     @media (min-width: $tablet-min) {
-      width: 120px;
+      width: 70px;
     }
 
     @media (min-width: $small-desktop-min) {
-      width: 140px;
+      width: 80px;
     }
   }
 }
@@ -570,7 +570,7 @@
   }
 
   .technical-card--battery .battery-icon {
-    width: 90px;
+    width: 55px;
   }
 
   .technical-card--connectivity .connectivity-logo svg {
