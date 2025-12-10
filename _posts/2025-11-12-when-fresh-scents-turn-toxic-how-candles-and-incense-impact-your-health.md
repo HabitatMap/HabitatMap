@@ -46,4 +46,4 @@ The good news is that there are ways to enjoy pleasant scents safely. Choosing n
 
 Scent doesn’t always mean safety. Before lighting that candle or spraying that freshener, ask yourself: is it improving the air or just masking the problem? Using awareness, healthier alternatives, and tools like the AirBeam, you can keep your indoor air genuinely fresh and safe for everyone in your home.
 
-<iframe width="752" height="424" src="https://youtube.com/shorts/RH9rrQM0Y-Y?feature=share" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="752" height="424" src=https://youtube.com/shorts/RH9rrQM0Y-Y?feature=share title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
