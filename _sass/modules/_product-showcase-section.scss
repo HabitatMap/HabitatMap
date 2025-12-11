@@ -118,7 +118,12 @@
   display: block;
   position: relative;
   z-index: 1;
+  border-radius: 1rem;
   transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media (min-width: $tablet-min) {
+    border-radius: 1.25rem;
+  }
 }
 
 .product-visual-area:hover .product-main-image {
