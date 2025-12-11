@@ -43,24 +43,24 @@
   }
 }
 
-.feature-card {
+.feature-cards-grid .feature-card {
   text-align: center;
   padding: 2rem;
-  background: transparent !important;
-  border: none !important;
-  box-shadow: none !important;
-  border-radius: 0 !important;
-  transition: none !important;
-  animation: none !important;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  transition: none;
+  animation: none;
 
   // Disable ALL hover effects
   &:hover {
-    background: transparent !important;
-    border: none !important;
-    box-shadow: none !important;
-    transform: none !important;
-    transition: none !important;
-    animation: none !important;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    transform: none;
+    transition: none;
+    animation: none;
   }
 }
 
