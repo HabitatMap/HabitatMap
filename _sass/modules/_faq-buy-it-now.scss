@@ -239,23 +239,35 @@
   .contact-section {
     margin-top: 3rem;
     text-align: center;
-    background: $teal-very-light;
+    background: $white;
     border-radius: 1rem;
-    padding: 2rem;
-    border: 1px solid $teal-light;
+    padding: 2.5rem 2rem;
+    border: 1px solid rgba($gray-dark, 0.08);
+
+    @media (min-width: $tablet-min) {
+      padding: 3rem 2.5rem;
+    }
 
     .contact-title {
       font-family: $bold-font;
       font-size: 1.25rem;
       font-weight: 700;
       color: $gray-dark;
-      margin: 0 0 0.5rem;
+      margin: 0 0 0.75rem;
+
+      @media (min-width: $tablet-min) {
+        font-size: 1.5rem;
+      }
     }
 
     .contact-description {
       color: $gray;
-      margin-bottom: 1.5rem;
+      margin-bottom: 1.75rem;
       font-size: $base-font-size;
+
+      @media (min-width: $tablet-min) {
+        font-size: $base-font-size1;
+      }
     }
 
     .contact-buttons {
@@ -289,14 +301,15 @@
       }
 
       &.join-community {
-        background: transparent;
+        background: $white;
         color: $gray-dark;
-        border: 2px solid $teal-light;
+        border: 1.5px solid rgba($gray-dark, 0.2);
 
         &:hover {
-          border-color: $green;
-          color: $green;
+          border-color: $gray-dark;
+          background: $teal-very-light;
           transform: translateY(-2px);
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
         }
       }
     }

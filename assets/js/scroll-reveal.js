@@ -21,7 +21,8 @@
     '.reveal-right',
     '.reveal-scale',
     '.reveal-stagger',
-    '.reveal-content'
+    '.reveal-content',
+    '.reveal-header'
   ].join(',');
 
   /**
@@ -33,6 +34,12 @@
       // Show all elements immediately
       document.querySelectorAll(revealSelectors).forEach(el => {
         el.classList.add('is-visible');
+      });
+      // Also handle standalone reveal-header elements
+      document.querySelectorAll('.reveal-header').forEach(el => {
+        if (!el.closest('.reveal-content')) {
+          el.classList.add('is-visible');
+        }
       });
       return;
     }
@@ -55,6 +62,13 @@
     // Observe all reveal elements
     document.querySelectorAll(revealSelectors).forEach(el => {
       observer.observe(el);
+    });
+
+    // Also observe standalone reveal-header elements (not inside reveal-content)
+    document.querySelectorAll('.reveal-header').forEach(el => {
+      if (!el.closest('.reveal-content')) {
+        observer.observe(el);
+      }
     });
   }
 

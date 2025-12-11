@@ -97,24 +97,44 @@
 .reveal-content {
   .reveal-header {
     opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1),
-                transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    transform: translateY(40px);
+    transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    will-change: opacity, transform;
   }
 
   .reveal-body {
     opacity: 0;
     transform: translateY(30px);
-    transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.15s,
-                transform 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.15s;
+    transition: opacity 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s,
+                transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s;
+    will-change: opacity, transform;
   }
 
   &.is-visible {
-    .reveal-header,
+    .reveal-header {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
     .reveal-body {
       opacity: 1;
       transform: translateY(0);
     }
+  }
+}
+
+// Standalone reveal-header (used directly on h2, h3, etc.)
+.reveal-header {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  will-change: opacity, transform;
+
+  &.is-visible {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
@@ -144,7 +164,8 @@
   .reveal-scale,
   .reveal-stagger .reveal-child,
   .reveal-content .reveal-header,
-  .reveal-content .reveal-body {
+  .reveal-content .reveal-body,
+  .reveal-header {
     transition: none !important;
     opacity: 1 !important;
     transform: none !important;

@@ -387,14 +387,14 @@
 
 
 .accuracy-banner {
-  margin-top: 3rem;
-  padding-top: 3rem;
+  margin-top: 2rem;
+  padding-top: 2rem;
   border-top: 1px solid rgba($gray-dark, 0.1);
   text-align: center;
 
   @media (min-width: $tablet-min) {
-    margin-top: 4rem;
-    padding-top: 4rem;
+    margin-top: 2.5rem;
+    padding-top: 2.5rem;
   }
 }
 
@@ -404,10 +404,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  gap: 0.5rem;
 
   @media (min-width: $tablet-min) {
-    gap: 1.25rem;
+    gap: 0.75rem;
   }
 }
 
@@ -418,17 +418,16 @@
   color: $green;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0;
 
   @media (min-width: $tablet-min) {
     font-size: $base-font-size-1;
-    margin-bottom: 0.5rem;
   }
 }
 
 .accuracy-title {
   font-family: $bold-font;
-  font-size: 1.5rem;
+  font-size: 1.375rem;
   font-weight: 700;
   color: $gray-dark;
   margin: 0;
@@ -436,22 +435,22 @@
   letter-spacing: -0.02em;
 
   @media (min-width: $tablet-min) {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
 
   @media (min-width: $small-desktop-min) {
-    font-size: 2.25rem;
+    font-size: 2rem;
   }
 }
 
 .accuracy-description {
-  font-size: $base-font-size-1;
+  font-size: $base-font-size-2;
   color: $gray;
-  line-height: 1.6;
+  line-height: 1.5;
   margin: 0;
 
   @media (min-width: $tablet-min) {
-    font-size: $base-font-size;
+    font-size: $base-font-size-1;
   }
 }
 
@@ -459,21 +458,21 @@
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 0.875rem 1.75rem;
+  padding: 0.75rem 1.5rem;
   background: $white;
   color: $gray-dark;
   border: 1.5px solid rgba($gray-dark, 0.2);
   border-radius: 2rem;
   font-family: $bold-font;
-  font-size: $base-font-size-1;
+  font-size: $base-font-size-2;
   font-weight: 600;
   text-decoration: none;
   transition: all 0.3s ease;
-  margin-top: 0.5rem;
+  margin-top: 0.25rem;
 
   svg {
-    width: 16px;
-    height: 16px;
+    width: 14px;
+    height: 14px;
     transition: transform 0.3s ease;
   }
 
@@ -493,9 +492,9 @@
   }
 
   @media (min-width: $tablet-min) {
-    padding: 1rem 2rem;
-    font-size: $base-font-size;
-    margin-top: 0.75rem;
+    padding: 0.875rem 1.75rem;
+    font-size: $base-font-size-1;
+    margin-top: 0.5rem;
   }
 }
 
