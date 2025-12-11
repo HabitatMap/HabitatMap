@@ -128,6 +128,7 @@ $header-link-color-white: $white;
 // Header Button themes
 
 .header__button {
+  border-radius: 2rem;
   @include button-color(
     $text-color: $header-link-color-gray,
     $border-color: $header-link-color-gray,

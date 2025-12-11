@@ -316,8 +316,8 @@
   gap: 0.5rem;
   width: 100%;
   padding: 1rem 2rem;
-  background: $green;
-  color: $white;
+  background: linear-gradient(135deg, #ffe651 0%, #ffd700 100%);
+  color: #111827;
   border: none;
   border-radius: 2rem;
   font-family: $bold-font;
@@ -326,11 +326,12 @@
   cursor: pointer;
   transition: all 0.3s ease;
   margin-bottom: 1.25rem;
+  box-shadow: 0 4px 14px rgba(255, 230, 81, 0.3);
 
   &:hover {
-    background: darken($green, 8%);
+    background: linear-gradient(135deg, #ffd700 0%, #ffb347 100%);
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba($green, 0.25);
+    box-shadow: 0 8px 25px rgba(255, 230, 81, 0.4);
 
     .cta-icon {
       transform: translateX(3px);

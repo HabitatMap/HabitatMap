@@ -9,6 +9,7 @@ $ac-brand-transparent: transparentize($ac-brand, 0.4);
   height: $button-base-height;
   padding: $button-padding;
   text-align: center;
+  border-radius: 2rem;
 }
 
 .button--hm {

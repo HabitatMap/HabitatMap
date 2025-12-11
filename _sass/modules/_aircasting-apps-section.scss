@@ -248,10 +248,11 @@
           align-items: center;
           justify-content: center;
           gap: 0.5rem;
-          background: rgb(0, 179, 239);
-          color: $white;
+          background: $white;
+          color: $gray-dark;
+          border: 1.5px solid $teal-light;
           padding: 1rem 1.5rem;
-          border-radius: 0.5rem;
+          border-radius: 2rem;
           text-decoration: none;
           font-family: $bold-font;
           font-weight: 600;
@@ -259,10 +260,19 @@
           width: 100%;
           transition: all 0.3s ease;
 
+          svg {
+            width: 14px;
+            height: 14px;
+          }
+
           &:hover {
-            background: rgb(0, 159, 213);
+            border-color: $gray-dark;
+            background: $teal-very-light;
             transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(0, 179, 239, 0.3);
+          }
+
+          &:active {
+            transform: translateY(0);
           }
         }
       }
@@ -288,6 +298,8 @@
             a {
               display: inline-block;
               transition: transform 0.3s ease;
+              border-radius: 2rem;
+              overflow: hidden;
 
               &:hover {
                 transform: translateY(-2px);
@@ -296,6 +308,7 @@
               img {
                 height: 36px;
                 width: auto;
+                display: block;
 
                 @media (min-width: $tablet-min) {
                   height: 40px;
