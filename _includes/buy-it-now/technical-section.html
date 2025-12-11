@@ -20,92 +20,236 @@
       </p>
     </div>
 
-    <!-- Bento Grid - Apple-inspired dark cards -->
+    <!-- Bento Grid - Flip cards with front/back -->
     <div class="technical-grid reveal-stagger">
-      <!-- Card 1 - PM Monitoring (text-only) -->
-      <div class="technical-card technical-card--text reveal-child">
-        <div class="technical-card-content">
-          <div class="technical-card-top">
-            <p class="technical-card-label">Measures</p>
-            <h3 class="technical-card-value">PM1 & PM2.5</h3>
-            <p class="technical-card-description">Fine particulate matter detection</p>
+      <!-- Card 1 - PM Monitoring -->
+      <div class="technical-card-wrapper reveal-child" tabindex="0">
+        <div class="technical-card-flipper">
+          <!-- Front -->
+          <div class="technical-card technical-card--text technical-card-front">
+            <div class="technical-card-content">
+              <div class="technical-card-top">
+                <p class="technical-card-label">Measures</p>
+                <h3 class="technical-card-value">PM1 & PM2.5</h3>
+                <p class="technical-card-description">Fine particulate matter detection</p>
+              </div>
+              <span class="flip-hint">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M17 1l4 4-4 4"/>
+                  <path d="M3 11V9a4 4 0 0 1 4-4h14"/>
+                  <path d="M7 23l-4-4 4-4"/>
+                  <path d="M21 13v2a4 4 0 0 1-4 4H3"/>
+                </svg>
+              </span>
+            </div>
           </div>
-        </div>
-      </div>
-
-      <!-- Card 2 - Weather Resistant (with image) -->
-      <div class="technical-card technical-card--visual technical-card--weather reveal-child">
-        <div class="technical-card-content">
-          <div class="technical-card-bottom">
-            <p class="technical-card-label">Included</p>
-            <h3 class="technical-card-value">Weather Sleeve</h3>
-          </div>
-          <div class="technical-card-visual">
-            <img
-              src="/assets/img/pages/buy-it-now/airbeam-sleave.png"
-              alt="AirBeam Mini with weather-resistant sleeve"
-              class="technical-card-img"
-            />
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 3 - Ultra-light (text-only) -->
-      <div class="technical-card technical-card--text reveal-child">
-        <div class="technical-card-content">
-          <div class="technical-card-top">
-            <p class="technical-card-label">Ultra-light</p>
-            <h3 class="technical-card-value">4 oz</h3>
-            <p class="technical-card-description">Compact & portable design</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 4 - Connectivity (with icon) -->
-      <div class="technical-card technical-card--visual technical-card--connectivity reveal-child">
-        <div class="technical-card-backdrop"></div>
-        <div class="technical-card-content">
-          <div class="technical-card-bottom">
-            <p class="technical-card-label">Connectivity</p>
-            <h3 class="technical-card-value">BT + WiFi</h3>
-          </div>
-          <div class="technical-card-visual">
-            <div class="connectivity-logo">
-              {% include svg/aircasting_logo.svg %}
+          <!-- Back -->
+          <div class="technical-card technical-card--back technical-card-back">
+            <div class="technical-card-content">
+              <h4 class="back-title">Real-time air quality data</h4>
+              <ul class="back-features">
+                <li>Updates every second while you move</li>
+                <li>Detects particles smaller than 2.5 micrometers</li>
+                <li>Range: 0-1000 μg/m³</li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Card 5 - Data Storage (text-only) -->
-      <div class="technical-card technical-card--text reveal-child">
-        <div class="technical-card-content">
-          <div class="technical-card-top">
-            <p class="technical-card-label">Onboard storage</p>
-            <h3 class="technical-card-value">55 Days</h3>
-            <p class="technical-card-description">Continuous data recording</p>
+      <!-- Card 2 - Weather Sleeve -->
+      <div class="technical-card-wrapper reveal-child" tabindex="0">
+        <div class="technical-card-flipper">
+          <!-- Front -->
+          <div class="technical-card technical-card--visual technical-card--weather technical-card-front">
+            <div class="technical-card-content">
+              <div class="technical-card-bottom">
+                <p class="technical-card-label">Included</p>
+                <h3 class="technical-card-value">Weather Sleeve</h3>
+              </div>
+              <div class="technical-card-visual">
+                <img
+                  src="/assets/img/pages/buy-it-now/airbeam-sleave.png"
+                  alt="AirBeam Mini with weather-resistant sleeve"
+                  class="technical-card-img"
+                />
+              </div>
+              <span class="flip-hint">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M17 1l4 4-4 4"/>
+                  <path d="M3 11V9a4 4 0 0 1 4-4h14"/>
+                  <path d="M7 23l-4-4 4-4"/>
+                  <path d="M21 13v2a4 4 0 0 1-4 4H3"/>
+                </svg>
+              </span>
+            </div>
+          </div>
+          <!-- Back -->
+          <div class="technical-card technical-card--back technical-card-back">
+            <div class="technical-card-content">
+              <h4 class="back-title">Your shield of protection</h4>
+              <ul class="back-features">
+                <li>Keeps AirBeam dry in rain and snow</li>
+                <li>Retro-arcade looks, serious weather protection</li>
+                <li>Works great as a conversation starter</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
 
-      <!-- Card 6 - Battery Life (with icon) -->
-      <div class="technical-card technical-card--visual technical-card--battery reveal-child">
-        <div class="technical-card-content">
-          <div class="technical-card-bottom">
-            <p class="technical-card-label">Battery Life</p>
-            <h3 class="technical-card-value">14 hrs</h3>
+      <!-- Card 3 - Ultra-light -->
+      <div class="technical-card-wrapper reveal-child" tabindex="0">
+        <div class="technical-card-flipper">
+          <!-- Front -->
+          <div class="technical-card technical-card--text technical-card-front">
+            <div class="technical-card-content">
+              <div class="technical-card-top">
+                <p class="technical-card-label">Ultra-light</p>
+                <h3 class="technical-card-value">4 oz</h3>
+                <p class="technical-card-description">Compact & portable design</p>
+              </div>
+              <span class="flip-hint">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M17 1l4 4-4 4"/>
+                  <path d="M3 11V9a4 4 0 0 1 4-4h14"/>
+                  <path d="M7 23l-4-4 4-4"/>
+                  <path d="M21 13v2a4 4 0 0 1-4 4H3"/>
+                </svg>
+              </span>
+            </div>
           </div>
-          <div class="technical-card-visual">
-            <svg class="battery-icon" viewBox="0 0 50 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <!-- Battery body -->
-              <rect x="8" y="10" width="34" height="70" rx="4" stroke="currentColor" stroke-width="2.5" fill="none"/>
-              <!-- Battery terminal -->
-              <rect x="20" y="0" width="10" height="10" rx="2" fill="currentColor"/>
-              <!-- Battery segments (3 out of 4 filled, from bottom to top) -->
-              <rect x="12" y="58" width="26" height="12" rx="2" fill="currentColor"/>
-              <rect x="12" y="43" width="26" height="12" rx="2" fill="currentColor"/>
-              <rect x="12" y="28" width="26" height="12" rx="2" fill="currentColor"/>
-            </svg>
+          <!-- Back -->
+          <div class="technical-card technical-card--back technical-card-back">
+            <div class="technical-card-content">
+              <h4 class="back-title">Ultralight design</h4>
+              <ul class="back-features">
+                <li>113 grams — lighter than your phone</li>
+                <li>Clip to bag, belt, or bike without strain</li>
+                <li>Move freely while you monitor</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 - Connectivity -->
+      <div class="technical-card-wrapper reveal-child" tabindex="0">
+        <div class="technical-card-flipper">
+          <!-- Front -->
+          <div class="technical-card technical-card--visual technical-card--connectivity technical-card-front">
+            <div class="technical-card-backdrop"></div>
+            <div class="technical-card-content">
+              <div class="technical-card-bottom">
+                <p class="technical-card-label">Connectivity</p>
+                <h3 class="technical-card-value">BT + WiFi</h3>
+              </div>
+              <div class="technical-card-visual">
+                <div class="connectivity-logo">
+                  {% include svg/aircasting_logo.svg %}
+                </div>
+              </div>
+              <span class="flip-hint">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M17 1l4 4-4 4"/>
+                  <path d="M3 11V9a4 4 0 0 1 4-4h14"/>
+                  <path d="M7 23l-4-4 4-4"/>
+                  <path d="M21 13v2a4 4 0 0 1-4 4H3"/>
+                </svg>
+              </span>
+            </div>
+          </div>
+          <!-- Back -->
+          <div class="technical-card technical-card--back technical-card-back">
+            <div class="technical-card-content">
+              <h4 class="back-title">Connect your way</h4>
+              <ul class="back-features">
+                <li>Bluetooth pairs with your phone instantly</li>
+                <li>WiFi enables 24/7 unattended monitoring</li>
+                <li>Works offline, syncs when reconnected</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 5 - Data Storage -->
+      <div class="technical-card-wrapper reveal-child" tabindex="0">
+        <div class="technical-card-flipper">
+          <!-- Front -->
+          <div class="technical-card technical-card--text technical-card-front">
+            <div class="technical-card-content">
+              <div class="technical-card-top">
+                <p class="technical-card-label">Onboard storage</p>
+                <h3 class="technical-card-value">55 Days</h3>
+                <p class="technical-card-description">Continuous data recording</p>
+              </div>
+              <span class="flip-hint">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M17 1l4 4-4 4"/>
+                  <path d="M3 11V9a4 4 0 0 1 4-4h14"/>
+                  <path d="M7 23l-4-4 4-4"/>
+                  <path d="M21 13v2a4 4 0 0 1-4 4H3"/>
+                </svg>
+              </span>
+            </div>
+          </div>
+          <!-- Back -->
+          <div class="technical-card technical-card--back technical-card-back">
+            <div class="technical-card-content">
+              <h4 class="back-title">Never lose your data</h4>
+              <ul class="back-features">
+                <li>Stores 55 days at 1-second intervals</li>
+                <li>Records even when phone is miles away</li>
+                <li>4.7 million data points capacity</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 6 - Battery Life -->
+      <div class="technical-card-wrapper reveal-child" tabindex="0">
+        <div class="technical-card-flipper">
+          <!-- Front -->
+          <div class="technical-card technical-card--visual technical-card--battery technical-card-front">
+            <div class="technical-card-content">
+              <div class="technical-card-bottom">
+                <p class="technical-card-label">Battery Life</p>
+                <h3 class="technical-card-value">14 hrs</h3>
+              </div>
+              <div class="technical-card-visual">
+                <svg class="battery-icon" viewBox="0 0 50 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <!-- Battery body -->
+                  <rect x="8" y="10" width="34" height="70" rx="4" stroke="currentColor" stroke-width="2.5" fill="none"/>
+                  <!-- Battery terminal -->
+                  <rect x="20" y="0" width="10" height="10" rx="2" fill="currentColor"/>
+                  <!-- Battery segments (3 out of 4 filled, from bottom to top) -->
+                  <rect x="12" y="58" width="26" height="12" rx="2" fill="currentColor"/>
+                  <rect x="12" y="43" width="26" height="12" rx="2" fill="currentColor"/>
+                  <rect x="12" y="28" width="26" height="12" rx="2" fill="currentColor"/>
+                </svg>
+              </div>
+              <span class="flip-hint">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M17 1l4 4-4 4"/>
+                  <path d="M3 11V9a4 4 0 0 1 4-4h14"/>
+                  <path d="M7 23l-4-4 4-4"/>
+                  <path d="M21 13v2a4 4 0 0 1-4 4H3"/>
+                </svg>
+              </span>
+            </div>
+          </div>
+          <!-- Back -->
+          <div class="technical-card technical-card--back technical-card-back">
+            <div class="technical-card-content">
+              <h4 class="back-title">All-day monitoring power</h4>
+              <ul class="back-features">
+                <li>14 hours mobile, 24 hours fixed mode</li>
+                <li>USB-C fast charging (2 hours to full)</li>
+                <li>Low battery alerts via app</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -135,3 +279,5 @@
   <!-- Decorative gradient bottom -->
   <div class="technical-gradient-bottom"></div>
 </section>
+
+<script src="/assets/js/flip-cards.js"></script>
