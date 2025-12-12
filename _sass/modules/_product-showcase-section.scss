@@ -1,15 +1,15 @@
 .product-showcase-section {
   position: relative;
-  padding: 4rem 1.25rem;
+  padding: 4rem 1.25rem 2rem;
   background: $white;
   overflow: hidden;
 
   @media (min-width: $tablet-min) {
-    padding: 6rem 2rem;
+    padding: 6rem 2rem 3rem;
   }
 
   @media (min-width: $small-desktop-min) {
-    padding: 7rem 2rem;
+    padding: 7rem 2rem 3.5rem;
   }
 }
 

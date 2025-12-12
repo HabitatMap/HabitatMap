@@ -1,14 +1,14 @@
 // FAQ Section - Buy It Now
 .faq-section {
-  padding: 4rem 2rem;
+  padding: 2rem 2rem 4rem;
   background-color: $white;
 
   @media (min-width: $tablet-min) {
-    padding: 7rem 2rem;
+    padding: 3rem 2rem 7rem;
   }
 
   @media (min-width: $small-desktop-min) {
-    padding: 8rem 2rem;
+    padding: 3.5rem 2rem 8rem;
   }
 
   &.panel {

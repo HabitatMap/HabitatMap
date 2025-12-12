@@ -74,47 +74,19 @@
   }
 }
 
-// Product Badge - Shows which product specs are for
-.technical-product-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.75rem;
-  padding: 0.5rem 1rem 0.5rem 0.5rem;
-  background: $white;
-  border: 1px solid $teal-light;
-  border-radius: 2.5rem;
-  margin-bottom: 1.25rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+// Technical Eyebrow - Standard green eyebrow
+.technical-eyebrow {
+  display: inline-block;
+  font-size: $base-font-size-2;
+  font-weight: 600;
+  color: $green;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin-bottom: 1rem;
 
   @media (min-width: $tablet-min) {
-    gap: 0.875rem;
-    padding: 0.5rem 1.25rem 0.5rem 0.5rem;
-    margin-bottom: 1.5rem;
-  }
-}
-
-.product-badge-image {
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 2px solid $teal-very-light;
-
-  @media (min-width: $tablet-min) {
-    width: 42px;
-    height: 42px;
-  }
-}
-
-.product-badge-name {
-  font-family: $bold-font;
-  font-size: $base-font-size;
-  font-weight: 700;
-  color: $gray-dark;
-  letter-spacing: -0.01em;
-
-  @media (min-width: $tablet-min) {
-    font-size: $base-font-size1;
+    font-size: $base-font-size-1;
+    margin-bottom: 1.25rem;
   }
 }
 

@@ -252,6 +252,12 @@
               transition: transform 0.3s ease;
               flex: 1;
               max-width: 160px;
+              border-radius: 1rem;
+              overflow: hidden;
+
+              @media (min-width: $tablet-min) {
+                border-radius: 1.25rem;
+              }
 
               &:hover {
                 transform: translateY(-2px);
@@ -260,7 +266,7 @@
               img {
                 height: 40px;
                 width: 100%;
-                object-fit: contain;
+                object-fit: cover;
                 display: block;
 
                 @media (min-width: $tablet-min) {
@@ -330,10 +336,13 @@
 
               a {
                 max-width: 100%;
+                border-radius: 1rem;
+                overflow: hidden;
               }
 
               img {
                 height: 36px;
+                object-fit: cover;
               }
             }
           }
