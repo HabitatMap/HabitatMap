@@ -212,12 +212,22 @@
   }
 
   &:hover {
-    border-color: $gray-dark;
-    background: $teal-very-light;
+    border-color: $gray;
+    background: $gray;
+    color: $white;
     transform: translateY(-2px);
 
     .movement-link-arrow {
       transform: translateX(6px);
+      color: $white;
+    }
+
+    .movement-link-label {
+      color: $white;
+    }
+
+    .movement-link-description {
+      color: rgba($white, 0.9);
     }
   }
 
