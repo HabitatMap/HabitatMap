@@ -245,34 +245,31 @@
 
           .download-badges {
             display: flex;
+            flex-direction: row;
             gap: 0.75rem;
             width: 100%;
 
             a {
-              display: inline-block;
+              display: block;
               transition: transform 0.3s ease;
               flex: 1;
               max-width: 160px;
-              border-radius: 1rem;
+              border-radius: 2rem;
               overflow: hidden;
-
-              @media (min-width: $tablet-min) {
-                border-radius: 1.25rem;
-              }
+              box-sizing: border-box;
 
               &:hover {
                 transform: translateY(-2px);
               }
 
               img {
-                height: 40px;
                 width: 100%;
+                height: auto;
+                max-height: 44px;
                 object-fit: cover;
                 display: block;
-
-                @media (min-width: $tablet-min) {
-                  height: 44px;
-                }
+                border-radius: 2rem;
+                -webkit-border-radius: 2rem;
               }
             }
           }
@@ -330,20 +327,22 @@
         &.mobile-cta {
           .download-info {
             gap: 0.875rem;
+            width: 100%;
 
             .download-badges {
-              flex-direction: column;
               gap: 0.625rem;
+              flex-direction: row;
 
               a {
-                max-width: 100%;
-                border-radius: 1rem;
-                overflow: hidden;
+                flex: 1;
+                max-width: 160px;
+                border-radius: 2rem;
               }
 
               img {
-                height: 36px;
-                object-fit: cover;
+                max-height: 44px;
+                border-radius: 2rem;
+                -webkit-border-radius: 2rem;
               }
             }
           }
