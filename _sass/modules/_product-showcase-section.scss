@@ -110,24 +110,35 @@
   position: relative;
   width: 100%;
   max-width: 100%;
-}
-
-.product-main-image {
-  width: 100%;
-  height: auto;
-  display: block;
-  position: relative;
-  z-index: 1;
+  overflow: hidden;
   border-radius: 1rem;
-  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  aspect-ratio: 4/3;
+  flex-shrink: 0;
 
   @media (min-width: $tablet-min) {
     border-radius: 1.25rem;
   }
+
+  &.reveal-fade {
+    opacity: 0;
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+
+    &.is-visible {
+      opacity: 1;
+    }
+  }
 }
 
-.product-visual-area:hover .product-main-image {
-  transform: scale(1.05);
+.product-main-image {
+  width: 100% !important;
+  height: 100% !important;
+  display: block;
+  object-fit: cover !important;
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+.product-image-container:hover .product-main-image {
+  transform: scale(1.05) !important;
 }
 
 .product-details-area {

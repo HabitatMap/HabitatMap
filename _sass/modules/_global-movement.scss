@@ -291,7 +291,7 @@
   border-radius: 1rem;
   overflow: hidden;
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08), 0 1px 4px rgba(0, 0, 0, 0.04);
-  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 0.8s cubic-bezier(0.16, 1, 0.3, 1);
 
   @media (min-width: $tablet-min) {
     border-radius: 1.25rem;
@@ -302,12 +302,7 @@
   }
 
   &:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15), 0 4px 12px rgba(0, 0, 0, 0.1);
-
-    .movement-visual {
-      transform: scale(1.05);
-    }
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12), 0 2px 8px rgba(0, 0, 0, 0.08);
 
     .movement-image-overlay {
       opacity: 0.3;
@@ -319,13 +314,20 @@
   position: relative;
   width: 100%;
   overflow: hidden;
+  aspect-ratio: 4/3;
+
+  &:hover img,
+  &:hover .movement-visual {
+    transform: scale(1.05) !important;
+  }
 }
 
 .movement-visual {
-  width: 100%;
-  height: auto;
+  width: 100% !important;
+  height: 100% !important;
   display: block;
-  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  object-fit: cover;
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1) !important;
 }
 
 .movement-image-overlay {
