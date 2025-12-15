@@ -252,24 +252,19 @@
             a {
               display: block;
               transition: transform 0.3s ease;
-              flex: 1;
+              flex: 0 0 auto;
               max-width: 160px;
-              border-radius: 2rem;
-              overflow: hidden;
-              box-sizing: border-box;
 
               &:hover {
                 transform: translateY(-2px);
               }
 
               img {
-                width: 100%;
+                width: auto;
                 height: auto;
                 max-height: 44px;
-                object-fit: cover;
+                max-width: 160px;
                 display: block;
-                border-radius: 2rem;
-                -webkit-border-radius: 2rem;
               }
             }
           }
@@ -334,15 +329,14 @@
               flex-direction: row;
 
               a {
-                flex: 1;
+                flex: 0 0 auto;
                 max-width: 160px;
-                border-radius: 2rem;
               }
 
               img {
                 max-height: 44px;
-                border-radius: 2rem;
-                -webkit-border-radius: 2rem;
+                width: auto;
+                max-width: 160px;
               }
             }
           }
