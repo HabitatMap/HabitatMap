@@ -186,6 +186,14 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  gap: 0.5rem;
+
+  .airbeam-logo-icon {
+    width: 20px;
+    height: 20px;
+    display: block;
+    flex-shrink: 0;
+  }
   text-decoration: none;
   transition: all 0.3s ease;
   box-shadow: 0 4px 14px rgba(255, 230, 81, 0.3);
@@ -708,6 +716,14 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  gap: 0.5rem;
+
+  .airbeam-logo-icon {
+    width: 20px;
+    height: 20px;
+    display: block;
+    flex-shrink: 0;
+  }
   text-decoration: none;
   transition: all 0.3s ease;
   box-shadow: 0 4px 14px rgba(255, 230, 81, 0.3);

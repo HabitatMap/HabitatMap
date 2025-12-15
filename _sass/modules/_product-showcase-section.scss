@@ -292,6 +292,13 @@
   font-size: $base-font-size;
   font-weight: 600;
   cursor: pointer;
+
+  .airbeam-logo-icon {
+    width: 20px;
+    height: 20px;
+    display: block;
+    flex-shrink: 0;
+  }
   transition: all 0.3s ease;
   margin-bottom: 1.75rem;
   box-shadow: 0 4px 14px rgba(255, 230, 81, 0.3);
