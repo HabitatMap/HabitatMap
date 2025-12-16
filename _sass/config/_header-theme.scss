@@ -18,7 +18,7 @@ $header-link-color-white: $white;
   [data-current^="faq"] &,
   [data-current^="about"] &,
   [data-current^="blog"] & {
-    fill: $white;
+    fill: $header-link-color-white;
   }
 
   [data-current^="aircasting"] & {
@@ -31,7 +31,7 @@ $header-link-color-white: $white;
     }
 
     [data-current^="blog"] & {
-      fill: $header-link-color-ac;
+      fill: $blue;
     }
 
     [data-current^="faq"] & {
@@ -183,6 +183,14 @@ $header-link-color-white: $white;
       $bg-color: $teal,
       $bg-color-hover: $header-link-color-white
     );
+
+    .airbeam-logo-icon {
+      filter: brightness(0) invert(1);
+    }
+
+    &:hover .airbeam-logo-icon {
+      filter: brightness(0) saturate(100%) invert(68%) sepia(100%) saturate(1000%) hue-rotate(140deg) brightness(0.9) contrast(1.1);
+    }
   }
 
   [data-current^="faq"] & {
@@ -192,6 +200,14 @@ $header-link-color-white: $white;
       $bg-color: $green,
       $bg-color-hover: $header-link-color-white
     );
+
+    .airbeam-logo-icon {
+      filter: brightness(0) invert(1);
+    }
+
+    &:hover .airbeam-logo-icon {
+      filter: brightness(0) saturate(100%) invert(42%) sepia(100%) saturate(1000%) hue-rotate(90deg) brightness(0.9) contrast(1.1);
+    }
   }
 
   [data-current^="blog"] & {
@@ -201,6 +217,14 @@ $header-link-color-white: $white;
       $bg-color: $blue,
       $bg-color-hover: $header-link-color-white
     );
+
+    .airbeam-logo-icon {
+      filter: brightness(0) invert(1);
+    }
+
+    &:hover .airbeam-logo-icon {
+      filter: brightness(0) saturate(100%) invert(48%) sepia(100%) saturate(1000%) hue-rotate(180deg) brightness(1.2) contrast(1.1);
+    }
   }
 
   .sticky & {
@@ -211,6 +235,10 @@ $header-link-color-white: $white;
         $bg-color: $header-link-color-white,
         $bg-color-hover: $teal
       );
+
+      .airbeam-logo-icon {
+        filter: brightness(0) saturate(100%) invert(68%) sepia(100%) saturate(1000%) hue-rotate(140deg) brightness(0.9) contrast(1.1);
+      }
     }
 
     [data-current^="blog"] & {
@@ -220,6 +248,10 @@ $header-link-color-white: $white;
         $bg-color: $header-link-color-white,
         $bg-color-hover: $blue
       );
+
+      .airbeam-logo-icon {
+        filter: brightness(0) saturate(100%) invert(48%) sepia(100%) saturate(1000%) hue-rotate(180deg) brightness(1.2) contrast(1.1);
+      }
     }
 
     [data-current^="faq"] & {
@@ -229,6 +261,10 @@ $header-link-color-white: $white;
         $bg-color: $header-link-color-white,
         $bg-color-hover: $green
       );
+
+      .airbeam-logo-icon {
+        filter: brightness(0) saturate(100%) invert(42%) sepia(100%) saturate(1000%) hue-rotate(90deg) brightness(0.9) contrast(1.1);
+      }
     }
   }
 }
