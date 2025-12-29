@@ -1,8 +1,8 @@
 categories:
   - category: "Getting Started"
     questions:
-      - q: "What's the difference between AirBeam3 and AirBeam Mini?"
-        a: "AirBeam Mini ($99) is perfect if you want a lightweight, affordable air quality monitor for personal use. It measures PM1 and PM2.5, weighs 4 ounces, and has a 14-hour battery life. AirBeam3 ($199) is ideal if you need comprehensive monitoring with on-board cellular and GPS and removable storage. It measures PM1, PM2.5, PM10, temperature, and humidity, weighs 6 ounces, and has a 17-hour battery life."
+      - q: "What is AirBeam Mini?"
+        a: "AirBeam Mini ($99) is a lightweight, affordable air quality monitor perfect for personal use. It measures PM1 and PM2.5 particulate matter, weighs 4 ounces, and has a 14-hour battery life. Compact and weatherproof, it's designed for maximum portability and ease of use."
       - q: "How accurate are AirBeam devices?"
         a: "AirBeam devices are 'quite accurate' according to independent performance evaluations by South Coast Air Quality Management District's AQ-SPEC lab and researchers at NYU School of Medicine. AirBeam measurements closely match those from reference instruments."
       - q: "What do I need to get started?"
@@ -18,21 +18,23 @@ categories:
         a: "US Domestic: $10 for first unit, $5 for each additional unit. International: $35 for first unit, $10 for each additional unit. Expedited shipping available - email info@habitatmap.org."
       - q: "What's your return policy?"
         a: "AirBeam devices are guaranteed to work properly upon receipt. Non-functioning units can be returned for replacement within 30 days. All sales are final after 30 days."
+      - q: "What is your warranty policy?"
+        a: "If your AirBeam experiences any manufacturing defects within the first year, we'll troubleshoot the problem with you and repair or replace your AirBeam free of charge if the issue cannot be resolved via technical support. Damage caused by misuse or abuse of the AirBeam, improper charging, or exposure to extreme weather is not covered."
       - q: "Do you accept purchase orders?"
         a: "No, we do not accept purchase orders. Payment must be made via credit card, check, or wire transfer."
 
   - category: "Technical Specifications"
     questions:
       - q: "How long does the battery last?"
-        a: "AirBeam Mini: 14 hours mobile mode, 24 hours fixed mode. AirBeam3: 17 hours mobile mode, 31 hours fixed WiFi mode."
-      - q: "What does each device measure?"
-        a: "AirBeam Mini: PM1, PM2.5 particulate matter. AirBeam3: PM1, PM2.5, PM10 particulate matter + temperature + relative humidity."
-      - q: "Do they work outdoors?"
-        a: "Yes, both devices are weather resistant. AirBeam3 has a weather resistant enclosure and AirBeam Mini includes a rain-proof rubber sleeve."
+        a: "AirBeam Mini has a 14-hour battery life in mobile mode and 24 hours in fixed mode."
+      - q: "What does AirBeam Mini measure?"
+        a: "AirBeam Mini measures PM1 and PM2.5 particulate matter with professional-grade accuracy."
+      - q: "Does AirBeam Mini work outdoors?"
+        a: "Yes, AirBeam Mini is fully weather resistant and includes a rain-proof rubber sleeve, making it perfect for outdoor use."
       - q: "What's the range for Bluetooth connection?"
-        a: "Both devices maintain Bluetooth connection within 10-20 feet of your smartphone."
-      - q: "Can I use them without a smartphone nearby?"
-        a: "Yes! Both devices have standalone mode where they can record data independently and sync later when reconnected to your phone."
+        a: "AirBeam Mini maintains Bluetooth connection within 10-20 feet of your smartphone."
+      - q: "Can I use AirBeam Mini without a smartphone nearby?"
+        a: "Yes! AirBeam Mini has standalone mode where it can record data independently and sync later when reconnected to your phone."
 
   - category: "Data & Privacy"
     questions:
@@ -62,8 +64,8 @@ categories:
         a: "iPhone: iPhone 8 or newer with iOS (for standalone features). Android: Android 8 or newer with Bluetooth 5.0 and access to Google Play Store."
       - q: "Does AirBeam work without internet?"
         a: "Yes, for mobile sessions you can record data offline and sync later over WiFi. Only map tiles won't load without internet connection."
-      - q: "Can AirBeam3 work with cellular networks?"
-        a: "AirBeam3 includes Bluetooth, WiFi, and cellular communications capability. To use AirBeam3 in cellular mode activate a 4G sim card and insert it into the AirBeam3’s sim card slot.  You'll need a data plan (uses approximately 450MB per month)."
+      - q: "Does AirBeam Mini work with cellular networks?"
+        a: "AirBeam Mini connects via Bluetooth and WiFi. It does not have built-in cellular connectivity, but you can use your smartphone's cellular connection to access data remotely when using fixed WiFi sessions."
       - q: "What WiFi networks are supported?"
         a: "AirBeam connects to standard 2.4 GHz WiFi networks. It cannot connect to 5GHz-only networks or networks with firewalls (like most public/enterprise WiFi)."
 

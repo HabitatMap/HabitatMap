@@ -41,9 +41,15 @@
         <span class="cart-count" id="header-cart-count">0</span>
       </button>
       {% if page.permalink == "/airbeam/buy-it-now/" %}
-        <a href="#product-selection" class="button button--cta header__button" style="padding: 1rem 1.5rem;">Get AirBeam</a>
+        <a href="#product-selection" class="button button--cta header__button" style="padding: 1rem 1.5rem;">
+          <img src="/assets/img/pages/buy-it-now/airbeam_logo.svg" alt="AirBeam" class="airbeam-logo-icon" />
+          Get AirBeam
+        </a>
       {% else %}
-        <a href="/airbeam/buy-it-now" class="button button--cta header__button" style="padding: 1rem 1.5rem;">Get AirBeam</a>
+        <a href="/airbeam/buy-it-now" class="button button--cta header__button" style="padding: 1rem 1.5rem;">
+          <img src="/assets/img/pages/buy-it-now/airbeam_logo.svg" alt="AirBeam" class="airbeam-logo-icon" />
+          Get AirBeam
+        </a>
       {% endif %}
       <button
         class="header__nav-toggle-button js--toggle-nav"

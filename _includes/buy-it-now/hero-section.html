@@ -1,42 +1,44 @@
-<!-- Hero Section -->
-<section class="hero-section">
-  <!-- Background Image -->
-  <div class="hero-background"></div>
+<!-- Hero Section - Full-width immersive product showcase -->
+<section class="buy-hero">
+  <!-- Text Content -->
+  <div class="buy-hero__header">
+    <span class="buy-hero__eyebrow">Personal Monitoring</span>
+    <h1 class="buy-hero__title">AirBeam Mini</h1>
+    <p class="buy-hero__tagline">
+      Know air quality anywhere you go
+    </p>
 
-  <!-- Content -->
-  <div class="hero-content">
-    <div class="hero-container">
-      <div class="hero-grid">
-        <!-- Left Column - Content -->
-        <div class="hero-text">
-          <h1 class="hero-title">
-            Know Your Air Quality in <span class="highlight">Real-Time</span>
-          </h1>
+    <!-- CTAs -->
+    <div class="buy-hero__ctas">
+      <button
+        class="buy-hero__btn buy-hero__btn--primary"
+        onclick="document.getElementById('product-selection')?.scrollIntoView({ behavior: 'smooth' })"
+      >
+        Buy Now — $99
+      </button>
+      <button
+        class="buy-hero__btn buy-hero__btn--secondary"
+        onclick="document.getElementById('videos-section')?.scrollIntoView({ behavior: 'smooth' })"
+      >
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+          <polygon points="5 3 19 12 5 21 5 3"/>
+        </svg>
+        Watch Video
+      </button>
+    </div>
+  </div>
 
-          <p class="hero-subtitle">
-            Professional-grade air monitoring that fits in your pocket. Protect your health with instant readings anywhere you go.
-          </p>
-
-          <!-- CTAs -->
-          <div class="hero-ctas">
-            <button
-              class="cta-button primary"
-              onclick="document.getElementById('product-selection')?.scrollIntoView({ behavior: 'smooth' })"
-            >
-              Choose Your AirBeam
-            </button>
-            <button
-              class="cta-button secondary"
-              onclick="document.getElementById('videos-section')?.scrollIntoView({ behavior: 'smooth' })"
-            >
-              Watch It In Action
-            </button>
-          </div>
-        </div>
-
-        <!-- Right Column - Empty for image -->
-        <div class="hero-image"></div>
-      </div>
+  <!-- Full-width Product Image -->
+  <div class="buy-hero__visual">
+    <div class="buy-hero__image-wrapper">
+      <img
+        src="/assets/buy-it-now_ABMsidebyside.jpg?nf_resize=fit&w=1920"
+        alt="AirBeam Mini - Professional air quality monitor"
+        class="buy-hero__image"
+        loading="eager"
+        fetchpriority="high"
+      />
+      <div class="buy-hero__image-overlay"></div>
     </div>
   </div>
 </section>

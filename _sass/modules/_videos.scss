@@ -1,32 +1,76 @@
 // Videos Section Styles
 .videos-section {
-  padding: 4rem 2rem;
-  background-color: #ffffff;
+  padding: 5rem 1.25rem;
+  background: linear-gradient(180deg, $white 0%, $teal-very-light 50%, $white 100%);
+
+  @media (min-width: $tablet-min) {
+    padding: 7rem 2rem;
+  }
+
+  @media (min-width: $small-desktop-min) {
+    padding: 8rem 2rem;
+  }
 
   .videos-container {
-    max-width: 1280px;
+    max-width: 1200px;
     margin: 0 auto;
 
     .videos-header {
       text-align: center;
-      margin-bottom: 3rem;
+      max-width: 700px;
+      margin: 0 auto 3rem;
 
-      .videos-title {
-        font-family: "Moderat-Bold", sans-serif;
-        font-weight: 700;
-        font-size: 1.75rem;
-        line-height: 1.2;
-        color: #111827;
+      @media (min-width: $tablet-min) {
+        margin-bottom: 4rem;
+      }
+
+      @media (min-width: $small-desktop-min) {
+        margin-bottom: 5rem;
+      }
+
+      .videos-eyebrow {
+        display: inline-block;
+        font-size: $base-font-size-2;
+        font-weight: 600;
+        color: $green;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
         margin-bottom: 1rem;
 
-        @media (min-width: 768px) {
+        @media (min-width: $tablet-min) {
+          font-size: $base-font-size-1;
+          margin-bottom: 1.25rem;
+        }
+      }
+
+      .videos-title {
+        font-family: $bold-font;
+        font-size: 2rem;
+        font-weight: 700;
+        color: $gray-dark;
+        line-height: 1.15;
+        letter-spacing: -0.03em;
+        margin: 0 0 1rem;
+
+        @media (min-width: $tablet-min) {
           font-size: 2.75rem;
+        }
+
+        @media (min-width: $small-desktop-min) {
+          font-size: 3.25rem;
+          margin-bottom: 1.25rem;
         }
       }
 
       .videos-subtitle {
-        font-size: 1.25rem;
-        color: #6b7280;
+        font-size: $base-font-size;
+        color: $gray;
+        line-height: 1.7;
+        margin: 0;
+
+        @media (min-width: $tablet-min) {
+          font-size: $base-font-size1;
+        }
       }
     }
 
@@ -36,12 +80,12 @@
       gap: 1.5rem;
 
       .video-card {
-        background: white;
-        border-radius: 12px;
+        background: $white;
+        border-radius: 1rem;
         overflow: hidden;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         transition: box-shadow 0.3s ease;
-        border: 1px solid #e5e7eb;
+        border: 1px solid $teal-light;
 
         &:hover {
           box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
@@ -50,12 +94,61 @@
         .video-container {
           position: relative;
           aspect-ratio: 16/18;
-          background: #111827;
+          background: $gray-dark;
 
           iframe {
             width: 100%;
             height: 100%;
+            display: none;
+          }
+
+          &.loaded iframe {
             display: block;
+          }
+
+          &.loaded .video-placeholder {
+            display: none;
+          }
+
+          .video-placeholder {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+            overflow: hidden;
+            border-radius: 0.5rem;
+          }
+
+          .video-thumbnail {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+          }
+
+          .video-placeholder:hover .video-thumbnail {
+            transform: scale(1.05);
+          }
+
+          .play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $white;
+            transition: all 0.3s ease;
+          }
+
+          .video-placeholder:hover .play-button {
+            background: rgba(0, 0, 0, 0.9);
+            transform: translate(-50%, -50%) scale(1.1);
           }
         }
 
@@ -65,12 +158,12 @@
           .video-title {
             font-size: 1rem;
             font-weight: 600;
-            color: #111827;
+            color: $gray-dark;
             margin-bottom: 0.5rem;
           }
 
           .video-description {
-            color: #6b7280;
+            color: $gray;
             font-size: 0.875rem;
             line-height: 1.4;
             margin-bottom: 0.5rem;
@@ -86,8 +179,8 @@
       .library-link {
         display: inline-flex;
         align-items: center;
-        background: #1ea73f;
-        color: white;
+        background: $green;
+        color: $white;
         padding: 1rem 2rem;
         border-radius: 8px;
         text-decoration: none;
@@ -97,7 +190,7 @@
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
         &:hover {
-          background-color: #16a34a;
+          background-color: darken($green, 5%);
         }
       }
     }
@@ -143,17 +236,17 @@
   }
 
   .video-card {
-    background: white;
-    border-radius: 12px;
+    background: $white;
+    border-radius: 1.25rem;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s ease;
-    border: 1px solid #e5e7eb;
+    border: 1px solid $teal-light;
 
     .video-container {
       position: relative;
       aspect-ratio: 16/12;
-      background: #111827;
+      background: $gray-dark;
 
       iframe {
         width: 100%;
@@ -168,12 +261,12 @@
       h3 {
         font-size: 1.125rem;
         font-weight: 600;
-        color: #111827;
+        color: $gray-dark;
         margin-bottom: 0.5rem;
       }
 
       p {
-        color: #6b7280;
+        color: $gray;
         font-size: 0.875rem;
         line-height: 1.5;
         margin-bottom: 1rem;
@@ -182,7 +275,7 @@
       .video-link {
         display: inline-flex;
         align-items: center;
-        color: #1ea73f;
+        color: $green;
         text-decoration: none;
         font-size: 0.875rem;
         font-weight: 500;
@@ -197,8 +290,8 @@
   .video-library-btn {
     display: inline-flex;
     align-items: center;
-    background: #1ea73f;
-    color: white;
+    background: $green;
+    color: $white;
     padding: 1rem 2rem;
     border-radius: 8px;
     text-decoration: none;

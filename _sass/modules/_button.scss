@@ -9,6 +9,7 @@ $ac-brand-transparent: transparentize($ac-brand, 0.4);
   height: $button-base-height;
   padding: $button-padding;
   text-align: center;
+  border-radius: 2rem;
 }
 
 .button--hm {
@@ -40,6 +41,9 @@ $ac-brand-transparent: transparentize($ac-brand, 0.4);
 
 .button--cta {
   text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
 
   @include button-color(
     $text-color: $gray-dark,
@@ -48,6 +52,13 @@ $ac-brand-transparent: transparentize($ac-brand, 0.4);
     $bg-color-hover: lighten($cta-color, 15%),
     $text-color-hover: $gray-dark
   );
+
+  .airbeam-logo-icon {
+    width: 18px;
+    height: 18px;
+    display: block;
+    flex-shrink: 0;
+  }
 }
 
 .button--secondary {
