@@ -1,0 +1,163 @@
+.home-consultation {
+  padding: 4rem 0;
+  margin-bottom: 3rem;
+
+  @media (min-width: 640px) {
+    padding: 5rem 0;
+    margin-bottom: 4rem;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 6rem 0;
+    margin-bottom: 5rem;
+  }
+
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+
+    @media (min-width: 640px) {
+      padding: 0 1.5rem;
+    }
+  }
+
+  &__card {
+    background: linear-gradient(135deg, #2eaa4d 0%, #3aad59 50%, #52a663 100%);
+    border-radius: 1rem;
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 40px rgba(46, 170, 77, 0.25), 0 4px 12px rgba(0, 0, 0, 0.08);
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 50px rgba(46, 170, 77, 0.3), 0 6px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    @media (min-width: 1024px) {
+      padding: 3rem;
+      border-radius: 1.25rem;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+
+    @media (min-width: 1024px) {
+      flex-direction: row;
+      text-align: left;
+    }
+  }
+
+  &__text {
+    flex: 1;
+    text-align: center;
+
+    @media (min-width: 1024px) {
+      text-align: left;
+    }
+  }
+
+  &__title {
+    font-family: $bold-font;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: $white;
+    margin: 0 0 0.5rem;
+    line-height: 1.3;
+
+    @media (min-width: 1024px) {
+      font-size: 1.875rem;
+    }
+  }
+
+  &__description {
+    color: rgba($white, 0.9);
+    font-size: $base-font-size;
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  &__button-wrap {
+    flex-shrink: 0;
+  }
+
+  &__button {
+    display: inline-flex;
+    align-items: center;
+    background-color: rgba($white, 0.18);
+    border: 1px solid rgba($white, 0.3);
+    color: $white;
+    font-family: $bold-font;
+    font-weight: 600;
+    padding: 0.875rem 2rem;
+    font-size: $base-font-size;
+    line-height: 1.5;
+    border-radius: 2rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 1;
+
+    @media (min-width: 1024px) {
+      padding: 1rem 2.5rem;
+      font-size: $base-font-size1;
+    }
+
+    &:hover {
+      background-color: rgba($white, 0.28);
+      border-color: rgba($white, 0.5);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    }
+
+    &:active {
+      transform: translateY(0);
+    }
+  }
+
+  &__icon {
+    height: 18px;
+    width: 18px;
+    margin-left: 0.5rem;
+    transition: transform 0.3s ease;
+  }
+
+  &__button:hover .home-consultation__icon {
+    transform: translateX(4px);
+  }
+}
+
+@media (max-width: 768px) {
+  .home-consultation {
+    padding: 3rem 0;
+
+    &__card {
+      padding: 1.5rem;
+    }
+
+    &__content {
+      gap: 1rem;
+    }
+
+    &__title {
+      font-size: 1.25rem;
+    }
+
+    &__description {
+      font-size: 0.875rem;
+    }
+
+    &__button {
+      width: 100%;
+      justify-content: center;
+      padding: 0.75rem 1rem;
+    }
+  }
+}
