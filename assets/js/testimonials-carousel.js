@@ -306,17 +306,18 @@ class TestimonialsCarousel {
     this.prevButton.addEventListener('click', () => this.goToPrevious());
     this.nextButton.addEventListener('click', () => this.goToNext());
 
-    // Touch/swipe support for mobile devices
     let startX = 0;
     let startY = 0;
     let endX = 0;
     let endY = 0;
     let isSwiping = false;
+    let isHorizontalSwipe = false;
 
     this.carouselContainer.addEventListener('touchstart', (e) => {
       startX = e.touches[0].clientX;
       startY = e.touches[0].clientY;
       isSwiping = true;
+      isHorizontalSwipe = false;
     }, { passive: true });
 
     this.carouselContainer.addEventListener('touchmove', (e) => {
@@ -325,12 +326,15 @@ class TestimonialsCarousel {
       endX = e.touches[0].clientX;
       endY = e.touches[0].clientY;
 
-      // Prevent default scrolling if this is a horizontal swipe
       const deltaX = Math.abs(endX - startX);
       const deltaY = Math.abs(endY - startY);
 
-      if (deltaX > deltaY && deltaX > 10) {
+      if (deltaX > 15 && deltaX > deltaY * 1.5) {
+        isHorizontalSwipe = true;
         e.preventDefault();
+      }
+      else if (deltaY > 15 && deltaY > deltaX * 1.5) {
+        isHorizontalSwipe = false;
       }
     }, { passive: false });
 
@@ -341,19 +345,18 @@ class TestimonialsCarousel {
       const deltaY = endY - startY;
       const minSwipeDistance = 50;
 
-      // Only trigger swipe if it's more horizontal than vertical and meets minimum distance
-      if (Math.abs(deltaX) > Math.abs(deltaY) && Math.abs(deltaX) > minSwipeDistance) {
+      if (isHorizontalSwipe && Math.abs(deltaX) > minSwipeDistance) {
         if (deltaX > 0) {
-          this.goToPrevious(); // Swipe right = previous
+          this.goToPrevious();
         } else {
-          this.goToNext(); // Swipe left = next
+          this.goToNext();
         }
       }
 
       isSwiping = false;
+      isHorizontalSwipe = false;
     }, { passive: true });
 
-    // Pause autoplay on hover
     this.carouselContainer.addEventListener('mouseenter', () => {
       if (this.autoplay) {
         this.stopAutoplay();
@@ -366,92 +369,11 @@ class TestimonialsCarousel {
       }
     });
 
-    // Handle window resize for responsive behavior
     window.addEventListener('resize', () => {
       this.updateCarousel();
     });
-
-    // Touch/swipe events for mobile
-    this.bindTouchEvents();
-
   }
 
-  bindTouchEvents() {
-    this.isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
-
-    if (!this.isTouchDevice) return;
-
-    // Touch start event
-    this.carouselContainer.addEventListener('touchstart', (e) => {
-      this.handleTouchStart(e);
-    }, { passive: true });
-
-    // Touch move event
-    this.carouselContainer.addEventListener('touchmove', (e) => {
-      this.handleTouchMove(e);
-    }, { passive: false });
-
-    // Touch end event
-    this.carouselContainer.addEventListener('touchend', (e) => {
-      this.handleTouchEnd(e);
-    }, { passive: true });
-
-    // Prevent default touch behavior to avoid conflicts
-    this.carouselContainer.addEventListener('touchstart', (e) => {
-      e.preventDefault();
-    }, { passive: false });
-  }
-
-  handleTouchStart(e) {
-    const touch = e.touches[0];
-    this.touchStartX = touch.clientX;
-    this.touchStartY = touch.clientY;
-    this.touchEndX = touch.clientX;
-    this.touchEndY = touch.clientY;
-  }
-
-  handleTouchMove(e) {
-    if (!this.touchStartX || !this.touchStartY) return;
-
-    const touch = e.touches[0];
-    this.touchEndX = touch.clientX;
-    this.touchEndY = touch.clientY;
-
-    const deltaX = this.touchStartX - this.touchEndX;
-    const deltaY = this.touchStartY - this.touchEndY;
-
-    if (Math.abs(deltaX) > Math.abs(deltaY)) {
-      e.preventDefault();
-    }
-  }
-
-  handleTouchEnd(e) {
-    if (!this.touchStartX || !this.touchStartY) return;
-
-    const deltaX = this.touchStartX - this.touchEndX;
-    const deltaY = this.touchStartY - this.touchEndY;
-
-    if (Math.abs(deltaX) > this.minSwipeDistance && Math.abs(deltaX) > Math.abs(deltaY)) {
-      if (deltaX > 0) {
-        this.goToNext();
-        if (this.autoplay) {
-          this.stopAutoplay();
-          this.startAutoplay();
-        }
-      } else {
-        this.goToPrevious();
-        if (this.autoplay) {
-          this.stopAutoplay();
-          this.startAutoplay();
-        }
-      }
-    }
-
-    this.touchStartX = 0;
-    this.touchStartY = 0;
-    this.touchEndX = 0;
-    this.touchEndY = 0;
-  }
 }
 
 document.addEventListener('DOMContentLoaded', function() {
