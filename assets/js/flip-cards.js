@@ -1,10 +1,14 @@
 /**
- * Flip Cards - Smooth hover and tap animation
- * Simple approach: just toggle class, let CSS handle transitions
+ * Flip Cards - Simple fade flip animation on click/hover
  */
 
 (function() {
   'use strict';
+
+  // Detect mobile breakpoint
+  const isMobile = () => {
+    return window.matchMedia('(max-width: 767px)').matches;
+  };
 
   // Detect if device supports touch
   const isTouchDevice = () => {
@@ -13,41 +17,47 @@
            (window.matchMedia('(pointer: coarse)').matches);
   };
 
-  /**
-   * Initialize flip cards
-   */
   function initFlipCards() {
     const cards = document.querySelectorAll('.technical-card-wrapper');
 
     if (!cards.length) return;
 
+    const mobile = isMobile();
     const isTouch = isTouchDevice();
 
+    // Helper function to toggle card
+    const toggleCard = (card, chevron) => {
+      const wasFlipped = card.classList.contains('is-flipped');
+
+      if (wasFlipped) {
+        card.classList.remove('is-flipped');
+        if (chevron) chevron.classList.remove('is-open');
+      } else {
+        card.classList.add('is-flipped');
+        if (chevron) chevron.classList.add('is-open');
+      }
+    };
+
     cards.forEach(card => {
-      if (isTouch) {
-        // MOBILE: Toggle on tap
+      const chevron = card.querySelector('.card-chevron');
+
+      if (mobile && isTouch) {
+        // MOBILE: Click to flip
         card.addEventListener('click', function(e) {
           e.preventDefault();
           e.stopPropagation();
-
-          // Close other flipped cards
-          cards.forEach(otherCard => {
-            if (otherCard !== card) {
-              otherCard.classList.remove('is-flipped');
-            }
-          });
-
-          // Toggle current card
-          this.classList.toggle('is-flipped');
+          toggleCard(this, chevron);
         });
       } else {
-        // DESKTOP: Simple mouseenter/mouseleave
+        // DESKTOP: Hover to flip
         card.addEventListener('mouseenter', function() {
           this.classList.add('is-flipped');
+          if (chevron) chevron.classList.add('is-open');
         });
 
         card.addEventListener('mouseleave', function() {
           this.classList.remove('is-flipped');
+          if (chevron) chevron.classList.remove('is-open');
         });
       }
 
@@ -55,24 +65,14 @@
       card.addEventListener('keydown', function(e) {
         if (e.key === 'Enter' || e.key === ' ') {
           e.preventDefault();
-          this.classList.toggle('is-flipped');
+          toggleCard(this, chevron);
         }
         if (e.key === 'Escape') {
           this.classList.remove('is-flipped');
+          if (chevron) chevron.classList.remove('is-open');
         }
       });
     });
-
-    // Close flipped cards when clicking outside (mobile)
-    if (isTouch) {
-      document.addEventListener('click', function(e) {
-        if (!e.target.closest('.technical-card-wrapper')) {
-          cards.forEach(card => {
-            card.classList.remove('is-flipped');
-          });
-        }
-      });
-    }
   }
 
   // Initialize when DOM is ready
