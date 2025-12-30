@@ -625,16 +625,16 @@
   }
 }
 
-// Card Indicators (info icon - top right corner)
+// Card Indicators (info icon - top right corner, mobile only)
 .card-indicators {
   position: absolute;
   top: 1rem;
   right: 1rem;
   z-index: 10;
+  display: none;
 
-  @media (min-width: $tablet-min) {
-    top: 1.25rem;
-    right: 1.25rem;
+  @media (max-width: $large-mobile-max) {
+    display: block;
   }
 }
 

@@ -42,14 +42,14 @@
       const chevron = card.querySelector('.card-chevron');
 
       if (mobile && isTouch) {
-        // MOBILE: Click to flip
+        // MOBILE: Click to toggle flip
         card.addEventListener('click', function(e) {
           e.preventDefault();
           e.stopPropagation();
           toggleCard(this, chevron);
         });
       } else {
-        // DESKTOP: Hover to flip
+        // DESKTOP: Hover to flip, click to toggle
         card.addEventListener('mouseenter', function() {
           this.classList.add('is-flipped');
           if (chevron) chevron.classList.add('is-open');
@@ -58,6 +58,11 @@
         card.addEventListener('mouseleave', function() {
           this.classList.remove('is-flipped');
           if (chevron) chevron.classList.remove('is-open');
+        });
+
+        card.addEventListener('click', function(e) {
+          e.preventDefault();
+          toggleCard(this, chevron);
         });
       }
 
