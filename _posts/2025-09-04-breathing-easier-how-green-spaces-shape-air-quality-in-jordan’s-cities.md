@@ -3,7 +3,7 @@ layout: post
 title: "Breathing Easier: How Green Spaces Shape Air Quality in Jordan’s Cities"
 date: 2025-09-04
 featured: false
-author: Kayla Pasacreta & Michael Heimbinder
+author: Michael Heimbinder
 image: /images/uploads/1000013028.jpg
 intro: >
   In Jordan’s semi-arid cities like Amman and Irbid, green spaces do more than
