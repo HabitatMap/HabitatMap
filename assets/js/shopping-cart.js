@@ -275,9 +275,8 @@ class ShoppingCart {
 
           // Check if this is a preview mode response
           if (orderData.preview_mode) {
-            this.closeCart();
-            this.showNotification('Preview mode: Payment simulation successful!', 'success');
             this.clearCart();
+            window.location.href = '/airbeam/confirmation';
             return;
           }
 
@@ -286,9 +285,8 @@ class ShoppingCart {
           if (error) {
             this.showNotification(`Transaction failed: ${error?.description}`, 'error');
           } else {
-            this.closeCart();
-            this.showNotification('Payment successful! Thank you for your order.', 'success');
             this.clearCart();
+            window.location.href = '/airbeam/confirmation';
           }
         } catch (error) {
           console.error('Payment capture error:', error);

@@ -65,6 +65,7 @@
   <script defer type="text/javascript" src="/assets/js/donate-form.js"></script>
   <script defer type="text/javascript" src="/assets/js/donate-trust-scroll.js"></script>
   <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  {% if page.noindex %}<meta name="robots" content="noindex, nofollow">{% endif %}
   {% seo title=false %}
   <script type="application/ld+json">
     {
