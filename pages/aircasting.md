@@ -48,7 +48,7 @@ image: /assets/img/airbeam_map_screenshot.png
     <div class="split--50 split--padding-left">
       <img class="logo logo--body" alt="Airbeam" src="assets/img/svg/AirBeam-Logo-Body.svg" />
       <p class="p--body">
-        AirBeam is a low-cost, palm-sized air quality instrument that measures hyperlocal concentrations of harmful microscopic particles in the air, known as particulate matter, as well as humidity and temperature. The AirBeam measures particulate matter with proven accuracy and when used in conjunction with the AirCasting platform - or a custom solution - helps community-based organizations, educators, academics, regulators, city managers, and community scientists map air pollution and organize for&nbsp;clean&nbsp;air.
+        AirBeam is a low-cost, palm-sized air quality instrument that measures hyperlocal concentrations of harmful microscopic particles in the air, known as particulate matter. The AirBeam measures particulate matter with proven accuracy and when used in conjunction with the AirCasting platform - or a custom solution - helps community-based organizations, educators, academics, regulators, city managers, and community scientists map air pollution and organize for&nbsp;clean&nbsp;air.
       </p>
       <div class="badge-links">
         <a href="/airbeam/buy-it-now" class="badge-link badge-link--hm">
@@ -65,7 +65,7 @@ image: /assets/img/airbeam_map_screenshot.png
     <div class="split--50 split--padding-right">
       <h2 class="heading heading--medium u--gray-text">How it Works</h2>
       <p class="p--body">
-        The AirBeam measures harmful microscopic air particles (particulate matter), humidity, and temperature.  In mobile mode, the AirBeam can be worn to capture personal exposures.  In fixed mode, it can be installed indoors or outdoors - it’s weather resistant and doesn’t need a shelter - to keep tabs on pollution levels in your home, office, backyard, or neighborhood 24/7.
+        The AirBeam measures harmful microscopic air particles (particulate matter).  In mobile mode, the AirBeam can be worn to capture personal exposures.  In fixed mode, it can be installed indoors or outdoors - it’s weather resistant and doesn’t need a shelter - to keep tabs on pollution levels in your home, office, backyard, or neighborhood 24/7.
       </p>
       <a href="/airbeam/how-it-works" class="button">Learn More</a>
     </div>
