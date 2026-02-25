@@ -1,6 +1,6 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/fdecfe4b-48cc-482e-b55e-1718b3f26da7/deploy-status)](https://app.netlify.com/sites/habitatmap/deploys)
 
-# HabitatMap blog & static pages 
+# HabitatMap blog & static pages
 
 ## Development
 
@@ -8,10 +8,24 @@
 ```bash
 brew tap netlify/git-credential-netlify
 brew install git-credential-netlify
+git config --global credential.helper netlify
 ```
-2. Clone the repository.
 
-3. Install gems:
+2. Install netlify cli and login
+```bash
+npm install netlify-cli
+netlify login
+```
+
+3. Clone the repository.
+
+4. In the repository root directory, configure credetials helper and refresh lfs:
+```bash
+git lfs pull
+git lfs migrate import --include="images/uploads/**" --include-ref=refs/heads/master
+```
+
+4. Install gems:
 
 ```
 bundle install
@@ -20,7 +34,7 @@ bundle install
 **Note:** If Bundler fails on installing `eventmachine`, try running `gem install eventmachine -- --with-cppflags=-I/usr/local/opt/openssl/include` to solve the issue.
 
 
-4. Run locally:
+5. Run locally:
 ```bash
 bundle exec jekyll serve --watch
 ```
