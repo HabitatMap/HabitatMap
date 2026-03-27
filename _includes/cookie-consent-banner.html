@@ -1,0 +1,84 @@
+<!-- Cookie consent banner -->
+<div id="cookie-consent-banner" class="cookie-banner" role="dialog" aria-label="Cookie consent" aria-hidden="true">
+  <div class="cookie-banner__inner">
+    <p class="cookie-banner__title">We use cookies to improve your experience</p>
+    <p class="cookie-banner__description">
+      We use cookies and local storage to remember your preferences. We also use Google Analytics to understand how you use our platform and Google Ads to track the effectiveness of our external advertising campaigns.
+    </p>
+    <div class="cookie-banner__actions">
+      <button id="cookie-accept-btn" class="cookie-banner__btn cookie-banner__btn--primary" type="button">
+        Allow all cookies
+      </button>
+      <button id="cookie-reject-btn" class="cookie-banner__btn cookie-banner__btn--muted" type="button">
+        Deny all
+      </button>
+      <button id="cookie-manage-btn" class="cookie-banner__btn cookie-banner__btn--green-outline" type="button">
+        Cookie settings
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Cookie settings modal -->
+<div id="cookie-settings-modal" class="cookie-modal" role="dialog" aria-label="Cookie settings" aria-hidden="true">
+  <div class="cookie-modal__overlay"></div>
+  <div class="cookie-modal__dialog">
+    <button id="cookie-modal-close" class="cookie-modal__close" type="button" aria-label="Close">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M15 5L5 15M5 5l10 10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+
+    <h2 class="cookie-modal__title">Cookie Settings</h2>
+    <p class="cookie-modal__description">
+      We use cookies and local storage to remember your preferences. We also use Google Analytics to understand how you use our platform and Google Ads to track the effectiveness of our external advertising campaigns.
+    </p>
+
+    <div class="cookie-modal__categories">
+
+      <div class="cookie-category">
+        <div class="cookie-category__info">
+          <span class="cookie-category__name">Essential Cookies</span>
+          <p class="cookie-category__desc">These cookies are required for the website to work properly. They handle basic functionality and ensuring the site operates correctly.</p>
+        </div>
+        <label class="cookie-toggle cookie-toggle--disabled">
+          <input type="checkbox" checked disabled />
+          <span class="cookie-toggle__slider"></span>
+        </label>
+      </div>
+
+      <div class="cookie-category">
+        <div class="cookie-category__info">
+          <span class="cookie-category__name">Analytics Cookies</span>
+          <p class="cookie-category__desc">We use Google Analytics to understand how you use our platform — which features you use most and how we can improve the site. This helps us make HabitatMap better for everyone.</p>
+        </div>
+        <label class="cookie-toggle">
+          <input type="checkbox" id="cookie-analytics" />
+          <span class="cookie-toggle__slider"></span>
+        </label>
+      </div>
+
+      <div class="cookie-category">
+        <div class="cookie-category__info">
+          <span class="cookie-category__name">Marketing Cookies</span>
+          <p class="cookie-category__desc">We use Google Ads to track how effective our external advertising campaigns are. This helps us understand if our ads are bringing the right people to our platform.</p>
+        </div>
+        <label class="cookie-toggle">
+          <input type="checkbox" id="cookie-marketing" />
+          <span class="cookie-toggle__slider"></span>
+        </label>
+      </div>
+
+    </div>
+
+    <div class="cookie-modal__actions">
+      <button id="cookie-modal-accept-btn" class="cookie-banner__btn cookie-banner__btn--outline" type="button">
+        Accept all
+      </button>
+      <button id="cookie-modal-reject-btn" class="cookie-banner__btn cookie-banner__btn--outline" type="button">
+        Reject all
+      </button>
+      <button id="cookie-save-btn" class="cookie-banner__btn cookie-banner__btn--primary" type="button">
+        Save preferences
+      </button>
+    </div>
+  </div>
+</div>
