@@ -6,6 +6,7 @@
   align-items: flex-end;
   justify-content: center;
   background-color: transparent;
+  pointer-events: none;
 
   &--visible {
     display: flex;
@@ -13,6 +14,7 @@
 }
 
 .cookie-banner__inner {
+  pointer-events: auto;
   background-color: $white;
   padding: 1.5rem 2rem;
   text-align: center;
