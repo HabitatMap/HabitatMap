@@ -47,7 +47,6 @@
     document.body.style.overflow = '';
   }
 
-  // Banner buttons
   document.getElementById('cookie-accept-btn').addEventListener('click', function () {
     saveAndClose({ analytics: true, marketing: true });
   });
@@ -58,7 +57,6 @@
 
   document.getElementById('cookie-manage-btn').addEventListener('click', showModal);
 
-  // Modal buttons
   document.getElementById('cookie-modal-accept-btn').addEventListener('click', function () {
     saveAndClose({ analytics: true, marketing: true });
   });
@@ -84,7 +82,6 @@
     showBanner();
   });
 
-  // Show banner if no consent stored
   if (!localStorage.getItem(STORAGE_KEY)) {
     showBanner();
   }

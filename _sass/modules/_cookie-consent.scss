@@ -1,6 +1,3 @@
-// ------------------------------------
-// Cookie consent banner (bottom bar)
-// ------------------------------------
 .cookie-banner {
   position: fixed;
   inset: 0;
@@ -143,9 +140,6 @@
   }
 }
 
-// ------------------------------------
-// Cookie settings modal
-// ------------------------------------
 .cookie-modal {
   position: fixed;
   inset: 0;
@@ -213,7 +207,6 @@
   margin: 0 0 1.25rem;
 }
 
-// Categories
 .cookie-modal__categories {
   display: flex;
   flex-direction: column;
@@ -248,7 +241,6 @@
   line-height: 1.5;
 }
 
-// Toggle switch
 .cookie-toggle {
   position: relative;
   flex-shrink: 0;
@@ -304,7 +296,6 @@
   }
 }
 
-// Modal footer actions
 .cookie-modal__actions {
   display: flex;
   justify-content: center;
