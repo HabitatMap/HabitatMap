@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Buy AirBeam - Professional Air Quality Monitor | HabitatMap"
-description: "Get your AirBeam Mini air quality monitor ($99) for personal use. No subscriptions, complete data ownership."
+description: "AirBeam Mini ($99 USD, ~€85 / ~£74). Ships worldwide. No subscriptions, complete data ownership."
 permalink: /airbeam/buy-it-now/
 section: airbeam buy-now
 image: /assets/img/airbeam-buy-it-now.jpg
@@ -65,7 +65,7 @@ offers:
             unitCode: "DAY"
         shippingDestination:
           type: DefinedRegion
-          addressCountry: "CA"
+          addressCountry: ["CA", "AU", "GB", "DE", "FR", "IT", "ES", "NL", "BE", "PL", "IE", "AT", "SE", "DK", "FI", "NO", "CH", "PT", "CZ", "GR", "HU", "RO", "JP", "KR", "SG", "MX", "BR", "NZ", "IL", "ZA"]
 hasMerchantReturnPolicy:
   - type: MerchantReturnPolicy
     name: 30-Day Return Policy
@@ -126,8 +126,19 @@ hasMerchantReturnPolicy:
       "@id": "{{ site.url }}/airbeam/buy-it-now#airbeammini",
       "name": "AirBeam Mini",
       "alternateName": ["AirBeam-Mini", "ABM", "Mini Air Quality Monitor"],
-      "description": "The AirBeam Mini is a smaller, lighter, and more affordable version of our air quality monitor, perfect for personal use and mobile monitoring. Measures PM2.5 particulate matter with the same accuracy as professional equipment.",
+      "description": "The AirBeam Mini is a smaller, lighter, and more affordable version of our air quality monitor, perfect for personal use and mobile monitoring. Measures PM2.5 particulate matter with the same accuracy as professional equipment. Ships worldwide from Brooklyn, NY. All transactions in USD.",
       "category": "Personal Environmental Monitor",
+      "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "Worldwide"
+      },
+      "audience": {
+        "@type": "PeopleAudience",
+        "geographicArea": {
+          "@type": "AdministrativeArea",
+          "name": "Worldwide"
+        }
+      },
       "sku": "ABM-001",
       "mpn": "AIRBEAMMINI-2024",
       "image": [
@@ -202,6 +213,34 @@ hasMerchantReturnPolicy:
         "priceValidUntil": "2025-12-31",
         "itemCondition": "https://schema.org/NewCondition",
         "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "AdministrativeArea",
+          "name": "Worldwide"
+        },
+        "priceSpecification": [
+          {
+            "@type": "UnitPriceSpecification",
+            "@id": "{{ site.url }}/airbeam/buy-it-now#price-usd",
+            "price": "99.00",
+            "priceCurrency": "USD"
+          },
+          {
+            "@type": "UnitPriceSpecification",
+            "@id": "{{ site.url }}/airbeam/buy-it-now#price-eur-estimate",
+            "price": "85.00",
+            "priceCurrency": "EUR",
+            "name": "Estimated price (charged in USD)",
+            "valueAddedTaxIncluded": false
+          },
+          {
+            "@type": "UnitPriceSpecification",
+            "@id": "{{ site.url }}/airbeam/buy-it-now#price-gbp-estimate",
+            "price": "74.00",
+            "priceCurrency": "GBP",
+            "name": "Estimated price (charged in USD)",
+            "valueAddedTaxIncluded": false
+          }
+        ],
         "seller": {
           "@id": "{{ site.url }}/#organization"
         },
@@ -279,7 +318,7 @@ hasMerchantReturnPolicy:
             },
             "shippingDestination": {
               "@type": "DefinedRegion",
-              "addressCountry": ["CA", "EU", "AU"]
+              "addressCountry": ["CA", "AU", "GB", "DE", "FR", "IT", "ES", "NL", "BE", "PL", "IE", "AT", "SE", "DK", "FI", "NO", "CH", "PT", "CZ", "GR", "HU", "RO", "JP", "KR", "SG", "MX", "BR", "NZ", "IL", "ZA"]
             }
           }
         ]
