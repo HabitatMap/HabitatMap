@@ -29,6 +29,49 @@
   }
 }
 
+.product-stock-notice {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 0 0 0.875rem;
+  padding: 0.75rem 1rem;
+  background: #f0f9f1;
+  border-left: 4px solid $green;
+  border-radius: 0.5rem;
+
+  @media (min-width: $tablet-min) {
+    gap: 0.875rem;
+    padding: 0.875rem 1.125rem;
+    margin: 0 0 1rem;
+  }
+}
+
+.product-stock-notice-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  flex-shrink: 0;
+  color: $green;
+
+  @media (min-width: $tablet-min) {
+    width: 1.625rem;
+    height: 1.625rem;
+  }
+}
+
+.product-stock-notice-message {
+  flex: 1;
+  min-width: 0;
+  margin: 0;
+  font-size: $base-font-size-1;
+  line-height: 1.45;
+  color: $gray-dark;
+
+  strong {
+    font-weight: 700;
+    color: $gray-dark;
+  }
+}
+
 .showcase-overline {
   display: inline-block;
   font-size: $base-font-size-1;
