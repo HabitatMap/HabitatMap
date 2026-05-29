@@ -99,11 +99,15 @@ og_type: website
     "itemOffered": {
       "@type": "Product",
       "name": "AirBeam Air Quality Monitor",
-      "description": "A portable and easy to use air quality monitor that lets you see the pollution around you in real time.",
+      "description": "A portable and easy to use air quality monitor that lets you see the pollution around you in real time. Ships worldwide from Brooklyn, NY. All transactions in USD.",
       "image": "{{ site.url }}/assets/img/pages/home/home.jpg",
       "brand": {
         "@type": "Brand",
         "name": "HabitatMap"
+      },
+      "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "Worldwide"
       },
       "offers": {
         "@type": "Offer",
@@ -111,6 +115,10 @@ og_type: website
         "price": "99.00",
         "availability": "https://schema.org/InStock",
         "priceValidUntil": "2024-12-31",
+        "eligibleRegion": {
+          "@type": "AdministrativeArea",
+          "name": "Worldwide"
+        },
         "hasMerchantReturnPolicy": {
           "@type": "MerchantReturnPolicy",
           "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
@@ -150,6 +158,33 @@ og_type: website
             "shippingDestination": {
               "@type": "DefinedRegion",
               "addressCountry": "US"
+            }
+          },
+          {
+            "@type": "OfferShippingDetails",
+            "shippingRate": {
+              "@type": "MonetaryAmount",
+              "value": "35.00",
+              "currency": "USD"
+            },
+            "deliveryTime": {
+              "@type": "ShippingDeliveryTime",
+              "handlingTime": {
+                "@type": "QuantitativeValue",
+                "minValue": 1,
+                "maxValue": 1,
+                "unitCode": "DAY"
+              },
+              "transitTime": {
+                "@type": "QuantitativeValue",
+                "minValue": 7,
+                "maxValue": 21,
+                "unitCode": "DAY"
+              }
+            },
+            "shippingDestination": {
+              "@type": "DefinedRegion",
+              "addressCountry": ["CA", "AU", "GB", "DE", "FR", "IT", "ES", "NL", "BE", "PL", "IE", "AT", "SE", "DK", "FI", "NO", "CH", "PT", "CZ", "GR", "HU", "RO", "JP", "KR", "SG", "MX", "BR", "NZ", "IL", "ZA"]
             }
           }
         ]
@@ -202,11 +237,15 @@ og_type: website
       {
         "@type": "Product",
         "name": "AirBeam3",
-        "description": "AirBeam3 is the most accurate and versatile portable air quality monitor for measuring PM1, PM2.5, and PM10 particles.",
+        "description": "AirBeam3 is the most accurate and versatile portable air quality monitor for measuring PM1, PM2.5, and PM10 particles. Ships worldwide from Brooklyn, NY. All transactions in USD.",
         "image": "{{ site.url }}/assets/img/pages/how-it-works/how-it-works_1.jpg",
         "brand": {
           "@type": "Brand",
           "name": "HabitatMap"
+        },
+        "areaServed": {
+          "@type": "AdministrativeArea",
+          "name": "Worldwide"
         },
         "offers": {
           "@type": "Offer",
@@ -214,6 +253,10 @@ og_type: website
           "price": "199.00",
           "availability": "https://schema.org/InStock",
           "priceValidUntil": "2024-12-31",
+          "eligibleRegion": {
+            "@type": "AdministrativeArea",
+            "name": "Worldwide"
+          },
           "hasMerchantReturnPolicy": {
             "@type": "MerchantReturnPolicy",
             "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
@@ -253,6 +296,33 @@ og_type: website
               "shippingDestination": {
                 "@type": "DefinedRegion",
                 "addressCountry": "US"
+              }
+            },
+            {
+              "@type": "OfferShippingDetails",
+              "shippingRate": {
+                "@type": "MonetaryAmount",
+                "value": "35.00",
+                "currency": "USD"
+              },
+              "deliveryTime": {
+                "@type": "ShippingDeliveryTime",
+                "handlingTime": {
+                  "@type": "QuantitativeValue",
+                  "minValue": 1,
+                  "maxValue": 1,
+                  "unitCode": "DAY"
+                },
+                "transitTime": {
+                  "@type": "QuantitativeValue",
+                  "minValue": 7,
+                  "maxValue": 21,
+                  "unitCode": "DAY"
+                }
+              },
+              "shippingDestination": {
+                "@type": "DefinedRegion",
+                "addressCountry": ["CA", "AU", "GB", "DE", "FR", "IT", "ES", "NL", "BE", "PL", "IE", "AT", "SE", "DK", "FI", "NO", "CH", "PT", "CZ", "GR", "HU", "RO", "JP", "KR", "SG", "MX", "BR", "NZ", "IL", "ZA"]
               }
             }
           ]
@@ -379,9 +449,13 @@ og_type: website
   "@id": "{{ site.url }}/#product",
   "name": "AirBeam Air Quality Monitor",
   "alternateName": ["AirBeam3", "AirBeam Sensor", "Portable Air Quality Monitor"],
-  "description": "A portable and easy to use air quality monitor that lets you see the pollution around you in real time. Measure air quality in your neighborhood, at your kid's school, or on your daily run.",
+  "description": "A portable and easy to use air quality monitor that lets you see the pollution around you in real time. Measure air quality in your neighborhood, at your kid's school, or on your daily run. Ships worldwide from Brooklyn, NY. All transactions in USD.",
   "category": "Environmental Monitoring Equipment",
   "productID": "airbeam-3",
+  "areaServed": {
+    "@type": "AdministrativeArea",
+    "name": "Worldwide"
+  },
   "brand": {
     "@type": "Brand",
     "@id": "{{ site.url }}/#organization",
@@ -403,6 +477,10 @@ og_type: website
     "price": "99.00",
     "lowPrice": "99.00",
     "availability": "https://schema.org/InStock",
+    "eligibleRegion": {
+      "@type": "AdministrativeArea",
+      "name": "Worldwide"
+    },
     "seller": {
       "@id": "{{ site.url }}/#organization"
     },
@@ -475,7 +553,7 @@ og_type: website
         },
         "shippingDestination": {
           "@type": "DefinedRegion",
-          "addressCountry": ["CA", "EU", "AU"]
+          "addressCountry": ["CA", "AU", "GB", "DE", "FR", "IT", "ES", "NL", "BE", "PL", "IE", "AT", "SE", "DK", "FI", "NO", "CH", "PT", "CZ", "GR", "HU", "RO", "JP", "KR", "SG", "MX", "BR", "NZ", "IL", "ZA"]
         }
       }
     ]

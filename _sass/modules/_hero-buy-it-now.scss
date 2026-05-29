@@ -144,6 +144,14 @@
   }
 }
 
+.buy-hero__price-note {
+  margin: 0.75rem auto 0;
+  text-align: center;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: $gray;
+}
+
 .buy-hero__btn {
   display: inline-flex;
   align-items: center;
