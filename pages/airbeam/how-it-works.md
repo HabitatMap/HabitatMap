@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Airbeam - How It Works
+title: AirBeam - How It Works
 permalink: /airbeam/how-it-works
 section: airbeam
 ---
