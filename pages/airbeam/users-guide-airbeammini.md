@@ -80,7 +80,7 @@ image: /assets/img/about-airbeam-01.jpg
   <p class="p--body">
 Outfitted with its sleeve, AirBeam Mini becomes drop-proof and rain-proof. The sleeve includes a carbiner attachment point to simplify outdoor installation. Remove the sleeve for a more streamlined profile or to attach the belt clip. The below video shows how to remove AirBeam Mini from its sleeve.
 <br><br />
-  <iframe width="700" height="394" src="https://youtube.com/shorts/g2UJyrXheas?si=bopkiap4r1U82BNM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe width="700" height="394" src="https://youtube.com/embed/g2UJyrXheas?si=bopkiap4r1U82BNM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
   </p>
 
@@ -229,7 +229,7 @@ Operation of AirBeam Mini is nearly identical to operation of AirBeam3, so the b
   </h2>
 
   <p class="p--body">
-    Whenever your AirBeam Mini is recording a mobile or fixed session and the Bluetooth or WiFi connection is interupted, AirBeam Mini will log data to its internal storage. Once the Bluetooth or WiFi connection is restored the data saved to internal storage will automatically sync so no data is lost.
+    Whenever your AirBeam Mini is recording a mobile or fixed session and the Bluetooth or WiFi connection is interupted, AirBeam Mini will log data to its internal storage. Once the Bluetooth or WiFi connection is restored the data saved to internal storage will automatically sync so no data is lost. AirBeam Mini can store 1,675 days of 10-minute interval data, 837 days of 5-minute interval data, 167 days of 1-minute interval data, 14 days of 5-second interval data, or 67 hours of 1-second interval data.
   </p>
 
   <a id="compliance" class="anchor">
