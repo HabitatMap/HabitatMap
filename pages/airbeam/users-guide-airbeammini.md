@@ -199,7 +199,7 @@ Operation of AirBeam Mini is nearly identical to operation of AirBeam3, so the b
   </ol>
 
   <p class="p--body">
-    When recording a fixed WiFi session with AirBeam Mini, the measurements are communicated once a minute to the <a href="http://aircasting.org/">AirCasting website</a> via WiFi. The Android or iOS device no longer needs to be in proximity to AirBeam3 as it’s retrieving the data from the web via the Android or iOS device’s WiFi or cellular connection. AirBeam Mini must be connected to the 2.4 GHz band of your WiFi network; it cannot connect via the 5 GHz band.
+    When recording a fixed WiFi session with AirBeam Mini, the measurements are communicated once a minute to the <a href="http://aircasting.org/">AirCasting website</a> via WiFi. The Android or iOS device no longer needs to be in proximity to AirBeam Mini as it’s retrieving the data from the web via the Android or iOS device’s WiFi or cellular connection. AirBeam Mini must be connected to the 2.4 GHz band of your WiFi network; it cannot connect via the 5 GHz band.
   </p>
 
   <a id="connection" class="anchor">
