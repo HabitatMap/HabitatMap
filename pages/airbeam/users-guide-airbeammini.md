@@ -78,9 +78,9 @@ image: /assets/img/about-airbeam-01.jpg
   </h2>
 
   <p class="p--body">
-Outfitted with its sleeve, AirBeam Mini becomes drop-proof and rain-proof. The sleeve includes a carbiner attachment point to simplify outdoor installation. Remove the sleeve for a more streamlined profile or to attach the belt clip. The fit between the AirBeam Mini and its sleeve is intentionally tight to keep the AirBeam from falling out of the sleeve. The below video shows how to remove AirBeam Mini from its sleeve.
+Outfitted with its sleeve, AirBeam Mini becomes drop-proof and rain-proof. The sleeve includes a carbiner attachment point to simplify outdoor installation. Remove the sleeve for a more streamlined profile or to attach the belt clip. The below video shows how to remove AirBeam Mini from its sleeve.
 <br><br />
-  <iframe width="700" height="394" src="https://youtube.com/shorts/g2UJyrXheas?si=wN3hst1S6Ty_Gr1q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe width="700" height="394" src="https://youtube.com/shorts/g2UJyrXheas?si=bopkiap4r1U82BNM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
   </p>
 
