@@ -32,6 +32,7 @@ image: /assets/img/about-airbeam-01.jpg
   <ul class="contents-list list p--body">
     <li class="contents-list__item"><a href="#specification">Hardware Specifications</a></li>
     <li class="contents-list__item"><a href="#about">About AirBeam Mini</a></li>
+    <li class="contents-list__item"><a href="#calibration">Calibration & Accuracy</a></li>
     <li class="contents-list__item"><a href="#extract">AirBeam Mini Sleeve</a></li>
     <li class="contents-list__item"><a href="#videos">AirBeam3 Instructional Videos</a></li>
     <li class="contents-list__item"><a href="#weather-resistant">Weather Resistant</a></li>
@@ -68,7 +69,17 @@ image: /assets/img/about-airbeam-01.jpg
   </h2>
 
   <p class="p--body">
-    <a href="https://www.habitatmap.org/airbeam/buy-it-now">AirBeam Mini</a> is a portable air quality instrument weighing four ounces that measures PM1 and PM2.5. Its rain-proof, weather resistant rubber sleeve makes it suitable for indoor or outdoor use. It can communicate via Bluetooth and WiFi and can be used as a stationary or mobile monitor. Users can map and graph the measurements from AirBeam Mini in real-time using an <a href='https://play.google.com/store/apps/details?id=pl.llp.aircasting'>Android</a> or <a href='https://apps.apple.com/us/app/aircasting-air-quality/id1587685281?platform=iphone'>iOS</a> device or the <a href='http://aircasting.org/'>AirCasting website</a>. AirBeam Mini has internal storage, a clock, and battery so after configuration it can operate in standalone mode, i.e. without the need for any additional hardware, such as a smartphone. AirBeam Mini ships with a sleeve, carabiner, belt clip and 6ft USB-A to USB-C cable.  AirBeam Mini is open-source as is the AirCasting platform software.
+    <a href="https://www.habitatmap.org/airbeam/buy-it-now">AirBeam Mini</a> is a portable air quality instrument weighing four ounces that measures PM1 and PM2.5. Its rain-proof, weather resistant rubber sleeve makes it suitable for indoor or outdoor use. It can communicate via Bluetooth and WiFi and can be used as a stationary or mobile monitor. Users can map and graph the measurements from AirBeam Mini in real-time using an <a href='https://play.google.com/store/apps/details?id=pl.llp.aircasting'>Android</a> or <a href='https://apps.apple.com/us/app/aircasting-air-quality/id1587685281?platform=iphone'>iOS</a> device or the <a href='http://aircasting.org/'>AirCasting website</a>. AirBeam Mini ships with a sleeve, carabiner, belt clip and 6ft USB-A to USB-C cable.  AirBeam Mini is open-source as is the AirCasting platform software.
+  </p>
+
+  <a id="calibration" class="anchor">
+  </a>
+  <h2 class="heading heading--small heading--body">
+    About AirBeam Mini
+  </h2>
+
+  <p class="p--body">
+    For 18 weeks we collocated AirBeam Minis at the New York State Department of Environmental Conservation’s “Queens College” air quality monitoring site next to their BAM-1020, a highly accurate Federal Equivalent Method monitor that measures PM2.5. <a href='https://publichealth.arizona.edu/directory/chris-lim'>Dr. Chris Lim</a> – a professor of Environmental Health Sciences at University of Arizona with expertise in the application of low-cost sensor technologies for personal exposure assessment – developed custom calibration equations for the AirBeam Mini based on the intercomparison. Dr. Lim’s report, which discusses his approach to calibrating the AirBeam Mini using the intercomparison data, is <a href='https://habitatmap.org/images/uploads/airbeammini_calibrationreport_6-23-2026.pdf'>available for download here</a>. Based on the data collected and the methods used to develop the calibration equations, the new AirBeam Mini is the most accurate AirBeam model to date and best in class when it comes to accuracy among low-cost air quality instruments measuring particulate matter.
   </p>
 
    <a id="extract" class="anchor">
