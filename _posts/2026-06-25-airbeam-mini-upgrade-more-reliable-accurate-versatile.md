@@ -4,7 +4,7 @@ title: "AirBeam Mini Upgrade: More Reliable, Accurate & Versatile "
 date: 2026-06-25
 featured: true
 author: Michael Heimbinder
-image: /images/uploads/abm_upgrade.png
+image: /images/uploads/mini_upgrade.png
 category: Sensors & Instruments
 tag:
   - instruments
