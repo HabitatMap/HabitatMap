@@ -75,7 +75,7 @@ image: /assets/img/about-airbeam-01.jpg
   <a id="calibration" class="anchor">
   </a>
   <h2 class="heading heading--small heading--body">
-    About AirBeam Mini
+    Calibration & Accuracy
   </h2>
 
   <p class="p--body">
