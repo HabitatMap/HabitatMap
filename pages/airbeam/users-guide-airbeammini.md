@@ -240,7 +240,7 @@ Operation of AirBeam Mini is nearly identical to operation of AirBeam3, so the b
   </h2>
 
   <p class="p--body">
-    Whenever your AirBeam Mini is recording a mobile or fixed session and the Bluetooth or WiFi connection is interupted, AirBeam Mini will log data to its internal storage. Once the Bluetooth or WiFi connection is restored the data saved to internal storage will automatically sync so no data is lost. AirBeam Mini can store 1,675 days of 10-minute interval data, 837 days of 5-minute interval data, 167 days of 1-minute interval data, 14 days of 5-second interval data, or 67 hours of 1-second interval data.
+    Whenever your AirBeam Mini is recording a mobile or fixed session and the Bluetooth or WiFi connection is interrupted, AirBeam Mini will log data to its internal storage. Once the Bluetooth or WiFi connection is restored the data saved to internal storage will automatically sync so no data is lost. AirBeam Mini can store 1,675 days of 10-minute interval data, 837 days of 5-minute interval data, 167 days of 1-minute interval data, 14 days of 5-second interval data, or 67 hours of 1-second interval data.
   </p>
 
   <a id="compliance" class="anchor">
