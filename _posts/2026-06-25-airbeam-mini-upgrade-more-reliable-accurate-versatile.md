@@ -19,7 +19,7 @@ We changed the material used in the AirBeam Mini’s rubber sleeve from TPU to s
 <iframe width="752" height="424" src="https://youtube.com/embed/g2UJyrXheas?si=bopkiap4r1U82BNM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
-
+\
 **Firmware Update**\
 We updated the AirBeam Mini firmware to allow users to select the sampling interval, improve battery runtime, increase storage, make data collection more reliable, and improve accuracy. This firmware upgrade is also available to everyone who owns an older model AirBeam Mini. Instructions for updating your AirBeam Mini firmware are provided at the bottom of this post. Firmware development was led by Sebastian Strycharz of [Lunar Logic](https://www.lunarlogic.com/) who wrote the code from the ground up using the Rust programming language. The AirBeam Mini firmware is open source (as is [all the code](https://github.com/HabitatMap) for the AirCasting Android, iOS, and web apps) and [available online](https://github.com/HabitatMap/AirbeamMiniFirmware) at GitHub.
 
