@@ -33,19 +33,13 @@ Some phone and operating system combinations are aggressive about terminating th
 For 18 weeks we collocated AirBeam Minis at the New York State Department of Environmental Conservation’s “Queens College” air quality monitoring site next to their BAM-1020, a highly accurate Federal Equivalent Method monitor that measures PM2.5. [Dr. Chris Lim](https://publichealth.arizona.edu/directory/chris-lim) – a professor of Environmental Health Sciences at University of Arizona with expertise in the application of low-cost sensor technologies for personal exposure assessment – developed custom calibration equations for AirBeam Mini based on the intercomparison. Dr. Lim’s report, which discusses his approach to calibrating AirBeam Mini using the intercomparison data, is [available for download here](https://habitatmap.org/images/uploads/airbeammini_calibrationreport_6-23-2026.pdf). Based on the data collected and the methods used to develop the calibration equations, the new AirBeam Mini is the most accurate AirBeam model to date and best in class when it comes to accuracy among low-cost air quality instruments measuring particulate matter.
 
 \
-**Update AirBeam Mini Firmware**Have an older model AirBeam Mini that was purchased by or before May 2026?  You can update to the latest firmware and take advantage of all the latest improvements. Step-by-step instructions are posted below.\
-\
+**Update AirBeam Mini Firmware**Have an older model AirBeam Mini that was purchased by or before May 2026?  You can update to the latest firmware and take advantage of all the latest improvements. Step-by-step instructions are posted below.
 
-1. Download the [AirBeam Mini firmware BIN file here](https://habitatmap.org/images/uploads/abmfw-relase-1-0-0.bin).\
-   \
-2. Using a Chrome web browser, navigate to https://espressif.github.io/esptool-js/.\
-   \
-3. Using the cable that shipped with your AirBeam Mini (or another compatible USB cable that supports data transfers) connect your AirBeam to your computer.\
-   \
-4. Set the “Baudrate” to “921600”, click “connect”, turn on your AirBeam Mini and select the port associated with the AirBeam Mini. The port will appear on the list and disappear from the list as you power the AirBeam on and off. The proper port to select begins “USB JTAG…”\
-   \
-5. Set the “Flash Address” to “0x0”, then click “choose file” and select the AirBeam Mini firmware BIN file you downloaded in step 1.\
-   \
+1. Download the [AirBeam Mini firmware BIN file here](https://habitatmap.org/images/uploads/abmfw-relase-1-0-0.bin).
+2. Using a Chrome web browser, navigate to https://espressif.github.io/esptool-js/.
+3. Using the cable that shipped with your AirBeam Mini (or another compatible USB cable that supports data transfers) connect your AirBeam to your computer.
+4. Set the “Baudrate” to “921600”, click “connect”, turn on your AirBeam Mini and select the port associated with the AirBeam Mini. The port will appear on the list and disappear from the list as you power the AirBeam on and off. The proper port to select begins “USB JTAG…”
+5. Set the “Flash Address” to “0x0”, then click “choose file” and select the AirBeam Mini firmware BIN file you downloaded in step 1.
 6. Click “Program” and wait 15-20 seconds until the serial output displayed in the black box reads “Hard resetting via RTS pin...”, then turn your AirBeam off.
 
 You have now successfully reprogrammed your AirBeam Mini, upgrading to the latest firmware. The simplest way to check if the firmware update was successful is to configure your AirBeam Mini to record a mobile session. During configuration, when you see an option to select the sampling interval, you’ll know you’ve unlocked all the new features and improvements delivered by the firmware upgrade.
