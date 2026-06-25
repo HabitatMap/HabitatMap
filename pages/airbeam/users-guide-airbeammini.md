@@ -43,7 +43,7 @@ image: /assets/img/about-airbeam-01.jpg
     <li class="contents-list__item"><a href="#record-mobile">Record Measurements – Mobile  (Bluetooth) Session</a></li>
     <li class="contents-list__item"><a href="#record-wifi">Record Measurements – Fixed (Wifi) Session</a></li>
     <li class="contents-list__item"><a href="#connection">Connection Indicator Color Key</a></li>
-    <li class="contents-list__item"><a href="#bluetooth-disconnections">Standalone mode</a></li>
+    <li class="contents-list__item"><a href="#bluetooth-disconnections">Bluetooth Disconnections</a></li>
     <li class="contents-list__item"><a href="#internal-storage">Internal Storage</a></li>
     <li class="contents-list__item"><a href="#compliance">FCC Compliance Statement</a></li>
   </ul>
