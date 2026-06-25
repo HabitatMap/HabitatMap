@@ -33,7 +33,8 @@ Some phone and operating system combinations are aggressive about terminating th
 For 18 weeks we collocated AirBeam Minis at the New York State Department of Environmental Conservation’s “Queens College” air quality monitoring site next to their BAM-1020, a highly accurate Federal Equivalent Method monitor that measures PM2.5. [Dr. Chris Lim](https://publichealth.arizona.edu/directory/chris-lim) – a professor of Environmental Health Sciences at University of Arizona with expertise in the application of low-cost sensor technologies for personal exposure assessment – developed custom calibration equations for AirBeam Mini based on the intercomparison. Dr. Lim’s report, which discusses his approach to calibrating AirBeam Mini using the intercomparison data, is [available for download here](https://habitatmap.org/images/uploads/airbeammini_calibrationreport_6-23-2026.pdf). Based on the data collected and the methods used to develop the calibration equations, the new AirBeam Mini is the most accurate AirBeam model to date and best in class when it comes to accuracy among low-cost air quality instruments measuring particulate matter.
 
 \
-**Update AirBeam Mini Firmware**Have an older model AirBeam Mini that was purchased by or before May 2026?  You can update to the latest firmware and take advantage of all the latest improvements. Step-by-step instructions are posted below.
+**Update AirBeam Mini Firmware**\
+Have an older model AirBeam Mini that was purchased by or before May 2026?  You can update to the latest firmware and take advantage of all the latest improvements. Step-by-step instructions are posted below.
 
 1. Download the [AirBeam Mini firmware BIN file here](https://habitatmap.org/images/uploads/abmfw-relase-1-0-0.bin).
 2. Using a Chrome web browser, navigate to https://espressif.github.io/esptool-js/.
