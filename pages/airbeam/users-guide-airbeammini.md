@@ -58,7 +58,7 @@ image: /assets/img/about-airbeam-01.jpg
   <p class="p--body">
     Weight: 4 ounces<br>
     Particle Sensor: Plantower PMS7003<br>
-    BLE, WiFi & Microcontroller: Espressif, ESP32-C3-WROOM-02-N4 <br>
+    BLE, WiFi & Microcontroller: Espressif, ESP32-C3-WROOM-02-N4<br>
     Battery: PKCell, LP505060 1800mAh 3.7V
   </p>
 
@@ -69,7 +69,7 @@ image: /assets/img/about-airbeam-01.jpg
   </h2>
 
   <p class="p--body">
-    <a href="https://www.habitatmap.org/airbeam/buy-it-now">AirBeam Mini</a> is a portable air quality instrument weighing four ounces that measures PM1 and PM2.5. Its rain-proof, weather resistant rubber sleeve makes it suitable for indoor or outdoor use. It can communicate via Bluetooth and WiFi and can be used as a stationary or mobile monitor. Users can map and graph the measurements from AirBeam Mini in real-time using an <a href='https://play.google.com/store/apps/details?id=pl.llp.aircasting'>Android</a> or <a href='https://apps.apple.com/us/app/aircasting-air-quality/id1587685281'>iOS</a> device or the <a href='http://aircasting.org/'>AirCasting website</a>. AirBeam Mini ships with a sleeve, carabiner, belt clip and 6ft USB-A to USB-C cable.  AirBeam Mini is open-source as is the AirCasting platform software.
+    <a href="https://www.habitatmap.org/airbeam">AirBeam Mini</a> is a portable air quality instrument weighing four ounces that measures PM1 and PM2.5. Its rain-proof, weather resistant rubber sleeve makes it suitable for indoor or outdoor use. It can communicate via Bluetooth and WiFi and can be used as a stationary or mobile monitor. Users can map and graph the measurements from AirBeam Mini in real-time using an <a href='https://play.google.com/store/apps/details?id=pl.llp.aircasting'>Android</a> or <a href='https://apps.apple.com/us/app/aircasting-air-quality/id1587685281'>iOS</a> device or the <a href='http://aircasting.org/'>AirCasting website</a>. AirBeam Mini ships with a sleeve, carabiner, belt clip and 6ft USB-A to USB-C cable.  AirBeam Mini is open-source as is the AirCasting platform software.
   </p>
 
   <a id="calibration" class="anchor">
@@ -209,12 +209,12 @@ Operation of AirBeam Mini is nearly identical to operation of AirBeam3, so the b
   </h2>
 
   <ul class="list list--unordered p--body">
-    <li>Solid Green, for 180 seconds = ready to be configured, waiting for Bluetooth connection </li>
+    <li>Solid Green, for 180 seconds = ready to be configured, waiting for Bluetooth connection</li>
     <li>Solid Blue = Bluetooth connected</li>
-    <li>Solid White, for 120 seconds = AirBeam Mini successfully configured and sending data </li>
-    <li>Blink White, once every ten seconds = Bluetooth connected and transmitting data </li>
+    <li>Solid White, for 120 seconds = AirBeam Mini successfully configured and sending data</li>
+    <li>Blink White, once every ten seconds = Bluetooth connected and transmitting data</li>
     <li>Blink Yellow, once every ten seconds = standalone mode, Bluetooth disconnected</li>
-    <li>Blink Red, once every ten seconds = low power indicator, plug in your AirBeam </li>
+    <li>Blink Red, once every ten seconds = low power indicator, plug in your AirBeam</li>
     <li>Solid Cyan = Internal data storage syncing</li>
     <li>Solid Red = Internal data storage full</li>
   </ul>

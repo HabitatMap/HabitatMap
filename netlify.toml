@@ -180,3 +180,17 @@ from = "/airbeam/FAQ"
 to = "/airbeam/faq"
 status = 301
 force = false
+
+# Buy-it-now page merged into the AirBeam landing page (/airbeam).
+# Redirect old URLs so search engines and cached links don't 404.
+[[redirects]]
+from = "/airbeam/buy-it-now"
+to = "/airbeam"
+status = 301
+force = false
+
+[[redirects]]
+from = "/airbeam/buy-it-now/*"
+to = "/airbeam"
+status = 301
+force = false

@@ -27,10 +27,10 @@
         <p class="empty-cart-text">Your cart is empty.</p>
         <button class="choose-airbeam-btn" onclick="
           window.shoppingCart.closeCart();
-          if (window.location.pathname.includes('/airbeam/buy-it-now')) {
+          if (window.location.pathname === '/airbeam' || window.location.pathname === '/airbeam/') {
             document.getElementById('product-selection')?.scrollIntoView({ behavior: 'smooth' });
           } else {
-            window.location.href='/airbeam/buy-it-now/#product-selection';
+            window.location.href='/airbeam#product-selection';
           }
         ">
           Choose Your AirBeam
