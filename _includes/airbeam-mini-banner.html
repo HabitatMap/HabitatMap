@@ -1,0 +1,96 @@
+<!--
+  "Learn more about AirBeam Mini" banner for blog posts.
+  Low-friction alternative to the add-to-cart card: sends readers to /airbeam.
+  Self-contained scoped styles, always visible, fills the article column width.
+  The whole banner is a single link.
+-->
+<style>
+  .airbeam-banner { margin: 2.5rem 0; }
+  /* Mobile-first: stacked — image on top (full aspect ratio, never cropped), text below. */
+  .airbeam-banner__card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.25rem;
+    background: #eff4f4;
+    border: 1px solid #e4eced;
+    border-radius: 1rem;
+    text-decoration: none !important;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+  }
+  .airbeam-banner__card:hover {
+    opacity: 1 !important;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  }
+  .airbeam-banner__img {
+    display: block;
+    width: 100%;
+    height: auto;              /* keep original aspect ratio — no cropping */
+    border-radius: 0.75rem;
+  }
+  .airbeam-banner__text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    flex: 1;
+    min-width: 0;
+  }
+  .airbeam-banner__eyebrow {
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #1ea73f;
+  }
+  .airbeam-banner__title {
+    font-family: "Moderat-Bold", sans-serif;
+    font-size: 1.15rem;
+    font-weight: 700;
+    line-height: 1.25;
+    color: #474c55;
+  }
+  .airbeam-banner__desc {
+    font-size: 0.9rem;
+    line-height: 1.45;
+    color: #818181;
+  }
+  .airbeam-banner__arrow {
+    flex-shrink: 0;
+    font-weight: 600;
+    white-space: nowrap;
+    color: #1ea73f;
+  }
+
+  /* Wider screens: side-by-side row with a small natural-ratio thumbnail. */
+  @media (min-width: 560px) {
+    .airbeam-banner__card {
+      flex-direction: row;
+      align-items: center;
+      gap: 1.25rem;
+      padding: 1rem 1.25rem;
+    }
+    .airbeam-banner__img {
+      width: auto;
+      height: 96px;            /* fixed height, auto width => ratio preserved */
+      flex-shrink: 0;
+    }
+  }
+</style>
+
+<div id="airbeam-mini-banner" class="airbeam-banner">
+  <a class="airbeam-banner__card" href="/airbeam">
+    <img
+      class="airbeam-banner__img lazyload"
+      data-src="/assets/buy-it-now_ABMsidebyside.jpg?nf_resize=fit&w=300"
+      src="/assets/buy-it-now_ABMsidebyside.jpg?nf_resize=fit&w=60"
+      alt="AirBeam Mini air quality monitor"
+    />
+    <span class="airbeam-banner__text">
+      <span class="airbeam-banner__eyebrow">New to AirBeam?</span>
+      <span class="airbeam-banner__title">Learn more about the AirBeam Mini</span>
+      <span class="airbeam-banner__desc">A palm-sized monitor that tracks the PM2.5 you are actually breathing, in real time.</span>
+    </span>
+    <span class="airbeam-banner__arrow">Learn more &rarr;</span>
+  </a>
+</div>

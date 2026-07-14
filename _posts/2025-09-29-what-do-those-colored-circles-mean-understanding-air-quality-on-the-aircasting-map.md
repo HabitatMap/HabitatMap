@@ -110,6 +110,6 @@ Clean air is not just a concern for researchers or policymakers. It is a basic h
 
 **Why is the air near me different from the nearest official reading?** Official monitors are sparse and average pollution over time, so they miss the block-by-block changes you actually breathe. A personal monitor like the AirBeam Mini shows the air right where you are.
 
-Want to see the air you are actually breathing? [Get your AirBeam Mini](https://www.habitatmap.org/airbeam/buy-it-now/).
+{% include airbeam-mini-cta.html %}
 
 <iframe width="752" height="424" src="https://www.youtube.com/embed/amjNUaoFYjk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
