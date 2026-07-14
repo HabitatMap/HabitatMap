@@ -17,7 +17,7 @@ tag:
 ---
 Community groups in New York City strapped on wearable sensors and uncovered what official monitors had missed for years. In predominantly Black and Brown neighborhoods, air pollution ran up to twenty times higher than expected. This is how they proved it, block by block.
 
-## TEST
+## Why official monitors miss New York City’s air pollution
 
 Air pollution in New York City can change dramatically from minute to minute and block to block. The New York State air monitoring network cannot capture this variation. It runs just over a dozen stations across the entire city.
 
