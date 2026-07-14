@@ -47,9 +47,16 @@ layout: default
   <div class="post-footer">
     <strong>
       PUBLISHED:
-      <time datetime="{{ page.date }}">
+      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
         <strong>{{ page.date | date_to_string }}</strong>
       </time>
+      {% if page.last_modified_at %}
+      <br />
+      UPDATED:
+      <time datetime="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">
+        <strong>{{ page.last_modified_at | date_to_string }}</strong>
+      </time>
+      {% endif %}
       <br />
       TAGS: {% for tag in page.tags %} {% assign tag_slug = tag | slugify %}
       <a
