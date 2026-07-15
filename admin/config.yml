@@ -17,6 +17,17 @@ collections:
       - { label: Title, name: title, widget: string }
       - { label: Publish Date, name: date, widget: datetime, timeFormat: false, dateFormat: "YYYY-MM-DD", "format": "YYYY-MM-DD" }
       - {
+          label: Last Updated,
+          name: last_modified_at,
+          widget: datetime,
+          required: false,
+          default: "",
+          timeFormat: false,
+          dateFormat: "YYYY-MM-DD",
+          "format": "YYYY-MM-DD",
+          hint: "Leave blank for new posts. When you meaningfully revise a published post, click 'Now' (or pick a date) so readers and search engines see it was refreshed. Shown as 'UPDATED' only when it differs from the publish date.",
+        }
+      - {
           label: Featured?,
           name: featured,
           widget: boolean,

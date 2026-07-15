@@ -2,6 +2,9 @@
 layout: default
 ---
 
+{%- assign _pub = page.date | date: "%Y-%m-%d" -%}
+{%- assign _mod = page.last_modified_at | date: "%Y-%m-%d" -%}
+
 <div class="panel panel--blog-hero">
   <div class="post-header">
     <small class="u--capitalized post-header__category">
@@ -50,7 +53,7 @@ layout: default
       <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
         <strong>{{ page.date | date_to_string }}</strong>
       </time>
-      {% if page.last_modified_at %}
+      {% if _mod != "" and _mod != _pub %}
       <br />
       UPDATED:
       <time datetime="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">
@@ -114,7 +117,7 @@ layout: default
     "@id": "https://www.habitatmap.org/#organization"
   },
   "datePublished": "{{ page.date | date_to_xmlschema }}",
-  "dateModified": "{{ page.last_modified_at | default: page.date | date_to_xmlschema }}"
+  "dateModified": "{% if _mod != '' %}{{ page.last_modified_at | date_to_xmlschema }}{% else %}{{ page.date | date_to_xmlschema }}{% endif %}"
 }
 </script>
 {% endif %}
