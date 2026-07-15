@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Buy AirBeam - Professional Air Quality Monitor | HabitatMap"
+title: "Buy AirBeam - Portable Air Quality Monitor | HabitatMap"
 description: "AirBeam Mini ($99 USD, ~€85 / ~£74). Ships worldwide. No subscriptions, complete data ownership."
 permalink: /airbeam
 section: airbeam buy-now
