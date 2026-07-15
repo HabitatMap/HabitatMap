@@ -100,6 +100,6 @@ Scent does not always mean safety. Before you light that candle or spray that fr
 
 **How can I make my home smell nice without polluting the air?** No-burn options like essential oils, dried flowers, and simmer pots add fragrance without combustion, and keeping windows open helps clear any particles.
 
-{% include airbeam-mini-banner.html %}
+{% include airbeam-mini-ab.html %}
 
 <iframe width="752" height="424" src="https://www.youtube.com/embed/RH9rrQM0Y-Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
