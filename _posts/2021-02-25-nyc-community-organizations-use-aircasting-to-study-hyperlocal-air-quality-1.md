@@ -52,3 +52,5 @@ Every reading also adds to the shared [AirCasting](https://www.habitatmap.org/ai
 **Can I measure the air quality in my own neighborhood?** Yes. A personal monitor like the AirBeam Mini lets anyone track PM2.5 in real time and map it, with no scientific background required.
 
 **Want to see the air in your neighborhood?** Get your AirBeam Mini.
+
+{% include airbeam-mini-ab.html %}
