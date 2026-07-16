@@ -3,6 +3,10 @@ backend:
   # name: test-repo
   branch: master
 
+# Local development only (ignored on the deployed site, which uses git-gateway).
+# Run `npx netlify-cms-proxy-server` alongside the site server to edit local files.
+local_backend: true
+
 media_folder: images/uploads
 
 collections:
