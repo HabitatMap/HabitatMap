@@ -3,7 +3,7 @@ layout: default
 ---
 
 {%- assign _pub = page.date | date: "%Y-%m-%d" -%}
-{%- assign _mod = page.last_modified_at | date: "%Y-%m-%d" -%}
+{%- assign _mod = page.last_modified_at | default: "" | date: "%Y-%m-%d" -%}
 
 <div class="panel panel--blog-hero">
   <div class="post-header">
