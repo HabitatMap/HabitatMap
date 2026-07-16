@@ -17,24 +17,24 @@
 
     <div class="cart-content">
       <div id="cart-empty" class="cart-empty">
-        <div class="empty-cart-icon">
-          <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
-            <line x1="3" y1="6" x2="21" y2="6"></line>
-            <path d="M16 10a4 4 0 0 1-8 0"></path>
-          </svg>
-        </div>
         <p class="empty-cart-text">Your cart is empty.</p>
-        <button class="choose-airbeam-btn" onclick="
-          window.shoppingCart.closeCart();
-          if (window.location.pathname === '/airbeam' || window.location.pathname === '/airbeam/') {
-            document.getElementById('product-selection')?.scrollIntoView({ behavior: 'smooth' });
-          } else {
-            window.location.href='/airbeam#product-selection';
-          }
-        ">
-          Choose Your AirBeam
-        </button>
+        <div class="empty-cart-product">
+          <div class="empty-cart-product-media">
+            <img
+              src="/assets/img/pages/buy-it-now/airbeam-sleave.png"
+              alt="AirBeam Mini air quality monitor"
+              class="empty-cart-product-img"
+            />
+          </div>
+          <h3 class="empty-cart-product-name">AirBeam Mini</h3>
+          <div class="empty-cart-product-price">
+            <span class="cur">$</span><span class="amt">99</span><span class="code">USD</span>
+          </div>
+          <button class="product-cta-button" onclick="addToCart('mini', 'AirBeam Mini', 99, '/assets/buy-it-now_ABMsidebyside.jpg')">
+            <img src="/assets/img/pages/buy-it-now/airbeam_logo.svg" alt="AirBeam" class="airbeam-logo-icon" />
+            <span>Add to Cart</span>
+          </button>
+        </div>
       </div>
 
       <div id="cart-items" class="cart-items">
