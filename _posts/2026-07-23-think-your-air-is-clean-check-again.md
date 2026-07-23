@@ -3,7 +3,7 @@ layout: post
 title: Think Your Air Is Clean? Check Again
 date: 2026-07-23
 featured: true
-image: /images/uploads/kitchen_filled_with_smoke_1419329583.jpg
+image: /images/uploads/7db0f75d-5536-4974-8666-6baa3aae6275.jpg
 category: Education
 tag:
   - community science
