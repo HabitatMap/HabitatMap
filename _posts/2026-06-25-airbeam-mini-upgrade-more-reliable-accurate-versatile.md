@@ -2,7 +2,7 @@
 layout: post
 title: "AirBeam Mini Upgrade: More Reliable, Accurate & Versatile "
 date: 2026-06-25
-featured: true
+featured: false
 author: Michael Heimbinder
 image: /images/uploads/mini_upgrade.png
 category: Sensors & Instruments
