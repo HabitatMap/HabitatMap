@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Think Your Indoor Air Is Clean? Check Again
+title: Think Your Indoor Air Is Clean? Check Again.
 date: 2026-07-23
 featured: true
 image: /images/uploads/7db0f75d-5536-4974-8666-6baa3aae6275.jpg
