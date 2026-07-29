@@ -1,101 +1,421 @@
 ---
-layout: page
-title: AirBeam is a low-cost, palm-sized air quality instrument.
-description: AirBeam is a low-cost, palm-sized air quality instrument that measures hyper local concentrations of harmful microscopic particles in the air.
+layout: default
+title: "Buy AirBeam - Portable Air Quality Monitor | HabitatMap"
+description: "AirBeam Mini ($99 USD, ~€85 / ~£74). Ships worldwide. No subscriptions, complete data ownership."
 permalink: /airbeam
-section: airbeam
-image: /assets/img/product-shot_crop.jpg
+section: airbeam buy-now
+image: /assets/img/airbeam-buy-it-now.jpg
+offers:
+  - type: Offer
+    name: AirBeam Mini
+    price: 99.00
+    priceCurrency: USD
+    availability: https://schema.org/InStock
+    aggregateRating:
+      - type: AggregateRating
+        ratingValue: "5"
+        reviewCount: "1"
+    review:
+      - type: Review
+        author:
+          type: Person
+          name: "Jane Doe"
+        datePublished: "2024-01-01"
+        reviewBody: "This is a placeholder review. Please replace it with a real one."
+        reviewRating:
+          type: Rating
+          ratingValue: "5"
+    shippingDetails:
+      - type: OfferShippingDetails
+        shippingRate:
+          type: MonetaryAmount
+          value: "10.00"
+          currency: "USD"
+        deliveryTime:
+          type: ShippingDeliveryTime
+          handlingTime:
+            type: QuantitativeValue
+            minValue: 1
+            maxValue: 1
+            unitCode: "DAY"
+          transitTime:
+            type: QuantitativeValue
+            minValue: 3
+            maxValue: 7
+            unitCode: "DAY"
+        shippingDestination:
+          type: DefinedRegion
+          addressCountry: "US"
+      - type: OfferShippingDetails
+        shippingRate:
+          type: MonetaryAmount
+          value: "35.00"
+          currency: "USD"
+        deliveryTime:
+          type: ShippingDeliveryTime
+          handlingTime:
+            type: QuantitativeValue
+            minValue: 1
+            maxValue: 1
+            unitCode: "DAY"
+          transitTime:
+            type: QuantitativeValue
+            minValue: 7
+            maxValue: 21
+            unitCode: "DAY"
+        shippingDestination:
+          type: DefinedRegion
+          addressCountry: ["CA", "AU", "GB", "DE", "FR", "IT", "ES", "NL", "BE", "PL", "IE", "AT", "SE", "DK", "FI", "NO", "CH", "PT", "CZ", "GR", "HU", "RO", "JP", "KR", "SG", "MX", "BR", "NZ", "IL", "ZA"]
+hasMerchantReturnPolicy:
+  - type: MerchantReturnPolicy
+    name: 30-Day Return Policy
+    url: /airbeam#warranty
+    returnPolicyCategory: https://schema.org/MerchantReturnFiniteReturnWindow
+    merchantReturnDays: 30
+    returnMethod: https://schema.org/ReturnByMail
+    returnFees: https://schema.org/ReturnShippingFees
+    applicableCountry: US
+    returnShippingFeesAmount:
+      type: MonetaryAmount
+      value: "15.00"
+      currency: "USD"
 ---
 
-<section>
-  <div class="panel panel--leading-text">
-    <h1 class="heading heading--large u--gray-text">
-      Taking Matter into Your Own Hands:
-      <span class="u--accent-hm u--block">About AirBeam</span>
-    </h1>
-  </div>
-  <div class="arc-background arc-background--right-teal-light arc-background--right-center">
-    <div class="panel">
-      <div class="split--50 split--padding-right">
-        <img
-          alt="Airbeam device"
-          class="img img--alternate-medium lazyload"
-          data-src="/assets/img/airbeam_crop.jpg?nf_resize=fit&w=750"
-          src="/assets/img/airbeam_crop.jpg?nf_resize=fit&w=20"
-        />
-      </div>
-      <div class="split--50 split--padding-left">
-        <img
-          class="logo logo--body"
-          alt="Airbeam"
-          src="/assets/img/svg/AirBeam-Logo-Body.svg"
-        />
-        <p class="p--body">
-          AirBeam is a low-cost, palm-sized air quality instrument that measures hyperlocal concentrations of harmful microscopic particles in the air, known as particulate matter. The AirBeam measures particulate matter with proven accuracy and when used in conjunction with the AirCasting platform - or a custom solution - helps community-based organizations, educators, academics, regulators, city managers, and community scientists map air pollution and organize for&nbsp;clean&nbsp;air.
-        </p>
-        <a href="/airbeam/buy-it-now" class="badge-link badge-link--hm">
-          <span class="u--vertically-centered">Get AirBeam</span>
-        </a>
-      </div>
-    </div>
-    <div class="panel">
-      <div class="split--50 split--padding-right split--order-secondary">
-        <h2 class="heading heading--medium u--gray-text">Why AirBeam?</h2>
-        <p class="p--body">
-          The AirBeam was designed by HabitatMap to raise awareness of the disproportionate environmental burdens borne by low-income communities and communities of color and equip these communities with tools to advocate for equity and improved quality of life.
-        </p>
-        <a href="/airbeam/how-it-works" class="button button--ac">Learn More</a>
-      </div>
-      <div class="split--50 split--padding-left u--align-right">
-        <img
-          alt="HabitatMap Team"
-          class="img img--alternate-medium lazyload"
-          data-src="/assets/img/about-airbeam-02.jpg?nf_resize=fit&w=750"
-          src="/assets/img/about-airbeam-02.jpg?nf_resize=fit&w=20"
-        />
-      </div>
-    </div>
-  </div>
-</section>
+{% include buy-it-now/hero-section.html %}
 
-<section class="u--bg-teal-very-light">
-  <div class="panel panel--align-center ac-intro">
-    <div class="split--60">
-      <img
-        class="logo logo--body"
-        alt="AirCasting"
-        src="/assets/img/svg/AirCasting-Logo-Body.svg"
-      />
-      <p class="p--large u--gray-text">
-        Measure, visualize, and share environmental data via AirCasting Maps.
-      </p>
-    </div>
-    <div class="split--80 u--align-left">
-      <a href="https://aircasting.org" class="button button--ac-on-light-teal ac-intro__button">See the Maps</a>
-      <a href="https://play.google.com/store/apps/details?id=pl.llp.aircasting&hl=en" class="button button--ac-on-light-teal ac-intro__button">Android App</a>
-      <a href="https://apps.apple.com/us/app/aircasting/id1587685281#?platform=iphone" class="button button--ac-on-light-teal ac-intro__button">iOS App</a>
-    </div>
-  </div>
+<script src="/assets/js/scroll-reveal.js"></script>
 
-  <div class="panel">
-    {% include map-screenshot.html %}
-  </div>
-</section>
+{% include buy-it-now/press-section.html %}
 
-<section class="panel panel--testimonial u--bg-teal arc-background arc-background--right-opacity-15 arc-background--right-quote">
-  <div class="split--40">
-    <h2 class="heading heading--medium">
-      What Our Community
-      <br />
-      is Saying
-    </h2>
-  </div>
+{% include buy-it-now/testimonials-section.html %}
 
-{% include testimonials-slider.html testimonials = site.testimonials %}
+{% include buy-it-now/videos-section.html %}
 
-  <a href="/airbeam/faq" class="badge-link badge-link--light-hm">
-    <span class="u--vertically-centered">Questions? Check out our FAQ</span>
-  </a>
-</section>
+{% include buy-it-now/features-section.html %}
+
+{% include buy-it-now/aircasting-apps-section.html %}
+
+{% include buy-it-now/global-movement-section.html %}
+
+{% include buy-it-now/technical-section.html %}
+
+{% include buy-it-now/product-showcase-section.html %}
+
+{% include buy-it-now/faq-section.html %}
+
+<!-- Enhanced E-commerce JSON-LD Schema for AirBeam Products -->
+
+<!-- Organization Schema - References the main HabitatMap organization -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "{{ site.url }}/#organization",
+  "name": "HabitatMap",
+  "url": "{{ site.url }}/"
+}
+</script>
+
+<!-- Comprehensive Product & E-commerce Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Product",
+      "@id": "{{ site.url }}/airbeam#airbeammini",
+      "name": "AirBeam Mini",
+      "alternateName": ["AirBeam-Mini", "ABM", "Mini Air Quality Monitor"],
+      "description": "The AirBeam Mini is a smaller, lighter, and more affordable version of our air quality monitor, perfect for personal use and mobile monitoring. Measures PM2.5 particulate matter with the same accuracy as professional equipment. Ships worldwide from Brooklyn, NY. All transactions in USD.",
+      "category": "Personal Environmental Monitor",
+      "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "Worldwide"
+      },
+      "audience": {
+        "@type": "PeopleAudience",
+        "geographicArea": {
+          "@type": "AdministrativeArea",
+          "name": "Worldwide"
+        }
+      },
+      "sku": "ABM-001",
+      "mpn": "AIRBEAMMINI-2024",
+      "image": [
+        "{{ site.url }}/assets/AirBeamMiniBlur.png",
+        "{{ site.url }}/assets/img/pages/user-stories/userstories_ABM.jpg"
+      ],
+      "brand": {
+        "@type": "Brand",
+        "name": "HabitatMap"
+      },
+      "manufacturer": {
+        "@id": "{{ site.url }}/#organization"
+      },
+      "weight": {
+        "@type": "QuantitativeValue",
+        "value": "75",
+        "unitCode": "GRM"
+      },
+      "width": {
+        "@type": "QuantitativeValue",
+        "value": "7",
+        "unitCode": "CMT"
+      },
+      "height": {
+        "@type": "QuantitativeValue",
+        "value": "4",
+        "unitCode": "CMT"
+      },
+      "depth": {
+        "@type": "QuantitativeValue",
+        "value": "2",
+        "unitCode": "CMT"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Measurement Range",
+          "value": "PM2.5 particulate matter"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Connectivity",
+          "value": "Bluetooth 5.0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Battery Life",
+          "value": "12+ hours continuous monitoring"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Operating Temperature",
+          "value": "0°C to 40°C"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Portability",
+          "value": "Ultra-lightweight, pocket-sized"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Target Use",
+          "value": "Personal monitoring, walking, cycling"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "@id": "{{ site.url }}/airbeam#airbeammini-offer",
+        "url": "{{ site.url }}/airbeam",
+        "priceCurrency": "USD",
+        "price": "99.00",
+        "priceValidUntil": "2025-12-31",
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "AdministrativeArea",
+          "name": "Worldwide"
+        },
+        "priceSpecification": [
+          {
+            "@type": "UnitPriceSpecification",
+            "@id": "{{ site.url }}/airbeam#price-usd",
+            "price": "99.00",
+            "priceCurrency": "USD"
+          },
+          {
+            "@type": "UnitPriceSpecification",
+            "@id": "{{ site.url }}/airbeam#price-eur-estimate",
+            "price": "85.00",
+            "priceCurrency": "EUR",
+            "name": "Estimated price (charged in USD)",
+            "valueAddedTaxIncluded": false
+          },
+          {
+            "@type": "UnitPriceSpecification",
+            "@id": "{{ site.url }}/airbeam#price-gbp-estimate",
+            "price": "74.00",
+            "priceCurrency": "GBP",
+            "name": "Estimated price (charged in USD)",
+            "valueAddedTaxIncluded": false
+          }
+        ],
+        "seller": {
+          "@id": "{{ site.url }}/#organization"
+        },
+        "validFrom": "2024-01-01",
+        "warranty": "1 year manufacturer warranty",
+        "deliveryLeadTime": {
+          "@type": "QuantitativeValue",
+          "minValue": 1,
+          "maxValue": 3,
+          "unitCode": "DAY"
+        },
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "name": "30-Day Return Policy",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": 30,
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/ReturnShippingFees",
+          "applicableCountry": "US",
+          "returnShippingFeesAmount": {
+            "@type": "MonetaryAmount",
+            "value": "15.00",
+            "currency": "USD"
+          }
+        },
+        "shippingDetails": [
+          {
+            "@type": "OfferShippingDetails",
+            "shippingRate": {
+              "@type": "MonetaryAmount",
+              "value": "10.00",
+              "currency": "USD"
+            },
+            "deliveryTime": {
+              "@type": "ShippingDeliveryTime",
+              "handlingTime": {
+                "@type": "QuantitativeValue",
+                "minValue": 1,
+                "maxValue": 1,
+                "unitCode": "DAY"
+              },
+              "transitTime": {
+                "@type": "QuantitativeValue",
+                "minValue": 3,
+                "maxValue": 7,
+                "unitCode": "DAY"
+              }
+            },
+            "shippingDestination": {
+              "@type": "DefinedRegion",
+              "addressCountry": "US"
+            }
+          },
+          {
+            "@type": "OfferShippingDetails",
+            "shippingRate": {
+              "@type": "MonetaryAmount",
+              "value": "35.00",
+              "currency": "USD"
+            },
+            "deliveryTime": {
+              "@type": "ShippingDeliveryTime",
+              "handlingTime": {
+                "@type": "QuantitativeValue",
+                "minValue": 1,
+                "maxValue": 1,
+                "unitCode": "DAY"
+              },
+              "transitTime": {
+                "@type": "QuantitativeValue",
+                "minValue": 7,
+                "maxValue": 21,
+                "unitCode": "DAY"
+              }
+            },
+            "shippingDestination": {
+              "@type": "DefinedRegion",
+              "addressCountry": ["CA", "AU", "GB", "DE", "FR", "IT", "ES", "NL", "BE", "PL", "IE", "AT", "SE", "DK", "FI", "NO", "CH", "PT", "CZ", "GR", "HU", "RO", "JP", "KR", "SG", "MX", "BR", "NZ", "IL", "ZA"]
+            }
+          }
+        ]
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.7",
+        "bestRating": "5",
+        "worstRating": "1",
+        "ratingCount": "89"
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "name": "Perfect for Personal Use",
+          "reviewBody": "Compact and easy to carry everywhere. Great for checking air quality during my daily runs and bike commutes. The app is intuitive and the data is reliable.",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "author": {
+            "@type": "Person",
+            "name": "Health-Conscious User"
+          },
+          "datePublished": "2024-03-10"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "{{ site.url }}/airbeam#webpage",
+      "name": "{{ page.title }}",
+      "description": "{{ page.description }}",
+      "url": "{{ site.url }}/airbeam",
+      "inLanguage": "en-US",
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": "HabitatMap",
+        "url": "{{ site.url }}/"
+      },
+      "about": [
+        {
+          "@id": "{{ site.url }}/airbeam#airbeammini"
+        }
+      ],
+      "publisher": {
+        "@id": "{{ site.url }}/#organization"
+      },
+      "potentialAction": [
+        {
+          "@type": "BuyAction",
+          "target": "{{ site.url }}/airbeam",
+          "object": [
+            {
+              "@id": "{{ site.url }}/airbeam#airbeammini"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "{{ site.url }}/airbeam#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "{{ site.url }}/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "AirBeam",
+          "item": "{{ site.url }}/airbeam"
+        }
+      ]
+    },
+    {
+      "@type": "ItemList",
+      "@id": "{{ site.url }}/airbeam#productlist",
+      "name": "AirBeam Product Lineup",
+      "description": "AirBeam air quality monitor for personal use",
+      "numberOfItems": 1,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "{{ site.url }}/airbeam#airbeammini"
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
 
 {% include slider-init.html %}

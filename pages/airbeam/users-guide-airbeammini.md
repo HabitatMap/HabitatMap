@@ -32,21 +32,20 @@ image: /assets/img/about-airbeam-01.jpg
   <ul class="contents-list list p--body">
     <li class="contents-list__item"><a href="#specification">Hardware Specifications</a></li>
     <li class="contents-list__item"><a href="#about">About AirBeam Mini</a></li>
+    <li class="contents-list__item"><a href="#calibration">Calibration & Accuracy</a></li>
     <li class="contents-list__item"><a href="#extract">AirBeam Mini Sleeve</a></li>
     <li class="contents-list__item"><a href="#videos">AirBeam3 Instructional Videos</a></li>
     <li class="contents-list__item"><a href="#weather-resistant">Weather Resistant</a></li>
     <li class="contents-list__item"><a href="#power">Power</a></li>
     <li class="contents-list__item"><a href="#battery-warning">Battery Warning</a></li>
+    <li class="contents-list__item"><a href="#sampling-interval">Sampling Interval</a></li>
     <li class="contents-list__item"><a href="#power-on-off">Power On/Off</a></li>
     <li class="contents-list__item"><a href="#intake">Intake & Exhaust</a></li>
     <li class="contents-list__item"><a href="#record-mobile">Record Measurements – Mobile  (Bluetooth) Session</a></li>
     <li class="contents-list__item"><a href="#record-wifi">Record Measurements – Fixed (Wifi) Session</a></li>
     <li class="contents-list__item"><a href="#connection">Connection Indicator Color Key</a></li>
-    <li class="contents-list__item"><a href="#standalone">Standalone mode</a></li>
-    <li class="contents-list__item"><a href="#sync">Sync Internal Storage</a></li>
-    <li class="contents-list__item"><a href="#temperature">Temperature & Humidity Measurements</a></li>
-    <li class="contents-list__item"><a href="#acquire">Acquire AirBeam Mini Data via Serial Monitor</a></li>
-    <li class="contents-list__item"><a href="#programming">Programming</a></li>
+    <li class="contents-list__item"><a href="#bluetooth-disconnections">Bluetooth Disconnections</a></li>
+    <li class="contents-list__item"><a href="#internal-storage">Internal Storage</a></li>
     <li class="contents-list__item"><a href="#compliance">FCC Compliance Statement</a></li>
   </ul>
 
@@ -59,7 +58,7 @@ image: /assets/img/about-airbeam-01.jpg
   <p class="p--body">
     Weight: 4 ounces<br>
     Particle Sensor: Plantower PMS7003<br>
-    BLE, WiFi & Microcontroller: Espressif, ESP32-C3-WROOM-02-N4 <br>
+    BLE, WiFi & Microcontroller: Espressif, ESP32-C3-WROOM-02-N4<br>
     Battery: PKCell, LP505060 1800mAh 3.7V
   </p>
 
@@ -70,7 +69,17 @@ image: /assets/img/about-airbeam-01.jpg
   </h2>
 
   <p class="p--body">
-    <a href="https://www.habitatmap.org/airbeam/buy-it-now">AirBeam Mini</a> is a portable air quality instrument weighing four ounces that measures PM1 and PM2.5. Its rain-proof, weather resistant rubber sleeve makes it suitable for indoor or outdoor use. It can communicate via Bluetooth and WiFi and can be used as a stationary or mobile monitor. Users can map and graph the measurements from AirBeam Mini in real-time using an <a href='https://play.google.com/store/apps/details?id=pl.llp.aircasting'>Android</a> or <a href='https://apps.apple.com/us/app/aircasting-air-quality/id1587685281?platform=iphone'>iOS</a> device or the <a href='http://aircasting.org/'>AirCasting website</a>. AirBeam Mini has internal storage, a clock, and battery so after configuration it can operate in standalone mode, i.e. without the need for any additional hardware, such as a smartphone. AirBeam Mini ships with a sleeve, carabiner, belt clip and 6ft USB-A to USB-C cable.  AirBeam Mini is open-source as is the AirCasting platform software.
+    <a href="https://www.habitatmap.org/airbeam">AirBeam Mini</a> is a portable air quality instrument weighing four ounces that measures PM1 and PM2.5. Its rain-proof, weather resistant rubber sleeve makes it suitable for indoor or outdoor use. It can communicate via Bluetooth and WiFi and can be used as a stationary or mobile monitor. Users can map and graph the measurements from AirBeam Mini in real-time using an <a href='https://play.google.com/store/apps/details?id=pl.llp.aircasting'>Android</a> or <a href='https://apps.apple.com/us/app/aircasting-air-quality/id1587685281'>iOS</a> device or the <a href='http://aircasting.org/'>AirCasting website</a>. AirBeam Mini ships with a sleeve, carabiner, belt clip and 6ft USB-A to USB-C cable.  AirBeam Mini is open-source as is the AirCasting platform software.
+  </p>
+
+  <a id="calibration" class="anchor">
+  </a>
+  <h2 class="heading heading--small heading--body">
+    Calibration & Accuracy
+  </h2>
+
+  <p class="p--body">
+    For 18 weeks we collocated AirBeam Minis at the New York State Department of Environmental Conservation’s “Queens College” air quality monitoring site next to their BAM-1020, a highly accurate Federal Equivalent Method monitor that measures PM2.5. <a href='https://publichealth.arizona.edu/directory/chris-lim'>Dr. Chris Lim</a> – a professor of Environmental Health Sciences at University of Arizona with expertise in the application of low-cost sensor technologies for personal exposure assessment – developed custom calibration equations for AirBeam Mini based on the intercomparison. Dr. Lim’s report, which discusses his approach to calibrating AirBeam Mini using the intercomparison data, is <a href='https://habitatmap.org/images/uploads/airbeammini_calibrationreport_6-23-2026.pdf'>available for download here</a>. Based on the data collected and the methods used to develop the calibration equations, AirBeam Mini is the most accurate AirBeam model to date and best in class when it comes to accuracy among low-cost air quality instruments measuring particulate matter.
   </p>
 
    <a id="extract" class="anchor">
@@ -80,9 +89,9 @@ image: /assets/img/about-airbeam-01.jpg
   </h2>
 
   <p class="p--body">
-Outfitted with its sleeve, AirBeam Mini becomes drop-proof and rain-proof. The sleeve includes a carbiner attachment point to simplify outdoor installation. Remove the sleeve for a more streamlined profile or to attach the belt clip. The fit between the AirBeam Mini and its sleeve is intentionally tight to keep the AirBeam from falling out of the sleeve. The below video shows how to remove AirBeam Mini from its sleeve.
+Outfitted with its sleeve, AirBeam Mini becomes drop-proof and rain-proof. The sleeve includes a carbiner attachment point to simplify outdoor installation. Remove the sleeve for a more streamlined profile or to attach the belt clip. The below video shows how to remove AirBeam Mini from its sleeve.
 <br><br />
-  <iframe width="700" height="394" src="https://www.youtube.com/embed/0yW9H_xC9p4?si=bfhaDUWxo1zHXUiv?&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe width="700" height="394" src="https://youtube.com/embed/g2UJyrXheas?si=bopkiap4r1U82BNM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
   </p>
 
@@ -118,7 +127,7 @@ Operation of AirBeam Mini is nearly identical to operation of AirBeam3, so the b
   </h2>
 
   <p class="p--body">
-    AirBeam Mini has a 1800 mAh 3.7V rechargeable lithium battery that when fully charged can power the instrument for approximately 14 hours in Mobile mode and 24 hours in Fixed mode. The battery charges via the USB-C Port, which can also be used to power AirBeam Mini directly. The Battery Charging Indicator turns solid green when AirBeam Mini is charging and turns off when AirBeam Mini is either fully charged or unplugged. CAUTION: AirBeam Mini should never be charged in an environment where the temperature exceeds 110 degrees Fahrenheit. AirBeam3 should only be charged with direct current power at a voltage of 5 volts (DC5V).
+    AirBeam Mini has a 1800 mAh 3.7V rechargeable lithium polymer battery that when fully charged can power the instrument for 20-33 hours depending on the sampling interval selected. The battery charges via the USB-C Port, which can also be used to power AirBeam Mini directly. The Battery Charging Indicator turns solid green when AirBeam Mini is charging and turns off when AirBeam Mini is either fully charged or unplugged. CAUTION: AirBeam Mini should never be charged in an environment where the temperature exceeds 110 degrees Fahrenheit. AirBeam3 should only be charged with direct current power at a voltage of 5 volts (DC5V).
   </p>
 
   <a id="battery-warning" class="anchor">
@@ -128,7 +137,17 @@ Operation of AirBeam Mini is nearly identical to operation of AirBeam3, so the b
   </h2>
 
   <p class="p--body">
-    AirBeam Mini contains a lithium battery. Exposing AirBeam Mini to extreme heat will degrade the batteries performance and could lead to overheating and fire. If the battery gives off an odor, generates heat, becomes discolored or deformed, or in any way appears abnormal immediately unplug and power off AirBeam Mini and place it in a contained vessel, such as a metal box.
+    AirBeam Mini contains a lithium polymer battery. Exposing AirBeam Mini to extreme heat will degrade the batteries performance and could lead to overheating and fire. If the battery gives off an odor, generates heat, becomes discolored or deformed, or in any way appears abnormal immediately unplug and power off AirBeam Mini and place it in a contained vessel, such as a metal box.
+  </p>
+
+  <a id="sampling-interval" class="anchor">
+  </a>
+  <h2 class="heading heading--small heading--body">
+    Sampling Interval
+  </h2>
+
+  <p class="p--body">
+    Users can set the sampling interval for mobile AirBeam Mini sessions to 1-second, 5-seconds, 1-minute, 5-minutes, or 10-minutes. When the sampling interval is set to 1-minute or less, AirBeam Mini samples every second, outputs an integrated average for the entire sampling period, and can run for 20 hours on a fully charged battery. When the sampling interval is set to 5-minutes, AirBeam Mini partially powers down for the first minutes, powers up to sample every second of the final minute, outputs an integrated average for the final minute of the sampling interval, and can run for 30 hours on a fully charged battery. The sampling logic is the same when the sampling interval is set to 10-minutes and the AirBeam can run for 33 hours on a fully charged battery. The sampling interval for fixed sessions is always 1-minute.  When recording fixed sessions AirBeam Mini can run for 20 hrs on a fully charged battery.
   </p>
 
   <a id="power-on-off" class="anchor">
@@ -158,7 +177,7 @@ Operation of AirBeam Mini is nearly identical to operation of AirBeam3, so the b
   </h2>
 
   <ol class="list list--ordered p--body">
-    <li>Download the AirCasting app from the <a href='https://play.google.com/store/apps/details?id=pl.llp.aircasting'>Google Play store</a> or <a href='https://apps.apple.com/us/app/aircasting-air-quality/id1587685281?platform=iphone'>Apple App Store.</a></li>
+    <li>Download the AirCasting app from the <a href='https://play.google.com/store/apps/details?id=pl.llp.aircasting'>Google Play store</a> or <a href='https://apps.apple.com/us/app/aircasting-air-quality/id1587685281'>Apple App Store.</a></li>
     <li>Launch the app and sign in or create a profile.</li>
     <li>Tap the “+” button at the bottom of the screen then tap “Mobile session” and follow the on screen instructions.</li>
   </ol>
@@ -174,13 +193,13 @@ Operation of AirBeam Mini is nearly identical to operation of AirBeam3, so the b
   </h2>
 
   <ol class="list list--ordered p--body">
-    <li>Download the AirCasting app from the <a href='https://play.google.com/store/apps/details?id=pl.llp.aircasting'>Google Play store</a> or <a href='https://apps.apple.com/us/app/aircasting-air-quality/id1587685281?platform=iphone'>Apple App Store.</a></li>
+    <li>Download the AirCasting app from the <a href='https://play.google.com/store/apps/details?id=pl.llp.aircasting'>Google Play store</a> or <a href='https://apps.apple.com/us/app/aircasting-air-quality/id1587685281'>Apple App Store.</a></li>
     <li>Launch the app and sign in or create a profile.</li>
     <li>Tap the “+” button at the bottom of the screen then tap “Fixed session” and follow the on screen instructions.</li>
   </ol>
 
   <p class="p--body">
-    When recording a fixed WiFi session with AirBeam Mini, the measurements are communicated once a minute to the <a href="http://aircasting.org/">AirCasting website</a> via WiFi. The Android or iOS device no longer needs to be in proximity to AirBeam3 as it’s retrieving the data from the web via the Android or iOS device’s WiFi or cellular connection. AirBeam Mini must be connected to the 2.4 GHz band of your WiFi network; it cannot connect via the 5 GHz band.
+    When recording a fixed WiFi session with AirBeam Mini, the measurements are communicated once a minute to the <a href="http://aircasting.org/">AirCasting website</a> via WiFi. The Android or iOS device no longer needs to be in proximity to AirBeam Mini as it’s retrieving the data from the web via the Android or iOS device’s WiFi or cellular connection. AirBeam Mini must be connected to the 2.4 GHz band of your WiFi network; it cannot connect via the 5 GHz band.
   </p>
 
   <a id="connection" class="anchor">
@@ -190,57 +209,38 @@ Operation of AirBeam Mini is nearly identical to operation of AirBeam3, so the b
   </h2>
 
   <ul class="list list--unordered p--body">
-    <li>Solid Green, for 180 seconds = ready to be configured, waiting for Bluetooth connection </li>
+    <li>Solid Green, for 180 seconds = ready to be configured, waiting for Bluetooth connection</li>
     <li>Solid Blue = Bluetooth connected</li>
-    <li>Solid White, for 120 seconds = AirBeam Mini successfully configured and sending data </li>
-    <li>Blink White, once every ten seconds = Bluetooth connected and transmitting data </li>
-    <li>Blink Yellow, once every ten seconds = standalone mode, Bluetooth disconnected, GPS fix missing </li>
-    <li>Blink Magenta, once every ten seconds = low power indicator, plug in your AirBeam </li>
+    <li>Solid White, for 120 seconds = AirBeam Mini successfully configured and sending data</li>
+    <li>Blink White, once every ten seconds = Bluetooth connected and transmitting data</li>
+    <li>Blink Yellow, once every ten seconds = standalone mode, Bluetooth disconnected</li>
+    <li>Blink Red, once every ten seconds = low power indicator, plug in your AirBeam</li>
     <li>Solid Cyan = Internal data storage syncing</li>
+    <li>Solid Red = Internal data storage full</li>
   </ul>
 
   <p class="p--body">
     When powered on, AirBeam Mini will enter and remain in configuration mode for three minutes. During the configuration window, if you don’t connect to AirBeam Mini via Bluetooth, AirBeam Mini will load it’s last known configuration. To enter configuration mode again, simply turn your AirBeam Mini off and then back on.
   </p>
 
-  <a id="standalone" class="anchor">
+  <a id="bluetooth-disconnections" class="anchor">
   </a>
   <h2 class="heading heading--small heading--body">
-    Standalone Mode
+    Bluetooth Disconnections
   </h2>
 
   <p class="p--body">
-    When recording a mobile session with AirBeam Mini, you can separate AirBeam Mini from your Android or iOS device and continue recording and timestamping your measurements. To do this, tap the three horizontal dots located in the upper right hand corner of the session card, map, or graph and tap “Enter standalone mode”. After entering standalone mode, the connection indicator will blink yellow. Note that after entering standalone mode, all your measurements will be pegged to your last known location, that is to say, your location will not update. <em> An iPhone 8 or higher or an Android 8 or higher plus Bluetooth 5 device is required to utilize the standalone mode and sync internal storage features.</em>
+    Some phone and operating system combinations are aggressive about terminating the Bluetooth connection between the AirBeam and the AirCasting app when recording long mobile sessions, particularly when the AirCasting app is recording in the background. To address this issue the AirCasting app has an auto-reconnect and data sync feature. If the Bluetooth connection between the AirBeam and AirCasting app is terminated while recording a mobile session, the connection is restored automatically and all the data stored to the AirBeam Mini while it was disconnected is synced to the AirCasting app upon reconnection.
   </p>
 
-  <a id="sync" class="anchor">
+  <a id="internal-storage" class="anchor">
   </a>
   <h2 class="heading heading--small heading--body">
-    Sync Internal Storage
+    Internal Storage
   </h2>
 
   <p class="p--body">
-    Whenever your AirBeam Mini is recording a mobile or fixed session, it will log data to its internal storage. In instances where your AirBeam is connected to the app via Bluetooth (mobile sessions) or sending data via WiFi directly to the AirCasting server (fixed sessions), the internal storage duplicates the data already submitted to and saved in the AirCasting database. However, if when recording a mobile session you enter standalone mode, or when recording a fixed session AirBeam Mini's WiFi connection is interrupted, you can sync AirBeam Mini's internal storage to retrieve your data. To do this either a) tap the “finish recording & sync” button on your mobile session card; or b) tap the “+” button at the bottom of the screen then tap “Sync storage” and follow the on screen instructions. After syncing the session data from internal storage to the AirCasting database, the internal storage will be cleared. Maximum storage capacity is 55 days of measurements.<em> An iPhone 8 or higher or an Android 8 or higher plus Bluetooth 5 device is required to utilize the standalone mode and sync internal storage features.</em>
-  </p>
-
-  <a id="acquire" class="anchor">
-  </a>
-  <h2 class="heading heading--small heading--body">
-    Acquire AirBeam Mini Data via Serial Monitor
-  </h2>
-
-  <p class="p--body">
-    You can acquire AirBeam Mini data via the USB-C Port using a serial monitor.
-  </p>
-
-  <a id="programming" class="anchor">
-  </a>
-  <h2 class="heading heading--small heading--body">
-    Programming
-  </h2>
-
-  <p class="p--body">
-    You can reprogram your AirBeam Mini using the Arduino IDE.
+    Whenever your AirBeam Mini is recording a mobile or fixed session and the Bluetooth or WiFi connection is interrupted, AirBeam Mini will log data to its internal storage. Once the Bluetooth or WiFi connection is restored the data saved to internal storage will automatically sync so no data is lost. AirBeam Mini can store 1,675 days of 10-minute interval data, 837 days of 5-minute interval data, 167 days of 1-minute interval data, 14 days of 5-second interval data, or 67 hours of 1-second interval data.
   </p>
 
   <a id="compliance" class="anchor">

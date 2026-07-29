@@ -2,9 +2,9 @@ categories:
   - category: "Getting Started"
     questions:
       - q: "What is AirBeam Mini?"
-        a: "AirBeam Mini ($99) is a lightweight, affordable air quality monitor perfect for personal use. It measures PM1 and PM2.5 particulate matter, weighs 4 ounces, and has a 14-hour battery life. Compact and weatherproof, it's designed for maximum portability and ease of use."
+        a: "AirBeam Mini ($99) is a lightweight, affordable air quality monitor perfect for personal use. It measures PM1 and PM2.5 particulate matter, weighs 4 ounces, and has a 33-hour battery life. Compact and weatherproof, it's designed for maximum portability and ease of use."
       - q: "How accurate are AirBeam devices?"
-        a: "AirBeam devices are 'quite accurate' according to independent performance evaluations by South Coast Air Quality Management District's AQ-SPEC lab and researchers at NYU School of Medicine. AirBeam measurements closely match those from reference instruments."
+        a: "AirBeam devices are 'quite accurate' according to independent performance evaluations by South Coast Air Quality Management District's AQ-SPEC lab and researchers at University of Arizona. AirBeam measurements closely match those from reference instruments."
       - q: "What do I need to get started?"
         a: "Your AirBeam device (fully charged), a smartphone (iPhone 8+ or Android 8+ with Bluetooth 5.0), the free AirCasting app (available on iOS and Google Play), and WiFi or cellular connection for your phone."
       - q: "How long does setup take?"
@@ -26,7 +26,7 @@ categories:
   - category: "Technical Specifications"
     questions:
       - q: "How long does the battery last?"
-        a: "AirBeam Mini has a 14-hour battery life in mobile mode and 24 hours in fixed mode."
+        a: "AirBeam Mini has a 20-33 hour battery life depending on the sampling interval selected."
       - q: "What does AirBeam Mini measure?"
         a: "AirBeam Mini measures PM1 and PM2.5 particulate matter with professional-grade accuracy."
       - q: "Does AirBeam Mini work outdoors?"

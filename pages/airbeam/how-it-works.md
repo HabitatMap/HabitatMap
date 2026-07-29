@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Airbeam - How It Works
+title: AirBeam - How It Works
 permalink: /airbeam/how-it-works
 section: airbeam
 ---
@@ -118,7 +118,7 @@ section: airbeam
         Good decisions are informed decisions. Integrating the AirCasting platform into your daily routine can guide healthier day-to-day decisions and help collect quality data to support environmental campaigns or research aimed at cleaner and healthier environments.
       </p>
       <div class="u--align-center">
-        <a href="/airbeam/buy-it-now" class="badge-link badge-link--hm">
+        <a href="/airbeam" class="badge-link badge-link--hm">
           <span class="u--vertically-centered">Get Started with AirBeam</span>
         </a>
         <a href="https://aircastingactions.org" class="badge-link badge-link--hm">

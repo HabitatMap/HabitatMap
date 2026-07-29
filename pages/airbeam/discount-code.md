@@ -14,7 +14,7 @@ image: /assets/img/pages/save-now/marcin-jozwiak-T-eDxGcn-Ok-unsplash.jpg
       <input type="text" readonly value="SAVE50" class="discount-code__input js--discount-code" />
       <button onClick="copyToClipboard()" class="js--copy-button button button--secondary discount-code__button">COPY</button>
     </div>
-    <a href="/airbeam/buy-it-now" class="button button--cta input--full-width js--show-code">SHOP NOW</a>
+    <a href="/airbeam" class="button button--cta input--full-width js--show-code">SHOP NOW</a>
   </div>
 </div>
 

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: AirCasting is an open-source environmental data visualization platform.
+title: AirCasting is an open-source environmental data visualization platform
 desctiption: AirCasting is an open-source environmental data visualization platform that consists of a smartphone app and online mapping system.
 permalink: /aircasting
 section: aircasting
@@ -51,7 +51,7 @@ image: /assets/img/airbeam_map_screenshot.png
         AirBeam is a low-cost, palm-sized air quality instrument that measures hyperlocal concentrations of harmful microscopic particles in the air, known as particulate matter. The AirBeam measures particulate matter with proven accuracy and when used in conjunction with the AirCasting platform - or a custom solution - helps community-based organizations, educators, academics, regulators, city managers, and community scientists map air pollution and organize for&nbsp;clean&nbsp;air.
       </p>
       <div class="badge-links">
-        <a href="/airbeam/buy-it-now" class="badge-link badge-link--hm">
+        <a href="/airbeam" class="badge-link badge-link--hm">
           <span class="u--vertically-centered">Get Started with AirBeam</span>
         </a>
         <a href="https://aircastingactions.org" class="badge-link badge-link--hm">
