@@ -61,7 +61,7 @@ image: /assets/img/about-airbeam-01.jpg
     Weight: 6 ounces<br>
     Particle Sensor: Plantower PMS7003<br>
     Relative Humidity & Temperature Sensor: Texas Instruments, HDC1080DMBR<br>
-    Bluetooth, WiFi & Microcontroller: Espressif, ESP32-WROOM-32D <br>
+    Bluetooth, WiFi & Microcontroller: Espressif, ESP32-WROOM-32D<br>
     4G Cellular & GPS: Quectel, LTE BG95-M3<br>
     MicroSD Card: OEM, 32GB Class 10 formatted to FAT32<br>
     Real Time Clock: NXP USA, PCF2129T/2,518<br>
@@ -75,7 +75,7 @@ image: /assets/img/about-airbeam-01.jpg
   </h2>
 
   <p class="p--body">
-    <a href='https://www.habitatmap.org/airbeam/buy-it-now'>AirBeam3</a> is a palm-sized air quality instrument weighing six ounces that measures PM1, PM2.5, PM10, temperature, and relative humidity. Its weather resistant enclosure makes it suitable for indoor or outdoor use. It can communicate via BLE, WiFi, or cellular 4G and can be used as a stationary or mobile monitor. Users can map and graph the measurements from AirBeam3 in real-time using an <a href='https://play.google.com/store/apps/details?id=pl.llp.aircasting'>Android</a> or <a href='https://apps.apple.com/us/app/aircasting-air-quality/id1587685281?platform=iphone'>iOS</a> device or the <a href='http://aircasting.org'>AirCasting website</a>. AirBeam3 includes an onboard GPS, real-time clock, SD card, and battery so after configuration it can operate in standalone mode, i.e. without the need for any additional hardware, such as a smartphone. AirBeam3 is the most accurate and versatile portable air quality monitor on the market. Of the 75 PM2.5 measuring instruments evaluated by the <a href='https://www.habitatmap.org/blog/evaluation-proves-airbeam3-most-accurate-airbeam-ever'>SCAQMD AQ-SPEC program</a>, AirBeam3 is the most accurate when both the field and lab evaluations are considered. AirBeam3 is open-source as is the AirCasting platform software.
+    <a href='https://www.habitatmap.org/airbeam'>AirBeam3</a> is a palm-sized air quality instrument weighing six ounces that measures PM1, PM2.5, PM10, temperature, and relative humidity. Its weather resistant enclosure makes it suitable for indoor or outdoor use. It can communicate via BLE, WiFi, or cellular 4G and can be used as a stationary or mobile monitor. Users can map and graph the measurements from AirBeam3 in real-time using an <a href='https://play.google.com/store/apps/details?id=pl.llp.aircasting'>Android</a> or <a href='https://apps.apple.com/us/app/aircasting-air-quality/id1587685281?platform=iphone'>iOS</a> device or the <a href='http://aircasting.org'>AirCasting website</a>. AirBeam3 includes an onboard GPS, real-time clock, SD card, and battery so after configuration it can operate in standalone mode, i.e. without the need for any additional hardware, such as a smartphone. AirBeam3 is the most accurate and versatile portable air quality monitor on the market. Of the 75 PM2.5 measuring instruments evaluated by the <a href='https://www.habitatmap.org/blog/evaluation-proves-airbeam3-most-accurate-airbeam-ever'>SCAQMD AQ-SPEC program</a>, AirBeam3 is the most accurate when both the field and lab evaluations are considered. AirBeam3 is open-source as is the AirCasting platform software.
   </p>
 
   <a id="videos" class="anchor">
@@ -197,13 +197,13 @@ image: /assets/img/about-airbeam-01.jpg
   </h2>
 
   <ul class="list list--unordered p--body">
-    <li>Solid Green, for 180 seconds = ready to be configured, waiting for Bluetooth connection </li>
+    <li>Solid Green, for 180 seconds = ready to be configured, waiting for Bluetooth connection</li>
     <li>Solid Blue = Bluetooth connected</li>
-    <li>Solid White, for 120 seconds = AirBeam3 successfully configured and sending data </li>
-    <li>Blink White, once every ten seconds = Bluetooth connected and transmitting data </li>
-    <li>Blink Yellow, once every ten seconds = standalone mode, Bluetooth disconnected, GPS fix missing </li>
+    <li>Solid White, for 120 seconds = AirBeam3 successfully configured and sending data</li>
+    <li>Blink White, once every ten seconds = Bluetooth connected and transmitting data</li>
+    <li>Blink Yellow, once every ten seconds = standalone mode, Bluetooth disconnected, GPS fix missing</li>
     <li>Blink Orange, once every ten seconds = standalone mode, Bluetooth disconnected, GPS fix present</li>
-    <li>Blink Magenta, once every ten seconds = low power indicator, plug in your AirBeam </li>
+    <li>Blink Magenta, once every ten seconds = low power indicator, plug in your AirBeam</li>
     <li>Solid Cyan = SD card syncing</li>
   </ul>
 

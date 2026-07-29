@@ -1,0 +1,82 @@
+// "Learn more about AirBeam Mini" banner for blog posts (A/B variant: learn_more).
+// Markup: _includes/airbeam-mini-banner.html — the whole banner is a single link.
+.airbeam-banner { margin: 2.5rem 0; }
+
+// Mobile-first: stacked — image on top (full aspect ratio, never cropped), text below.
+.airbeam-banner__card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.25rem;
+  background: linear-gradient(145deg, #f5f5f5 0%, $white 50%, #fafafa 100%);
+  border: 1px solid $teal-light;
+  border-radius: 1rem;
+  text-decoration: none !important;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04), 0 1px 4px rgba(0, 0, 0, 0.02); // matches .product-card
+  transition: background 0.4s ease, transform 0.2s ease;
+
+  // Background swaps to the teal tint on hover, like the technical-section cards (shadow stays constant).
+  &:hover {
+    opacity: 1 !important;
+    background: linear-gradient(135deg, $white 0%, $teal-very-light 100%);
+  }
+}
+
+.airbeam-banner__img {
+  display: block;
+  width: 100%;
+  height: auto; // keep original aspect ratio — no cropping
+  border-radius: 0.75rem;
+}
+
+.airbeam-banner__text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  flex: 1;
+  min-width: 0;
+}
+
+.airbeam-banner__eyebrow {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: $green;
+}
+
+.airbeam-banner__title {
+  font-family: $bold-font;
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: $gray-dark;
+}
+
+.airbeam-banner__desc {
+  font-size: 0.9rem;
+  line-height: 1.45;
+  color: $gray;
+}
+
+.airbeam-banner__arrow {
+  flex-shrink: 0;
+  font-weight: 600;
+  white-space: nowrap;
+  color: $green;
+}
+
+// Wider screens: side-by-side row with a small natural-ratio thumbnail.
+@media (min-width: 560px) {
+  .airbeam-banner__card {
+    flex-direction: row;
+    align-items: center;
+    gap: 1.25rem;
+    padding: 1.25rem;
+  }
+  .airbeam-banner__img {
+    width: auto;
+    height: 96px; // fixed height, auto width => ratio preserved
+    flex-shrink: 0;
+  }
+}

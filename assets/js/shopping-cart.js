@@ -275,6 +275,7 @@ class ShoppingCart {
 
           // Check if this is a preview mode response
           if (orderData.preview_mode) {
+            this.stashPurchaseForAnalytics(orderData, data.orderID);
             this.clearCart();
             window.location.href = '/airbeam/confirmation';
             return;
@@ -285,6 +286,7 @@ class ShoppingCart {
           if (error) {
             this.showNotification(`Transaction failed: ${error?.description}`, 'error');
           } else {
+            this.stashPurchaseForAnalytics(orderData, data.orderID);
             this.clearCart();
             window.location.href = '/airbeam/confirmation';
           }
@@ -333,6 +335,36 @@ class ShoppingCart {
     this.items = [];
     this.saveToStorage();
     this.updateCartDisplay();
+  }
+
+  // Stash the completed order for the analytics `purchase` event fired on
+  // /airbeam/confirmation. MUST run before clearCart() — the cart is emptied
+  // before the redirect, so the confirmation page can't read it otherwise.
+  // See docs/analytics-tracking.md.
+  stashPurchaseForAnalytics(orderData, fallbackId) {
+    try {
+      // Single-SKU store: value = product revenue only (shipping is intentionally ignored).
+      const value = this.items.reduce((sum, item) => sum + item.price * item.quantity, 0);
+      const quantity = this.items.reduce((sum, item) => sum + item.quantity, 0);
+      let attribution = null;
+      try { attribution = JSON.parse(localStorage.getItem('hm_banner_attribution') || 'null'); } catch (e) {}
+      const txId = (orderData && (orderData.id || orderData.orderID)) || fallbackId || null;
+      localStorage.setItem('hm_last_purchase', JSON.stringify({
+        transaction_id: txId,
+        value: Number(value.toFixed(2)),
+        currency: 'USD',
+        quantity: quantity,
+        items: this.items.map(item => ({
+          item_id: item.id,
+          item_name: item.name,
+          price: item.price,
+          quantity: item.quantity
+        })),
+        attribution: attribution
+      }));
+    } catch (e) {
+      console.error('stashPurchaseForAnalytics failed', e);
+    }
   }
 
   saveToStorage() {

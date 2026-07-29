@@ -1,0 +1,108 @@
+// AirBeam Mini "add to cart" CTA card for blog posts (A/B variant: cart).
+// Markup: _includes/airbeam-mini-cta.html
+.airbeam-cta {
+  margin: 2.5rem 0;
+
+  * { box-sizing: border-box; }
+  p { margin: 0; }
+}
+
+// Mobile-first: stacked + centered.
+.airbeam-cta__card {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  text-align: center;
+  gap: 1.25rem;
+  padding: 1.25rem;
+  background: $white;
+  border: 1px solid $teal-light; // matches technical-section cards
+  border-radius: 1.25rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04), 0 1px 4px rgba(0, 0, 0, 0.02); // matches .product-card
+}
+
+.airbeam-cta__media {
+  align-self: center;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 150px;
+  padding: 1rem;
+  border-radius: 1rem;
+  // Solid teal-very-light (the gradient's bottom-right color) so the tile reads
+  // clearly on the white card — no white-on-white corner.
+  background: $teal-very-light;
+
+  img { display: block; max-width: 100%; max-height: 100%; object-fit: contain; }
+}
+
+// Right side: text block on top, price + button row at the bottom.
+.airbeam-cta__body {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex: 1;
+  min-width: 0;
+}
+
+.airbeam-cta__text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.airbeam-cta__name {
+  margin: 0;
+  font-family: $bold-font;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.15;
+  color: $gray-dark;
+}
+
+.airbeam-cta__tagline { font-size: 1rem; line-height: 1.4; color: $gray; }
+.airbeam-cta__benefits { font-size: 0.85rem; color: lighten($gray, 12%); }
+
+.airbeam-cta__bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.airbeam-cta__price {
+  display: inline-flex;
+  align-items: flex-start;
+  line-height: 1;
+  font-family: $bold-font;
+  white-space: nowrap;
+
+  .cur { font-size: 1.25rem; font-weight: 700; color: $green; margin-top: 0.3rem; }
+  .amt { font-size: 2.5rem; font-weight: 700; color: $green; letter-spacing: -0.03em; }
+  .code { font-size: 0.85rem; font-weight: 600; color: $green; align-self: center; margin-left: 0.3rem; }
+}
+
+// Button reuses .product-cta-button (defined in _product-showcase-section); only
+// neutralize its bottom margin for this card context.
+.airbeam-cta .product-cta-button { margin-bottom: 0; }
+
+// Wider screens: image left, right side split (text above, price + button below).
+@media (min-width: 640px) {
+  .airbeam-cta__card {
+    flex-direction: row;
+    align-items: stretch;
+    text-align: left;
+    gap: 1.25rem;
+    padding: 1.25rem;
+  }
+  .airbeam-cta__media { align-self: auto; }
+  .airbeam-cta__body { justify-content: space-between; }
+  .airbeam-cta__bottom {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .airbeam-cta .product-cta-button { width: auto; }
+}

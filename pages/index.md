@@ -84,7 +84,7 @@ og_type: website
     {
       "@type": "ContactPoint",
       "contactType": "sales",
-      "url": "{{ site.url }}/airbeam/buy-it-now",
+      "url": "{{ site.url }}/airbeam",
       "availableLanguage": "English"
     }
   ],
@@ -410,7 +410,7 @@ og_type: website
     },
     {
       "@type": "BuyAction",
-      "target": "{{ site.url }}/airbeam/buy-it-now",
+      "target": "{{ site.url }}/airbeam",
       "object": {
         "@id": "{{ site.url }}/#product"
       }
@@ -472,7 +472,7 @@ og_type: website
   "url": "{{ site.url }}/airbeam/",
   "offers": {
     "@type": "Offer",
-    "url": "{{ site.url }}/airbeam/buy-it-now",
+    "url": "{{ site.url }}/airbeam",
     "priceCurrency": "USD",
     "price": "99.00",
     "lowPrice": "99.00",
@@ -723,7 +723,7 @@ og_type: website
     },
     {
       "@type": "BuyAction",
-      "target": "{{ site.url }}/airbeam/buy-it-now"
+      "target": "{{ site.url }}/airbeam"
     }
   ]
 }

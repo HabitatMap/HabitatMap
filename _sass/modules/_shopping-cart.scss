@@ -190,41 +190,57 @@
   padding: 2rem 1rem;
   width: 100%;
 
-  .empty-cart-icon {
-    margin-bottom: 1.5rem;
-    color: #9ca3af;
-
-    svg {
-      width: 64px;
-      height: 64px;
-    }
-  }
-
   .empty-cart-text {
-    color: #6b7280;
+    color: $gray;
     font-size: 1.125rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     font-weight: 500;
   }
 
-  .choose-airbeam-btn {
-    background: #1ea73f;
-    color: white;
-    border: none;
-    padding: 0.875rem 1.5rem;
-    border-radius: 8px;
-    font-size: 1rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    min-width: 200px;
-
-    &:hover {
-      background: #16a34a;
-      transform: translateY(-1px);
-      box-shadow: 0 4px 12px rgba(30, 167, 63, 0.3);
-    }
+  // Single-SKU store: offer the AirBeam Mini right here so an empty cart is a
+  // one-click add, not a trip back to /airbeam.
+  .empty-cart-product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    width: 100%;
   }
+
+  .empty-cart-product-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 140px;
+    padding: 1rem;
+    border-radius: 1rem;
+    background: $teal-very-light;
+
+    img { display: block; max-width: 100%; max-height: 100%; object-fit: contain; }
+  }
+
+  .empty-cart-product-name {
+    margin: 0;
+    font-family: $bold-font;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: $gray-dark;
+  }
+
+  .empty-cart-product-price {
+    display: inline-flex;
+    align-items: flex-start;
+    line-height: 1;
+    font-family: $bold-font;
+    margin-bottom: 0.5rem;
+
+    .cur { font-size: 1rem; font-weight: 700; color: $green; margin-top: 0.25rem; }
+    .amt { font-size: 1.75rem; font-weight: 700; color: $green; letter-spacing: -0.03em; }
+    .code { font-size: 0.75rem; font-weight: 600; color: $green; align-self: center; margin-left: 0.25rem; }
+  }
+
+  .product-cta-button { margin-bottom: 0; }
 }
 
 .cart-summary {

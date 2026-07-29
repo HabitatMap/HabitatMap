@@ -2,14 +2,11 @@
 layout: post
 title: What Do Those Colored Dots Mean? Understanding the Air Quality Index (AQI)
 date: 2025-09-29
+last_modified_at: 2026-07-29
 featured: true
 author: Kayla Pasacreta & Michael Heimbinder
 image: /images/uploads/aircastingmapdots.png
-intro: Have you ever opened the AirCasting map, seen those brightly colored dots
-  scattered across the screen, and wondered what they really mean? You're not
-  alone. Those colors aren't just for show, they tell a powerful story about the
-  air you're breathing. Once you understand them, they can help you make smarter
-  decisions to protect your health.
+intro: Have you ever opened the AirCasting map, seen those brightly colored dots, and wondered what they mean? Each dot shows the local air quality, scored on the Air Quality Index (AQI). Once you can read the colors, you can make smarter, healthier choices about the air around you.
 category: Education
 tag:
   - community science
@@ -17,65 +14,102 @@ tag:
   - health
   - education
 ---
-## The Air Quality Index: A Quick Guide
 
-Those colorful dots are based on the [Air Quality Index (AQI)](https://www.airnow.gov/aqi/aqi-basics/). The AQI has been around since the 1970s and was pioneered by the U.S. Environmental Protection Agency (USEPA). It was designed to represent health risks from common pollutants people encounter, like car exhaust or smog. [AQIs vary from country to country](https://aqihub.info/), using different indexes and color schemes. In the United States, the AQI runs from 0 to 500 and is divided into six color-coded categories that represent different levels of air quality. Higher AQI values correspond to higher air pollution measurements and more serious threats to human health. The USEPA AQI also offers guidance for sensitive groups, such as individuals with asthma and the elderly, recommending they adjust their daily activities based on how severe the air pollution is.\
-\
-Let’s break it down:
+The short version: the colored dots on the AirCasting map show how clean or polluted the air is at each sensor, in real time. Green means clean air. As the colors shift to yellow, orange, and red, pollution rises and so does the risk to your health. Here is how to read them.
+
+## What is the Air Quality Index (AQI)?
+
+The Air Quality Index turns air pollution measurements into a single, easy number and color. In the United States it runs from 0 to 500 across six categories. The higher the number, the more polluted the air and the greater the health risk.
+
+The U.S. Environmental Protection Agency (EPA) created the AQI in the 1970s to make air pollution easier to understand. It translates common pollutants, like car exhaust and smog, into health-based categories.
+
+Not every country uses the same system. [AQIs vary from country to country](https://aqihub.info/), with different scales and colors.
+
+The EPA’s AQI also guides sensitive groups, such as people with asthma and older adults, on when to adjust outdoor activity as pollution climbs.
+
+## What do the AQI colors and numbers mean?
+
+Each AQI color maps to a range of numbers and a level of health concern. Green is good. Maroon is hazardous. Here is the full scale.
 
 ![](/images/uploads/screenshot-2025-09-29-at-11.47.57 am.png)
 
-## What is the AirBeam Measuring?
+## Why does the AirCasting map use different colors than the official AQI?
 
-[AirBeam](https://www.habitatmap.org/airbeam/buy-it-now/) is a portable air quality monitor that tracks particle pollution, tiny airborne particles from sources such as fossil fuel power plants, wildfire smoke, truck exhaust, and cooking. These particles are small enough to reach deep into your lungs and even enter your bloodstream. Exposure to particle pollution can cause short-term health problems like headaches, pneumonia, and bronchitis. Long-term effects include strokes, heart attacks, asthma, lung cancer, and infertility.
+The AirCasting map focuses on one pollutant, PM2.5, and shows its actual concentration rather than an index score. So its colors track micrograms of particles per cubic meter of air (µg/m³), not the 0 to 500 AQI number.
 
-AirBeam uses unit-based measurements - micrograms per cubic meter abbreviated as ug/m3 - rather than AQI numbers to measure particle pollution because [providing actual concentrations](https://www.envirotech-online.com/news/air-monitoring/6/ilm-publications/communicating-air-pollution-information-public/65192) offers precise data on the levels of particulate matter and allows for a more nuanced understanding of air quality and associated health risks.
+The AirCasting app maps PM2.5 concentrations to colors like this: 0–9 µg/m³ is green, 10–35 is yellow, 36–55 is orange, and 56–150 is red. You can adjust these ranges in the app.
 
-![](/images/uploads/aircasting_graph.png)
+The colors line up roughly with the AQI, but they measure different things. The AQI blends several pollutants into an index. AirCasting shows you the real concentration of the particles you are breathing.
 
-The [AirCasting](https://www.habitatmap.org/aircasting) app and website use the [National Ambient Air Quality Standards](https://www.epa.gov/criteria-air-pollutants/naaqs-table) for PM2.5 exposure and the AQI to relate colors to measurements: 0-9 ug/m3 is green, 10-35 ug/m3 is yellow, 36-55 ug/m3 is orange, and 55-150 ug/m3 is red. (The relationship between colors and measurements can be changed inside the AirCasting app and website.) These ranges/colors roughly correspond to increased health risks as the concentration of PM2.5 in the environment rises.
+Why show concentrations at all? Because [actual numbers give a more precise, nuanced picture](https://www.envirotech-online.com/news/air-monitoring/6/ilm-publications/communicating-air-pollution-information-public/65192) of what is in the air than a single index can.
 
-## What Are the Major Air Pollutants?
+[![AirCasting app graph showing real-time PM2.5 readings in micrograms per cubic meter over time.](/images/uploads/aircasting_graph.png)](https://aircasting.org/?sessionId=1902355&streamId=2697808&isActive=true&sessionType=mobile&boundEast=-72.17037651485589&boundNorth=41.68721511453384&boundSouth=39.14491439614386&boundWest=-77.0000384001018&thresholdMin=0&thresholdLow=9&thresholdMiddle=35&thresholdHigh=55&thresholdMax=150&currentCenter=%7B%22lat%22%3A40.428075760909266%2C%22lng%22%3A-74.58520745747886%7D&currentZoom=8.930341257472447&previousUserSettings=MAP_VIEW&currentUserSettings=MODAL_VIEW&sensorName=AirBeam-PM2.5&unitSymbol=%C2%B5g%2Fm%C2%B3&isIndoor=false&usernames=%252C%2520HabitatMap&measurementType=Particulate+Matter&tags=&timeFrom=1704067200&timeTo=1735689599&fetchedSessions=2&previousCenter=%7B%22lat%22%3A40.428075760909266%2C%22lng%22%3A-74.58520745747886%7D&previousZoom=8.930341257472447)
 
-While the AirBeam focuses on particle pollution, the AQI is based on five major pollutants:
+Here is a number that surprises most people: the World Health Organization estimates that [99% of the world’s population breathes air that exceeds its recommended limits](https://www.who.int/health-topics/air-pollution). Air pollution is not a distant problem. It is almost everywhere, which is exactly why being able to read it matters.
 
-* G﻿round-level ozone
-* P﻿article pollution (PM2.5 and PM10)
-* C﻿arbon monoxide
-* S﻿ulfur dioxide
-* N﻿itrogen dioxide
+## What are the major air pollutants?
 
-Each of these can affect your health, especially for vulnerable groups like children, older adults, and people with asthma or heart disease.
+The AQI is built from five major pollutants. The AirCasting map focuses on one of them, particle pollution, because it is among the most harmful to human health.
 
-## Pros and Cons of the Air Quality Index 
+* Ground-level ozone
+* Particle pollution (PM2.5 and PM10)
+* Carbon monoxide
+* Sulfur dioxide
+* Nitrogen dioxide
 
-**Pros:** 
+Each one can affect your health, especially for children, older adults, and people with asthma or heart disease.
 
-* The straight-forward, color-coded nature of the index makes it easier for the general public to understand air quality readings and make informed decisions to protect their health. 
-* It warns the public when pollution levels are high and could harm health, especially for children, the elderly, and people with breathing problems.
-* The AQI helps local governments track air quality and make sure it meets safety standards.
+Particle pollution deserves special attention. These tiny particles come from traffic, wildfire smoke, power plants, and everyday sources like [cooking and burning candles indoors](https://www.habitatmap.org/blog/when-fresh-scents-turn-toxic-how-candles-and-incense-impact-your-health). They are small enough to reach deep into your lungs and enter your bloodstream. Short-term exposure can cause headaches and worsen breathing problems. Long-term exposure is linked to heart attacks, stroke, and lung disease.
 
-**Cons:**
+## What the AQI gets right, and where it falls short
 
-* The AQI may mask which specific pollutants are responsible for poor air quality, potentially limiting people's understanding of the distinct health risks posed by each one.
-* The AQI is based on 24-hour exposures because most health studies have primarily examined long-term exposures to air pollution, not short-term exposures, leaving the potential health implications of such exposures unclear. 
-* The Air Quality Index only takes into account the five [criteria air pollutants](https://www.epa.gov/criteria-air-pollutants) mentioned above. It doesn't take into account exposure to hundreds of [hazardous air pollutants](https://www.epa.gov/haps) (e.g. formaldehyde, benzene) like those released from petrochemical plants or urban fires.
-* Data shows that [health effects occur at levels well below current regulatory thresholds](http://www.thelancet.com/journals/lancet/article/PIIS0140-6736(13)62158-3/fulltext), especially for the most toxic aerosols, like those from [diesel exhaust](https://www.nature.com/articles/s41598-018-35398-0). 
+The AQI is a powerful public tool, but it has real limits. Knowing both helps you use it wisely.
 
-## Making Air Quality Data Easy to Understand
+**What it does well**
 
-Air quality data has traditionally been hard to access or interpret without a background in environmental science. But tools like AirBeam and AirCasting are changing that by giving everyday people the power to see and respond to air pollution in real time.
+* The simple, color-coded design makes air quality easy for anyone to read and act on.
+* It warns the public when pollution is high enough to harm health, especially for children, the elderly, and people with breathing problems.
+* It helps local governments track air quality against safety standards.
 
-With a quick glance at the air quality data, you can decide:
+**Where it falls short**
 
-* W﻿hether it's safe to go for a run
-* I﻿f your child should wear a mask today
-* W﻿here in your city the air is cleanest
+* It can hide which specific pollutant is driving poor air, so you lose sight of the distinct risks.
+* It is based on longer, often 24-hour, exposures, so it can miss the short, sharp pollution spikes you actually breathe during the day.
+* It covers only the five [criteria air pollutants](https://www.epa.gov/criteria-air-pollutants). It leaves out hundreds of [hazardous air pollutants](https://www.epa.gov/haps) like formaldehyde and benzene from petrochemical plants and urban fires.
+* Research shows [health effects can occur well below current regulatory thresholds](http://www.thelancet.com/journals/lancet/article/PIIS0140-6736(13)62158-3/fulltext), especially for the most toxic particles, like those in [diesel exhaust](https://www.nature.com/articles/s41598-018-35398-0).
 
-## Empowering People, Not Just Scientists
+## How do you check the air right where you are?
 
-Understanding air quality isn't just for researchers or policymakers - it's for everyone. Clean air is a universal human right. Knowing what's in the air you’re breathing is the first step toward protecting yourself and advocating for healthier environments.
+Official monitors are few and far between, and the AQI averages pollution over time. But the air you breathe changes by the minute and by the block. To see your air, right where you are, you need to measure it yourself.
 
-[Get started with the AirBeam today.](https://www.habitatmap.org/airbeam/buy-it-now/)
+That is what a personal monitor does. The [AirBeam Mini](https://www.habitatmap.org/airbeam/) is a small, portable sensor that tracks PM2.5 in real time and feeds it straight to the AirCasting map. You can watch how your air changes as you cook, commute, or move between neighborhoods, and share what you find with your community.
+
+Communities are already doing this. In New York City, neighborhood groups used AirBeams to [map air pollution block by block](https://www.habitatmap.org/blog/nyc-community-organizations-use-aircasting-to-study-hyperlocal-air-quality-1) and found levels far higher than official readings suggested.
+
+## Making air quality easy to understand
+
+Air quality data used to require a scientist to interpret. Tools like AirCasting and the AirBeam Mini put it in everyone’s hands, in real time.
+
+With a quick glance at the map, you can decide:
+
+* Whether it is a good day for a run
+* If your child should wear a mask today
+* Where in your city the air is cleanest
+
+## The bigger picture
+
+Clean air is not just a concern for researchers or policymakers. It is a basic human right. Knowing what is in the air you breathe is the first step toward protecting yourself, your family, and your neighborhood.
+
+## Frequently asked questions
+
+**What do the colors on the AirCasting map mean?** Green means the air is clean, and the risk rises as the colors move through yellow, orange, and red. Each color reflects how much PM2.5 pollution is in the air at that sensor.
+
+**What is a good AQI number?** An AQI of 0 to 50 (green) is good, meaning air quality is satisfactory for everyone. Above 100, the air starts to affect sensitive groups.
+
+**What is the difference between the AQI and PM2.5?** The AQI is an index from 0 to 500 that blends several pollutants into one score. PM2.5 is a single pollutant, fine particles, measured in micrograms per cubic meter. The AirCasting map focuses on PM2.5.
+
+**Why is the air near me different from the nearest official reading?** Official monitors are sparse and average pollution over time, so they miss the block-by-block changes you actually breathe. A personal monitor like the AirBeam Mini shows the air right where you are.
+
+{% include airbeam-mini-ab.html %}
 
 <iframe width="752" height="424" src="https://www.youtube.com/embed/amjNUaoFYjk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
