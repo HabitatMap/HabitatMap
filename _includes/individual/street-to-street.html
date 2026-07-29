@@ -1,0 +1,38 @@
+{% comment %} Individual LP — The difference: air varies street to street. {% endcomment %}
+<section class="panel ilp-difference reveal-section">
+  <div class="ilp-difference__container">
+    <div class="ilp-difference__content reveal-content">
+      <span class="ilp-difference__eyebrow reveal-header">The difference</span>
+      <h2 class="ilp-difference__title reveal-header">Air changes street to street.</h2>
+      <p class="ilp-difference__body reveal-body">
+        The one or two streets you walk every day can be far more polluted than the blocks around them, and more than the nearest fixed station will ever show. Your own monitor tells you which route is cleaner, so you can pick the right path for you.
+      </p>
+    </div>
+
+    <div class="ilp-difference__visual reveal-fade" aria-hidden="true">
+      <div class="ilp-map">
+        <div class="ilp-map__basemap"></div>
+        <div class="ilp-map__water"></div>
+
+        <div class="ilp-map__marker ilp-map__marker--station">
+          <span class="ilp-map__pill">
+            <span class="ilp-map__dot"></span>
+            <span class="ilp-map__val">12 µg/m³</span>
+          </span>
+        </div>
+
+        <div class="ilp-map__marker ilp-map__marker--you">
+          <span class="ilp-map__pill ilp-map__pill--you">
+            <span class="ilp-map__dot-wrap">
+              <span class="ilp-map__pulse"></span>
+              <span class="ilp-map__dot"></span>
+            </span>
+            <span class="ilp-map__val">37 µg/m³ · Your street</span>
+          </span>
+        </div>
+
+        <p class="ilp-map__caption">Your street can read higher than the nearest official monitor.</p>
+      </div>
+    </div>
+  </div>
+</section>

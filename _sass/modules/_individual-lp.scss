@@ -1,0 +1,756 @@
+// Individual landing page (/airbeam/individual/)
+// Calm, family-first sections. Reuses brand tokens; shares .features-section
+// and .faq-section styling from their own modules.
+
+// AirCasting PM2.5 heat-scale colors (matches aircasting.org map markers)
+$aq-green: #6fc44c;
+$aq-yellow: #f4c633;
+$aq-orange: #f2953f;
+$aq-red: #e0503a;
+$ilp-max-width: 1200px;
+
+// Section background tints — matched to the mockup (subtle pale greens)
+$ilp-hero-glow: #e9f4ea; // hero radial gradient colour
+$ilp-tint-street: #f7faf7;
+$ilp-tint-meaning: #f2f8f3;
+$ilp-tint-setup: #f5f8f5;
+$ilp-tint-movement: #eff7f0;
+
+// ---- Hero ----------------------------------------------------------------
+.ilp-hero {
+  background: radial-gradient(130% 95% at 50% -14%, $ilp-hero-glow 0%, rgba(255, 255, 255, 0) 60%), $white;
+
+  &__container {
+    width: 100%;
+    max-width: $ilp-max-width;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: $u-space-default;
+
+    @media (min-width: $tablet-min) {
+      flex-direction: row;
+      align-items: center;
+      gap: 4rem;
+    }
+  }
+
+  &__content {
+    flex: 1 1 50%;
+  }
+
+  &__eyebrow {
+    display: block;
+    font-family: $bold-font;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: $base-font-size-1;
+    color: $hm-brand;
+    margin-bottom: $u-space-small;
+  }
+
+  &__title {
+    font-family: $bold-font;
+    color: $gray-dark;
+    font-size: clamp(2.2rem, 5vw, 3.4rem);
+    line-height: 1.1;
+    margin: 0 0 $u-space-small;
+  }
+
+  &__subtitle {
+    color: $text-color;
+    font-size: $base-font-size1;
+    line-height: 1.6;
+    max-width: 32rem;
+    margin: 0 0 $u-space-default;
+  }
+
+  &__ctas {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: $u-space-small;
+  }
+
+  &__demo {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    background: $white;
+    border: 1px solid rgba($gray-dark, 0.15);
+    border-radius: 2rem;
+    height: $button-base-height;
+    padding: 0 1.4rem;
+    font-family: $bold-font;
+    font-size: 1rem;
+    color: $gray-dark;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+    svg { color: $hm-brand; }
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 20px -8px rgba($gray-dark, 0.25);
+    }
+  }
+
+  &__visual {
+    flex: 1 1 50%;
+  }
+
+  &__image-wrapper {
+    position: relative;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    box-shadow: 0 20px 40px -18px rgba($gray-dark, 0.35);
+    aspect-ratio: 4 / 3;
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+}
+
+// ---- The difference: street to street ------------------------------------
+.ilp-difference {
+  background: $ilp-tint-street;
+
+  &__container {
+    width: 100%;
+    max-width: $ilp-max-width;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: $u-space-default;
+
+    @media (min-width: $tablet-min) {
+      flex-direction: row;
+      align-items: center;
+      gap: 4rem;
+    }
+  }
+
+  &__content { flex: 1 1 48%; }
+  &__visual  { flex: 1 1 52%; }
+
+  &__eyebrow {
+    display: block;
+    font-family: $bold-font;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: $base-font-size-1;
+    color: $hm-brand;
+    margin-bottom: $u-space-small;
+  }
+
+  &__title {
+    font-family: $bold-font;
+    color: $gray-dark;
+    font-size: clamp(1.8rem, 4vw, 2.6rem);
+    line-height: 1.15;
+    margin: 0 0 $u-space-small;
+  }
+
+  &__body {
+    color: $text-color;
+    font-size: $base-font-size1;
+    line-height: 1.6;
+    max-width: 34rem;
+  }
+}
+
+.ilp-map {
+  position: relative;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  background: #e8eaed; // muted aircasting-style basemap gray
+  aspect-ratio: 4 / 3;
+  box-shadow: 0 20px 40px -20px rgba($gray-dark, 0.3);
+
+  // stylised streets: faint white roads over the gray basemap
+  &__basemap {
+    position: absolute;
+    inset: 0;
+    background-image:
+      repeating-linear-gradient(35deg, transparent 0 38px, rgba($white, 0.9) 38px 42px),
+      repeating-linear-gradient(-58deg, transparent 0 52px, rgba($white, 0.85) 52px 55px),
+      repeating-linear-gradient(35deg, transparent 0 92px, rgba($white, 0.5) 92px 100px);
+  }
+
+  // a calm water body in one corner
+  &__water {
+    position: absolute;
+    left: -14%;
+    bottom: -20%;
+    width: 58%;
+    height: 58%;
+    background: #cfe0e8;
+    border-radius: 45% 55% 60% 40% / 55% 45% 55% 45%;
+    transform: rotate(-12deg);
+  }
+
+  &__marker {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &--station { top: 20%; left: 14%; }
+    &--you { bottom: 30%; right: 14%; z-index: 2; }
+  }
+
+  // white rounded pill with a coloured dot + value, aircasting-style
+  &__pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    background: $white;
+    border-radius: 2rem;
+    padding: 0.35rem 0.75rem 0.35rem 0.5rem;
+    box-shadow: 0 3px 10px rgba($gray-dark, 0.25);
+    white-space: nowrap;
+  }
+
+  &__val {
+    font-family: $bold-font;
+    font-size: 0.82rem;
+    color: $gray-dark;
+  }
+
+  &__dot-wrap {
+    position: relative;
+    display: inline-flex;
+    flex: 0 0 auto;
+  }
+
+  &__dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    flex: 0 0 auto;
+  }
+
+  &__marker--station &__dot {
+    background: $aq-green;
+    box-shadow: 0 0 10px 4px rgba($aq-green, 0.55);
+  }
+
+  &__marker--you &__dot {
+    background: $aq-yellow;
+    box-shadow: 0 0 12px 5px rgba($aq-yellow, 0.6);
+  }
+
+  // expanding radar ping behind the "your street" dot (mockup: youpulse)
+  &__pulse {
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background: $aq-yellow;
+    transform-origin: center;
+    animation: ilp-youpulse 2.6s ease-out infinite;
+  }
+
+  &__caption {
+    position: absolute;
+    left: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    margin: 0;
+    background: rgba($white, 0.92);
+    border-radius: 0.6rem;
+    padding: 0.6rem 0.8rem;
+    font-size: 0.85rem;
+    color: $gray-dark;
+    text-align: center;
+  }
+}
+
+@keyframes ilp-youpulse {
+  0% { transform: scale(1); opacity: 0.5; }
+  70% { transform: scale(2.6); opacity: 0; }
+  100% { opacity: 0; }
+}
+
+// ---- Meaning, not just a number ------------------------------------------
+.ilp-meaning {
+  background: $ilp-tint-meaning;
+
+  &__container {
+    width: 100%;
+    max-width: $ilp-max-width;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: $u-space-default;
+
+    @media (min-width: $tablet-min) {
+      flex-direction: row;
+      align-items: center;
+      gap: 4rem;
+    }
+  }
+
+  &__content { flex: 1 1 58%; }
+  &__card    { flex: 1 1 42%; }
+
+  &__eyebrow {
+    display: block;
+    font-family: $bold-font;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: $base-font-size-1;
+    color: $hm-brand;
+    margin-bottom: $u-space-small;
+  }
+
+  &__title {
+    font-family: $bold-font;
+    color: $gray-dark;
+    font-size: clamp(1.8rem, 4vw, 2.6rem);
+    line-height: 1.15;
+    margin: 0 0 $u-space-small;
+  }
+
+  &__body {
+    color: $text-color;
+    font-size: $base-font-size1;
+    line-height: 1.6;
+    max-width: 34rem;
+  }
+}
+
+.ilp-meaning__card {
+  background: $white;
+  border-radius: 1.5rem;
+  padding: $u-space-default;
+  box-shadow: 0 20px 40px -22px rgba($gray-dark, 0.3);
+}
+
+.ilp-reading {
+  &__overline {
+    display: block;
+    font-family: $bold-font;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 0.72rem;
+    color: $gray;
+    margin-bottom: $u-space-small;
+  }
+
+  &__top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  &__value-wrap {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+  }
+
+  &__value {
+    font-family: $bold-font;
+    font-size: 3.5rem;
+    line-height: 1;
+    color: $gray-dark;
+  }
+
+  &__unit {
+    font-size: 0.78rem;
+    color: $gray;
+    line-height: 1.25;
+  }
+
+  &__status {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-family: $bold-font;
+    font-size: 0.85rem;
+    color: $green;
+    background: $green-light;
+    padding: 0.3rem 0.75rem;
+    border-radius: 2rem;
+  }
+
+  &__status-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: $green;
+  }
+
+  &__scale {
+    margin-top: $u-space-default;
+  }
+
+  &__bar {
+    display: flex;
+    gap: 6px;
+  }
+
+  &__seg {
+    flex: 1;
+    height: 8px;
+    border-radius: 4px;
+    background: $teal-light;
+
+    &.is-filled { background: $green; }
+  }
+
+  &__scale-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+    font-size: 0.75rem;
+    color: $gray;
+
+    .is-active {
+      color: $green;
+      font-family: $bold-font;
+    }
+  }
+
+  &__note {
+    margin: $u-space-default 0 0;
+    padding-top: $u-space-small;
+    border-top: 1px solid $teal-light;
+    color: $gray-dark;
+    font-size: $base-font-size1;
+  }
+}
+
+// ---- Everything it does (icon-left 3x2 grid, per mockup) -----------------
+.ilp-live {
+  &__container {
+    width: 100%;
+    max-width: $ilp-max-width;
+    margin: 0 auto;
+  }
+
+  &__header {
+    text-align: center;
+    margin-bottom: $u-space-default;
+  }
+
+  &__eyebrow {
+    display: block;
+    font-family: $bold-font;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: $base-font-size-1;
+    color: $hm-brand;
+    margin-bottom: $u-space-small;
+  }
+
+  &__title {
+    font-family: $bold-font;
+    color: $gray-dark;
+    font-size: clamp(1.8rem, 4vw, 2.6rem);
+    margin: 0 0 $u-space-small;
+  }
+
+  &__subtitle {
+    color: $text-color;
+    font-size: $base-font-size1;
+    margin: 0;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $u-space-small;
+
+    @media (min-width: $large-mobile-min) { grid-template-columns: repeat(2, 1fr); }
+    @media (min-width: $small-desktop-min) { grid-template-columns: repeat(3, 1fr); }
+  }
+
+  &__cell {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    background: $white;
+    border: 1px solid rgba($gray-dark, 0.1);
+    border-radius: 1rem;
+    padding: $u-space-small;
+
+    &--muted {
+      align-items: center;
+    }
+  }
+
+  &__icon {
+    flex: 0 0 auto;
+    display: grid;
+    place-items: center;
+    width: 2.75rem;
+    height: 2.75rem;
+    border-radius: 0.75rem;
+    background: $white;
+    color: $green;
+    box-shadow: 0 2px 8px rgba($gray-dark, 0.12);
+
+    svg { width: 1.4rem; height: 1.4rem; }
+  }
+
+  &__name {
+    font-family: $bold-font;
+    color: $gray-dark;
+    font-size: 1.05rem;
+    margin: 0 0 0.3rem;
+  }
+
+  &__desc {
+    color: $text-color;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin: 0;
+
+    strong { color: $gray-dark; }
+  }
+
+  &__accuracy {
+    text-align: center;
+    color: $gray;
+    font-size: 0.95rem;
+    margin-top: $u-space-default;
+
+    a {
+      color: $hm-brand;
+      font-family: $bold-font;
+      text-decoration: none;
+      &:hover { text-decoration: underline; }
+    }
+  }
+}
+
+// Portrait video thumbnails on the shared In Action section
+.videos-section--portrait {
+  .video-container,
+  .video-placeholder { aspect-ratio: 9 / 16; }
+
+  .video-thumbnail {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+// ---- Setup ---------------------------------------------------------------
+.ilp-setup {
+  background: $ilp-tint-setup;
+
+  &__container {
+    width: 100%;
+    max-width: 60rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__eyebrow {
+    display: block;
+    font-family: $bold-font;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: $base-font-size-1;
+    color: $hm-brand;
+    margin-bottom: $u-space-small;
+  }
+
+  &__title {
+    font-family: $bold-font;
+    color: $gray-dark;
+    font-size: clamp(1.8rem, 4vw, 2.4rem);
+    margin: 0 0 $u-space-small;
+  }
+
+  &__body {
+    color: $text-color;
+    font-size: $base-font-size1;
+    line-height: 1.6;
+    max-width: 34rem;
+    margin: 0 auto $u-space-default;
+  }
+
+  &__steps {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $u-space-small;
+
+    @media (min-width: $tablet-min) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  &__step {
+    background: $white;
+    border: 1px solid rgba($gray-dark, 0.1);
+    border-radius: 1rem;
+    padding: $u-space-default $u-space-small;
+    text-align: center;
+  }
+
+  &__step-num {
+    display: grid;
+    place-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 0 auto $u-space-small;
+    border-radius: 50%;
+    background: $green;
+    color: $white;
+    font-family: $bold-font;
+    font-size: 1.1rem;
+  }
+
+  &__step-title {
+    font-family: $bold-font;
+    color: $gray-dark;
+    font-size: 1.1rem;
+    margin: 0 0 0.4rem;
+  }
+
+  &__step-desc {
+    color: $text-color;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin: 0;
+  }
+}
+
+// ---- Join a global movement (centered stats, per mockup) -----------------
+.ilp-movement {
+  background: $ilp-tint-movement; // solid pale green, matching the mockup
+
+  &__container {
+    width: 100%;
+    max-width: 60rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__eyebrow {
+    display: block;
+    font-family: $bold-font;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: $base-font-size-1;
+    color: $hm-brand;
+    margin-bottom: $u-space-small;
+  }
+
+  &__title {
+    font-family: $bold-font;
+    color: $gray-dark;
+    font-size: clamp(1.8rem, 4vw, 2.6rem);
+    margin: 0 0 $u-space-default;
+  }
+
+  &__stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: $u-space-default;
+    margin-bottom: $u-space-default;
+  }
+
+  &__stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__stat-number {
+    font-family: $bold-font;
+    color: $green;
+    font-size: clamp(2.2rem, 5vw, 3.25rem);
+    line-height: 1;
+  }
+
+  &__stat-label {
+    color: $text-color;
+    font-size: 0.95rem;
+    margin-top: $u-space-tiny;
+  }
+
+  &__body {
+    color: $text-color;
+    font-size: $base-font-size1;
+    line-height: 1.6;
+    max-width: 40rem;
+    margin: 0 auto $u-space-default;
+  }
+
+  &__story {
+    max-width: 42rem;
+    margin: 0 auto;
+    border: 1px dashed rgba($gray-dark, 0.3);
+    border-radius: 0.75rem;
+    padding: $u-space-small;
+    font-family: monospace;
+    font-size: 0.85rem;
+    color: $gray;
+  }
+}
+
+// ---- One canonical eyebrow + title for every section, matching Buy It Now -
+// Full property set so all sections render identically regardless of the
+// per-section rules above (size, colour, and style are all normalised here).
+.ilp-hero__eyebrow,
+.ilp-difference__eyebrow,
+.ilp-meaning__eyebrow,
+.ilp-live__eyebrow,
+.ilp-setup__eyebrow,
+.ilp-movement__eyebrow {
+  display: block;
+  font-family: $body-font;
+  font-size: $base-font-size-2;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: $green;
+  margin: 0 0 $u-space-small;
+}
+
+.ilp-difference__title,
+.ilp-meaning__title,
+.ilp-live__title,
+.ilp-setup__title,
+.ilp-movement__title {
+  font-family: $bold-font;
+  font-size: clamp(2rem, 3vw, 2.75rem);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  color: $gray-dark;
+  margin: 0 0 $u-space-small;
+}
+
+// Shared sections used on this page (In Action, buy block, FAQ) — force
+// their titles to the same size so every section title matches page-wide.
+.ilp-page .videos-title,
+.ilp-page .showcase-title,
+.ilp-page .faq-title {
+  font-size: clamp(2rem, 3vw, 2.75rem) !important;
+  line-height: 1.15;
+}
+
+// FAQ shares the pale-green tint used by the mockup (scoped to this page only)
+.ilp-page .faq-section {
+  background-color: $ilp-tint-street;
+}
+
+// In Action is plain white in the mockup (not the shared teal gradient)
+.ilp-page .videos-section {
+  background: $white;
+}

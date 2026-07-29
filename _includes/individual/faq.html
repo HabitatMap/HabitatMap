@@ -1,0 +1,32 @@
+{% comment %} Individual LP — FAQ. Persona subset. Reuses .faq-section styling + buy-it-now-faq.js. {% endcomment %}
+<section class="panel faq-section ilp-faq">
+  <div class="faq-container">
+    <div class="faq-header">
+      <span class="faq-eyebrow">Good to know</span>
+      <h2 class="faq-title">Questions, answered.</h2>
+      <p class="faq-subtitle">The things people ask before their first AirBeam.</p>
+    </div>
+
+    <div class="faq-categories">
+      <div class="faq-category">
+        <div class="faq-items">
+          {% for question in site.data.faq-individual.questions %}
+            <div class="faq-item">
+              <button class="faq-toggle" onclick="toggleFAQ(this)">
+                <span class="toggle-text">{{ question.q }}</span>
+                <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6,9 12,15 18,9"></polyline>
+                </svg>
+              </button>
+              <div class="faq-content">
+                <p class="faq-answer">{{ question.a }}</p>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="/assets/js/buy-it-now-faq.js"></script>
