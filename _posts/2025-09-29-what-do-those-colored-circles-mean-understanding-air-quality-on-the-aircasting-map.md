@@ -43,7 +43,7 @@ The colors line up roughly with the AQI, but they measure different things. The 
 
 Why show concentrations at all? Because [actual numbers give a more precise, nuanced picture](https://www.envirotech-online.com/news/air-monitoring/6/ilm-publications/communicating-air-pollution-information-public/65192) of what is in the air than a single index can.
 
-[AirCasting app graph showing real-time PM2.5 readings in micrograms per cubic meter over time.](https://app.slack.com/images/uploads/aircasting_graph.png)
+[![AirCasting app graph showing real-time PM2.5 readings in micrograms per cubic meter over time.](/images/uploads/aircasting_graph.png)](https://aircasting.org/?sessionId=1902355&streamId=2697808&isActive=true&sessionType=mobile&boundEast=-72.17037651485589&boundNorth=41.68721511453384&boundSouth=39.14491439614386&boundWest=-77.0000384001018&thresholdMin=0&thresholdLow=9&thresholdMiddle=35&thresholdHigh=55&thresholdMax=150&currentCenter=%7B%22lat%22%3A40.428075760909266%2C%22lng%22%3A-74.58520745747886%7D&currentZoom=8.930341257472447&previousUserSettings=MAP_VIEW&currentUserSettings=MODAL_VIEW&sensorName=AirBeam-PM2.5&unitSymbol=%C2%B5g%2Fm%C2%B3&isIndoor=false&usernames=%252C%2520HabitatMap&measurementType=Particulate+Matter&tags=&timeFrom=1704067200&timeTo=1735689599&fetchedSessions=2&previousCenter=%7B%22lat%22%3A40.428075760909266%2C%22lng%22%3A-74.58520745747886%7D&previousZoom=8.930341257472447)
 
 Here is a number that surprises most people: the World Health Organization estimates that [99% of the world’s population breathes air that exceeds its recommended limits](https://www.who.int/health-topics/air-pollution). Air pollution is not a distant problem. It is almost everywhere, which is exactly why being able to read it matters.
 
@@ -84,7 +84,7 @@ Official monitors are few and far between, and the AQI averages pollution over t
 
 That is what a personal monitor does. The [AirBeam Mini](https://www.habitatmap.org/airbeam/) is a small, portable sensor that tracks PM2.5 in real time and feeds it straight to the AirCasting map. You can watch how your air changes as you cook, commute, or move between neighborhoods, and share what you find with your community.
 
-Communities are already doing this. In New York City, neighborhood groups used AirBeams to [map air pollution block by block](https://www.habitatmap.org/blog/nyc-community-organizations-use-aircasting-to-study-hyperlocal-air-quality) and found levels far higher than official readings suggested.
+Communities are already doing this. In New York City, neighborhood groups used AirBeams to [map air pollution block by block](https://www.habitatmap.org/blog/nyc-community-organizations-use-aircasting-to-study-hyperlocal-air-quality-1) and found levels far higher than official readings suggested.
 
 ## Making air quality easy to understand
 
