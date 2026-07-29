@@ -1,0 +1,18 @@
+# FAQ subset for the Institutional landing page (researchers, educators, advocates).
+# NOTE: the last two answers are pending confirmation from Michael (lead time / data governance).
+# They state only what is currently confirmed; refine before launch.
+questions:
+  - q: "Do you offer bulk or education pricing?"
+    a: "The price is the same whether you buy one unit or fifty. As a non-profit, we keep the AirBeam as affordable as we can for classrooms, researchers, and community groups. For purchase orders or education, email us and we will set up the paperwork."
+  - q: "Can we keep data off your servers?"
+    a: "Yes. The backend is open source and the app can point at your own server. It takes one IT step, and we have a setup guide."
+  - q: "Is the accuracy defensible for research?"
+    a: "The AirBeam Mini has been independently evaluated for PM2.5 by South Coast AQMD's AQ-SPEC program. We share the report on request."
+  - q: "What formats can we export?"
+    a: "CSV and Excel, as a ZIP by email or session link."
+  - q: "Can we set the sampling rate?"
+    a: "Yes, on the current Mini. Set how often it records to match your other instruments."
+  - q: "How long does a bulk order take, and do you ship internationally?"
+    a: "Single units ship immediately, and we ship both within the US and internationally. For bulk order lead times, email us and we will confirm current timing."
+  - q: "Can we use AirBeam data in IRB-approved research, and how is data governed?"
+    a: "You own and can export your data, and you can self-host to keep it off AirCasting. For IRB and data-governance specifics, get in touch and we will walk through your requirements."

@@ -1,0 +1,24 @@
+{% comment %} Institutional LP — Primary CTA. Consult-primary, bulk-secondary. Netlify lead form. {% endcomment %}
+<section class="panel inst-consult reveal-section">
+  <div class="inst-consult__container reveal-content">
+    <div class="inst-consult__intro">
+      <span class="inst-consult__eyebrow reveal-header">Equip your whole team</span>
+      <h2 class="inst-consult__title reveal-header">Tell us what you are measuring.</h2>
+      <p class="inst-consult__body reveal-body">
+        A short call, and we help you scope the right setup, sampling, and volume. Bulk pricing available from 5 units.
+      </p>
+      <p class="inst-consult__microcopy reveal-body">
+        Name, email, and one line on your project. That is all we need to start.
+      </p>
+      <a class="inst-consult__bulk" href="mailto:info@habitatmap.org?subject=Request%20bulk%20pricing">Request bulk pricing →</a>
+    </div>
+
+    <form name="institutional-consultation" class="inst-consult__form reveal-fade" method="post" data-netlify="true">
+      <input type="hidden" name="subject" value="New institutional consultation request" />
+      <input name="name" type="text" placeholder="YOUR NAME" class="conversion-form__input u--block" required autocomplete="name" />
+      <input name="email" type="email" placeholder="YOUR EMAIL ADDRESS" class="conversion-form__input u--block" required autocomplete="email" />
+      <textarea name="project" placeholder="ONE LINE ON YOUR PROJECT" class="conversion-form__input u--block" rows="3" required></textarea>
+      <input type="submit" value="Book a free consultation" class="button button--cta input--full-width" />
+    </form>
+  </div>
+</section>
