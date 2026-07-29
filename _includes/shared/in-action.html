@@ -1,10 +1,10 @@
-<!-- Videos Section -->
-<section id="videos-section" class="panel videos-section reveal-section">
+{% comment %} Shared: In Action / videos section. Params: eyebrow, title, subtitle, variant (e.g. "videos-section--portrait") {% endcomment %}
+<section id="videos-section" class="panel videos-section reveal-section{% if include.variant %} {{ include.variant }}{% endif %}">
   <div class="videos-container">
     <div class="videos-header reveal-content">
-      <span class="videos-eyebrow reveal-header">In Action</span>
-      <h2 class="videos-title reveal-header">Mini Daily Use</h2>
-      <p class="videos-subtitle reveal-body">See how easy it is to start monitoring air quality</p>
+      <span class="videos-eyebrow reveal-header">{{ include.eyebrow | default: "In Action" }}</span>
+      <h2 class="videos-title reveal-header">{{ include.title | default: "Mini Daily Use" }}</h2>
+      <p class="videos-subtitle reveal-body">{{ include.subtitle | default: "See how easy it is to start monitoring air quality" }}</p>
     </div>
 
     <div class="videos-grid reveal-stagger">
