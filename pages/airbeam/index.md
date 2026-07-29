@@ -89,13 +89,13 @@ hasMerchantReturnPolicy:
 
 {% include buy-it-now/testimonials-section.html %}
 
-{% include buy-it-now/videos-section.html %}
+{% include shared/in-action.html %}
 
 {% include buy-it-now/features-section.html %}
 
 {% include buy-it-now/aircasting-apps-section.html %}
 
-{% include buy-it-now/global-movement-section.html %}
+{% include shared/global-movement.html %}
 
 {% include buy-it-now/technical-section.html %}
 
