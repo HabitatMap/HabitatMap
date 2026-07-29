@@ -1,6 +1,6 @@
 // Individual landing page (/airbeam/individual/)
-// Calm, family-first sections. Reuses brand tokens; shares .features-section
-// and .faq-section styling from their own modules.
+// Calm, family-first sections. Reuses brand tokens; shares .faq-section
+// styling from its own module.
 
 // AirCasting PM2.5 heat-scale colors (matches aircasting.org map markers)
 $aq-green: #6fc44c;
@@ -15,6 +15,29 @@ $ilp-tint-street: #f7faf7;
 $ilp-tint-meaning: #f2f8f3;
 $ilp-tint-setup: #f5f8f5;
 $ilp-tint-movement: #eff7f0;
+
+// Canonical section eyebrow + title (matches the Buy It Now page)
+@mixin ilp-eyebrow {
+  display: block;
+  font-family: $body-font;
+  font-size: $base-font-size-2;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: $green;
+  margin: 0 0 $u-space-small;
+}
+
+@mixin ilp-title {
+  font-family: $bold-font;
+  font-size: clamp(2rem, 3vw, 2.75rem);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  color: $gray-dark;
+  margin: 0 0 $u-space-small;
+}
 
 // ---- Hero ----------------------------------------------------------------
 .ilp-hero {
@@ -40,13 +63,7 @@ $ilp-tint-movement: #eff7f0;
   }
 
   &__eyebrow {
-    display: block;
-    font-family: $bold-font;
-    text-transform: uppercase;
-    letter-spacing: 0.12em;
-    font-size: $base-font-size-1;
-    color: $hm-brand;
-    margin-bottom: $u-space-small;
+    @include ilp-eyebrow;
   }
 
   &__title {
@@ -138,21 +155,11 @@ $ilp-tint-movement: #eff7f0;
   &__visual  { flex: 1 1 52%; }
 
   &__eyebrow {
-    display: block;
-    font-family: $bold-font;
-    text-transform: uppercase;
-    letter-spacing: 0.12em;
-    font-size: $base-font-size-1;
-    color: $hm-brand;
-    margin-bottom: $u-space-small;
+    @include ilp-eyebrow;
   }
 
   &__title {
-    font-family: $bold-font;
-    color: $gray-dark;
-    font-size: clamp(1.8rem, 4vw, 2.6rem);
-    line-height: 1.15;
-    margin: 0 0 $u-space-small;
+    @include ilp-title;
   }
 
   &__body {
@@ -298,21 +305,11 @@ $ilp-tint-movement: #eff7f0;
   &__card    { flex: 1 1 42%; }
 
   &__eyebrow {
-    display: block;
-    font-family: $bold-font;
-    text-transform: uppercase;
-    letter-spacing: 0.12em;
-    font-size: $base-font-size-1;
-    color: $hm-brand;
-    margin-bottom: $u-space-small;
+    @include ilp-eyebrow;
   }
 
   &__title {
-    font-family: $bold-font;
-    color: $gray-dark;
-    font-size: clamp(1.8rem, 4vw, 2.6rem);
-    line-height: 1.15;
-    margin: 0 0 $u-space-small;
+    @include ilp-title;
   }
 
   &__body {
@@ -440,20 +437,11 @@ $ilp-tint-movement: #eff7f0;
   }
 
   &__eyebrow {
-    display: block;
-    font-family: $bold-font;
-    text-transform: uppercase;
-    letter-spacing: 0.12em;
-    font-size: $base-font-size-1;
-    color: $hm-brand;
-    margin-bottom: $u-space-small;
+    @include ilp-eyebrow;
   }
 
   &__title {
-    font-family: $bold-font;
-    color: $gray-dark;
-    font-size: clamp(1.8rem, 4vw, 2.6rem);
-    margin: 0 0 $u-space-small;
+    @include ilp-title;
   }
 
   &__subtitle {
@@ -554,20 +542,11 @@ $ilp-tint-movement: #eff7f0;
   }
 
   &__eyebrow {
-    display: block;
-    font-family: $bold-font;
-    text-transform: uppercase;
-    letter-spacing: 0.12em;
-    font-size: $base-font-size-1;
-    color: $hm-brand;
-    margin-bottom: $u-space-small;
+    @include ilp-eyebrow;
   }
 
   &__title {
-    font-family: $bold-font;
-    color: $gray-dark;
-    font-size: clamp(1.8rem, 4vw, 2.4rem);
-    margin: 0 0 $u-space-small;
+    @include ilp-title;
   }
 
   &__body {
@@ -639,20 +618,11 @@ $ilp-tint-movement: #eff7f0;
   }
 
   &__eyebrow {
-    display: block;
-    font-family: $bold-font;
-    text-transform: uppercase;
-    letter-spacing: 0.12em;
-    font-size: $base-font-size-1;
-    color: $hm-brand;
-    margin-bottom: $u-space-small;
+    @include ilp-eyebrow;
   }
 
   &__title {
-    font-family: $bold-font;
-    color: $gray-dark;
-    font-size: clamp(1.8rem, 4vw, 2.6rem);
-    margin: 0 0 $u-space-default;
+    @include ilp-title;
   }
 
   &__stats {
@@ -700,40 +670,6 @@ $ilp-tint-movement: #eff7f0;
     font-size: 0.85rem;
     color: $gray;
   }
-}
-
-// ---- One canonical eyebrow + title for every section, matching Buy It Now -
-// Full property set so all sections render identically regardless of the
-// per-section rules above (size, colour, and style are all normalised here).
-.ilp-hero__eyebrow,
-.ilp-difference__eyebrow,
-.ilp-meaning__eyebrow,
-.ilp-live__eyebrow,
-.ilp-setup__eyebrow,
-.ilp-movement__eyebrow {
-  display: block;
-  font-family: $body-font;
-  font-size: $base-font-size-2;
-  font-weight: 600;
-  line-height: 1.2;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: $green;
-  margin: 0 0 $u-space-small;
-}
-
-.ilp-difference__title,
-.ilp-meaning__title,
-.ilp-live__title,
-.ilp-setup__title,
-.ilp-movement__title {
-  font-family: $bold-font;
-  font-size: clamp(2rem, 3vw, 2.75rem);
-  font-weight: 700;
-  line-height: 1.15;
-  letter-spacing: -0.03em;
-  color: $gray-dark;
-  margin: 0 0 $u-space-small;
 }
 
 // Shared sections used on this page (In Action, buy block, FAQ) — force
