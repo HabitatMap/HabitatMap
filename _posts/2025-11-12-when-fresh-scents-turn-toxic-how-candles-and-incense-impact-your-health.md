@@ -2,7 +2,7 @@
 layout: post
 title: "When Fresh Scents Turn Toxic: How Candles and Incense Impact Your Health"
 date: 2025-11-12
-last_modified_at: 2026-07-16
+last_modified_at: 2026-07-29
 featured: false
 author: Michael Heimbinder
 image: /images/uploads/burning-candles-zz-230419-5dd288.avif

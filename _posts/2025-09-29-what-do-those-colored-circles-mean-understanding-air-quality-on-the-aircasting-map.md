@@ -2,7 +2,7 @@
 layout: post
 title: What Do Those Colored Dots Mean? Understanding the Air Quality Index (AQI)
 date: 2025-09-29
-last_modified_at: 2026-07-14
+last_modified_at: 2026-07-29
 featured: true
 author: Kayla Pasacreta & Michael Heimbinder
 image: /images/uploads/aircastingmapdots.png
