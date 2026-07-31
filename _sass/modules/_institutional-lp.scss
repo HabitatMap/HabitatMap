@@ -432,13 +432,23 @@ $inst-tint-movement: #eff7f0;
 
   &__container {
     @include inst-container;
-    max-width: 1180px;
+    max-width: 1240px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $u-space-default;
+    align-items: start;
+
+    @media (min-width: $tablet-min) {
+      grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+      column-gap: 3rem;
+    }
   }
 
-  &__header {
-    max-width: 46rem;
-    margin: 0 auto $u-space-default;
-    text-align: center;
+  &__intro {
+    @media (min-width: $tablet-min) {
+      position: sticky;
+      top: 2rem;
+    }
   }
 
   &__eyebrow { @include inst-eyebrow; }
@@ -448,23 +458,34 @@ $inst-tint-movement: #eff7f0;
     color: $text-color;
     font-size: $base-font-size1;
     line-height: 1.6;
+    margin: 0 0 $u-space-default;
+  }
+
+  &__media {
     margin: 0;
+    border-radius: 1.25rem;
+    overflow: hidden;
+    background: $white;
+    border: 1px solid rgba($gray-dark, 0.08);
+    box-shadow: 0 24px 48px -32px rgba($gray-dark, 0.5);
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+    }
   }
 
   &__footer {
     display: flex;
     flex-direction: column;
-    gap: 0.4rem;
-    align-items: center;
+    gap: 0.3rem;
+    align-items: flex-start;
     margin-top: $u-space-default;
     color: $text-color;
     font-size: 0.95rem;
-
-    @media (min-width: $large-mobile-min) {
-      flex-direction: row;
-      justify-content: center;
-      gap: 0.7rem;
-    }
   }
 
   &__report-link {
@@ -475,56 +496,45 @@ $inst-tint-movement: #eff7f0;
     &::after {
       content: " →";
     }
+
+    &:hover,
+    &:focus-visible {
+      text-decoration: underline;
+      text-underline-offset: 0.2em;
+    }
   }
 }
 
-.inst-spec-sheet {
+.inst-spec-grid {
   display: grid;
-  gap: 0;
-  border-top: 1px solid rgba($inst-accent, 0.11);
+  grid-template-columns: 1fr;
+  gap: $u-space-small;
+
+  @media (min-width: $large-mobile-min) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
-.inst-spec-row {
-  display: grid;
-  grid-template-columns: auto minmax(0, 1fr);
-  gap: 1rem;
-  align-items: start;
-  padding: clamp(1.25rem, 2.5vw, 1.8rem) 0;
-  background: transparent;
-  border-bottom: 1px solid rgba($inst-accent, 0.11);
+.inst-spec-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  padding: clamp(1.25rem, 2.4vw, 1.6rem);
+  background: $white;
+  border: 1px solid rgba($gray-dark, 0.1);
+  border-radius: 1rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
 
-  @media (min-width: $tablet-min) {
-    grid-template-columns: auto minmax(10rem, 0.95fr) minmax(18rem, 1.35fr);
-    align-items: center;
-    gap: 1.25rem;
-  }
-
-  &__icon {
-    display: grid;
-    place-items: center;
-    width: 3rem;
-    height: 3rem;
-    color: $inst-accent;
-    background: $white;
-    border: 1px solid rgba($inst-accent, 0.12);
-    border-radius: 50%;
-
-    svg {
-      width: 1.35rem;
-      height: 1.35rem;
-    }
-  }
-
-  &__content {
-    display: grid;
-    gap: 0.25rem;
-
-    @media (min-width: $tablet-min) {
-      display: contents;
-    }
+  &:hover {
+    border-color: rgba($inst-accent, 0.25);
+    box-shadow: 0 18px 30px -22px rgba($gray-dark, 0.3);
+    transform: translateY(-2px);
   }
 
   &__label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
     color: $inst-accent;
     font-family: $bold-font;
     font-size: 0.72rem;
@@ -534,45 +544,32 @@ $inst-tint-movement: #eff7f0;
     text-transform: uppercase;
   }
 
+  &__icon {
+    display: inline-grid;
+    place-items: center;
+    color: $inst-accent;
+    flex: 0 0 auto;
+
+    svg {
+      width: 1.1rem;
+      height: 1.1rem;
+    }
+  }
+
   &__value {
     color: $gray-dark;
     font-family: $bold-font;
-    font-size: clamp(1.25rem, 2vw, 1.75rem);
+    font-size: clamp(1.2rem, 1.8vw, 1.45rem);
     letter-spacing: -0.02em;
-    line-height: 1.15;
+    line-height: 1.2;
     margin: 0;
   }
 
   &__desc {
     color: $text-color;
-    font-size: clamp(0.95rem, 1.4vw, 1.05rem);
+    font-size: 0.95rem;
     line-height: 1.5;
     margin: 0;
-  }
-
-  @media (min-width: $tablet-min) {
-    &__label {
-      grid-column: 2;
-    }
-
-    &__value {
-      grid-column: 2;
-    }
-
-    &__desc {
-      grid-column: 3;
-      grid-row: 1 / span 2;
-    }
-  }
-}
-
-@media (hover: hover) {
-  .inst-spec-row {
-    transition: border-color 0.2s ease;
-
-    &:hover {
-      border-color: rgba($inst-accent, 0.2);
-    }
   }
 }
 
