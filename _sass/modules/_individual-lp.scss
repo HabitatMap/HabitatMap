@@ -145,7 +145,7 @@ $ilp-tint-movement: #eff7f0;
     gap: $u-space-default;
 
     @media (min-width: $tablet-min) {
-      flex-direction: row;
+      flex-direction: row-reverse;
       align-items: center;
       gap: 4rem;
     }
