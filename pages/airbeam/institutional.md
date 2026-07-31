@@ -23,6 +23,8 @@ image: /assets/img/airbeam-buy-it-now.jpg
 
 {% include institutional/consultation-cta.html %}
 
+{% include institutional/resources.html %}
+
 {% include institutional/faq.html %}
 
 {% include slider-init.html %}
