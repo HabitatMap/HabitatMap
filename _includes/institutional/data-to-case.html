@@ -5,21 +5,52 @@
       <span class="inst-data-case__eyebrow reveal-header">From raw data to a case</span>
       <h2 class="inst-data-case__title reveal-header">Turn readings into something people act on.</h2>
       <p class="inst-data-case__body reveal-body">
-        Data loss destroys credibility, and so does data no one can read. Turn raw readings into a shareable map or report your community and local officials understand.
+        Data loss destroys credibility, and so does data no one can read. Turn raw CSV readings into a graph or report your community and local officials understand.
       </p>
     </div>
 
     <div class="inst-data-case__visual reveal-fade" aria-hidden="true">
-      <div class="inst-flow">
-        <div class="inst-flow__step inst-flow__step--raw">
-          <span class="inst-flow__label">Raw readings</span>
-          <code class="inst-flow__data">12.4, 37.1, 41.8, 28.0 µg/m³ …</code>
+      <div class="inst-csv-transform">
+        <div class="inst-csv-transform__panel">
+          <div class="inst-csv-transform__header">
+            <span>Export</span>
+            <strong>readings.csv</strong>
+          </div>
+          <div class="inst-csv-table">
+            <div><span>time</span><span>pm2.5</span><span>lat</span></div>
+            <div><span>08:45</span><strong>8</strong><span>40.71</span></div>
+            <div><span>08:50</span><strong>14</strong><span>40.72</span></div>
+            <div><span>08:55</span><strong>47</strong><span>40.72</span></div>
+            <div><span>09:00</span><strong>31</strong><span>40.73</span></div>
+          </div>
         </div>
-        <svg class="inst-flow__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg>
-        <div class="inst-flow__step inst-flow__step--case">
-          <span class="inst-flow__label">A shareable report</span>
-          <span class="inst-flow__report">Map · chart · plain-language summary</span>
+
+        <div class="inst-csv-transform__arrow">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg>
         </div>
+
+        <div class="inst-csv-transform__panel inst-csv-transform__panel--chart">
+          <div class="inst-csv-transform__header">
+            <span>Graph</span>
+            <strong>PM2.5 over time</strong>
+          </div>
+          <div class="inst-csv-chart">
+            <span class="inst-csv-chart__gridline inst-csv-chart__gridline--top">55</span>
+            <span class="inst-csv-chart__gridline inst-csv-chart__gridline--mid">35</span>
+            <span class="inst-csv-chart__gridline inst-csv-chart__gridline--low">9</span>
+            <svg viewBox="0 0 560 180" fill="none">
+              <path d="M18 148H130C138 148 142 140 150 132L214 72C226 60 244 63 256 78L304 138C314 150 330 151 342 141L386 104C402 90 420 93 434 110L474 154H542" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="214" cy="72" r="7" fill="currentColor"/>
+              <circle cx="386" cy="104" r="7" fill="currentColor"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="inst-evidence-points">
+        <span>Export CSV</span>
+        <span>Graph trends</span>
+        <span>Explain the spike</span>
       </div>
     </div>
   </div>

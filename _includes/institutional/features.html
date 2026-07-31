@@ -1,60 +1,145 @@
-{% comment %} Institutional LP — Features you already have. Confirmed-live only. Native details expanders. {% endcomment %}
+{% comment %} Institutional LP — Features you already have. Column capability layout with item-level expanders. {% endcomment %}
 <section class="panel inst-features reveal-section">
   <div class="inst-features__container">
     <div class="inst-features__header reveal-content">
-      <span class="inst-features__eyebrow reveal-header">Features you already have</span>
-      <h2 class="inst-features__title reveal-header">You can already do more than you think.</h2>
-      <p class="inst-features__subtitle reveal-body">Here is what ships today.</p>
+      <div>
+        <span class="inst-features__eyebrow reveal-header">Features you already have</span>
+        <h2 class="inst-features__title reveal-header">You can already do more than you think.</h2>
+      </div>
+      <p class="inst-features__subtitle reveal-body">
+        AirBeam gives your team control before, during, and after each session — without adding complexity to fieldwork.
+      </p>
     </div>
 
-    <div class="inst-features__grid reveal-stagger">
-      <div class="inst-feature reveal-child">
-        <h3 class="inst-feature__title">Export analysis-ready data</h3>
-        <p class="inst-feature__proof">CSV and Excel, delivered as a ZIP by email or a session link.</p>
-        <details class="inst-feature__expand"><summary>How to export a session</summary>
-          <p>Open a completed session in the AirCasting app or on aircasting.org and choose export. You receive a ZIP with CSV and Excel files by email or as a shareable session link.</p>
-        </details>
-      </div>
+    <div class="inst-features__columns">
+      <article class="inst-feature-column">
+        <h3 class="inst-feature-column__title">Own your data</h3>
+        <p class="inst-feature-column__copy">Move it, host it, or keep it off public maps. You decide where every reading lives.</p>
 
-      <div class="inst-feature reveal-child">
-        <h3 class="inst-feature__title">Keep your data in-house</h3>
-        <p class="inst-feature__proof">The backend is open source, and the app can point at your own server, so sessions stay off AirCasting. Plan for one IT step, or follow our setup guide.</p>
-        <details class="inst-feature__expand"><summary>How self-hosting works</summary>
-          <p>Deploy the open-source AirCasting backend on your own server and point the app at it. It takes one IT step; our setup guide walks through it. Turning off crowd-map contribution keeps a session unlisted, not private — for true privacy, self-host.</p>
-        </details>
-      </div>
+        <div class="inst-feature-list">
+          <details class="inst-feature-item">
+            <summary class="inst-feature-item__summary">
+              <span class="inst-feature-item__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="M7 10l5 5 5-5"/><path d="M5 19h14"/></svg>
+              </span>
+              <span class="inst-feature-item__text">
+                <span class="inst-feature-item__title">Export analysis-ready data</span>
+                <span class="inst-feature-item__proof">CSV and Excel, delivered as a ZIP by email or a session link.</span>
+              </span>
+              <span class="inst-feature-item__chevron" aria-hidden="true"></span>
+            </summary>
+            <p class="inst-feature-item__detail">Open a completed session in the AirCasting app or on aircasting.org and choose export. You receive a ZIP with CSV and Excel files by email or as a shareable session link.</p>
+          </details>
 
-      <div class="inst-feature reveal-child">
-        <h3 class="inst-feature__title">Control your sampling rate</h3>
-        <p class="inst-feature__proof">Set how often the Mini records, to match co-deployed instruments and manage data volume.</p>
-        <details class="inst-feature__expand"><summary>Where to set the sampling rate</summary>
-          <p>Set the recording interval in the AirCasting app before you start a session, so the Mini matches your other instruments and keeps data volume manageable.</p>
-        </details>
-      </div>
+          <details class="inst-feature-item">
+            <summary class="inst-feature-item__summary">
+              <span class="inst-feature-item__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l7 4v6c0 5-3.5 8-7 10-3.5-2-7-5-7-10V6l7-4z"/><path d="M9 12l2 2 4-4"/></svg>
+              </span>
+              <span class="inst-feature-item__text">
+                <span class="inst-feature-item__title">Keep your data in-house</span>
+                <span class="inst-feature-item__proof">The backend is open source, and the app can point at your own server.</span>
+              </span>
+              <span class="inst-feature-item__chevron" aria-hidden="true"></span>
+            </summary>
+            <p class="inst-feature-item__detail">Deploy the open-source AirCasting backend on your own server and point the app at it. Turning off crowd-map contribution keeps a session unlisted, not private — for true privacy, self-host.</p>
+          </details>
+        </div>
+      </article>
 
-      <div class="inst-feature reveal-child">
-        <h3 class="inst-feature__title">Set alerts, get emailed</h3>
-        <p class="inst-feature__proof">Set a threshold in the app and get notified by email.</p>
-        <details class="inst-feature__expand"><summary>How to set an alert</summary>
-          <p>In the app, set a threshold on the measurement you care about. When a reading crosses it, you get an email — no need to watch the screen.</p>
-        </details>
-      </div>
+      <article class="inst-feature-column">
+        <h3 class="inst-feature-column__title">Shape the session</h3>
+        <p class="inst-feature-column__copy">Tune how AirBeam records and let it tell you when conditions change.</p>
 
-      <div class="inst-feature reveal-child">
-        <h3 class="inst-feature__title">Follow other monitors</h3>
-        <p class="inst-feature__proof">Track nearby fixed and government sessions alongside your own.</p>
-        <details class="inst-feature__expand"><summary>How to follow a monitor</summary>
-          <p>Search the map for a nearby fixed or government session and follow it, so it appears alongside your own readings for comparison.</p>
-        </details>
-      </div>
+        <div class="inst-feature-list">
+          <details class="inst-feature-item">
+            <summary class="inst-feature-item__summary">
+              <span class="inst-feature-item__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h10"/><path d="M4 17h16"/><circle cx="17" cy="7" r="3"/><circle cx="9" cy="17" r="3"/></svg>
+              </span>
+              <span class="inst-feature-item__text">
+                <span class="inst-feature-item__title">Control your sampling rate</span>
+                <span class="inst-feature-item__proof">Match co-deployed instruments and manage data volume precisely.</span>
+              </span>
+              <span class="inst-feature-item__chevron" aria-hidden="true"></span>
+            </summary>
+            <p class="inst-feature-item__detail">Set the recording interval in the AirCasting app before you start a session, so the Mini matches your other instruments and keeps data volume manageable.</p>
+          </details>
 
-      <div class="inst-feature reveal-child">
-        <h3 class="inst-feature__title">See it all on the map</h3>
-        <p class="inst-feature__proof">aircasting.org shows the full public map. The app shows your sessions plus nearby outdoor fixed and government sessions.</p>
-        <details class="inst-feature__expand"><summary>Open the map</summary>
-          <p>Open aircasting.org for every public session worldwide. In the app you get your own sessions plus nearby outdoor fixed and government monitors, so you can compare on the go.</p>
-        </details>
-      </div>
+          <details class="inst-feature-item">
+            <summary class="inst-feature-item__summary">
+              <span class="inst-feature-item__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 10-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9"/><path d="M10 21h4"/></svg>
+              </span>
+              <span class="inst-feature-item__text">
+                <span class="inst-feature-item__title">Set alerts, get emailed</span>
+                <span class="inst-feature-item__proof">Choose a threshold in the app and get notified when it is crossed.</span>
+              </span>
+              <span class="inst-feature-item__chevron" aria-hidden="true"></span>
+            </summary>
+            <p class="inst-feature-item__detail">In the app, set a threshold on the measurement you care about. When a reading crosses it, you get an email — no need to watch the screen.</p>
+          </details>
+        </div>
+      </article>
+
+      <article class="inst-feature-column">
+        <h3 class="inst-feature-column__title">See the bigger picture</h3>
+        <p class="inst-feature-column__copy">Put your readings in context with nearby monitors and the public map.</p>
+
+        <div class="inst-feature-list">
+          <details class="inst-feature-item">
+            <summary class="inst-feature-item__summary">
+              <span class="inst-feature-item__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="12" r="4"/><circle cx="16" cy="12" r="4"/><path d="M12 8v8"/></svg>
+              </span>
+              <span class="inst-feature-item__text">
+                <span class="inst-feature-item__title">Follow other monitors</span>
+                <span class="inst-feature-item__proof">Track nearby fixed and government sessions alongside your own.</span>
+              </span>
+              <span class="inst-feature-item__chevron" aria-hidden="true"></span>
+            </summary>
+            <p class="inst-feature-item__detail">Search the map for a nearby fixed or government session and follow it, so it appears alongside your own readings for comparison.</p>
+          </details>
+
+          <details class="inst-feature-item">
+            <summary class="inst-feature-item__summary">
+              <span class="inst-feature-item__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l-6 3V6l6-3 6 3 6-3v15l-6 3-6-3z"/><path d="M9 3v15"/><path d="M15 6v15"/></svg>
+              </span>
+              <span class="inst-feature-item__text">
+                <span class="inst-feature-item__title">See it all on the map</span>
+                <span class="inst-feature-item__proof">Explore the full public air-quality map on aircasting.org.</span>
+              </span>
+              <span class="inst-feature-item__chevron" aria-hidden="true"></span>
+            </summary>
+            <p class="inst-feature-item__detail">Open aircasting.org for every public session worldwide. In the app you get your own sessions plus nearby outdoor fixed and government monitors, so you can compare on the go.</p>
+          </details>
+        </div>
+      </article>
     </div>
   </div>
 </section>
+
+<script>
+  (function() {
+    function initInstitutionalFeatures() {
+      var items = Array.prototype.slice.call(document.querySelectorAll('.inst-feature-item'));
+      if (!items.length) return;
+
+      items.forEach(function(item) {
+        item.addEventListener('toggle', function() {
+          if (!item.open) return;
+          items.forEach(function(otherItem) {
+            if (otherItem !== item) otherItem.open = false;
+          });
+        });
+      });
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initInstitutionalFeatures);
+    } else {
+      initInstitutionalFeatures();
+    }
+  })();
+</script>
