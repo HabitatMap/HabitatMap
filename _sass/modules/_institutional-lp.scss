@@ -39,7 +39,9 @@ $inst-tint-movement: #eff7f0;
 
 // ---- Hero ----------------------------------------------------------------
 .inst-hero {
-  background: radial-gradient(130% 95% at 50% -14%, $inst-hero-glow 0%, rgba(255, 255, 255, 0) 60%), $white;
+  background:
+    radial-gradient(115% 85% at 50% -6%, $inst-hero-glow 0%, rgba($inst-hero-glow, 0) 55%),
+    $white;
 
   &__container {
     @include inst-container;
@@ -83,6 +85,30 @@ $inst-tint-movement: #eff7f0;
     margin-bottom: $u-space-small;
   }
 
+  &__primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: $cta-color;
+    border-color: transparent;
+    color: $gray-dark;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+
+    &::after {
+      content: "→";
+      transition: transform 0.2s ease;
+    }
+
+    &:hover {
+      background: lighten($cta-color, 6%);
+      transform: translateY(-2px);
+      box-shadow: 0 12px 22px -10px rgba($gray-dark, 0.3);
+
+      &::after { transform: translateX(3px); }
+    }
+  }
+
   &__secondary {
     display: inline-flex;
     align-items: center;
@@ -108,10 +134,10 @@ $inst-tint-movement: #eff7f0;
 
   &__image-wrapper {
     position: relative;
-    border-radius: 1.5rem;
+    border-radius: 1.75rem;
     overflow: hidden;
     aspect-ratio: 4 / 3;
-    box-shadow: 0 20px 40px -18px rgba($gray-dark, 0.35);
+    box-shadow: 0 16px 40px -30px rgba($gray-dark, 0.28);
   }
 
   &__image { width: 100%; height: 100%; object-fit: cover; display: block; }
@@ -119,7 +145,7 @@ $inst-tint-movement: #eff7f0;
 
 // ---- Credibility + peer proof --------------------------------------------
 .inst-credibility {
-  background: $white;
+  background: linear-gradient(165deg, $inst-hero-glow 0%, $inst-tint-street 100%);
 
   &__container {
     @include inst-container;
@@ -146,7 +172,7 @@ $inst-tint-movement: #eff7f0;
 // FAQ reuses global buy-it-now FAQ markup, but the institutional page keeps
 // section headings on the same local type scale as the rest of this page.
 .inst-faq {
-  background-color: $inst-tint-street;
+  background: $white;
 
   .faq-eyebrow {
     @include inst-eyebrow;
@@ -161,15 +187,15 @@ $inst-tint-movement: #eff7f0;
   display: flex;
   flex-direction: column;
   background: $white;
-  border: 1px solid rgba($gray-dark, 0.1);
-  border-radius: 1rem;
+  border: 1px solid rgba($gray-dark, 0.06);
+  border-radius: 1.5rem;
   padding: $u-space-small;
   text-decoration: none;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
 
   &:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 18px 30px -18px rgba($gray-dark, 0.3);
+    border-color: rgba($inst-accent, 0.16);
+    box-shadow: 0 14px 34px -28px rgba($gray-dark, 0.22);
   }
 
   &__tag {
@@ -211,7 +237,7 @@ $inst-tint-movement: #eff7f0;
 
 // ---- Features (details expanders) ----------------------------------------
 .inst-features {
-  background: $inst-tint-street;
+  background: $white;
 
   &__container {
     @include inst-container;
@@ -255,13 +281,13 @@ $inst-tint-movement: #eff7f0;
 .inst-feature-column {
   display: block;
   align-self: start;
-  padding: 2rem 0;
+  padding: 1.25rem 0;
 
   @media (min-width: $tablet-min) {
     display: grid;
-    grid-template-rows: 5.7rem 5.5rem auto;
+    grid-template-rows: auto 3.9rem 5.5rem auto;
     row-gap: 0.75rem;
-    padding: 2.75rem 1.35rem 2.5rem;
+    padding: 0.5rem 1.35rem 2.5rem;
 
     &:not(:last-child) {
       border-right: 1px solid rgba($inst-accent, 0.12);
@@ -269,16 +295,37 @@ $inst-tint-movement: #eff7f0;
   }
 
   @media (min-width: $small-desktop-min) {
-    grid-template-rows: 5.45rem 5.25rem auto;
-    padding: 3rem 2rem 2.5rem;
+    grid-template-rows: auto 3.9rem 5.25rem auto;
+    padding: 0.5rem 2rem 2.5rem;
+  }
+
+  &__icon {
+    display: grid;
+    place-items: center;
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: 1rem;
+    color: $inst-accent;
+    background: rgba($inst-accent, 0.1);
+    border-radius: 50%;
+
+    svg {
+      width: 1.45rem;
+      height: 1.45rem;
+    }
+
+    @media (min-width: $tablet-min) {
+      align-self: end;
+      margin-bottom: 0;
+    }
   }
 
   &__title {
     color: $gray-dark;
     font-family: $bold-font;
-    font-size: clamp(1.7rem, 2.4vw, 2.15rem);
-    line-height: 1.1;
-    letter-spacing: -0.03em;
+    font-size: clamp(1.45rem, 2vw, 1.75rem);
+    line-height: 1.15;
+    letter-spacing: -0.02em;
     margin: 0 0 1rem;
 
     @media (min-width: $tablet-min) {
@@ -314,8 +361,7 @@ $inst-tint-movement: #eff7f0;
   border-bottom: 1px solid rgba($inst-accent, 0.14);
 
   &[open] {
-    .inst-feature-item__title,
-    .inst-feature-item__icon {
+    .inst-feature-item__title {
       color: $inst-accent;
     }
 
@@ -330,8 +376,8 @@ $inst-tint-movement: #eff7f0;
 
   &__summary {
     display: grid;
-    grid-template-columns: auto minmax(0, 1fr) auto;
-    gap: 1rem;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 1.5rem;
     align-items: start;
     padding: 1.4rem 0;
     cursor: pointer;
@@ -347,22 +393,6 @@ $inst-tint-movement: #eff7f0;
 
     @media (min-width: $tablet-min) {
       min-height: 10rem;
-    }
-  }
-
-  &__icon {
-    display: grid;
-    place-items: center;
-    width: 1.6rem;
-    height: 1.6rem;
-    flex: 0 0 auto;
-    margin-top: 0.05rem;
-    color: rgba($gray-dark, 0.45);
-    transition: color 0.2s ease;
-
-    svg {
-      width: 1.35rem;
-      height: 1.35rem;
     }
   }
 
@@ -422,13 +452,13 @@ $inst-tint-movement: #eff7f0;
     color: $text-color;
     font-size: 0.95rem;
     line-height: 1.55;
-    margin: -0.35rem 2.5rem 1.5rem 2.6rem;
+    margin: -0.35rem 2.5rem 1.5rem 0;
   }
 }
 
 // ---- Specifications ------------------------------------------------------
 .inst-specs {
-  background: $inst-tint-setup;
+  background: $white;
 
   &__container {
     @include inst-container;
@@ -463,11 +493,11 @@ $inst-tint-movement: #eff7f0;
 
   &__media {
     margin: 0;
-    border-radius: 1.25rem;
+    border-radius: 1.75rem;
     overflow: hidden;
     background: $white;
-    border: 1px solid rgba($gray-dark, 0.08);
-    box-shadow: 0 24px 48px -32px rgba($gray-dark, 0.5);
+    border: 1px solid rgba($gray-dark, 0.05);
+    box-shadow: 0 16px 40px -30px rgba($gray-dark, 0.28);
 
     img {
       display: block;
@@ -519,16 +549,15 @@ $inst-tint-movement: #eff7f0;
   display: flex;
   flex-direction: column;
   gap: 0.55rem;
-  padding: clamp(1.25rem, 2.4vw, 1.6rem);
+  padding: clamp(1.4rem, 2.5vw, 1.85rem);
   background: $white;
-  border: 1px solid rgba($gray-dark, 0.1);
-  border-radius: 1rem;
-  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+  border: 1px solid rgba($gray-dark, 0.06);
+  border-radius: 1.5rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
 
   &:hover {
-    border-color: rgba($inst-accent, 0.25);
-    box-shadow: 0 18px 30px -22px rgba($gray-dark, 0.3);
-    transform: translateY(-2px);
+    border-color: rgba($inst-accent, 0.16);
+    box-shadow: 0 14px 34px -28px rgba($gray-dark, 0.22);
   }
 
   &__label {
@@ -575,84 +604,88 @@ $inst-tint-movement: #eff7f0;
 
 // ---- Classrooms ----------------------------------------------------------
 .inst-classrooms {
-  background: $inst-tint-meaning;
+  background: linear-gradient(165deg, $inst-hero-glow 0%, $inst-tint-street 100%);
 
   &__container {
     @include inst-container;
-    max-width: 960px;
+    max-width: 1120px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 1.5rem;
+    gap: 1.75rem;
+    padding: clamp(1.75rem, 4vw, 3rem);
+    background: $white;
+    border: 1px solid rgba($inst-accent, 0.14);
+    border-radius: 1.75rem;
 
     @media (min-width: $tablet-min) {
       flex-direction: row;
-      align-items: flex-start;
-      gap: 2.25rem;
-    }
-  }
-
-  &__icon {
-    display: grid;
-    place-items: center;
-    width: 4rem;
-    height: 4rem;
-    flex: 0 0 auto;
-    color: $inst-accent;
-    background: $white;
-    border: 1px solid rgba($inst-accent, 0.12);
-    border-radius: 1.1rem;
-    box-shadow: 0 18px 40px -24px rgba($gray-dark, 0.5);
-
-    svg {
-      width: 1.75rem;
-      height: 1.75rem;
+      align-items: center;
+      gap: 2.5rem;
     }
   }
 
   &__content {
+    flex: 1 1 auto;
     max-width: 46rem;
   }
 
-  &__eyebrow { @include inst-eyebrow; }
+  &__eyebrow {
+    @include inst-eyebrow;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+
+    svg {
+      width: 1.05rem;
+      height: 1.05rem;
+    }
+  }
+
   &__title { @include inst-h2; }
 
   &__body {
     color: $text-color;
     font-size: $base-font-size1;
     line-height: 1.6;
-    margin: 0 0 $u-space-default;
+    margin: 0;
   }
 
-  &__link {
+  &__cta {
     display: inline-flex;
     align-items: center;
-    color: $inst-accent;
+    gap: 0.5rem;
+    flex: 0 0 auto;
+    padding: 0.95rem 1.6rem;
+    background: $inst-accent;
+    color: $white;
+    border-radius: 2rem;
     font-family: $bold-font;
+    font-size: 0.95rem;
     text-decoration: none;
-    transition: color 0.2s ease;
+    white-space: nowrap;
+    transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
 
-    &::after {
-      content: "→";
-      margin-left: 0.4rem;
+    svg {
+      width: 1.05rem;
+      height: 1.05rem;
       transition: transform 0.2s ease;
     }
 
     &:hover,
     &:focus-visible {
-      text-decoration: underline;
-      text-underline-offset: 0.2em;
+      background: darken($inst-accent, 6%);
+      transform: translateY(-2px);
+      box-shadow: 0 14px 26px -18px rgba($inst-accent, 0.7);
 
-      &::after {
-        transform: translateX(3px);
-      }
+      svg { transform: translateX(2px); }
     }
   }
 }
 
 // ---- Data to a case ------------------------------------------------------
 .inst-data-case {
-  background: $white;
+  background: linear-gradient(165deg, $inst-hero-glow 0%, $inst-tint-street 100%);
 
   &__container {
     @include inst-container;
@@ -698,8 +731,8 @@ $inst-tint-movement: #eff7f0;
     min-height: 17rem;
     padding: clamp(1rem, 2vw, 1.25rem);
     background: $white;
-    border: 1px solid rgba($inst-accent, 0.12);
-    border-radius: 1.25rem;
+    border: 1px solid rgba($gray-dark, 0.06);
+    border-radius: 1.5rem;
   }
 
   &__panel--chart {
@@ -847,9 +880,12 @@ $inst-tint-movement: #eff7f0;
 
 // ---- Resources -----------------------------------------------------------
 .inst-resources {
-  margin-top: $u-space-big;
-  padding-top: $u-space-default;
-  border-top: 1px solid rgba($inst-accent, 0.12);
+  background: linear-gradient(165deg, $inst-hero-glow 0%, $inst-tint-street 100%);
+
+  &__container {
+    @include inst-container;
+    max-width: 1240px;
+  }
 
   &__header { text-align: center; margin-bottom: $u-space-default; }
   &__eyebrow { @include inst-eyebrow; }
@@ -866,15 +902,57 @@ $inst-tint-movement: #eff7f0;
 }
 
 .inst-resource {
-  display: block;
+  display: flex;
+  flex-direction: column;
   background: $white;
-  border: 1px solid rgba($gray-dark, 0.1);
-  border-radius: 1rem;
-  padding: $u-space-small;
+  border: 1px solid rgba($gray-dark, 0.06);
+  border-radius: 1.5rem;
+  padding: clamp(1.25rem, 2.2vw, 1.6rem);
   text-decoration: none;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
 
-  &:hover { transform: translateY(-4px); box-shadow: 0 18px 30px -18px rgba($gray-dark, 0.3); }
+  &:hover {
+    border-color: rgba($inst-accent, 0.16);
+    box-shadow: 0 14px 34px -28px rgba($gray-dark, 0.22);
+
+    .inst-resource__arrow {
+      color: $inst-accent;
+      transform: translate(2px, -2px);
+    }
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.25rem;
+  }
+
+  &__icon {
+    display: grid;
+    place-items: center;
+    width: 2.75rem;
+    height: 2.75rem;
+    color: $inst-accent;
+    background: rgba($inst-accent, 0.1);
+    border-radius: 50%;
+
+    svg {
+      width: 1.3rem;
+      height: 1.3rem;
+    }
+  }
+
+  &__arrow {
+    color: rgba($gray-dark, 0.4);
+    transition: color 0.2s ease, transform 0.2s ease;
+
+    svg {
+      display: block;
+      width: 1.15rem;
+      height: 1.15rem;
+    }
+  }
 
   &__label {
     display: block;
@@ -894,9 +972,7 @@ $inst-tint-movement: #eff7f0;
 
 // ---- Consultation CTA ----------------------------------------------------
 .inst-order {
-  background:
-    radial-gradient(circle at top center, rgba($white, 0.85), transparent 34rem),
-    linear-gradient(180deg, $inst-tint-movement 0%, $inst-tint-setup 100%);
+  background: $white;
 
   &__container {
     @include inst-container;
@@ -1048,9 +1124,9 @@ $inst-tint-movement: #eff7f0;
     gap: 1rem;
     padding: 1.35rem;
     background: $white;
-    border: 1px solid rgba($inst-accent, 0.12);
-    border-radius: 1rem;
-    box-shadow: 0 14px 32px -28px rgba($gray-dark, 0.45);
+    border: 1px solid rgba($gray-dark, 0.06);
+    border-radius: 1.5rem;
+    box-shadow: 0 14px 34px -28px rgba($gray-dark, 0.22);
 
     > div {
       display: flex;
@@ -1100,9 +1176,9 @@ $inst-tint-movement: #eff7f0;
     flex: 0 0 auto;
     color: $inst-accent;
     background: $white;
-    border: 1px solid rgba($inst-accent, 0.16);
-    border-radius: 0.75rem;
-    box-shadow: 0 8px 18px -14px rgba($gray-dark, 0.45);
+    border: 1px solid rgba($inst-accent, 0.12);
+    border-radius: 1.1rem;
+    box-shadow: 0 10px 24px -16px rgba($gray-dark, 0.28);
 
     svg {
       width: 1.25rem;
