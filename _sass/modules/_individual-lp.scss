@@ -301,8 +301,8 @@ $ilp-tint-movement: #eff7f0;
     }
   }
 
-  &__content { flex: 1 1 58%; }
-  &__card    { flex: 1 1 42%; }
+  &__content { flex: 1 1 52%; }
+  &__card    { flex: 1 1 48%; }
 
   &__eyebrow {
     @include ilp-eyebrow;
@@ -320,106 +320,184 @@ $ilp-tint-movement: #eff7f0;
   }
 }
 
-.ilp-meaning__card {
-  background: $white;
-  border-radius: 1.5rem;
-  padding: $u-space-default;
-  box-shadow: 0 20px 40px -22px rgba($gray-dark, 0.3);
-}
+// Faithful web replica of the AirBeam app's air-quality card (Good state).
+.ilp-aqcard {
+  $aq-good: #006e02;
 
-.ilp-reading {
-  &__overline {
+  background: $white;
+  border-radius: 1.25rem;
+  padding: clamp(1.1rem, 2vw, 1.5rem);
+  box-shadow: 0 20px 40px -22px rgba($gray-dark, 0.3);
+
+  &__head {
+    display: flex;
+    align-items: center;
+    gap: clamp(1rem, 2.5vw, 1.5rem);
+  }
+
+  &__ghost-disc {
+    flex: 0 0 auto;
+    width: clamp(4.75rem, 8vw, 6rem);
+    height: clamp(4.75rem, 8vw, 6rem);
+
+    svg {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__summary { min-width: 0; }
+
+  &__label {
     display: block;
     font-family: $bold-font;
     text-transform: uppercase;
-    letter-spacing: 0.1em;
-    font-size: 0.72rem;
+    letter-spacing: 0.06em;
+    font-size: 0.82rem;
     color: $gray;
-    margin-bottom: $u-space-small;
   }
 
-  &__top {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 1rem;
-  }
-
-  &__value-wrap {
-    display: flex;
-    align-items: baseline;
-    gap: 0.5rem;
-  }
-
-  &__value {
+  &__level {
+    display: block;
+    margin-top: 0.15rem;
     font-family: $bold-font;
-    font-size: 3.5rem;
-    line-height: 1;
-    color: $gray-dark;
+    font-size: clamp(1.6rem, 2.4vw, 2rem);
+    line-height: 1.15;
+    color: $aq-good;
   }
 
-  &__unit {
-    font-size: 0.78rem;
-    color: $gray;
-    line-height: 1.25;
+  &__desc {
+    margin: 0.5rem 0 0;
+    color: $aq-good;
+    font-size: 0.98rem;
+    line-height: 1.35;
   }
 
-  &__status {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.4rem;
-    font-family: $bold-font;
-    font-size: 0.85rem;
-    color: $green;
-    background: $green-light;
-    padding: 0.3rem 0.75rem;
-    border-radius: 2rem;
-  }
-
-  &__status-dot {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: $green;
-  }
-
-  &__scale {
+  &__pollutants {
+    display: flex;
+    gap: 0.75rem;
     margin-top: $u-space-default;
   }
 
-  &__bar {
+  &__chip {
+    flex: 1 1 0;
+    min-width: 0;
     display: flex;
-    gap: 6px;
+    flex-direction: column;
+    gap: 0.35rem;
+    padding: 0.85rem 0.9rem;
+    background: $white;
+    border: 1px solid $aq-good;
+    border-radius: 0.65rem;
   }
 
-  &__seg {
-    flex: 1;
-    height: 8px;
-    border-radius: 4px;
-    background: $teal-light;
-
-    &.is-filled { background: $green; }
-  }
-
-  &__scale-labels {
+  &__chip-head {
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    margin-top: 0.5rem;
-    font-size: 0.75rem;
-    color: $gray;
+    gap: 0.4rem;
+  }
 
-    .is-active {
-      color: $green;
-      font-family: $bold-font;
+  &__chip-name {
+    font-family: $bold-font;
+    font-size: 0.9rem;
+    color: #44474a;
+    white-space: nowrap;
+
+    sub {
+      font-size: 0.7em;
+      line-height: 0;
+    }
+  }
+
+  &__chip-help {
+    flex: 0 0 auto;
+    color: #75777b;
+
+    svg {
+      display: block;
+      width: 0.95rem;
+      height: 0.95rem;
+    }
+  }
+
+  &__chip-value {
+    display: flex;
+    align-items: baseline;
+    gap: 0.3rem;
+  }
+
+  &__chip-num {
+    font-family: $bold-font;
+    font-size: clamp(1.3rem, 2vw, 1.55rem);
+    line-height: 1;
+    color: #171c20;
+  }
+
+  &__chip-unit {
+    font-size: 0.75rem;
+    color: #75777b;
+  }
+
+  &__location {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 0.9rem;
+    padding: 0.7rem 1rem;
+    border: 1px solid #cac4d0;
+    border-radius: 0.65rem;
+    text-decoration: none;
+    transition: border-color 0.2s ease, background 0.2s ease;
+
+    &:hover,
+    &:focus-visible {
+      border-color: rgba($aq-good, 0.5);
+      background: rgba($aq-good, 0.03);
+    }
+  }
+
+  &__loc-name {
+    display: block;
+    font-family: $bold-font;
+    font-size: 0.95rem;
+    color: #171c20;
+  }
+
+  &__loc-dist {
+    display: block;
+    margin-top: 0.1rem;
+    font-size: 0.8rem;
+    color: #75777b;
+  }
+
+  &__loc-arrow {
+    flex: 0 0 auto;
+    color: #171c20;
+
+    svg {
+      display: block;
+      width: 1.15rem;
+      height: 1.15rem;
     }
   }
 
   &__note {
-    margin: $u-space-default 0 0;
-    padding-top: $u-space-small;
-    border-top: 1px solid $teal-light;
-    color: $gray-dark;
-    font-size: $base-font-size1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    margin: 0.9rem 0 0;
+    color: #44474a;
+    font-size: 0.85rem;
+
+    svg {
+      flex: 0 0 auto;
+      width: 0.9rem;
+      height: 0.9rem;
+    }
   }
 }
 
