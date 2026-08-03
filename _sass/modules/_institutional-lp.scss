@@ -256,20 +256,18 @@ $inst-tint-movement: #eff7f0;
   }
 }
 
-// ---- Features (details expanders) ----------------------------------------
+// ---- Features (all pillars shown in normal document flow) ----------------
 .inst-features {
   background: $white;
 
   &__container {
     @include inst-container;
-    max-width: 1320px;
+    width: 100%;
   }
 
   &__header {
     max-width: 48rem;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: $u-space-default;
+    margin: 0 auto $u-space-big;
     text-align: center;
   }
 
@@ -277,151 +275,92 @@ $inst-tint-movement: #eff7f0;
 
   &__title {
     @include inst-h2;
+    margin-bottom: 0;
   }
 
-  &__subtitle {
-    color: $text-color;
-    font-size: $base-font-size1;
-    line-height: 1.6;
-    margin: 0;
-  }
-
-  &__columns {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-    align-items: start;
-
-    @media (min-width: $tablet-min) {
-      grid-template-columns: repeat(3, 1fr);
-      gap: 0;
-    }
+  &__pillars {
+    display: flex;
+    flex-direction: column;
+    gap: $u-space-big;
   }
 }
 
-.inst-feature-column {
-  display: block;
-  align-self: start;
-  padding: 1.25rem 0;
-
-  @media (min-width: $tablet-min) {
-    display: grid;
-    grid-template-rows: auto 3.9rem 5.5rem auto;
-    row-gap: 0.75rem;
-    padding: 0.5rem 1.35rem 2.5rem;
-
-    &:not(:last-child) {
-      border-right: 1px solid rgba($inst-accent, 0.12);
-    }
+.inst-feature-pillar {
+  &__head {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.9rem;
   }
 
-  @media (min-width: $small-desktop-min) {
-    grid-template-rows: auto 3.9rem 5.25rem auto;
-    padding: 0.5rem 2rem 2.5rem;
-  }
-
-  &__icon {
+  &__num {
     display: grid;
     place-items: center;
-    width: 3rem;
-    height: 3rem;
-    margin-bottom: 1rem;
+    width: 2.25rem;
+    height: 2.25rem;
+    flex: 0 0 auto;
     color: $inst-accent;
     background: rgba($inst-accent, 0.1);
     border-radius: 50%;
-
-    svg {
-      width: 1.45rem;
-      height: 1.45rem;
-    }
-
-    @media (min-width: $tablet-min) {
-      align-self: end;
-      margin-bottom: 0;
-    }
+    font-family: $bold-font;
+    font-size: 0.82rem;
   }
 
   &__title {
     color: $gray-dark;
     font-family: $bold-font;
-    font-size: clamp(1.45rem, 2vw, 1.75rem);
+    font-size: clamp(1.4rem, 2vw, 1.75rem);
     line-height: 1.15;
     letter-spacing: -0.02em;
-    margin: 0 0 1rem;
-
-    @media (min-width: $tablet-min) {
-      align-self: end;
-      margin: 0;
-    }
+    margin: 0;
   }
 
   &__copy {
     color: $text-color;
-    font-size: clamp(1rem, 1.8vw, 1.2rem);
-    line-height: 1.55;
-    margin: 0;
+    font-size: clamp(1.12rem, 1.8vw, 1.35rem);
+    line-height: 1.6;
+    max-width: 44rem;
+    margin: 0 0 clamp(1.75rem, 3vw, 2.5rem);
+  }
 
-    @media (min-width: $tablet-min) {
-      align-self: start;
+  &__cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $u-space-default;
+
+    @media (min-width: $large-mobile-min) {
+      grid-template-columns: repeat(2, 1fr);
+      align-items: stretch;
     }
   }
 }
 
-.inst-feature-list {
-  display: flex;
-  flex-direction: column;
-  margin-top: 2rem;
-  border-top: 1px solid rgba($inst-accent, 0.14);
-
-  @media (min-width: $tablet-min) {
-    margin-top: 0;
-  }
-}
-
-.inst-feature-item {
-  border-bottom: 1px solid rgba($inst-accent, 0.14);
+.inst-feature-card {
+  padding: clamp(1.5rem, 2.6vw, 2rem);
+  background: $white;
+  border: 1px solid rgba($gray-dark, 0.1);
+  border-radius: 1.5rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
 
   &[open] {
-    .inst-feature-item__title {
-      color: $inst-accent;
-    }
+    border-color: rgba($inst-accent, 0.25);
+    box-shadow: 0 14px 34px -28px rgba($gray-dark, 0.22);
 
-    .inst-feature-item__chevron {
-      color: $inst-accent;
-
-      &::after {
-        transform: translate(-50%, -30%) rotate(-135deg);
-      }
-    }
+    .inst-feature-card__chevron::after { transform: translate(-50%, -30%) rotate(-135deg); }
   }
 
   &__summary {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) auto;
-    gap: 1.5rem;
-    align-items: start;
-    padding: 1.4rem 0;
     cursor: pointer;
     list-style: none;
 
     &::-webkit-details-marker { display: none; }
-
-    &:focus-visible { outline: none; }
-
-    &:hover .inst-feature-item__title {
-      color: $inst-accent;
-    }
-
-    @media (min-width: $tablet-min) {
-      min-height: 10rem;
-    }
   }
 
-  &__text {
+  &__row {
     display: flex;
-    flex-direction: column;
-    gap: 0.35rem;
-    min-width: 0;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
   }
 
   &__title {
@@ -429,21 +368,6 @@ $inst-tint-movement: #eff7f0;
     font-family: $bold-font;
     font-size: 1.05rem;
     line-height: 1.25;
-    transition: color 0.2s ease;
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
-  }
-
-  &__proof {
-    color: $text-color;
-    font-size: 0.95rem;
-    line-height: 1.45;
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3;
   }
 
   &__chevron {
@@ -451,14 +375,12 @@ $inst-tint-movement: #eff7f0;
     width: 1rem;
     height: 1rem;
     flex: 0 0 auto;
-    margin-top: 0.4rem;
-    color: rgba($gray-dark, 0.32);
-    transition: color 0.2s ease;
+    color: rgba($gray-dark, 0.4);
 
     &::after {
       content: "";
       position: absolute;
-      top: 42%;
+      top: 40%;
       left: 50%;
       width: 0.45rem;
       height: 0.45rem;
@@ -469,11 +391,151 @@ $inst-tint-movement: #eff7f0;
     }
   }
 
-  &__detail {
+  &__text {
+    display: block;
     color: $text-color;
     font-size: 0.95rem;
+    line-height: 1.5;
+    margin-top: 0.4rem;
+  }
+
+  &__detail {
+    color: $text-color;
+    font-size: 0.92rem;
     line-height: 1.55;
-    margin: -0.35rem 2.5rem 1.5rem 0;
+    margin: 0.85rem 0 0;
+    padding-top: 0.85rem;
+    border-top: 1px solid rgba($inst-accent, 0.12);
+  }
+}
+
+// ---- Features (ALTERNATE design: pinned stage, one pillar per scroll) ----
+// Duplicated for client comparison against the stacked .inst-features layout.
+// Reuses the shared .inst-feature-pillar / .inst-feature-card styles; the
+// pinned overlap + fade behavior is scoped to this section only.
+.inst-features-scroll {
+  display: block;
+  background: $white;
+  padding: 0;
+
+  &__track { position: relative; }
+
+  &__stage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: $u-space-big;
+    padding: $u-space-big 0;
+  }
+
+  &__inner {
+    @include inst-container;
+    width: 100%;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $u-space-default;
+
+    @media (min-width: $tablet-min) {
+      grid-template-columns: minmax(0, 16rem) minmax(0, 1fr);
+      column-gap: 4rem;
+      align-items: start;
+    }
+  }
+
+  &__header {
+    max-width: 48rem;
+    padding: 0 $u-space-default;
+    text-align: center;
+  }
+
+  &__eyebrow { @include inst-eyebrow; }
+
+  &__title {
+    @include inst-h2;
+    margin-bottom: 0;
+  }
+
+  &__steps {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+
+    @media (min-width: $tablet-min) {
+      padding-top: 0.3rem;
+    }
+  }
+
+  &__step {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    padding: 0.5rem 0;
+    background: none;
+    border: 0;
+    cursor: pointer;
+    text-align: left;
+  }
+
+  &__step-bar {
+    width: 1.75rem;
+    height: 2px;
+    flex: 0 0 auto;
+    background: rgba($gray-dark, 0.2);
+    border-radius: 2px;
+    transition: background 0.25s ease, width 0.25s ease;
+  }
+
+  &__step-label {
+    color: rgba($gray-dark, 0.55);
+    font-family: $bold-font;
+    font-size: 0.95rem;
+    line-height: 1.25;
+    transition: color 0.25s ease;
+  }
+
+  &__step.is-active {
+    .inst-features-scroll__step-bar { background: $inst-accent; width: 2.5rem; }
+    .inst-features-scroll__step-label { color: $gray-dark; }
+  }
+
+  &__main { position: relative; }
+
+  .inst-feature-pillar:not(:last-child) { margin-bottom: $u-space-big; }
+
+  @media (min-width: $tablet-min) {
+    &__track { height: 200vh; }
+
+    &__stage {
+      position: sticky;
+      top: 0;
+      min-height: 100vh;
+      justify-content: center;
+      gap: 3rem;
+      padding: 0;
+    }
+
+    &__grid { align-items: start; }
+
+    &__main { display: grid; }
+
+    .inst-feature-pillar {
+      grid-area: 1 / 1;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(20px);
+      transition: opacity 0.45s ease, transform 0.45s ease, visibility 0.45s;
+
+      &.is-active {
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+      }
+
+      &:not(:last-child) { margin-bottom: 0; }
+    }
   }
 }
 
@@ -492,13 +554,6 @@ $inst-tint-movement: #eff7f0;
     @media (min-width: $tablet-min) {
       grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
       column-gap: 3rem;
-    }
-  }
-
-  &__intro {
-    @media (min-width: $tablet-min) {
-      position: sticky;
-      top: 2rem;
     }
   }
 
@@ -867,35 +922,22 @@ $inst-tint-movement: #eff7f0;
     width: 100%;
     height: auto;
   }
-}
 
-.inst-evidence-points {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 0.65rem;
-  max-width: 760px;
-  margin: 1.25rem auto 0;
-
-  @media (min-width: $large-mobile-min) {
-    grid-template-columns: repeat(3, 1fr);
+  &__axis {
+    fill: $gray;
+    font-family: $body-font;
+    font-size: 15px;
+    letter-spacing: 0;
   }
 
-  span {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    color: $text-color;
+  &__unit {
+    fill: $gray;
     font-family: $bold-font;
-    font-size: 0.82rem;
-    text-align: center;
-
-    &::before {
-      content: "•";
-      color: $inst-accent;
-      margin-right: 0.35rem;
-    }
+    font-size: 13px;
+    letter-spacing: 0.02em;
   }
 }
+
 
 
 // ---- Resources -----------------------------------------------------------
@@ -1104,13 +1146,13 @@ $inst-tint-movement: #eff7f0;
   &__cart-button {
     width: 100%;
     margin-bottom: 0.9rem;
-    background: $inst-accent;
-    color: $white;
-    box-shadow: 0 14px 28px -18px rgba($inst-accent, 0.85);
+    background: $cta-color;
+    color: $gray-dark;
+    box-shadow: 0 14px 28px -18px rgba($gray-dark, 0.4);
 
     &:hover {
-      background: darken($inst-accent, 5%);
-      box-shadow: 0 18px 34px -20px rgba($inst-accent, 0.9);
+      background: lighten($cta-color, 6%);
+      box-shadow: 0 18px 34px -20px rgba($gray-dark, 0.45);
     }
   }
 

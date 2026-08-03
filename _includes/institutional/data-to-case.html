@@ -38,18 +38,34 @@
             </span>
           </div>
           <div class="inst-csv-chart">
-            <svg viewBox="0 0 600 210" fill="none">
-              <path d="M15 140 L75 148 L135 112 L195 124 L255 90 L315 104 L375 88 L435 116 L495 104 L555 94 L555 200 L15 200 Z" fill="currentColor" fill-opacity="0.16"/>
-              <path d="M15 140 L75 148 L135 112 L195 124 L255 90 L315 104 L375 88 L435 116 L495 104 L555 94" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <svg viewBox="0 0 600 240" fill="none" role="img" aria-label="PM2.5 in micrograms per cubic metre over time: 8 at 08:45, 14 at 08:50, a spike to 47 at 08:55, then 31 at 09:00">
+              <!-- gridlines -->
+              <line x1="54" y1="60" x2="584" y2="60" stroke="currentColor" stroke-opacity="0.08" stroke-width="1"/>
+              <line x1="54" y1="120" x2="584" y2="120" stroke="currentColor" stroke-opacity="0.08" stroke-width="1"/>
+              <!-- area + line -->
+              <path d="M60 156 L227 138 L393 39 L560 87 L560 180 L60 180 Z" fill="currentColor" fill-opacity="0.13"/>
+              <path d="M60 156 L227 138 L393 39 L560 87" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              <!-- axes -->
+              <line x1="54" y1="40" x2="54" y2="180" stroke="currentColor" stroke-opacity="0.28" stroke-width="1.5"/>
+              <line x1="54" y1="180" x2="584" y2="180" stroke="currentColor" stroke-opacity="0.28" stroke-width="1.5"/>
+              <!-- data points -->
+              <circle cx="60" cy="156" r="4" fill="currentColor"/>
+              <circle cx="227" cy="138" r="4" fill="currentColor"/>
+              <circle cx="560" cy="87" r="4" fill="currentColor"/>
+              <circle cx="393" cy="39" r="6.5" fill="#ffffff" stroke="currentColor" stroke-width="3"/>
+              <!-- y-axis ticks (PM2.5) -->
+              <text class="inst-csv-chart__axis" x="46" y="60" text-anchor="end" dominant-baseline="middle">40</text>
+              <text class="inst-csv-chart__axis" x="46" y="120" text-anchor="end" dominant-baseline="middle">20</text>
+              <text class="inst-csv-chart__axis" x="46" y="180" text-anchor="end" dominant-baseline="middle">0</text>
+              <text class="inst-csv-chart__unit" x="30" y="28" text-anchor="start">PM2.5 µg/m³</text>
+              <!-- x-axis ticks (time) -->
+              <text class="inst-csv-chart__axis" x="60" y="202" text-anchor="middle">08:45</text>
+              <text class="inst-csv-chart__axis" x="227" y="202" text-anchor="middle">08:50</text>
+              <text class="inst-csv-chart__axis" x="393" y="202" text-anchor="middle">08:55</text>
+              <text class="inst-csv-chart__axis" x="560" y="202" text-anchor="middle">09:00</text>
             </svg>
           </div>
         </div>
-      </div>
-
-      <div class="inst-evidence-points">
-        <span>Export CSV</span>
-        <span>Graph trends</span>
-        <span>Explain the spike</span>
       </div>
     </div>
   </div>

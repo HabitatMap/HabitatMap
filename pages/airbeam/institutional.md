@@ -11,9 +11,25 @@ image: /assets/img/airbeam-buy-it-now.jpg
 
 <script src="/assets/js/scroll-reveal.js"></script>
 
-{% include institutional/credibility.html %}
+{% include home-sections/user-stories-carousel.html %}
+
+<script>
+  {% assign stories = site.user_stories | where: 'featured', true | sort: "order" %}
+  window.userStoriesData = [
+    {% for story in stories limit: 6 %}
+    {
+      title: {{ story.title | jsonify }},
+      intro: {{ story.intro | strip_html | jsonify }},
+      image: {{ story.image | jsonify }},
+      slug: {{ story.slug | jsonify }}
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ];
+</script>
 
 {% include institutional/features.html %}
+
+{% include institutional/features-scroll.html %}
 
 {% include institutional/classrooms.html %}
 
