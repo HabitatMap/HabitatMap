@@ -554,6 +554,15 @@ $inst-tint-movement: #eff7f0;
     @media (min-width: $tablet-min) {
       grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
       column-gap: 3rem;
+      align-items: stretch;
+    }
+  }
+
+  &__intro {
+    @media (min-width: $tablet-min) {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
     }
   }
 
@@ -564,7 +573,7 @@ $inst-tint-movement: #eff7f0;
     color: $text-color;
     font-size: $base-font-size1;
     line-height: 1.6;
-    margin: 0 0 $u-space-default;
+    margin: 0 0 $u-space-small;
   }
 
   &__media {
@@ -582,6 +591,18 @@ $inst-tint-movement: #eff7f0;
       aspect-ratio: 4 / 3;
       object-fit: cover;
     }
+
+    // On desktop the photo grows to fill the column so it balances the
+    // dense spec-card grid and the gap under the intro disappears.
+    @media (min-width: $tablet-min) {
+      flex: 1 1 auto;
+      min-height: 20rem;
+
+      img {
+        aspect-ratio: auto;
+        min-height: 20rem;
+      }
+    }
   }
 
   &__footer {
@@ -589,7 +610,7 @@ $inst-tint-movement: #eff7f0;
     flex-direction: column;
     gap: 0.3rem;
     align-items: flex-start;
-    margin-top: $u-space-default;
+    margin-top: $u-space-small;
     color: $text-color;
     font-size: 0.95rem;
   }
