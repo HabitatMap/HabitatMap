@@ -1,0 +1,223 @@
+// Audience split (Buy-It-Now page) — routes visitors to the Individual or
+// Institutional landing page. Modern, airy, HabitatMap-green + Apple-iPhone feel.
+// Each card leads with the matching landing-page hero photo.
+// Blue accent = Individual, green accent = Institutional.
+
+.audience-split {
+  background: linear-gradient(180deg, $white 0%, #f6f9f7 100%);
+
+  &__container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  &__header {
+    text-align: center;
+    max-width: 42rem;
+    margin: 0 auto $u-space-default;
+  }
+
+  &__eyebrow {
+    display: block;
+    font-family: $body-font;
+    font-size: $base-font-size-2;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: $hm-brand;
+    margin: 0 0 $u-space-small;
+  }
+
+  &__title {
+    font-family: $bold-font;
+    font-size: clamp(2rem, 3vw, 2.75rem);
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -0.03em;
+    color: $gray-dark;
+    margin: 0 0 0.75rem;
+  }
+
+  &__lede {
+    font-family: $body-font;
+    font-size: $base-font-size1;
+    line-height: 1.6;
+    color: $text-color;
+    margin: 0;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $u-space-small;
+
+    @media (min-width: $tablet-min) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: $u-space-default;
+    }
+  }
+}
+
+.audience-card {
+  --accent: #{$hm-brand};
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: $white;
+  border: 1px solid rgba($gray-dark, 0.06);
+  border-radius: 1.75rem;
+  text-decoration: none;
+  box-shadow: 0 20px 50px -40px rgba($gray-dark, 0.5);
+  transition: transform 0.28s ease, border-color 0.28s ease, box-shadow 0.28s ease;
+
+  &--individual { --accent: #{$hm-brand}; }    // HabitatMap green
+  &--institutional { --accent: #{$ac-brand}; } // AirCasting blue
+
+  &:hover,
+  &:focus-visible {
+    transform: translateY(-6px);
+    box-shadow: 0 30px 60px -34px rgba($gray-dark, 0.4);
+
+    .audience-card__image { transform: scale(1.04); }
+    .audience-card__arrow {
+      color: var(--accent);
+      transform: translate(3px, -3px);
+    }
+    .audience-card__cta {
+      transform: translateY(-2px);
+      box-shadow: 0 16px 30px -14px var(--accent);
+      filter: brightness(1.05);
+    }
+    .audience-card__cta::after { transform: translateX(4px); }
+  }
+
+  // ---- Photo banner ----
+  &__media {
+    position: relative;
+    display: block;
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    background: $light;
+  }
+
+  &__image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+
+  &__arrow {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: grid;
+    place-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    color: $gray-dark;
+    background: rgba($white, 0.85);
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+    border-radius: 50%;
+    box-shadow: 0 6px 16px -8px rgba($gray-dark, 0.45);
+    transition: color 0.28s ease, transform 0.28s ease;
+
+    svg { display: block; width: 1.2rem; height: 1.2rem; }
+  }
+
+  // ---- Body ----
+  &__body {
+    position: relative;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: clamp(1.5rem, 2.6vw, 2rem);
+  }
+
+  &__icon {
+    display: grid;
+    place-items: center;
+    width: 3rem;
+    height: 3rem;
+    margin: -3.25rem 0 1rem; // lift up to overlap the photo edge
+    color: var(--accent);
+    background: $white;
+    border-radius: 1rem;
+    box-shadow: 0 10px 24px -14px rgba($gray-dark, 0.4);
+
+    svg { width: 1.5rem; height: 1.5rem; }
+  }
+
+  &__kicker {
+    display: block;
+    font-family: $body-font;
+    font-size: $base-font-size-1;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: var(--accent);
+    margin-bottom: 0.5rem;
+  }
+
+  &__title {
+    display: block;
+    font-family: $bold-font;
+    font-size: clamp(1.3rem, 2vw, 1.6rem);
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: $gray-dark;
+    margin-bottom: 0.6rem;
+  }
+
+  &__desc {
+    display: block;
+    font-family: $body-font;
+    font-size: 1rem;
+    line-height: 1.55;
+    color: $text-color;
+    margin-bottom: 1.5rem;
+  }
+
+  &__cta {
+    align-self: flex-start;
+    display: inline-flex;
+    align-items: center;
+    margin-top: auto;
+    padding: 0.75rem 1.4rem;
+    font-family: $bold-font;
+    font-size: $base-font-size-1;
+    line-height: 1;
+    color: $white;
+    background: var(--accent);
+    border-radius: 2rem;
+    box-shadow: 0 12px 24px -14px var(--accent);
+    transition: transform 0.28s ease, box-shadow 0.28s ease, filter 0.28s ease;
+
+    &::after {
+      content: "\2192";
+      margin-left: 0.5rem;
+      transition: transform 0.28s ease;
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .audience-card,
+  .audience-card__image,
+  .audience-card__arrow,
+  .audience-card__cta,
+  .audience-card__cta::after {
+    transition: none;
+  }
+  .audience-card:hover,
+  .audience-card:focus-visible {
+    transform: none;
+  }
+  .audience-card:hover .audience-card__image { transform: none; }
+}

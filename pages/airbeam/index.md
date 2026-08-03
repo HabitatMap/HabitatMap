@@ -89,6 +89,8 @@ hasMerchantReturnPolicy:
 
 {% include buy-it-now/testimonials-section.html %}
 
+{% include buy-it-now/audience-split.html %}
+
 {% include shared/in-action.html %}
 
 {% include buy-it-now/features-section.html %}
