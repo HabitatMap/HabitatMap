@@ -174,30 +174,24 @@ $ilp-tint-movement: #eff7f0;
   position: relative;
   border-radius: 1.5rem;
   overflow: hidden;
-  background: #e8eaed; // muted aircasting-style basemap gray
+  background: #e8eaed; // fallback basemap gray behind the map image
   aspect-ratio: 4 / 3;
   box-shadow: 0 20px 40px -20px rgba($gray-dark, 0.3);
 
-  // stylised streets: faint white roads over the gray basemap
-  &__basemap {
+  // real AirCasting map used as the basemap
+  &__img {
     position: absolute;
     inset: 0;
-    background-image:
-      repeating-linear-gradient(35deg, transparent 0 38px, rgba($white, 0.9) 38px 42px),
-      repeating-linear-gradient(-58deg, transparent 0 52px, rgba($white, 0.85) 52px 55px),
-      repeating-linear-gradient(35deg, transparent 0 92px, rgba($white, 0.5) 92px 100px);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
-  // a calm water body in one corner
-  &__water {
+  // light gradient only at the base, to keep the caption legible
+  &__scrim {
     position: absolute;
-    left: -14%;
-    bottom: -20%;
-    width: 58%;
-    height: 58%;
-    background: #cfe0e8;
-    border-radius: 45% 55% 60% 40% / 55% 45% 55% 45%;
-    transform: rotate(-12deg);
+    inset: 0;
+    background: linear-gradient(180deg, rgba($white, 0) 62%, rgba($white, 0.6) 100%);
   }
 
   &__marker {
@@ -206,12 +200,14 @@ $ilp-tint-movement: #eff7f0;
     flex-direction: column;
     align-items: center;
 
-    &--station { top: 20%; left: 14%; }
-    &--you { bottom: 30%; right: 14%; z-index: 2; }
+    &--station { top: 54%; left: 47%; }
+    &--you { top: 33%; left: 25%; z-index: 2; }
   }
 
   // white rounded pill with a coloured dot + value, aircasting-style
   &__pill {
+    position: relative;
+    z-index: 1;
     display: inline-flex;
     align-items: center;
     gap: 0.45rem;
@@ -220,6 +216,28 @@ $ilp-tint-movement: #eff7f0;
     padding: 0.35rem 0.75rem 0.35rem 0.5rem;
     box-shadow: 0 3px 10px rgba($gray-dark, 0.25);
     white-space: nowrap;
+  }
+
+  // descriptor chip sitting a little below the value pill (mockup)
+  &__note {
+    margin-top: 0.4rem;
+    padding: 0.28rem 0.55rem 0.2rem;
+    border-radius: 0.5rem;
+    font-family: $bold-font;
+    font-size: 0.72rem;
+    line-height: 1.1;
+    white-space: nowrap;
+    box-shadow: 0 3px 8px rgba($gray-dark, 0.18);
+
+    &--you {
+      background: #fbedc4;
+      color: #7a5e10;
+    }
+
+    &--station {
+      background: #eceef0;
+      color: $gray-dark;
+    }
   }
 
   &__val {
@@ -256,7 +274,7 @@ $ilp-tint-movement: #eff7f0;
     position: absolute;
     inset: 0;
     border-radius: 50%;
-    background: $aq-yellow;
+    background: $aq-green;
     transform-origin: center;
     animation: ilp-youpulse 2.6s ease-out infinite;
   }
