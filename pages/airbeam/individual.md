@@ -29,15 +29,7 @@ image: /assets/img/airbeam-buy-it-now.jpg
 
 {% include individual/global-movement.html %}
 
-{% include shared/start-monitoring.html
-   overline="For you and your family"
-   title="Start monitoring today."
-   tagline="Monitor the air where you live, walk, and breathe."
-   benefits="Real-time PM2.5 and PM1|Palm-sized and portable|2-minute setup|Free apps for iPhone and Android, no subscriptions|Never lose a session|You own your data"
-   family_line="One device, shared decisions. Check your run, your street, your child's walk to school."
-   hide_stock_notice=true
-   cta_label="Add to Cart"
-   cta_aria="Add AirBeam Mini to cart, $99" %}
+{% include buy-it-now/product-showcase-section.html %}
 
 {% include individual/faq.html %}
 
