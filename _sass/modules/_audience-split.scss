@@ -1,10 +1,10 @@
 // Audience split (Buy-It-Now page) — routes visitors to the Individual or
 // Institutional landing page. Modern, airy, HabitatMap-green + Apple-iPhone feel.
 // Each card leads with the matching landing-page hero photo.
-// Blue accent = Individual, green accent = Institutional.
+// Green accent = Individual (family), blue accent = Institutional (research).
 
 .audience-split {
-  background: linear-gradient(180deg, $white 0%, #f6f9f7 100%);
+  background: linear-gradient(180deg, $white 0%, $off-white-green 100%);
 
   &__container {
     width: 100%;
@@ -61,7 +61,11 @@
 }
 
 .audience-card {
+  // --accent: vivid brand color (large icon/arrow). --accent-strong: AA-safe
+  // shade for text-bearing bits (kicker, CTA fill). --wash: barely-there tint.
   --accent: #{$hm-brand};
+  --accent-strong: #{$green-dark};
+  --wash: #{rgba($green, 0.05)};
 
   position: relative;
   display: flex;
@@ -74,8 +78,17 @@
   box-shadow: 0 20px 50px -40px rgba($gray-dark, 0.5);
   transition: transform 0.28s ease, border-color 0.28s ease, box-shadow 0.28s ease;
 
-  &--individual { --accent: #{$hm-brand}; }    // HabitatMap green
-  &--institutional { --accent: #{$ac-brand}; } // AirCasting blue
+  // Individual (family) = HabitatMap green, Institutional (research) = AirCasting blue
+  &--individual {
+    --accent: #{$hm-brand};
+    --accent-strong: #{$green-dark};
+    --wash: #{rgba($green, 0.05)};
+  }
+  &--institutional {
+    --accent: #{$ac-brand};
+    --accent-strong: #{$blue-dark};
+    --wash: #{rgba($blue, 0.05)};
+  }
 
   &:hover,
   &:focus-visible {
@@ -85,14 +98,20 @@
     .audience-card__image { transform: scale(1.04); }
     .audience-card__arrow {
       color: var(--accent);
+      opacity: 1;
       transform: translate(3px, -3px);
     }
     .audience-card__cta {
       transform: translateY(-2px);
-      box-shadow: 0 16px 30px -14px var(--accent);
+      box-shadow: 0 16px 30px -14px var(--accent-strong);
       filter: brightness(1.05);
     }
     .audience-card__cta::after { transform: translateX(4px); }
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--accent-strong);
+    outline-offset: 3px;
   }
 
   // ---- Photo banner ----
@@ -127,7 +146,8 @@
     backdrop-filter: blur(6px);
     border-radius: 50%;
     box-shadow: 0 6px 16px -8px rgba($gray-dark, 0.45);
-    transition: color 0.28s ease, transform 0.28s ease;
+    opacity: 0.85; // reads as a nudge at rest, full on hover/focus
+    transition: color 0.28s ease, transform 0.28s ease, opacity 0.28s ease;
 
     svg { display: block; width: 1.2rem; height: 1.2rem; }
   }
@@ -139,6 +159,7 @@
     flex: 1;
     flex-direction: column;
     padding: clamp(1.5rem, 2.6vw, 2rem);
+    background: linear-gradient(180deg, var(--wash), transparent 40%); // faint per-audience tint
   }
 
   &__icon {
@@ -153,6 +174,10 @@
     box-shadow: 0 10px 24px -14px rgba($gray-dark, 0.4);
 
     svg { width: 1.5rem; height: 1.5rem; }
+
+    @media (max-width: $large-mobile-max) {
+      margin-top: -2.75rem; // ease the photo-edge overlap on narrow screens
+    }
   }
 
   &__kicker {
@@ -161,7 +186,7 @@
     font-size: $base-font-size-1;
     font-weight: 600;
     letter-spacing: 0.02em;
-    color: var(--accent);
+    color: var(--accent-strong);
     margin-bottom: 0.5rem;
   }
 
@@ -172,7 +197,7 @@
     line-height: 1.2;
     letter-spacing: -0.02em;
     color: $gray-dark;
-    margin-bottom: 0.6rem;
+    margin: 0 0 0.6rem; // reset default <h3> margins
   }
 
   &__desc {
@@ -194,9 +219,9 @@
     font-size: $base-font-size-1;
     line-height: 1;
     color: $white;
-    background: var(--accent);
+    background: var(--accent-strong);
     border-radius: 2rem;
-    box-shadow: 0 12px 24px -14px var(--accent);
+    box-shadow: 0 12px 24px -14px var(--accent-strong);
     transition: transform 0.28s ease, box-shadow 0.28s ease, filter 0.28s ease;
 
     &::after {
