@@ -103,10 +103,8 @@
     }
     .audience-card__cta {
       transform: translateY(-2px);
-      color: $white;
-      background: var(--accent-strong);
-      border-color: var(--accent-strong);
       box-shadow: 0 16px 30px -14px var(--accent-strong);
+      filter: brightness(1.05);
     }
   }
 
@@ -219,14 +217,11 @@
     font-family: $bold-font;
     font-size: $base-font-size-1;
     line-height: 1;
-    // Outline on white: vivid brand border keeps the true HabitatMap/AirCasting
-    // hue, text uses the AA-safe shade (vivid brand fails contrast as text).
-    color: var(--accent-strong);
-    background: $white;
-    border: 2px solid var(--accent);
+    color: $white;
+    background: var(--accent-strong);
     border-radius: 2rem;
-    box-shadow: 0 12px 24px -16px var(--accent);
-    transition: transform 0.28s ease, box-shadow 0.28s ease, background 0.28s ease, color 0.28s ease, border-color 0.28s ease;
+    box-shadow: 0 12px 24px -14px var(--accent-strong);
+    transition: transform 0.28s ease, box-shadow 0.28s ease, filter 0.28s ease;
   }
 }
 
