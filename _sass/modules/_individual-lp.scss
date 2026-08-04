@@ -59,7 +59,7 @@ $ilp-tint-movement: #eff7f0;
   }
 
   &__content {
-    flex: 1 1 50%;
+    flex: 1 1 42%;
   }
 
   &__eyebrow {
@@ -113,7 +113,7 @@ $ilp-tint-movement: #eff7f0;
   }
 
   &__visual {
-    flex: 1 1 50%;
+    flex: 1 1 58%;
   }
 
   &__image-wrapper {
@@ -122,12 +122,19 @@ $ilp-tint-movement: #eff7f0;
     overflow: hidden;
     box-shadow: 0 20px 40px -18px rgba($gray-dark, 0.35);
     aspect-ratio: 4 / 3;
+
+    // Square crop on desktop shows the whole photo — including the AirBeam low
+    // in the frame — while still fitting within the viewport.
+    @media (min-width: $tablet-min) {
+      aspect-ratio: 1 / 1;
+    }
   }
 
   &__image {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center;
     display: block;
   }
 }
