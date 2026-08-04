@@ -27,8 +27,6 @@ image: /assets/img/airbeam-buy-it-now.jpg
   ];
 </script>
 
-{% include institutional/features.html %}
-
 {% include institutional/features-scroll.html %}
 
 {% include institutional/classrooms.html %}
