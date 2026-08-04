@@ -31,7 +31,7 @@ image: /assets/img/airbeam-buy-it-now.jpg
 
 {% include buy-it-now/product-showcase-section.html %}
 
-{% include individual/faq.html %}
+{% include shared/faq.html data_key="faq-individual" modifier="ilp-faq" eyebrow="Good to know" subtitle="The things people ask before their first AirBeam." id_prefix="faq-i-a" %}
 
 </div>
 

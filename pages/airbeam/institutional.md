@@ -39,6 +39,6 @@ image: /assets/img/airbeam-buy-it-now.jpg
 
 {% include institutional/resources.html %}
 
-{% include institutional/faq.html %}
+{% include shared/faq.html data_key="faq-institutional" modifier="inst-faq" eyebrow="Support" subtitle="Procurement, data, and accuracy — the questions institutions ask first." id_prefix="faq-inst-a" %}
 
 {% include slider-init.html %}

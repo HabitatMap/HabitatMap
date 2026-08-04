@@ -1,0 +1,41 @@
+{% comment %}
+  Shared landing-page FAQ. Reuses .faq-section styling + buy-it-now-faq.js.
+  Params:
+    data_key  — key under site.data holding a `questions` list (e.g. "faq-individual")
+    modifier  — extra section class (e.g. "ilp-faq" / "inst-faq")
+    eyebrow   — small kicker text
+    subtitle  — supporting line under the title
+    id_prefix — unique prefix for the answer element ids (e.g. "faq-i-a")
+{% endcomment %}
+{% assign faq_data = site.data[include.data_key] %}
+<section class="panel faq-section {{ include.modifier }}">
+  <div class="faq-container">
+    <div class="faq-header">
+      <span class="faq-eyebrow">{{ include.eyebrow }}</span>
+      <h2 class="faq-title">Questions, answered</h2>
+      <p class="faq-subtitle">{{ include.subtitle }}</p>
+    </div>
+
+    <div class="faq-categories">
+      <div class="faq-category">
+        <div class="faq-items">
+          {% for question in faq_data.questions %}
+            <div class="faq-item">
+              <button type="button" class="faq-toggle" onclick="toggleFAQ(this)" aria-expanded="false" aria-controls="{{ include.id_prefix }}-{{ forloop.index }}">
+                <span class="toggle-text">{{ question.q }}</span>
+                <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="6,9 12,15 18,9"></polyline>
+                </svg>
+              </button>
+              <div class="faq-content" id="{{ include.id_prefix }}-{{ forloop.index }}">
+                <p class="faq-answer">{{ question.a }}</p>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="/assets/js/buy-it-now-faq.js"></script>
