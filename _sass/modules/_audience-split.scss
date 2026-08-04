@@ -106,7 +106,6 @@
       box-shadow: 0 16px 30px -14px var(--accent-strong);
       filter: brightness(1.05);
     }
-    .audience-card__cta::after { transform: translateX(4px); }
   }
 
   &:focus-visible {
@@ -223,12 +222,6 @@
     border-radius: 2rem;
     box-shadow: 0 12px 24px -14px var(--accent-strong);
     transition: transform 0.28s ease, box-shadow 0.28s ease, filter 0.28s ease;
-
-    &::after {
-      content: "\2192";
-      margin-left: 0.5rem;
-      transition: transform 0.28s ease;
-    }
   }
 }
 
@@ -236,8 +229,7 @@
   .audience-card,
   .audience-card__image,
   .audience-card__arrow,
-  .audience-card__cta,
-  .audience-card__cta::after {
+  .audience-card__cta {
     transition: none;
   }
   .audience-card:hover,
