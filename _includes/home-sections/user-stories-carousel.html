@@ -73,12 +73,14 @@
       </div>
     </div>
 
+    {% unless include.hide_cta %}
     <!-- CTA Button -->
     <div class="user-stories-cta-container">
       <a href="/airbeam/user-stories" class="user-stories-cta-button">
         More User Stories
       </a>
     </div>
+    {% endunless %}
   </div>
 </section>
 

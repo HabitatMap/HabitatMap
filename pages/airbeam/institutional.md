@@ -11,7 +11,7 @@ image: /assets/img/airbeam-buy-it-now.jpg
 
 <script src="/assets/js/scroll-reveal.js"></script>
 
-{% include home-sections/user-stories-carousel.html %}
+{% include home-sections/user-stories-carousel.html hide_cta=true %}
 
 <script>
   {% assign stories = site.user_stories | where: 'featured', true | sort: "order" %}
