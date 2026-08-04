@@ -56,8 +56,8 @@ $inst-tint-movement: #eff7f0;
     }
   }
 
-  &__content { flex: 1 1 46%; }
-  &__visual  { flex: 1 1 54%; }
+  &__content { flex: 1 1 42%; }
+  &__visual  { flex: 1 1 58%; }
 
   &__eyebrow { @include inst-eyebrow; }
 
@@ -95,17 +95,10 @@ $inst-tint-movement: #eff7f0;
     cursor: pointer;
     transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
 
-    &::after {
-      content: "→";
-      transition: transform 0.2s ease;
-    }
-
     &:hover {
       background: lighten($cta-color, 6%);
       transform: translateY(-2px);
       box-shadow: 0 12px 22px -10px rgba($gray-dark, 0.3);
-
-      &::after { transform: translateX(3px); }
     }
   }
 
@@ -136,7 +129,7 @@ $inst-tint-movement: #eff7f0;
     position: relative;
     border-radius: 1.75rem;
     overflow: hidden;
-    aspect-ratio: 4 / 3;
+    aspect-ratio: 5 / 4;
     box-shadow: 0 16px 40px -30px rgba($gray-dark, 0.28);
   }
 
