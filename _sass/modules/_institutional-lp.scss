@@ -503,17 +503,23 @@ $inst-tint-movement: #eff7f0;
 
   &__main { position: relative; }
 
+  // Tighten the pillar so its head, copy and cards read as one compact unit.
+  .inst-feature-pillar__copy { margin-bottom: 1.5rem; }
+  .inst-feature-pillar__cards { gap: 1.5rem; }
+
   .inst-feature-pillar:not(:last-child) { margin-bottom: $u-space-big; }
 
   @media (min-width: $tablet-min) {
-    &__track { height: 200vh; }
+    // Taller track = more scroll distance per pillar, so one scroll gesture
+    // can't blow past all three pillars before the user sees them.
+    &__track { height: 300vh; }
 
     &__stage {
       position: sticky;
       top: 0;
       min-height: 100vh;
       justify-content: center;
-      gap: 3rem;
+      gap: 2.5rem;
       padding: 0;
     }
 
