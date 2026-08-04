@@ -35,6 +35,8 @@ image: /assets/img/airbeam-buy-it-now.jpg
 
 {% include institutional/data-to-case.html %}
 
+{% include institutional/credibility.html %}
+
 {% include institutional/consultation-cta.html %}
 
 {% include institutional/resources.html %}
