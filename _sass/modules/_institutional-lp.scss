@@ -342,7 +342,7 @@ $inst-tint-movement: #eff7f0;
 
     @media (min-width: $large-mobile-min) {
       grid-template-columns: repeat(2, 1fr);
-      align-items: start; // each card keeps its own height; expanding one won't stretch the other
+      align-items: start; // start (not stretch) so expanding one card doesn't blow up its collapsed sibling
     }
   }
 }
@@ -409,6 +409,9 @@ $inst-tint-movement: #eff7f0;
     font-size: 0.95rem;
     line-height: 1.5;
     margin-top: 0.4rem;
+    // Reserve two lines so collapsed cards read as equal height even when one
+    // summary is a single line — without stretching an open card's sibling.
+    min-height: calc(0.95rem * 1.5 * 2);
   }
 
   &__detail {
