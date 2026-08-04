@@ -65,7 +65,7 @@
           </div>
           {% endunless %}
 
-          <button class="product-cta-button" onclick="addToCart('mini', 'AirBeam Mini', {{ include.cta_price | default: 99 }}, '/assets/buy-it-now_ABMsidebyside.jpg')" aria-label="{{ include.cta_aria | default: 'Pre-order AirBeam Mini, next batch ships June 6' }}">
+          <button class="product-cta-button" onclick="addToCart('mini', 'AirBeam Mini', {{ include.cta_price | default: 99 }}, '/assets/buy-it-now_ABMsidebyside.jpg')" aria-label="{{ include.cta_aria | default: 'Pre-order AirBeam Mini, next batch ships July 6' }}">
             <img src="/assets/img/pages/buy-it-now/airbeam_logo.svg" alt="" class="airbeam-logo-icon" />
             <span class="cta-text">{{ include.cta_label | default: "Pre-order" }}</span>
           </button>
@@ -104,8 +104,8 @@
           <span>Free Expert Consulting</span>
         </div>
         <p class="showcase-consultation-text">{{ include.consult_text | default: "Want to discuss your specific needs or get expert advice? Let's talk!" }}</p>
-        <a href="{{ include.consult_link | default: '/airbeam/get-consultation' }}" target="_blank" class="showcase-consultation-button">
-          {{ include.consult_label | default: "Schedule a Call →" }}
+        <a href="{{ include.consult_link | default: '/airbeam/get-consultation' }}" target="_blank" rel="noopener noreferrer" class="showcase-consultation-button">
+          {{ include.consult_label | default: "Schedule a Call" }}<span aria-hidden="true"> →</span>
         </a>
       </div>
     </div>
