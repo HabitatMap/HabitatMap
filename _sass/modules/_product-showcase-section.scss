@@ -375,10 +375,6 @@
     background: linear-gradient(135deg, #ffd700 0%, #ffb347 100%);
     transform: translateY(-2px);
     box-shadow: 0 8px 25px rgba(255, 230, 81, 0.4);
-
-    .cta-icon {
-      transform: translateX(4px);
-    }
   }
 
   &:active {
@@ -390,12 +386,6 @@
     padding: 1rem 2.5rem;
     font-size: $base-font-size1;
   }
-}
-
-.cta-icon {
-  width: 18px;
-  height: 18px;
-  transition: transform 0.3s ease;
 }
 
 .warranty-highlight {
