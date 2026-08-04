@@ -342,7 +342,7 @@ $inst-tint-movement: #eff7f0;
 
     @media (min-width: $large-mobile-min) {
       grid-template-columns: repeat(2, 1fr);
-      align-items: stretch;
+      align-items: start; // each card keeps its own height; expanding one won't stretch the other
     }
   }
 }
