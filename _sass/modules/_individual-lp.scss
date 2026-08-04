@@ -25,7 +25,7 @@ $ilp-tint-movement: #eff7f0;
   line-height: 1.2;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: $green;
+  color: $green-dark; // AA-safe; raw $green fails contrast at this size
   margin: 0 0 $u-space-small;
 }
 
@@ -109,6 +109,11 @@ $ilp-tint-movement: #eff7f0;
     &:hover {
       transform: translateY(-2px);
       box-shadow: 0 10px 20px -8px rgba($gray-dark, 0.25);
+    }
+
+    &:focus-visible {
+      outline: 3px solid $green-dark;
+      outline-offset: 3px;
     }
   }
 
@@ -475,13 +480,6 @@ $ilp-tint-movement: #eff7f0;
     border: 1px solid #cac4d0;
     border-radius: 0.65rem;
     text-decoration: none;
-    transition: border-color 0.2s ease, background 0.2s ease;
-
-    &:hover,
-    &:focus-visible {
-      border-color: rgba($aq-good, 0.5);
-      background: rgba($aq-good, 0.03);
-    }
   }
 
   &__loc-name {
@@ -604,12 +602,12 @@ $ilp-tint-movement: #eff7f0;
 
   &__accuracy {
     text-align: center;
-    color: $gray;
+    color: $text-color; // was $gray (#818181 ~3.9:1) — fails AA
     font-size: 0.95rem;
     margin-top: $u-space-default;
 
     a {
-      color: $hm-brand;
+      color: $green-dark; // AA-safe link on white
       font-family: $bold-font;
       text-decoration: none;
       &:hover { text-decoration: underline; }
@@ -722,11 +720,17 @@ $ilp-tint-movement: #eff7f0;
 
   &__media {
     margin: 0;
-    min-height: 22rem;
+    min-height: 22rem; // desktop: fill the steps column height
     overflow: hidden;
     border-radius: 1.5rem;
     border: 1px solid rgba($gray-dark, 0.05);
     box-shadow: 0 16px 40px -30px rgba($gray-dark, 0.28);
+
+    // On phones the fixed min-height + cover crops hard — use a natural ratio.
+    @media (max-width: $large-mobile-max) {
+      min-height: 0;
+      aspect-ratio: 4 / 3;
+    }
 
     img {
       display: block;
@@ -790,17 +794,6 @@ $ilp-tint-movement: #eff7f0;
     line-height: 1.6;
     max-width: 40rem;
     margin: 0 auto $u-space-default;
-  }
-
-  &__story {
-    max-width: 42rem;
-    margin: 0 auto;
-    border: 1px dashed rgba($gray-dark, 0.3);
-    border-radius: 0.75rem;
-    padding: $u-space-small;
-    font-family: monospace;
-    font-size: 0.85rem;
-    color: $gray;
   }
 }
 

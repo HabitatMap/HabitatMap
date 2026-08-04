@@ -15,4 +15,6 @@ function toggleFAQ(button) {
     button.style.backgroundColor = 'transparent';
     button.style.borderRadius = '';
   }
+
+  button.setAttribute('aria-expanded', String(!isOpen));
 }

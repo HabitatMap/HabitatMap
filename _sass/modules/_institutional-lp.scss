@@ -2,7 +2,8 @@
 // Rigor, mission-led. Green (HabitatMap) accent; shares .faq-section styling.
 
 $inst-max-width: 1200px;
-$inst-accent: $hm-brand; // green (HabitatMap brand)
+$inst-accent: $hm-brand; // green (HabitatMap brand) — icons, borders, graphics
+$inst-accent-strong: $green-dark; // AA-safe green for text on white + CTA fills
 $inst-hero-glow: #e9f4ea;
 $inst-tint-street: #f7faf7;
 $inst-tint-meaning: #f2f8f3;
@@ -17,7 +18,7 @@ $inst-tint-movement: #eff7f0;
   line-height: 1.2;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: $inst-accent;
+  color: $inst-accent-strong; // AA-safe; raw accent fails contrast as small text
   margin: 0 0 $u-space-small;
 }
 
@@ -100,6 +101,11 @@ $inst-tint-movement: #eff7f0;
       transform: translateY(-2px);
       box-shadow: 0 12px 22px -10px rgba($gray-dark, 0.3);
     }
+
+    &:focus-visible {
+      outline: 3px solid $gray-dark;
+      outline-offset: 3px;
+    }
   }
 
   &__secondary {
@@ -117,20 +123,25 @@ $inst-tint-movement: #eff7f0;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 
     &:hover { transform: translateY(-2px); box-shadow: 0 10px 20px -8px rgba($gray-dark, 0.25); }
+
+    &:focus-visible {
+      outline: 3px solid $gray-dark;
+      outline-offset: 3px;
+    }
   }
 
   &__proof {
     font-size: 0.8rem;
-    color: $gray;
+    color: $text-color; // was $gray (#818181) — fails AA at 0.8rem
     margin: 0;
   }
 
   &__proof-link {
-    color: $hm-brand;
+    color: $inst-accent-strong; // AA-safe link on white
     text-decoration: underline;
     text-underline-offset: 0.15em;
 
-    &:hover { color: $green-dark; }
+    &:hover { color: darken($inst-accent-strong, 6%); }
   }
 
   &__image-wrapper {
@@ -230,7 +241,7 @@ $inst-tint-movement: #eff7f0;
     text-transform: uppercase;
     letter-spacing: 0.1em;
     font-size: 0.72rem;
-    color: $inst-accent;
+    color: $inst-accent-strong; // AA-safe small text
   }
 
   &__name {
@@ -623,7 +634,7 @@ $inst-tint-movement: #eff7f0;
   }
 
   &__report-link {
-    color: $inst-accent;
+    color: $inst-accent-strong; // AA-safe link text
     font-family: $bold-font;
     text-decoration: none;
 
@@ -668,7 +679,7 @@ $inst-tint-movement: #eff7f0;
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    color: $inst-accent;
+    color: $inst-accent-strong; // AA-safe small uppercase text
     font-family: $bold-font;
     font-size: 0.72rem;
     letter-spacing: 0.1em;
@@ -786,7 +797,7 @@ $inst-tint-movement: #eff7f0;
     gap: 0.5rem;
     flex: 0 0 auto;
     padding: 0.95rem 1.6rem;
-    background: $inst-accent;
+    background: $inst-accent-strong; // AA-safe: white text on darker green
     color: $white;
     border-radius: 2rem;
     font-family: $bold-font;
@@ -803,7 +814,7 @@ $inst-tint-movement: #eff7f0;
 
     &:hover,
     &:focus-visible {
-      background: darken($inst-accent, 6%);
+      background: darken($inst-accent-strong, 6%);
       transform: translateY(-2px);
       box-shadow: 0 14px 26px -18px rgba($inst-accent, 0.7);
 
@@ -873,7 +884,7 @@ $inst-tint-movement: #eff7f0;
     margin-bottom: 1rem;
 
     span {
-      color: $inst-accent;
+      color: $inst-accent-strong; // AA-safe small uppercase label
       font-family: $bold-font;
       font-size: 0.72rem;
       letter-spacing: 0.12em;
@@ -1120,7 +1131,7 @@ $inst-tint-movement: #eff7f0;
     border-radius: 2rem;
     background: $white;
     border: 1px solid rgba($inst-accent, 0.18);
-    color: $inst-accent;
+    color: $inst-accent-strong; // AA-safe badge text
     font-family: $body-font;
     font-size: 0.72rem;
     font-weight: 700;
@@ -1161,12 +1172,23 @@ $inst-tint-movement: #eff7f0;
     cursor: pointer;
     transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
 
-    &:hover,
-    &.is-active {
-      background: $inst-accent;
-      border-color: $inst-accent;
-      color: $white;
+    // Hover is a light tint so it reads distinctly from the solid selected state.
+    &:hover {
+      background: rgba($inst-accent, 0.1);
+      border-color: $inst-accent-strong;
       transform: translateY(-1px);
+    }
+
+    // Selected: solid AA-safe fill (white text needs the darker green).
+    &.is-active {
+      background: $inst-accent-strong;
+      border-color: $inst-accent-strong;
+      color: $white;
+    }
+
+    &:focus-visible {
+      outline: 3px solid $inst-accent-strong;
+      outline-offset: 2px;
     }
   }
 
@@ -1206,6 +1228,11 @@ $inst-tint-movement: #eff7f0;
     &:hover {
       background: lighten($cta-color, 6%);
       box-shadow: 0 18px 34px -20px rgba($gray-dark, 0.45);
+    }
+
+    &:focus-visible {
+      outline: 3px solid $gray-dark;
+      outline-offset: 3px;
     }
   }
 
@@ -1270,7 +1297,7 @@ $inst-tint-movement: #eff7f0;
       gap: 0.45rem;
       width: fit-content;
       margin-top: auto;
-      color: $inst-accent;
+      color: $inst-accent-strong; // AA-safe link text
       font-family: $bold-font;
       font-size: 0.9rem;
       text-decoration: none;

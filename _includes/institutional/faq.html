@@ -12,13 +12,13 @@
         <div class="faq-items">
           {% for question in site.data.faq-institutional.questions %}
             <div class="faq-item">
-              <button class="faq-toggle" onclick="toggleFAQ(this)">
+              <button type="button" class="faq-toggle" onclick="toggleFAQ(this)" aria-expanded="false" aria-controls="faq-inst-a-{{ forloop.index }}">
                 <span class="toggle-text">{{ question.q }}</span>
-                <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                   <polyline points="6,9 12,15 18,9"></polyline>
                 </svg>
               </button>
-              <div class="faq-content">
+              <div class="faq-content" id="faq-inst-a-{{ forloop.index }}">
                 <p class="faq-answer">{{ question.a }}</p>
               </div>
             </div>

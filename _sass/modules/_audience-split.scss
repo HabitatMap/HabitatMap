@@ -26,7 +26,7 @@
     line-height: 1.2;
     letter-spacing: 0.15em;
     text-transform: uppercase;
-    color: $hm-brand;
+    color: $green-dark; // AA-safe; raw $hm-brand fails contrast as text
     margin: 0 0 $u-space-small;
   }
 
@@ -186,7 +186,7 @@
     font-size: $base-font-size-1;
     font-weight: 600;
     letter-spacing: 0.02em;
-    color: var(--accent);
+    color: var(--accent-strong); // AA-safe text shade (--accent is icon-only)
     margin-bottom: 0.5rem;
   }
 
