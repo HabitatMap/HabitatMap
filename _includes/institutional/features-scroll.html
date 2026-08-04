@@ -153,7 +153,10 @@
       var total = track.offsetHeight - window.innerHeight;
       if (total <= 0) { setActive(0); return; }
       var p = Math.min(0.999, Math.max(0, -rect.top / total));
-      setActive(Math.floor(p * pillars.length));
+      /* Linear map: the middle pillar gets the widest scroll interval. NOTE:
+         inline scripts here are minified onto one line, so only block
+         comments are safe — a // comment would swallow the rest of the IIFE. */
+      setActive(Math.round(p * (pillars.length - 1)));
     }
 
     function requestTick() {
