@@ -524,15 +524,17 @@ $inst-tint-movement: #eff7f0;
   @media (min-width: $tablet-min) {
     // Taller track = more scroll distance per pillar, so one scroll gesture
     // can't blow past all three pillars before the user sees them.
-    &__track { height: 300vh; }
+    &__track { height: 200vh; }
 
     &__stage {
       position: sticky;
       top: 0;
       min-height: 100vh;
+      // Centered so the empty space splits evenly above and below the pinned
+      // block, reading as balanced whitespace rather than one broken gap.
       justify-content: center;
       gap: 2.5rem;
-      padding: 0;
+      padding: $u-space-big 0;
     }
 
     &__grid { align-items: start; }
