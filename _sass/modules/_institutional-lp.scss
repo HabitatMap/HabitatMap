@@ -120,9 +120,17 @@ $inst-tint-movement: #eff7f0;
   }
 
   &__proof {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     color: $gray;
     margin: 0;
+  }
+
+  &__proof-link {
+    color: $hm-brand;
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+
+    &:hover { color: $green-dark; }
   }
 
   &__image-wrapper {
