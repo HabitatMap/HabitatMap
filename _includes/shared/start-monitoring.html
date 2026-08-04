@@ -53,6 +53,8 @@
             <span class="price-note">One-time purchase · Ships worldwide</span>
           </div>
 
+          {% comment %} In stock again — sold-out notice hidden. Uncomment (and update the date) when a batch sells out. {% endcomment %}
+          {% comment %}
           {% unless include.hide_stock_notice %}
           <div class="product-stock-notice" role="status" aria-live="polite">
             <svg class="product-stock-notice-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
@@ -64,6 +66,7 @@
             </p>
           </div>
           {% endunless %}
+          {% endcomment %}
 
           <button class="product-cta-button" onclick="addToCart('mini', 'AirBeam Mini', {{ include.cta_price | default: 99 }}, '/assets/buy-it-now_ABMsidebyside.jpg')" aria-label="{{ include.cta_aria | default: 'Pre-order AirBeam Mini, next batch ships July 6' }}">
             <img src="/assets/img/pages/buy-it-now/airbeam_logo.svg" alt="" class="airbeam-logo-icon" />
