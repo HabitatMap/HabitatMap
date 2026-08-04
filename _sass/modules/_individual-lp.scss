@@ -635,9 +635,14 @@ $ilp-tint-movement: #eff7f0;
 
   &__container {
     width: 100%;
-    max-width: 60rem;
+    max-width: 66rem;
     margin: 0 auto;
+  }
+
+  &__header {
     text-align: center;
+    max-width: 40rem;
+    margin: 0 auto $u-space-default;
   }
 
   &__eyebrow {
@@ -652,49 +657,60 @@ $ilp-tint-movement: #eff7f0;
     color: $text-color;
     font-size: $base-font-size1;
     line-height: 1.6;
-    max-width: 34rem;
-    margin: 0 auto $u-space-default;
+    margin: 0;
+  }
+
+  &__layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $u-space-default;
+    align-items: stretch;
+
+    @media (min-width: $tablet-min) {
+      grid-template-columns: 1fr minmax(0, 0.82fr);
+      gap: 3rem;
+    }
   }
 
   &__steps {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     gap: $u-space-small;
-
-    @media (min-width: $tablet-min) {
-      grid-template-columns: repeat(3, 1fr);
-    }
   }
 
   &__step {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
     background: $white;
     border: 1px solid rgba($gray-dark, 0.1);
     border-radius: 1rem;
-    padding: $u-space-default $u-space-small;
-    text-align: center;
+    padding: 1.25rem 1.4rem;
+    text-align: left;
   }
 
   &__step-num {
     display: grid;
     place-items: center;
-    width: 2.5rem;
-    height: 2.5rem;
-    margin: 0 auto $u-space-small;
+    flex: 0 0 auto;
+    width: 2.25rem;
+    height: 2.25rem;
     border-radius: 50%;
     background: $green;
     color: $white;
     font-family: $bold-font;
-    font-size: 1.1rem;
+    font-size: 1.05rem;
   }
 
   &__step-title {
     font-family: $bold-font;
     color: $gray-dark;
-    font-size: 1.1rem;
-    margin: 0 0 0.4rem;
+    font-size: 1.05rem;
+    margin: 0 0 0.25rem;
   }
 
   &__step-desc {
@@ -702,6 +718,23 @@ $ilp-tint-movement: #eff7f0;
     font-size: 0.95rem;
     line-height: 1.5;
     margin: 0;
+  }
+
+  &__media {
+    margin: 0;
+    min-height: 22rem;
+    overflow: hidden;
+    border-radius: 1.5rem;
+    border: 1px solid rgba($gray-dark, 0.05);
+    box-shadow: 0 16px 40px -30px rgba($gray-dark, 0.28);
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
   }
 }
 
