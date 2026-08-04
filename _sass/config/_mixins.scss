@@ -127,3 +127,23 @@
   color: $gray-dark;
   margin: 0 0 $u-space-small;
 }
+
+// Canonical secondary button: white "outline pill" with dark text and a subtle
+// gray border. On hover it stays white and just deepens the border + lifts
+// (no gray fill). Skin only — callers keep their own padding/size/layout.
+@mixin pill-button {
+  background: $white;
+  border: 1px solid rgba($gray-dark, 0.18);
+  color: $gray-dark;
+  border-radius: 2rem;
+  transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover,
+  &:focus-visible {
+    background: $white;
+    color: $gray-dark;
+    border-color: rgba($gray-dark, 0.35);
+    transform: translateY(-2px);
+    box-shadow: 0 14px 26px -18px rgba($gray-dark, 0.4);
+  }
+}

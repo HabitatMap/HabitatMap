@@ -655,15 +655,11 @@ $inst-tint-street: $lp-tint-street;
     gap: 0.5rem;
     flex: 0 0 auto;
     padding: 0.95rem 1.6rem;
-    background: $white; // white pill with dark text, matching the hero button
-    border: 1px solid rgba($gray-dark, 0.18);
-    color: $gray-dark;
-    border-radius: 2rem;
+    @include pill-button;
     font-family: $bold-font;
     font-size: 0.95rem;
     text-decoration: none;
     white-space: nowrap;
-    transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
 
     svg {
       width: 1.05rem;
@@ -671,14 +667,8 @@ $inst-tint-street: $lp-tint-street;
       transition: transform 0.2s ease;
     }
 
-    &:hover,
-    &:focus-visible {
-      border-color: rgba($gray-dark, 0.35);
-      transform: translateY(-2px);
-      box-shadow: 0 14px 26px -18px rgba($gray-dark, 0.4);
-
-      svg { transform: translateX(2px); }
-    }
+    &:hover svg,
+    &:focus-visible svg { transform: translateX(2px); }
   }
 }
 

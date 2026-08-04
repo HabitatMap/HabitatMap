@@ -193,17 +193,13 @@
           align-items: center;
           justify-content: center;
           gap: 0.5rem;
-          background: $white;
-          color: $gray-dark;
-          border: 1.5px solid rgba($gray-dark, 0.2);
+          @include pill-button;
           padding: 1rem 2rem;
-          border-radius: 2rem;
           text-decoration: none;
           font-family: $bold-font;
           font-weight: 600;
           font-size: $base-font-size;
           width: 100%;
-          transition: all 0.3s ease;
 
           svg {
             width: 16px;
@@ -211,16 +207,8 @@
             transition: transform 0.3s ease;
           }
 
-          &:hover {
-            background: $gray;
-            color: $white;
-            border-color: $gray;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-
-            svg {
-              transform: translateX(4px);
-            }
+          &:hover svg {
+            transform: translateX(4px);
           }
 
           &:active {

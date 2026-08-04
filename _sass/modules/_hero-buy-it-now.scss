@@ -197,20 +197,11 @@
 }
 
 .buy-hero__btn--secondary {
-  background: $white;
-  color: $gray-dark;
-  border: 1.5px solid $teal-light;
+  @include pill-button;
 
   svg {
     width: 14px;
     height: 14px;
-  }
-
-  &:hover {
-    background: $gray;
-    color: $white;
-    border-color: $gray;
-    transform: translateY(-2px);
   }
 
   &:active {
