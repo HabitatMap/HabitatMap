@@ -132,32 +132,32 @@
 <script>
   (function() {
     function initInstitutionalOrder() {
-      var section = document.querySelector('[data-inst-order]');
+      const section = document.querySelector('[data-inst-order]');
       if (!section) return;
 
-      var buttons = Array.prototype.slice.call(section.querySelectorAll('[data-qty]'));
-      var input = section.querySelector('#inst-order-quantity');
-      var summary = section.querySelector('[data-inst-order-summary]');
-      var total = section.querySelector('[data-inst-order-total]');
-      var addButton = section.querySelector('[data-inst-order-add]');
-      var unitPrice = 99;
+      const buttons = Array.prototype.slice.call(section.querySelectorAll('[data-qty]'));
+      const input = section.querySelector('#inst-order-quantity');
+      const summary = section.querySelector('[data-inst-order-summary]');
+      const total = section.querySelector('[data-inst-order-total]');
+      const addButton = section.querySelector('[data-inst-order-add]');
+      const unitPrice = 99;
 
       function getQuantity() {
-        var parsed = parseInt(input.value, 10);
+        const parsed = parseInt(input.value, 10);
         if (isNaN(parsed) || parsed < 1) return 1;
         return parsed;
       }
 
       function setActiveButton(quantity) {
         buttons.forEach(function(button) {
-          var active = parseInt(button.getAttribute('data-qty'), 10) === quantity;
+          const active = parseInt(button.getAttribute('data-qty'), 10) === quantity;
           button.classList.toggle('is-active', active);
           button.setAttribute('aria-pressed', active ? 'true' : 'false');
         });
       }
 
       function updateSummary() {
-        var quantity = getQuantity();
+        const quantity = getQuantity();
         input.value = quantity;
         setActiveButton(quantity);
         summary.textContent = quantity + ' × $' + unitPrice;
@@ -175,7 +175,7 @@
       input.addEventListener('blur', updateSummary);
 
       addButton.addEventListener('click', function() {
-        var product = {
+        const product = {
           id: 'mini',
           name: 'AirBeam Mini',
           price: unitPrice,

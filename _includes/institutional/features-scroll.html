@@ -126,16 +126,20 @@
 
 <script>
   (function () {
-    var section = document.querySelector('[data-inst-features-scroll]');
+    const section = document.querySelector('[data-inst-features-scroll]');
     if (!section) return;
-    var track = section.querySelector('.inst-features-scroll__track');
-    var pillars = Array.prototype.slice.call(section.querySelectorAll('.inst-feature-pillar'));
-    var steps = Array.prototype.slice.call(section.querySelectorAll('.inst-features-scroll__step'));
+    const track = section.querySelector('.inst-features-scroll__track');
+    const pillars = Array.prototype.slice.call(section.querySelectorAll('.inst-feature-pillar'));
+    const steps = Array.prototype.slice.call(section.querySelectorAll('.inst-features-scroll__step'));
     if (!pillars.length) return;
 
-    var desktop = window.matchMedia('(min-width: 768px)');
-    var current = -1;
-    var ticking = false;
+    /* Opt into the pinned-scroll reveal only once JS is running; the CSS hides
+       pillars solely under this class, so a no-JS load shows them all. */
+    section.classList.add('is-enhanced');
+
+    const desktop = window.matchMedia('(min-width: 768px)');
+    let current = -1;
+    let ticking = false;
 
     function setActive(idx) {
       if (idx === current) return;
@@ -149,10 +153,10 @@
 
     function onScroll() {
       if (!desktop.matches) { pillars.forEach(function (p) { p.classList.add('is-active'); }); return; }
-      var rect = track.getBoundingClientRect();
-      var total = track.offsetHeight - window.innerHeight;
+      const rect = track.getBoundingClientRect();
+      const total = track.offsetHeight - window.innerHeight;
       if (total <= 0) { setActive(0); return; }
-      var p = Math.min(0.999, Math.max(0, -rect.top / total));
+      const p = Math.min(0.999, Math.max(0, -rect.top / total));
       /* Linear map: the middle pillar gets the widest scroll interval. NOTE:
          inline scripts here are minified onto one line, so only block
          comments are safe — a // comment would swallow the rest of the IIFE. */
@@ -166,8 +170,8 @@
     steps.forEach(function (step) {
       step.addEventListener('click', function () {
         if (!desktop.matches) return;
-        var i = parseInt(step.getAttribute('data-goto'), 10) || 0;
-        var total = track.offsetHeight - window.innerHeight;
+        const i = parseInt(step.getAttribute('data-goto'), 10) || 0;
+        const total = track.offsetHeight - window.innerHeight;
         window.scrollTo({ top: track.offsetTop + (total * (i + 0.5) / pillars.length), behavior: 'smooth' });
       });
     });
