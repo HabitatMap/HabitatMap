@@ -4,33 +4,11 @@
 $inst-max-width: 1200px;
 $inst-accent: $hm-brand; // green (HabitatMap brand) — icons, borders, graphics
 $inst-accent-strong: $green-dark; // AA-safe green for text on white + CTA fills
-$inst-hero-glow: #e9f4ea;
-$inst-tint-street: #f7faf7;
-$inst-tint-meaning: #f2f8f3;
-$inst-tint-setup: #f5f8f5;
-$inst-tint-movement: #eff7f0;
+$inst-hero-glow: $lp-hero-glow;
+$inst-tint-street: $lp-tint-street;
 
-@mixin inst-eyebrow {
-  display: block;
-  font-family: $body-font;
-  font-size: $base-font-size-2;
-  font-weight: 600;
-  line-height: 1.2;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: $inst-accent-strong; // AA-safe; raw accent fails contrast as small text
-  margin: 0 0 $u-space-small;
-}
-
-@mixin inst-h2 {
-  font-family: $bold-font;
-  font-size: clamp(2rem, 3vw, 2.75rem);
-  font-weight: 700;
-  line-height: 1.15;
-  letter-spacing: -0.03em;
-  color: $gray-dark;
-  margin: 0 0 $u-space-small;
-}
+// Section eyebrow + title use the shared lp-eyebrow / lp-title mixins
+// (config/_mixins.scss), also used by the individual LP.
 
 @mixin inst-container {
   width: 100%;
@@ -60,7 +38,7 @@ $inst-tint-movement: #eff7f0;
   &__content { flex: 1 1 42%; }
   &__visual  { flex: 1 1 58%; }
 
-  &__eyebrow { @include inst-eyebrow; }
+  &__eyebrow { @include lp-eyebrow; }
 
   &__title {
     font-family: $bold-font;
@@ -190,11 +168,11 @@ $inst-tint-movement: #eff7f0;
   background: $white;
 
   .faq-eyebrow {
-    @include inst-eyebrow;
+    @include lp-eyebrow;
   }
 
   .faq-title {
-    @include inst-h2;
+    @include lp-title;
   }
 }
 
@@ -268,35 +246,7 @@ $inst-tint-movement: #eff7f0;
   }
 }
 
-// ---- Features (all pillars shown in normal document flow) ----------------
-.inst-features {
-  background: $white;
-
-  &__container {
-    @include inst-container;
-    width: 100%;
-  }
-
-  &__header {
-    max-width: 48rem;
-    margin: 0 auto $u-space-big;
-    text-align: center;
-  }
-
-  &__eyebrow { @include inst-eyebrow; }
-
-  &__title {
-    @include inst-h2;
-    margin-bottom: 0;
-  }
-
-  &__pillars {
-    display: flex;
-    flex-direction: column;
-    gap: $u-space-big;
-  }
-}
-
+// ---- Features (pillar + card styles, shared by the pinned-scroll section) --
 .inst-feature-pillar {
   &__head {
     display: flex;
@@ -424,8 +374,7 @@ $inst-tint-movement: #eff7f0;
   }
 }
 
-// ---- Features (ALTERNATE design: pinned stage, one pillar per scroll) ----
-// Duplicated for client comparison against the stacked .inst-features layout.
+// ---- Features (pinned stage, one pillar revealed per scroll) -------------
 // Reuses the shared .inst-feature-pillar / .inst-feature-card styles; the
 // pinned overlap + fade behavior is scoped to this section only.
 .inst-features-scroll {
@@ -466,10 +415,10 @@ $inst-tint-movement: #eff7f0;
     text-align: center;
   }
 
-  &__eyebrow { @include inst-eyebrow; }
+  &__eyebrow { @include lp-eyebrow; }
 
   &__title {
-    @include inst-h2;
+    @include lp-title;
     margin-bottom: 0;
   }
 
@@ -544,7 +493,12 @@ $inst-tint-movement: #eff7f0;
 
     &__main { display: grid; }
 
-    .inst-feature-pillar {
+    .inst-feature-pillar:not(:last-child) { margin-bottom: 0; }
+
+    // Pinned-scroll reveal is a JS enhancement: the script adds `.is-enhanced`.
+    // Without JS the pillars stay in normal flow and fully visible instead of
+    // stacking on top of each other while hidden.
+    &.is-enhanced .inst-feature-pillar {
       grid-area: 1 / 1;
       opacity: 0;
       visibility: hidden;
@@ -556,8 +510,6 @@ $inst-tint-movement: #eff7f0;
         visibility: visible;
         transform: none;
       }
-
-      &:not(:last-child) { margin-bottom: 0; }
     }
   }
 }
@@ -589,8 +541,8 @@ $inst-tint-movement: #eff7f0;
     }
   }
 
-  &__eyebrow { @include inst-eyebrow; }
-  &__title { @include inst-h2; }
+  &__eyebrow { @include lp-eyebrow; }
+  &__title { @include lp-title; }
 
   &__subtitle {
     color: $text-color;
@@ -776,7 +728,7 @@ $inst-tint-movement: #eff7f0;
   }
 
   &__eyebrow {
-    @include inst-eyebrow;
+    @include lp-eyebrow;
     display: inline-flex;
     align-items: center;
     gap: 0.4rem;
@@ -787,7 +739,7 @@ $inst-tint-movement: #eff7f0;
     }
   }
 
-  &__title { @include inst-h2; }
+  &__title { @include lp-title; }
 
   &__body {
     color: $text-color;
@@ -844,8 +796,8 @@ $inst-tint-movement: #eff7f0;
     text-align: center;
   }
 
-  &__eyebrow { @include inst-eyebrow; }
-  &__title { @include inst-h2; }
+  &__eyebrow { @include lp-eyebrow; }
+  &__title { @include lp-title; }
 
   &__body {
     color: $text-color;
@@ -1020,8 +972,8 @@ $inst-tint-movement: #eff7f0;
   }
 
   &__header { text-align: center; margin-bottom: $u-space-default; }
-  &__eyebrow { @include inst-eyebrow; }
-  &__title { @include inst-h2; margin-bottom: 0; }
+  &__eyebrow { @include lp-eyebrow; }
+  &__title { @include lp-title; margin-bottom: 0; }
 
   &__grid {
     display: grid;
@@ -1117,10 +1069,10 @@ $inst-tint-movement: #eff7f0;
     text-align: center;
   }
 
-  &__eyebrow { @include inst-eyebrow; }
+  &__eyebrow { @include lp-eyebrow; }
 
   &__title {
-    @include inst-h2;
+    @include lp-title;
     margin-bottom: $u-space-small;
   }
 

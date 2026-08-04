@@ -103,3 +103,27 @@
   -o-animation: #{$str};
   animation: #{$str};
 }
+
+// Shared landing-page section eyebrow + title (Individual + Institutional LPs).
+// $green-dark is the AA-safe brand green ($inst-accent-strong resolves to it too).
+@mixin lp-eyebrow {
+  display: block;
+  font-family: $body-font;
+  font-size: $base-font-size-2;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: $green-dark; // AA-safe; raw green fails contrast at this size
+  margin: 0 0 $u-space-small;
+}
+
+@mixin lp-title {
+  font-family: $bold-font;
+  font-size: clamp(2rem, 3vw, 2.75rem);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  color: $gray-dark;
+  margin: 0 0 $u-space-small;
+}

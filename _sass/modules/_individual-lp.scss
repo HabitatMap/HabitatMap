@@ -5,39 +5,17 @@
 // AirCasting PM2.5 heat-scale colors (matches aircasting.org map markers)
 $aq-green: #6fc44c;
 $aq-yellow: #f4c633;
-$aq-orange: #f2953f;
-$aq-red: #e0503a;
 $ilp-max-width: 1200px;
 
-// Section background tints — matched to the mockup (subtle pale greens)
-$ilp-hero-glow: #e9f4ea; // hero radial gradient colour
-$ilp-tint-street: #f7faf7;
-$ilp-tint-meaning: #f2f8f3;
-$ilp-tint-setup: #f5f8f5;
-$ilp-tint-movement: #eff7f0;
+// Section background tints — shared LP palette (config/_variables.scss)
+$ilp-hero-glow: $lp-hero-glow; // hero radial gradient colour
+$ilp-tint-street: $lp-tint-street;
+$ilp-tint-meaning: $lp-tint-meaning;
+$ilp-tint-setup: $lp-tint-setup;
+$ilp-tint-movement: $lp-tint-movement;
 
-// Canonical section eyebrow + title (matches the Buy It Now page)
-@mixin ilp-eyebrow {
-  display: block;
-  font-family: $body-font;
-  font-size: $base-font-size-2;
-  font-weight: 600;
-  line-height: 1.2;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: $green-dark; // AA-safe; raw $green fails contrast at this size
-  margin: 0 0 $u-space-small;
-}
-
-@mixin ilp-title {
-  font-family: $bold-font;
-  font-size: clamp(2rem, 3vw, 2.75rem);
-  font-weight: 700;
-  line-height: 1.15;
-  letter-spacing: -0.03em;
-  color: $gray-dark;
-  margin: 0 0 $u-space-small;
-}
+// Section eyebrow + title use the shared lp-eyebrow / lp-title mixins
+// (config/_mixins.scss), also used by the institutional LP.
 
 // ---- Hero ----------------------------------------------------------------
 .ilp-hero {
@@ -63,7 +41,7 @@ $ilp-tint-movement: #eff7f0;
   }
 
   &__eyebrow {
-    @include ilp-eyebrow;
+    @include lp-eyebrow;
   }
 
   &__title {
@@ -167,11 +145,11 @@ $ilp-tint-movement: #eff7f0;
   &__visual  { flex: 1 1 52%; }
 
   &__eyebrow {
-    @include ilp-eyebrow;
+    @include lp-eyebrow;
   }
 
   &__title {
-    @include ilp-title;
+    @include lp-title;
   }
 
   &__body {
@@ -335,11 +313,11 @@ $ilp-tint-movement: #eff7f0;
   &__card    { flex: 1 1 48%; }
 
   &__eyebrow {
-    @include ilp-eyebrow;
+    @include lp-eyebrow;
   }
 
   &__title {
-    @include ilp-title;
+    @include lp-title;
   }
 
   &__body {
@@ -538,11 +516,11 @@ $ilp-tint-movement: #eff7f0;
   }
 
   &__eyebrow {
-    @include ilp-eyebrow;
+    @include lp-eyebrow;
   }
 
   &__title {
-    @include ilp-title;
+    @include lp-title;
   }
 
   &__subtitle {
@@ -644,11 +622,11 @@ $ilp-tint-movement: #eff7f0;
   }
 
   &__eyebrow {
-    @include ilp-eyebrow;
+    @include lp-eyebrow;
   }
 
   &__title {
-    @include ilp-title;
+    @include lp-title;
   }
 
   &__body {
@@ -754,11 +732,11 @@ $ilp-tint-movement: #eff7f0;
   }
 
   &__eyebrow {
-    @include ilp-eyebrow;
+    @include lp-eyebrow;
   }
 
   &__title {
-    @include ilp-title;
+    @include lp-title;
   }
 
   &__stats {
