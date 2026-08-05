@@ -399,16 +399,44 @@ class ShoppingCart {
     }
   }
 
-  initializePayPalButtons() {
-    // Load PayPal SDK if not already loaded
-    if (typeof paypal === 'undefined') {
-      const script = document.createElement('script');
-      script.src = 'https://www.paypal.com/sdk/js?client-id=AU7621qddj4yLzUySUUbk0XDBNZH04GScHgtABUPnY-C1eVyl9mZu3CSoMY8FgNIf8G68qjCAFrp6Fu3&currency=USD&commit=false';
-      script.onload = () => this.createPayPalButtons();
-      document.head.appendChild(script);
-    } else {
+  async initializePayPalButtons() {
+    // SDK already loaded: just (re)render the buttons.
+    if (typeof paypal !== 'undefined') {
       this.createPayPalButtons();
+      return;
     }
+    // Guard against updateCartDisplay firing repeatedly before the async
+    // SDK load resolves — otherwise we'd inject the script multiple times.
+    if (this._sdkLoading) return;
+    this._sdkLoading = true;
+
+    const clientId = await this.getPayPalClientId();
+    const script = document.createElement('script');
+    script.src = `https://www.paypal.com/sdk/js?client-id=${encodeURIComponent(clientId)}&currency=USD&commit=false`;
+    script.onload = () => this.createPayPalButtons();
+    document.head.appendChild(script);
+  }
+
+  // Fetch the PayPal client-id from the Netlify function so the SDK always
+  // matches the environment the server creates orders in (sandbox vs live).
+  // A hardcoded client-id mismatched with the server's env causes PayPal's
+  // card form to fail with INVALID_RESOURCE_ID. Falls back to the public
+  // live id when the function has no PayPal env configured (pure preview).
+  async getPayPalClientId() {
+    if (this._clientId) return this._clientId;
+    const FALLBACK_CLIENT_ID = 'AU7621qddj4yLzUySUUbk0XDBNZH04GScHgtABUPnY-C1eVyl9mZu3CSoMY8FgNIf8G68qjCAFrp6Fu3';
+    try {
+      const res = await fetch('/.netlify/functions/paypal', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ action: 'config' }),
+      });
+      const data = res.ok ? await res.json() : {};
+      this._clientId = data.clientId || FALLBACK_CLIENT_ID;
+    } catch (e) {
+      this._clientId = FALLBACK_CLIENT_ID;
+    }
+    return this._clientId;
   }
 
     createPayPalButtons() {

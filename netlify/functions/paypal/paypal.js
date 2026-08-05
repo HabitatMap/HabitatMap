@@ -164,11 +164,26 @@ const capturePayment = async (orderID) => {
   return { statusCode: response.status, body: JSON.stringify(data) };
 };
 
+// Expose the public client-id so the frontend SDK uses the same PayPal
+// environment (sandbox vs live) this function creates orders in. The
+// client-id is not a secret; the app secret stays server-side.
+const getConfig = () => {
+  return {
+    statusCode: 200,
+    body: JSON.stringify({
+      clientId: PAYPAL_CLIENT_ID || null,
+      previewMode: isPreviewMode,
+    }),
+  };
+};
+
 const handler = async (req) => {
   try {
     const { action } = JSON.parse(req.body);
 
-    if (action === "create") {
+    if (action === "config") {
+      return getConfig();
+    } else if (action === "create") {
       const { cart, shippingOption } = JSON.parse(req.body);
       return await createOrder(cart, shippingOption);
     } else if (action === "capture") {
