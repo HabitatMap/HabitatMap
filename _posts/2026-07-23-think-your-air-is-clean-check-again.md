@@ -5,11 +5,11 @@ date: 2026-07-23
 last_modified_at: ""
 featured: false
 image: /images/uploads/7db0f75d-5536-4974-8666-6baa3aae6275.jpg
-category: Education
+category: Health
 tag:
   - community science
-  - community-based-organization
   - health
+  - education
 ---
 Most people picture air pollution as something that happens outside—traffic exhaust, factory smoke, wildfire haze drifting in from somewhere else. And the outdoor picture is genuinely alarming: the American Lung Association's 2026 [State of the Air](https://www.lung.org/getmedia/32f0646d-c5de-4501-b0ac-07cd63c974d4/State-of-the-Air-2026-Report.pdf) report found that 44% of Americans, over 152 million people, live in counties that failed at least one air quality measure, with nearly half of U.S. children breathing unhealthy air where they live. The health stakes are serious and well documented—particle pollution alone is linked to lung cancer, heart attacks, strokes, and early death.\
 \
