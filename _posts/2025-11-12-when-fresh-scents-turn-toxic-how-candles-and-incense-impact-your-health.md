@@ -9,7 +9,7 @@ image: /images/uploads/burning-candles-zz-230419-5dd288.avif
 intro: "Candles, incense, and air fresheners are beloved for creating ambiance
   and masking odors, but many of these seemingly harmless products release
   hidden pollutants into your indoor air. "
-category: Education
+category: Health
 tag:
   - community science
   - education
