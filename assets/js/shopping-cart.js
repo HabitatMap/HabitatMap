@@ -238,14 +238,39 @@ class ShoppingCart {
     this.updateCartDisplay();
   }
 
-  // Fill the "Ship to country" dropdown from COUNTRIES. Defaults to United
-  // States (first entry) so shipping totals show the domestic tier by default.
+  // Fill the "Ship to country" dropdown from COUNTRIES and preselect the
+  // buyer's own country when we can detect it, so they don't have to hunt
+  // for it. Falls back to United States (the first option) otherwise.
   populateCountrySelect() {
     const select = document.getElementById('cart-shipping-country');
     if (!select) return;
     select.innerHTML = COUNTRIES
       .map(c => `<option value="${c.code}">${c.name}</option>`)
       .join('');
+    const detected = this.detectCountryCode();
+    if (detected && COUNTRIES.some(c => c.code === detected)) {
+      select.value = detected;
+    }
+  }
+
+  // Best-effort default from the browser's locale region (e.g. "en-GB" -> GB,
+  // "pl" -> PL). Purely a UX convenience — the buyer can still change it, and
+  // it is not sent to PayPal. Returns null when the region is unknown or not
+  // a shippable destination, leaving the US default in place.
+  detectCountryCode() {
+    const langs = (navigator.languages && navigator.languages.length)
+      ? navigator.languages
+      : [navigator.language];
+    for (const lang of langs) {
+      if (!lang) continue;
+      try {
+        const region = new Intl.Locale(lang).maximize().region;
+        if (region) return region.toUpperCase();
+      } catch (e) {
+        // Ignore malformed locale tags and try the next one.
+      }
+    }
+    return null;
   }
 
   // Domestic pricing for the US and its territories, international elsewhere.
