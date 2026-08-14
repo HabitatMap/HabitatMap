@@ -411,6 +411,14 @@ class ShoppingCart {
     this._sdkLoading = true;
 
     const clientId = await this.getPayPalClientId();
+    // Fail closed: never guess the environment. Without a client-id from the
+    // server we don't know if we're sandbox or live, so we surface the error
+    // instead of silently loading a hardcoded (possibly wrong-env) id.
+    if (!clientId) {
+      this._sdkLoading = false;
+      this.showNotification('Payment temporarily unavailable. Please try again.', 'error');
+      return;
+    }
     const script = document.createElement('script');
     script.src = `https://www.paypal.com/sdk/js?client-id=${encodeURIComponent(clientId)}&currency=USD&commit=false`;
     script.onload = () => this.createPayPalButtons();
@@ -419,24 +427,26 @@ class ShoppingCart {
 
   // Fetch the PayPal client-id from the Netlify function so the SDK always
   // matches the environment the server creates orders in (sandbox vs live).
-  // A hardcoded client-id mismatched with the server's env causes PayPal's
-  // card form to fail with INVALID_RESOURCE_ID. Falls back to the public
-  // live id when the function has no PayPal env configured (pure preview).
+  // A mismatched client-id makes PayPal's card form fail with
+  // INVALID_RESOURCE_ID. Returns null on failure — the caller fails closed
+  // rather than fall back to a hardcoded id and risk the wrong environment.
   async getPayPalClientId() {
     if (this._clientId) return this._clientId;
-    const FALLBACK_CLIENT_ID = 'AU7621qddj4yLzUySUUbk0XDBNZH04GScHgtABUPnY-C1eVyl9mZu3CSoMY8FgNIf8G68qjCAFrp6Fu3';
     try {
       const res = await fetch('/.netlify/functions/paypal', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ action: 'config' }),
       });
-      const data = res.ok ? await res.json() : {};
-      this._clientId = data.clientId || FALLBACK_CLIENT_ID;
+      if (!res.ok) throw new Error(`config request failed: ${res.status}`);
+      const { clientId } = await res.json();
+      if (!clientId) throw new Error('no PayPal client-id configured');
+      this._clientId = clientId;
+      return clientId;
     } catch (e) {
-      this._clientId = FALLBACK_CLIENT_ID;
+      console.error('PayPal config load failed', e);
+      return null;
     }
-    return this._clientId;
   }
 
     createPayPalButtons() {
