@@ -236,6 +236,28 @@ class ShoppingCart {
     this.bindEvents();
     this.loadFromStorage();
     this.updateCartDisplay();
+    // Refine the default from the visitor's actual location (async, non-blocking).
+    this.applyGeoCountryDefault();
+  }
+
+  // Override the locale-based default with the visitor's real country from
+  // Netlify's edge geolocation (physical location, unlike browser locale).
+  // Best-effort: skips silently if unavailable, and never overrides a country
+  // the buyer has already picked. Not sent to PayPal — display/shipping only.
+  async applyGeoCountryDefault() {
+    const select = document.getElementById('cart-shipping-country');
+    if (!select) return;
+    try {
+      const res = await fetch('/geo-country');
+      if (!res.ok) return;
+      const { country } = await res.json();
+      if (!this._countryTouched && country && COUNTRIES.some(c => c.code === country)) {
+        select.value = country;
+        this.updateCartDisplay();
+      }
+    } catch (e) {
+      // Keep the locale/US default.
+    }
   }
 
   // Fill the "Ship to country" dropdown from COUNTRIES and preselect the
@@ -305,10 +327,14 @@ class ShoppingCart {
       cartToggleMobile.addEventListener('click', () => this.openCart());
     }
 
-    // Country change recomputes shipping + totals
+    // Country change recomputes shipping + totals. Mark it as user-chosen so
+    // the async geo default won't overwrite a deliberate selection.
     const countrySelect = document.getElementById('cart-shipping-country');
     if (countrySelect) {
-      countrySelect.addEventListener('change', () => this.updateCartDisplay());
+      countrySelect.addEventListener('change', () => {
+        this._countryTouched = true;
+        this.updateCartDisplay();
+      });
     }
 
     // ESC key to close cart
