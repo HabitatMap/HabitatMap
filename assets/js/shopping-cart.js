@@ -1,18 +1,23 @@
 // Shopping Cart JavaScript
 
-// ISO 3166-1 country list for the cart's "Ship to country" dropdown.
-// US drives domestic shipping pricing; every other country is international.
-// Excludes destinations neither USPS nor UPS accept (per Pirate Ship's list),
-// non-sovereign territories, and deprecated ISO codes. 175 entries.
+// ISO 3166-1 country/territory list for the cart's "Ship to country" dropdown.
+// Includes every destination USPS/UPS ship to: full ISO set minus the
+// destinations neither carrier accepts (per Pirate Ship's list), minus
+// uninhabited regions and deprecated ISO codes. 212 entries.
+// US and its territories (see DOMESTIC_SHIPPING_CODES) use the domestic
+// shipping tier; everything else is international.
 const COUNTRIES = [
   { code: 'US', name: "United States" },
+  { code: 'AX', name: "Åland Islands" },
   { code: 'AL', name: "Albania" },
   { code: 'DZ', name: "Algeria" },
   { code: 'AD', name: "Andorra" },
   { code: 'AO', name: "Angola" },
+  { code: 'AI', name: "Anguilla" },
   { code: 'AG', name: "Antigua & Barbuda" },
   { code: 'AR', name: "Argentina" },
   { code: 'AM', name: "Armenia" },
+  { code: 'AW', name: "Aruba" },
   { code: 'AU', name: "Australia" },
   { code: 'AT', name: "Austria" },
   { code: 'AZ', name: "Azerbaijan" },
@@ -24,10 +29,12 @@ const COUNTRIES = [
   { code: 'BE', name: "Belgium" },
   { code: 'BZ', name: "Belize" },
   { code: 'BJ', name: "Benin" },
+  { code: 'BM', name: "Bermuda" },
   { code: 'BO', name: "Bolivia" },
   { code: 'BA', name: "Bosnia & Herzegovina" },
   { code: 'BW', name: "Botswana" },
   { code: 'BR', name: "Brazil" },
+  { code: 'VG', name: "British Virgin Islands" },
   { code: 'BN', name: "Brunei" },
   { code: 'BG', name: "Bulgaria" },
   { code: 'BF', name: "Burkina Faso" },
@@ -35,9 +42,13 @@ const COUNTRIES = [
   { code: 'CM', name: "Cameroon" },
   { code: 'CA', name: "Canada" },
   { code: 'CV', name: "Cape Verde" },
+  { code: 'BQ', name: "Caribbean Netherlands" },
+  { code: 'KY', name: "Cayman Islands" },
   { code: 'TD', name: "Chad" },
   { code: 'CL', name: "Chile" },
   { code: 'CN', name: "China" },
+  { code: 'CX', name: "Christmas Island" },
+  { code: 'CC', name: "Cocos (Keeling) Islands" },
   { code: 'CO', name: "Colombia" },
   { code: 'KM', name: "Comoros" },
   { code: 'CG', name: "Congo - Brazzaville" },
@@ -46,6 +57,7 @@ const COUNTRIES = [
   { code: 'CI', name: "Côte d’Ivoire" },
   { code: 'HR', name: "Croatia" },
   { code: 'CU', name: "Cuba" },
+  { code: 'CW', name: "Curaçao" },
   { code: 'CY', name: "Cyprus" },
   { code: 'CZ', name: "Czechia" },
   { code: 'DK', name: "Denmark" },
@@ -59,17 +71,24 @@ const COUNTRIES = [
   { code: 'EE', name: "Estonia" },
   { code: 'SZ', name: "Eswatini" },
   { code: 'ET', name: "Ethiopia" },
+  { code: 'FK', name: "Falkland Islands" },
   { code: 'FJ', name: "Fiji" },
   { code: 'FI', name: "Finland" },
   { code: 'FR', name: "France" },
+  { code: 'GF', name: "French Guiana" },
+  { code: 'PF', name: "French Polynesia" },
   { code: 'GA', name: "Gabon" },
   { code: 'GM', name: "Gambia" },
   { code: 'GE', name: "Georgia" },
   { code: 'DE', name: "Germany" },
   { code: 'GH', name: "Ghana" },
+  { code: 'GI', name: "Gibraltar" },
   { code: 'GR', name: "Greece" },
   { code: 'GD', name: "Grenada" },
+  { code: 'GP', name: "Guadeloupe" },
+  { code: 'GU', name: "Guam" },
   { code: 'GT', name: "Guatemala" },
+  { code: 'GG', name: "Guernsey" },
   { code: 'GN', name: "Guinea" },
   { code: 'GW', name: "Guinea-Bissau" },
   { code: 'GY', name: "Guyana" },
@@ -82,13 +101,16 @@ const COUNTRIES = [
   { code: 'ID', name: "Indonesia" },
   { code: 'IQ', name: "Iraq" },
   { code: 'IE', name: "Ireland" },
+  { code: 'IM', name: "Isle of Man" },
   { code: 'IL', name: "Israel" },
   { code: 'IT', name: "Italy" },
   { code: 'JM', name: "Jamaica" },
   { code: 'JP', name: "Japan" },
+  { code: 'JE', name: "Jersey" },
   { code: 'JO', name: "Jordan" },
   { code: 'KZ', name: "Kazakhstan" },
   { code: 'KE', name: "Kenya" },
+  { code: 'XK', name: "Kosovo" },
   { code: 'KG', name: "Kyrgyzstan" },
   { code: 'LV', name: "Latvia" },
   { code: 'LS', name: "Lesotho" },
@@ -104,6 +126,7 @@ const COUNTRIES = [
   { code: 'MV', name: "Maldives" },
   { code: 'ML', name: "Mali" },
   { code: 'MT', name: "Malta" },
+  { code: 'MQ', name: "Martinique" },
   { code: 'MR', name: "Mauritania" },
   { code: 'MU', name: "Mauritius" },
   { code: 'MX', name: "Mexico" },
@@ -111,6 +134,7 @@ const COUNTRIES = [
   { code: 'MC', name: "Monaco" },
   { code: 'MN', name: "Mongolia" },
   { code: 'ME', name: "Montenegro" },
+  { code: 'MS', name: "Montserrat" },
   { code: 'MA', name: "Morocco" },
   { code: 'MZ', name: "Mozambique" },
   { code: 'MM', name: "Myanmar (Burma)" },
@@ -122,8 +146,11 @@ const COUNTRIES = [
   { code: 'NI', name: "Nicaragua" },
   { code: 'NE', name: "Niger" },
   { code: 'NG', name: "Nigeria" },
+  { code: 'NU', name: "Niue" },
+  { code: 'NF', name: "Norfolk Island" },
   { code: 'KP', name: "North Korea" },
   { code: 'MK', name: "North Macedonia" },
+  { code: 'MP', name: "Northern Mariana Islands" },
   { code: 'NO', name: "Norway" },
   { code: 'OM', name: "Oman" },
   { code: 'PK', name: "Pakistan" },
@@ -134,7 +161,9 @@ const COUNTRIES = [
   { code: 'PH', name: "Philippines" },
   { code: 'PL', name: "Poland" },
   { code: 'PT', name: "Portugal" },
+  { code: 'PR', name: "Puerto Rico" },
   { code: 'QA', name: "Qatar" },
+  { code: 'RE', name: "Réunion" },
   { code: 'RO', name: "Romania" },
   { code: 'RU', name: "Russia" },
   { code: 'RW', name: "Rwanda" },
@@ -145,6 +174,7 @@ const COUNTRIES = [
   { code: 'RS', name: "Serbia" },
   { code: 'SL', name: "Sierra Leone" },
   { code: 'SG', name: "Singapore" },
+  { code: 'SX', name: "Sint Maarten" },
   { code: 'SK', name: "Slovakia" },
   { code: 'SI', name: "Slovenia" },
   { code: 'SO', name: "Somalia" },
@@ -153,11 +183,16 @@ const COUNTRIES = [
   { code: 'SS', name: "South Sudan" },
   { code: 'ES', name: "Spain" },
   { code: 'LK', name: "Sri Lanka" },
+  { code: 'BL', name: "St. Barthélemy" },
+  { code: 'SH', name: "St. Helena" },
   { code: 'KN', name: "St. Kitts & Nevis" },
   { code: 'LC', name: "St. Lucia" },
+  { code: 'MF', name: "St. Martin" },
+  { code: 'PM', name: "St. Pierre & Miquelon" },
   { code: 'VC', name: "St. Vincent & Grenadines" },
   { code: 'SD', name: "Sudan" },
   { code: 'SR', name: "Suriname" },
+  { code: 'SJ', name: "Svalbard & Jan Mayen" },
   { code: 'SE', name: "Sweden" },
   { code: 'CH', name: "Switzerland" },
   { code: 'SY', name: "Syria" },
@@ -166,9 +201,12 @@ const COUNTRIES = [
   { code: 'TZ', name: "Tanzania" },
   { code: 'TH', name: "Thailand" },
   { code: 'TG', name: "Togo" },
+  { code: 'TK', name: "Tokelau" },
   { code: 'TT', name: "Trinidad & Tobago" },
   { code: 'TN', name: "Tunisia" },
   { code: 'TR', name: "Türkiye" },
+  { code: 'TC', name: "Turks & Caicos Islands" },
+  { code: 'VI', name: "U.S. Virgin Islands" },
   { code: 'UG', name: "Uganda" },
   { code: 'UA', name: "Ukraine" },
   { code: 'AE', name: "United Arab Emirates" },
@@ -177,10 +215,14 @@ const COUNTRIES = [
   { code: 'UZ', name: "Uzbekistan" },
   { code: 'VA', name: "Vatican City" },
   { code: 'VN', name: "Vietnam" },
+  { code: 'EH', name: "Western Sahara" },
   { code: 'YE', name: "Yemen" },
   { code: 'ZM', name: "Zambia" },
   { code: 'ZW', name: "Zimbabwe" }
 ];
+
+// Destinations billed at the domestic USPS rate: the US plus its territories.
+const DOMESTIC_SHIPPING_CODES = new Set(['US', 'PR', 'GU', 'VI', 'MP']);
 
 class ShoppingCart {
   constructor() {
@@ -206,11 +248,11 @@ class ShoppingCart {
       .join('');
   }
 
-  // Domestic pricing for US, international for everywhere else.
+  // Domestic pricing for the US and its territories, international elsewhere.
   getShippingOption() {
     const select = document.getElementById('cart-shipping-country');
     const country = select ? select.value : 'US';
-    return country === 'US' ? 'domestic' : 'international';
+    return DOMESTIC_SHIPPING_CODES.has(country) ? 'domestic' : 'international';
   }
 
     bindEvents() {
