@@ -1,4 +1,8 @@
 press_articles:
+  - date: 2026-07-25
+    title: York, Community Unite for Hands-On Environmental Science Journey
+    link: https://www.york.cuny.edu/news/2026/york-community-unite-for-hands-on-environmental-science-journey
+    publication: York College
   - date: 2026-05-25
     link: https://www.sciencedirect.com/science/article/pii/S0048969726005012
     title: Ambient and personal air monitoring using low-cost sensors to identify
@@ -493,7 +497,3 @@ press_articles:
     link: https://well.blogs.nytimes.com/2013/06/03/microsampling-air-pollution/?_php=true&_type=blogs&_r=0
     publication: The New York Times
     title: Microsampling Air Pollution
-  - date: 2026-07-25
-    title: York, Community Unite for Hands-On Environmental Science Journey
-    link: https://www.york.cuny.edu/news/2026/york-community-unite-for-hands-on-environmental-science-journey
-    publication: York College
