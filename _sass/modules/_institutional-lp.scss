@@ -1,0 +1,1186 @@
+// Institutional landing page (/airbeam/institutional/)
+// Rigor, mission-led. Green (HabitatMap) accent; shares .faq-section styling.
+
+$inst-max-width: 1200px;
+$inst-accent: $hm-brand; // green (HabitatMap brand) — icons, borders, graphics
+$inst-accent-strong: $green-dark; // AA-safe green for text on white + CTA fills
+$inst-hero-glow: $lp-hero-glow;
+$inst-tint-street: $lp-tint-street;
+
+// Section eyebrow + title use the shared lp-eyebrow / lp-title mixins
+// (config/_mixins.scss), also used by the individual LP.
+
+@mixin inst-container {
+  width: 100%;
+  max-width: $inst-max-width;
+  margin: 0 auto;
+}
+
+// ---- Hero ----------------------------------------------------------------
+.inst-hero {
+  background:
+    radial-gradient(115% 85% at 50% -6%, $inst-hero-glow 0%, rgba($inst-hero-glow, 0) 55%),
+    $white;
+
+  &__container {
+    @include inst-container;
+    display: flex;
+    flex-direction: column;
+    gap: $u-space-default;
+
+    @media (min-width: $tablet-min) {
+      flex-direction: row;
+      align-items: center;
+      gap: 4rem;
+    }
+  }
+
+  &__content { flex: 1 1 42%; }
+  &__visual  { flex: 1 1 58%; }
+
+  &__eyebrow { @include lp-eyebrow; }
+
+  &__title {
+    font-family: $bold-font;
+    color: $gray-dark;
+    font-size: clamp(2.2rem, 5vw, 3.4rem);
+    line-height: 1.1;
+    margin: 0 0 $u-space-small;
+  }
+
+  &__subtitle {
+    color: $text-color;
+    font-size: $base-font-size1;
+    line-height: 1.6;
+    max-width: 34rem;
+    margin: 0 0 $u-space-default;
+  }
+
+  &__ctas {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: $u-space-small;
+    margin-bottom: $u-space-small;
+  }
+
+  &__primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: $cta-color;
+    border-color: transparent;
+    color: $gray-dark;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+
+    &:hover {
+      background: lighten($cta-color, 6%);
+      transform: translateY(-2px);
+      box-shadow: 0 12px 22px -10px rgba($gray-dark, 0.3);
+    }
+
+    &:focus-visible {
+      outline: 3px solid $gray-dark;
+      outline-offset: 3px;
+    }
+  }
+
+  &__secondary {
+    display: inline-flex;
+    align-items: center;
+    height: $button-base-height;
+    padding: 0 1.4rem;
+    background: $white;
+    border: 1px solid rgba($gray-dark, 0.18);
+    border-radius: 2rem;
+    font-family: $bold-font;
+    font-size: 1rem;
+    color: $gray-dark;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+    &:hover { transform: translateY(-2px); box-shadow: 0 10px 20px -8px rgba($gray-dark, 0.25); }
+
+    &:focus-visible {
+      outline: 3px solid $gray-dark;
+      outline-offset: 3px;
+    }
+  }
+
+  &__proof {
+    font-size: 0.8rem;
+    color: $text-color; // was $gray (#818181) — fails AA at 0.8rem
+    margin: 0;
+  }
+
+  &__proof-link {
+    color: $inst-accent-strong; // AA-safe link on white
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+
+    &:hover { color: darken($inst-accent-strong, 6%); }
+  }
+
+  &__image-wrapper {
+    position: relative;
+    border-radius: 1.75rem;
+    overflow: hidden;
+    aspect-ratio: 5 / 4;
+    box-shadow: 0 16px 40px -30px rgba($gray-dark, 0.28);
+  }
+
+  &__image { width: 100%; height: 100%; object-fit: cover; display: block; }
+}
+
+// FAQ reuses global buy-it-now FAQ markup, but the institutional page keeps
+// section headings on the same local type scale as the rest of this page.
+.inst-faq {
+  background: $white;
+
+  .faq-eyebrow {
+    @include lp-eyebrow;
+  }
+
+  .faq-title {
+    @include lp-title;
+  }
+}
+
+// ---- Features (pillar + card styles, shared by the pinned-scroll section) --
+.inst-feature-pillar {
+  &__head {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.9rem;
+  }
+
+  &__num {
+    display: grid;
+    place-items: center;
+    width: 2.25rem;
+    height: 2.25rem;
+    flex: 0 0 auto;
+    color: $inst-accent;
+    background: rgba($inst-accent, 0.1);
+    border-radius: 50%;
+    font-family: $bold-font;
+    font-size: 0.82rem;
+  }
+
+  &__title {
+    color: $gray-dark;
+    font-family: $bold-font;
+    font-size: clamp(1.4rem, 2vw, 1.75rem);
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    margin: 0;
+  }
+
+  &__copy {
+    color: $text-color;
+    font-size: clamp(1.12rem, 1.8vw, 1.35rem);
+    line-height: 1.6;
+    max-width: 44rem;
+    margin: 0 0 clamp(1.75rem, 3vw, 2.5rem);
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $u-space-default;
+
+    @media (min-width: $large-mobile-min) {
+      grid-template-columns: repeat(2, 1fr);
+      align-items: start; // start (not stretch) so expanding one card doesn't blow up its collapsed sibling
+    }
+  }
+}
+
+.inst-feature-card {
+  padding: clamp(1.5rem, 2.6vw, 2rem);
+  background: $white;
+  border: 1px solid rgba($gray-dark, 0.1);
+  border-radius: 1.5rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+
+  &[open] {
+    border-color: rgba($inst-accent, 0.25);
+    box-shadow: 0 14px 34px -28px rgba($gray-dark, 0.22);
+
+    .inst-feature-card__chevron::after { transform: translate(-50%, -30%) rotate(-135deg); }
+  }
+
+  &__summary {
+    cursor: pointer;
+    list-style: none;
+
+    &::-webkit-details-marker { display: none; }
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+  }
+
+  &__title {
+    color: $gray-dark;
+    font-family: $bold-font;
+    font-size: 1.05rem;
+    line-height: 1.25;
+  }
+
+  &__chevron {
+    position: relative;
+    width: 1rem;
+    height: 1rem;
+    flex: 0 0 auto;
+    color: rgba($gray-dark, 0.4);
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      width: 0.45rem;
+      height: 0.45rem;
+      border-right: 1.5px solid currentColor;
+      border-bottom: 1.5px solid currentColor;
+      transform: translate(-50%, -50%) rotate(45deg);
+      transition: transform 0.25s ease;
+    }
+  }
+
+  &__text {
+    display: block;
+    color: $text-color;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-top: 0.4rem;
+    // Reserve two lines so collapsed cards read as equal height even when one
+    // summary is a single line — without stretching an open card's sibling.
+    min-height: calc(0.95rem * 1.5 * 2);
+  }
+
+  &__detail {
+    color: $text-color;
+    font-size: 0.92rem;
+    line-height: 1.55;
+    margin: 0.85rem 0 0;
+    padding-top: 0.85rem;
+    border-top: 1px solid rgba($inst-accent, 0.12);
+  }
+}
+
+// ---- Features (pinned stage, one pillar revealed per scroll) -------------
+// Reuses the shared .inst-feature-pillar / .inst-feature-card styles; the
+// pinned overlap + fade behavior is scoped to this section only.
+.inst-features-scroll {
+  display: block;
+  background: $white;
+  padding: 0;
+
+  &__track { position: relative; }
+
+  &__stage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: $u-space-big;
+    padding: $u-space-big 0;
+  }
+
+  &__inner {
+    @include inst-container;
+    width: 100%;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $u-space-default;
+
+    @media (min-width: $tablet-min) {
+      grid-template-columns: minmax(0, 16rem) minmax(0, 1fr);
+      column-gap: 4rem;
+      align-items: start;
+    }
+  }
+
+  &__header {
+    max-width: 48rem;
+    padding: 0 $u-space-default;
+    text-align: center;
+  }
+
+  &__eyebrow { @include lp-eyebrow; }
+
+  &__title {
+    @include lp-title;
+    margin-bottom: 0;
+  }
+
+  &__steps {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+
+    @media (min-width: $tablet-min) {
+      padding-top: 0.3rem;
+    }
+  }
+
+  &__step {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    padding: 0.5rem 0;
+    background: none;
+    border: 0;
+    cursor: pointer;
+    text-align: left;
+  }
+
+  &__step-bar {
+    width: 1.75rem;
+    height: 2px;
+    flex: 0 0 auto;
+    background: rgba($gray-dark, 0.2);
+    border-radius: 2px;
+    transition: background 0.25s ease, width 0.25s ease;
+  }
+
+  &__step-label {
+    color: rgba($gray-dark, 0.55);
+    font-family: $bold-font;
+    font-size: 0.95rem;
+    line-height: 1.25;
+    transition: color 0.25s ease;
+  }
+
+  &__step.is-active {
+    .inst-features-scroll__step-bar { background: $inst-accent; width: 2.5rem; }
+    .inst-features-scroll__step-label { color: $gray-dark; }
+  }
+
+  &__main { position: relative; }
+
+  // Tighten the pillar so its head, copy and cards read as one compact unit.
+  .inst-feature-pillar__copy { margin-bottom: 1.5rem; }
+  .inst-feature-pillar__cards { gap: 1.5rem; }
+
+  .inst-feature-pillar:not(:last-child) { margin-bottom: $u-space-big; }
+
+  @media (min-width: $tablet-min) {
+    // Taller track = more scroll distance per pillar, so one scroll gesture
+    // can't blow past all three pillars before the user sees them.
+    &__track { height: 200vh; }
+
+    &__stage {
+      position: sticky;
+      top: 0;
+      min-height: 100vh;
+      // Centered so the empty space splits evenly above and below the pinned
+      // block, reading as balanced whitespace rather than one broken gap.
+      justify-content: center;
+      gap: 2.5rem;
+      padding: $u-space-big 0;
+    }
+
+    &__grid { align-items: start; }
+
+    &__main { display: grid; }
+
+    .inst-feature-pillar:not(:last-child) { margin-bottom: 0; }
+
+    // Pinned-scroll reveal is a JS enhancement: the script adds `.is-enhanced`.
+    // Without JS the pillars stay in normal flow and fully visible instead of
+    // stacking on top of each other while hidden.
+    &.is-enhanced .inst-feature-pillar {
+      grid-area: 1 / 1;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(20px);
+      transition: opacity 0.45s ease, transform 0.45s ease, visibility 0.45s;
+
+      &.is-active {
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+      }
+    }
+  }
+}
+
+// ---- Specifications ------------------------------------------------------
+.inst-specs {
+  background: $white;
+
+  &__container {
+    @include inst-container;
+    max-width: 1240px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $u-space-default;
+    align-items: start;
+
+    @media (min-width: $tablet-min) {
+      grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+      column-gap: 3rem;
+      align-items: stretch;
+    }
+  }
+
+  &__intro {
+    @media (min-width: $tablet-min) {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+  }
+
+  &__eyebrow { @include lp-eyebrow; }
+  &__title { @include lp-title; }
+
+  &__subtitle {
+    color: $text-color;
+    font-size: $base-font-size1;
+    line-height: 1.6;
+    margin: 0 0 $u-space-small;
+  }
+
+  &__media {
+    margin: 0;
+    border-radius: 1.75rem;
+    overflow: hidden;
+    background: $white;
+    border: 1px solid rgba($gray-dark, 0.05);
+    box-shadow: 0 16px 40px -30px rgba($gray-dark, 0.28);
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+    }
+
+    // On desktop the photo grows to fill the column so it balances the
+    // dense spec-card grid and the gap under the intro disappears.
+    @media (min-width: $tablet-min) {
+      flex: 1 1 auto;
+      min-height: 20rem;
+
+      img {
+        aspect-ratio: auto;
+        min-height: 20rem;
+      }
+    }
+  }
+
+  &__footer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    align-items: flex-start;
+    margin-top: $u-space-small;
+    color: $text-color;
+    font-size: 0.95rem;
+  }
+
+  &__report-link {
+    color: $inst-accent-strong; // AA-safe link text
+    font-family: $bold-font;
+    text-decoration: none;
+
+    &::after {
+      content: " →";
+    }
+
+    &:hover,
+    &:focus-visible {
+      text-decoration: underline;
+      text-underline-offset: 0.2em;
+    }
+  }
+}
+
+.inst-spec-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $u-space-small;
+
+  @media (min-width: $large-mobile-min) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.inst-spec-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  padding: clamp(1.4rem, 2.5vw, 1.85rem);
+  background: $white;
+  border: 1px solid rgba($gray-dark, 0.06);
+  border-radius: 1.5rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    border-color: rgba($inst-accent, 0.16);
+    box-shadow: 0 14px 34px -28px rgba($gray-dark, 0.22);
+  }
+
+  &__label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: $inst-accent-strong; // AA-safe small uppercase text
+    font-family: $bold-font;
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+    line-height: 1.2;
+    margin: 0;
+    text-transform: uppercase;
+  }
+
+  &__icon {
+    display: inline-grid;
+    place-items: center;
+    color: $inst-accent;
+    flex: 0 0 auto;
+
+    svg {
+      width: 1.1rem;
+      height: 1.1rem;
+    }
+  }
+
+  &__value {
+    color: $gray-dark;
+    font-family: $bold-font;
+    font-size: clamp(1.2rem, 1.8vw, 1.45rem);
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    margin: 0;
+  }
+
+  &__desc {
+    color: $text-color;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin: 0;
+  }
+}
+
+// ---- Classrooms ----------------------------------------------------------
+.inst-classrooms {
+  background: linear-gradient(165deg, $inst-hero-glow 0%, $inst-tint-street 100%);
+
+  &__container {
+    @include inst-container;
+    max-width: 1120px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.75rem;
+    padding: clamp(1.75rem, 4vw, 3rem);
+    background: $white;
+    border: 1px solid rgba($inst-accent, 0.14);
+    border-radius: 1.75rem;
+
+    @media (min-width: $tablet-min) {
+      flex-direction: row;
+      align-items: center;
+      gap: 2.5rem;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.15rem;
+    flex: 1 1 auto;
+    max-width: 40rem;
+  }
+
+  &__media {
+    flex: 0 0 auto;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 1.25rem;
+    aspect-ratio: 4 / 5;
+
+    @media (min-width: $tablet-min) {
+      width: 36%;
+      max-width: 22rem;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &__eyebrow {
+    @include lp-eyebrow;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+
+    svg {
+      width: 1.05rem;
+      height: 1.05rem;
+    }
+  }
+
+  &__title { @include lp-title; }
+
+  &__body {
+    color: $text-color;
+    font-size: $base-font-size1;
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  &__cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex: 0 0 auto;
+    padding: 0.95rem 1.6rem;
+    @include pill-button;
+    font-family: $bold-font;
+    font-size: 0.95rem;
+    text-decoration: none;
+    white-space: nowrap;
+
+    svg {
+      width: 1.05rem;
+      height: 1.05rem;
+      transition: transform 0.2s ease;
+    }
+
+    &:hover svg,
+    &:focus-visible svg { transform: translateX(2px); }
+  }
+}
+
+// ---- Data to a case ------------------------------------------------------
+.inst-data-case {
+  background: linear-gradient(165deg, $inst-hero-glow 0%, $inst-tint-street 100%);
+
+  &__container {
+    @include inst-container;
+    max-width: 1240px;
+  }
+
+  &__content {
+    max-width: 46rem;
+    margin: 0 auto $u-space-default;
+    text-align: center;
+  }
+
+  &__eyebrow { @include lp-eyebrow; }
+  &__title { @include lp-title; }
+
+  &__body {
+    color: $text-color;
+    font-size: $base-font-size1;
+    line-height: 1.6;
+    max-width: 42rem;
+    margin: 0 auto;
+  }
+
+  &__visual {
+    max-width: 1120px;
+    margin: 0 auto;
+  }
+}
+
+.inst-csv-transform {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  align-items: stretch;
+
+  @media (min-width: $tablet-min) {
+    grid-template-columns: minmax(0, 0.9fr) auto minmax(0, 1.1fr);
+    align-items: stretch;
+  }
+
+  &__panel {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: clamp(1rem, 2vw, 1.25rem);
+    background: $white;
+    border: 1px solid rgba($gray-dark, 0.06);
+    border-radius: 1.5rem;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+
+    span {
+      color: $inst-accent-strong; // AA-safe small uppercase label
+      font-family: $bold-font;
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      line-height: 1.2;
+      text-transform: uppercase;
+    }
+
+    strong {
+      color: $gray-dark;
+      font-family: $bold-font;
+      font-size: 0.9rem;
+      line-height: 1.2;
+    }
+  }
+
+  &__header &__share {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.4rem 0.8rem;
+    background: $white;
+    border: 1px solid rgba($gray-dark, 0.1);
+    border-radius: 2rem;
+    color: $gray-dark;
+    font-size: 0.82rem;
+    letter-spacing: 0;
+    text-transform: none;
+
+    svg {
+      width: 0.9rem;
+      height: 0.9rem;
+      color: $inst-accent;
+    }
+  }
+
+  &__arrow {
+    display: grid;
+    place-items: center;
+    width: 2.8rem;
+    height: 2.8rem;
+    justify-self: center;
+    align-self: center;
+    color: $inst-accent;
+    background: $white;
+    border: 1px solid rgba($inst-accent, 0.14);
+    border-radius: 50%;
+    transform: rotate(90deg);
+
+    @media (min-width: $tablet-min) {
+      transform: none;
+    }
+
+    svg {
+      width: 1.25rem;
+      height: 1.25rem;
+    }
+  }
+}
+
+.inst-csv-table {
+  display: grid;
+  gap: 0;
+  border-top: 1px solid rgba($inst-accent, 0.1);
+
+  div {
+    display: grid;
+    grid-template-columns: 1fr 0.8fr 1fr;
+    gap: 0.75rem;
+    padding: 0.72rem 0;
+    border-bottom: 1px solid rgba($inst-accent, 0.1);
+  }
+
+  span,
+  strong {
+    color: $text-color;
+    font-family: monospace;
+    font-size: 0.86rem;
+    line-height: 1.2;
+  }
+
+  strong {
+    color: $gray-dark;
+    font-family: $bold-font;
+  }
+}
+
+.inst-csv-chart {
+  flex: 1;
+  min-height: 9rem;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  border: 1px solid rgba($gray-dark, 0.12);
+  border-radius: 0.9rem;
+  color: $inst-accent;
+
+  svg {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  &__axis {
+    fill: $gray;
+    font-family: $body-font;
+    font-size: 15px;
+    letter-spacing: 0;
+  }
+
+  &__unit {
+    fill: $gray;
+    font-family: $bold-font;
+    font-size: 13px;
+    letter-spacing: 0.02em;
+  }
+}
+
+
+
+// ---- Resources -----------------------------------------------------------
+.inst-resources {
+  background: linear-gradient(165deg, $inst-hero-glow 0%, $inst-tint-street 100%);
+
+  &__container {
+    @include inst-container;
+    max-width: 1240px;
+  }
+
+  &__header { text-align: center; margin-bottom: $u-space-default; }
+  &__eyebrow { @include lp-eyebrow; }
+  &__title { @include lp-title; margin-bottom: 0; }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $u-space-small;
+
+    @media (min-width: $large-mobile-min) { grid-template-columns: repeat(2, 1fr); }
+    @media (min-width: $small-desktop-min) { grid-template-columns: repeat(4, 1fr); }
+  }
+}
+
+.inst-resource {
+  display: flex;
+  flex-direction: column;
+  background: $white;
+  border: 1px solid rgba($gray-dark, 0.06);
+  border-radius: 1.5rem;
+  padding: clamp(1.25rem, 2.2vw, 1.6rem);
+  text-decoration: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    border-color: rgba($inst-accent, 0.16);
+    box-shadow: 0 14px 34px -28px rgba($gray-dark, 0.22);
+
+    .inst-resource__arrow {
+      color: $inst-accent;
+      transform: translate(2px, -2px);
+    }
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.25rem;
+  }
+
+  &__icon {
+    display: grid;
+    place-items: center;
+    width: 2.75rem;
+    height: 2.75rem;
+    color: $inst-accent;
+    background: rgba($inst-accent, 0.1);
+    border-radius: 50%;
+
+    svg {
+      width: 1.3rem;
+      height: 1.3rem;
+    }
+  }
+
+  &__arrow {
+    color: rgba($gray-dark, 0.4);
+    transition: color 0.2s ease, transform 0.2s ease;
+
+    svg {
+      display: block;
+      width: 1.15rem;
+      height: 1.15rem;
+    }
+  }
+
+  &__label {
+    display: block;
+    font-family: $bold-font;
+    color: $gray-dark;
+    font-size: 1.05rem;
+    margin-bottom: 0.3rem;
+  }
+
+  &__desc {
+    display: block;
+    color: $text-color;
+    font-size: 0.9rem;
+    line-height: 1.45;
+  }
+}
+
+// ---- Consultation CTA ----------------------------------------------------
+.inst-order {
+  background: $white;
+
+  &__container {
+    @include inst-container;
+    max-width: 1400px;
+  }
+
+  &__header {
+    max-width: 46rem;
+    margin: 0 auto $u-space-default;
+    text-align: center;
+  }
+
+  &__eyebrow { @include lp-eyebrow; }
+
+  &__title {
+    @include lp-title;
+    margin-bottom: $u-space-small;
+  }
+
+  &__body {
+    color: $text-color;
+    font-size: $base-font-size1;
+    line-height: 1.65;
+    margin: 1rem auto 0;
+  }
+
+  &__badge {
+    align-self: flex-start;
+    padding: 0.35rem 0.7rem;
+    border-radius: 2rem;
+    background: $white;
+    border: 1px solid rgba($inst-accent, 0.18);
+    color: $inst-accent-strong; // AA-safe badge text
+    font-family: $body-font;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-bottom: 0.9rem;
+  }
+
+  &__quantity-label {
+    display: block;
+    color: $gray-dark;
+    font-family: $bold-font;
+    font-size: 0.9rem;
+    margin-bottom: 0.65rem;
+  }
+
+  &__quantity-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+    margin-bottom: 0.85rem;
+  }
+
+  &__quantity-button,
+  &__quantity-input {
+    min-width: 3.5rem;
+    height: 2.75rem;
+    border: 1px solid rgba($gray-dark, 0.14);
+    border-radius: 0.7rem;
+    background: $white;
+    color: $gray-dark;
+    font-family: $bold-font;
+    font-size: 0.95rem;
+  }
+
+  &__quantity-button {
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+
+    // Hover is a light tint so it reads distinctly from the solid selected state.
+    &:hover {
+      background: rgba($inst-accent, 0.1);
+      border-color: $inst-accent-strong;
+      transform: translateY(-1px);
+    }
+
+    // Selected: solid AA-safe fill (white text needs the darker green).
+    &.is-active {
+      background: $inst-accent-strong;
+      border-color: $inst-accent-strong;
+      color: $white;
+    }
+
+    &:focus-visible {
+      outline: 3px solid $inst-accent-strong;
+      outline-offset: 2px;
+    }
+  }
+
+  &__quantity-input {
+    width: 4.5rem;
+    padding: 0 0.65rem;
+    text-align: center;
+  }
+
+  &__subtotal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.85rem 1rem;
+    margin-bottom: 0.85rem;
+    border: 1px solid rgba($inst-accent, 0.12);
+    border-radius: 0.8rem;
+    background: $inst-tint-street;
+    color: $text-color;
+    font-size: 0.95rem;
+
+    strong {
+      color: $gray-dark;
+      font-family: $bold-font;
+      font-size: 1.15rem;
+    }
+  }
+
+  &__cart-button {
+    width: 100%;
+    margin-bottom: 0.9rem;
+    background: $cta-color;
+    color: $gray-dark;
+    box-shadow: 0 14px 28px -18px rgba($gray-dark, 0.4);
+
+    &:hover {
+      background: lighten($cta-color, 6%);
+      box-shadow: 0 18px 34px -20px rgba($gray-dark, 0.45);
+    }
+
+    &:focus-visible {
+      outline: 3px solid $gray-dark;
+      outline-offset: 3px;
+    }
+  }
+
+  &__trust {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem 1.1rem;
+    color: $text-color;
+    font-size: 0.78rem;
+  }
+
+}
+
+.inst-order-support {
+  margin-top: $u-space-default;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+
+    @media (min-width: $tablet-min) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.25rem;
+    }
+  }
+
+  &__card {
+    display: flex;
+    gap: 1rem;
+    padding: 1.35rem;
+    background: $white;
+    border: 1px solid rgba($gray-dark, 0.06);
+    border-radius: 1.5rem;
+    box-shadow: 0 14px 34px -28px rgba($gray-dark, 0.22);
+
+    > div {
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+    }
+
+    h3 {
+      color: $gray-dark;
+      font-family: $bold-font;
+      font-size: 1.05rem;
+      line-height: 1.25;
+      margin: 0 0 0.45rem;
+    }
+
+    p {
+      color: $text-color;
+      font-size: 0.9rem;
+      line-height: 1.5;
+      margin: 0 0 1rem;
+    }
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      width: fit-content;
+      margin-top: auto;
+      color: $inst-accent-strong; // AA-safe link text
+      font-family: $bold-font;
+      font-size: 0.9rem;
+      text-decoration: none;
+
+      svg {
+        width: 1rem;
+        height: 1rem;
+        flex: 0 0 auto;
+      }
+    }
+  }
+
+  &__icon {
+    display: grid;
+    place-items: center;
+    width: 2.6rem;
+    height: 2.6rem;
+    flex: 0 0 auto;
+    color: $inst-accent;
+    background: $white;
+    border: 1px solid rgba($inst-accent, 0.12);
+    border-radius: 1.1rem;
+    box-shadow: 0 10px 24px -16px rgba($gray-dark, 0.28);
+
+    svg {
+      width: 1.25rem;
+      height: 1.25rem;
+    }
+  }
+
+  &__reply-note {
+    color: $text-color;
+    font-size: 0.82rem;
+    text-align: center;
+    margin: 1rem 0 0;
+  }
+}

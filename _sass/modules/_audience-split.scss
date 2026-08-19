@@ -1,0 +1,231 @@
+// Audience split (Buy-It-Now page) — routes visitors to the Individual or
+// Institutional landing page. Modern, airy, HabitatMap-green + Apple-iPhone feel.
+// Each card leads with the matching landing-page hero photo.
+// Green accent = Individual (family), blue accent = Institutional (research).
+
+.audience-split {
+  background: linear-gradient(180deg, $white 0%, $off-white-green 100%);
+
+  &__container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  &__header {
+    text-align: center;
+    max-width: 42rem;
+    margin: 0 auto $u-space-default;
+  }
+
+  &__eyebrow {
+    @include lp-eyebrow;
+  }
+
+  &__title {
+    font-family: $bold-font;
+    font-size: clamp(2rem, 3vw, 2.75rem);
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -0.03em;
+    color: $gray-dark;
+    margin: 0 0 0.75rem;
+  }
+
+  &__lede {
+    font-family: $body-font;
+    font-size: $base-font-size1;
+    line-height: 1.6;
+    color: $text-color;
+    margin: 0;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $u-space-small;
+
+    @media (min-width: $tablet-min) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: $u-space-default;
+    }
+  }
+}
+
+.audience-card {
+  // --accent: vivid brand color (large icon/arrow). --accent-strong: AA-safe
+  // shade for text-bearing bits (kicker, CTA fill). --wash: barely-there tint.
+  --accent: #{$hm-brand};
+  --accent-strong: #{$green-dark};
+  --wash: #{rgba($green, 0.05)};
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: $white;
+  border: 1px solid rgba($gray-dark, 0.06);
+  border-radius: 1.75rem;
+  text-decoration: none;
+  box-shadow: 0 20px 50px -40px rgba($gray-dark, 0.5);
+  transition: transform 0.28s ease, border-color 0.28s ease, box-shadow 0.28s ease;
+
+  // Individual (family) = HabitatMap green, Institutional (research) = AirCasting blue
+  &--individual {
+    --accent: #{$hm-brand};
+    --accent-strong: #{$green-dark};
+    --wash: #{rgba($green, 0.05)};
+  }
+  &--institutional {
+    --accent: #{$ac-brand};
+    --accent-strong: #{$blue-dark};
+    --wash: #{rgba($blue, 0.05)};
+  }
+
+  &:hover,
+  &:focus-visible {
+    transform: translateY(-6px);
+    box-shadow: 0 30px 60px -34px rgba($gray-dark, 0.4);
+
+    .audience-card__image { transform: scale(1.04); }
+    .audience-card__arrow {
+      color: var(--accent);
+      opacity: 1;
+      transform: translate(3px, -3px);
+    }
+    .audience-card__cta {
+      transform: translateY(-2px);
+      border-color: rgba($gray-dark, 0.35);
+      box-shadow: 0 14px 26px -18px rgba($gray-dark, 0.4);
+    }
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--accent-strong);
+    outline-offset: 3px;
+  }
+
+  // ---- Photo banner ----
+  &__media {
+    position: relative;
+    display: block;
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    background: $light;
+  }
+
+  &__image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+
+  &__arrow {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: grid;
+    place-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    color: $gray-dark;
+    background: rgba($white, 0.85);
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+    border-radius: 50%;
+    box-shadow: 0 6px 16px -8px rgba($gray-dark, 0.45);
+    opacity: 0.85; // reads as a nudge at rest, full on hover/focus
+    transition: color 0.28s ease, transform 0.28s ease, opacity 0.28s ease;
+
+    svg { display: block; width: 1.2rem; height: 1.2rem; }
+  }
+
+  // ---- Body ----
+  &__body {
+    position: relative;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: clamp(1.5rem, 2.6vw, 2rem);
+    background: linear-gradient(180deg, var(--wash), transparent 40%); // faint per-audience tint
+  }
+
+  &__icon {
+    display: grid;
+    place-items: center;
+    width: 3rem;
+    height: 3rem;
+    margin: -3.25rem 0 1rem; // lift up to overlap the photo edge
+    color: var(--accent);
+    background: $white;
+    border-radius: 1rem;
+    box-shadow: 0 10px 24px -14px rgba($gray-dark, 0.4);
+
+    svg { width: 1.5rem; height: 1.5rem; }
+
+    @media (max-width: $large-mobile-max) {
+      margin-top: -2.75rem; // ease the photo-edge overlap on narrow screens
+    }
+  }
+
+  &__kicker {
+    display: block;
+    font-family: $body-font;
+    font-size: $base-font-size-1;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: var(--accent); // match the icon's vivid brand color on each card
+    margin-bottom: 0.5rem;
+  }
+
+  &__title {
+    display: block;
+    font-family: $bold-font;
+    font-size: clamp(1.3rem, 2vw, 1.6rem);
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: $gray-dark;
+    margin: 0 0 0.6rem; // reset default <h3> margins
+  }
+
+  &__desc {
+    display: block;
+    font-family: $body-font;
+    font-size: 1rem;
+    line-height: 1.55;
+    color: $text-color;
+    margin-bottom: 1.5rem;
+  }
+
+  &__cta {
+    align-self: stretch;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+    padding: 0.9rem 1.5rem;
+    font-family: $bold-font;
+    font-weight: 600;
+    font-size: $base-font-size-1;
+    line-height: 1;
+    // Shared white outline pill (see pill-button mixin), same on both cards.
+    @include pill-button;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .audience-card,
+  .audience-card__image,
+  .audience-card__arrow,
+  .audience-card__cta {
+    transition: none;
+  }
+  .audience-card:hover,
+  .audience-card:focus-visible {
+    transform: none;
+  }
+  .audience-card:hover .audience-card__image { transform: none; }
+}

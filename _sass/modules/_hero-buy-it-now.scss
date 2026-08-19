@@ -42,7 +42,7 @@
   display: block;
   font-size: $base-font-size-1;
   font-weight: 600;
-  color: $green;
+  color: $green-dark;
   text-transform: uppercase;
   letter-spacing: 0.15em;
   margin-bottom: 0.5rem;
@@ -197,20 +197,11 @@
 }
 
 .buy-hero__btn--secondary {
-  background: $white;
-  color: $gray-dark;
-  border: 1.5px solid $teal-light;
+  @include pill-button;
 
   svg {
     width: 14px;
     height: 14px;
-  }
-
-  &:hover {
-    background: $gray;
-    color: $white;
-    border-color: $gray;
-    transform: translateY(-2px);
   }
 
   &:active {

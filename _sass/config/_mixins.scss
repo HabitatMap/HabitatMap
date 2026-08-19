@@ -103,3 +103,47 @@
   -o-animation: #{$str};
   animation: #{$str};
 }
+
+// Shared landing-page section eyebrow + title (Individual + Institutional LPs).
+// $green-dark is the AA-safe brand green ($inst-accent-strong resolves to it too).
+@mixin lp-eyebrow {
+  display: block;
+  font-family: $body-font;
+  font-size: $base-font-size-2;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: $green-dark; // AA-safe; raw green fails contrast at this size
+  margin: 0 0 $u-space-small;
+}
+
+@mixin lp-title {
+  font-family: $bold-font;
+  font-size: clamp(2rem, 3vw, 2.75rem);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  color: $gray-dark;
+  margin: 0 0 $u-space-small;
+}
+
+// Canonical secondary button: white "outline pill" with dark text and a subtle
+// gray border. On hover it stays white and just deepens the border + lifts
+// (no gray fill). Skin only — callers keep their own padding/size/layout.
+@mixin pill-button {
+  background: $white;
+  border: 1px solid rgba($gray-dark, 0.18);
+  color: $gray-dark;
+  border-radius: 2rem;
+  transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover,
+  &:focus-visible {
+    background: $white;
+    color: $gray-dark;
+    border-color: rgba($gray-dark, 0.35);
+    transform: translateY(-2px);
+    box-shadow: 0 14px 26px -18px rgba($gray-dark, 0.4);
+  }
+}

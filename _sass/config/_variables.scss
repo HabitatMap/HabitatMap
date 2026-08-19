@@ -1,11 +1,20 @@
 // color
 $white: #ffffff;
 $light: #f5f5f5;
+$off-white-green: #f6f9f7;
 $teal-very-light: #eff4f4;
 $teal-light: #e4eced;
 $teal: #33c4b2;
 $green: #1ea73f;
 $green-light: #bcf3c9;
+$green-dark: #157a32; // AA-safe (white-on ≈ 5.4:1) for text/CTA fills
+// Landing-page section background tints — shared by the Individual +
+// Institutional LP modules (subtle pale greens matched to the mockups).
+$lp-hero-glow: #e9f4ea;
+$lp-tint-street: #f7faf7;
+$lp-tint-meaning: #f2f8f3;
+$lp-tint-setup: #f5f8f5;
+$lp-tint-movement: #eff7f0;
 $red: #843c3c;
 $red-light: #f5b1b1;
 $cyan: #6abad2;

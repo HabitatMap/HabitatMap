@@ -1,0 +1,24 @@
+# FAQ subset for the Institutional landing page (researchers, educators, advocates).
+# NOTE: the last two answers are pending confirmation from Michael (lead time / data governance).
+# They state only what is currently confirmed; refine before launch.
+questions:
+  - q: "Do you offer bulk or education pricing?"
+    a: "The price is the same whether you buy one unit or fifty. As a non-profit, we keep the AirBeam as affordable as we can for classrooms, researchers, and community groups. For a quote, an invoice, or an education purchase, email us and we will take care of the paperwork."
+  - q: "Do you accept purchase orders?"
+    a: "We don't accept POs, because a PO would mean shipping before payment. We do provide quotes, formal invoices, and completed vendor setup forms, and we respond to RFPs. Most institutions process the purchase through their finance team with payment made up front."
+  - q: "Can we keep data off your servers?"
+    a: "Yes. The backend is open source and the app can point at your own server. It takes one IT step, and we have a setup guide."
+  - q: "Is the accuracy defensible for research?"
+    a: "The AirBeam Mini has been independently evaluated for PM2.5 by South Coast AQMD's AQ-SPEC program. We share the report on request."
+  - q: "What formats can we export?"
+    a: "CSV, as a ZIP by email or session link."
+  - q: "Can we set the sampling rate?"
+    a: "Yes, on the AirBeam Mini with current firmware. Set how often it records to match your other instruments. Earlier AirBeam models don't support it."
+  - q: "Will the Mini work on our school network?"
+    a: "For classroom sessions you don't need it. The Mini pairs to a phone over Bluetooth and records on board. School wifi only matters for fixed, unattended monitoring, and networks with a login page or captive portal may not connect, so test those first."
+  - q: "How do we manage a set of devices across a class?"
+    a: "Each Mini pairs to one phone at a time. There is no dedicated classroom mode yet, so assign devices to student groups manually."
+  - q: "How long does a bulk order take, and do you ship internationally?"
+    a: "Single units ship immediately, and we ship both within the US and internationally. For bulk order lead times, email us and we will confirm current timing."
+  - q: "Can we use AirBeam data in IRB-approved research, and how is data governed?"
+    a: "You own and can export your data, and you can self-host to keep it off AirCasting. For IRB and data-governance specifics, get in touch and we will walk through your requirements."

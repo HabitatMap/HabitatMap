@@ -1,0 +1,12 @@
+# FAQ subset for the Individual landing page (calm, family-oriented persona)
+questions:
+  - q: "Is it hard to set up?"
+    a: "No. Pair it and open the free app. Most people are reading their air in about two minutes."
+  - q: "Is it accurate?"
+    a: "Yes. The AirBeam Mini has been independently evaluated for PM2.5 by South Coast AQMD's AQ-SPEC program."
+  - q: "Are there any subscriptions or hidden costs?"
+    a: "None. The device is a one-time $99, and the apps are free."
+  - q: "What can I actually do with the readings?"
+    a: "Decide whether to go out, mask up, close a window, change a route, or share what you find with people around you."
+  - q: "Can I share my readings with family or my child's school?"
+    a: "Yes. Send a session link, or point them to your readings on the public map. They do not need a device to see it."

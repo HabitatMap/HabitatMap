@@ -1,0 +1,80 @@
+{% comment %} Shared: Join a Global Movement. Params: eyebrow, title, subtitle, image, image_alt, link1_url/link1_label/link1_desc (2,3 likewise), stat1_number/stat1_label (2,3 likewise) {% endcomment %}
+<section class="panel global-movement-section reveal-section">
+  <div class="movement-container">
+    <!-- Header Section -->
+    <div class="movement-header reveal-content">
+      <span class="movement-eyebrow reveal-header">{{ include.eyebrow | default: "Community Impact" }}</span>
+      <h2 class="movement-title reveal-header">{{ include.title | default: "Join a Global Movement" }}</h2>
+      <p class="movement-subtitle reveal-body">
+        {{ include.subtitle | default: "Every AirBeam contributes to the world's largest open-source database of community-collected air quality measurements" }}
+      </p>
+    </div>
+
+
+
+    <!-- Main Content Grid -->
+    <div class="movement-grid">
+      <div class="movement-content reveal-content">
+        <div class="movement-links reveal-fade">
+          <a href="{{ include.link1_url | default: 'https://aircasting.habitatmap.org/map' }}" target="_blank" rel="noopener noreferrer" class="movement-link">
+            <div class="movement-link-content">
+              <span class="movement-link-label">{{ include.link1_label | default: "Explore Open Data" }}</span>
+              <span class="movement-link-description">{{ include.link1_desc | default: "View real-time air quality map" }}</span>
+            </div>
+            <svg class="movement-link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14"/>
+              <path d="M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+          <a href="{{ include.link2_url | default: 'https://aircastingactions.org/' }}" target="_blank" rel="noopener noreferrer" class="movement-link">
+            <div class="movement-link-content">
+              <span class="movement-link-label">{{ include.link2_label | default: "Resources & Actions" }}</span>
+              <span class="movement-link-description">{{ include.link2_desc | default: "Tools for environmental justice" }}</span>
+            </div>
+            <svg class="movement-link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14"/>
+              <path d="M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+          <a href="{{ include.link3_url | default: 'https://www.habitatmap.org/airbeam/user-stories' }}" target="_blank" rel="noopener noreferrer" class="movement-link">
+            <div class="movement-link-content">
+              <span class="movement-link-label">{{ include.link3_label | default: "Community Stories" }}</span>
+              <span class="movement-link-description">{{ include.link3_desc | default: "See how others are making a difference" }}</span>
+            </div>
+            <svg class="movement-link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14"/>
+              <path d="M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="movement-image reveal-fade">
+        <div class="movement-image-wrapper">
+          {% assign movement_img = include.image | default: "/assets/img/pages/how-it-works/how-it-works(new)3 (1).jpg" %}
+          <img
+            data-src="{{ movement_img }}?nf_resize=fit&w=800"
+            src="{{ movement_img }}?nf_resize=fit&w=200"
+            alt="{{ include.image_alt | default: 'Global community using AirBeam for air quality monitoring' }}"
+            class="lazyload movement-visual"
+          />
+          <div class="movement-image-overlay"></div>
+          <div class="movement-stats-overlay">
+            <div class="movement-stat-item">
+              <div class="movement-stat-number">{{ include.stat1_number | default: "10,000+" }}</div>
+              <div class="movement-stat-label">{{ include.stat1_label | default: "AirBeams Worldwide" }}</div>
+            </div>
+            <div class="movement-stat-item">
+              <div class="movement-stat-number">{{ include.stat2_number | default: "2B+" }}</div>
+              <div class="movement-stat-label">{{ include.stat2_label | default: "Data Points Collected" }}</div>
+            </div>
+            <div class="movement-stat-item">
+              <div class="movement-stat-number">{{ include.stat3_number | default: "100+" }}</div>
+              <div class="movement-stat-label">{{ include.stat3_label | default: "Countries" }}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

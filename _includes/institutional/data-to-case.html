@@ -1,0 +1,72 @@
+{% comment %} Institutional LP — From raw data to a case. Serves the advocate. {% endcomment %}
+<section class="panel inst-data-case reveal-section">
+  <div class="inst-data-case__container">
+    <div class="inst-data-case__content reveal-content">
+      <span class="inst-data-case__eyebrow reveal-header">From raw data to a case</span>
+      <h2 class="inst-data-case__title reveal-header">Turn readings into something people act on</h2>
+      <p class="inst-data-case__body reveal-body">
+        Data loss destroys credibility, and so does data no one can read. Turn raw CSV readings into a graph or report your community and local officials understand.
+      </p>
+    </div>
+
+    <div class="inst-data-case__visual reveal-fade" aria-hidden="true">
+      <div class="inst-csv-transform">
+        <div class="inst-csv-transform__panel">
+          <div class="inst-csv-transform__header">
+            <span>Export</span>
+            <strong>readings.csv</strong>
+          </div>
+          <div class="inst-csv-table">
+            <div><span>time</span><span>pm2.5</span><span>lat</span></div>
+            <div><span>08:45</span><strong>8</strong><span>40.71</span></div>
+            <div><span>08:50</span><strong>14</strong><span>40.72</span></div>
+            <div><span>08:55</span><strong>47</strong><span>40.72</span></div>
+            <div><span>09:00</span><strong>31</strong><span>40.73</span></div>
+          </div>
+        </div>
+
+        <div class="inst-csv-transform__arrow">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg>
+        </div>
+
+        <div class="inst-csv-transform__panel">
+          <div class="inst-csv-transform__header">
+            <span>Shareable report</span>
+            <span class="inst-csv-transform__share">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4"/><path d="M15.4 6.5l-6.8 4"/></svg>
+              Share
+            </span>
+          </div>
+          <div class="inst-csv-chart">
+            <svg viewBox="0 0 600 240" fill="none" role="img" aria-label="PM2.5 in micrograms per cubic metre over time: 8 at 08:45, 14 at 08:50, a spike to 47 at 08:55, then 31 at 09:00">
+              <!-- gridlines -->
+              <line x1="54" y1="60" x2="584" y2="60" stroke="currentColor" stroke-opacity="0.08" stroke-width="1"/>
+              <line x1="54" y1="120" x2="584" y2="120" stroke="currentColor" stroke-opacity="0.08" stroke-width="1"/>
+              <!-- area + line -->
+              <path d="M60 156 L227 138 L393 39 L560 87 L560 180 L60 180 Z" fill="currentColor" fill-opacity="0.13"/>
+              <path d="M60 156 L227 138 L393 39 L560 87" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              <!-- axes -->
+              <line x1="54" y1="40" x2="54" y2="180" stroke="currentColor" stroke-opacity="0.28" stroke-width="1.5"/>
+              <line x1="54" y1="180" x2="584" y2="180" stroke="currentColor" stroke-opacity="0.28" stroke-width="1.5"/>
+              <!-- data points -->
+              <circle cx="60" cy="156" r="4" fill="currentColor"/>
+              <circle cx="227" cy="138" r="4" fill="currentColor"/>
+              <circle cx="560" cy="87" r="4" fill="currentColor"/>
+              <circle cx="393" cy="39" r="6.5" fill="#ffffff" stroke="currentColor" stroke-width="3"/>
+              <!-- y-axis ticks (PM2.5) -->
+              <text class="inst-csv-chart__axis" x="46" y="60" text-anchor="end" dominant-baseline="middle">40</text>
+              <text class="inst-csv-chart__axis" x="46" y="120" text-anchor="end" dominant-baseline="middle">20</text>
+              <text class="inst-csv-chart__axis" x="46" y="180" text-anchor="end" dominant-baseline="middle">0</text>
+              <text class="inst-csv-chart__unit" x="30" y="28" text-anchor="start">PM2.5 µg/m³</text>
+              <!-- x-axis ticks (time) -->
+              <text class="inst-csv-chart__axis" x="60" y="202" text-anchor="middle">08:45</text>
+              <text class="inst-csv-chart__axis" x="227" y="202" text-anchor="middle">08:50</text>
+              <text class="inst-csv-chart__axis" x="393" y="202" text-anchor="middle">08:55</text>
+              <text class="inst-csv-chart__axis" x="560" y="202" text-anchor="middle">09:00</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

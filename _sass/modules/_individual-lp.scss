@@ -1,0 +1,795 @@
+// Individual landing page (/airbeam/individual/)
+// Calm, family-first sections. Reuses brand tokens; shares .faq-section
+// styling from its own module.
+
+// AirCasting PM2.5 heat-scale colors (matches aircasting.org map markers)
+$aq-green: #6fc44c;
+$aq-yellow: #f4c633;
+$ilp-max-width: 1200px;
+
+// Section background tints — shared LP palette (config/_variables.scss)
+$ilp-hero-glow: $lp-hero-glow; // hero radial gradient colour
+$ilp-tint-street: $lp-tint-street;
+$ilp-tint-meaning: $lp-tint-meaning;
+$ilp-tint-setup: $lp-tint-setup;
+$ilp-tint-movement: $lp-tint-movement;
+
+// Section eyebrow + title use the shared lp-eyebrow / lp-title mixins
+// (config/_mixins.scss), also used by the institutional LP.
+
+// ---- Hero ----------------------------------------------------------------
+.ilp-hero {
+  background: radial-gradient(130% 95% at 50% -14%, $ilp-hero-glow 0%, rgba(255, 255, 255, 0) 60%), $white;
+
+  &__container {
+    width: 100%;
+    max-width: $ilp-max-width;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: $u-space-default;
+
+    @media (min-width: $tablet-min) {
+      flex-direction: row;
+      align-items: center;
+      gap: 4rem;
+    }
+  }
+
+  &__content {
+    flex: 1 1 42%;
+  }
+
+  &__eyebrow {
+    @include lp-eyebrow;
+  }
+
+  &__title {
+    font-family: $bold-font;
+    color: $gray-dark;
+    font-size: clamp(2.2rem, 5vw, 3.4rem);
+    line-height: 1.1;
+    margin: 0 0 $u-space-small;
+  }
+
+  &__subtitle {
+    color: $text-color;
+    font-size: $base-font-size1;
+    line-height: 1.6;
+    max-width: 32rem;
+    margin: 0 0 $u-space-default;
+  }
+
+  &__ctas {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: $u-space-small;
+  }
+
+  &__demo {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    background: $white;
+    border: 1px solid rgba($gray-dark, 0.15);
+    border-radius: 2rem;
+    height: $button-base-height;
+    padding: 0 1.4rem;
+    font-family: $bold-font;
+    font-size: 1rem;
+    color: $gray-dark;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+    svg { color: $hm-brand; }
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 20px -8px rgba($gray-dark, 0.25);
+    }
+
+    &:focus-visible {
+      outline: 3px solid $green-dark;
+      outline-offset: 3px;
+    }
+  }
+
+  &__visual {
+    flex: 1 1 58%;
+  }
+
+  &__image-wrapper {
+    position: relative;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    box-shadow: 0 20px 40px -18px rgba($gray-dark, 0.35);
+    aspect-ratio: 4 / 3;
+
+    // Square crop on desktop shows the whole photo — including the AirBeam low
+    // in the frame — while still fitting within the viewport.
+    @media (min-width: $tablet-min) {
+      aspect-ratio: 1 / 1;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+  }
+}
+
+// ---- The difference: street to street ------------------------------------
+.ilp-difference {
+  background: $ilp-tint-street;
+
+  &__container {
+    width: 100%;
+    max-width: $ilp-max-width;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: $u-space-default;
+
+    @media (min-width: $tablet-min) {
+      flex-direction: row-reverse;
+      align-items: center;
+      gap: 4rem;
+    }
+  }
+
+  &__content { flex: 1 1 48%; }
+  &__visual  { flex: 1 1 52%; }
+
+  &__eyebrow {
+    @include lp-eyebrow;
+  }
+
+  &__title {
+    @include lp-title;
+  }
+
+  &__body {
+    color: $text-color;
+    font-size: $base-font-size1;
+    line-height: 1.6;
+    max-width: 34rem;
+  }
+}
+
+.ilp-map {
+  position: relative;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  background: #e8eaed; // fallback basemap gray behind the map image
+  aspect-ratio: 4 / 3;
+  box-shadow: 0 20px 40px -20px rgba($gray-dark, 0.3);
+
+  // real AirCasting map used as the basemap
+  &__img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  // light gradient only at the base, to keep the caption legible
+  &__scrim {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba($white, 0) 62%, rgba($white, 0.6) 100%);
+  }
+
+  &__marker {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &--station { top: 54%; left: 47%; }
+    &--you { top: 33%; left: 25%; z-index: 2; }
+  }
+
+  // white rounded pill with a coloured dot + value, aircasting-style
+  &__pill {
+    position: relative;
+    z-index: 1;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    background: $white;
+    border-radius: 2rem;
+    padding: 0.35rem 0.75rem 0.35rem 0.5rem;
+    box-shadow: 0 3px 10px rgba($gray-dark, 0.25);
+    white-space: nowrap;
+  }
+
+  // descriptor chip sitting a little below the value pill (mockup)
+  &__note {
+    margin-top: 0.4rem;
+    padding: 0.28rem 0.55rem 0.2rem;
+    border-radius: 0.5rem;
+    font-family: $bold-font;
+    font-size: 0.72rem;
+    line-height: 1.1;
+    white-space: nowrap;
+    box-shadow: 0 3px 8px rgba($gray-dark, 0.18);
+
+    &--you {
+      background: #fbedc4;
+      color: #7a5e10;
+    }
+
+    &--station {
+      background: #eceef0;
+      color: $gray-dark;
+    }
+  }
+
+  &__val {
+    font-family: $bold-font;
+    font-size: 0.82rem;
+    color: $gray-dark;
+  }
+
+  &__dot-wrap {
+    position: relative;
+    display: inline-flex;
+    flex: 0 0 auto;
+  }
+
+  &__dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    flex: 0 0 auto;
+  }
+
+  &__marker--station &__dot {
+    background: $aq-green;
+    box-shadow: 0 0 10px 4px rgba($aq-green, 0.55);
+  }
+
+  &__marker--you &__dot {
+    background: $aq-yellow;
+    box-shadow: 0 0 12px 5px rgba($aq-yellow, 0.6);
+  }
+
+  // expanding radar ping behind the "your street" dot (mockup: youpulse)
+  &__pulse {
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background: $aq-green;
+    transform-origin: center;
+    animation: ilp-youpulse 2.6s ease-out infinite;
+  }
+
+  &__caption {
+    position: absolute;
+    left: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    margin: 0;
+    background: rgba($white, 0.92);
+    border-radius: 0.6rem;
+    padding: 0.6rem 0.8rem;
+    font-size: 0.85rem;
+    color: $gray-dark;
+    text-align: center;
+  }
+}
+
+@keyframes ilp-youpulse {
+  0% { transform: scale(1); opacity: 0.5; }
+  70% { transform: scale(2.6); opacity: 0; }
+  100% { opacity: 0; }
+}
+
+// ---- Meaning, not just a number ------------------------------------------
+.ilp-meaning {
+  background: $ilp-tint-meaning;
+
+  &__container {
+    width: 100%;
+    max-width: $ilp-max-width;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: $u-space-default;
+
+    @media (min-width: $tablet-min) {
+      flex-direction: row;
+      align-items: center;
+      gap: 4rem;
+    }
+  }
+
+  &__content { flex: 1 1 52%; }
+  &__card    { flex: 1 1 48%; }
+
+  &__eyebrow {
+    @include lp-eyebrow;
+  }
+
+  &__title {
+    @include lp-title;
+  }
+
+  &__body {
+    color: $text-color;
+    font-size: $base-font-size1;
+    line-height: 1.6;
+    max-width: 34rem;
+  }
+}
+
+// Faithful web replica of the AirBeam app's air-quality card (Good state).
+.ilp-aqcard {
+  $aq-good: #006e02;
+
+  background: $white;
+  border-radius: 1.25rem;
+  padding: clamp(1.1rem, 2vw, 1.5rem);
+  box-shadow: 0 20px 40px -22px rgba($gray-dark, 0.3);
+
+  &__head {
+    display: flex;
+    align-items: center;
+    gap: clamp(1rem, 2.5vw, 1.5rem);
+  }
+
+  &__ghost-disc {
+    flex: 0 0 auto;
+    width: clamp(4.75rem, 8vw, 6rem);
+    height: clamp(4.75rem, 8vw, 6rem);
+
+    svg {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__summary { min-width: 0; }
+
+  &__label {
+    display: block;
+    font-family: $bold-font;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-size: 0.82rem;
+    color: $gray;
+  }
+
+  &__level {
+    display: block;
+    margin-top: 0.15rem;
+    font-family: $bold-font;
+    font-size: clamp(1.6rem, 2.4vw, 2rem);
+    line-height: 1.15;
+    color: $aq-good;
+  }
+
+  &__desc {
+    margin: 0.5rem 0 0;
+    color: $aq-good;
+    font-size: 0.98rem;
+    line-height: 1.35;
+  }
+
+  &__pollutants {
+    display: flex;
+    gap: 0.75rem;
+    margin-top: $u-space-default;
+  }
+
+  &__chip {
+    flex: 1 1 0;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    padding: 0.85rem 0.9rem;
+    background: $white;
+    border: 1px solid $aq-good;
+    border-radius: 0.65rem;
+  }
+
+  &__chip-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.4rem;
+  }
+
+  &__chip-name {
+    font-family: $bold-font;
+    font-size: 0.9rem;
+    color: #44474a;
+    white-space: nowrap;
+
+    sub {
+      font-size: 0.7em;
+      line-height: 0;
+    }
+  }
+
+  &__chip-help {
+    flex: 0 0 auto;
+    color: #75777b;
+
+    svg {
+      display: block;
+      width: 0.95rem;
+      height: 0.95rem;
+    }
+  }
+
+  &__chip-value {
+    display: flex;
+    align-items: baseline;
+    gap: 0.3rem;
+  }
+
+  &__chip-num {
+    font-family: $bold-font;
+    font-size: clamp(1.3rem, 2vw, 1.55rem);
+    line-height: 1;
+    color: #171c20;
+  }
+
+  &__chip-unit {
+    font-size: 0.75rem;
+    color: #75777b;
+  }
+
+  &__location {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 0.9rem;
+    padding: 0.7rem 1rem;
+    border: 1px solid #cac4d0;
+    border-radius: 0.65rem;
+    text-decoration: none;
+  }
+
+  &__loc-name {
+    display: block;
+    font-family: $bold-font;
+    font-size: 0.95rem;
+    color: #171c20;
+  }
+
+  &__loc-dist {
+    display: block;
+    margin-top: 0.1rem;
+    font-size: 0.8rem;
+    color: #75777b;
+  }
+
+  &__loc-arrow {
+    flex: 0 0 auto;
+    color: #171c20;
+
+    svg {
+      display: block;
+      width: 1.15rem;
+      height: 1.15rem;
+    }
+  }
+
+  &__note {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    margin: 0.9rem 0 0;
+    color: #44474a;
+    font-size: 0.85rem;
+
+    svg {
+      flex: 0 0 auto;
+      width: 0.9rem;
+      height: 0.9rem;
+    }
+  }
+}
+
+// ---- Everything it does (icon-left 3x2 grid, per mockup) -----------------
+.ilp-live {
+  &__container {
+    width: 100%;
+    max-width: $ilp-max-width;
+    margin: 0 auto;
+  }
+
+  &__header {
+    text-align: center;
+    margin-bottom: $u-space-default;
+  }
+
+  &__eyebrow {
+    @include lp-eyebrow;
+  }
+
+  &__title {
+    @include lp-title;
+  }
+
+  &__subtitle {
+    color: $text-color;
+    font-size: $base-font-size1;
+    margin: 0;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $u-space-small;
+
+    @media (min-width: $large-mobile-min) { grid-template-columns: repeat(2, 1fr); }
+    @media (min-width: $small-desktop-min) { grid-template-columns: repeat(3, 1fr); }
+  }
+
+  &__cell {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    background: $white;
+    border: 1px solid rgba($gray-dark, 0.1);
+    border-radius: 1rem;
+    padding: $u-space-small;
+  }
+
+  &__icon {
+    flex: 0 0 auto;
+    display: grid;
+    place-items: center;
+    width: 2.75rem;
+    height: 2.75rem;
+    border-radius: 0.75rem;
+    background: $white;
+    color: $green;
+    box-shadow: 0 2px 8px rgba($gray-dark, 0.12);
+
+    svg { width: 1.4rem; height: 1.4rem; }
+  }
+
+  &__name {
+    font-family: $bold-font;
+    color: $gray-dark;
+    font-size: 1.05rem;
+    margin: 0 0 0.3rem;
+  }
+
+  &__desc {
+    color: $text-color;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin: 0;
+
+    strong { color: $gray-dark; }
+  }
+
+  &__accuracy {
+    text-align: center;
+    color: $text-color; // was $gray (#818181 ~3.9:1) — fails AA
+    font-size: 0.95rem;
+    margin-top: $u-space-default;
+
+    a {
+      color: $green-dark; // AA-safe link on white
+      font-family: $bold-font;
+      text-decoration: none;
+      &:hover { text-decoration: underline; }
+    }
+  }
+}
+
+// Portrait video thumbnails on the shared In Action section
+.videos-section--portrait {
+  .video-container,
+  .video-placeholder { aspect-ratio: 9 / 16; }
+
+  .video-thumbnail {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+// ---- Setup ---------------------------------------------------------------
+.ilp-setup {
+  background: $ilp-tint-setup;
+
+  &__container {
+    width: 100%;
+    max-width: 66rem;
+    margin: 0 auto;
+  }
+
+  &__header {
+    text-align: center;
+    max-width: 40rem;
+    margin: 0 auto $u-space-default;
+  }
+
+  &__eyebrow {
+    @include lp-eyebrow;
+  }
+
+  &__title {
+    @include lp-title;
+  }
+
+  &__body {
+    color: $text-color;
+    font-size: $base-font-size1;
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  &__layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $u-space-default;
+    align-items: stretch;
+
+    @media (min-width: $tablet-min) {
+      grid-template-columns: 1fr minmax(0, 0.82fr);
+      gap: 3rem;
+    }
+  }
+
+  &__steps {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: $u-space-small;
+  }
+
+  &__step {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    background: $white;
+    border: 1px solid rgba($gray-dark, 0.1);
+    border-radius: 1rem;
+    padding: 1.25rem 1.4rem;
+    text-align: left;
+  }
+
+  &__step-num {
+    display: grid;
+    place-items: center;
+    flex: 0 0 auto;
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 50%;
+    background: $green;
+    color: $white;
+    font-family: $bold-font;
+    font-size: 1.05rem;
+  }
+
+  &__step-title {
+    font-family: $bold-font;
+    color: $gray-dark;
+    font-size: 1.05rem;
+    margin: 0 0 0.25rem;
+  }
+
+  &__step-desc {
+    color: $text-color;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  &__media {
+    margin: 0;
+    min-height: 22rem; // desktop: fill the steps column height
+    overflow: hidden;
+    border-radius: 1.5rem;
+    border: 1px solid rgba($gray-dark, 0.05);
+    box-shadow: 0 16px 40px -30px rgba($gray-dark, 0.28);
+
+    // On phones the fixed min-height + cover crops hard — use a natural ratio.
+    @media (max-width: $large-mobile-max) {
+      min-height: 0;
+      aspect-ratio: 4 / 3;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+}
+
+// ---- Join a global movement (centered stats, per mockup) -----------------
+.ilp-movement {
+  background: $ilp-tint-movement; // solid pale green, matching the mockup
+
+  &__container {
+    width: 100%;
+    max-width: 60rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__eyebrow {
+    @include lp-eyebrow;
+  }
+
+  &__title {
+    @include lp-title;
+  }
+
+  &__stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: $u-space-default;
+    margin-bottom: $u-space-default;
+  }
+
+  &__stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__stat-number {
+    font-family: $bold-font;
+    color: $green;
+    font-size: clamp(2.2rem, 5vw, 3.25rem);
+    line-height: 1;
+  }
+
+  &__stat-label {
+    color: $text-color;
+    font-size: 0.95rem;
+    margin-top: $u-space-tiny;
+  }
+
+  &__body {
+    color: $text-color;
+    font-size: $base-font-size1;
+    line-height: 1.6;
+    max-width: 40rem;
+    margin: 0 auto $u-space-default;
+  }
+}
+
+// Shared sections used on this page (In Action, buy block, FAQ) — force
+// their titles to the same size so every section title matches page-wide.
+.ilp-page .videos-title,
+.ilp-page .showcase-title,
+.ilp-page .faq-title {
+  font-size: clamp(2rem, 3vw, 2.75rem) !important;
+  line-height: 1.15;
+}
+
+// FAQ shares the pale-green tint used by the mockup (scoped to this page only)
+.ilp-page .faq-section {
+  background-color: $ilp-tint-street;
+}
+
+// In Action is plain white in the mockup (not the shared teal gradient)
+.ilp-page .videos-section {
+  background: $white;
+}
