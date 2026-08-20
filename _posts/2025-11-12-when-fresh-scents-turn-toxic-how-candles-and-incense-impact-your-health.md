@@ -4,7 +4,7 @@ title: "When Fresh Scents Turn Toxic: How Candles and Incense Impact Your Health
 date: 2025-11-12
 last_modified_at: 2026-07-29
 featured: false
-author: Michael Heimbinder
+author: Kayla Pasacreta
 image: /images/uploads/burning-candles-zz-230419-5dd288.avif
 intro: "Candles, incense, and air fresheners are beloved for creating ambiance
   and masking odors, but many of these seemingly harmless products release
