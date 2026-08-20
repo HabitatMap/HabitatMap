@@ -4,7 +4,7 @@ title: Wildfire Smoke Is Getting Worse — Here's What You Need to Know
 date: 2026-08-10
 last_modified_at: ""
 featured: true
-author: Kayla Pasacreta & Michael Heimbinder
+author: Kayla Pasacreta
 image: /images/uploads/unnamed.jpg
 category: Health
 tag:
