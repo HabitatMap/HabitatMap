@@ -11,6 +11,10 @@ tag:
   - health
   - education
 ---
+<head>
+<meta name="Wildfire Smoke Is Getting Worse—Here's What You Need to Know" content="Here's what's actually happening with wildfire smoke, why summer exposure to wildfire smoke is becoming the norm rather than the exception, and what you can do to protect the air you and your family breathe indoors, where most of us spend the majority of our time.">
+</head>
+
 If it feels like wildfire smoke is showing up in more places, more often, and sticking around longer, you're not imagining it. This summer alone, smoke from [Canadian wildfires](https://www.nbcnews.com/data-graphics/canada-wildfire-smoke-map-2026-us-states-air-quality-health-risks-rcna588051) pushed air quality into record-breaking territory across the Midwest and Northeast, turning skies orange from Minneapolis to New York City and prompting health alerts in sixteen states. For a growing number of Americans, wildfire season no longer means something that happens to someone else, somewhere else. Smoke drifts hundreds of miles from the fire itself, so even if you never see flames, you still breathe the consequences, which is why checking the [Air Quality Index](https://www.habitatmap.org/blog/what-do-those-colored-circles-mean-understanding-air-quality-on-the-aircasting-map) (AQI) before opening a window has become part of daily life.
 
 Here's what's actually happening, why it's becoming the norm rather than the exception, and what you can do to protect the air you and your family breathe indoors, where most of us spend the majority of our time.
