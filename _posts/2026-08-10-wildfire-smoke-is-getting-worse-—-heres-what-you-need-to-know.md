@@ -53,7 +53,7 @@ A few evidence-based steps make a real difference:
 
 That depends on the fire, the wind, and your walls. Outdoors, a single smoke event can linger for days: this summer's stretch of haze oscillated back and forth across the Midwest and Northeast for nearly a week before storms finally cleared it out.
 
-Indoors, smoke sticks around longer than most people expect. Indoor PM2.5 typically runs at roughly half to 60% of outdoor levels during smoke events, which is still often unhealthy, and it won't clear on its own the moment the sky outside looks better. That's part of why a real-time indoor reading matters more than a quick glance out the window.
+Indoors, smoke sticks around longer than most people expect. Indoor PM2.5[ typically runs at roughly half to 60% of outdoor levels](https://www.epa.gov/wildfire-smoke-course/strategies-reduce-exposure-indoors) during smoke events, which is still often unhealthy, and it won't clear on its own the moment the sky outside looks better. That's part of why a real-time indoor reading matters more than a quick glance out the window.
 
 # Why is wildfire smoke becoming the new normal?
 
