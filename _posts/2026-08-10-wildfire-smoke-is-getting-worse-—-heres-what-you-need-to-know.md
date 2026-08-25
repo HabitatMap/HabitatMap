@@ -5,7 +5,7 @@ date: 2026-08-10
 last_modified_at: ""
 featured: true
 author: Kayla Pasacreta
-image: /images/uploads/unnamed.jpg
+image: /images/uploads/wildfire-smoke-drifting-over-los-angeles.jpg
 category: Health
 tag:
   - health
