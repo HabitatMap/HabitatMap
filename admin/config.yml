@@ -57,6 +57,13 @@ collections:
           widget: image,
           hint: "For the best effect upload images 1200x705 in resolution (or bigger with the same proportions).",
         }
+      - {
+          label: Image alt text,
+          name: image_alt,
+          widget: string,
+          required: false,
+          hint: "Describe the featured image for screen readers and search engines, e.g. 'AirBeam Mini clipped to a tote bag'. Leave blank only for purely decorative images.",
+        }
       - { label: Intro, name: intro, widget: text, required: false }
       - {
           label: Body,

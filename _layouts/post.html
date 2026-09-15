@@ -40,6 +40,7 @@ layout: default
                 {{ page.image | append: '?nf_resize=fit&w=720 720w' }},
                 {{ page.image | append: '?nf_resize=fit&w=1200 1200w' }}"
         src="{{ page.image | append: '?nf_resize=fit&w=1200' }}"
+        alt="{{ page.image_alt | default: page.title }}"
       />
     {% endif %}
 
