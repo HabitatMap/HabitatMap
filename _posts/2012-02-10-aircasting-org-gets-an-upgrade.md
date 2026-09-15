@@ -1,9 +1,11 @@
 ---
 layout: post
 title: AirCasting Gets a New & Improved Maps Interface
-date: '2012-02-10'
+date: 2012-02-10
+last_modified_at: ""
 featured: false
 image: /images/uploads/website-sessions.jpg
+image_alt: AirCasting Map
 category: Open Source Software
 tag:
   - open-source
