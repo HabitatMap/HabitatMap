@@ -6,6 +6,7 @@ last_modified_at: ""
 featured: true
 author: Kayla Pasacreta
 image: /images/uploads/wildfire-smoke-drifting-over-los-angeles.jpg
+image_alt: Heavy smoke coming from buildings as people nearby breathe the polluted air
 category: Health
 tag:
   - health
