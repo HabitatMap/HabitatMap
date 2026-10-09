@@ -47,13 +47,13 @@ During a mobile session, AirBeam Mini communicates measurements to the AirCastin
 
 The important thing to remember is that Bluetooth and Internet are two different connections. Your phone can communicate with the AirBeam Mini without being connected to Wi-Fi or cellular data.
 
-### What if my phone is offline?
+## W﻿hat if my phone is online?
 
 Keep recording. If your phone doesn't have internet access while you're collecting measurements, the session can sync to AirCasting once your phone is back online.
 
 So if you're headed somewhere without service, don't stop collecting just because your phone is offline.
 
-### What if AirBeam Mini loses its connection?
+## W﻿hat if AirBeam Mini loses its connection?
 
 Your data is safe. Whenever AirBeam Mini is recording a mobile or fixed session and the Bluetooth or Wi-Fi connection is interrupted, it logs measurements to its internal storage.
 
@@ -66,7 +66,7 @@ This works for both session types:
 
 One thing to know: AirBeam Mini does not have its own GPS, so it can't track location by itself while it's disconnected from your phone.  Any measurements recorded when AirBeam Mini is disconnected from the phone are pegged to the last known location.
 
-### How much data can AirBeam Mini store?
+## H﻿ow much data can AirBeam Mini store?
 
 A lot. Depending on your sampling interval, the Mini's internal storage holds:
 
