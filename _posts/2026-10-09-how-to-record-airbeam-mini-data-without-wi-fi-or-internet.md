@@ -20,7 +20,7 @@ No Wi-Fi? No problem. If you're taking an AirBeam Mini into the field, you don't
 
 Here's how it works.
 
-### Can AirBeam Mini record data without internet?
+## C﻿an AirBeam Mini record data without internet?
 
 Yes. AirBeam Mini can keep recording measurements when an internet connection is unavailable.
 
@@ -28,7 +28,7 @@ During a mobile session, AirBeam Mini sends measurements to the AirCasting app o
 
 That means you can take your AirBeam Mini on a walk, bike ride, community science project, or field study without worrying about staying connected the entire time.
 
-### Record a mobile session with AirBeam Mini
+## R﻿ecord a mobile session with AirBeam Mini
 
 For mobile data collection, connect your AirBeam Mini to the AirCasting app using Bluetooth. You do not need Wi-Fi or cellular internet to collect measurements during the session.
 
@@ -72,7 +72,7 @@ A lot. Depending on your sampling interval, the Mini's internal storage holds:
 
 **S﻿ampling Interval                                                                      Storage Capacity**
 
-10 minutes                                                                                     1,675 days
+10 minutes                                                                                      1,675 days 
 
 5 minutes                                                                                        837 days
 
@@ -80,7 +80,7 @@ A lot. Depending on your sampling interval, the Mini's internal storage holds:
 
 5﻿ seconds                                                                                         14 days
 
-1﻿ second                                                                                             67 hours
+1﻿ second                                                                                            67 hours
 
 1. While you're on Wi-Fi, open the AirCasting app and set up your AirBeam Mini to record a fixed session.
 2. Wait until you see the first measurements appear in the app.
