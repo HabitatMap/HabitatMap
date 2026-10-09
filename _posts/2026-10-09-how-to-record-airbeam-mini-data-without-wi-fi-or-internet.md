@@ -90,9 +90,9 @@ A lot. Depending on your sampling interval, the Mini's internal storage holds:
 
 The above method is also ideally suited to research projects that seek to collect 24/7 air quality exposure data from participants carrying the AirBeam Mini but don’t want to log location data and don’t want to have the participants use their phones in tandem with the AirBeam. \
 \
-Fixed sessions record 1-minute averages, and the Mini can store 167 days of data at that interval, so there's plenty of room for long deployments.\
-\
-A few things to keep in mind
+Fixed sessions record 1-minute averages, and the Mini can store 167 days of data at that interval, so there's plenty of room for long deployments.
+
+## A﻿ few things to keep in mind
 
 Charge your AirBeam Mini before heading out. Without an internet connection, your biggest concern isn't connectivity. It's making sure the device has enough power to finish the job. In a mobile session, a fully charged AirBeam Mini runs for 20–33 hours, depending on the sampling interval: about 20 hours at intervals of 1 minute or less, 30 hours at 5 minutes, and 33 hours at 10 minutes. Fixed sessions always sample once a minute and run for about 20 hours on battery.
 
@@ -100,7 +100,7 @@ Keep Bluetooth range in mind. You don't need internet for Bluetooth, but your ph
 
 Don't panic if your data isn't immediately online. If you're collecting data somewhere without service, your measurements may not appear on the AirCasting website right away. That's expected. They'll show up once you reconnect and sync.
 
-### The bottom line
+## The bottom line
 
 You don't need Wi-Fi or internet access everywhere you collect air quality data.
 
