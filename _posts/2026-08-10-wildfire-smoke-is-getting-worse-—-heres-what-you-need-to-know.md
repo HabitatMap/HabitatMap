@@ -7,6 +7,10 @@ featured: true
 author: Kayla Pasacreta
 image: /images/uploads/wildfire-smoke-drifting-over-los-angeles.jpg
 image_alt: Heavy smoke coming from buildings as people nearby breathe the polluted air
+intro: Here's what's actually happening with wildfire smoke, why summer exposure
+  to wildfire smoke is becoming the norm rather than the exception, and what you
+  can do to protect the air you and your family breathe indoors, where most of
+  us spend the majority of our time.
 category: Health
 tag:
   - health
