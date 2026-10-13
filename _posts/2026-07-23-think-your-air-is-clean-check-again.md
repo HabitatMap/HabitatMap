@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Think Your Indoor Air Is Clean? Check Again.
+title: "Indoor Air Pollution: Think Your Air Is Clean?"
 date: 2026-07-23
 last_modified_at: 2026-10-13
 featured: false
@@ -15,7 +15,7 @@ tag:
 ---
 Most people picture air pollution as something that happens outside: traffic exhaust, factory smoke, [wildfire haze](https://www.habitatmap.org/blog/wildfire-smoke-is-getting-worse-heres-what-you-need-to-know) drifting in from somewhere else. And the outdoor picture is genuinely alarming. The American Lung Association's 2026 [State of the Air](https://www.lung.org/getmedia/32f0646d-c5de-4501-b0ac-07cd63c974d4/State-of-the-Air-2026-Report.pdf) report found that 44% of Americans, more than 152 million people, live in counties that failed at least one air quality measure, with nearly half of U.S. children breathing unhealthy air where they live.
 
-The health stakes are serious and well documented. Particle pollution is linked to lung cancer, heart attacks, strokes, and early death.
+The health stakes are serious and well documented. Particle pollution is linked to lung cancer, heart attacks, strokes, and early death. Even short-term exposure can worsen asthma and other respiratory diseases.
 
 But some of the biggest pollution spikes in the average day don't come from outside at all. They come from ordinary things we do at home without a second thought. And because indoor air isn't graded or reported the way outdoor air is, it's much easier to overlook.
 
@@ -23,7 +23,7 @@ But some of the biggest pollution spikes in the average day don't come from outs
 
 ## What causes indoor air pollution?
 
-The EPA has found that indoor air pollutant levels are typically [2 to 5 times higher](https://www.epa.gov/indoor-air-quality-iaq/inside-story-guide-indoor-air-quality) than outdoor levels, and during certain activities, they can spike to more than 100 times higher. Americans also spend about 90% of their time indoors, making indoor air an important part of our overall exposure.
+The Environmental Protection Agency (EPA) has found that indoor air pollutant levels are typically [2 to 5 times higher](https://www.epa.gov/indoor-air-quality-iaq/inside-story-guide-indoor-air-quality) than outdoor levels, and during certain activities, they can spike to more than 100 times higher. Americans also spend about 90% of their time indoors, making indoor air an important part of our overall exposure.
 
 Many of the biggest sources aren't things we typically think of as "pollution." They're everyday habits: cooking dinner, lighting a candle, spraying a cleaning product, or burning something in the kitchen.
 
@@ -35,7 +35,7 @@ That smoking piece of toast isn't just a breakfast fail. It's a small combustion
 
 When food chars, it releases fine particulate matter (PM2.5), particles small enough to travel deep into your lungs. Burnt or charred food can also release acrolein and other irritant compounds that can sting your eyes and throat.
 
-The scale is easy to underestimate. [Research on household cooking](https://climate.uchicago.edu/working-papers/cooking-health-and-daily-exposure-to-pollution-spikes/) has found that cooking causes large, recurring PM2.5 spikes that barely register in daily averages, which is exactly why they're so easy to miss. Charring food only adds to them. In a closed kitchen with little ventilation, those particles can linger in the air after the visible smoke has cleared.
+The scale is easy to underestimate. [Research on household cooking](https://climate.uchicago.edu/working-papers/cooking-health-and-daily-exposure-to-pollution-spikes/) has found that cooking causes large, recurring PM2.5 spikes that barely register in daily averages, which is why they're so easy to miss. Charring food makes those spikes worse, and in a closed kitchen with little ventilation, the particles can linger in the air after the visible smoke has cleared.
 
 If your kitchen fills with smoke, ventilation matters. Turn on your range hood if it vents outside, and open a window when outdoor air quality is good.
 
@@ -61,7 +61,7 @@ Aerosolized sprays can be especially easy to inhale because they disperse direct
 
 The American Lung Association [identifies fumes from cleaning products](https://www.lung.org/clean-air/indoor-air/indoor-air-pollutants/cleaning-supplies-household-chem), particularly products containing VOCs and added fragrance, as potential asthma triggers. Some research has also linked regular exposure to cleaning-product emissions with respiratory effects.
 
-Fragrance can be particularly complicated. A label that simply says "fragrance" can represent a mixture of many different chemical compounds, some of which can irritate the respiratory system. Even naturally derived fragrance compounds can react with other chemicals in indoor air and form new pollutants.
+Fragrance can be particularly complicated. A label that simply says "fragrance" can represent a mixture of many different chemical compounds, some of which can irritate the respiratory system. Even naturally derived fragrance compounds can set off chemical reactions in indoor air that form new pollutants.
 
 When you can, choose fragrance-free or low-VOC products and use a wipe or liquid cleaner instead of an aerosol spray.
 
@@ -69,15 +69,15 @@ When you can, choose fragrance-free or low-VOC products and use a wipe or liquid
 
 Cooking is one of the most reliable sources of short-term indoor pollution spikes. Frying and sautéing can produce substantial amounts of PM2.5 and VOCs, with high-heat cooking generally creating more emissions than gentler methods such as boiling.
 
-The numbers can be striking. In a University of Texas test house, researchers found that [cooking was the single largest source of indoor particle pollution](https://www.colorado.edu/even/2020/06/08/research-paper-looks-exposure-airborne-particulate-matter-homes), with PM2.5 [exceeding 250 micrograms per cubic meter](https://researchdiscovery.drexel.edu/esploro/outputs/journalArticle/Indoor-Particulate-Matter-during-HOMEChem-Concentrations/991021860780804721) during some meals. For scale, the EPA's limit for a 24-hour average is 35.
+The numbers can be striking. In [a study in a University of Texas test house](https://www.colorado.edu/even/2020/06/08/research-paper-looks-exposure-airborne-particulate-matter-homes), researchers found that cooking was the single largest source of indoor particle pollution, with PM2.5 exceeding 250 micrograms per cubic meter during some meals. For scale, the EPA's limit for a 24-hour average is 35, and the World Health Organization's air quality guidelines recommend 15.
 
-Two factors have a particularly big effect: how you cook and how well you ventilate.
+Two factors have a particularly strong effect: how you cook and how well you ventilate.
 
 Gas stoves add another source of pollution because combustion can release nitrogen dioxide and carbon monoxide in addition to the particles and VOCs produced by the food itself.
 
 Your range hood matters, too. If it vents outside, running it while you cook can remove pollutants before they spread through the rest of your home. If you don't have an externally vented hood, opening a window can help when outdoor air quality is good.
 
-And don't turn the fan off the moment you finish cooking. The same study found that exposure after cooking can exceed exposure during it, so letting the fan run for several minutes afterward helps clear what's left.
+Keep the fan running after you finish cooking, too. The same study found that exposure after cooking can exceed exposure during it, so a few extra minutes of ventilation helps clear what's left.
 
 ## Is indoor air pollution worse than outdoor air pollution?
 
@@ -91,7 +91,7 @@ Outdoor air quality measurements can't show you those changes inside your home.
 
 ## How can you tell if your indoor air is polluted?
 
-This is where monitoring changes the equation.
+This is where air quality monitoring changes the equation.
 
 You can't fix what you can't see, and many indoor pollution events are invisible. A low-cost, real-time monitor like the [AirBeam Mini](https://www.habitatmap.org/airbeam) lets you watch PM2.5 levels change as they happen and connect those changes to what you're actually doing.
 
@@ -114,4 +114,4 @@ Indoor air pollution is easy to overlook precisely because it comes from things 
 
 But once you can see what those activities are doing to the air around you, those invisible changes become much easier to understand, and easier to act on.
 
-Want to see how your air changes through the day, inside your home and out? [Get your AirBeam Mini.](https://www.habitatmap.org/airbeam/buy-it-now/)
+Want to see how the air in your home changes through the day? The [AirBeam Mini](https://www.habitatmap.org/airbeam/buy-it-now/) shows you in real time, indoors and out.
