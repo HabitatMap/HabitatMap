@@ -86,7 +86,7 @@ You can also set up a fixed session and deploy the Mini somewhere with no Wi-Fi 
 4. Install the Mini at your monitoring location. Plug it in if you plan to monitor for more than 20 hours.
 5. When you're done, bring the Mini back within range of the Wi-Fi network you used to set it up. It reconnects automatically and uploads everything it recorded while it was away.
 
-This method also suits research projects that need 24/7 exposure data from participants carrying an AirBeam Mini, without logging location data or asking participants to carry their phones alongside it.
+The above method is also ideally suited to research projects that seek to collect 24/7 air quality exposure data from participants carrying the AirBeam Mini but don’t want to log location data and don’t want to have the participants use their phones in tandem with the AirBeam.  
 
 Fixed sessions record 1-minute averages, and the Mini can store 167 days of data at that interval, so there's plenty of room for long deployments.
 
