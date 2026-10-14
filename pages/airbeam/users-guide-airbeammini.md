@@ -184,7 +184,7 @@ Operation of AirBeam Mini is nearly identical to operation of AirBeam3, so the b
   </ol>
 
   <p class="p--body">
-    When recording a mobile session with AirBeam Mini, measurements are communicated via Bluetooth once per second, once per 5-seconds, once per minute, once per 5-minutes, or once per 10-minutes to the AirCasting app based on the sampling interval selection. The device running the AirCasting app must stay within 10-20 feet of AirBeam Mini to maintain the Bluetooth connection and receive data from AirBeam Mini. After recording a mobile session for more than 2 hours, your measurements will be integrated into 5-second averages. After recording a mobile session for more than 9 hours, your measurements will be integrated into 1-minute averages.
+    When recording a mobile session with AirBeam Mini, measurements are communicated via Bluetooth once per second, once per 5-seconds, once per minute, once per 5-minutes, or once per 10-minutes to the AirCasting app based on the sampling interval selection. The device running the AirCasting app must stay within 10-20 feet of AirBeam Mini to maintain the Bluetooth connection and receive data from AirBeam Mini. After recording a 1-second interval mobile session for more than 2 hours, your measurements will be integrated into 5-second averages. After recording a 1-second or 5-second interval mobile session for more than 9 hours, your measurements will be integrated into 1-minute averages.
   </p>
 
   <a id="record-fixed" class="anchor">
