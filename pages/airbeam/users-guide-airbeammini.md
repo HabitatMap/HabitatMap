@@ -42,7 +42,8 @@ image: /assets/img/about-airbeam-01.jpg
     <li class="contents-list__item"><a href="#power-on-off">Power On/Off</a></li>
     <li class="contents-list__item"><a href="#intake">Intake & Exhaust</a></li>
     <li class="contents-list__item"><a href="#record-mobile">Record Measurements – Mobile  (Bluetooth) Session</a></li>
-    <li class="contents-list__item"><a href="#record-wifi">Record Measurements – Fixed (Wifi) Session</a></li>
+    <li class="contents-list__item"><a href="#record-fixed">Record Measurements – Fixed (Wifi) Session</a></li>
+    <li class="contents-list__item"><a href="#record-offline">Record Measurements – Offline</a></li>
     <li class="contents-list__item"><a href="#connection">Connection Indicator Color Key</a></li>
     <li class="contents-list__item"><a href="#bluetooth-disconnections">Bluetooth Disconnections</a></li>
     <li class="contents-list__item"><a href="#internal-storage">Internal Storage</a></li>
@@ -186,7 +187,7 @@ Operation of AirBeam Mini is nearly identical to operation of AirBeam3, so the b
     When recording a mobile session with AirBeam Mini, measurements are communicated once a second to the AirCasting app via Bluetooth. The device running the AirCasting app must stay within 10-20 feet of AirBeam Mini to maintain the Bluetooth connection and receive data from AirBeam Mini. After recording a mobile session for more than 2 hours, your measurements will be integrated into 5-second averages. After recording a mobile session for more than 9 hours, your measurements will be integrated into 1-minute averages.
   </p>
 
-  <a id="record-wifi" class="anchor">
+  <a id="record-fixed" class="anchor">
   </a>
   <h2 class="heading heading--small heading--body">
     Record Measurements – Fixed (WiFi) Session
@@ -201,6 +202,17 @@ Operation of AirBeam Mini is nearly identical to operation of AirBeam3, so the b
   <p class="p--body">
     When recording a fixed WiFi session with AirBeam Mini, the measurements are communicated once a minute to the <a href="http://aircasting.org/">AirCasting website</a> via WiFi. The Android or iOS device no longer needs to be in proximity to AirBeam Mini as it’s retrieving the data from the web via the Android or iOS device’s WiFi or cellular connection. AirBeam Mini must be connected to the 2.4 GHz band of your WiFi network; it cannot connect via the 5 GHz band.
   </p>
+
+<a id="record-offline" class="anchor">
+  </a>
+  <h2 class="heading heading--small heading--body">
+    Record Measurements – Offline
+  </h2>
+
+  <p class="p--body">
+During a mobile session, AirBeam Mini sends measurements to the AirCasting app on your phone over Bluetooth. If that connection drops, it saves measurements to its internal storage and syncs them once the connection is back. You can also set up a fixed session and deploy the Mini somewhere with no Wi-Fi at all. It records to internal storage and uploads everything once it’s back in range. For more information about recording offline with AirBeam Mini please refer to <a href="https://www.habitatmap.org/blog/how-to-record-airbeam-mini-data-without-wi-fi-or-internet">this blog post</a>.
+  </p>
+  
 
   <a id="connection" class="anchor">
   </a>
