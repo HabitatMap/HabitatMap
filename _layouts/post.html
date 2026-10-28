@@ -108,7 +108,7 @@ layout: default
     "@id": "https://www.habitatmap.org{{ page.url | relative_url }}"
   },
   "headline": "{{ page.title | escape }}",
-  "description": "{{ page.intro | escape }}",
+  "description": "{{ page.description | default: page.intro | escape }}",
   "image": "{{ page.image | prepend: site.url }}",
   "author": {
     "@type": "Person",

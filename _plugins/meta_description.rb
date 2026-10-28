@@ -23,7 +23,7 @@ module HabitatMap
         value = first_present(
           post.data["meta_description"],
           post.data["intro"],
-          first_paragraph(post.content)
+          first_paragraph(post)
         )
         post.data["description"] = truncate(value) if value
       end
@@ -39,23 +39,35 @@ module HabitatMap
       values.find { |value| present?(value) }
     end
 
-    # Grab the first paragraph of the raw body and strip the obvious Markdown /
-    # HTML noise so the fallback reads as plain prose.
-    def first_paragraph(content)
-      return nil if content.nil?
+    # Pull the first real paragraph of prose from the post. We rely on Jekyll's
+    # own excerpt (Markdown already rendered to HTML) so links become their text
+    # and images drop out, then take the first non-empty <p> so leading images or
+    # figures don't become the description.
+    def first_paragraph(post)
+      excerpt = post.data["excerpt"]
+      html = excerpt.respond_to?(:output) ? excerpt.output : excerpt.to_s
+      return nil if html.strip.empty?
 
-      paragraph = content.to_s.strip.split(/\n\s*\n/).first.to_s
-      paragraph
-        .gsub(/<\/?[^>]*>/, " ")          # html tags
-        .gsub(/!?\[([^\]]*)\]\([^)]*\)/, '\1') # [text](url) / images -> text
-        .gsub(/[#>*_`]/, " ")             # leftover markdown markers
+      paragraph = html.scan(/<p[^>]*>(.*?)<\/p>/m)
+                      .map { |match| strip_tags(match.first) }
+                      .find { |text| present?(text) }
+
+      paragraph || strip_tags(html)
+    end
+
+    def strip_tags(html)
+      html.to_s.gsub(/<\/?[^>]*>/, " ")
     end
 
     def truncate(str)
-      squished = str.to_s.gsub(/\s+/, " ").strip
+      squished = str.to_s
+                    .gsub(/\s+/, " ")
+                    .gsub(/ ([.,;:!?])/, '\1') # tidy spaces left by stripped tags
+                    .strip
       return squished if squished.length <= MAX_LENGTH
 
-      "#{squished[0...MAX_LENGTH].sub(/\s+\S*\z/, '').rstrip}…"
+      # Reserve one character for the ellipsis so the result never exceeds the max.
+      "#{squished[0...(MAX_LENGTH - 1)].sub(/\s+\S*\z/, '').rstrip}…"
     end
   end
 end
