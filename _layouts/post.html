@@ -107,12 +107,12 @@ layout: default
     "@type": "WebPage",
     "@id": "https://www.habitatmap.org{{ page.url | relative_url }}"
   },
-  "headline": "{{ page.title | escape }}",
-  "description": "{{ page.intro | escape }}",
-  "image": "{{ page.image | prepend: site.url }}",
+  "headline": {{ page.title | jsonify | replace: "</", "<\/" }},
+  "description": {{ page.description | default: page.intro | jsonify | replace: "</", "<\/" }},
+  "image": {{ page.image | prepend: site.url | jsonify | replace: "</", "<\/" }},
   "author": {
     "@type": "Person",
-    "name": "{{ page.author | escape }}"
+    "name": {{ page.author | jsonify | replace: "</", "<\/" }}
   },
   "publisher": {
     "@id": "https://www.habitatmap.org/#organization"
