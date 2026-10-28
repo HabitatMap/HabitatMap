@@ -9,6 +9,8 @@
 #   3. the post's first paragraph
 # The result is collapsed to one line and truncated so Google never shows a
 # 700-character wall of text.
+require "cgi"
+
 module HabitatMap
   class MetaDescriptionGenerator < Jekyll::Generator
     safe true
@@ -55,8 +57,11 @@ module HabitatMap
       paragraph || strip_tags(html)
     end
 
+    # HTML -> plain text: drop tags and decode entities so counting and
+    # truncation operate on real characters (never slicing a half entity like
+    # `&am`, and never over-counting `&amp;` as five characters).
     def strip_tags(html)
-      html.to_s.gsub(/<\/?[^>]*>/, " ")
+      CGI.unescapeHTML(html.to_s.gsub(/<\/?[^>]*>/, " "))
     end
 
     def truncate(str)

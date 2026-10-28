@@ -68,7 +68,7 @@ collections:
       - {
           label: Meta description,
           name: meta_description,
-          widget: text,
+          widget: string,
           required: false,
           pattern:
             ["^.{0,160}$", "Keep it to 160 characters or fewer for Google."],
