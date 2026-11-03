@@ -38,7 +38,7 @@ For 18 weeks we collocated AirBeam Minis at the New York State Department of Env
 **Update AirBeam Mini Firmware**\
 Have an older model AirBeam Mini that was purchased by or before May 2026?  You can update to the latest firmware and take advantage of all the latest improvements. Step-by-step instructions are posted below.
 
-1. Download the [AirBeam Mini firmware BIN file here](https://habitatmap.org/images/uploads/abmfw-relase-1-0-0.bin).
+1. Download the [AirBeam Mini firmware BIN file here](https://habitatmap.org/images/uploads/abmfw-relase-1-0-1.bin).
 2. Using a Chrome web browser, navigate to https://espressif.github.io/esptool-js/.
 3. Using the cable that shipped with your AirBeam Mini (or another compatible USB cable that supports data transfers) connect your AirBeam to your computer.
 4. Set the “Baudrate” to “921600”, click “connect”, turn on your AirBeam Mini and select the port associated with the AirBeam Mini. The port will appear on the list and disappear from the list as you power the AirBeam on and off. The proper port to select begins “USB JTAG…”
